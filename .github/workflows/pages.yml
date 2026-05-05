@@ -31,9 +31,23 @@ jobs:
 
       - run: mkdocs build --strict
 
-      - uses: actions/upload-pages-artifact@v3
+      # Replace upload-pages-artifact@v3 with upload-artifact@v4 (overwrite: true)
+      # so Re-run All Jobs is idempotent — v3 has no overwrite option, which
+      # causes "Multiple artifacts named github-pages" on re-runs.
+      - name: Tar site for Pages
+        run: |
+          tar \
+            --dereference --hard-dereference \
+            --directory site \
+            --exclude=.git --exclude=.github \
+            -cvf "$RUNNER_TEMP/artifact.tar" .
+
+      - uses: actions/upload-artifact@v4
         with:
-          path: site
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          overwrite: true
 
   deploy:
     needs: build
