@@ -1,0 +1,72 @@
+site_name: rio-edu-lab
+site_description: Laboratório exploratório sobre o Grupo Educação do data.rio.
+site_url: https://freirelucas.github.io/rio-edu-lab/
+repo_url: https://github.com/freirelucas/rio-edu-lab
+repo_name: freirelucas/rio-edu-lab
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.tracking
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Início: index.md
+  - API do data.rio: data-rio-api.md
+  - Relatórios:
+      - 01 — EDA do manifest: reports/01_manifest_eda.md
+      - 02 — Probe de ingestão: reports/02_ingestion_probe.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/freirelucas/rio-edu-lab
+
+copyright: |
+  &copy; 2026 — Código MIT, dados derivados CC BY 4.0.
+  Dados brutos: <a href="https://www.data.rio">data.rio</a> / IPP.

@@ -1,0 +1,3080 @@
+{
+  "source": "data.rio (ArcGIS Hub) — Grupo Educação",
+  "group_id": "91117c15dceb41eaa08df881fa9f9310",
+  "group_url": "https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310",
+  "fetched_at": "2026-05-05T20:40:25Z",
+  "total_items": 186,
+  "items": [
+    {
+      "id": "0a220ea7972449e39a28210dd317f636",
+      "title": "Escolas Municipais",
+      "type": "Feature Service",
+      "snippet": "Camada de dados das unidades da Secretaria Municipal de Educação, contendo Escolas Municipais, Espaços de Desenvolvimento Infantil (EDI), Creches e outros. Última atualização: Junho/2023",
+      "modified": 1713994614000,
+      "created": 1450113361000,
+      "url": "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Educacao/SME/MapServer/1",
+      "size": 72,
+      "numViews": 113808,
+      "tags": [
+        "Educação",
+        "Escolas",
+        "Escolas Municipais"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1a351530af074c94984ae1a681fe1cdf",
+      "title": "Creches Conveniadas",
+      "type": "Feature Service",
+      "snippet": "Vizualização de Creches Conveniadas com a Prefeitura do Rio ",
+      "modified": 1694626070000,
+      "created": 1450113702000,
+      "url": "http://pgeo3.rio.rj.gov.br/arcgis/rest/services/SME/SME_View/MapServer/2",
+      "size": 72,
+      "numViews": 2714,
+      "tags": [
+        "Educação"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "fbfcbfae92654e248bdf1452cf260626",
+      "title": "Limites CRE",
+      "type": "Feature Service",
+      "snippet": "Limites CRE - Visualização",
+      "modified": 1669043708000,
+      "created": 1481204379000,
+      "url": "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Educacao/SME/MapServer/0",
+      "size": 72,
+      "numViews": 9820,
+      "tags": [
+        "SME",
+        "Educação",
+        "CRE"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8397b3b090794488995be72c05e3ec61",
+      "title": "Mapa Digital de Educação",
+      "type": "Web Mapping Application",
+      "snippet": "Localização dos Estabelecimentos de Ensino da Rede Pública da Cidade do Rio de Janeiro",
+      "modified": 1669060361000,
+      "created": 1481721929000,
+      "url": "https://pcrj.maps.arcgis.com/apps/webappviewer/index.html?id=8397b3b090794488995be72c05e3ec61",
+      "size": 109224,
+      "numViews": 15612,
+      "tags": [
+        "Educação"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8285913cfc5f45a8870c65c4b84a0777",
+      "title": "Mapa Digital de Educação",
+      "type": "Code Attachment",
+      "snippet": null,
+      "modified": 1508771998000,
+      "created": 1481721930000,
+      "url": "https://pcrj.maps.arcgis.com/sharing/rest/content/items/8397b3b090794488995be72c05e3ec61/package",
+      "size": 0,
+      "numViews": 0,
+      "tags": [
+        "Grupo Educacao"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "5539cb3f3eea4b06b6d4fd6b52ae650b",
+      "title": "ATLAS ESCOLAR",
+      "type": "Web Mapping Application",
+      "snippet": "Atlas Escolar da Cidade do Rio de Janeiro, criado pelo Instituto Pereira Passos, a partir de diversas informações cadastrais, geográficas e estatísticas sobre a Cidade do Rio de Janeiro, disponíveis no SIURB-Sistema Municipal de Informações Urbanas",
+      "modified": 1698089316000,
+      "created": 1506625035000,
+      "url": "https://pcrj.maps.arcgis.com/apps/Cascade/index.html?appid=5539cb3f3eea4b06b6d4fd6b52ae650b",
+      "size": 109301888,
+      "numViews": 158097,
+      "tags": [
+        "Atlas"
+      ],
+      "owner": "armazenzinho"
+    },
+    {
+      "id": "a0aa37fa8e6f43f59bd65c7834c650cc",
+      "title": "COLEÇÃO ESTUDOS CARIOCAS - O Rio na virada do século: do Censo 1991 até a PNAD 2006 (Maio/2008)",
+      "type": "PDF",
+      "snippet": "",
+      "modified": 1696012063000,
+      "created": 1513714108000,
+      "url": null,
+      "size": 1340336,
+      "numViews": 594,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "eafc70844f41438da45a79563fd1d310",
+      "title": "COLEÇÃO ESTUDOS CARIOCAS - A Cidade do Rio de Janeiro na PNAD: condições de vida, educação, renda e ocupação entre 2001-2006 (Agosto/2008)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693492477000,
+      "created": 1513714126000,
+      "url": null,
+      "size": 3254684,
+      "numViews": 885,
+      "tags": [
+        "População",
+        "Trabalho e renda"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "3e60f3b9de6a4c38b5e813089b7adebf",
+      "title": "COLEÇÃO ESTUDOS CARIOCAS - Os dirigentes das escolas municipais e a violência: uma comparação entre 2001-2005 (Novembro/2005)",
+      "type": "PDF",
+      "snippet": "Não cabe anotação",
+      "modified": 1694529571000,
+      "created": 1513714260000,
+      "url": null,
+      "size": 2395348,
+      "numViews": 653,
+      "tags": [
+        "Educação"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "ecfa86b57fc74247857221a40a2dd76b",
+      "title": "NOTA TÉCNICA 12 - Evolução das matrículas na rede municipal da Cidade do Rio de Janeiro entre 2001-2012 (Dezembro/2012)",
+      "type": "PDF",
+      "snippet": "Essa Nota Técnica mostra que a redução nas matrículas do ensino fundamental resulta da combinação da estabilidade na taxa de escolarização e da queda no número de habitantes nessa faixa etária (ambos resultados publicados no Censo Demográfico de 2010",
+      "modified": 1693500298000,
+      "created": 1513714364000,
+      "url": null,
+      "size": 591258,
+      "numViews": 631,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "93722c0217db42969d7c6c53deaa3c92",
+      "title": "COLEÇÃO ESTUDOS CARIOCAS - Escolaridade dos chefes de domicílio segundo a contagem da população de 1996 (Maio/2001)",
+      "type": "PDF",
+      "snippet": "Não cabe anotação",
+      "modified": 1559186909000,
+      "created": 1513714410000,
+      "url": null,
+      "size": 1289682,
+      "numViews": 589,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "3f3655c357d84dc8bd9df60b09a97a66",
+      "title": "COLEÇÃO ESTUDOS CARIOCAS - Cidade do Rio: universalização do ensino está mais próxima (Setembro/2002)",
+      "type": "PDF",
+      "snippet": "",
+      "modified": 1697043933000,
+      "created": 1513714849000,
+      "url": null,
+      "size": 1046209,
+      "numViews": 618,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "f5899119bb9c4ba3b290116a02b88cfc",
+      "title": "Educação Especial: matrícula por tipo de ensino, segundo as Dependências Administrativas, entre 1999-2002",
+      "type": "Microsoft Excel",
+      "snippet": "O conceito do INEP mudou",
+      "modified": 1559172323000,
+      "created": 1513715017000,
+      "url": null,
+      "size": 20992,
+      "numViews": 105,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "7f525f38c32542d3bcecb5a2c35deb94",
+      "title": "NOTA TÉCNICA 25 - Avaliação das crianças de creches municipais no Rio de Janeiro (2010-2012): uso da ferramenta Age & Stages Questionnaires, ASQ-3 (Novembro/2013)",
+      "type": "PDF",
+      "snippet": "O objetivo desta nota técnica é apresentar os resultados da avaliação das creches municipais do Rio de Janeiro com base no Age & Stages Questionnaires (ASQ-3). Esta metodologia é composta por um conjunto de 21 questionários voltados para crianças de diferentes idades, cobrindo o intervalo etário de 1 mês a 5 anos e meio. Permite avaliar o desempenho das crianças em cinco dimensões: comunicação, coordenação motora ampla, coordenação motora fina, resolução de problemas e pessoal e social. Os dados de 2010 foram coletados e analisados em parceria com a Secretaria de Assuntos Estratégicos da Presidência da República (SAE); os de 2011 por uma parceria entre SAE e Instituto Pereira Passos (IPP); em 2012, a pesquisa novamente foi realizada pela SAE. Através dos dados coletados nesses anos, faremos uma análise do desempenho das creches bem como da evolução destas ao longo do tempo.",
+      "modified": 1693579587000,
+      "created": 1513715064000,
+      "url": null,
+      "size": 1194401,
+      "numViews": 682,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "b7b66567492942adb5b49085a93cffb8",
+      "title": "Percentagem de crianças por faixa etária: matriculados em creches/escolas; com mais de um ano de atraso escolar; matriculados com acesso ao ensino fundamental e frequência escolar no Município do Rio de Janeiro em 1991/2000/2010",
+      "type": "Microsoft Excel",
+      "snippet": "Houve um aumento de 26% no numero de crianças de 4 a 5 anos frequentando a escola na Cidade do Rio de Janeiro entre 2000 e 2010",
+      "modified": 1694012701000,
+      "created": 1513715147000,
+      "url": null,
+      "size": 198144,
+      "numViews": 189,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "d0f865cfba6f489b8e7c8ca7f5d6492a",
+      "title": "COLEÇÃO ESTUDOS CARIOCAS - Prioridade Educação: evolução recente da rede pública e dos gastos do município no setor (Junho/2004)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693577137000,
+      "created": 1513715166000,
+      "url": null,
+      "size": 1147362,
+      "numViews": 425,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "6d001889b8c7435aa108a503f19110a8",
+      "title": "NOTA TÉCNICA 29 - Pesquisa Nacional de Saúde Escolar (PeNSE 2012): Características do Ambiente Escolar e Entorno (Junho/2014) ",
+      "type": "PDF",
+      "snippet": "Análise dos resultados, para o Brasil e sete capitais, da Pesquisa Nacional de Saúde Escolar, realizada pelo IBGE com uma amostra de  estudantes do 9º ano e diretores das escolas públicas e particulares do Ensino Fundamental. Foram investigadas as características do ambiente escolar e entorno, desagregadas em quatro componentes: estrutura de informação e comunicação; alimentos comercializados; estrutura para atividades físicas e outras características.",
+      "modified": 1694007181000,
+      "created": 1513715787000,
+      "url": null,
+      "size": 926782,
+      "numViews": 499,
+      "tags": [
+        "Educação"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "0a79b57e35824eae8d9676867a997b42",
+      "title": "COLEÇÃO ESTUDOS CARIOCAS - O analfabetismo na Cidade do Rio de Janeiro 1991/2000 (Agosto/2002)",
+      "type": "PDF",
+      "snippet": "Não cabe anotação",
+      "modified": 1693505503000,
+      "created": 1513715805000,
+      "url": null,
+      "size": 2162445,
+      "numViews": 727,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "9862d443bd9e48cbab9b8d739e25b45c",
+      "title": "NOTA TÉCNICA 31 - Pesquisa Nacional de Saúde Escolar (PeNSE 2012): Análise dos Resultados (Outubro/2014)",
+      "type": "PDF",
+      "snippet": "Não cabe anotação",
+      "modified": 1693936926000,
+      "created": 1513715817000,
+      "url": null,
+      "size": 1518819,
+      "numViews": 724,
+      "tags": [
+        "Educação"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1004354d02c44b818dc7c32ce3c2e4a5",
+      "title": "COLEÇÃO ESTUDOS CARIOCAS - Aos mestres com reconhecimento: como os educadores enfrentam a violência carioca de cada dia (Abril/2002)",
+      "type": "PDF",
+      "snippet": "Não cabe anotação",
+      "modified": 1559186965000,
+      "created": 1513716140000,
+      "url": null,
+      "size": 1298364,
+      "numViews": 508,
+      "tags": [
+        "Educação"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "2ababb1025a44aab9e823326796e93b0",
+      "title": "RIO ESTUDOS Nº 56 - Como se tornar um Diretor-líder  (Junho/2002)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1694008272000,
+      "created": 1537975479000,
+      "url": null,
+      "size": 234541,
+      "numViews": 427,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "7cd5d18c62a140439dd588de41b3d38f",
+      "title": "RIO ESTUDOS Nº 38 - Pesquisa da CNTE: violência dentro da escola (Outubro/2001)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693924389000,
+      "created": 1537975699000,
+      "url": null,
+      "size": 234974,
+      "numViews": 376,
+      "tags": [
+        "Educação"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1013ac66372a40de9d6bae43b66ff198",
+      "title": "RIO ESTUDOS Nº 30 - O papel do diretor na revolução da educação (Setembro/2001)",
+      "type": "PDF",
+      "snippet": " O papel do diretor na revolução da educação ",
+      "modified": 1694712630000,
+      "created": 1537975777000,
+      "url": null,
+      "size": 365359,
+      "numViews": 486,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "30ce1f4ac9534ec8ba18c23d6d5057ce",
+      "title": "RIO ESTUDOS Nº 227 - Os precursores da educação nova (Novembro/2006)",
+      "type": "PDF",
+      "snippet": "O Rio Estudos apresenta o artigo da professora Libânia Nacif Xavier sobre a criação e o funcionamento da escola pública no Brasil. O estudo mostra os princípios defendidos pelos\nsignatários do Manifesto dos Pioneiros da Educação Nova (1932) para a organização do\nensino brasileiro em moldes democráticos, tais como: educação leiga, pública, gratuita, sob\nresponsabilidade do Estado e co-educação. Assinala os conflitos gerados em torno a esses\nprincípios e destaca a atuação de Fernando de Azevedo (1927-1930) e de Anísio Teixeira\n(1930-1935) na Reforma do Ensino do Distrito Federal (RJ). Sugere algumas linhas de\ncontinuidade, apresentando como exemplos atuais a Escola Parque, na Bahia, e a proposta\npedagógica dos Centros Integrados de Educação Pública (Cieps), desenvolvida no Rio de Janeiro nas décadas de 1980-1990. \n",
+      "modified": 1697045647000,
+      "created": 1537976248000,
+      "url": null,
+      "size": 303577,
+      "numViews": 530,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "6f78e3e6689649199daa14828ce02754",
+      "title": "RIO ESTUDOS Nº 26 - A cultura da paz em resposta à violência (Agosto/2001)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1695926245000,
+      "created": 1537982033000,
+      "url": null,
+      "size": 347708,
+      "numViews": 755,
+      "tags": [
+        "Educação"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "07ad37f25d0145b18ff83e6b81a1ce82",
+      "title": "RIO ESTUDOS Nº 170 - Ações Culturais para crianças e adolescentes da Rede Municipal de Ensino entre 2001-2005 (Agosto/2005)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693925222000,
+      "created": 1537982256000,
+      "url": null,
+      "size": 439217,
+      "numViews": 443,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "620e401f3a4a4779b49d3439f263a2b5",
+      "title": "RIO ESTUDOS Nº 172 - Ações de prevenção à dependencia química vinculadas às escolas municipais entre 2001 e 2005 (Setembro/2005)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693837367000,
+      "created": 1537982664000,
+      "url": null,
+      "size": 1590238,
+      "numViews": 466,
+      "tags": [
+        "Educação"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "a52fcca80a474d01a4ef40b728a05c92",
+      "title": "RIO ESTUDOS Nº 48 - O Sistema Nacional de Avaliação da Educação Básica e a Modelagem de Dados (Março/2002)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693586585000,
+      "created": 1537982688000,
+      "url": null,
+      "size": 497985,
+      "numViews": 458,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1403069227b14a64a41d209cdaf81e29",
+      "title": "RIO ESTUDOS Nº 20 - A integração entre justiça, polícia e escola na França (Junho/2001)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693839546000,
+      "created": 1537982722000,
+      "url": null,
+      "size": 288930,
+      "numViews": 534,
+      "tags": [
+        "Educação"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "7cc6fcf8d964460b8d3dfc6e711ce721",
+      "title": "RIO ESTUDOS Nº 72 - O futuro da sociedade e o presente da educação (Setembro/2002)",
+      "type": "PDF",
+      "snippet": "O Rio Estudos publica hoje artigo da Ministra de Educação, Cultura e Esportes da Espanha, Pilar de Castillo, sobre o Projeto de Lei de Qualidade da Educação naquele país. Segundo a autora, os\nsistemas educativos devem preservar o que há de valor no passado, para responder aos desafios do\npresente e preparar o futuro. Por isso, o Projeto de Lei orienta-se no sentido de alcançar dois\nobjetivos fundamentais: integração de todos – alunos, professores, poder público, agentes sociais e\neconômicos, famílias, enfim, a sociedade como um todo – na qualidade e prevenção, e combate ao fracasso escolar, convertendo o sistema educativo em um sistema capaz de oferecer oportunidades para todos. ",
+      "modified": 1697044103000,
+      "created": 1537983200000,
+      "url": null,
+      "size": 238680,
+      "numViews": 653,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "eacd534830644097930a72c220a33daf",
+      "title": "RIO ESTUDOS Nº 03 - Rio: educação, causas e efeitos (Março/2001) ",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693577348000,
+      "created": 1537983400000,
+      "url": null,
+      "size": 408272,
+      "numViews": 668,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "76955c4b2cfc488d879238eac09c75a2",
+      "title": "RIO ESTUDOS Nº 88 - Município prioriza ações para jovens (Janeiro/2003)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693500070000,
+      "created": 1537983459000,
+      "url": null,
+      "size": 267963,
+      "numViews": 487,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "c648588ad2674507a41b2c802131a3c2",
+      "title": "RIO ESTUDOS Nº 36 - A Educação Infantil no Brasil entre 1994-2001 (Outubro/2001)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1695999606000,
+      "created": 1537983560000,
+      "url": null,
+      "size": 697600,
+      "numViews": 583,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "e92c1cbcc33646859c8c24212a870029",
+      "title": "CADERNOS DO RIO - Educação (Junho/2013)",
+      "type": "PDF",
+      "snippet": "Este texto sobre educação, que compõe a série “Cadernos do Rio”, apresenta uma análise sobre pontos como a frequência de crianças nas unidades de ensino, a variação da taxa de analfabetismo e o atraso escolar no ensino fundamental.",
+      "modified": 1696008354000,
+      "created": 1537983661000,
+      "url": null,
+      "size": 921385,
+      "numViews": 855,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "32b6d55e5e2e4dd9b590ab3489a2835f",
+      "title": "RIO ESTUDOS Nº 06 - França, a luta contra a violência nas escolas (Abril/2001)",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693924445000,
+      "created": 1537983956000,
+      "url": null,
+      "size": 360635,
+      "numViews": 380,
+      "tags": [
+        "Educação"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "fb0debcd4a87456889eff55fe618bf15",
+      "title": "Informação para Ação: monitoramento da Saúde Escolar (Folheto) - 2003",
+      "type": "PDF",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693579274000,
+      "created": 1537984626000,
+      "url": null,
+      "size": 344376,
+      "numViews": 408,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "717a8f36a027431d9d13dc104ccfc14b",
+      "title": "Mapa do Índice de Desenvolvimento da Educação Básica - IDEB da 8ª série/9º ano da rede pública municipal, segundo as Regiões Administrativas (RA), no Município do Rio de Janeiro em 2005/2007/2009",
+      "type": "Image",
+      "snippet": "Não cabe anotação",
+      "modified": 1696271356000,
+      "created": 1537985489000,
+      "url": null,
+      "size": 1822994,
+      "numViews": 92,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "2ff1cc67a903454ca7abd596166718c3",
+      "title": "Coordenadorias Regionais de Educação (CRE) e Regiões Administrativas (RA) do Município do Rio de Janeiro - 2004",
+      "type": "Image",
+      "snippet": "Não foi feita anotação",
+      "modified": 1694610258000,
+      "created": 1537986178000,
+      "url": null,
+      "size": 506897,
+      "numViews": 127,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "ca1f87ba769841c2baaf6181a3817abd",
+      "title": "Coordenadorias Regionais de Educação (CRE) - Bairros no Município do Rio de Janeiro - 2014",
+      "type": "Image",
+      "snippet": "Não cabe anotação",
+      "modified": 1694610614000,
+      "created": 1537986198000,
+      "url": null,
+      "size": 2707820,
+      "numViews": 356,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1ea14346b20f44b697beac55c1ad822c",
+      "title": "Proporção de pessoas alfabetizadas com 15 anos ou mais de idade por Bairros do Município do Rio de Janeiro - 2000",
+      "type": "Image",
+      "snippet": "Proporção de pessoas alfabetizadas com 15 anos ou mais de idade por Bairros do Município do Rio de Janeiro.",
+      "modified": 1694623082000,
+      "created": 1537987187000,
+      "url": null,
+      "size": 847073,
+      "numViews": 128,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "43af5f25d4bb4ab5a6351b44d6a1c587",
+      "title": "Mapa do Índice de Desenvolvimento da Educação Básica - IDEB da 4ª série/5º ano da rede pública municipal, segundo as Regiões Administrativas (RA), no Município do Rio de Janeiro em 2005/2007/2009",
+      "type": "Image",
+      "snippet": "Não cabe anotação",
+      "modified": 1696271697000,
+      "created": 1537987718000,
+      "url": null,
+      "size": 1813813,
+      "numViews": 93,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "c8070a6e23de428ca55650b9a8e07369",
+      "title": "Mapa do IDEB (4ª série/5º ano) - Regiões Administrativas (RA) que alcançaram ou ficaram abaixo da meta de 4,6 na rede pública municipal do Rio de Janeiro - 2009",
+      "type": "Image",
+      "snippet": "Não cabe anotação",
+      "modified": 1696272830000,
+      "created": 1537987784000,
+      "url": null,
+      "size": 1363338,
+      "numViews": 73,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "b854cc4ce2c541e0bef62fc22d1f6fbc",
+      "title": "Educação Infantil (pré-escola) e Ensino Fundamental: matrícula e no. de escolas na rede pública municipal de ensino, por Área de Planejamento (AP), CREs, Região Administrativa (RA) e Bairros no Município do Rio de Janeiro entre Janeiro/2006-Janeiro/2009",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1559181885000,
+      "created": 1537988850000,
+      "url": null,
+      "size": 93696,
+      "numViews": 143,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "fef2b2a156f649dabd4a37fd5211fb51",
+      "title": "Número e distribuição percentual de concluintes em cursos de graduação presenciais, por organização acadêmica, segundo a categoria administrativa no Município do Rio de Janeiro, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 foram registrados 32.151 concluintes em cursos de graduação presenciais no Município do Rio de Janeiro, número menor que o registrado no ano anterior.\r\n",
+      "modified": 1699362254000,
+      "created": 1537988993000,
+      "url": null,
+      "size": 314368,
+      "numViews": 233,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8c9a0c967a8f41e0abad6f31e4912ff8",
+      "title": "Educação Infantil: número de creches conveniadas na rede pública municipal, segundo as Coordenações Regionais de Educação do Município do Rio de Janeiro, entre 2004-2007",
+      "type": "Microsoft Excel",
+      "snippet": "Não temos todas as informações",
+      "modified": 1559182086000,
+      "created": 1537989301000,
+      "url": null,
+      "size": 32256,
+      "numViews": 60,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "686ff9e957d74d4dabbff033ab32b9de",
+      "title": "Ensino Médio - Número de escolas e dependências físicas existentes, segundo a dependência administrativa no Município do Rio de Janeiro, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022, das 250 escolas estaduais de ensino médio, 135 possuíam biblioteca, 222 tinham quadra de esportes e 250 tinham acesso à internet.",
+      "modified": 1676312282000,
+      "created": 1537989363000,
+      "url": null,
+      "size": 80896,
+      "numViews": 422,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "fa7e0df92fe9461cb41f0156fda83383",
+      "title": "Número e proporção de estudantes e não estudantes de 4 a 6 anos, por nível de ensino no Município do Rio de Janeiro, em 2000/2010",
+      "type": "Microsoft Excel",
+      "snippet": "Houve um aumento de 18% no numero de crianças de 4 a 6 anos frequentando escola na Cidade do Rio de Janeiro entre 2000 e 2010",
+      "modified": 1697465753000,
+      "created": 1537989460000,
+      "url": null,
+      "size": 48640,
+      "numViews": 120,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "51a59a06ae12474b9975a52c2fcd55e2",
+      "title": "Educação Infantil, Ensino Fundamental, Educação Especial, Programa de Educação de Jovens e Adultos (PEJ): alunos matriculados na rede pública municipal, por gênero, segundo as Coordenadorias Regionais de Educação (CRE) e matrícula inicial - 2013",
+      "type": "Microsoft Excel",
+      "snippet": "A menor razão homem/mulher se concentra no 8º ano da 2ª CRE",
+      "modified": 1694022447000,
+      "created": 1537989656000,
+      "url": null,
+      "size": 126976,
+      "numViews": 119,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "6a6adb6793054943ae26ffbbb12e6c9c",
+      "title": "Número e distribuição percentual das instituições de ensino superior no Brasil e suas 12 maiores capitais entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 foram registradas 2.595 instituições de ensino superior no Brasil e 69 no Município do Rio de Janeiro.\r\n",
+      "modified": 1699365659000,
+      "created": 1537989814000,
+      "url": null,
+      "size": 62976,
+      "numViews": 119,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "7d791c58eadf4366a3f9afcc799cd08e",
+      "title": "Investimentos realizados pelo CNPQ em bolsas e no fomento à pesquisa, segundo a grande área de conhecimento no Estado do Rio de Janeiro, entre 2001-2015",
+      "type": "Microsoft Excel",
+      "snippet": "Podemos observar uma queda considerável em 2015 nos investimentos realizados pelo CNPQ em bolsa de pesquisa",
+      "modified": 1559182373000,
+      "created": 1537989845000,
+      "url": null,
+      "size": 44032,
+      "numViews": 53,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "5e7a88898605441a8f7818602e02ecc7",
+      "title": "Número e proporção das pessoas de 5 anos ou mais de idade que freqüentam escola ou creche, por grupos de idade, segundo as Regiões Administrativas (RA) do Município do Rio de Janeiro, em 2000/2010",
+      "type": "Microsoft Excel",
+      "snippet": "A frequência escolar das pessoas maiores de 5 anos aumentou de uma maneira geral na Cidade do Rio de Janeiro entre 2000 e 2010",
+      "modified": 1694017514000,
+      "created": 1537989917000,
+      "url": null,
+      "size": 67072,
+      "numViews": 69,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "fb6ece5b0fc14c18839e9f510fcae09b",
+      "title": "Taxa de analfabetos por faixas etárias, por Bairros ou grupos de Bairros no Município do Rio de Janeiro em 1991/2000/2010",
+      "type": "Microsoft Excel",
+      "snippet": "Observamos uma queda de 27% na taxa de analfabetismo das crianças de 7 a 14 anos na Cidade do Rio de Janeiro entre 2000 e 2010",
+      "modified": 1695926105000,
+      "created": 1537989968000,
+      "url": null,
+      "size": 159232,
+      "numViews": 635,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1e5dbe226f594be292bf490ead9d2666",
+      "title": "Indicadores de Educação: atendimento educacional ao adolescente e jovem, percentagem de adolescentes e jovens por nível educacional e frequência escolar, por Bairros ou grupos de Bairros, incluindo definições, em 1991/2000",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693409079000,
+      "created": 1537990021000,
+      "url": null,
+      "size": 112640,
+      "numViews": 188,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8e1d5972ae214f1ea97d374adc2b55a0",
+      "title": "Número de matrículas do ensino médio por grupo etário, segundo as Dependências Administrativas, entre 2001-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1694530151000,
+      "created": 1537990103000,
+      "url": null,
+      "size": 65024,
+      "numViews": 106,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "c0beddc0eef34a22abc2a1d2712bcd30",
+      "title": "Educação Infantil: número de creches e matrículas por nível e turma, segundo as Coordenações Regionais de Educação no Município do Rio de Janeiro, entre 2004-2009",
+      "type": "Microsoft Excel",
+      "snippet": "Não temos todas as informações",
+      "modified": 1559182091000,
+      "created": 1537990173000,
+      "url": null,
+      "size": 46080,
+      "numViews": 58,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8aca832b67094eaea59f77056c95eca9",
+      "title": "Educação Infantil: percentual de matrículas na educação infantil em comparação com a matrícula total na rede pública municipal no Município do Rio de Janeiro entre 1999-2008",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1696272219000,
+      "created": 1537990195000,
+      "url": null,
+      "size": 15872,
+      "numViews": 104,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "023006ef4e8c4277b7551343ef0e9790",
+      "title": "Ensino de pós-graduação: número de alunos de pós-graduação e tempo médio de titulação em meses, por nível, agrupado por instituição, no Município do Rio de Janeiro em 2006/2007",
+      "type": "Microsoft Excel",
+      "snippet": "",
+      "modified": 1694713547000,
+      "created": 1537990286000,
+      "url": null,
+      "size": 40960,
+      "numViews": 119,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "6b99c568d38646bb97dcf2751c501e7f",
+      "title": "Número de estudantes da rede pública por nível de ensino, segundo as Regiões Administrativas (RA) do Município do Rio de Janeiro, em 2000/2010",
+      "type": "Microsoft Excel",
+      "snippet": "Houve um aumento de 118% no numero de crianças matriculadas em creche da rede publica na Cidade do Rio de Janeiro entre 2000 e 2010",
+      "modified": 1695922269000,
+      "created": 1537990436000,
+      "url": null,
+      "size": 61440,
+      "numViews": 196,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1bdb25acf93949b0914f0c6579099656",
+      "title": "Ensino Fundamental: matrículas de alunos de 7 a 14 anos da rede pública municipal, sobre o total de pessoas nesta faixa etária residentes no Município do Rio de Janeiro - 2000-2006",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1559176074000,
+      "created": 1537990446000,
+      "url": null,
+      "size": 14336,
+      "numViews": 55,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1b8da7c026f84de78c6704438c8cda2f",
+      "title": "Educação Infantil (creche/pré-escola), Ensino Fundamental, Classe Especial e Educação Juvenil (PEJ): matrículas na rede municipal de ensino por idade, segundo as séries e matrícula inicial - 1999",
+      "type": "Microsoft Excel",
+      "snippet": "Número de matrículas por série e idade",
+      "modified": 1695910417000,
+      "created": 1537990613000,
+      "url": null,
+      "size": 307712,
+      "numViews": 92,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1193f2596b9f46e1b0223b4fd5d9ad71",
+      "title": "Número e distribuição percentual das matrículas em cursos de graduação presenciais no Brasil e suas 12 maiores capitais entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022, foram registradas 5.112.663 matrículas em cursos de graduação presenciais no Brasil e 236.456 no Município do Rio de Janeiro.\r\n",
+      "modified": 1699364649000,
+      "created": 1537990789000,
+      "url": null,
+      "size": 268800,
+      "numViews": 139,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8070feee270545a2b3d9e08ed2b937cd",
+      "title": "Ensino Fundamental: Taxas de rendimento, por série, segundo a dependência administrativa, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Houve uma redução na taxa de aprovação do ensino fundamental da Cidade do Rio de Janeiro em 2022 em relação ao ano anterior.\r\n",
+      "modified": 1686072691000,
+      "created": 1537990799000,
+      "url": null,
+      "size": 37888,
+      "numViews": 246,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "2380ec5691a548179af0568397fd65b9",
+      "title": "Número de matrículas do ensino fundamental por idade e faixa etária, segundo as Dependências Administrativas, entre 1999-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1696007297000,
+      "created": 1537990863000,
+      "url": null,
+      "size": 124928,
+      "numViews": 286,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "82d0a1bdf0c844579f6ee6c8350b55d6",
+      "title": "Ensino Fundamental: número médio de alunos por turma, segundo as Dependências Administrativas, entre 2001-2006",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693417193000,
+      "created": 1537990988000,
+      "url": null,
+      "size": 17920,
+      "numViews": 39,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "2eab9bd9ffc848e2a7bc65ff73a60a99",
+      "title": "Educação Básica: número de estabelecimentos, nas diferentes modalidades de ensino, segundo as Dependências Administrativas, entre 2000-2006",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693420555000,
+      "created": 1537990999000,
+      "url": null,
+      "size": 20480,
+      "numViews": 58,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "49eb3240501f4b579fdd2bd3c9e948d3",
+      "title": "Ensino Fundamental e Ensino Médio - Número médio de alunos por turma, segundo a dependência administrativa entre 2007-2022",
+      "type": "Microsoft Excel",
+      "snippet": "O ensino fundamental da rede municipal do Rio de Janeiro teve em média 31,2 alunos por turma em 2022.",
+      "modified": 1676395530000,
+      "created": 1537991008000,
+      "url": null,
+      "size": 59392,
+      "numViews": 551,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "ba728e0990664445a3e83201c58cf4e2",
+      "title": "Educação Básica: número de alunos matriculados por modalidade/segmento, segundo as Dependências Administrativas, entre 1999-2006",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1695056490000,
+      "created": 1537991379000,
+      "url": null,
+      "size": 45056,
+      "numViews": 119,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "75b1df544d684f7aa5439c8ca28b5fd0",
+      "title": "Educação Básica - Distorção idade-série no ensino fundamental e médio, segundo a dependência administrativa, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": " Houve uma diminuição na taxa de distorção idade-série do ensino fundamental da rede municipal do Rio de Janeiro em 2022 em relação a 2021, de 14,3 para 12,7.\r\n",
+      "modified": 1676386158000,
+      "created": 1537991607000,
+      "url": null,
+      "size": 31232,
+      "numViews": 286,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "d28181c9b0484d818bbc49013732d446",
+      "title": "Educação Infantil - Número de escolas com abastecimento de água, de energia elétrica e esgoto sanitário, segundo a dependência administrativa e modalidade no Município do Rio de Janeiro, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 todas as escolas municipais da educação infantil do Rio de Janeiro tinham abastecimento de água, de energia elétrica e esgoto.\r\n",
+      "modified": 1696012981000,
+      "created": 1537991626000,
+      "url": null,
+      "size": 59904,
+      "numViews": 202,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "5c0658d31c5a4fd086d13bf4f23f018c",
+      "title": "Número de matrículas em cursos de graduação presenciais, por organização acadêmica, segundo a dependência administrativa no Município do Rio de Janeiro, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 foram registradas 236.456 matrículas em cursos de graduação presenciais no Município do Rio de Janeiro, número menor que o registrado no ano anterior.\r\n",
+      "modified": 1699448595000,
+      "created": 1537991739000,
+      "url": null,
+      "size": 116736,
+      "numViews": 149,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "bf2ca35430024d9e80daa8e1d28cc443",
+      "title": "Ensino Médio - Número de escolas com abastecimento de água, de energia elétrica e esgoto sanitário, segundo a dependência administrativa no Município do Rio de Janeiro, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 todas as escolas públicas de ensino médio do Rio de Janeiro tinham abastecimento de água, de energia e esgoto.\r\n",
+      "modified": 1676383603000,
+      "created": 1537991793000,
+      "url": null,
+      "size": 44032,
+      "numViews": 152,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "5bb3607ea06e404fb8542c73bcea174e",
+      "title": "Número e distribuição percentual dos concluintes em cursos de graduação presenciais no Brasil e suas 12 maiores capitais entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "\r\nEm 2022 foram registrados 803.622 concluintes em cursos de graduação presenciais no Brasil e 32.151 no Município do Rio de Janeiro.\r\n",
+      "modified": 1699365182000,
+      "created": 1537991846000,
+      "url": null,
+      "size": 268288,
+      "numViews": 110,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "4f7b7e9578e14e5c8d865c4e5c2074ba",
+      "title": "Investimentos realizados pelo CNPQ em bolsas e no fomento à pesquisa, segundo a Instituição no Estado do Rio de Janeiro, entre 2001-2015",
+      "type": "Microsoft Excel",
+      "snippet": "Podemos observar uma queda considerável em 2015 nos investimentos realizados pelo CNPQ em bolsa de pesquisa",
+      "modified": 1693588455000,
+      "created": 1537991926000,
+      "url": null,
+      "size": 352256,
+      "numViews": 62,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8f61d624e21d4cdd886d48f2d587f46e",
+      "title": "Ensino Fundamental: docentes na rede pública municipal pelas Coordenações Regionais de Educação (CRE), segundo os cargos ocupados, em 2007/2008",
+      "type": "Microsoft Excel",
+      "snippet": "Docentes na rede pública municipal.",
+      "modified": 1693582161000,
+      "created": 1537991998000,
+      "url": null,
+      "size": 30208,
+      "numViews": 57,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "37afdc360d54443190ef4282500199c0",
+      "title": "Educação Básica: distorção série-idade no ensino fundamental e médio, segundo as Dependências Administrativas, entre 2000-2005",
+      "type": "Microsoft Excel",
+      "snippet": "Igual a 2182",
+      "modified": 1696272119000,
+      "created": 1537992318000,
+      "url": null,
+      "size": 18432,
+      "numViews": 64,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "a7f951e9c2aa47018b44f5c78da5d0e5",
+      "title": "Pessoas analfabetas por grupos de idade, segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro - 2010",
+      "type": "Microsoft Excel",
+      "snippet": "Segundo dados do Censo Demográfico 2010 (IBGE) o Rio de Janeiro possui 156.949 pessoas com mais de 10 anos de idade que são analfabetas. Na Área de Planejamento 3 fica a maior concentração de analfabetos (59.340). Entre 8 e 9 anos são 11.942 analfabetos, sendo a Área de Planejamento 1 a que possui a menor entre todas (607).",
+      "modified": 1693504769000,
+      "created": 1537992423000,
+      "url": null,
+      "size": 232960,
+      "numViews": 387,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "804f635cc79545168d72396c4cff4eaf",
+      "title": "Pessoas de 10 anos ou mais de idade, por classe de renda nominal mensal e condição de alfabetização, segundo Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro - 2010",
+      "type": "Microsoft Excel",
+      "snippet": "Pessoas de 10 anos ou mais de idade, por classe de renda nominal mensal e condição de alfabetização.",
+      "modified": 1694020380000,
+      "created": 1537995696000,
+      "url": null,
+      "size": 99840,
+      "numViews": 238,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "ba09a6e1f80b4fdfb06e510b9974dfc7",
+      "title": "Ensino Fundamental: matrículas e concluintes na 8ª série, por sexo, segundo as Dependências Administrativas, entre 2000-2005",
+      "type": "Microsoft Excel",
+      "snippet": "O Inep não divulga mais esta informação",
+      "modified": 1695910512000,
+      "created": 1537995715000,
+      "url": null,
+      "size": 23040,
+      "numViews": 84,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "6574a63ac2ce4fb39ba528a8c4bdec15",
+      "title": "Educação Infantil e Ensino Fundamental: matrículas inicial e final, por ano, segundo a correspondência entre séries e segmentos na rede pública municipal do Rio de Janeiro, entre 1992-2007",
+      "type": "Microsoft Excel",
+      "snippet": "matrículas inicial e final, por ano, segundo a correspondência entre séries e segmentos na rede pública municipal.",
+      "modified": 1694706911000,
+      "created": 1537995768000,
+      "url": null,
+      "size": 38400,
+      "numViews": 139,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "c373015d272d4ce884670adfa7b9b89e",
+      "title": "Educação Infantil - Creche e Pré-escola - Número médio de alunos por turma, segundo a dependência administrativa, entre 2002-2022",
+      "type": "Microsoft Excel",
+      "snippet": "As creches municipais do Rio de Janeiro tiveram em média 22,1 alunos por turma em 2022.\r\n",
+      "modified": 1696014118000,
+      "created": 1537995790000,
+      "url": null,
+      "size": 76288,
+      "numViews": 283,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "6b855fdba6514acb9b1bcfb397d52f87",
+      "title": "Educação Infantil e Ensino Fundamental: relação aluno professor na rede municipal de ensino, segundo as Coordenadorias Regionais de Educação (CRE), entre 2005-2008",
+      "type": "Microsoft Excel",
+      "snippet": "Não temos dados sobre professor",
+      "modified": 1694441630000,
+      "created": 1537996049000,
+      "url": null,
+      "size": 21504,
+      "numViews": 138,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "d155c513f84944a8b3bf5df867719faf",
+      "title": "Número e proporção de estudantes de 7 a 14 anos, da rede pública e da particular, por idade, segundo as Regiões Administrativas (RA) do Município do Rio de Janeiro, em 2000/2010",
+      "type": "Microsoft Excel",
+      "snippet": "Não cabe anotação",
+      "modified": 1559173168000,
+      "created": 1537996188000,
+      "url": null,
+      "size": 98816,
+      "numViews": 116,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "fcd345901b7d4a619c989154bb8d4eca",
+      "title": "Número de estudantes por grupo de idade, segundo curso que freqüentam, no Município do Rio de Janeiro, em 2000/2010",
+      "type": "Microsoft Excel",
+      "snippet": "Houve um aumento de 70% no numero de crianças de 0 a 3 anos matriculadas em creche na Cidade do Rio de Janeiro entre 2000 e 2010",
+      "modified": 1694711418000,
+      "created": 1537996292000,
+      "url": null,
+      "size": 51200,
+      "numViews": 121,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "a89a892cf5eb45a285c5a0e660e8127a",
+      "title": "Ensino Médio: docentes, por grau de formação, segundo as Dependências Administrativas, entre 1999-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1653309347000,
+      "created": 1537996304000,
+      "url": null,
+      "size": 45568,
+      "numViews": 59,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1137f9c36087443ebf1b4f7809576f8b",
+      "title": "Educação Infantil: docentes, por grau de formação, segundo as Dependências Administrativas, entre 2001-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1693837602000,
+      "created": 1537996326000,
+      "url": null,
+      "size": 45568,
+      "numViews": 84,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "aa31f6714a914febbe21bbd41dc1b8de",
+      "title": "Índice de variação entre as matrículas final e inicial na rede pública municipal da Cidade do Rio de Janeiro entre 1992-2008",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1695910462000,
+      "created": 1537996356000,
+      "url": null,
+      "size": 14848,
+      "numViews": 98,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "35385dcefc5149fbb9fd8f91ee934043",
+      "title": "Educação Infantil e Ensino Fundamental: crescimento percentual do número de matrículas na rede pública municipal no Município do Rio de Janeiro entre 1999-2008",
+      "type": "Microsoft Excel",
+      "snippet": "Educação Infantil e Ensino Fundamental: crescimento percentual do número de matrículas.",
+      "modified": 1694458396000,
+      "created": 1537996395000,
+      "url": null,
+      "size": 14848,
+      "numViews": 94,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "bd0a18dd77974992a6110243bced6aaa",
+      "title": "Educação Básica: número de professores em exercício, segundo as Dependências Administrativas, entre 2000-2006",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1559182194000,
+      "created": 1537996530000,
+      "url": null,
+      "size": 21504,
+      "numViews": 43,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1666391bdbc0445da8164a488feca325",
+      "title": "Educação Básica: distorção idade-conclusão por sexo, no ensino fundamental e médio, segundo as Dependências Administrativas, entre 2000-2005",
+      "type": "Microsoft Excel",
+      "snippet": "O Inep não divulga mais esta informação",
+      "modified": 1693586974000,
+      "created": 1537996615000,
+      "url": null,
+      "size": 18432,
+      "numViews": 93,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "f1418b4c6abc46788d3f3875219fe413",
+      "title": "Educação Infantil: número de creches e matrículas nos estabelecimentos municipais e conveniados com a Prefeitura da Cidade do Rio de Janeiro, segundo as Coordenadorias Regionais de Educação (CRE) - 2003",
+      "type": "Microsoft Excel",
+      "snippet": "Não temos todas as informações",
+      "modified": 1559173187000,
+      "created": 1537996688000,
+      "url": null,
+      "size": 18944,
+      "numViews": 46,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "3e5954ec17bd4d3aa2a4b5613a121dff",
+      "title": "Educação Especial: matrícula, por tipo de excepcionalidade, segundo as Dependências Administrativas, entre 2000-2002",
+      "type": "Microsoft Excel",
+      "snippet": "Educação Especial: matrícula, por tipo de excepcionalidade.",
+      "modified": 1694446861000,
+      "created": 1537996860000,
+      "url": null,
+      "size": 19968,
+      "numViews": 111,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1f908c6de87f42e7b4ae513788e0ccce",
+      "title": "Ensino de pós-graduação: número de programas de pós-graduação, por nível, agrupados por Instituição no Município do Rio de Janeiro entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "No ano de 2022, o número total de programas de pós-graduação no Rio de Janeiro foi de 365.",
+      "modified": 1705927542000,
+      "created": 1537996892000,
+      "url": null,
+      "size": 365056,
+      "numViews": 110,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "6689d169285d45e689e05299eba77083",
+      "title": "Número de matrículas do ensino fundamental por sexo, segmento e Dependências Administrativas, entre 1999-2016",
+      "type": "Microsoft Excel",
+      "snippet": "A razão homem/mulher é maior que 1 nos independente da dependência administrativa , exceto na rede estadual",
+      "modified": 1559173232000,
+      "created": 1537996980000,
+      "url": null,
+      "size": 53248,
+      "numViews": 66,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "3eca7dc5130046f3b66e325068599b2a",
+      "title": "Educação Infantil (creches): matrículas e no. de creches na rede pública municipal, por Área de Planejamento (AP), Coordenadoria Regional de Educação (CRE), Região Administrativa (RA) e Bairros do Município do Rio de Janeiro entre Janeiro/2006-Janeiro/2009",
+      "type": "Microsoft Excel",
+      "snippet": "Não temos todas as informações (não temos como definir as creches de cada ano)",
+      "modified": 1693504010000,
+      "created": 1537996990000,
+      "url": null,
+      "size": 108544,
+      "numViews": 118,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "704ff4c359a2445a83e5a3acc49df7c6",
+      "title": "Número e distribuição percentual das instituições de ensino superior por organização acadêmica, segundo a categoria administrativa no Município do Rio de Janeiro, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": " Em 2022 foram registradas 69 instituições de ensino superior no Município do Rio de Janeiro.\r\n",
+      "modified": 1699362841000,
+      "created": 1537997001000,
+      "url": null,
+      "size": 276480,
+      "numViews": 251,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1cf37307c721408da83b6d5aa5298144",
+      "title": "Número de docentes por regime de trabalho, segundo a dependência administrativa no Estado do Rio de Janeiro, entre 2001-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 foram registrados 27.575 docentes em exercício no Estado do Rio de Janeiro.\r\n",
+      "modified": 1699379365000,
+      "created": 1537997085000,
+      "url": null,
+      "size": 104960,
+      "numViews": 261,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "d41592fa2a004b73bf4d2aaae6c565ed",
+      "title": "Número e distribuição percentual dos cursos de graduação presenciais no Brasil e suas 12 maiores capitais entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 foram registrados 35.765 cursos de graduação presenciais no Brasil e 1.341 no Município do Rio de Janeiro.\r\n",
+      "modified": 1699378840000,
+      "created": 1537997167000,
+      "url": null,
+      "size": 283136,
+      "numViews": 262,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "33e2cb0fb757488793d37e8875f32b6a",
+      "title": "Número de matrículas do ensino médio por sexo e faixa etária, segundo as Dependências Administrativas, entre 1999-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1693586637000,
+      "created": 1537997418000,
+      "url": null,
+      "size": 48128,
+      "numViews": 168,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "aae450fc4f8841ceab4e6837c563e997",
+      "title": "Número de matrícula (matrícula inicial), segundo as etapas de ensino e Dependências Administrativas, entre 1999-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1693492107000,
+      "created": 1537997429000,
+      "url": null,
+      "size": 103936,
+      "numViews": 72,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "e80c3f68ddbf40e2879c486fecf23255",
+      "title": "Ensino Fundamental: número e proporção de matrículas, por Dependências Administrativas, entre 2002-2011",
+      "type": "Microsoft Excel",
+      "snippet": "O número total de matrículas diminui entre 2002 e 2007 e aumenta entre 2007 e 2011. O número de matrículas na rede municipal dimiui entre 2002 e 2003/2004 e 2011, e aumenta entre 2003 e 2004. O número de matrículas na rede federal varia instavelmente diminuindo e aumentando alternadamente a cada ano, sendo o aumento entre 2009 e 2010, de mais do dobro,  o mais expressivo. O número de matrículas na rede estadual diminui entre 2002 e 2007/2008 e 2011 e aumenta entre 2007 e 2008. O número de matrículas na rede particular aumenta entre 2002 e 2003/2007 e 2011, mas diminui entre 2003 e 2007. ",
+      "modified": 1697465500000,
+      "created": 1537997510000,
+      "url": null,
+      "size": 29184,
+      "numViews": 97,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "c81f4c91d85f44bd9a71b497cdd098ca",
+      "title": "Educação Infantil (Pré-escola,  4 e 5 anos): número de alunos e turmas na rede pública municipal, crescimento percentual anual e relação aluno/turma no Município do Rio de Janeiro entre 1992-2009",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1695921852000,
+      "created": 1537997561000,
+      "url": null,
+      "size": 17408,
+      "numViews": 66,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1a63618dc13a4a1ea8102371185eb4cd",
+      "title": "Educação de Jovens e Adultos: matrículas no CREJA, por idade e matrícula inicial, segundo os programas, no Município do Rio de Janeiro entre 2007-2013",
+      "type": "Microsoft Excel",
+      "snippet": "O maior número de alunos do PEJA está concentrado na faixa de 30 a 50 anos",
+      "modified": 1693508619000,
+      "created": 1537997621000,
+      "url": null,
+      "size": 97792,
+      "numViews": 81,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "c5f0cf8ed56c447fa58af9265833e25a",
+      "title": "Número e proporção de não estudantes entre 7 e 14 anos por idade, em relação à população total da idade correspondente, segundo as Regiões Administrativas (RA) do Município do Rio de Janeiro, em 2000/2010",
+      "type": "Microsoft Excel",
+      "snippet": "",
+      "modified": 1695063531000,
+      "created": 1537997960000,
+      "url": null,
+      "size": 64000,
+      "numViews": 101,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "899f75abce2a4f2b9c642d9c365944d7",
+      "title": "Ensino Fundamental: 1 segmento - docentes, por grau de formação, segundo as Dependências Administrativas, entre 1999-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1694786024000,
+      "created": 1537997970000,
+      "url": null,
+      "size": 47104,
+      "numViews": 168,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8e720d57e9544794ba66aba6afac5980",
+      "title": "Número de estudante por nível de ensino, segundo as Regiões Administrativas (RA) do Município do Rio de Janeiro, em 2000/2010",
+      "type": "Microsoft Excel",
+      "snippet": "Houve um aumento de 43% no numero de estudante no Ensino Superior na Cidade do Rio de Janeiro entre 2000 e 2010",
+      "modified": 1693925491000,
+      "created": 1537998030000,
+      "url": null,
+      "size": 77312,
+      "numViews": 104,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "d4ffe88007e1445780a395a6bbfb6d12",
+      "title": "Proporção de estudantes na rede pública, por nível de ensino, segundo as Regiões Administrativas (RA) do Município do Rio de Janeiro - 2000",
+      "type": "Microsoft Excel",
+      "snippet": "",
+      "modified": 1693938536000,
+      "created": 1537998195000,
+      "url": null,
+      "size": 51200,
+      "numViews": 63,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "a753079319134508b57909d9fcb3bbd7",
+      "title": "Educação de Jovens e Adultos: matrículas por nível de ensino, segundo as Dependências Administrativas, entre 2000-2005",
+      "type": "Microsoft Excel",
+      "snippet": "Matrículas por nível de ensino",
+      "modified": 1693505261000,
+      "created": 1537998275000,
+      "url": null,
+      "size": 19968,
+      "numViews": 61,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "169c46ae23b04dc8ad494e4fe6c04eb5",
+      "title": "Ensino de pós-graduação: investimentos realizados pelo CNPQ em bolsas e no fomento à pesquisa, segundo a área de conhecimento, no Estado do Rio de Janeiro entre 2001-2015",
+      "type": "Microsoft Excel",
+      "snippet": "Podemos observar uma queda considerável em 2015 nos investimentos realizados pelo CNPQ em bolsa de pesquisa.",
+      "modified": 1695150988000,
+      "created": 1537998329000,
+      "url": null,
+      "size": 122368,
+      "numViews": 90,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1bfbb653359842fd9569adcec7f15293",
+      "title": "Ensino Fundamental - Número de escolas com abastecimento de água, de energia elétrica e esgoto sanitário, segundo a dependência administrativa no Município do Rio de Janeiro, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 todas as escolas públicas de ensino fundamental do Rio de Janeiro tinham abastecimento de água, de energia elétrica e esgoto.\r\n",
+      "modified": 1696012807000,
+      "created": 1537998352000,
+      "url": null,
+      "size": 50176,
+      "numViews": 146,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "6bba93cdd9014dac9cdc7c36d226cf15",
+      "title": "Número e valor do Investimentos realizados pelo CNPQ em bolsas e no fomento à pesquisa segundo a modalidade no Estado do Rio de Janeiro entre 2001-2015",
+      "type": "Microsoft Excel",
+      "snippet": "Podemos observar uma queda considerável em 2015 nos investimentos realizados pelo CNPQ em bolsa de pesquisa",
+      "modified": 1693502651000,
+      "created": 1537998468000,
+      "url": null,
+      "size": 117760,
+      "numViews": 69,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "eed810844efd499d839b5f1e82972274",
+      "title": "Pessoas de 5 anos ou mais de idade alfabetizadas e taxa de alfabetização das pessoas de 5 anos ou mais de idade, por faixa etária, segundo as Áreas de Planejamento (AP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro - 2010",
+      "type": "Microsoft Excel",
+      "snippet": "Não cabe anotação",
+      "modified": 1693923807000,
+      "created": 1537998853000,
+      "url": null,
+      "size": 65024,
+      "numViews": 220,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8a21da2be6a3415bb5354a3352777561",
+      "title": "Composição dos níveis escolares no Município do Rio de Janeiro, de acordo com a Lei de Diretrizes e Bases da Educação Nacional - Lei nº 9394 de 20/12/1996 (Fevereiro/2006)",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1695911215000,
+      "created": 1537998889000,
+      "url": null,
+      "size": 27648,
+      "numViews": 135,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "de5244dedc1645848cd1278cbaabbe35",
+      "title": "Educação Infantil: número de creches e matrículas por faixa etária na rede pública municipal, segundo as Coordenações Regionais de Educação, entre 2004-2008",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693938455000,
+      "created": 1537998937000,
+      "url": null,
+      "size": 35328,
+      "numViews": 96,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "9acd1e13c0fd49a58f5e399d5d8a93fe",
+      "title": "Educação Infantil: número de estabelecimentos por segmento, segundo as Dependências Administrativas, entre 1999-2006",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1559186689000,
+      "created": 1537998958000,
+      "url": null,
+      "size": 20992,
+      "numViews": 57,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "bc918000aa20447d8495d911f6c1adaf",
+      "title": "Educação Infantil: número de creches e matrículas por faixa etária e nível, segundo as Coordenações Regionais de Educação (CRE) - 2007",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1697468294000,
+      "created": 1537998996000,
+      "url": null,
+      "size": 25088,
+      "numViews": 97,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "fd6567b87e7d4a2d867a66a58d7ff19f",
+      "title": "Educação Infantil: número e proporção de matrículas, por Dependências Administrativas, entre 2002-2011",
+      "type": "Microsoft Excel",
+      "snippet": "O número total de matrículas varia instavelmente; entre 2003 e 2004/2005 e 2007/2008 e 2010 ele diminui e entre 2002 e 2003/2004 e 2005/2007 e 2008/2010 e 2011 ele aumenta. O número de matrículas na rede municipal aumenta entre 2002 e 2005/2010 e 2011  e dimiui entre 2005 e 2010. O número de matrículas na rede federal varia instavelmente; diminuindo entre 2002 e 2004(entre 2003 e 2004 acontece uma queda radical)/2005 e 2008 e aumentando entre 2004 e 2005/2008 e 2011. O número de matrículas na rede estadual varia instavelmente, diminuindo entre 2002 e 2007/2008 e 2009/2010 e 2011 e aumentando entre 2007 e 2008/2009 e 2010. O número de matrículas na rede particular aumenta entre 2002 e 2003/2007 e 2011, mas diminui entre 2003 e 2004. ",
+      "modified": 1697465434000,
+      "created": 1537999016000,
+      "url": null,
+      "size": 29696,
+      "numViews": 119,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "5a30dbdd567e4bc1b32ecb6be4672bca",
+      "title": "Taxa de atendimento de pessoas de 7 a 14 anos na rede pública municipal - 1999- 2006 (Gráfico)",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1697466027000,
+      "created": 1537999025000,
+      "url": null,
+      "size": 22016,
+      "numViews": 68,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "50b4e136fa9c4701b5e3cee37865786d",
+      "title": "Educação Infantil, Ensino Fundamental, Educação de Jovens e Adultos: número de matrículas na rede municipal de ensino por nível de ensino, segundo ano e sexo, no Município do Rio de Janeiro entre 1999-2013",
+      "type": "Microsoft Excel",
+      "snippet": "A razão homem/mulher é menor no 8º e 9º anos",
+      "modified": 1696268898000,
+      "created": 1537999133000,
+      "url": null,
+      "size": 193536,
+      "numViews": 109,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "55fa75ad04144e619cf9fff28929ff0b",
+      "title": "Número de docentes por grau de formação, segundo a dependência administrativa no Estado do Rio de Janeiro, entre 2001-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 foram registrados 27.575 docentes em exercício no Estado do Rio de Janeiro.\r\n",
+      "modified": 1699380927000,
+      "created": 1537999189000,
+      "url": null,
+      "size": 63488,
+      "numViews": 156,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "f49651f016704db388769d893bdcf9ed",
+      "title": "Média de anos de estudo das pessoas responsáveis pelos domicílios partarticulares permemanentes por sexo, segundo as Áreas de Planejamento (AP), Regiões Administrativas (RA) e Bairros - 2000",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693837002000,
+      "created": 1537999291000,
+      "url": null,
+      "size": 32768,
+      "numViews": 125,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "ae64616d363e48c897818b640e2a22cd",
+      "title": "Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013",
+      "type": "Microsoft Excel",
+      "snippet": "Observamos um aumento no número de EDIs na Cidade do Rio de Janeiro",
+      "modified": 1693578461000,
+      "created": 1537999327000,
+      "url": null,
+      "size": 172544,
+      "numViews": 503,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "fe46c1bedc0b475c9cf9ee26e43e0b95",
+      "title": "Ensino Superior: número de cursos, vagas, inscrições, matrículas e concluintes, por Dependências Administrativas, entre 2001-2009",
+      "type": "Microsoft Excel",
+      "snippet": "O número de cursos total aumenta entre 2001 e 2007/2008 e 2009 e diminui entre 2007 e 2008. O número de vagas varia instavelmente entre 2001 e 2003; ele diminui entre 2003 e 2005/2006-2009 e aumenta entre 2001 e 2003/2005 e 2006. O número de cursos total da rede pública mais que duplica entre 2008 e 2009. ",
+      "modified": 1693421127000,
+      "created": 1537999381000,
+      "url": null,
+      "size": 35328,
+      "numViews": 112,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "dbed8b55cf28474296457ab9989f91c5",
+      "title": "Indicadores de Educação: analfabetismo funcional, percentual de analfabetos funcionais por faixas etárias, segundo as regiões administrativas em 1991/2000",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1559172176000,
+      "created": 1537999418000,
+      "url": null,
+      "size": 70656,
+      "numViews": 102,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "b9920b764487446d9e5c8b9cadf60f67",
+      "title": "Educação de Jovens e Adultos: matrículas, por tipo de ensino, segundo as Dependências Administrativas, entre 2000-2005",
+      "type": "Microsoft Excel",
+      "snippet": "",
+      "modified": 1695925229000,
+      "created": 1537999428000,
+      "url": null,
+      "size": 23552,
+      "numViews": 136,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8459a7e185a94deab97e1cee75a7ef19",
+      "title": "Educação Infantil: matrícula por sexo e faixa etária, segundo as Dependências Administrativas, entre 1999-2006",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1697464656000,
+      "created": 1537999462000,
+      "url": null,
+      "size": 20480,
+      "numViews": 49,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "94299a4a6d4548ddb2d6892664bb5fd4",
+      "title": "Ensino Fundamental (classe de alfabetização): matrícula por sexo e idade, segundo as Dependências Administrativas, entre 1999-2003",
+      "type": "Microsoft Excel",
+      "snippet": "Classe de alfabetização foi incluida no Ensino Fundamental",
+      "modified": 1697466354000,
+      "created": 1537999472000,
+      "url": null,
+      "size": 18432,
+      "numViews": 82,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "70fa662476ea4c7fb2317807e0c2a703",
+      "title": "Educação Infantil: Ensino fundamental, Educação Especial, Programa de Educação de Jovens e Adultos (PEJ) - turmas e alunos matriculados na rede pública municipal, segundo as Coordenações Regionais de Educação (CRE) e matrícula inicial, entre 1999-2013",
+      "type": "Microsoft Excel",
+      "snippet": "Número de matrículas do Ens. Fundamental por série e projetos de correção de fluxo (matrícula inicial)",
+      "modified": 1694458526000,
+      "created": 1537999553000,
+      "url": null,
+      "size": 280576,
+      "numViews": 87,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "799e46b989a7464a956106c1c405343e",
+      "title": "Ensino Médio: Taxas de rendimento, segundo a dependência administrativa, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Houve um grande aumento na taxa de abandono do ensino médio da Cidade do Rio de Janeiro em 2022 em relação ao ano anterior.",
+      "modified": 1686074904000,
+      "created": 1537999637000,
+      "url": null,
+      "size": 80896,
+      "numViews": 237,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "4705ac5e08df4950b98d27c7a5976832",
+      "title": "Educação de Jovens e Adultos: matrícula por nível de ensino, segundo as Dependências Administrativas, entre 2001-2005",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1694439223000,
+      "created": 1537999697000,
+      "url": null,
+      "size": 19968,
+      "numViews": 116,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1d5758f7eb6d4ff4b392a1cf66f4d1e4",
+      "title": "Educação Infantil  e Ensino fundamental: número de escolas, creches, turmas e matrículas na rede pública municipal, segundo as Coordenações Regionais de Educação, no Município do Rio de Janeiro entre 2004-2008",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1694522120000,
+      "created": 1537999718000,
+      "url": null,
+      "size": 56320,
+      "numViews": 185,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "82fd127fb3024d2484ef4faa6bd03836",
+      "title": "Ensino de pós-graduação; número e valor anual das bolsas concedidas pelo CNPQ para cursos no país, no exterior e projetos de fomento à pesquisa, por área, entre 2001-2005",
+      "type": "Microsoft Excel",
+      "snippet": "Número e valor anual das bolsas concedidas pelo CNPQ",
+      "modified": 1693506914000,
+      "created": 1537999763000,
+      "url": null,
+      "size": 49664,
+      "numViews": 138,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8588a63013b54f32934bc3c8456b3f33",
+      "title": "Número de matrículas da creche, por sexo e faixa etária, segundo as Dependências Administrativas, entre 2000-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1694455027000,
+      "created": 1537999974000,
+      "url": null,
+      "size": 47104,
+      "numViews": 254,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1a75d4a67a864ed6ab776a8a14cc7d6a",
+      "title": "Educação Infantil e Ensino Fundamental: crescimento percentual do número de matrículas na rede pública no Município do Rio de Janeiro entre 1999-2008",
+      "type": "Microsoft Excel",
+      "snippet": "Igual a 947",
+      "modified": 1694007837000,
+      "created": 1537999984000,
+      "url": null,
+      "size": 15360,
+      "numViews": 65,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "2b18933bbdc0473395c95ef228a36cd3",
+      "title": "Ensino Fundamental: 2 segmento - docentes, por grau de formação, segundo as Dependências Administrativas, entre 1999-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1693836831000,
+      "created": 1538000016000,
+      "url": null,
+      "size": 47616,
+      "numViews": 115,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "7888fde5637e4f2fa54cfb80f32321e4",
+      "title": "Ensino Fundamental Regular - IDEB de rede pública municipal: séries finais (6º ao 9º ano) - taxa de aprovação, nota média padronizada do SAEB e IDEB por municípios das capitais selecionadas entre 2005 - 2021",
+      "type": "Microsoft Excel",
+      "snippet": "O IDEB dos anos finais da Cidade do Rio de Janeiro aumentou de 4,9 em 2019 para 5,0 em 2021.",
+      "modified": 1667311599000,
+      "created": 1538000025000,
+      "url": null,
+      "size": 43520,
+      "numViews": 282,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "9fd1a8cc207a48c5bda7131e4e74b1ca",
+      "title": "IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023",
+      "type": "Microsoft Excel",
+      "snippet": "Entre os anos de 2021 e 2023 o IDEB do município do Rio de Janeiro subiu de 5,4 para 6,0, com a maior nota por Região Administrativa sendo a da RA IV Botafogo, com 6,5, e a menor nota a da RA XXVIII Jacarezinho, com 5,2.",
+      "modified": 1749578701000,
+      "created": 1538000115000,
+      "url": null,
+      "size": 1772032,
+      "numViews": 601,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "7d87a98eedf04db9b605cb0d29e1a0ba",
+      "title": "Educação de Jovens e Adultos: docentes, por grau de formação, segundo as Dependências Administrativas, entre 1999-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1694542287000,
+      "created": 1538000209000,
+      "url": null,
+      "size": 46592,
+      "numViews": 90,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "59ae30dc3ab344d6b214965ce1dd39bf",
+      "title": "Pessoas de 14 anos ou mais de idade, por último grau de ensino concluído, segundo as classes de rendimento domiciliar per capita no Município do Rio de Janeiro em 2008/2009",
+      "type": "Microsoft Excel",
+      "snippet": "",
+      "modified": 1695151040000,
+      "created": 1538000299000,
+      "url": null,
+      "size": 31232,
+      "numViews": 129,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "73789aeca2c647e9976e7534dee8428e",
+      "title": "Educação Infantil - Percentual de matrículas na educação infantil em comparação com a matrícula total na rede pública no Município do Rio de Janeiro entre 1999-2008",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1694454952000,
+      "created": 1538000324000,
+      "url": null,
+      "size": 15872,
+      "numViews": 110,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "7ab7b5429f2a459f8a8ac66ed84edfd9",
+      "title": "Estudantes de 5 anos ou mais de idade, por grau e série que frequentavam, segundo os grupos de idade, no Município do Rio de Janeiro em 2008/2009",
+      "type": "Microsoft Excel",
+      "snippet": "Aguardando convênio com o IBGE",
+      "modified": 1693499607000,
+      "created": 1538000333000,
+      "url": null,
+      "size": 32768,
+      "numViews": 72,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "1dc77ea3ee9b4df1abe19c3a8dcbb1fd",
+      "title": "Educação Infantil e Ensino Fundamental: unidades escolares da rede pública municipal por modalidade e segmento, segundo as Coordenações Regionais de Educação (CRE) no Município do Rio de Janeiro, entre 2002-2009",
+      "type": "Microsoft Excel",
+      "snippet": "Não temos todas as informações (não temos como definir as modalidades de cada ano)",
+      "modified": 1559174112000,
+      "created": 1538000343000,
+      "url": null,
+      "size": 102912,
+      "numViews": 74,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "4386c5f2dec04737a9917b6ce21e2686",
+      "title": "Número de professores em exercício, por organização acadêmica, segundo a dependência administrativa no Estado do Rio de Janeiro, entre 2000-2021",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2021 foram registrados 27.673 professores em exercício no Rio de Janeiro, número menor que o registrado no ano anterior.",
+      "modified": 1672835285000,
+      "created": 1538000352000,
+      "url": null,
+      "size": 158208,
+      "numViews": 372,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "ae84ed477210481ebdf7be570fb2e701",
+      "title": "Número de instituições de ensino superior, por organização acadêmica, segundo a dependência administrativa no Município do Rio de Janeiro, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 foram registradas 69 instituições de ensino superior no Município do Rio de Janeiro.",
+      "modified": 1699447742000,
+      "created": 1538000432000,
+      "url": null,
+      "size": 115712,
+      "numViews": 356,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "60a5445e95b44bba98e07fd9617c9b56",
+      "title": "Educação Básica: idade mediana de conclusão, por sexo, no ensino fundamental e médio, segundo as Dependências Administrativas, no Município do Rio de Janeiro entre 1998-2005",
+      "type": "Microsoft Excel",
+      "snippet": "O Inep não divulga mais esta informação",
+      "modified": 1559182784000,
+      "created": 1538000623000,
+      "url": null,
+      "size": 19456,
+      "numViews": 136,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "c9e9bae1f47c46a8a0e17e56e774bede",
+      "title": "Indicadores de Educação: atendimento educacional ao adulto, nível de escolaridade de pessoas de 25 anos e mais, por Bairros ou Grupos de Bairros, em 1991/2000",
+      "type": "Microsoft Excel",
+      "snippet": "Indicadores de Educação: atendimento educacional ao adulto.",
+      "modified": 1694011468000,
+      "created": 1538000732000,
+      "url": null,
+      "size": 70656,
+      "numViews": 354,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "0a5a97fed2e540fd8320c05e70867491",
+      "title": "Número e proporção das pessoas de 0 a 4 anos que frequentam escola ou creche e nível de ensino, segundo as Regiões Administrativas (RA) do Município do Rio de Janeiro, em 2000/2010",
+      "type": "Microsoft Excel",
+      "snippet": "Houve um aumento de 62% no numero de crianças de 0 a 4 anos frequentando escola na Cidade do Rio de Janeiro entre 2000 e 2010",
+      "modified": 1559173178000,
+      "created": 1538000780000,
+      "url": null,
+      "size": 55808,
+      "numViews": 120,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "6bf11f2aba7547ab9f76e4ed2a01d54e",
+      "title": "Número e distribuição percentual de matrículas em cursos de graduação presenciais, por organização acadêmica, segundo a categoria administrativa no Município do Rio de Janeiro, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 foram registradas 236.456 matrículas em cursos de graduação presenciais no Município do Rio de Janeiro, número menor que o registrado no ano anterior.\r\n",
+      "modified": 1699361088000,
+      "created": 1538000820000,
+      "url": null,
+      "size": 274944,
+      "numViews": 182,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8c139f62fd464c65a38e9d201d509327",
+      "title": "Número de alunos matriculados na rede pública municipal por sexo e Coordenações Regionais de Educação (CRE) e matrícula inicial, no Município do Rio de Janeiro entre 1999-2013",
+      "type": "Microsoft Excel",
+      "snippet": "A razão homem/mulher é maior na 10ª CRE",
+      "modified": 1695148440000,
+      "created": 1538000892000,
+      "url": null,
+      "size": 185856,
+      "numViews": 77,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "a810f5ac9243472f80d38ee4c9d8845d",
+      "title": "Educação de Jovens e Adultos: concluintes, segundo as Dependências Administrativas, entre 2000-2005",
+      "type": "Microsoft Excel",
+      "snippet": "O Inep não divulga mais esta informação",
+      "modified": 1693418156000,
+      "created": 1538000901000,
+      "url": null,
+      "size": 17920,
+      "numViews": 108,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "6754397155a04352bcda5f3bf389e094",
+      "title": "Média de anos de estudo da população residente, segundo as Regiões Administrativas (RA) do Município do Rio de Janeiro - 2000",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693999688000,
+      "created": 1538001012000,
+      "url": null,
+      "size": 33280,
+      "numViews": 160,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "d1e1192de4854ee4b53095a6f3274018",
+      "title": "Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE) e matrícula final, entre 1999-2012 ",
+      "type": "Microsoft Excel",
+      "snippet": "Número de matrículas do Ens. Fundamental por série e projetos de correção de fluxo (matrícula final)",
+      "modified": 1694450792000,
+      "created": 1538001128000,
+      "url": null,
+      "size": 286720,
+      "numViews": 66,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "646b20dfbf944f21a036f3f50fd80424",
+      "title": "Educação Infantil: Creche - matrícula, por sexo e faixa etária, segundo as Dependências Administrativas, entre 2007-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1693837454000,
+      "created": 1538001156000,
+      "url": null,
+      "size": 47104,
+      "numViews": 172,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "0f6d773c93654593a5a73d7ac8b66819",
+      "title": "Educação Infantil e  Ensino fundamental: docentes por categoria funcional na rede pública municipal, segundo as Coordenações Regionais de Educação (CRE), entre 2005-2008",
+      "type": "Microsoft Excel",
+      "snippet": "Não temos dados sobre professor",
+      "modified": 1559174124000,
+      "created": 1538001178000,
+      "url": null,
+      "size": 20480,
+      "numViews": 65,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "bba0d7d3c31c4cfd8a6940cc283d52cc",
+      "title": "Matrículas na rede municipal de educação, por níveis de ensino, segundo as Áreas de Planejamento (AP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013",
+      "type": "Microsoft Excel",
+      "snippet": "Número de matrículas por bairro e RA",
+      "modified": 1694453467000,
+      "created": 1538001252000,
+      "url": null,
+      "size": 295424,
+      "numViews": 435,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "fcc6f32c9ed346af8449e258594bcda6",
+      "title": "Estudantes de 5 anos ou mais de idade, por grau, duração do curso e série que frequentavam, segundo a idade, no Município do Rio de Janeiro em 2008/2009",
+      "type": "Microsoft Excel",
+      "snippet": "Estudantes de 5 anos ou mais de idade, por grau, duração do curso e série que frequentavam.",
+      "modified": 1694700020000,
+      "created": 1538001357000,
+      "url": null,
+      "size": 47104,
+      "numViews": 98,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "069f8afac36c456cbb13e845595e1331",
+      "title": "Taxa de alfabetização das pessoas de 10 anos ou mais de idade por sexo, segundo Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro - 2010",
+      "type": "Microsoft Excel",
+      "snippet": "Embora a taxa de alfabetização masculina seja ligeiramente maior do que a feminina para o município a AP 1 demonstra pequena inversão desta relação.",
+      "modified": 1693925102000,
+      "created": 1538001398000,
+      "url": null,
+      "size": 42496,
+      "numViews": 196,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "ebcf102e74484fb2bc445d6129d32d39",
+      "title": "Educação Especial: matrícula, por tipo de excepcionalidade, segundo as Dependências Administrativas, entre 1999-2002",
+      "type": "Microsoft Excel",
+      "snippet": "Educação Especial: matrícula, por tipo de excepcionalidade,",
+      "modified": 1693583125000,
+      "created": 1538001481000,
+      "url": null,
+      "size": 23552,
+      "numViews": 56,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "bbf87f279e0146beb31fd6f432ac4948",
+      "title": "Número e proporção da população de 10 anos ou mais,  por grupo de anos de estudo, segundo as Regiões Administrativas (RA) do Município do Rio de Janeiro - 2000",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1693417662000,
+      "created": 1538001491000,
+      "url": null,
+      "size": 48128,
+      "numViews": 103,
+      "tags": [
+        "Educação",
+        "Escolaridade da população"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "126a4fb5bc6a4882aca19917f27957eb",
+      "title": "Número de matrículas do ensino médio, por sexo, série e não-seriado, segundo as Dependências Administrativas, entre 1999-2020",
+      "type": "Microsoft Excel",
+      "snippet": "Os microdados do Censo Escolar divulgados pelo Inep passaram por uma adequação com o objetivo de garantir privacidade de dados pessoais. A partir de janeiro de 2022, o formato de divulgação impossibilita a identificação de alunos e professores.",
+      "modified": 1694528916000,
+      "created": 1538001773000,
+      "url": null,
+      "size": 47104,
+      "numViews": 261,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "68e95cb371fb4db38ecae841dd693a8e",
+      "title": "Número e distribuição percentual de cursos de graduação presenciais, por organização acadêmica, segundo a categoria administrativa no Município do Rio de Janeiro, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022 foram registrados 1.341 cursos de graduação presenciais no Município do Rio de Janeiro, apresentando um aumento em relação ao ano anterior.\r\n",
+      "modified": 1699363369000,
+      "created": 1538001783000,
+      "url": null,
+      "size": 284672,
+      "numViews": 110,
+      "tags": [
+        "Educação",
+        "Ensino superior"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "b0efdf51cf5644c985eb9b3b78c59f13",
+      "title": "Ensino Médio: matrículas e concluintes, por sexo, segundo as Dependências Administrativas, entre 2000-2005",
+      "type": "Microsoft Excel",
+      "snippet": "matrículas e concluintes, por sexo, segundo as Dependências Administrativas.",
+      "modified": 1694699227000,
+      "created": 1538001793000,
+      "url": null,
+      "size": 23040,
+      "numViews": 166,
+      "tags": [
+        "Educação",
+        "Ensino médio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "2052c5f289fc4a4da00e62b04f38d400",
+      "title": "Educação Infantil e Pré-escola: matrícula, por sexo e faixa etária, segundo as Dependências Administrativas, entre 1999-2006",
+      "type": "Microsoft Excel",
+      "snippet": "Igual a 1760",
+      "modified": 1695909527000,
+      "created": 1538001891000,
+      "url": null,
+      "size": 20480,
+      "numViews": 233,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "5260a891ea8b446d8707b8a11eb8a1f6",
+      "title": "Educação Especial: docentes, por grau de formação, segundo as Dependências Administrativas, entre 1999-2006",
+      "type": "Microsoft Excel",
+      "snippet": "docentes, por grau de formação, segundo as Dependências Administrativas.",
+      "modified": 1694702182000,
+      "created": 1538001962000,
+      "url": null,
+      "size": 24064,
+      "numViews": 78,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "404a14dd713f441f8321b5dfd0544cd7",
+      "title": "Ensino Fundamental: matrículas na rede pública municipal, independente da idade, sobre o total de pessoas de 7 a 14 anos residentes no Município do Rio de Janeiro - 1992-2006",
+      "type": "Microsoft Excel",
+      "snippet": "Não foi feita anotação",
+      "modified": 1694441766000,
+      "created": 1538002121000,
+      "url": null,
+      "size": 19456,
+      "numViews": 36,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "450e2d32fabe43c2840e0859d0546d2b",
+      "title": "Ensino Fundamental Regular - IDEB de rede pública municipal: séries iniciais (1º ao 5º ano) - taxa de aprovação, nota média padronizada do SAEB e IDEB por municípios das capitais selecionadas entre 2005 - 2021",
+      "type": "Microsoft Excel",
+      "snippet": " O IDEB dos anos iniciais da Cidade do Rio de Janeiro diminuiu de 5,8 em 2019 para 5,4 em 2021.",
+      "modified": 1667242495000,
+      "created": 1538002266000,
+      "url": null,
+      "size": 36864,
+      "numViews": 296,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "6e09b9320b3b419aa26b310b72d5bb71",
+      "title": "Ensino Fundamental - Número de escolas e dependências físicas existentes, segundo a dependência administrativa no Município do Rio de Janeiro, entre 2000-2022",
+      "type": "Microsoft Excel",
+      "snippet": "Em 2022, das 1.005 escolas municipais de ensino fundamental, 397 possuíam biblioteca, 730 tinham quadra de esportes e 1.001 tinham acesso à internet.",
+      "modified": 1696012889000,
+      "created": 1538048525000,
+      "url": null,
+      "size": 24576,
+      "numViews": 385,
+      "tags": [
+        "Educação",
+        "Educação básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "4ca27463d9ac4b51a58d5e0ef33d7647",
+      "title": "Cidade do Rio de Janeiro - Panorama",
+      "type": "Web Mapping Application",
+      "snippet": "Cidade do Rio de Janeiro - Panorama",
+      "modified": 1569353769000,
+      "created": 1542217152000,
+      "url": "https://cidades.ibge.gov.br/brasil/rj/rio-de-janeiro/panorama",
+      "size": 0,
+      "numViews": 638,
+      "tags": [
+        "PCRJ",
+        "Rio de Janeiro"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "85846019d9594d9fbf85d623216bceb6",
+      "title": "Armazenzinho",
+      "type": "Web Mapping Application",
+      "snippet": "Módulo do DATA.RIO com informações geográficas, históricas e gerais da cidade do Rio. Voltado para o público infanto juvenil.",
+      "modified": 1700316684000,
+      "created": 1559848383000,
+      "url": "https://siurblab.rio.rj.gov.br/armazenzinho/",
+      "size": 0,
+      "numViews": 354,
+      "tags": [
+        "Armazenzinho",
+        "Educação",
+        "Histórias do Rio",
+        "Conhecendo o Rio",
+        "Geografia do Rio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "80c4a2e4cea34be59c9164a8d30474a7",
+      "title": "Turno Único nas Escolas Municipais da Cidade do Rio de Janeiro: Caracterização, Percepções e Avaliação de Impacto (Dezembro/2020)",
+      "type": "PDF",
+      "snippet": "",
+      "modified": 1694454512000,
+      "created": 1607529955000,
+      "url": "",
+      "size": 14338219,
+      "numViews": 512,
+      "tags": [
+        "TU"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "d898f68da260460d900a9ef7bf8f6ead",
+      "title": "Índice de Progresso Social",
+      "type": "Hub Site Application",
+      "snippet": "O Índice de Progresso Social (IPS) é uma abordagem direta de mensuração do desenvolvimento humano a partir de indicadores selecionados em três dimensões e doze componentes definidos globalmente.",
+      "modified": 1703257007000,
+      "created": 1610637938000,
+      "url": "https://ips-rio-pcrj.hub.arcgis.com",
+      "size": 4887139,
+      "numViews": 185107,
+      "tags": [
+        "IPS",
+        "Índice de Progresso Social",
+        "índice",
+        "indicadores"
+      ],
+      "owner": "pesquisa_ctpe"
+    },
+    {
+      "id": "0afd8c122fb4400b847693e715106304",
+      "title": "Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)",
+      "type": "Feature Service",
+      "snippet": "Índice de Desenvolvimento Social da Região Metropolitana do Rio de Janeiro, calculado pelo IPP a partir dos dados do Censo Demográfico 2010 do IBGE.",
+      "modified": 1681752599000,
+      "created": 1649855793000,
+      "url": "https://services1.arcgis.com/OlP4dGNtIcnD3RYf/ArcGIS/rest/services/IDS_RM_2010/FeatureServer/0",
+      "size": 94,
+      "numViews": 17662,
+      "tags": [
+        "Desenvolvimento e Assistência Social",
+        "IDS",
+        "Censo 2010",
+        "IPP",
+        "Índice",
+        "setores censitários",
+        "setor censitário"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "52b6bd003abf4b8995ec9860e65a82c5",
+      "title": "Administração de Serviços Públicos: Chamados feitos ao 1746",
+      "type": "Document Link",
+      "snippet": "Chamados feitos ao 1746.",
+      "modified": 1716414356000,
+      "created": 1654201763000,
+      "url": "https://prefeitura-rio.github.io/queries-datario/pages/404?prefix=administração-de-serviços-públicos-chamados-feitos-ao-1746",
+      "size": 40,
+      "numViews": 488,
+      "tags": [
+        "datario",
+        "escritorio_de_dados",
+        "datalake",
+        "administracao_servicos_publicos",
+        "chamado_1746",
+        "bairro",
+        "administração pública",
+        "ocorrência",
+        "1746",
+        "SEGOVI"
+      ],
+      "owner": "escritorio_dados"
+    },
+    {
+      "id": "6409ea499d474bfeb4063cfc31203403",
+      "title": "Transporte Rodoviário: Histórico de GPS dos ônibus (SPPO)",
+      "type": "Document Link",
+      "snippet": "Dados históricos de posição geográfica de veículos do SPPO (ônibus).",
+      "modified": 1739981787000,
+      "created": 1654684114000,
+      "url": "https://prefeitura-rio.github.io/queries-datario/pages/404?prefix=transporte-rodoviário-histórico-de-gps-dos-ônibus-sppo",
+      "size": 40,
+      "numViews": 474,
+      "tags": [
+        "datario",
+        "escritorio_de_dados",
+        "datalake",
+        "transporte_rodoviario_municipal",
+        "gps_onibus",
+        "mobilidade"
+      ],
+      "owner": "escritorio_dados"
+    },
+    {
+      "id": "918dd39478594792a9cfa7080b84c0b5",
+      "title": "Base de dados do Índice de Progresso Social - IPS por Regiões Administrativas (RA) - Município do Rio de Janeiro - 2016/2018/2020/2022/2024",
+      "type": "Microsoft Excel",
+      "snippet": "O Índice de Progresso Social (IPS) é uma abordagem direta de mensuração do desenvolvimento humano a partir de indicadores selecionados em três dimensões e doze componentes. Esse arquivo é a base de dados completa por Região Administrativa. ",
+      "modified": 1735569272000,
+      "created": 1659035143000,
+      "url": null,
+      "size": 848416,
+      "numViews": 1403,
+      "tags": [
+        "Desenvolvimento e Assistência Social",
+        "IPS",
+        "Índice de Progresso Social",
+        "IPS Rio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "2e5836a3c1714943ad664b0bae1bc359",
+      "title": "Transporte Rodoviário: Viagens dos ônibus identificadas por GPS",
+      "type": "Document Link",
+      "snippet": "Detalhes de todas as viagens identificadas por GPS.",
+      "modified": 1739312305000,
+      "created": 1686923198000,
+      "url": "https://prefeitura-rio.github.io/queries-datario/pages/404?prefix=transporte-rodoviário-viagens-dos-ônibus-identificadas-por-gps",
+      "size": 117,
+      "numViews": 785,
+      "tags": [
+        "datario",
+        "escritorio_de_dados",
+        "datalake",
+        "transporte_rodoviario_municipal",
+        "viagem_onibus",
+        "transporte",
+        "ônibus",
+        "SPPO",
+        "GPS"
+      ],
+      "owner": "escritorio_dados"
+    },
+    {
+      "id": "eb63f575dc25425e87aea20d3c6a4f6d",
+      "title": "Transporte Rodoviário: Viagens dos ônibus identificadas por GPS",
+      "type": "Document Link",
+      "snippet": "Detalhes de todas as viagens identificadas por GPS.",
+      "modified": 1739981753000,
+      "created": 1688083815000,
+      "url": "https://prefeitura-rio.github.io/queries-datario/pages/404?prefix=transporte-rodoviário-viagens-dos-ônibus-identificadas-por-gps",
+      "size": 128,
+      "numViews": 435,
+      "tags": [
+        "datario",
+        "escritorio_de_dados",
+        "datalake",
+        "transporte_rodoviario_municipal",
+        "viagem_onibus",
+        "transporte",
+        "ônibus",
+        "SPPO",
+        "GPS"
+      ],
+      "owner": "escritorio_dados"
+    },
+    {
+      "id": "7001b082c7174c539bfbf4e8b34c682c",
+      "title": "Painel.RIO",
+      "type": "Document Link",
+      "snippet": "O Painel.Rio é dedicado à apresentação, acompanhamento e análise de indicadores de resiliência e visa alinhar o Rio de Janeiro às melhores práticas internacionais em resiliência urbana e desenvolvimento sutentável, substituindo a seçao Rio em Síntese do DATA.RIO.",
+      "modified": 1731597413000,
+      "created": 1731520928000,
+      "url": "https://painel.rio",
+      "size": 18,
+      "numViews": 2151,
+      "tags": [
+        "Painel.Rio",
+        "Rio em Síntese",
+        "Indicadores",
+        "Resiliência",
+        "Sustentabilidade",
+        "Desenvolvimento sustentável",
+        "Painel Rio"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "5a7061d49e894343ad5b1f84c94d2a72",
+      "title": "Cadernos do Rio - Prévias do Censo: Sexo e Idade (Dezembro/2024)",
+      "type": "PDF",
+      "snippet": "PARA DOWNLOAD EM DISPOSITIVO MÓVEL GIRE A TELA PARA O MODO PAISAGEM E CLIQUE EM \"BAIXAR\".",
+      "modified": 1736970694000,
+      "created": 1734466582000,
+      "url": null,
+      "size": 3847688,
+      "numViews": 565,
+      "tags": [
+        "censo 2022",
+        "cadernos do rio",
+        "sexo",
+        "idade",
+        "faixa etária",
+        "jovens",
+        "adultos",
+        "idosos",
+        "crianças",
+        "envelhecimento",
+        "população",
+        "saúde",
+        "4055",
+        "prévias do censo",
+        "terceira idade"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "18bc0480d7a84464b2ace33b19a5c558",
+      "title": "Cadernos do Rio - Prévias do Censo: Cor ou Raça (Dezembro/2024)",
+      "type": "PDF",
+      "snippet": "PARA DOWNLOAD EM DISPOSITIVO MÓVEL GIRE A TELA PARA O MODO PAISAGEM E CLIQUE EM \"BAIXAR\".",
+      "modified": 1736968337000,
+      "created": 1734467452000,
+      "url": null,
+      "size": 4494998,
+      "numViews": 485,
+      "tags": [
+        "censo 2022",
+        "cadernos do rio",
+        "cor ou raça",
+        "cor",
+        "raça",
+        "igualdade racial",
+        "sexo",
+        "idade",
+        "faixa etária",
+        "jovens",
+        "adultos",
+        "idosos",
+        "crianças",
+        "envelhecimento",
+        "população",
+        "saúde",
+        "4056",
+        "prévias do censo",
+        "terceira idade"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "756b6f71c5f849dd976836079eb2cac2",
+      "title": "Cadernos do Rio - Prévias do Censo: Dinâmica Demográfica dos Bairros (Dezembro/2024)",
+      "type": "PDF",
+      "snippet": "PARA DOWNLOAD EM DISPOSITIVO MÓVEL GIRE A TELA PARA O MODO PAISAGEM E CLIQUE EM \"BAIXAR\". ",
+      "modified": 1736968416000,
+      "created": 1734468999000,
+      "url": null,
+      "size": 5180298,
+      "numViews": 872,
+      "tags": [
+        "urbanismo",
+        "população",
+        "habitação",
+        "dinâmica demográfica",
+        "censo 2022",
+        "demografia",
+        "bairros",
+        "cadernos do rio",
+        "crescimento populacional",
+        "queda populacional",
+        "dinâmica urbana",
+        "Dinâmica Imobiliária",
+        "4057",
+        "prévias do censo",
+        "Habitação e Urbanismo"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "af77acf434244df883b9683b87913afe",
+      "title": "NOTA TÉCNICA 44 - Adaptação Metodológica do IDS: Rumo à Análise Comparativa com o Censo 2022 (Dezembro/2024)",
+      "type": "PDF",
+      "snippet": "Esta Nota Técnica apresenta a nova versão do cálculo do Índice de Desenvolvimento Social (IDS) de 2010, substituindo a variável \"Renda Domiciliar Per Capita\" por \"Renda dos Responsáveis pelo Domicílio\", conforme o Censo de 2022 do IBGE. A mudança reflete a diferença entre essas variáveis, visando permitir uma comparação adequada entre os IDS de 2010 e 202 , assim que estiverem disponíveis os dados pertinentes para setores censitários do Censo Demográfico 2022 necessários à composição do IDS.",
+      "modified": 1759255980000,
+      "created": 1735568224000,
+      "url": null,
+      "size": 1470875,
+      "numViews": 531,
+      "tags": [
+        "IDS",
+        "Índice de Desenvolvimento Social",
+        "Índices",
+        "Censo 2022",
+        "Censo 2010",
+        "4059"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8027e843895d467da91a7a8c747fd524",
+      "title": "NOTA TÉCNICA 45 - Resumo Executivo: Índice de Progresso Social (IPS) da Cidade do Rio de Janeiro 2024 (Dezembro/2024)",
+      "type": "PDF",
+      "snippet": "O presente documento é um resumo executivo com os resultados e a metodologia utilizados para o Índice de Progresso Social da cidade do Rio de Janeiro por Região Administrativa no ano de 2024.",
+      "modified": 1759255833000,
+      "created": 1735568337000,
+      "url": null,
+      "size": 1525894,
+      "numViews": 559,
+      "tags": [
+        "IPS",
+        "Índice de Progresso Social",
+        "Índices",
+        "IPS Rio",
+        "4060"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "04300a18d57241fab78a2336bdc7e39e",
+      "title": "Coleção Estudos Cariocas",
+      "type": "Document Link",
+      "snippet": "A Coleção Estudos Cariocas (ISSN 1984-7203) é uma publicação de estudos e pesquisas sobre o Município do Rio de Janeiro, vinculada ao Instituto Pereira Passos (IPP) da Secretaria Municipal da Casa Civil da Prefeitura do Rio de Janeiro. Desde 2001, tem publicado reflexões sobre a cidade do Rio de Janeiro e suas interlocuções regionais, sendo caracterizada pela amplitude temática de estudos, adequados ao recorte espacial do Rio de Janeiro.\n",
+      "modified": 1738601502000,
+      "created": 1736450186000,
+      "url": "https://estudoscariocas.rio",
+      "size": 27,
+      "numViews": 329,
+      "tags": [
+        "Revista",
+        "Estudos Cariocas",
+        "Periódico",
+        "Acadêmico",
+        "Academia",
+        "Publicação",
+        "4062"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "8644dbd04a0c472faa2b727718a8bcad",
+      "title": "Taxa de Analfabetismo da população de 15 anos ou mais, segundo as Regiões Administrativas (RA) do Município do Rio de Janeiro, em 2000/2010/2022",
+      "type": "CSV Collection",
+      "snippet": "A tabela apresenta a taxa de analfabetismo da população com 15 anos ou mais de idade no Município do Rio de Janeiro, segundo as Regiões Administrativas (RA), nos anos de 2000, 2010 e 2022. Os dados mostram a proporção de pessoas que não sabem ler e escrever em relação ao total da população nessa faixa etária.\n",
+      "modified": 1760383277000,
+      "created": 1759503297000,
+      "url": null,
+      "size": 3262,
+      "numViews": 141,
+      "tags": [
+        "População",
+        "Características gerais"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "e24e35a517be408495abbe098b6672f8",
+      "title": "Pessoas alfabetizadas, por faixa etária e sexo, segundo Bairros no Município do Rio de Janeiro em 2000/2010/2022",
+      "type": "CSV Collection",
+      "snippet": "Os arquivos indicam o número absoluto de pessoas alfabetizadas, segundo faixa etária e sexo, segundo Bairros em 2000, 2010 e 2022.\n",
+      "modified": 1760383501000,
+      "created": 1759507807000,
+      "url": null,
+      "size": 40051,
+      "numViews": 114,
+      "tags": [
+        "Educação",
+        "Educação Básica"
+      ],
+      "owner": "PrefeituraRio"
+    },
+    {
+      "id": "29d517eedb9c44379a07430280a12839",
+      "title": "Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997",
+      "type": "PDF",
+      "snippet": "O Índice de Qualidade Urbana das Favelas cariocas, avalia 462 favelas e a desigualdade entre Favela e Cidade Formal (quando agregados por Regiões Administrativas),utilizando 11 variáveis divididas em quatro dimensões principais: Ambiental,\r\nHabitacional, Educacional e Renda.",
+      "modified": 1774966705000,
+      "created": 1774963590000,
+      "url": null,
+      "size": 9454094,
+      "numViews": 27,
+      "tags": [
+        "Índice de Qualidade Urbana",
+        "IQU",
+        "Índice de Desenvolvimento Social",
+        "IDS",
+        "Índices de Desenvolvimento Socioeconômicos",
+        "Regiões Administrativas",
+        "RA",
+        "Favelas",
+        "Assentamentos de baixa Renda",
+        "Indicadores Sociais",
+        "Infraestrutura Urbana"
+      ],
+      "owner": "PrefeituraRio"
+    }
+  ]
+}

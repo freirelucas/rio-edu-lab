@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+title: "ACEC-Hub — Atlas Cibernético da Educação Carioca"
+abstract: "Operacionalização de papers acadêmicos sobre os 186 itens do Grupo Educação do data.rio (Instituto Pereira Passos / Prefeitura do Rio de Janeiro), na forma de análises reproduzíveis e visualizações interativas."
+type: software
+authors:
+  - family-names: "Freire"
+    given-names: "Lucas"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"  # TODO: preencher
+repository-code: "https://github.com/freirelucas/acec-hub"
+url: "https://github.com/freirelucas/acec-hub"
+license: MIT
+keywords:
+  - "open data"
+  - "education"
+  - "Rio de Janeiro"
+  - "data.rio"
+  - "urban analytics"
+  - "H3"
+  - "inequality"
+  - "reproducible research"
+date-released: "2026-05-05"
+version: "0.1.0-dev"

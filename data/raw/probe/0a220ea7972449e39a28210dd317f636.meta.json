@@ -1,0 +1,71 @@
+{
+  "id": "0a220ea7972449e39a28210dd317f636",
+  "owner": "PrefeituraRio",
+  "orgId": "OlP4dGNtIcnD3RYf",
+  "created": 1450113361000,
+  "modified": 1713994614000,
+  "guid": null,
+  "name": null,
+  "title": "Escolas Municipais",
+  "type": "Feature Service",
+  "typeKeywords": [
+    "ArcGIS Server",
+    "Data",
+    "Feature Access",
+    "Feature Service",
+    "Metadata",
+    "Service"
+  ],
+  "description": "<div>São ao todo 1.590 registros, incluindo vários tipos de equipamentos da SME, para além das unidades escolares:</div><div><ul><li>Biblioteca Escolar Municipal (13)</li><li>CDEI - Centro de Desenvolvimento de Educação Integrada (1)</li><li>CEJA - Centro de Educação de Jovens e Adultos (2)</li><li>Centro Municipal de Referência de Educação de Jovens e Adultos (1)</li><li>CIEP (101)</li><li>Clube Escolar (7)</li><li>Creche Municipal (247)</li><li>EDI (286)</li><li>Escola Cívico Militar (1)</li><li>Escola Especial Municipal (10)</li><li>Escola Municipal (911)</li><li>Núcleo de Arte (9)</li><li>Polo de Educação pelo Trabalho (1)</li></ul><div>A tabela atualizada contém os campos: CRE, Designação, Denominação, Tipo, Latitude e Longitude.</div></div>",
+  "tags": [
+    "Educação",
+    "Escolas",
+    "Escolas Municipais"
+  ],
+  "snippet": "Camada de dados das unidades da Secretaria Municipal de Educação, contendo Escolas Municipais, Espaços de Desenvolvimento Infantil (EDI), Creches e outros. Última atualização: Junho/2023",
+  "thumbnail": "thumbnail/thumbnail1713549019552.png",
+  "documentation": null,
+  "extent": [
+    [
+      -43.7263,
+      -23.0694
+    ],
+    [
+      -43.1052,
+      -22.7532
+    ]
+  ],
+  "categories": [
+    "/Categories/Educação"
+  ],
+  "spatialReference": null,
+  "accessInformation": "Prefeitura da Cidade do Rio de Janeiro",
+  "classification": null,
+  "licenseInfo": "<a href='https://creativecommons.org/licenses/by/4.0' rel='nofollow ugc'><img alt='Creative Commons License' src='https://i.creativecommons.org/l/by/4.0/88x31.png' style='border-width:0;' /></a><br />This work is licensed under a <a href='https://creativecommons.org/licenses/by/4.0' rel='nofollow ugc'>Creative Commons Attribution 4.0 International License</a>",
+  "culture": "pt-br",
+  "properties": null,
+  "advancedSettings": null,
+  "url": "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Educacao/SME/MapServer/1",
+  "proxyFilter": null,
+  "access": "public",
+  "size": 72,
+  "subInfo": 0,
+  "appCategories": [],
+  "industries": [],
+  "languages": [],
+  "largeThumbnail": null,
+  "banner": null,
+  "screenshots": [],
+  "listed": false,
+  "commentsEnabled": true,
+  "numComments": 0,
+  "numRatings": 0,
+  "avgRating": 0,
+  "numViews": 113812,
+  "scoreCompleteness": 98,
+  "groupDesignations": null,
+  "apiToken1ExpirationDate": -1,
+  "apiToken2ExpirationDate": -1,
+  "contentOrigin": "self",
+  "lastViewed": 1778014800000
+}
