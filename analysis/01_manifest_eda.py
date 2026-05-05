@@ -2,7 +2,7 @@
 
 Produz:
   - data/manifest_enriched.csv  (inventário derivado, uma linha por item)
-  - analysis/reports/01_manifest_eda.md  (relatório markdown)
+  - docs/reports/01_manifest_eda.md  (relatório markdown, publicado no site)
 
 Uso:
   python analysis/01_manifest_eda.py
@@ -20,7 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "data" / "manifest.json"
 ENRICHED = ROOT / "data" / "manifest_enriched.csv"
-REPORT = ROOT / "analysis" / "reports" / "01_manifest_eda.md"
+REPORT = ROOT / "docs" / "reports" / "01_manifest_eda.md"
 
 GRANULARITY_PATTERNS = [
     ("escola", r"\b(escola|escolar|unidade escolar)s?\b"),

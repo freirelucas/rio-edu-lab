@@ -6,7 +6,7 @@ Hipótese: itens sem `url` no manifest do grupo são resolvíveis via
 Saídas:
   - data/raw/probe/{id}.meta.json   metadata completo
   - data/raw/probe/{id}.head.json   resultado do HEAD em /data (quando aplicável)
-  - analysis/reports/02_ingestion_probe.md  relatório
+  - docs/reports/02_ingestion_probe.md  relatório, publicado no site
 
 Uso:
   python analysis/02_ingestion_probe.py
@@ -22,7 +22,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw" / "probe"
-REPORT = ROOT / "analysis" / "reports" / "02_ingestion_probe.md"
+REPORT = ROOT / "docs" / "reports" / "02_ingestion_probe.md"
 
 PORTAL_BASE = "https://pcrj.maps.arcgis.com/sharing/rest"
 USER_AGENT = "rio-edu-lab/0.1 (probe; +research)"
