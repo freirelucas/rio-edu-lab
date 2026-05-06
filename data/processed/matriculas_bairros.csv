@@ -1,0 +1,620 @@
+ap,ra,bairro,year,total_matriculas
+Área de Planejamento 1,I Portuária,Saúde,2010,662.0
+Área de Planejamento 1,I Portuária,Gamboa,2010,944.0
+Área de Planejamento 1,I Portuária,Santo Cristo,2010,1691.0
+Área de Planejamento 1,I Portuária,Caju,2010,3851.0
+Área de Planejamento 1,II Centro,Centro,2010,5459.0
+Área de Planejamento 1,III Rio Comprido,Catumbi,2010,1599.0
+Área de Planejamento 1,III Rio Comprido,Rio Comprido,2010,3663.0
+Área de Planejamento 1,III Rio Comprido,Cidade Nova,2010,791.0
+Área de Planejamento 1,III Rio Comprido,Estácio,2010,731.0
+Área de Planejamento 1,VII São Cristóvão,Imperial de São Cristóvão,2010,3821.0
+Área de Planejamento 1,VII São Cristóvão,Mangueira,2010,968.0
+Área de Planejamento 1,VII São Cristóvão,Benfica,2010,4887.0
+Área de Planejamento 1,VII São Cristóvão,Vasco da Gama,2010,717.0
+Área de Planejamento 1,XXI Paquetá,Paquetá,2010,490.0
+Área de Planejamento 1,XXIII Santa Teresa,Santa Teresa,2010,3070.0
+Área de Planejamento 2,IV Botafogo,Flamengo,2010,778.0
+Área de Planejamento 2,IV Botafogo,Glória,2010,533.0
+Área de Planejamento 2,IV Botafogo,Laranjeiras,2010,2109.0
+Área de Planejamento 2,IV Botafogo,Catete,2010,871.0
+Área de Planejamento 2,IV Botafogo,Cosme Velho,2010,200.0
+Área de Planejamento 2,IV Botafogo,Botafogo,2010,2330.0
+Área de Planejamento 2,IV Botafogo,Humaitá,2010,934.0
+Área de Planejamento 2,IV Botafogo,Urca,2010,1445.0
+Área de Planejamento 2,V Copacabana,Leme,2010,621.0
+Área de Planejamento 2,V Copacabana,Copacabana,2010,3806.0
+Área de Planejamento 2,VI Lagoa,Ipanema,2010,2631.0
+Área de Planejamento 2,VI Lagoa,Leblon,2010,3299.0
+Área de Planejamento 2,VI Lagoa,Lagoa,2010,929.0
+Área de Planejamento 2,VI Lagoa,Jardim Botânico,2010,1317.0
+Área de Planejamento 2,VI Lagoa,Gávea,2010,3307.0
+Área de Planejamento 2,VI Lagoa,Vidigal,2010,1370.0
+Área de Planejamento 2,VI Lagoa,São Conrado,2010,1697.0
+Área de Planejamento 2,VIII Tijuca,Praça da Bandeira,2010,1122.0
+Área de Planejamento 2,VIII Tijuca,Tijuca,2010,8236.0
+Área de Planejamento 2,VIII Tijuca,Alto da Boa Vista,2010,1766.0
+Área de Planejamento 2,IX Vila Isabel,Maracanã,2010,1568.0
+Área de Planejamento 2,IX Vila Isabel,Vila Isabel,2010,5335.0
+Área de Planejamento 2,IX Vila Isabel,Andaraí,2010,2989.0
+Área de Planejamento 2,IX Vila Isabel,Grajaú,2010,3439.0
+Área de Planejamento 2,XXVII Rocinha,Rocinha,2010,2190.0
+Área de Planejamento 3,X Ramos,Manguinhos,2010,3029.0
+Área de Planejamento 3,X Ramos,Bonsucesso,2010,3233.0
+Área de Planejamento 3,X Ramos,Ramos,2010,9699.0
+Área de Planejamento 3,X Ramos,Olaria,2010,8035.0
+Área de Planejamento 3,XI Penha,Penha,2010,8391.0
+Área de Planejamento 3,XI Penha,Penha Circular,2010,5826.0
+Área de Planejamento 3,XI Penha,Brás de Pina,2010,4889.0
+Área de Planejamento 3,XII Inhaúma,Higienópolis,2010,5099.0
+Área de Planejamento 3,XII Inhaúma,Maria da Graça,2010,1068.0
+Área de Planejamento 3,XII Inhaúma,Del Castilho,2010,2052.0
+Área de Planejamento 3,XII Inhaúma,Inhaúma,2010,10402.0
+Área de Planejamento 3,XII Inhaúma,Engenho da Rainha,2010,3321.0
+Área de Planejamento 3,XII Inhaúma,Tomás Coelho,2010,1313.0
+Área de Planejamento 3,XIII Méier,Jacaré,2010,2427.0
+Área de Planejamento 3,XIII Méier,Rocha,2010,1365.0
+Área de Planejamento 3,XIII Méier,Riachuelo,2010,1878.0
+Área de Planejamento 3,XIII Méier,Sampaio,2010,527.0
+Área de Planejamento 3,XIII Méier,Engenho Novo,2010,1954.0
+Área de Planejamento 3,XIII Méier,Lins de Vasconcelos,2010,3308.0
+Área de Planejamento 3,XIII Méier,Méier,2010,3991.0
+Área de Planejamento 3,XIII Méier,Todos os Santos,2010,501.0
+Área de Planejamento 3,XIII Méier,Cachambi,2010,2388.0
+Área de Planejamento 3,XIII Méier,Engenho de Dentro,2010,3790.0
+Área de Planejamento 3,XIII Méier,Água Santa,2010,749.0
+Área de Planejamento 3,XIII Méier,Encantado,2010,700.0
+Área de Planejamento 3,XIII Méier,Piedade,2010,2912.0
+Área de Planejamento 3,XIII Méier,Pilares,2010,3233.0
+Área de Planejamento 3,XIV Irajá,Vila Kosmos,2010,2259.0
+Área de Planejamento 3,XIV Irajá,Vicente de Carvalho,2010,1462.0
+Área de Planejamento 3,XIV Irajá,Vila da Penha,2010,1147.0
+Área de Planejamento 3,XIV Irajá,Vista Alegre,2010,583.0
+Área de Planejamento 3,XIV Irajá,Irajá,2010,15926.0
+Área de Planejamento 3,XIV Irajá,Colégio,2010,2586.0
+Área de Planejamento 3,XV Madureira,Campinho,2010,793.0
+Área de Planejamento 3,XV Madureira,Quintino Bocaiuva,2010,5315.0
+Área de Planejamento 3,XV Madureira,Cavalcanti,2010,2727.0
+Área de Planejamento 3,XV Madureira,Engenheiro Leal,2010,954.0
+Área de Planejamento 3,XV Madureira,Cascadura,2010,2885.0
+Área de Planejamento 3,XV Madureira,Madureira,2010,4163.0
+Área de Planejamento 3,XV Madureira,Vaz Lobo,2010,796.0
+Área de Planejamento 3,XV Madureira,Turiaçu,2010,1332.0
+Área de Planejamento 3,XV Madureira,Rocha Miranda,2010,8229.0
+Área de Planejamento 3,XV Madureira,Honório Gurgel,2010,2262.0
+Área de Planejamento 3,XV Madureira,Osvaldo Cruz,2010,4341.0
+Área de Planejamento 3,XV Madureira,Bento Ribeiro,2010,1584.0
+Área de Planejamento 3,XV Madureira,Marechal Hermes,2010,5444.0
+Área de Planejamento 3,XX Ilha do Governador,Zumbi,2010,808.0
+Área de Planejamento 3,XX Ilha do Governador,Cacuia,2010,179.0
+Área de Planejamento 3,XX Ilha do Governador,Pitangueiras,2010,462.0
+Área de Planejamento 3,XX Ilha do Governador,Praia da Bandeira,2010,616.0
+Área de Planejamento 3,XX Ilha do Governador,Cocotá,2010,296.0
+Área de Planejamento 3,XX Ilha do Governador,Bancários,2010,2285.0
+Área de Planejamento 3,XX Ilha do Governador,Freguesia,2010,810.0
+Área de Planejamento 3,XX Ilha do Governador,Jardim Guanabara,2010,1985.0
+Área de Planejamento 3,XX Ilha do Governador,Jardim Carioca,2010,852.0
+Área de Planejamento 3,XX Ilha do Governador,Tauá,2010,1417.0
+Área de Planejamento 3,XX Ilha do Governador,Moneró,2010,1722.0
+Área de Planejamento 3,XX Ilha do Governador,Portuguesa,2010,2419.0
+Área de Planejamento 3,XX Ilha do Governador,Galeão,2010,3013.0
+Área de Planejamento 3,XX Ilha do Governador,Cidade Universitária,2010,708.0
+Área de Planejamento 3,XXII Anchieta,Guadalupe,2010,6452.0
+Área de Planejamento 3,XXII Anchieta,Anchieta,2010,3571.0
+Área de Planejamento 3,XXII Anchieta,Parque Anchieta,2010,7100.0
+Área de Planejamento 3,XXII Anchieta,Ricardo de Albuquerque,2010,2260.0
+Área de Planejamento 3,XXV Pavuna,Coelho Neto,2010,7145.0
+Área de Planejamento 3,XXV Pavuna,Acari,2010,723.0
+Área de Planejamento 3,XXV Pavuna,Costa Barros,2010,3449.0
+Área de Planejamento 3,XXV Pavuna,Pavuna,2010,14900.0
+Área de Planejamento 3,XXV Pavuna,Parque Colúmbia,2010,1064.0
+Área de Planejamento 3,XXVIII Jacarezinho,Jacarezinho,2010,897.0
+Área de Planejamento 3,XXIX Complexo do Alemão,Complexo do Alemão,2010,2549.0
+Área de Planejamento 3,XXX Maré,Maré,2010,14905.0
+Área de Planejamento 3,XXXI Vigário Geral,Cordovil,2010,6096.0
+Área de Planejamento 3,XXXI Vigário Geral,Parada de Lucas,2010,1370.0
+Área de Planejamento 3,XXXI Vigário Geral,Vigário Geral,2010,4356.0
+Área de Planejamento 3,XXXI Vigário Geral,Jardim América,2010,5149.0
+Área de Planejamento 4,XVI Jacarepaguá,Jacarepaguá,2010,13095.0
+Área de Planejamento 4,XVI Jacarepaguá,Anil,2010,4401.0
+Área de Planejamento 4,XVI Jacarepaguá,Gardenia Azul,2010,1122.0
+Área de Planejamento 4,XVI Jacarepaguá,Curicica,2010,5673.0
+Área de Planejamento 4,XVI Jacarepaguá,Freguesia Jacarepaguá,2010,5345.0
+Área de Planejamento 4,XVI Jacarepaguá,Pechincha,2010,2105.0
+Área de Planejamento 4,XVI Jacarepaguá,Taquara,2010,14070.0
+Área de Planejamento 4,XVI Jacarepaguá,Tanque,2010,3930.0
+Área de Planejamento 4,XVI Jacarepaguá,Praça Seca,2010,6838.0
+Área de Planejamento 4,XVI Jacarepaguá,Vila Valqueire,2010,2750.0
+Área de Planejamento 4,XXXIV Cidade de Deus,Cidade de Deus,2010,6964.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Itanhangá,2010,4157.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Barra da Tijuca,2010,10651.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Vargem Pequena,2010,2042.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Vargem Grande,2010,2136.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Recreio dos Bandeirante,2010,3065.0
+Área de Planejamento 5,XXXIII Realengo,Deodoro,2010,1553.0
+Área de Planejamento 5,XXXIII Realengo,Vila Militar,2010,1562.0
+Área de Planejamento 5,XXXIII Realengo,Campo dos Afonsos,2010,1146.0
+Área de Planejamento 5,XXXIII Realengo,Jardim Sulacap,2010,716.0
+Área de Planejamento 5,XXXIII Realengo,Magalhães Bastos,2010,3111.0
+Área de Planejamento 5,XXXIII Realengo,Realengo,2010,19384.0
+Área de Planejamento 5,XVII Bangu,Padre Miguel,2010,7472.0
+Área de Planejamento 5,XVII Bangu,Bangu,2010,36858.0
+Área de Planejamento 5,XVII Bangu,Senador Camará,2010,11513.0
+Área de Planejamento 5,XVIII Campo grande,Santíssimo,2010,3220.0
+Área de Planejamento 5,XVIII Campo grande,Campo Grande,2010,45315.0
+Área de Planejamento 5,XVIII Campo grande,Senador Vasconcelos,2010,2784.0
+Área de Planejamento 5,XVIII Campo grande,Inhoaíba,2010,8851.0
+Área de Planejamento 5,XVIII Campo grande,Cosmos,2010,9926.0
+Área de Planejamento 5,XIX Santa Cruz,Paciência,2010,17901.0
+Área de Planejamento 5,XIX Santa Cruz,Santa Cruz,2010,40027.0
+Área de Planejamento 5,XIX Santa Cruz,Sepetiba,2010,5863.0
+Área de Planejamento 5,XXVI Guaratiba,Guaratiba,2010,18080.0
+Área de Planejamento 5,XXVI Guaratiba,Barra de Guaratiba,2010,1142.0
+Área de Planejamento 5,XXVI Guaratiba,Pedra de Guaratiba,2010,3564.0
+Área de Planejamento 5,XXVI Guaratiba,Bairro não identificado,2010,1338.0
+Área de Planejamento 5,XXVI Guaratiba,Fora do município (1),2010,429.0
+Área de Planejamento 1,I Portuária,Saúde,2011,722.0
+Área de Planejamento 1,I Portuária,Gamboa,2011,987.0
+Área de Planejamento 1,I Portuária,Santo Cristo,2011,1617.0
+Área de Planejamento 1,I Portuária,Caju,2011,4174.0
+Área de Planejamento 1,II Centro,Centro,2011,4915.0
+Área de Planejamento 1,III Rio Comprido,Catumbi,2011,1698.0
+Área de Planejamento 1,III Rio Comprido,Rio Comprido,2011,3477.0
+Área de Planejamento 1,III Rio Comprido,Cidade Nova,2011,869.0
+Área de Planejamento 1,III Rio Comprido,Estácio,2011,797.0
+Área de Planejamento 1,VII São Cristóvão,Imperial de São Cristóvão,2011,3703.0
+Área de Planejamento 1,VII São Cristóvão,Mangueira,2011,1083.0
+Área de Planejamento 1,VII São Cristóvão,Benfica,2011,5358.0
+Área de Planejamento 1,VII São Cristóvão,Vasco da Gama,2011,903.0
+Área de Planejamento 1,XXI Paquetá,Paquetá,2011,468.0
+Área de Planejamento 1,XXIII Santa Teresa,Santa Teresa,2011,3821.0
+Área de Planejamento 2,IV Botafogo,Flamengo,2011,760.0
+Área de Planejamento 2,IV Botafogo,Glória,2011,517.0
+Área de Planejamento 2,IV Botafogo,Laranjeiras,2011,2003.0
+Área de Planejamento 2,IV Botafogo,Catete,2011,879.0
+Área de Planejamento 2,IV Botafogo,Cosme Velho,2011,203.0
+Área de Planejamento 2,IV Botafogo,Botafogo,2011,2295.0
+Área de Planejamento 2,IV Botafogo,Humaitá,2011,952.0
+Área de Planejamento 2,IV Botafogo,Urca,2011,1422.0
+Área de Planejamento 2,V Copacabana,Leme,2011,615.0
+Área de Planejamento 2,V Copacabana,Copacabana,2011,3870.0
+Área de Planejamento 2,VI Lagoa,Ipanema,2011,2560.0
+Área de Planejamento 2,VI Lagoa,Leblon,2011,3011.0
+Área de Planejamento 2,VI Lagoa,Lagoa,2011,952.0
+Área de Planejamento 2,VI Lagoa,Jardim Botânico,2011,1253.0
+Área de Planejamento 2,VI Lagoa,Gávea,2011,3256.0
+Área de Planejamento 2,VI Lagoa,Vidigal,2011,1377.0
+Área de Planejamento 2,VI Lagoa,São Conrado,2011,1668.0
+Área de Planejamento 2,VIII Tijuca,Praça da Bandeira,2011,1073.0
+Área de Planejamento 2,VIII Tijuca,Tijuca,2011,8303.0
+Área de Planejamento 2,VIII Tijuca,Alto da Boa Vista,2011,1698.0
+Área de Planejamento 2,IX Vila Isabel,Maracanã,2011,1615.0
+Área de Planejamento 2,IX Vila Isabel,Vila Isabel,2011,5314.0
+Área de Planejamento 2,IX Vila Isabel,Andaraí,2011,2756.0
+Área de Planejamento 2,IX Vila Isabel,Grajaú,2011,3393.0
+Área de Planejamento 2,XXVII Rocinha,Rocinha,2011,2202.0
+Área de Planejamento 3,X Ramos,Manguinhos,2011,3535.0
+Área de Planejamento 3,X Ramos,Bonsucesso,2011,2879.0
+Área de Planejamento 3,X Ramos,Ramos,2011,9526.0
+Área de Planejamento 3,X Ramos,Olaria,2011,7530.0
+Área de Planejamento 3,XI Penha,Penha,2011,8976.0
+Área de Planejamento 3,XI Penha,Penha Circular,2011,5941.0
+Área de Planejamento 3,XI Penha,Brás de Pina,2011,4849.0
+Área de Planejamento 3,XII Inhaúma,Higienópolis,2011,4770.0
+Área de Planejamento 3,XII Inhaúma,Maria da Graça,2011,1322.0
+Área de Planejamento 3,XII Inhaúma,Del Castilho,2011,2247.0
+Área de Planejamento 3,XII Inhaúma,Inhaúma,2011,11406.0
+Área de Planejamento 3,XII Inhaúma,Engenho da Rainha,2011,3290.0
+Área de Planejamento 3,XII Inhaúma,Tomás Coelho,2011,1020.0
+Área de Planejamento 3,XIII Méier,Jacaré,2011,2201.0
+Área de Planejamento 3,XIII Méier,São Francisco Xavier,2011,127.0
+Área de Planejamento 3,XIII Méier,Rocha,2011,1324.0
+Área de Planejamento 3,XIII Méier,Riachuelo,2011,1650.0
+Área de Planejamento 3,XIII Méier,Sampaio,2011,390.0
+Área de Planejamento 3,XIII Méier,Engenho Novo,2011,2015.0
+Área de Planejamento 3,XIII Méier,Lins de Vasconcelos,2011,3188.0
+Área de Planejamento 3,XIII Méier,Méier,2011,3631.0
+Área de Planejamento 3,XIII Méier,Todos os Santos,2011,522.0
+Área de Planejamento 3,XIII Méier,Cachambi,2011,2617.0
+Área de Planejamento 3,XIII Méier,Engenho de Dentro,2011,4863.0
+Área de Planejamento 3,XIII Méier,Água Santa,2011,769.0
+Área de Planejamento 3,XIII Méier,Encantado,2011,678.0
+Área de Planejamento 3,XIII Méier,Piedade,2011,2990.0
+Área de Planejamento 3,XIII Méier,Pilares,2011,2547.0
+Área de Planejamento 3,XIV Irajá,Vila Kosmos,2011,2274.0
+Área de Planejamento 3,XIV Irajá,Vicente de Carvalho,2011,1385.0
+Área de Planejamento 3,XIV Irajá,Vila da Penha,2011,1056.0
+Área de Planejamento 3,XIV Irajá,Vista Alegre,2011,617.0
+Área de Planejamento 3,XIV Irajá,Irajá,2011,14461.0
+Área de Planejamento 3,XIV Irajá,Colégio,2011,3044.0
+Área de Planejamento 3,XV Madureira,Campinho,2011,672.0
+Área de Planejamento 3,XV Madureira,Quintino Bocaiuva,2011,5198.0
+Área de Planejamento 3,XV Madureira,Cavalcanti,2011,3132.0
+Área de Planejamento 3,XV Madureira,Engenheiro Leal,2011,953.0
+Área de Planejamento 3,XV Madureira,Cascadura,2011,3360.0
+Área de Planejamento 3,XV Madureira,Madureira,2011,3632.0
+Área de Planejamento 3,XV Madureira,Vaz Lobo,2011,822.0
+Área de Planejamento 3,XV Madureira,Turiaçu,2011,1139.0
+Área de Planejamento 3,XV Madureira,Rocha Miranda,2011,8161.0
+Área de Planejamento 3,XV Madureira,Honório Gurgel,2011,2185.0
+Área de Planejamento 3,XV Madureira,Osvaldo Cruz,2011,4506.0
+Área de Planejamento 3,XV Madureira,Bento Ribeiro,2011,1577.0
+Área de Planejamento 3,XV Madureira,Marechal Hermes,2011,5389.0
+Área de Planejamento 3,XX Ilha do Governador,Zumbi,2011,780.0
+Área de Planejamento 3,XX Ilha do Governador,Cacuia,2011,224.0
+Área de Planejamento 3,XX Ilha do Governador,Pitangueiras,2011,447.0
+Área de Planejamento 3,XX Ilha do Governador,Praia da Bandeira,2011,636.0
+Área de Planejamento 3,XX Ilha do Governador,Cocotá,2011,295.0
+Área de Planejamento 3,XX Ilha do Governador,Bancários,2011,2316.0
+Área de Planejamento 3,XX Ilha do Governador,Freguesia,2011,887.0
+Área de Planejamento 3,XX Ilha do Governador,Jardim Guanabara,2011,2036.0
+Área de Planejamento 3,XX Ilha do Governador,Jardim Carioca,2011,880.0
+Área de Planejamento 3,XX Ilha do Governador,Tauá,2011,1411.0
+Área de Planejamento 3,XX Ilha do Governador,Moneró,2011,1715.0
+Área de Planejamento 3,XX Ilha do Governador,Portuguesa,2011,2376.0
+Área de Planejamento 3,XX Ilha do Governador,Galeão,2011,2983.0
+Área de Planejamento 3,XX Ilha do Governador,Cidade Universitária,2011,541.0
+Área de Planejamento 3,XXII Anchieta,Guadalupe,2011,6516.0
+Área de Planejamento 3,XXII Anchieta,Anchieta,2011,3709.0
+Área de Planejamento 3,XXII Anchieta,Parque Anchieta,2011,7389.0
+Área de Planejamento 3,XXII Anchieta,Ricardo de Albuquerque,2011,1811.0
+Área de Planejamento 3,XXV Pavuna,Coelho Neto,2011,7096.0
+Área de Planejamento 3,XXV Pavuna,Acari,2011,1593.0
+Área de Planejamento 3,XXV Pavuna,Barros Filho,2011,90.0
+Área de Planejamento 3,XXV Pavuna,Costa Barros,2011,3090.0
+Área de Planejamento 3,XXV Pavuna,Pavuna,2011,15037.0
+Área de Planejamento 3,XXV Pavuna,Parque Colúmbia,2011,1066.0
+Área de Planejamento 3,XXVIII Jacarezinho,Jacarezinho,2011,1082.0
+Área de Planejamento 3,XXIX Complexo do Alemão,Complexo do Alemão,2011,2325.0
+Área de Planejamento 3,XXX Maré,Maré,2011,15506.0
+Área de Planejamento 3,XXXI Vigário Geral,Cordovil,2011,6156.0
+Área de Planejamento 3,XXXI Vigário Geral,Parada de Lucas,2011,1411.0
+Área de Planejamento 3,XXXI Vigário Geral,Vigário Geral,2011,4358.0
+Área de Planejamento 3,XXXI Vigário Geral,Jardim América,2011,4851.0
+Área de Planejamento 4,XVI Jacarepaguá,Jacarepaguá,2011,14128.0
+Área de Planejamento 4,XVI Jacarepaguá,Anil,2011,4816.0
+Área de Planejamento 4,XVI Jacarepaguá,Gardenia Azul,2011,1226.0
+Área de Planejamento 4,XVI Jacarepaguá,Curicica,2011,6485.0
+Área de Planejamento 4,XVI Jacarepaguá,Freguesia Jacarepaguá,2011,5320.0
+Área de Planejamento 4,XVI Jacarepaguá,Pechincha,2011,2081.0
+Área de Planejamento 4,XVI Jacarepaguá,Taquara,2011,13527.0
+Área de Planejamento 4,XVI Jacarepaguá,Tanque,2011,4034.0
+Área de Planejamento 4,XVI Jacarepaguá,Praça Seca,2011,7299.0
+Área de Planejamento 4,XVI Jacarepaguá,Vila Valqueire,2011,2829.0
+Área de Planejamento 4,XXXIV Cidade de Deus,Cidade de Deus,2011,6799.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Itanhangá,2011,4776.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Barra da Tijuca,2011,10291.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Vargem Pequena,2011,1956.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Vargem Grande,2011,2365.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Recreio dos Bandeirante,2011,3191.0
+Área de Planejamento 5,XXXIII Realengo,Deodoro,2011,1359.0
+Área de Planejamento 5,XXXIII Realengo,Vila Militar,2011,1579.0
+Área de Planejamento 5,XXXIII Realengo,Campo dos Afonsos,2011,1057.0
+Área de Planejamento 5,XXXIII Realengo,Jardim Sulacap,2011,703.0
+Área de Planejamento 5,XXXIII Realengo,Magalhães Bastos,2011,3047.0
+Área de Planejamento 5,XXXIII Realengo,Realengo,2011,19189.0
+Área de Planejamento 5,XVII Bangu,Padre Miguel,2011,6136.0
+Área de Planejamento 5,XVII Bangu,Bangu,2011,38182.0
+Área de Planejamento 5,XVII Bangu,Senador Camará,2011,12404.0
+Área de Planejamento 5,XVIII Campo grande,Santíssimo,2011,3180.0
+Área de Planejamento 5,XVIII Campo grande,Campo Grande,2011,46331.0
+Área de Planejamento 5,XVIII Campo grande,Senador Vasconcelos,2011,2783.0
+Área de Planejamento 5,XVIII Campo grande,Inhoaíba,2011,9014.0
+Área de Planejamento 5,XVIII Campo grande,Cosmos,2011,10696.0
+Área de Planejamento 5,XIX Santa Cruz,Paciência,2011,17967.0
+Área de Planejamento 5,XIX Santa Cruz,Santa Cruz,2011,37367.0
+Área de Planejamento 5,XIX Santa Cruz,Sepetiba,2011,8258.0
+Área de Planejamento 5,XXVI Guaratiba,Guaratiba,2011,18533.0
+Área de Planejamento 5,XXVI Guaratiba,Barra de Guaratiba,2011,619.0
+Área de Planejamento 5,XXVI Guaratiba,Pedra de Guaratiba,2011,3526.0
+Área de Planejamento 5,XXVI Guaratiba,Bairro não identificado,2011,263.0
+Área de Planejamento 5,XXVI Guaratiba,Fora do município (1),2011,422.0
+Área de Planejamento 1,I Portuária,Caju,2012,4130.0
+Área de Planejamento 1,I Portuária,Gamboa,2012,952.0
+Área de Planejamento 1,I Portuária,Santo Cristo,2012,1601.0
+Área de Planejamento 1,I Portuária,Saúde,2012,714.0
+Área de Planejamento 1,II Centro,Centro,2012,4375.0
+Área de Planejamento 1,III Rio Comprido,Catumbi,2012,1643.0
+Área de Planejamento 1,III Rio Comprido,Cidade Nova,2012,713.0
+Área de Planejamento 1,III Rio Comprido,Estácio,2012,780.0
+Área de Planejamento 1,III Rio Comprido,Rio Comprido,2012,3561.0
+Área de Planejamento 1,VII São Cristóvão,Benfica,2012,5351.0
+Área de Planejamento 1,VII São Cristóvão,Mangueira,2012,1091.0
+Área de Planejamento 1,VII São Cristóvão,Imperial de São Cristóvão,2012,3522.0
+Área de Planejamento 1,VII São Cristóvão,Vasco da Gama,2012,905.0
+Área de Planejamento 1,XXI  Paquetá,Paquetá,2012,467.0
+Área de Planejamento 1,XXIII Santa Teresa,Santa Teresa,2012,3608.0
+Área de Planejamento 2,IV Botafogo,Botafogo,2012,2266.0
+Área de Planejamento 2,IV Botafogo,Catete,2012,821.0
+Área de Planejamento 2,IV Botafogo,Cosme Velho,2012,193.0
+Área de Planejamento 2,IV Botafogo,Flamengo,2012,711.0
+Área de Planejamento 2,IV Botafogo,Glória,2012,504.0
+Área de Planejamento 2,IV Botafogo,Humaitá,2012,938.0
+Área de Planejamento 2,IV Botafogo,Laranjeiras,2012,1971.0
+Área de Planejamento 2,IV Botafogo,Urca,2012,1415.0
+Área de Planejamento 2,V Copacabana,Copacabana,2012,3798.0
+Área de Planejamento 2,V Copacabana,Leme,2012,622.0
+Área de Planejamento 2,VI Lagoa,Gávea,2012,3178.0
+Área de Planejamento 2,VI Lagoa,Ipanema,2012,2499.0
+Área de Planejamento 2,VI Lagoa,Jardim Botânico,2012,1222.0
+Área de Planejamento 2,VI Lagoa,Lagoa,2012,951.0
+Área de Planejamento 2,VI Lagoa,Leblon,2012,2933.0
+Área de Planejamento 2,VI Lagoa,São Conrado,2012,968.0
+Área de Planejamento 2,VI Lagoa,Vidigal,2012,1337.0
+Área de Planejamento 2,VIII Tijuca,Alto da Boa Vista,2012,1645.0
+Área de Planejamento 2,VIII Tijuca,Praça da Bandeira,2012,1043.0
+Área de Planejamento 2,VIII Tijuca,Tijuca,2012,8141.0
+Área de Planejamento 2,IX Vila Isabel,Andaraí,2012,2759.0
+Área de Planejamento 2,IX Vila Isabel,Grajaú,2012,3368.0
+Área de Planejamento 2,IX Vila Isabel,Maracanã,2012,1634.0
+Área de Planejamento 2,IX Vila Isabel,Vila Isabel,2012,5247.0
+Área de Planejamento 2,XXVII Rocinha,Rocinha,2012,2878.0
+Área de Planejamento 3,X Ramos,Bonsucesso,2012,2629.0
+Área de Planejamento 3,X Ramos,Manguinhos,2012,3464.0
+Área de Planejamento 3,X Ramos,Olaria,2012,7420.0
+Área de Planejamento 3,X Ramos,Ramos,2012,9336.0
+Área de Planejamento 3,XI Penha,Brás de Pina,2012,4843.0
+Área de Planejamento 3,XI Penha,Penha,2012,8588.0
+Área de Planejamento 3,XI Penha,Penha Circular,2012,5956.0
+Área de Planejamento 3,XII Inhaúma,Del Castilho,2012,2097.0
+Área de Planejamento 3,XII Inhaúma,Engenho da Rainha,2012,3200.0
+Área de Planejamento 3,XII Inhaúma,Higienópolis,2012,4689.0
+Área de Planejamento 3,XII Inhaúma,Inhaúma,2012,10969.0
+Área de Planejamento 3,XII Inhaúma,Maria da Graça,2012,1307.0
+Área de Planejamento 3,XII Inhaúma,Tomás Coelho,2012,1028.0
+Área de Planejamento 3,XIII Méier,Água Santa,2012,749.0
+Área de Planejamento 3,XIII Méier,Cachambi,2012,2594.0
+Área de Planejamento 3,XIII Méier,Encantado,2012,680.0
+Área de Planejamento 3,XIII Méier,Engenho de Dentro,2012,4681.0
+Área de Planejamento 3,XIII Méier,Engenho Novo,2012,1798.0
+Área de Planejamento 3,XIII Méier,Jacaré,2012,2202.0
+Área de Planejamento 3,XIII Méier,Lins de Vasconcelos,2012,3147.0
+Área de Planejamento 3,XIII Méier,Méier,2012,3582.0
+Área de Planejamento 3,XIII Méier,Piedade,2012,3022.0
+Área de Planejamento 3,XIII Méier,Pilares,2012,2206.0
+Área de Planejamento 3,XIII Méier,Riachuelo,2012,1666.0
+Área de Planejamento 3,XIII Méier,Rocha,2012,1311.0
+Área de Planejamento 3,XIII Méier,Sampaio,2012,381.0
+Área de Planejamento 3,XIII Méier,São Francisco Xavier,2012,132.0
+Área de Planejamento 3,XIII Méier,Todos os Santos,2012,519.0
+Área de Planejamento 3,XIV Irajá,Colégio,2012,2938.0
+Área de Planejamento 3,XIV Irajá,Irajá,2012,13966.0
+Área de Planejamento 3,XIV Irajá,Vicente de Carvalho,2012,1412.0
+Área de Planejamento 3,XIV Irajá,Vila Cosmos,2012,2110.0
+Área de Planejamento 3,XIV Irajá,Vila da Penha,2012,898.0
+Área de Planejamento 3,XIV Irajá,Vista Alegre,2012,609.0
+Área de Planejamento 3,XV Madureira,Bento Ribeiro,2012,1579.0
+Área de Planejamento 3,XV Madureira,Campinho,2012,662.0
+Área de Planejamento 3,XV Madureira,Cascadura,2012,3316.0
+Área de Planejamento 3,XV Madureira,Cavalcanti,2012,3126.0
+Área de Planejamento 3,XV Madureira,Engenheiro Leal,2012,952.0
+Área de Planejamento 3,XV Madureira,Honório Gurgel,2012,2147.0
+Área de Planejamento 3,XV Madureira,Madureira,2012,3589.0
+Área de Planejamento 3,XV Madureira,Marechal Hermes,2012,5126.0
+Área de Planejamento 3,XV Madureira,Oswaldo Cruz,2012,4125.0
+Área de Planejamento 3,XV Madureira,Quintino Bocaiúva,2012,5145.0
+Área de Planejamento 3,XV Madureira,Rocha Miranda,2012,8086.0
+Área de Planejamento 3,XV Madureira,Turiaçú,2012,1103.0
+Área de Planejamento 3,XV Madureira,Vaz Lobo,2012,826.0
+Área de Planejamento 3,XX Ilha do Governador,Bancários,2012,2305.0
+Área de Planejamento 3,XX Ilha do Governador,Cacuia,2012,213.0
+Área de Planejamento 3,XX Ilha do Governador,Cidade Universitária,2012,514.0
+Área de Planejamento 3,XX Ilha do Governador,Cocotá,2012,293.0
+Área de Planejamento 3,XX Ilha do Governador,Freguesia,2012,855.0
+Área de Planejamento 3,XX Ilha do Governador,Galeão,2012,3005.0
+Área de Planejamento 3,XX Ilha do Governador,Jardim Carioca,2012,868.0
+Área de Planejamento 3,XX Ilha do Governador,Jardim Guanabara,2012,2016.0
+Área de Planejamento 3,XX Ilha do Governador,Moneró,2012,1726.0
+Área de Planejamento 3,XX Ilha do Governador,Pitangueiras,2012,441.0
+Área de Planejamento 3,XX Ilha do Governador,Portuguesa,2012,2347.0
+Área de Planejamento 3,XX Ilha do Governador,Praia da Bandeira,2012,627.0
+Área de Planejamento 3,XX Ilha do Governador,Tauá,2012,1369.0
+Área de Planejamento 3,XX Ilha do Governador,Zumbi,2012,773.0
+Área de Planejamento 3,XXII Anchieta,Anchieta,2012,3648.0
+Área de Planejamento 3,XXII Anchieta,Guadalupe,2012,6445.0
+Área de Planejamento 3,XXII Anchieta,Parque Anchieta,2012,7167.0
+Área de Planejamento 3,XXII Anchieta,Ricardo de Albuquerque,2012,1772.0
+Área de Planejamento 3,XXV Pavuna,Acari,2012,1595.0
+Área de Planejamento 3,XXV Pavuna,Barros Filho,2012,93.0
+Área de Planejamento 3,XXV Pavuna,Coelho Neto,2012,7020.0
+Área de Planejamento 3,XXV Pavuna,Costa Barros,2012,3217.0
+Área de Planejamento 3,XXV Pavuna,Parque Colúmbia,2012,1050.0
+Área de Planejamento 3,XXV Pavuna,Pavuna,2012,14791.0
+Área de Planejamento 3,XXVIII Jacarezinho,Jacarezinho,2012,1071.0
+Área de Planejamento 3,XXIX Complexo do Alemão (1),Complexo do Alemão,2012,2665.0
+Área de Planejamento 3,XXX Maré,Maré,2012,15299.0
+Área de Planejamento 3,XXXI Vigário Geral,Cordovil,2012,6024.0
+Área de Planejamento 3,XXXI Vigário Geral,Jardim América,2012,4700.0
+Área de Planejamento 3,XXXI Vigário Geral,Parada de Lucas,2012,1417.0
+Área de Planejamento 3,XXXI Vigário Geral,Vigário Geral,2012,4325.0
+Área de Planejamento 4,XVI Jacarepaguá,Anil,2012,4818.0
+Área de Planejamento 4,XVI Jacarepaguá,Curicica,2012,5829.0
+Área de Planejamento 4,XVI Jacarepaguá,Freguesia,2012,5151.0
+Área de Planejamento 4,XVI Jacarepaguá,Gardênia Azul,2012,1224.0
+Área de Planejamento 4,XVI Jacarepaguá,Jacarepaguá,2012,13203.0
+Área de Planejamento 4,XVI Jacarepaguá,Pechincha,2012,2089.0
+Área de Planejamento 4,XVI Jacarepaguá,Praça Seca,2012,6681.0
+Área de Planejamento 4,XVI Jacarepaguá,Tanque,2012,3935.0
+Área de Planejamento 4,XVI Jacarepaguá,Taquara,2012,13210.0
+Área de Planejamento 4,XVI Jacarepaguá,Vila Valqueire,2012,2760.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Barra da Tijuca,2012,10042.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Itanhangá,2012,4699.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Recreio dos Bandeirantes,2012,3024.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Vargem Grande,2012,2101.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Vargem Pequena,2012,1965.0
+Área de Planejamento 4,XXXIV Cidade de Deus,Cidade de Deus,2012,6812.0
+Área de Planejamento 5,XVII Bangu,Bangu,2012,37074.0
+Área de Planejamento 5,XVII Bangu,Padre Miguel,2012,6049.0
+Área de Planejamento 5,XVII Bangu,Senador Camará,2012,12000.0
+Área de Planejamento 5,XVIII Campo Grande,Campo Grande,2012,44984.0
+Área de Planejamento 5,XVIII Campo Grande,Cosmos,2012,10486.0
+Área de Planejamento 5,XVIII Campo Grande,Inhoaíba,2012,8958.0
+Área de Planejamento 5,XVIII Campo Grande,Santíssimo,2012,3210.0
+Área de Planejamento 5,XVIII Campo Grande,Senador Vasconcelos,2012,2788.0
+Área de Planejamento 5,XIX Santa Cruz,Paciência,2012,17953.0
+Área de Planejamento 5,XIX Santa Cruz,Santa Cruz,2012,36937.0
+Área de Planejamento 5,XIX Santa Cruz,Sepetiba,2012,7971.0
+Área de Planejamento 5,XXVI Guaratiba,Barra de Guaratiba,2012,615.0
+Área de Planejamento 5,XXVI Guaratiba,Guaratiba,2012,18373.0
+Área de Planejamento 5,XXVI Guaratiba,Pedra de Guaratiba,2012,3443.0
+Área de Planejamento 5,XXXIII Realengo,Campo dos Afonsos,2012,1040.0
+Área de Planejamento 5,XXXIII Realengo,Deodoro,2012,1362.0
+Área de Planejamento 5,XXXIII Realengo,Jardim Sulacap,2012,682.0
+Área de Planejamento 5,XXXIII Realengo,Magalhães Bastos,2012,3054.0
+Área de Planejamento 5,XXXIII Realengo,Realengo,2012,18357.0
+Área de Planejamento 5,XXXIII Realengo,Vila Militar,2012,1551.0
+Área de Planejamento 5,XXXIII Realengo,Fora do município (1),2012,420.0
+Área de Planejamento 5,XXXIII Realengo,Bairros não identificados,2012,1055.0
+Área de Planejamento 1,I Portuária,Caju,2013,4691.0
+Área de Planejamento 1,I Portuária,Gamboa,2013,1180.0
+Área de Planejamento 1,I Portuária,Santo Cristo,2013,1507.0
+Área de Planejamento 1,I Portuária,Saúde,2013,317.0
+Área de Planejamento 1,II Centro,Centro,2013,4777.0
+Área de Planejamento 1,III Rio Comprido,Catumbi,2013,359.0
+Área de Planejamento 1,III Rio Comprido,Cidade Nova,2013,741.0
+Área de Planejamento 1,III Rio Comprido,Estácio,2013,737.0
+Área de Planejamento 1,III Rio Comprido,Rio Comprido,2013,4158.0
+Área de Planejamento 1,VII São Cristóvão,Benfica,2013,5568.0
+Área de Planejamento 1,VII São Cristóvão,Mangueira,2013,1130.0
+Área de Planejamento 1,VII São Cristóvão,Imperial de São Cristóvão,2013,3599.0
+Área de Planejamento 1,VII São Cristóvão,Vasco da Gama,2013,1112.0
+Área de Planejamento 1,XXI  Paquetá,Paquetá,2013,479.0
+Área de Planejamento 1,XXIII Santa Teresa,Santa Teresa,2013,3718.0
+Área de Planejamento 2,IV Botafogo,Botafogo,2013,2195.0
+Área de Planejamento 2,IV Botafogo,Catete,2013,1039.0
+Área de Planejamento 2,IV Botafogo,Cosme Velho,2013,204.0
+Área de Planejamento 2,IV Botafogo,Flamengo,2013,702.0
+Área de Planejamento 2,IV Botafogo,Glória,2013,356.0
+Área de Planejamento 2,IV Botafogo,Humaitá,2013,946.0
+Área de Planejamento 2,IV Botafogo,Laranjeiras,2013,1760.0
+Área de Planejamento 2,IV Botafogo,Urca,2013,1433.0
+Área de Planejamento 2,V Copacabana,Copacabana,2013,3823.0
+Área de Planejamento 2,V Copacabana,Leme,2013,740.0
+Área de Planejamento 2,VI Lagoa,Gávea,2013,3578.0
+Área de Planejamento 2,VI Lagoa,Ipanema,2013,2378.0
+Área de Planejamento 2,VI Lagoa,Jardim Botânico,2013,1216.0
+Área de Planejamento 2,VI Lagoa,Lagoa,2013,902.0
+Área de Planejamento 2,VI Lagoa,Leblon,2013,3154.0
+Área de Planejamento 2,VI Lagoa,São Conrado,2013,1750.0
+Área de Planejamento 2,VI Lagoa,Vidigal,2013,1376.0
+Área de Planejamento 2,XXVII Rocinha,Rocinha,2013,1824.0
+Área de Planejamento 2,VIII Tijuca,Alto da Boa Vista,2013,1728.0
+Área de Planejamento 2,VIII Tijuca,Praça da Bandeira,2013,941.0
+Área de Planejamento 2,VIII Tijuca,Tijuca,2013,7903.0
+Área de Planejamento 2,IX Vila Isabel,Andaraí,2013,2977.0
+Área de Planejamento 2,IX Vila Isabel,Grajaú,2013,2992.0
+Área de Planejamento 2,IX Vila Isabel,Maracanã,2013,1523.0
+Área de Planejamento 2,IX Vila Isabel,Vila Isabel,2013,5395.0
+Área de Planejamento 3,X Ramos,Bonsucesso,2013,2659.0
+Área de Planejamento 3,X Ramos,Manguinhos,2013,3542.0
+Área de Planejamento 3,X Ramos,Olaria,2013,7605.0
+Área de Planejamento 3,X Ramos,Ramos,2013,8717.0
+Área de Planejamento 3,XXX Maré,Maré,2013,16232.0
+Área de Planejamento 3,XIII Méier,Água Santa,2013,717.0
+Área de Planejamento 3,XIII Méier,Cachambi,2013,2867.0
+Área de Planejamento 3,XIII Méier,Encantado,2013,688.0
+Área de Planejamento 3,XIII Méier,Engenho de Dentro,2013,3759.0
+Área de Planejamento 3,XIII Méier,Engenho Novo,2013,1679.0
+Área de Planejamento 3,XIII Méier,Jacaré,2013,2010.0
+Área de Planejamento 3,XIII Méier,Lins de Vasconcelos,2013,3062.0
+Área de Planejamento 3,XIII Méier,Méier,2013,3048.0
+Área de Planejamento 3,XIII Méier,Piedade,2013,3016.0
+Área de Planejamento 3,XIII Méier,Pilares,2013,3090.0
+Área de Planejamento 3,XIII Méier,Riachuelo,2013,1700.0
+Área de Planejamento 3,XIII Méier,Rocha,2013,1999.0
+Área de Planejamento 3,XIII Méier,Sampaio,2013,395.0
+Área de Planejamento 3,XIII Méier,São Francisco Xavier,2013,153.0
+Área de Planejamento 3,XIII Méier,Todos os Santos,2013,524.0
+Área de Planejamento 3,XXVIII Jacarezinho,Jacarezinho,2013,1085.0
+Área de Planejamento 3,XIV Irajá,Colégio,2013,2956.0
+Área de Planejamento 3,XIV Irajá,Irajá,2013,12962.0
+Área de Planejamento 3,XIV Irajá,Vicente de Carvalho,2013,1386.0
+Área de Planejamento 3,XIV Irajá,Vila Cosmos,2013,2236.0
+Área de Planejamento 3,XIV Irajá,Vila da Penha,2013,927.0
+Área de Planejamento 3,XIV Irajá,Vista Alegre,2013,671.0
+Área de Planejamento 3,XV Madureira,Bento Ribeiro,2013,1503.0
+Área de Planejamento 3,XV Madureira,Campinho,2013,561.0
+Área de Planejamento 3,XV Madureira,Cascadura,2013,3070.0
+Área de Planejamento 3,XV Madureira,Cavalcanti,2013,2831.0
+Área de Planejamento 3,XV Madureira,Engenheiro Leal,2013,947.0
+Área de Planejamento 3,XV Madureira,Honório Gurgel,2013,2217.0
+Área de Planejamento 3,XV Madureira,Madureira,2013,3933.0
+Área de Planejamento 3,XV Madureira,Marechal Hermes,2013,4619.0
+Área de Planejamento 3,XV Madureira,Oswaldo Cruz,2013,3982.0
+Área de Planejamento 3,XV Madureira,Quintino Bocaiúva,2013,4517.0
+Área de Planejamento 3,XV Madureira,Rocha Miranda,2013,7725.0
+Área de Planejamento 3,XV Madureira,Turiaçú,2013,1261.0
+Área de Planejamento 3,XV Madureira,Vaz Lobo,2013,846.0
+Área de Planejamento 3,XII Inhaúma,Del Castilho,2013,2103.0
+Área de Planejamento 3,XII Inhaúma,Engenho da Rainha,2013,2941.0
+Área de Planejamento 3,XII Inhaúma,Higienópolis,2013,5297.0
+Área de Planejamento 3,XII Inhaúma,Inhaúma,2013,9681.0
+Área de Planejamento 3,XII Inhaúma,Maria da Graça,2013,964.0
+Área de Planejamento 3,XII Inhaúma,Tomás Coelho,2013,1611.0
+Área de Planejamento 3,XXIX Complexo do Alemão (1),Complexo do Alemão,2013,5034.0
+Área de Planejamento 3,XI Penha,Brás de Pina,2013,4604.0
+Área de Planejamento 3,XI Penha,Penha,2013,8623.0
+Área de Planejamento 3,XI Penha,Penha Circular,2013,6370.0
+Área de Planejamento 3,XXXI Vigário Geral,Cordovil,2013,5776.0
+Área de Planejamento 3,XXXI Vigário Geral,Jardim América,2013,4766.0
+Área de Planejamento 3,XXXI Vigário Geral,Parada de Lucas,2013,1356.0
+Área de Planejamento 3,XXXI Vigário Geral,Vigário Geral,2013,4527.0
+Área de Planejamento 3,XXII Anchieta,Anchieta,2013,3581.0
+Área de Planejamento 3,XXII Anchieta,Guadalupe,2013,6357.0
+Área de Planejamento 3,XXII Anchieta,Parque Anchieta,2013,7067.0
+Área de Planejamento 3,XXII Anchieta,Ricardo de Albuquerque,2013,1573.0
+Área de Planejamento 3,XXV Pavuna,Acari,2013,2439.0
+Área de Planejamento 3,XXV Pavuna,Barros Filho,2013,191.0
+Área de Planejamento 3,XXV Pavuna,Coelho Neto,2013,6369.0
+Área de Planejamento 3,XXV Pavuna,Costa Barros,2013,2436.0
+Área de Planejamento 3,XXV Pavuna,Parque Colúmbia,2013,1051.0
+Área de Planejamento 3,XXV Pavuna,Pavuna,2013,15264.0
+Área de Planejamento 3,XX Ilha do Governador,Bancários,2013,2364.0
+Área de Planejamento 3,XX Ilha do Governador,Cacuia,2013,240.0
+Área de Planejamento 3,XX Ilha do Governador,Cidade Universitária,2013,317.0
+Área de Planejamento 3,XX Ilha do Governador,Freguesia,2013,666.0
+Área de Planejamento 3,XX Ilha do Governador,Galeão,2013,2948.0
+Área de Planejamento 3,XX Ilha do Governador,Jardim Carioca,2013,871.0
+Área de Planejamento 3,XX Ilha do Governador,Jardim Guanabara,2013,1973.0
+Área de Planejamento 3,XX Ilha do Governador,Moneró,2013,1649.0
+Área de Planejamento 3,XX Ilha do Governador,Pitangueiras,2013,412.0
+Área de Planejamento 3,XX Ilha do Governador,Portuguesa,2013,2394.0
+Área de Planejamento 3,XX Ilha do Governador,Praia da Bandeira,2013,932.0
+Área de Planejamento 3,XX Ilha do Governador,Tauá,2013,1402.0
+Área de Planejamento 3,XX Ilha do Governador,Zumbi,2013,788.0
+Área de Planejamento 4,XVI Jacarepaguá,Anil,2013,4083.0
+Área de Planejamento 4,XVI Jacarepaguá,Curicica,2013,5680.0
+Área de Planejamento 4,XVI Jacarepaguá,Freguesia,2013,6120.0
+Área de Planejamento 4,XVI Jacarepaguá,Gardênia Azul,2013,1196.0
+Área de Planejamento 4,XVI Jacarepaguá,Jacarepaguá,2013,13284.0
+Área de Planejamento 4,XVI Jacarepaguá,Pechincha,2013,2178.0
+Área de Planejamento 4,XVI Jacarepaguá,Praça Seca,2013,6888.0
+Área de Planejamento 4,XVI Jacarepaguá,Tanque,2013,3671.0
+Área de Planejamento 4,XVI Jacarepaguá,Taquara,2013,12342.0
+Área de Planejamento 4,XVI Jacarepaguá,Vila Valqueire,2013,2727.0
+Área de Planejamento 4,XXXIV Cidade de Deus,Cidade de Deus,2013,6891.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Barra da Tijuca,2013,10127.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Itanhangá,2013,4756.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Recreio dos Bandeirantes,2013,3317.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Vargem Grande,2013,1990.0
+Área de Planejamento 4,XXIV Barra da Tijuca,Vargem Pequena,2013,2093.0
+Área de Planejamento 5,XVII Bangu,Bangu,2013,37513.0
+Área de Planejamento 5,XVII Bangu,Padre Miguel,2013,5789.0
+Área de Planejamento 5,XVII Bangu,Senador Camará,2013,12654.0
+Área de Planejamento 5,XXXIII Realengo,Campo dos Afonsos,2013,1048.0
+Área de Planejamento 5,XXXIII Realengo,Deodoro,2013,1790.0
+Área de Planejamento 5,XXXIII Realengo,Jardim Sulacap,2013,673.0
+Área de Planejamento 5,XXXIII Realengo,Magalhães Bastos,2013,2653.0
+Área de Planejamento 5,XXXIII Realengo,Realengo,2013,18325.0
+Área de Planejamento 5,XXXIII Realengo,Vila Militar,2013,1554.0
+Área de Planejamento 5,XVIII Campo Grande,Campo Grande,2013,45711.0
+Área de Planejamento 5,XVIII Campo Grande,Cosmos,2013,11403.0
+Área de Planejamento 5,XVIII Campo Grande,Inhoaíba,2013,9175.0
+Área de Planejamento 5,XVIII Campo Grande,Santíssimo,2013,3179.0
+Área de Planejamento 5,XVIII Campo Grande,Senador Vasconcelos,2013,2370.0
+Área de Planejamento 5,XIX Santa Cruz,Paciência,2013,18196.0
+Área de Planejamento 5,XIX Santa Cruz,Santa Cruz,2013,39584.0
+Área de Planejamento 5,XIX Santa Cruz,Sepetiba,2013,6504.0
+Área de Planejamento 5,XXVI Guaratiba,Barra de Guaratiba,2013,649.0
+Área de Planejamento 5,XXVI Guaratiba,Guaratiba,2013,18818.0
+Área de Planejamento 5,XXVI Guaratiba,Pedra de Guaratiba,2013,3783.0
