@@ -6,9 +6,11 @@ data/raw/excel/*.xlsx
 data/raw/excel/*.xls
 data/raw/pdf/*.pdf
 data/raw/pdf/_first_pages/
-# Keep _index.json (download manifest, lightweight, useful for reproducibility)
+# Keep _index.json / _provenance.json (download manifests, lightweight, useful for reproducibility)
+# Geometria oficial do IPP fica versionada (foundational, ~4 MiB, não muda).
 !data/raw/excel/_index.json
 !data/raw/pdf/_index.json
+!data/raw/geo/
 
 # Python
 __pycache__/

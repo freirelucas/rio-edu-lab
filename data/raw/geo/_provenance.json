@@ -1,0 +1,53 @@
+{
+  "fetched_at": "2026-05-06T05:19:25+00:00",
+  "fetched_by": "analysis/11_fetch_bairros.py",
+  "manifest_item": {
+    "id": "dc94b29fc3594a5bb4d297bee0c9a3f2",
+    "title": "Limite de Bairros",
+    "type": "Feature Service",
+    "owner": "PrefeituraRio",
+    "modified_epoch_ms": 1701881617000,
+    "modified": "2023-12-06T16:53:37+00:00",
+    "snippet": "Limites dos Bairros da Cidade do Rio de Janeiro. Clique abaixo para ver mais opções de acesso."
+  },
+  "service_url": "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Cartografia/Limites_administrativos/MapServer/4",
+  "n_features": 166,
+  "fields": [
+    "area_plane",
+    "cod_rp",
+    "codbairro",
+    "codbairro_long",
+    "codbnum",
+    "codra",
+    "link",
+    "nome",
+    "objectid",
+    "regiao_adm",
+    "rp"
+  ],
+  "cross_check": {
+    "checked": true,
+    "n_geom": 166,
+    "n_ideb": 152,
+    "matched": 148,
+    "missing_in_geom": [
+      "freguesia (ilha do governador)",
+      "oswaldo cruz",
+      "parque columbia",
+      "turiaçu"
+    ],
+    "extra_in_geom_sample": [
+      "abolição",
+      "argentino",
+      "barra olímpica",
+      "camorim",
+      "cidade nova",
+      "cosme velho",
+      "freguesia (ilha)",
+      "gericinó",
+      "grumari",
+      "ilha de guaratiba"
+    ],
+    "extra_in_geom_total": 18
+  }
+}
