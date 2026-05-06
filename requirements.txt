@@ -6,3 +6,5 @@ shapely>=2.0
 h3>=4.0
 pandas>=2.0
 matplotlib>=3.8
+folium>=0.17
+branca>=0.7
