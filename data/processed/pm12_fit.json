@@ -1,0 +1,8 @@
+{
+  "year": 2011,
+  "n_bairros": 141,
+  "intercept_A": 0.008447,
+  "exponent_beta": 0.767856,
+  "r_squared": 0.7973,
+  "interpretation": "sublinear"
+}
