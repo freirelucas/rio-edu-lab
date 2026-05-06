@@ -7,10 +7,14 @@
 
 Laboratório exploratório sobre o Grupo Educação do [data.rio](https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310). Sandbox que precede e alimenta o produto **ACEC-Hub** (cuja estrutura-alvo está versionada em `reference/`).
 
-**Achado-headline**: 66% da desigualdade do IDEB municipal carioca está dentro das Regiões Administrativas, não entre elas (média 2007–2023). Justificativa quantitativa direta para granularidade de bairro nos painéis de educação.
+**Achado-headline (v0.5.0)**: três padrões convergentes mostram que a granularidade de bairro é a escala correta de intervenção em educação no Rio Municipal.
+
+1. **Decomposição espacial Theil em 3 níveis** (THESHA-Rio): 67% da desigualdade do IDEB está entre bairros dentro da mesma RA; só 8% entre Áreas de Planejamento.
+2. **Trajetórias 5º→9º ano** (FUN-Rio): 87% das pseudocoortes pioram; bairros que começam mais altos caem mais (slope −0.53), refutando o efeito Mateus.
+3. **Lei de escala** (PM-12): alocação de escolas é sublinear (β = 0.77) — bairros maiores em matrícula têm desproporcionalmente menos escolas.
 
 Site publicado: <https://freirelucas.github.io/rio-edu-lab/>.
-Versão atual: **v0.1.0** (ver [`CHANGELOG.md`](./CHANGELOG.md)).
+Versão atual: **v0.5.0** (ver [`CHANGELOG.md`](./CHANGELOG.md)).
 
 ## Estrutura
 

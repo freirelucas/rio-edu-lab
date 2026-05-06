@@ -1,6 +1,12 @@
 # HEX-EDU: desigualdade educacional no Município do Rio de Janeiro em granularidade fina
 
-> Draft v0.1 (working paper) · Lucas Freire · 2026
+> Draft v0.5 (working paper) · Lucas Freire · 2026
+>
+> Este manuscrito cobre especificamente o produto HEX-EDU. Os outros 3 produtos do MVP-1
+> ([THESHA-Rio](../reports/11_thesha_rio.md), [FUN-Rio](../reports/12_fun_rio.md),
+> [PM-12](../reports/13_pm_12.md)) reforçam e estendem os achados aqui em direções
+> ortogonais (decomposição mais fina, dimensão temporal, infraestrutura). Manuscritos
+> dedicados aos outros 3 produtos ficam para v0.6+.
 
 ## Abstract
 
