@@ -1,0 +1,1594 @@
+hex_id,ideb_bairro,nome,codbairro,codra,rp,cod_rp,area_plane
+88a8a039e7fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075e5fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0290bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06509fffff,Deodoro,Deodoro,134,33,Bangu,5.1,5
+88a8a0655dfffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a0768dfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a076e1fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02a07fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06605fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02199fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a07735fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02a5bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06659fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a021edfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066adfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a07591fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02b03fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06701fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a02b57fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06461fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a03993fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06755fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a07885fffff,Botafogo,Botafogo,020,4,Zona Sul,2.1,2
+88a8a02863fffff,Inhoaíba,Inhoaíba,146,18,Campo Grande,5.2,5
+88a8a078d9fffff,Lagoa,Lagoa,027,6,Zona Sul,2.1,2
+88a8a06037fffff,Encantado,Encantado,068,13,Méier,3.2,3
+88a8a0608bfffff,Oswaldo Cruz,Osvaldo Cruz,088,15,Madureira,3.3,3
+88a8a071bbfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a06133fffff,Manguinhos,Manguinhos,039,10,Ramos,3.1,3
+88a8a06187fffff,Complexo do Alemão,Complexo do Alemão,156,29,Inhaúma,3.4,3
+88a8a02e4bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06a49fffff,Catete,Catete,018,4,Zona Sul,2.1,2
+88a8a061dbfffff,Piedade,Piedade,069,13,Méier,3.2,3
+88a8a06283fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a02f47fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0753dfffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a062d7fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a07407fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a0632bfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a0640dfffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a0745bfffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a038b1fffff,Pedra de Guaratiba,Pedra de Guaratiba,153,26,Guaratiba,5.4,5
+88a8a07503fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a02829fffff,Inhoaíba,Inhoaíba,146,18,Campo Grande,5.2,5
+88a8a03959fffff,Barra de Guaratiba,Barra de Guaratiba,152,26,Guaratiba,5.4,5
+88a8a07557fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a039adfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075abfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028d1fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02925fffff,Santíssimo,Santíssimo,143,18,Campo Grande,5.2,5
+88a8a06523fffff,Pavuna,Pavuna,114,25,Pavuna,3.6,3
+88a8a076a7fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0210bfffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a06e39fffff,Jardim América,Jardim América,049,31,Penha,3.5,3
+88a8a029cdfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a074e9fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02a21fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a021b3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02ac9fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066c7fffff,Santíssimo,Santíssimo,143,18,Campo Grande,5.2,5
+88a8a02b1dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0671bfffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a06051fffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a060a5fffff,Cavalcanti,Cavalcanti,080,15,Madureira,3.3,3
+88a8a07a97fffff,Vidigal,Vidigal,030,6,Zona Sul,2.1,2
+88a8a0614dfffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a061a1fffff,Ramos,Ramos,041,10,Ramos,3.1,3
+88a8a02e65fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06249fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02f0dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0629dfffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a02f61fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a03823fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07421fffff,Camorim,Camorim,129,24,Barra da Tijuca,4.2,4
+88a8a06345fffff,Rocinha,Rocinha,154,27,Zona Sul,2.1,2
+88a8a07495fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a038cbfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a074c9fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0751dfffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a06365fffff,Gávea,Gávea,029,6,Zona Sul,2.1,2
+88a8a02843fffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a06441fffff,Padre Miguel,Padre Miguel,140,17,Bangu,5.1,5
+88a8a039c7fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075c5fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028ebfffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a0653dfffff,Pavuna,Pavuna,114,25,Pavuna,3.6,3
+88a8a076c1fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02125fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06e53fffff,Coelho Neto,Coelho Neto,110,25,Pavuna,3.6,3
+88a8a029e7fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a3bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06639fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a0668dfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02ae3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066e1fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a07441fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02b37fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06735fffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a078b9fffff,Cosme Velho,Cosme Velho,019,4,Zona Sul,2.1,2
+88a8a06311fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a06017fffff,Piedade,Piedade,069,13,Méier,3.2,3
+88a8a0606bfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0719bfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a06113fffff,Cachambi,Cachambi,065,13,Méier,3.2,3
+88a8a06167fffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a061bbfffff,Penha,Penha,043,11,Penha,3.5,3
+88a8a06ad1fffff,Maré,Maré,157,30,Ramos,3.1,3
+88a8a06263fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a062b7fffff,Praça Seca,Praça Seca,124,16,Jacarepaguá,4.1,4
+88a8a0630bfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a0383dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0743bfffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a074e3fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02809fffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a03939fffff,Grumari,Grumari,133,24,Barra da Tijuca,4.2,4
+88a8a07537fffff,Curicica,Curicica,119,16,Jacarepaguá,4.1,4
+88a8a0285dfffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a0645bfffff,Vila Kennedy,Vila Kennedy,162,17,Bangu,5.1,5
+88a8a0398dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a062bdfffff,Tanque,Tanque,123,16,Jacarepaguá,4.1,4
+88a8a0758bfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a039e1fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02905fffff,Senador Vasconcelos,Senador Vasconcelos,145,18,Campo Grande,5.2,5
+88a8a06503fffff,Anchieta,Anchieta,107,22,Pavuna,3.6,3
+88a8a07633fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02959fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06557fffff,Parque Anchieta,Parque Anchieta,108,22,Pavuna,3.6,3
+88a8a07687fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a06e19fffff,Parque Columbia,Parque Colúmbia,159,25,Pavuna,3.6,3
+88a8a029adfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076dbfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02f2dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06e6dfffff,Penha Circular,Penha Circular,044,11,Penha,3.5,3
+88a8a02a01fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a39349fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02193fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a55fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06653fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021e7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06269fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a02aa9fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a066a7fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02b51fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a078d3fffff,Jardim Botânico,Jardim Botânico,028,6,Zona Sul,2.1,2
+88a8a06031fffff,Encantado,Encantado,068,13,Méier,3.2,3
+88a8a06085fffff,Madureira,Madureira,083,15,Madureira,3.3,3
+88a8a071b5fffff,São Conrado,São Conrado,031,6,Zona Sul,2.1,2
+88a8a060d9fffff,Vila Valqueire,Vila Valqueire,125,16,Jacarepaguá,4.1,4
+88a8a0612dfffff,Praça da Bandeira,Praça da Bandeira,032,8,Tijuca,2.2,2
+88a8a06181fffff,Inhaúma,Inhaúma,054,12,Inhaúma,3.4,3
+88a8a02e45fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06a43fffff,Santa Teresa,Santa Teresa,014,23,Centro,1.1,1
+88a8a061d5fffff,Pilares,Pilares,071,13,Méier,3.2,3
+88a8a06229fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a02f41fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062d1fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a07401fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a06325fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07455fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a06215fffff,Anil,Anil,116,16,Jacarepaguá,4.1,4
+88a8a074a9fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02823fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a03953fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07551fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a039a7fffff,Ilha de Guaratiba,Ilha de Guaratiba,164,26,Guaratiba,5.4,5
+88a8a075a5fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028cbfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a064c9fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a0651dfffff,Parque Anchieta,Parque Anchieta,108,22,Pavuna,3.6,3
+88a8a076a1fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02105fffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a029c7fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a1bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06619fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021adfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0666dfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02ac3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066c1fffff,Santíssimo,Santíssimo,143,18,Campo Grande,5.2,5
+88a8a02b17fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a061c1fffff,Cachambi,Cachambi,065,13,Méier,3.2,3
+88a8a06715fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a02b6bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06769fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a07899fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a0604bfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a07a91fffff,Vidigal,Vidigal,030,6,Zona Sul,2.1,2
+88a8a06147fffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a06a09fffff,Centro,Centro,005,2,Centro,1.1,1
+88a8a0619bfffff,Vicente de Carvalho,Vicente de Carvalho,073,14,Madureira,3.3,3
+88a8a06a5dfffff,Santa Teresa,Santa Teresa,014,23,Centro,1.1,1
+88a8a06243fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a02f07fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06297fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a02f5bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062ebfffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a0741bfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a038c5fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a074c3fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a03919fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0616dfffff,Rio Comprido,Rio Comprido,007,3,Centro,1.1,1
+88a8a07517fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0283dfffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a0756bfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a039c1fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a028e5fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a07613fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02939fffff,Senador Vasconcelos,Senador Vasconcelos,145,18,Campo Grande,5.2,5
+88a8a0298dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076bbfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06e4dfffff,Irajá,Irajá,076,14,Madureira,3.3,3
+88a8a029e1fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a35fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06633fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a021c7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a89fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06687fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a06f49fffff,Olaria,Olaria,042,10,Ramos,3.1,3
+88a8a02addfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066dbfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06119fffff,Engenho Novo,Engenho Novo,061,13,Méier,3.2,3
+88a8a02b31fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a078b3fffff,Rio Comprido,Rio Comprido,007,3,Centro,1.1,1
+88a8a06011fffff,Quintino Bocaiúva,Quintino Bocaiúva,079,15,Madureira,3.3,3
+88a8a07ab7fffff,Leblon,Leblon,026,6,Zona Sul,2.1,2
+88a8a06065fffff,Grajaú,Grajaú,038,9,Tijuca,2.2,2
+88a8a07195fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a060b9fffff,Turiaçu,Turiaçú,085,15,Madureira,3.3,3
+88a8a0610dfffff,Maracanã,Maracanã,035,9,Tijuca,2.2,2
+88a8a06161fffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a061b5fffff,Penha,Penha,043,11,Penha,3.5,3
+88a8a06209fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a06acbfffff,Caju,Caju,004,1,Centro,1.1,1
+88a8a0625dfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02f21fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062b1fffff,Tanque,Tanque,123,16,Jacarepaguá,4.1,4
+88a8a06305fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a03837fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07435fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a06359fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a060c5fffff,Quintino Bocaiúva,Quintino Bocaiúva,079,15,Madureira,3.3,3
+88a8a07489fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a074ddfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02803fffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a03933fffff,Barra de Guaratiba,Barra de Guaratiba,152,26,Guaratiba,5.4,5
+88a8a07531fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a02857fffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a03987fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06455fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a07585fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028abfffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a075d9fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02953fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06551fffff,Ricardo de Albuquerque,Ricardo de Albuquerque,109,22,Pavuna,3.6,3
+88a8a07681fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a06e13fffff,Pavuna,Pavuna,114,25,Pavuna,3.6,3
+88a8a029a7fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076d5fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02139fffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a06e67fffff,Cordovil,Cordovil,046,31,Penha,3.5,3
+88a8a0218dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0664dfffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021e1fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02aa3fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a066a1fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02b4bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06749fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a078cdfffff,Copacabana,Copacabana,024,5,Zona Sul,2.1,2
+88a8a070b3fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0602bfffff,Lins de Vasconcelos,Lins de Vasconcelos,062,13,Méier,3.2,3
+88a8a060d3fffff,Vila Valqueire,Vila Valqueire,125,16,Jacarepaguá,4.1,4
+88a8a06127fffff,Caju,Caju,004,1,Centro,1.1,1
+88a8a06223fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a062cbfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a038a5fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a074a3fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0281dfffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a0641bfffff,Gericinó,Gericinó,160,17,Bangu,5.1,5
+88a8a0754bfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a039a1fffff,Ilha de Guaratiba,Ilha de Guaratiba,164,26,Guaratiba,5.4,5
+88a8a0601dfffff,Água Santa,Água Santa,067,13,Méier,3.2,3
+88a8a028c5fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a02919fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0296dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0656bfffff,Guadalupe,Guadalupe,106,22,Pavuna,3.6,3
+88a8a0769bfffff,Ilha de Guaratiba,Ilha de Guaratiba,164,26,Guaratiba,5.4,5
+88a8a06e2dfffff,Cordovil,Cordovil,046,31,Penha,3.5,3
+88a8a029c1fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a15fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06613fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021a7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a69fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06667fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a02abdfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066bbfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02b11fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02b65fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06763fffff,Jardim Sulacap,Jardim Sulacap,137,33,Bangu,5.1,5
+88a8a07893fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a078e7fffff,Copacabana,Copacabana,024,5,Zona Sul,2.1,2
+88a8a06045fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06099fffff,Marechal Hermes,Marechal Hermes,090,15,Madureira,3.3,3
+88a8a060edfffff,Quintino Bocaiúva,Quintino Bocaiúva,079,15,Madureira,3.3,3
+88a8a06141fffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a06a03fffff,Centro,Centro,005,2,Centro,1.1,1
+88a8a06195fffff,Engenho da Rainha,Engenho da Rainha,055,12,Inhaúma,3.4,3
+88a8a06a57fffff,Centro,Centro,005,2,Centro,1.1,1
+88a8a061e9fffff,Maria da Graça,Maria da Graça,052,12,Inhaúma,3.4,3
+88a8a0623dfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02f01fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06291fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a02f55fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062e5fffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a03817fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07415fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a06339fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07469fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a074bdfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a03913fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07511fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02837fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a07565fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0288bfffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a039bbfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075b9fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02933fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02987fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076b5fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a06e47fffff,Irajá,Irajá,076,14,Madureira,3.3,3
+88a8a029dbfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0662dfffff,Padre Miguel,Padre Miguel,140,17,Bangu,5.1,5
+88a8a021c1fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a83fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06681fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06f43fffff,Penha,Penha,043,11,Penha,3.5,3
+88a8a02ad7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066d5fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02b2bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06729fffff,Campo dos Afonsos,Campo dos Afonsos,136,33,Bangu,5.1,5
+88a8a078adfffff,Urca,Urca,022,4,Zona Sul,2.1,2
+88a8a07093fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0600bfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a060b3fffff,Rocha Miranda,Rocha Miranda,086,15,Madureira,3.3,3
+88a8a06107fffff,Mangueira,Mangueira,011,7,Centro,1.1,1
+88a8a0615bfffff,Grajaú,Grajaú,038,9,Tijuca,2.2,2
+88a8a06a1dfffff,Gamboa,Gamboa,002,1,Centro,1.1,1
+88a8a06203fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06257fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a062abfffff,Tanque,Tanque,123,16,Jacarepaguá,4.1,4
+88a8a03831fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06353fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07483fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a074d7fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0752bfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02851fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a03981fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a039d5fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075d3fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0294dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0654bfffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a06e0dfffff,Vista Alegre,Vista Alegre,075,14,Madureira,3.3,3
+88a8a029a1fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02133fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06e61fffff,Brás de Pina,Brás de Pina,045,11,Penha,3.5,3
+88a8a02187fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a49fffff,Pedra de Guaratiba,Pedra de Guaratiba,153,26,Guaratiba,5.4,5
+88a8a06647fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02a9dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0673bfffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a0669bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06f5dfffff,Penha,Penha,043,11,Penha,3.5,3
+88a8a02b45fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02b3dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06743fffff,Jardim Sulacap,Jardim Sulacap,137,33,Bangu,5.1,5
+88a8a078c7fffff,Copacabana,Copacabana,024,5,Zona Sul,2.1,2
+88a8a06025fffff,Engenho Novo,Engenho Novo,061,13,Méier,3.2,3
+88a8a060cdfffff,Praça Seca,Praça Seca,124,16,Jacarepaguá,4.1,4
+88a8a06121fffff,Imperial de São Cristóvão,Imperial de São Cristóvão,010,7,Centro,1.1,1
+88a8a061c9fffff,Todos os Santos,Todos os Santos,064,13,Méier,3.2,3
+88a8a0621dfffff,Anil,Anil,116,16,Jacarepaguá,4.1,4
+88a8a062c5fffff,Cidade de Deus,Cidade de Deus,118,34,Jacarepaguá,4.1,4
+88a8a06319fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07449fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a0636dfffff,Gávea,Gávea,029,6,Zona Sul,2.1,2
+88a8a0749dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02817fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a07545fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0286bfffff,Inhoaíba,Inhoaíba,146,18,Campo Grande,5.2,5
+88a8a066e7fffff,Vila Kennedy,Vila Kennedy,162,17,Bangu,5.1,5
+88a8a06469fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a0399bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07599fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02ae9fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a075edfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02913fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a020a5fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06f55fffff,Penha,Penha,043,11,Penha,3.5,3
+88a8a02967fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06565fffff,Honório Gurgel,Honório Gurgel,087,15,Madureira,3.3,3
+88a8a07695fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a076e9fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a0660dfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a021a1fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a63fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06661fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a02ab7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066b5fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02b0bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06693fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06709fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a0675dfffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a0788dfffff,Botafogo,Botafogo,020,4,Zona Sul,2.1,2
+88a8a02a95fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a078e1fffff,Copacabana,Copacabana,024,5,Zona Sul,2.1,2
+88a8a06093fffff,Marechal Hermes,Marechal Hermes,090,15,Madureira,3.3,3
+88a8a060e7fffff,Cascadura,Cascadura,082,15,Madureira,3.3,3
+88a8a0613bfffff,Rocha,Rocha,058,13,Méier,3.2,3
+88a8a06a51fffff,Cidade Nova,Cidade Nova,008,3,Centro,1.1,1
+88a8a061e3fffff,Higienópolis,Higienópolis,050,12,Inhaúma,3.4,3
+88a8a06237fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0628bfffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a06333fffff,Andaraí,Andaraí,037,9,Tijuca,2.2,2
+88a8a07463fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a074b7fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021d3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0750bfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02831fffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a02885fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a039b5fffff,Ilha de Guaratiba,Ilha de Guaratiba,164,26,Guaratiba,5.4,5
+88a8a075b3fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028d9fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0292dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a41fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0652bfffff,Costa Barros,Costa Barros,113,25,Pavuna,3.6,3
+88a8a02981fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02113fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06e41fffff,Irajá,Irajá,076,14,Madureira,3.3,3
+88a8a029d5fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02167fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02a29fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06627fffff,Padre Miguel,Padre Miguel,140,17,Bangu,5.1,5
+88a8a021bbfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02ad1fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02b25fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06723fffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a078a7fffff,Flamengo,Flamengo,015,4,Zona Sul,2.1,2
+88a8a06005fffff,Lins de Vasconcelos,Lins de Vasconcelos,062,13,Méier,3.2,3
+88a8a06059fffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a060adfffff,Cavalcanti,Cavalcanti,080,15,Madureira,3.3,3
+88a8a06101fffff,Maracanã,Maracanã,035,9,Tijuca,2.2,2
+88a8a06155fffff,Andaraí,Andaraí,037,9,Tijuca,2.2,2
+88a8a061a9fffff,Complexo do Alemão,Complexo do Alemão,156,29,Inhaúma,3.4,3
+88a8a029edfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02e6dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06a6bfffff,Centro,Centro,005,2,Centro,1.1,1
+88a8a06251fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a06e59fffff,Rocha Miranda,Rocha Miranda,086,15,Madureira,3.3,3
+88a8a062a5fffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a02f69fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a07429fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a0634dfffff,São Conrado,São Conrado,031,6,Zona Sul,2.1,2
+88a8a074d1fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a03927fffff,Grumari,Grumari,133,24,Barra da Tijuca,4.2,4
+88a8a07525fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a0212bfffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a076c7fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a0284bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06449fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a075cdfffff,Camorim,Camorim,129,24,Barra da Tijuca,4.2,4
+88a8a02947fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06545fffff,Deodoro,Deodoro,134,33,Bangu,5.1,5
+88a8a06e07fffff,Jardim América,Jardim América,049,31,Penha,3.5,3
+88a8a076c9fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a0212dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06e5bfffff,Coelho Neto,Coelho Neto,110,25,Pavuna,3.6,3
+88a8a02181fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06e05fffff,Parada de Lucas,Parada de Lucas,047,31,Penha,3.5,3
+88a8a02a43fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06641fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021d5fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a97fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06695fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06f57fffff,Penha Circular,Penha Circular,044,11,Penha,3.5,3
+88a8a02aebfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066e9fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a0673dfffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a078c1fffff,Lagoa,Lagoa,027,6,Zona Sul,2.1,2
+88a8a070a7fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a06543fffff,Deodoro,Deodoro,134,33,Bangu,5.1,5
+88a8a060c7fffff,Praça Seca,Praça Seca,124,16,Jacarepaguá,4.1,4
+88a8a0611bfffff,Engenho Novo,Engenho Novo,061,13,Méier,3.2,3
+88a8a061c3fffff,Inhaúma,Inhaúma,054,12,Inhaúma,3.4,3
+88a8a02945fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06217fffff,Anil,Anil,116,16,Jacarepaguá,4.1,4
+88a8a06ad9fffff,Maré,Maré,157,30,Ramos,3.1,3
+88a8a0626bfffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a06313fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07443fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a06367fffff,Jardim Botânico,Jardim Botânico,028,6,Zona Sul,2.1,2
+88a8a07497fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a038edfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a074ebfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02811fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a02865fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a03995fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06463fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a07593fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a039e9fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075e7fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0290dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0650bfffff,Parque Anchieta,Parque Anchieta,108,22,Pavuna,3.6,3
+88a8a0763bfffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02961fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06e21fffff,Vigário Geral,Vigário Geral,048,31,Penha,3.5,3
+88a8a029b5fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076e3fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02147fffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a02a09fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06607fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a0219bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a07737fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a06ec9fffff,Pavuna,Pavuna,114,25,Pavuna,3.6,3
+88a8a02a5dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0665bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a075cbfffff,Camorim,Camorim,129,24,Barra da Tijuca,4.2,4
+88a8a06f1dfffff,Cordovil,Cordovil,046,31,Penha,3.5,3
+88a8a02ab1fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02b05fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a039cdfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06703fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a02b59fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06757fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a07887fffff,Botafogo,Botafogo,020,4,Zona Sul,2.1,2
+88a8a078dbfffff,Jardim Botânico,Jardim Botânico,028,6,Zona Sul,2.1,2
+88a8a06039fffff,Água Santa,Água Santa,067,13,Méier,3.2,3
+88a8a0608dfffff,Cascadura,Cascadura,082,15,Madureira,3.3,3
+88a8a071bdfffff,Joá,Joá,126,24,Barra da Tijuca,4.2,4
+88a8a060e1fffff,Quintino Bocaiúva,Quintino Bocaiúva,079,15,Madureira,3.3,3
+88a8a06135fffff,Vasco da Gama,Vasco da Gama,158,7,Centro,1.1,1
+88a8a06189fffff,Inhaúma,Inhaúma,054,12,Inhaúma,3.4,3
+88a8a02e4dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06a4bfffff,Catete,Catete,018,4,Zona Sul,2.1,2
+88a8a061ddfffff,Pilares,Pilares,071,13,Méier,3.2,3
+88a8a06231fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06285fffff,Pechincha,Pechincha,121,16,Jacarepaguá,4.1,4
+88a8a02f49fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062d9fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a07409fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a06447fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a0632dfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a0745dfffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a038b3fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02849fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a074b1fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a03907fffff,Grumari,Grumari,133,24,Barra da Tijuca,4.2,4
+88a8a07505fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0282bfffff,Inhoaíba,Inhoaíba,146,18,Campo Grande,5.2,5
+88a8a07559fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a075adfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028d3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02927fffff,Santíssimo,Santíssimo,143,18,Campo Grande,5.2,5
+88a8a06525fffff,Pavuna,Pavuna,114,25,Pavuna,3.6,3
+88a8a076a9fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0210dfffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a07523fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a02a23fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06621fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a021b5fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a03925fffff,Grumari,Grumari,133,24,Barra da Tijuca,4.2,4
+88a8a02acbfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066c9fffff,Santíssimo,Santíssimo,143,18,Campo Grande,5.2,5
+88a8a0671dfffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a06053fffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a07183fffff,Joá,Joá,126,24,Barra da Tijuca,4.2,4
+88a8a060a7fffff,Vicente de Carvalho,Vicente de Carvalho,073,14,Madureira,3.3,3
+88a8a061a3fffff,Olaria,Olaria,042,10,Ramos,3.1,3
+88a8a02e67fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0624bfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02f63fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a03825fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07423fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a06347fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a038cdfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a074cbfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a03921fffff,Grumari,Grumari,133,24,Barra da Tijuca,4.2,4
+88a8a02845fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06443fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02899fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a039c9fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075c7fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028edfffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a0761bfffff,Grumari,Grumari,133,24,Barra da Tijuca,4.2,4
+88a8a02941fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06e01fffff,Irajá,Irajá,076,14,Madureira,3.3,3
+88a8a076c3fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02127fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06e55fffff,Irajá,Irajá,076,14,Madureira,3.3,3
+88a8a029e9fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a07717fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02a3dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0663bfffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a02a91fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06f51fffff,Brás de Pina,Brás de Pina,045,11,Penha,3.5,3
+88a8a02ae5fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066e3fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02b39fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06737fffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a078bbfffff,Rio Comprido,Rio Comprido,007,3,Centro,1.1,1
+88a8a0634bfffff,São Conrado,São Conrado,031,6,Zona Sul,2.1,2
+88a8a06019fffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a0606dfffff,Grajaú,Grajaú,038,9,Tijuca,2.2,2
+88a8a0719dfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a060c1fffff,Praça Seca,Praça Seca,124,16,Jacarepaguá,4.1,4
+88a8a07ab3fffff,Leblon,Leblon,026,6,Zona Sul,2.1,2
+88a8a06115fffff,Rocha,Rocha,058,13,Méier,3.2,3
+88a8a06169fffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a02e2dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a061bdfffff,Olaria,Olaria,042,10,Ramos,3.1,3
+88a8a06211fffff,Gardênia Azul,Gardênia Azul,117,16,Jacarepaguá,4.1,4
+88a8a06ad3fffff,Maré,Maré,157,30,Ramos,3.1,3
+88a8a06265fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a02f29fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062b9fffff,Tanque,Tanque,123,16,Jacarepaguá,4.1,4
+88a8a0630dfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07427fffff,Camorim,Camorim,129,24,Barra da Tijuca,4.2,4
+88a8a0743dfffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a06361fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07491fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a074e5fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0280bfffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a0393bfffff,Barra de Guaratiba,Barra de Guaratiba,152,26,Guaratiba,5.4,5
+88a8a06409fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a07539fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a0645dfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a0758dfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a039e3fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075e1fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02907fffff,Senador Vasconcelos,Senador Vasconcelos,145,18,Campo Grande,5.2,5
+88a8a06505fffff,Guadalupe,Guadalupe,106,22,Pavuna,3.6,3
+88a8a07635fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02f67fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0295bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06559fffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a07689fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a06e1bfffff,Pavuna,Pavuna,114,25,Pavuna,3.6,3
+88a8a076ddfffff,Barra de Guaratiba,Barra de Guaratiba,152,26,Guaratiba,5.4,5
+88a8a02a03fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06601fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a062a3fffff,Tanque,Tanque,123,16,Jacarepaguá,4.1,4
+88a8a02195fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a07731fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02a57fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06655fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021e9fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02aabfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066a9fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02b53fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06751fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a07881fffff,Humaitá,Humaitá,021,4,Zona Sul,2.1,2
+88a8a078d5fffff,Lagoa,Lagoa,027,6,Zona Sul,2.1,2
+88a8a070bbfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a06033fffff,Piedade,Piedade,069,13,Méier,3.2,3
+88a8a06087fffff,Madureira,Madureira,083,15,Madureira,3.3,3
+88a8a071b7fffff,São Conrado,São Conrado,031,6,Zona Sul,2.1,2
+88a8a060dbfffff,Jardim Sulacap,Jardim Sulacap,137,33,Bangu,5.1,5
+88a8a06183fffff,Inhaúma,Inhaúma,054,12,Inhaúma,3.4,3
+88a8a02e47fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a061d7fffff,Tomás Coelho,Tomás Coelho,056,12,Inhaúma,3.4,3
+88a8a06a99fffff,Maré,Maré,157,30,Ramos,3.1,3
+88a8a0622bfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02f43fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062d3fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a07403fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a06327fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07457fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a074abfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a03901fffff,Grumari,Grumari,133,24,Barra da Tijuca,4.2,4
+88a8a02825fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a03955fffff,Grumari,Grumari,133,24,Barra da Tijuca,4.2,4
+88a8a07553fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a039a9fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075a7fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028cdfffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a064cbfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02921fffff,Senador Vasconcelos,Senador Vasconcelos,145,18,Campo Grande,5.2,5
+88a8a076a3fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02107fffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a029c9fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a1dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0661bfffff,Santíssimo,Santíssimo,143,18,Campo Grande,5.2,5
+88a8a02ac5fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066c3fffff,Santíssimo,Santíssimo,143,18,Campo Grande,5.2,5
+88a8a02b19fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06717fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a02b6dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0676bfffff,Jardim Sulacap,Jardim Sulacap,137,33,Bangu,5.1,5
+88a8a0789bfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a0604dfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a060a1fffff,Cavalcanti,Cavalcanti,080,15,Madureira,3.3,3
+88a8a07a93fffff,Rocinha,Rocinha,154,27,Zona Sul,2.1,2
+88a8a02e6bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06149fffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a06a0bfffff,Centro,Centro,005,2,Centro,1.1,1
+88a8a0619dfffff,Engenho da Rainha,Engenho da Rainha,055,12,Inhaúma,3.4,3
+88a8a02e61fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06245fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a02f09fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06299fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a061a7fffff,Ramos,Ramos,041,10,Ramos,3.1,3
+88a8a02f5dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062edfffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a0741dfffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a06341fffff,São Conrado,São Conrado,031,6,Zona Sul,2.1,2
+88a8a074c5fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0391bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07519fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a0756dfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a039c3fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075c1fffff,Camorim,Camorim,129,24,Barra da Tijuca,4.2,4
+88a8a028e7fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a07615fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a0293bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06539fffff,Anchieta,Anchieta,107,22,Pavuna,3.6,3
+88a8a076bdfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02121fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a029e3fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a37fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a06635fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a06153fffff,Engenho Novo,Engenho Novo,061,13,Méier,3.2,3
+88a8a02a8bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06689fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06f4bfffff,Penha,Penha,043,11,Penha,3.5,3
+88a8a066ddfffff,Santíssimo,Santíssimo,143,18,Campo Grande,5.2,5
+88a8a02b33fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06731fffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a078b5fffff,Laranjeiras,Laranjeiras,017,4,Zona Sul,2.1,2
+88a8a06013fffff,Quintino Bocaiúva,Quintino Bocaiúva,079,15,Madureira,3.3,3
+88a8a06067fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a07197fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a060bbfffff,Rocha Miranda,Rocha Miranda,086,15,Madureira,3.3,3
+88a8a06163fffff,Maracanã,Maracanã,035,9,Tijuca,2.2,2
+88a8a061b7fffff,Penha,Penha,043,11,Penha,3.5,3
+88a8a0620bfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a062b3fffff,Tanque,Tanque,123,16,Jacarepaguá,4.1,4
+88a8a06307fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07437fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a0635bfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a0748bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02805fffff,Inhoaíba,Inhoaíba,146,18,Campo Grande,5.2,5
+88a8a03935fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a07533fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02859fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a06457fffff,Gericinó,Gericinó,160,17,Bangu,5.1,5
+88a8a03989fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07587fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028adfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a039ddfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075dbfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02901fffff,Senador Vasconcelos,Senador Vasconcelos,145,18,Campo Grande,5.2,5
+88a8a02955fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06553fffff,Parque Anchieta,Parque Anchieta,108,22,Pavuna,3.6,3
+88a8a07683fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06e15fffff,Pavuna,Pavuna,114,25,Pavuna,3.6,3
+88a8a029a9fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076d7fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0213bfffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a06e69fffff,Vila da Penha,Vila da Penha,074,14,Madureira,3.3,3
+88a8a02a51fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a060abfffff,Madureira,Madureira,083,15,Madureira,3.3,3
+88a8a021e3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02aa5fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a066a3fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02b4dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0674bfffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a070b5fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0602dfffff,Engenho Novo,Engenho Novo,061,13,Méier,3.2,3
+88a8a06081fffff,Madureira,Madureira,083,15,Madureira,3.3,3
+88a8a071b1fffff,São Conrado,São Conrado,031,6,Zona Sul,2.1,2
+88a8a060d5fffff,Vila Valqueire,Vila Valqueire,125,16,Jacarepaguá,4.1,4
+88a8a06129fffff,Imperial de São Cristóvão,Imperial de São Cristóvão,010,7,Centro,1.1,1
+88a8a02e41fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a061d1fffff,Pilares,Pilares,071,13,Méier,3.2,3
+88a8a06225fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a062cdfffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a06321fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07451fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a038a7fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a074a5fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06057fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0754dfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a039a3fffff,Ilha de Guaratiba,Ilha de Guaratiba,164,26,Guaratiba,5.4,5
+88a8a075a1fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028c7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0291bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06519fffff,Anchieta,Anchieta,107,22,Pavuna,3.6,3
+88a8a020adfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0656dfffff,Marechal Hermes,Marechal Hermes,090,15,Madureira,3.3,3
+88a8a0769dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02101fffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a029c3fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a17fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06615fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021a9fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a6bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06669fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a066bdfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02b13fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06711fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a06003fffff,Água Santa,Água Santa,067,13,Méier,3.2,3
+88a8a02b67fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06765fffff,Jardim Sulacap,Jardim Sulacap,137,33,Bangu,5.1,5
+88a8a07895fffff,Santa Teresa,Santa Teresa,014,23,Centro,1.1,1
+88a8a06047fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0609bfffff,Marechal Hermes,Marechal Hermes,090,15,Madureira,3.3,3
+88a8a06143fffff,Andaraí,Andaraí,037,9,Tijuca,2.2,2
+88a8a06197fffff,Penha Circular,Penha Circular,044,11,Penha,3.5,3
+88a8a06a59fffff,Catumbi,Catumbi,006,3,Centro,1.1,1
+88a8a061ebfffff,Del Castilho,Del Castilho,053,12,Inhaúma,3.4,3
+88a8a06293fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a02f57fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062e7fffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a07417fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0633bfffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a0746bfffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a038c1fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a03915fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07513fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02839fffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a07567fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0288dfffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a039bdfffff,Ilha de Guaratiba,Ilha de Guaratiba,164,26,Guaratiba,5.4,5
+88a8a075bbfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028e1fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a02935fffff,Santíssimo,Santíssimo,143,18,Campo Grande,5.2,5
+88a8a02989fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076b7fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a06e49fffff,Irajá,Irajá,076,14,Madureira,3.3,3
+88a8a029ddfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a31fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a021c3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a85fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06683fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02ad9fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066d7fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02b2dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0672bfffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a0600dfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06061fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a07191fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a060b5fffff,Irajá,Irajá,076,14,Madureira,3.3,3
+88a8a06109fffff,Vila Isabel,Vila Isabel,036,9,Tijuca,2.2,2
+88a8a0615dfffff,Andaraí,Andaraí,037,9,Tijuca,2.2,2
+88a8a061b1fffff,Penha,Penha,043,11,Penha,3.5,3
+88a8a06205fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06259fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a062adfffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a06301fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a03833fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07431fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a06355fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07485fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a074d9fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0752dfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02853fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a03983fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06451fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a07581fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a039d7fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075d5fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0654dfffff,Deodoro,Deodoro,134,33,Bangu,5.1,5
+88a8a029a3fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076d1fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02135fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06e63fffff,Cordovil,Cordovil,046,31,Penha,3.5,3
+88a8a02189fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a4bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06649fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a0669dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02b47fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06745fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a078c9fffff,Ipanema,Ipanema,025,6,Zona Sul,2.1,2
+88a8a06027fffff,Méier,Méier,063,13,Méier,3.2,3
+88a8a06123fffff,Vasco da Gama,Vasco da Gama,158,7,Centro,1.1,1
+88a8a061cbfffff,Engenho de Dentro,Engenho de Dentro,066,13,Méier,3.2,3
+88a8a062c7fffff,Cidade de Deus,Cidade de Deus,118,34,Jacarepaguá,4.1,4
+88a8a0631bfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a0744bfffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02819fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a07547fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0286dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0399dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0646bfffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a0759bfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028c1fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a02915fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a020a7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06721fffff,Campo dos Afonsos,Campo dos Afonsos,136,33,Bangu,5.1,5
+88a8a02969fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06567fffff,Barros Filho,Barros Filho,112,25,Pavuna,3.6,3
+88a8a07697fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02b23fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06e29fffff,Parada de Lucas,Parada de Lucas,047,31,Penha,3.5,3
+88a8a029bdfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076ebfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02a11fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a021a3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a65fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06663fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02ab9fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02b0dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0670bfffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a02b61fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a078e3fffff,Copacabana,Copacabana,024,5,Zona Sul,2.1,2
+88a8a06041fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06095fffff,Bento Ribeiro,Bento Ribeiro,089,15,Madureira,3.3,3
+88a8a060e9fffff,Quintino Bocaiúva,Quintino Bocaiúva,079,15,Madureira,3.3,3
+88a8a066cdfffff,Santíssimo,Santíssimo,143,18,Campo Grande,5.2,5
+88a8a0613dfffff,Imperial de São Cristóvão,Imperial de São Cristóvão,010,7,Centro,1.1,1
+88a8a06191fffff,Vila Kosmos,Vila Kosmos,072,14,Madureira,3.3,3
+88a8a06a53fffff,Cidade Nova,Cidade Nova,008,3,Centro,1.1,1
+88a8a061e5fffff,Manguinhos,Manguinhos,039,10,Ramos,3.1,3
+88a8a06239fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0628dfffff,Pechincha,Pechincha,121,16,Jacarepaguá,4.1,4
+88a8a02f51fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062e1fffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a03813fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07411fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a06335fffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a07465fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a074b9fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0750dfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02833fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a07561fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02887fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a039b7fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075b5fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028dbfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0652dfffff,Barros Filho,Barros Filho,112,25,Pavuna,3.6,3
+88a8a02983fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076b1fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02115fffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a06e43fffff,Colégio,Colégio,077,14,Madureira,3.3,3
+88a8a029d7fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a2bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06629fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a021bdfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02ad3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066d1fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02b27fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06725fffff,Campo dos Afonsos,Campo dos Afonsos,136,33,Bangu,5.1,5
+88a8a078a9fffff,Botafogo,Botafogo,020,4,Zona Sul,2.1,2
+88a8a06007fffff,Engenho de Dentro,Engenho de Dentro,066,13,Méier,3.2,3
+88a8a021b9fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0605bfffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a06103fffff,São Francisco Xavier,São Francisco Xavier,057,13,Méier,3.2,3
+88a8a06157fffff,Vila Isabel,Vila Isabel,036,9,Tijuca,2.2,2
+88a8a06625fffff,Padre Miguel,Padre Miguel,140,17,Bangu,5.1,5
+88a8a06a19fffff,Santo Cristo,Santo Cristo,003,1,Centro,1.1,1
+88a8a061abfffff,Complexo do Alemão,Complexo do Alemão,156,29,Inhaúma,3.4,3
+88a8a06ac1fffff,Caju,Caju,004,1,Centro,1.1,1
+88a8a02a27fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06253fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a062a7fffff,Tanque,Tanque,123,16,Jacarepaguá,4.1,4
+88a8a02f6bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0742bfffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a074d3fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07527fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a0284dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0644bfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a039d1fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02949fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06547fffff,Deodoro,Deodoro,134,33,Bangu,5.1,5
+88a8a02165fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06e09fffff,Irajá,Irajá,076,14,Madureira,3.3,3
+88a8a076cbfffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a06e5dfffff,Colégio,Colégio,077,14,Madureira,3.3,3
+88a8a02183fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a45fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06643fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021d7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a029d3fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a99fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06697fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06f59fffff,Penha Circular,Penha Circular,044,11,Penha,3.5,3
+88a8a02aedfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066ebfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02b41fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a078c3fffff,Lagoa,Lagoa,027,6,Zona Sul,2.1,2
+88a8a06021fffff,Lins de Vasconcelos,Lins de Vasconcelos,062,13,Méier,3.2,3
+88a8a060c9fffff,Praça Seca,Praça Seca,124,16,Jacarepaguá,4.1,4
+88a8a07abbfffff,Vidigal,Vidigal,030,6,Zona Sul,2.1,2
+88a8a0611dfffff,Riachuelo,Riachuelo,059,13,Méier,3.2,3
+88a8a02111fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a076adfffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a061c5fffff,Cachambi,Cachambi,065,13,Méier,3.2,3
+88a8a06219fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06adbfffff,Bonsucesso,Bonsucesso,040,10,Ramos,3.1,3
+88a8a0626dfffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a062c1fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06315fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07445fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a06369fffff,Gávea,Gávea,029,6,Zona Sul,2.1,2
+88a8a07499fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a074edfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02813fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a07541fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02867fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a03997fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06465fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a07595fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a039ebfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075e9fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0650dfffff,Guadalupe,Guadalupe,106,22,Pavuna,3.6,3
+88a8a0763dfffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a020a1fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02963fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06529fffff,Costa Barros,Costa Barros,113,25,Pavuna,3.6,3
+88a8a06561fffff,Guadalupe,Guadalupe,106,22,Pavuna,3.6,3
+88a8a07691fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06e23fffff,Vigário Geral,Vigário Geral,048,31,Penha,3.5,3
+88a8a0292bfffff,Senador Vasconcelos,Senador Vasconcelos,145,18,Campo Grande,5.2,5
+88a8a076e5fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02a0bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06609fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a0219dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0665dfffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a02ab3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066b1fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02b07fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06705fffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a02b5bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06759fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a07889fffff,Lagoa,Lagoa,027,6,Zona Sul,2.1,2
+88a8a078ddfffff,Lagoa,Lagoa,027,6,Zona Sul,2.1,2
+88a8a0603bfffff,Piedade,Piedade,069,13,Méier,3.2,3
+88a8a060e3fffff,Cascadura,Cascadura,082,15,Madureira,3.3,3
+88a8a06137fffff,Caju,Caju,004,1,Centro,1.1,1
+88a8a0618bfffff,Inhaúma,Inhaúma,054,12,Inhaúma,3.4,3
+88a8a06233fffff,Anil,Anil,116,16,Jacarepaguá,4.1,4
+88a8a06287fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a028d7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02f4bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062dbfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0740bfffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a038b5fffff,Pedra de Guaratiba,Pedra de Guaratiba,153,26,Guaratiba,5.4,5
+88a8a074b3fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a07507fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a0282dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0395dfffff,Barra de Guaratiba,Barra de Guaratiba,152,26,Guaratiba,5.4,5
+88a8a0755bfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02881fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a039b1fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075b1fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028d5fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a02929fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06527fffff,Pavuna,Pavuna,114,25,Pavuna,3.6,3
+88a8a039b3fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a076abfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a06e3dfffff,Vigário Geral,Vigário Geral,048,31,Penha,3.5,3
+88a8a029d1fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02883fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a02a25fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06623fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a021b7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02acdfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066cbfffff,Santíssimo,Santíssimo,143,18,Campo Grande,5.2,5
+88a8a02b21fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a078a3fffff,Botafogo,Botafogo,020,4,Zona Sul,2.1,2
+88a8a06001fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06055fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a060a9fffff,Engenheiro Leal,Engenheiro Leal,081,15,Madureira,3.3,3
+88a8a06151fffff,Grajaú,Grajaú,038,9,Tijuca,2.2,2
+88a8a0755dfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a061a5fffff,Ramos,Ramos,041,10,Ramos,3.1,3
+88a8a02e69fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0624dfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0642dfffff,Parque Anchieta,Parque Anchieta,108,22,Pavuna,3.6,3
+88a8a062a1fffff,Pechincha,Pechincha,121,16,Jacarepaguá,4.1,4
+88a8a02f65fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a03827fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07425fffff,Camorim,Camorim,129,24,Barra da Tijuca,4.2,4
+88a8a06349fffff,São Conrado,São Conrado,031,6,Zona Sul,2.1,2
+88a8a074cdfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a03923fffff,Grumari,Grumari,133,24,Barra da Tijuca,4.2,4
+88a8a07521fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a02847fffff,Inhoaíba,Inhoaíba,146,18,Campo Grande,5.2,5
+88a8a06445fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a039cbfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075c9fffff,Camorim,Camorim,129,24,Barra da Tijuca,4.2,4
+88a8a02943fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06541fffff,Deodoro,Deodoro,134,33,Bangu,5.1,5
+88a8a06e03fffff,Irajá,Irajá,076,14,Madureira,3.3,3
+88a8a07509fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a076c5fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02129fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06e57fffff,Acari,Acari,111,25,Pavuna,3.6,3
+88a8a0390bfffff,Barra de Guaratiba,Barra de Guaratiba,152,26,Guaratiba,5.4,5
+88a8a029ebfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0663dfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02a93fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06691fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06f53fffff,Cordovil,Cordovil,046,31,Penha,3.5,3
+88a8a02ae7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066e5fffff,Vila Kennedy,Vila Kennedy,162,17,Bangu,5.1,5
+88a8a02b3bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06739fffff,Magalhães Bastos,Magalhães Bastos,138,33,Bangu,5.1,5
+88a8a078bdfffff,Laranjeiras,Laranjeiras,017,4,Zona Sul,2.1,2
+88a8a0601bfffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a060c3fffff,Praça Seca,Praça Seca,124,16,Jacarepaguá,4.1,4
+88a8a07ab5fffff,Ipanema,Ipanema,025,6,Zona Sul,2.1,2
+88a8a06117fffff,Jacaré,Jacaré,051,13,Méier,3.2,3
+88a8a0616bfffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a074b5fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a06213fffff,Gardênia Azul,Gardênia Azul,117,16,Jacarepaguá,4.1,4
+88a8a06267fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a02f2bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a038b7fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a062bbfffff,Tanque,Tanque,123,16,Jacarepaguá,4.1,4
+88a8a06363fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07493fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a038e9fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a074e7fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0280dfffff,Inhoaíba,Inhoaíba,146,18,Campo Grande,5.2,5
+88a8a0393dfffff,Grumari,Grumari,133,24,Barra da Tijuca,4.2,4
+88a8a0753bfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02861fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a03991fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a039e5fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075e3fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02909fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06507fffff,Anchieta,Anchieta,107,22,Pavuna,3.6,3
+88a8a07637fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a07461fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a0295dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0655bfffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a0768bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06331fffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a06e1dfffff,Acari,Acari,111,25,Pavuna,3.6,3
+88a8a029b1fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a05fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06603fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a3934dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02197fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a07733fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02a59fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06657fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021ebfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06f19fffff,Cordovil,Cordovil,046,31,Penha,3.5,3
+88a8a02aadfffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a066abfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02b01fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02b55fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0740dfffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a06753fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a07883fffff,Humaitá,Humaitá,021,4,Zona Sul,2.1,2
+88a8a078d7fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a062ddfffff,Curicica,Curicica,119,16,Jacarepaguá,4.1,4
+88a8a079d3fffff,Urca,Urca,022,4,Zona Sul,2.1,2
+88a8a06035fffff,Engenho de Dentro,Engenho de Dentro,066,13,Méier,3.2,3
+88a8a06089fffff,Campinho,Campinho,078,15,Madureira,3.3,3
+88a8a071b9fffff,Joá,Joá,126,24,Barra da Tijuca,4.2,4
+88a8a060ddfffff,Vila Valqueire,Vila Valqueire,125,16,Jacarepaguá,4.1,4
+88a8a06131fffff,Benfica,Benfica,012,7,Centro,1.1,1
+88a8a06185fffff,Complexo do Alemão,Complexo do Alemão,156,29,Inhaúma,3.4,3
+88a8a02e49fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a061d9fffff,Piedade,Piedade,069,13,Méier,3.2,3
+88a8a06a9bfffff,Maré,Maré,157,30,Ramos,3.1,3
+88a8a0622dfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a02f4dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06281fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a02f45fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062d5fffff,Curicica,Curicica,119,16,Jacarepaguá,4.1,4
+88a8a07405fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a06329fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07459fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a074adfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a06289fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a03903fffff,Barra de Guaratiba,Barra de Guaratiba,152,26,Guaratiba,5.4,5
+88a8a07501fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02827fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a03957fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07555fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a039abfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075a9fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a064cdfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02923fffff,Senador Vasconcelos,Senador Vasconcelos,145,18,Campo Grande,5.2,5
+88a8a06521fffff,Costa Barros,Costa Barros,113,25,Pavuna,3.6,3
+88a8a020b5fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a076a5fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a02109fffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a029cbfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0661dfffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021b1fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02ac7fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066c5fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a02b1bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06235fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06719fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a0676dfffff,Jardim Sulacap,Jardim Sulacap,137,33,Bangu,5.1,5
+88a8a0789dfffff,Santa Teresa,Santa Teresa,014,23,Centro,1.1,1
+88a8a07999fffff,Urca,Urca,022,4,Zona Sul,2.1,2
+88a8a060a3fffff,Vaz Lobo,Vaz Lobo,084,15,Madureira,3.3,3
+88a8a0614bfffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a06a0dfffff,Centro,Centro,005,2,Centro,1.1,1
+88a8a02e63fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06247fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a02f0bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0629bfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06343fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a038c9fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a074c7fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0391dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0751bfffff,Camorim,Camorim,129,24,Barra da Tijuca,4.2,4
+88a8a02841fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a039c5fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075c3fffff,Camorim,Camorim,129,24,Barra da Tijuca,4.2,4
+88a8a061e1fffff,Higienópolis,Higienópolis,050,12,Inhaúma,3.4,3
+88a8a028e9fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a07617fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a0293dfffff,Senador Vasconcelos,Senador Vasconcelos,145,18,Campo Grande,5.2,5
+88a8a02123fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06e51fffff,Coelho Neto,Coelho Neto,110,25,Pavuna,3.6,3
+88a8a029e5fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a07713fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02a39fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06637fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02a8dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0668bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06f4dfffff,Ramos,Ramos,041,10,Ramos,3.1,3
+88a8a02ae1fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02b35fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06733fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a078b7fffff,Santa Teresa,Santa Teresa,014,23,Centro,1.1,1
+88a8a06015fffff,Água Santa,Água Santa,067,13,Méier,3.2,3
+88a8a06069fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a07199fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0618dfffff,Inhaúma,Inhaúma,054,12,Inhaúma,3.4,3
+88a8a060bdfffff,Turiaçu,Turiaçú,085,15,Madureira,3.3,3
+88a8a06111fffff,Sampaio,Sampaio,060,13,Méier,3.2,3
+88a8a06165fffff,Estácio,Estácio,009,3,Centro,1.1,1
+88a8a061b9fffff,Olaria,Olaria,042,10,Ramos,3.1,3
+88a8a0620dfffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a06261fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a02f25fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062b5fffff,Praça Seca,Praça Seca,124,16,Jacarepaguá,4.1,4
+88a8a06309fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a0383bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07439fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a0635dfffff,São Conrado,São Conrado,031,6,Zona Sul,2.1,2
+88a8a0748dfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a074e1fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02807fffff,Inhoaíba,Inhoaíba,146,18,Campo Grande,5.2,5
+88a8a03937fffff,Barra de Guaratiba,Barra de Guaratiba,152,26,Guaratiba,5.4,5
+88a8a07535fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0285bfffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a06459fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a06139fffff,Benfica,Benfica,012,7,Centro,1.1,1
+88a8a0398bfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07589fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a075ddfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02903fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06501fffff,Ricardo de Albuquerque,Ricardo de Albuquerque,109,22,Pavuna,3.6,3
+88a8a07631fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02957fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06555fffff,Ricardo de Albuquerque,Ricardo de Albuquerque,109,22,Pavuna,3.6,3
+88a8a07685fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a06e17fffff,Pavuna,Pavuna,114,25,Pavuna,3.6,3
+88a8a029abfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076d9fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0213dfffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a06e6bfffff,Vista Alegre,Vista Alegre,075,14,Madureira,3.3,3
+88a8a02191fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a53fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06651fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021e5fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02aa7fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a060e5fffff,Quintino Bocaiúva,Quintino Bocaiúva,079,15,Madureira,3.3,3
+88a8a066a5fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a0674dfffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a078d1fffff,Lagoa,Lagoa,027,6,Zona Sul,2.1,2
+88a8a070b7fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a06083fffff,Oswaldo Cruz,Osvaldo Cruz,088,15,Madureira,3.3,3
+88a8a071b3fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a060d7fffff,Vila Valqueire,Vila Valqueire,125,16,Jacarepaguá,4.1,4
+88a8a0612bfffff,Imperial de São Cristóvão,Imperial de São Cristóvão,010,7,Centro,1.1,1
+88a8a06a41fffff,Glória,Glória,016,4,Zona Sul,2.1,2
+88a8a061d3fffff,Tomás Coelho,Tomás Coelho,056,12,Inhaúma,3.4,3
+88a8a06227fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06323fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07453fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a074a7fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a02821fffff,Inhoaíba,Inhoaíba,146,18,Campo Grande,5.2,5
+88a8a03951fffff,Barra de Guaratiba,Barra de Guaratiba,152,26,Guaratiba,5.4,5
+88a8a039a5fffff,Ilha de Guaratiba,Ilha de Guaratiba,164,26,Guaratiba,5.4,5
+88a8a075a3fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028c9fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a06091fffff,Marechal Hermes,Marechal Hermes,090,15,Madureira,3.3,3
+88a8a0291dfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02103fffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a029c5fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a19fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06617fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021abfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a6dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0666bfffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a02ac1fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02b15fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06713fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a02b69fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06767fffff,Jardim Sulacap,Jardim Sulacap,137,33,Bangu,5.1,5
+88a8a07897fffff,Rio Comprido,Rio Comprido,007,3,Centro,1.1,1
+88a8a078ebfffff,Copacabana,Copacabana,024,5,Zona Sul,2.1,2
+88a8a06049fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0609dfffff,Bento Ribeiro,Bento Ribeiro,089,15,Madureira,3.3,3
+88a8a06145fffff,Tijuca,Tijuca,033,8,Tijuca,2.2,2
+88a8a06a07fffff,Centro,Centro,005,2,Centro,1.1,1
+88a8a0603dfffff,Engenho de Dentro,Engenho de Dentro,066,13,Méier,3.2,3
+88a8a06199fffff,Tomás Coelho,Tomás Coelho,056,12,Inhaúma,3.4,3
+88a8a02e5dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06a5bfffff,Estácio,Estácio,009,3,Centro,1.1,1
+88a8a079dbfffff,Urca,Urca,022,4,Zona Sul,2.1,2
+88a8a061edfffff,Jacarezinho,Jacarezinho,155,28,Méier,3.2,3
+88a8a06241fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02f05fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06295fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a02f59fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062e9fffff,Freguesia (Jacarepaguá),Freguesia (Jacarepaguá),120,16,Jacarepaguá,4.1,4
+88a8a07419fffff,Vargem Pequena,Vargem Pequena,130,24,Barra da Tijuca,4.2,4
+88a8a0633dfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a0746dfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a074c1fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a03917fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07515fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0283bfffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a07569fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a075bdfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028e3fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a07611fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02937fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0298bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076b9fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0211dfffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a06e4bfffff,Colégio,Colégio,077,14,Madureira,3.3,3
+88a8a02a33fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06631fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a021c5fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a87fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06685fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02adbfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066d9fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a0672dfffff,Campo dos Afonsos,Campo dos Afonsos,136,33,Bangu,5.1,5
+88a8a078b1fffff,Laranjeiras,Laranjeiras,017,4,Zona Sul,2.1,2
+88a8a07097fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a06063fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a07193fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a060b7fffff,Colégio,Colégio,077,14,Madureira,3.3,3
+88a8a0610bfffff,Vila Isabel,Vila Isabel,036,9,Tijuca,2.2,2
+88a8a061b3fffff,Penha Circular,Penha Circular,044,11,Penha,3.5,3
+88a8a06207fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06ac9fffff,Caju,Caju,004,1,Centro,1.1,1
+88a8a0625bfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a06303fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a03835fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07433fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a06357fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07487fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a074dbfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02801fffff,Inhoaíba,Inhoaíba,146,18,Campo Grande,5.2,5
+88a8a03931fffff,Barra de Guaratiba,Barra de Guaratiba,152,26,Guaratiba,5.4,5
+88a8a02855fffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a03985fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06453fffff,Gericinó,Gericinó,160,17,Bangu,5.1,5
+88a8a07583fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028a9fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a039d9fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075d7fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02951fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06e11fffff,Parque Columbia,Parque Colúmbia,159,25,Pavuna,3.6,3
+88a8a029a5fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a076d3fffff,Ilha de Guaratiba,Ilha de Guaratiba,164,26,Guaratiba,5.4,5
+88a8a02137fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06e65fffff,Brás de Pina,Brás de Pina,045,11,Penha,3.5,3
+88a8a0218bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a4dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0664bfffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a02aa1fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a02b49fffff,Ilha de Guaratiba,Ilha de Guaratiba,164,26,Guaratiba,5.4,5
+88a8a06747fffff,Jardim Sulacap,Jardim Sulacap,137,33,Bangu,5.1,5
+88a8a078cbfffff,Lagoa,Lagoa,027,6,Zona Sul,2.1,2
+88a8a070b1fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a06029fffff,Lins de Vasconcelos,Lins de Vasconcelos,062,13,Méier,3.2,3
+88a8a060d1fffff,Vila Valqueire,Vila Valqueire,125,16,Jacarepaguá,4.1,4
+88a8a06125fffff,Santo Cristo,Santo Cristo,003,1,Centro,1.1,1
+88a8a061cdfffff,Méier,Méier,063,13,Méier,3.2,3
+88a8a06221fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a062c9fffff,Barra Olímpica,Barra Olímpica,165,16,Jacarepaguá,4.1,4
+88a8a0631dfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a0744dfffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a038a3fffff,Pedra de Guaratiba,Pedra de Guaratiba,153,26,Guaratiba,5.4,5
+88a8a074a1fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0788bfffff,Jardim Botânico,Jardim Botânico,028,6,Zona Sul,2.1,2
+88a8a0281bfffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a06419fffff,Gericinó,Gericinó,160,17,Bangu,5.1,5
+88a8a07549fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0675bfffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a0646dfffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a0759dfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028c3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02b5dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a064c1fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02917fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06515fffff,Anchieta,Anchieta,107,22,Pavuna,3.6,3
+88a8a0296bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06569fffff,Marechal Hermes,Marechal Hermes,090,15,Madureira,3.3,3
+88a8a07699fffff,Ilha de Guaratiba,Ilha de Guaratiba,164,26,Guaratiba,5.4,5
+88a8a06e2bfffff,Vigário Geral,Vigário Geral,048,31,Penha,3.5,3
+88a8a076edfffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a02a13fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06611fffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a021a5fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a67fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06665fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a02abbfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066b9fffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a06707fffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a0670dfffff,Jardim Sulacap,Jardim Sulacap,137,33,Bangu,5.1,5
+88a8a02b63fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06761fffff,Jardim Sulacap,Jardim Sulacap,137,33,Bangu,5.1,5
+88a8a02b09fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07891fffff,Santa Teresa,Santa Teresa,014,23,Centro,1.1,1
+88a8a06043fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06097fffff,Marechal Hermes,Marechal Hermes,090,15,Madureira,3.3,3
+88a8a060ebfffff,Cascadura,Cascadura,082,15,Madureira,3.3,3
+88a8a06a01fffff,Centro,Centro,005,2,Centro,1.1,1
+88a8a06193fffff,Vila da Penha,Vila da Penha,074,14,Madureira,3.3,3
+88a8a06a55fffff,Centro,Centro,005,2,Centro,1.1,1
+88a8a061e7fffff,Bonsucesso,Bonsucesso,040,10,Ramos,3.1,3
+88a8a0623bfffff,Anil,Anil,116,16,Jacarepaguá,4.1,4
+88a8a02f53fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a062e3fffff,Pechincha,Pechincha,121,16,Jacarepaguá,4.1,4
+88a8a07413fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a06337fffff,Andaraí,Andaraí,037,9,Tijuca,2.2,2
+88a8a07467fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a074bbfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a03911fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02835fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a07563fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02889fffff,Paciência,Paciência,148,19,Santa Cruz,5.3,5
+88a8a02ab5fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a039b9fffff,Ilha de Guaratiba,Ilha de Guaratiba,164,26,Guaratiba,5.4,5
+88a8a075b7fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a028ddfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02931fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02985fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a03ab5fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a076b3fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02117fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06e45fffff,Vila da Penha,Vila da Penha,074,14,Madureira,3.3,3
+88a8a029d9fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02a2dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0662bfffff,Bangu,Bangu,141,17,Bangu,5.1,5
+88a8a02a81fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06f41fffff,Penha,Penha,043,11,Penha,3.5,3
+88a8a02ad5fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a066d3fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02b29fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06727fffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a078abfffff,Botafogo,Botafogo,020,4,Zona Sul,2.1,2
+88a8a02a61fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06009fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a0605dfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a060b1fffff,Rocha Miranda,Rocha Miranda,086,15,Madureira,3.3,3
+88a8a06ecdfffff,Pavuna,Pavuna,114,25,Pavuna,3.6,3
+88a8a06105fffff,Maracanã,Maracanã,035,9,Tijuca,2.2,2
+88a8a06159fffff,Grajaú,Grajaú,038,9,Tijuca,2.2,2
+88a8a061adfffff,Bonsucesso,Bonsucesso,040,10,Ramos,3.1,3
+88a8a06201fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a06ac3fffff,Caju,Caju,004,1,Centro,1.1,1
+88a8a06255fffff,Itanhangá,Itanhangá,127,24,Barra da Tijuca,4.2,4
+88a8a062a9fffff,Pechincha,Pechincha,121,16,Jacarepaguá,4.1,4
+88a8a0773bfffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a02f6dfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a0742dfffff,Camorim,Camorim,129,24,Barra da Tijuca,4.2,4
+88a8a06351fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a0660bfffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a07481fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a074d5fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0392bfffff,Grumari,Grumari,133,24,Barra da Tijuca,4.2,4
+88a8a02a0dfffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a07529fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a0644dfffff,Padre Miguel,Padre Miguel,140,17,Bangu,5.1,5
+88a8a039d3fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a075d1fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a0294bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06549fffff,Vila Militar,Vila Militar,135,33,Bangu,5.1,5
+88a8a06e0bfffff,Irajá,Irajá,076,14,Madureira,3.3,3
+88a8a02131fffff,Sepetiba,Sepetiba,150,19,Santa Cruz,5.3,5
+88a8a076cdfffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a02185fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a02a47fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a076e7fffff,Vargem Grande,Vargem Grande,131,24,Barra da Tijuca,4.2,4
+88a8a06645fffff,Realengo,Realengo,139,33,Bangu,5.1,5
+88a8a02a9bfffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06699fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06f5bfffff,Brás de Pina,Brás de Pina,045,11,Penha,3.5,3
+88a8a066edfffff,Senador Camará,Senador Camará,142,17,Bangu,5.1,5
+88a8a02b43fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a06741fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a029b9fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a078c5fffff,Copacabana,Copacabana,024,5,Zona Sul,2.1,2
+88a8a06023fffff,Méier,Méier,063,13,Méier,3.2,3
+88a8a060cbfffff,Praça Seca,Praça Seca,124,16,Jacarepaguá,4.1,4
+88a8a06e25fffff,Parada de Lucas,Parada de Lucas,047,31,Penha,3.5,3
+88a8a061c7fffff,Del Castilho,Del Castilho,053,12,Inhaúma,3.4,3
+88a8a0621bfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a06addfffff,Caju,Caju,004,1,Centro,1.1,1
+88a8a062c3fffff,Taquara,Taquara,122,16,Jacarepaguá,4.1,4
+88a8a06317fffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07447fffff,Recreio dos Bandeirantes,Recreio dos Bandeirantes,132,24,Barra da Tijuca,4.2,4
+88a8a0636bfffff,Alto da Boa Vista,Alto da Boa Vista,034,8,Tijuca,2.2,2
+88a8a07693fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a0749bfffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a02815fffff,Cosmos,Cosmos,147,18,Campo Grande,5.2,5
+88a8a07543fffff,Barra da Tijuca,Barra da Tijuca,128,24,Barra da Tijuca,4.2,4
+88a8a06563fffff,Guadalupe,Guadalupe,106,22,Pavuna,3.6,3
+88a8a02869fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a06467fffff,Parque Anchieta,Parque Anchieta,108,22,Pavuna,3.6,3
+88a8a03999fffff,Guaratiba,Guaratiba,151,26,Guaratiba,5.4,5
+88a8a02965fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a07597fffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a039edfffff,Barra de Guaratiba,Barra de Guaratiba,152,26,Guaratiba,5.4,5
+88a8a075ebfffff,Jacarepaguá,Jacarepaguá,115,16,Jacarepaguá,4.1,4
+88a8a02911fffff,Campo Grande,Campo Grande,144,18,Campo Grande,5.2,5
+88a8a020a3fffff,Santa Cruz,Santa Cruz,149,19,Santa Cruz,5.3,5
+88a8a06f27fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a3d24dfffff,Freguesia (Ilha do Governador),Freguesia (Ilha),098,20,Ilha do Governador,3.7,3
+88a8a06f63fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a0688dfffff,Jardim Carioca,Jardim Carioca,100,20,Ilha do Governador,3.7,3
+88a8a068abfffff,Tauá,Tauá,101,20,Ilha do Governador,3.7,3
+88a8a06f01fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06f3dfffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a0699bfffff,Freguesia (Ilha do Governador),Freguesia (Ilha),098,20,Ilha do Governador,3.7,3
+88a8a06885fffff,Tauá,Tauá,101,20,Ilha do Governador,3.7,3
+88a8a068a3fffff,Freguesia (Ilha do Governador),Freguesia (Ilha),098,20,Ilha do Governador,3.7,3
+88a8a0689bfffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a068d7fffff,Jardim Guanabara,Jardim Guanabara,099,20,Ilha do Governador,3.7,3
+88a8a06f2dfffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06f69fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06893fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a068edfffff,Ribeira,Ribeira,091,20,Ilha do Governador,3.7,3
+88a8a06f07fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06f25fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06f61fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a0688bfffff,Jardim Guanabara,Jardim Guanabara,099,20,Ilha do Governador,3.7,3
+88a8a068c7fffff,Jardim Guanabara,Jardim Guanabara,099,20,Ilha do Governador,3.7,3
+88a8a06883fffff,Moneró,Moneró,102,20,Ilha do Governador,3.7,3
+88a8a068a1fffff,Freguesia (Ilha do Governador),Freguesia (Ilha),098,20,Ilha do Governador,3.7,3
+88a8a06899fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a068d5fffff,Jardim Guanabara,Jardim Guanabara,099,20,Ilha do Governador,3.7,3
+88a8a06f0dfffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06f2bfffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06f67fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06891fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a068ebfffff,Pitangueiras,Pitangueiras,094,20,Ilha do Governador,3.7,3
+88a8a06f05fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06f23fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a3d249fffff,Freguesia (Ilha do Governador),Freguesia (Ilha),098,20,Ilha do Governador,3.7,3
+88a8a06889fffff,Jardim Guanabara,Jardim Guanabara,099,20,Ilha do Governador,3.7,3
+88a8a068a7fffff,Freguesia (Ilha do Governador),Freguesia (Ilha),098,20,Ilha do Governador,3.7,3
+88a8a068c5fffff,Cacuia,Cacuia,093,20,Ilha do Governador,3.7,3
+88a8a068e3fffff,Praia da Bandeira,Praia da Bandeira,095,20,Ilha do Governador,3.7,3
+88a8a06881fffff,Jardim Carioca,Jardim Carioca,100,20,Ilha do Governador,3.7,3
+88a8a068bdfffff,Tauá,Tauá,101,20,Ilha do Governador,3.7,3
+88a8a068dbfffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a068d3fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06f29fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06817fffff,Ribeira,Ribeira,091,20,Ilha do Governador,3.7,3
+88a8a068e9fffff,Zumbi,Zumbi,092,20,Ilha do Governador,3.7,3
+88a8a06f21fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a06887fffff,Tauá,Tauá,101,20,Ilha do Governador,3.7,3
+88a8a0689dfffff,Portuguesa,Portuguesa,103,20,Ilha do Governador,3.7,3
+88a8a06f6bfffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a068d1fffff,Galeão,Galeão,104,20,Ilha do Governador,3.7,3
+88a8a07a5dfffff,Ipanema,Ipanema,025,6,Zona Sul,2.1,2
+88a8a07aedfffff,Ipanema,Ipanema,025,6,Zona Sul,2.1,2
+88a8a06a89fffff,Cidade Universitária,Cidade Universitária,105,20,Ilha do Governador,3.7,3
+88a8a06ad7fffff,Cidade Universitária,Cidade Universitária,105,20,Ilha do Governador,3.7,3
+88a8a06a9dfffff,Cidade Universitária,Cidade Universitária,105,20,Ilha do Governador,3.7,3
+88a8a06a97fffff,Cidade Universitária,Cidade Universitária,105,20,Ilha do Governador,3.7,3
+88a8a06a91fffff,Cidade Universitária,Cidade Universitária,105,20,Ilha do Governador,3.7,3
+88a8a06a8bfffff,Cidade Universitária,Cidade Universitária,105,20,Ilha do Governador,3.7,3
+88a8a079ddfffff,Leme,Leme,023,5,Zona Sul,2.1,2
+88a8a068e5fffff,Ribeira,Ribeira,091,20,Ilha do Governador,3.7,3
+88a8a06995fffff,Paquetá,Paquetá,013,21,Centro,1.1,1
