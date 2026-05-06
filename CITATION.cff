@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this lab's analysis, code, or derived data, please cite it as below."
+title: "rio-edu-lab — laboratório exploratório sobre o Grupo Educação do data.rio"
+abstract: >
+  Sandbox de pesquisa que precede o produto ACEC-Hub. Aplica decomposição de Theil-T
+  ao IDEB do município do Rio em granularidade de bairro (163 unidades, 33 RAs,
+  9 anos), construindo um mapa H3 (HEX-EDU) que expõe a heterogeneidade educacional
+  intra-RA mascarada pelos coropléticos tradicionais. Inclui ingestão e catálogo
+  empíricos de 127 Excels e 35 PDFs do data.rio, replicação metodológica em
+  Aprovação / SAEB / IDEB e ponderação por matrículas onde disponível.
+type: software
+authors:
+  - family-names: "Freire"
+    given-names: "Lucas"
+repository-code: "https://github.com/freirelucas/rio-edu-lab"
+url: "https://freirelucas.github.io/rio-edu-lab/"
+license: MIT
+keywords:
+  - "open data"
+  - "education"
+  - "Rio de Janeiro"
+  - "data.rio"
+  - "IDEB"
+  - "Theil index"
+  - "spatial inequality"
+  - "H3"
+  - "reproducible research"
+date-released: "2026-05-06"
+version: "0.1.0"
+references:
+  - type: book
+    authors:
+      - family-names: "Theil"
+        given-names: "Henri"
+    title: "Economics and Information Theory"
+    publisher:
+      name: "North-Holland Publishing Company"
+    year: 1967

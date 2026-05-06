@@ -1,8 +1,16 @@
 # rio-edu-lab
 
+[![pages](https://github.com/freirelucas/rio-edu-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/freirelucas/rio-edu-lab/actions/workflows/pages.yml)
+[![ci](https://github.com/freirelucas/rio-edu-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/freirelucas/rio-edu-lab/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<!-- DOI badge será inserido após ativação do webhook Zenodo (instruções em CHANGELOG.md) -->
+
 Laboratório exploratório sobre o Grupo Educação do [data.rio](https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310). Sandbox que precede e alimenta o produto **ACEC-Hub** (cuja estrutura-alvo está versionada em `reference/`).
 
-Site publicado: <https://freirelucas.github.io/rio-edu-lab/> (após primeiro merge em `main` com Pages habilitado).
+**Achado-headline**: 66% da desigualdade do IDEB municipal carioca está dentro das Regiões Administrativas, não entre elas (média 2007–2023). Justificativa quantitativa direta para granularidade de bairro nos painéis de educação.
+
+Site publicado: <https://freirelucas.github.io/rio-edu-lab/>.
+Versão atual: **v0.1.0** (ver [`CHANGELOG.md`](./CHANGELOG.md)).
 
 ## Estrutura
 
@@ -42,8 +50,10 @@ pip install -r requirements-docs.txt
 mkdocs serve
 ```
 
-## Próximos passos
+## Citar
 
-1. Triagem temática dos 127 Excels para shortlist do HEX-EDU.
-2. Comparação com ATLAS ESCOLAR (158k views) como baseline de valor.
-3. Implementar o pipeline de ingestão lote em `reference/acec-hub/`.
+Ver [`CITATION.cff`](./CITATION.cff). Após ativação do webhook Zenodo (instruções em `CHANGELOG.md`), citações também via DOI.
+
+## Histórico
+
+Ver [`CHANGELOG.md`](./CHANGELOG.md) para o que entrou em cada release.
