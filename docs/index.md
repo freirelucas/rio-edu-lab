@@ -16,6 +16,9 @@ O Grupo Educação do data.rio publica **186 itens** (1991–2024) — séries h
 | Entender como acessar os dados | [API do data.rio](data-rio-api.md) |
 | Ver se o pipeline de ingestão funciona | [Relatório 02 — Probe de ingestão](reports/02_ingestion_probe.md) |
 | Ver o que tem dentro dos 127 Excels | [Relatório 03 — Catálogo empírico dos Excels](reports/03_excel_catalog.md) |
+| Saber quais Excels prestam para HEX-EDU | [Relatório 04 — Auditoria do shortlist](reports/04_shortlist_audit.md) |
+| Ver os 35 PDFs catalogados | [Relatório 05 — Corpus dos PDFs](reports/05_pdf_corpus.md) |
+| Ver Theil sobre IDEB do Rio | [Relatório 06 — Theil sobre IDEB por bairro](reports/06_theil_ideb.md) |
 | Ler o produto-alvo | [README do ACEC-Hub](https://github.com/freirelucas/rio-edu-lab/blob/main/reference/README-acec-hub.md) |
 
 ## Achados-chave (medidos, não estimados)
@@ -26,6 +29,8 @@ O Grupo Educação do data.rio publica **186 itens** (1991–2024) — séries h
 - **126 dos 127 Excels são `.xls` legacy**, não `.xlsx`, apesar do `Content-Type` da API afirmar o contrário. Implicação: precisa `xlrd>=2.0`, não só `openpyxl`.
 - **Janela temporal real do conteúdo**: 1991–2024. 30 arquivos com span ≥ 21 anos.
 - **Granularidade dominante**: ~52% dos Excels têm 13–30 valores únicos na coluna 0 (compatível com RP / parcial RA); apenas 13 chegam à granularidade de bairro e 3 a escola.
+- **35/35 PDFs baixados**, 71% com camada de texto extraível (10 são imagens escaneadas). Quatro coleções editoriais do IPP cobrem 32 deles.
+- **66% da desigualdade do IDEB municipal está DENTRO das RAs** (média 2007–2023), não entre elas — política em granularidade de RA mascara a maior parte da variação relevante. Justificativa direta para HEX-EDU.
 
 ## Reproduzir
 
