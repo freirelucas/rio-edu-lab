@@ -17,17 +17,23 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - name: Install dev + lab deps
+      - name: Install dev + lab + acec deps
         # The Theil tests are pure stdlib + pytest; the data-sanity tests
         # only read committed CSVs. We install requirements.txt so that
         # any future tests that touch the geo/h3 stack still work.
+        # Also install the acec package in editable mode so its tests run
+        # against the canonical source (session 11 bridge).
         run: |
           pip install -r requirements-dev.txt
           pip install -r requirements.txt
+          pip install -e reference/acec-hub
 
       - name: Lint with ruff
         run: ruff check analysis/ tests/
         continue-on-error: true  # warn-only for now; tighten in v0.2.
 
-      - name: Run tests
-        run: pytest -v
+      - name: Run lab tests
+        run: pytest -v tests/
+
+      - name: Run acec package tests
+        run: pytest -v reference/acec-hub/tests/test_acec_stats.py
