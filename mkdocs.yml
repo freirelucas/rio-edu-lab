@@ -45,6 +45,7 @@ nav:
       - 02 — Probe de ingestão: reports/02_ingestion_probe.md
       - 03 — Catálogo empírico dos Excels: reports/03_excel_catalog.md
       - 04 — Auditoria do shortlist: reports/04_shortlist_audit.md
+      - 05 — Corpus dos PDFs: reports/05_pdf_corpus.md
 
 markdown_extensions:
   - admonition
