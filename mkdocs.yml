@@ -52,6 +52,8 @@ nav:
       - 08 — HEX-EDU interativo: reports/08_hex_edu_interactive.md
       - 09 — IDEB séries finais (9º): reports/09_anos_finais.md
       - 10 — Replicação metodológica: reports/10_method_replication.md
+  - Paper:
+      - HEX-EDU manuscript (v0.1 draft): paper/hex_edu_manuscript.md
 
 markdown_extensions:
   - admonition
