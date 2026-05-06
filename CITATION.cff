@@ -2,12 +2,14 @@ cff-version: 1.2.0
 message: "If you use this lab's analysis, code, or derived data, please cite it as below."
 title: "rio-edu-lab — laboratório exploratório sobre o Grupo Educação do data.rio"
 abstract: >
-  Sandbox de pesquisa que precede o produto ACEC-Hub. Aplica decomposição de Theil-T
-  ao IDEB do município do Rio em granularidade de bairro (163 unidades, 33 RAs,
-  9 anos), construindo um mapa H3 (HEX-EDU) que expõe a heterogeneidade educacional
-  intra-RA mascarada pelos coropléticos tradicionais. Inclui ingestão e catálogo
-  empíricos de 127 Excels e 35 PDFs do data.rio, replicação metodológica em
-  Aprovação / SAEB / IDEB e ponderação por matrículas onde disponível.
+  Laboratório que entrega o MVP-1 completo do produto-alvo ACEC-Hub: quatro
+  ferramentas paper-driven sobre o data.rio Educação. (1) HEX-EDU: mapa H3 do
+  IDEB por bairro do município do Rio. (2) THESHA-Rio: decomposição Theil em
+  3 níveis (AP / RA-em-AP / bairro-em-RA). (3) FUN-Rio: trajetórias 5º→9º
+  ano por pseudocoorte. (4) PM-12: lei de escala intra-Rio (matrícula × escolas)
+  e indicador SAMI. Inclui ingestão + catálogo empírico de 127 Excels + 35 PDFs,
+  parser canônico extraído para o pacote acec, e CI com testes de invariância
+  matemática.
 type: software
 authors:
   - family-names: "Freire"
@@ -26,7 +28,7 @@ keywords:
   - "H3"
   - "reproducible research"
 date-released: "2026-05-06"
-version: "0.1.0"
+version: "0.5.0"
 references:
   - type: book
     authors:

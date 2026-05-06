@@ -2,6 +2,44 @@
 
 Formato adaptado de [Keep a Changelog](https://keepachangelog.com/) e [SemVer](https://semver.org/lang/pt-BR/).
 
+## [v0.5.0] — 2026-05-06
+
+MVP-1 do ACEC-Hub completo: os 4 produtos paper-driven entregues, mais bridge do lab para o pacote `acec`.
+
+### Adicionado (produtos)
+
+- **HEX-EDU** já entregue na v0.1.0 (mapa H3 do IDEB).
+- **THESHA-Rio** (Relatório 11) — decomposição Theil em 3 níveis aninhados (AP → RA-em-AP → bairro-em-RA). Inspirado em Bourguignon, Ferreira & Menéndez (2007). Identidade aditiva exata em todos os 9 anos. Achado: bairro-within-RA = 67%, RA-within-AP = 26%, between-AP = 8%.
+- **FUN-Rio** (Relatório 12) — trajetórias 5º → 9º ano por pseudocoorte. Mare (1980) + Reardon & Owens (2014) operacionalizados. 768 pseudocoortes em 124 bairros. Δ médio = −0.65 (87% pioram). Slope −0.53 vs IDEB-5 base — efeito Mateus refutado.
+- **PM-12** (Relatório 13) — lei de escala intra-Rio. Bettencourt et al. (2010) + Heinrich Mora et al. (2023) adaptados. Fit `escolas = 0.008 · matrículas^0.77` (β sublinear, R² = 0.80). Hipótese de β=1 refutada. SAMI mapeia bairros over/under-served após controlar pelo tamanho.
+
+### Adicionado (infraestrutura)
+
+- **`acec` package** populado em `reference/acec-hub/src/acec/` (Sessão 11):
+  - `acec.stats.theil_t`, `theil_decompose`, `theil_decompose_nested` (NOVO).
+  - `acec.transform.ideb_parser.parse_hierarchical_sheet`.
+  - `acec.geo.h3_grid.generate_grid`.
+- CI ganha step separado para testar o pacote ACEC (`pip install -e reference/acec-hub`).
+- 28 testes verdes (19 do lab + 9 do acec), incluindo identidade aditiva 3-níveis.
+
+### Achado-headline da v0.5.0 (consolidando os 4 produtos)
+
+A desigualdade educacional municipal carioca tem 3 padrões consistentes:
+
+1. **Espacial fina**: 67% within-RA, 26% RA-em-AP, 8% between-AP (THESHA-Rio).
+2. **Temporal**: 87% das pseudocoortes 5º→9º pioram, com slope −0.53 vs ponto-de-partida (FUN-Rio).
+3. **De infraestrutura**: alocação sublinear (β=0.77) — bairros maiores estão sub-servidos no count de escolas (PM-12).
+
+Os três padrões apontam para a **mesma direção de política**: granularidade de bairro é a escala correta de intervenção; AP/RA são agregações que escondem ou regridem ao centro.
+
+### Limitações (mantidas para v0.6+)
+
+- OCR dos 10 PDFs scanned do Relatório 05.
+- Refatoração: pipeline em `analysis/*` ainda tem cópias locais das funções Theil; canônico já em `acec.stats`. Migração é trabalho de v0.6.
+- PM-12 cross-cidades — versão atual é intra-Rio. Inter-capitais requer ingestão dos portais de outros municípios.
+- FUN-Rio com microdado real — atual usa pseudocoorte; coorte real precisa de microdado INEP por escola.
+- Streamlit hospedado para HEX-EDU — Folium estático suficiente para v1.
+
 ## [v0.1.0] — 2026-05-06
 
 Primeiro release citável. Fundação analítica completa para o produto **HEX-EDU**.

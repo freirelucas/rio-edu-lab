@@ -21,8 +21,22 @@ O Grupo Educação do data.rio publica **186 itens** (1991–2024) — séries h
 | Ver Theil sobre IDEB do Rio | [Relatório 06 — Theil sobre IDEB por bairro](reports/06_theil_ideb.md) |
 | Ver o mapa HEX-EDU (estático) | [Relatório 07 — HEX-EDU estático](reports/07_hex_edu_static.md) |
 | Brincar com o mapa HEX-EDU | [Relatório 08 — HEX-EDU interativo](reports/08_hex_edu_interactive.md) |
-| Ler o paper consolidado | [HEX-EDU manuscript v0.1 draft](paper/hex_edu_manuscript.md) |
+| Ver Theil em 3 níveis (AP / RA / bairro) | [Relatório 11 — THESHA-Rio](reports/11_thesha_rio.md) |
+| Ver trajetórias 5º→9º por bairro | [Relatório 12 — FUN-Rio](reports/12_fun_rio.md) |
+| Ver lei de escala matrícula × escolas | [Relatório 13 — PM-12](reports/13_pm_12.md) |
+| Ler o paper consolidado (HEX-EDU) | [HEX-EDU manuscript v0.1 draft](paper/hex_edu_manuscript.md) |
 | Ler o produto-alvo | [README do ACEC-Hub](https://github.com/freirelucas/rio-edu-lab/blob/main/reference/README-acec-hub.md) |
+
+## MVP-1 do ACEC-Hub (v0.5.0)
+
+Os 4 produtos paper-driven entregues:
+
+| Produto | Paper-base | Achado |
+|---|---|---|
+| **HEX-EDU** | Theil (1967) | 66% da desigualdade do IDEB é within-RA |
+| **THESHA-Rio** | Bourguignon, Ferreira & Menéndez (2007) | Decomposição 3-níveis: bairro = 67%, RA-em-AP = 26%, AP = 8% |
+| **FUN-Rio** | Mare (1980) + Reardon & Owens (2014) | 87% das pseudocoortes 5º→9º pioram; slope −0.53 vs ponto-de-partida |
+| **PM-12** | Bettencourt et al. (2010) + Heinrich Mora et al. (2023) | β = 0.77 (alocação sublinear); bairros grandes sub-servidos em escolas |
 
 ## Achados-chave (medidos, não estimados)
 
