@@ -5,3 +5,4 @@ geopandas>=1.0
 shapely>=2.0
 h3>=4.0
 pandas>=2.0
+matplotlib>=3.8

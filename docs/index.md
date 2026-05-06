@@ -19,6 +19,7 @@ O Grupo Educação do data.rio publica **186 itens** (1991–2024) — séries h
 | Saber quais Excels prestam para HEX-EDU | [Relatório 04 — Auditoria do shortlist](reports/04_shortlist_audit.md) |
 | Ver os 35 PDFs catalogados | [Relatório 05 — Corpus dos PDFs](reports/05_pdf_corpus.md) |
 | Ver Theil sobre IDEB do Rio | [Relatório 06 — Theil sobre IDEB por bairro](reports/06_theil_ideb.md) |
+| Ver o mapa HEX-EDU (estático) | [Relatório 07 — HEX-EDU estático](reports/07_hex_edu_static.md) |
 | Ler o produto-alvo | [README do ACEC-Hub](https://github.com/freirelucas/rio-edu-lab/blob/main/reference/README-acec-hub.md) |
 
 ## Achados-chave (medidos, não estimados)

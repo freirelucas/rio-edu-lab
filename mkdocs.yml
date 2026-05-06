@@ -47,6 +47,7 @@ nav:
       - 04 — Auditoria do shortlist: reports/04_shortlist_audit.md
       - 05 — Corpus dos PDFs: reports/05_pdf_corpus.md
       - 06 — Theil sobre IDEB por bairro: reports/06_theil_ideb.md
+      - 07 — HEX-EDU estático: reports/07_hex_edu_static.md
 
 markdown_extensions:
   - admonition
