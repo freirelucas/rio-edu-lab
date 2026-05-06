@@ -69,6 +69,16 @@ Custo total estimado: ~100 MiB (127 arquivos, média ~800 KiB cada).
 - **Versionamento**: o portal não expõe histórico de revisões. Cada `modified` é o último update. Para reprodutibilidade científica, faça snapshot local + DOI Zenodo.
 - **Nomes de arquivo**: opacos no portal (`3726.xlsx`). Para nomes humanos, sempre cruze com o `title` do manifest.
 
+## Search global (descobrindo itens fora do Grupo Educação)
+
+Para buscar items em qualquer grupo do portal (ex.: geometria de bairros, que não está no Grupo Educação):
+
+```
+GET /sharing/rest/search?q=limite+bairros&num=15&f=json
+```
+
+Foi assim que `dc94b29fc3594a5bb4d297bee0c9a3f2` ("Limite de Bairros", IPP) foi achado — Feature Service hospedado em `pgeo3.rio.rj.gov.br/arcgis/rest/services/Cartografia/Limites_administrativos/MapServer/4`. 166 features cobrindo os bairros oficiais do município, incluindo `nome`, `codbairro`, `codra`, `rp`, `cod_rp`. Download via `?f=geojson&where=1=1&outFields=*&outSR=4326`.
+
 ## Itens cobertos pelo probe
 
 Validados em produção (HTTP 200, conteúdo esperado):
