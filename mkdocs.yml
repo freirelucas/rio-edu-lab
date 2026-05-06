@@ -43,6 +43,7 @@ nav:
   - Relatórios:
       - 01 — EDA do manifest: reports/01_manifest_eda.md
       - 02 — Probe de ingestão: reports/02_ingestion_probe.md
+      - 03 — Catálogo empírico dos Excels: reports/03_excel_catalog.md
 
 markdown_extensions:
   - admonition

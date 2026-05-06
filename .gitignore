@@ -1,6 +1,12 @@
 # MkDocs build output
 site/
 
+# Raw downloaded binaries (12.3 MiB; reproducible via analysis/03_download_excels.py)
+data/raw/excel/*.xlsx
+data/raw/excel/*.xls
+# Keep _index.json (download manifest, lightweight, useful for reproducibility)
+!data/raw/excel/_index.json
+
 # Python
 __pycache__/
 *.py[cod]
