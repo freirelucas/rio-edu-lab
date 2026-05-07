@@ -7,8 +7,8 @@ description: Top 20 bairros cruzando déficit de escolas (SAMI) e queda de IDEB 
 
 Cruzamento de dois sinais ortogonais do MVP-1:
 
-- **SAMI** ([PM-12](produtos/pm_12.md)): desvio da lei de escala. SAMI &lt; 0 = bairro tem **menos escolas** que o esperado pelo seu volume de matrícula (sub-servido em infraestrutura).
-- **Δ médio** ([FUN-Rio](produtos/fun_rio.md)): média da queda de IDEB do 5º para o 9º ano em pseudocoortes. Δ &lt; 0 = a turma piora ao longo do fundamental.
+- **SAMI** ([Relatório 13](reports/13_pm_12.md)): desvio da lei de escala. SAMI &lt; 0 = bairro tem **menos escolas** que o esperado pelo seu volume de matrícula (sub-servido em infraestrutura).
+- **Δ médio** ([Relatório 12](reports/12_fun_rio.md)): média da queda de IDEB do 5º para o 9º ano em pseudocoortes. Δ &lt; 0 = a turma piora ao longo do fundamental.
 
 Bairros com **SAMI negativo E Δ negativo** são duplamente prioritários: infraestrutura defasada e qualidade educacional caindo no ciclo. O score combinado é a soma negativa dos z-scores das duas métricas.
 
@@ -49,7 +49,7 @@ Saídas: `data/processed/bairros_prioritarios.csv` (115 bairros) e `bairros_prio
 
 -   [:material-map: Ver no mapa interativo](mapa.md)
 -   [:material-rocket-launch-outline: Tour 5 min](tour.md)
--   [:material-text-box-outline: PM-12 (lei de escala)](produtos/pm_12.md)
--   [:material-clock-time-eight-outline: FUN-Rio (trajetórias)](produtos/fun_rio.md)
+-   [:material-text-box-outline: Lei de escala (Relatório 13)](reports/13_pm_12.md)
+-   [:material-clock-time-eight-outline: Trajetórias 5º→9º (Relatório 12)](reports/12_fun_rio.md)
 
 </div>

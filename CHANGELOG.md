@@ -2,6 +2,32 @@
 
 Formato adaptado de [Keep a Changelog](https://keepachangelog.com/) e [SemVer](https://semver.org/lang/pt-BR/).
 
+## [Unreleased — v0.6 in progress]
+
+### Honest re-framing of the MVP catalog
+
+Revisão crítica do framing "4 produtos paper-driven" da v0.5 expôs que a fundamentação acadêmica de 3 dos 4 produtos era frouxa:
+
+- **Pereira et al. (2019)** — paper-base canônico do HEX-EDU — finalmente localizado: <https://hdl.handle.net/10419/240730>. É sobre **acessibilidade espacial via H3 + decomposição por equidade**, cobrindo Rio entre 7 capitais. A v0.5 só entregou Theil sobre o H3 grid, **não a métrica de acessibilidade**. Replicação completa fica explícita como roadmap v0.6.
+- **Bourguignon, Ferreira & Menéndez (2007)** (THESHA-Rio) — paper sobre desigualdade de **renda por características individuais**. A "decomposição em 3 níveis espaciais" que entregamos é extensão do Theil, não replicação do Bourguignon. Não é produto distinto.
+- **Mare (1980) + Reardon & Owens (2014)** (FUN-Rio) — papers sobre **logit de transição** e **segregação racial/SES**. O que fizemos foi diferença bruta `IDEB_9º − IDEB_5º`. Distância metodológica grande. Não é produto paper-driven.
+- **Bettencourt (2010) inter-capitais** (PM-12) — paper foi originalmente **comparador inter-capital**. Implementei intra-Rio. Diverge do plano original; mantemos como análise auxiliar mas não como replicação direta.
+
+### Mudanças
+
+- **Cortados como produtos**: THESHA-Rio, FUN-Rio, PM-12. Os relatórios técnicos (11, 12, 13) e código permanecem reproduzíveis e citáveis em `Investigação`. Apenas o status "produto paper-driven distinto" sai.
+- **HEX-EDU re-fundamentado** em Pereira et al. (2019) IPEA. Página-produto reescrita explicitando: v0.5 = Theil sobre H3 grid; v0.6 = acessibilidade Pereira-style real (em construção, requer Escolas Municipais Feature Service + OSM road network + isócronas).
+- **Novo produto em planejamento**: **VULN-EDU** — cruzamento IPS/IDS (vulnerabilidade socioeconômica) com IDEB. Paper-base a definir (Reardon 2011 candidato). Habilitado por dados que existem no data.rio mas não foram usados na v0.5.
+- **Página `/paper/` deletada** (já merged no PR #27). A produção de "manuscrito" virou pose acadêmica que não fundamenta nada.
+- **Catálogo público (`/produtos/`)** reduzido para 1 ativo + 1 em planejamento. Cards de THESHA/FUN/PM-12 substituídos por nota explicando a re-classificação.
+- **CITATION.cff abstract** reescrito para refletir o framing honesto. **Pereira et al. (2019) IPEA adicionado como referência canônica**.
+
+### Não muda
+
+- Pipeline reproduzível, código, testes, dados derivados — todos preservados. Os 23 scripts em `analysis/` continuam rodando.
+- DOI Zenodo `10.5281/zenodo.20060620` segue válido (concept DOI continua resolvendo para a última versão).
+- 28 testes verdes mantidos.
+
 ## [v0.5.0] — 2026-05-06
 
 MVP-1 do ACEC-Hub completo: os 4 produtos paper-driven entregues, mais bridge do lab para o pacote `acec`.

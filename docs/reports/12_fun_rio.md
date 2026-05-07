@@ -68,6 +68,6 @@ python3 analysis/19_fun_rio.py        # este script
 ## Continue lendo
 
 !!! tip ""
-    - [FUN-Rio (página de produto)](../produtos/fun_rio.md)
-    - [Bairros prioritários](../bairros-prioritarios.md)
+    - [Bairros prioritários (cruzamento com PM-12)](../bairros-prioritarios.md)
     - [09 — IDEB séries finais (9º)](09_anos_finais.md)
+    - [HEX-EDU (produto canônico)](../produtos/hex_edu.md)

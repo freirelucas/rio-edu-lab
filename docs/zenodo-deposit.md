@@ -38,11 +38,11 @@ rio-edu-lab — Atlas Cibernético da Educação Carioca (lab MVP-1) version 0.5
 
 **Parte 1 — Resumo funcional estável** (não muda entre versões; descreve o lab):
 
-> rio-edu-lab is an exploratory research lab on the Education group of data.rio (the open-data portal of the City of Rio de Janeiro, maintained by Instituto Pereira Passos). It applies quantitative methods from seminal papers — Theil (1967) on inequality decomposition, Bourguignon, Ferreira & Menéndez (2007) on hierarchical inequality, Mare (1980) and Reardon & Owens (2014) on educational transitions, Bettencourt et al. (2010) on urban scaling — to municipal IDEB data at bairro granularity. Outputs include the HEX-EDU H3 hex map, THESHA-Rio 3-level Theil decomposition, FUN-Rio cohort transitions, and PM-12 scaling-law analysis. Pipeline reproducible end-to-end from the data.rio API; companion Python package `acec` for the canonical statistics.
+> rio-edu-lab is a paper-driven research lab on the Education group of data.rio (the open-data portal of the City of Rio de Janeiro, maintained by Instituto Pereira Passos). The lab operationalizes the methodology of Pereira, Braga, Serra & Nadalin (2019) — *Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras*, IPEA — on Rio's municipal IDEB data, using H3 hexagonal grids and equity decomposition. Pipeline ingests, catalogs, and analyzes the 186 items of data.rio's Education group, producing reproducible artifacts (Theil-T decomposition of IDEB by bairro, H3 spatial substrate, accessibility-aware extension in development). Companion Python package `acec` provides canonical statistics with formal additive-decomposition invariants tested in CI.
 
-**Parte 2 — Changelog dessa versão**:
+**Parte 2 — Changelog desta versão**:
 
-> v0.5.0 ships the complete ACEC-Hub MVP-1 (4 products), the `acec` package, and CI tests including the central within>between identity as a hard test. See CHANGELOG.md for full per-product details.
+> v0.5.0 delivers the Theil-T pipeline foundation: IDEB decomposition by 163 bairros across 33 RAs and 5 APs, robust across 6 series (years × Aprovação/SAEB/IDEB × weighting). Central finding: 66% of IDEB inequality is within-RA, not between. Three companion robustness analyses are included as technical reports (THESHA-Rio 3-level decomposition, FUN-Rio pseudo-cohort transitions, PM-12 intra-city scaling). The full Pereira-style accessibility analysis (isochrones via OSM + decomposition by SES) ships in v0.6. See CHANGELOG.md for full version history.
 
 ### 3. Authors com afiliação + ORCID
 
@@ -104,6 +104,7 @@ Adicionar:
 |---|---|
 | `IsSupplementTo` | `https://github.com/freirelucas/rio-edu-lab` |
 | `IsDerivedFrom` | `https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310` |
+| `IsBasedOn` | `https://hdl.handle.net/10419/240730` (Pereira et al. 2019, paper-base) |
 | `References` | `https://h3geo.org/` (Uber H3) |
 | `References` | `https://www.gov.br/inep/` (INEP/IDEB) |
 

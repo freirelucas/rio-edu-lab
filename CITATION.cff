@@ -2,14 +2,17 @@ cff-version: 1.2.0
 message: "If you use this lab's analysis, code, or derived data, please cite it as below."
 title: "rio-edu-lab — laboratório exploratório sobre o Grupo Educação do data.rio"
 abstract: >
-  Laboratório que entrega o MVP-1 completo do produto-alvo ACEC-Hub: quatro
-  ferramentas paper-driven sobre o data.rio Educação. (1) HEX-EDU: mapa H3 do
-  IDEB por bairro do município do Rio. (2) THESHA-Rio: decomposição Theil em
-  3 níveis (AP / RA-em-AP / bairro-em-RA). (3) FUN-Rio: trajetórias 5º→9º
-  ano por pseudocoorte. (4) PM-12: lei de escala intra-Rio (matrícula × escolas)
-  e indicador SAMI. Inclui ingestão + catálogo empírico de 127 Excels + 35 PDFs,
-  parser canônico extraído para o pacote acec, e CI com testes de invariância
-  matemática.
+  Laboratório paper-driven sobre o Grupo Educação do data.rio (portal de
+  dados abertos da Cidade do Rio de Janeiro, mantido pelo Instituto Pereira
+  Passos). Operacionaliza o método Pereira et al. (2019, IPEA) de
+  acessibilidade espacial via H3 + métricas de equidade educacional, aplicado
+  ao IDEB municipal carioca. A v0.5 entrega a base do pipeline (decomposição
+  Theil-T do IDEB por bairro: 66% within-RA), com 3 análises de robustez
+  acopladas (Theil 3-níveis aninhado AP/RA/bairro; pseudocoortes 5º→9º; lei
+  de escala matrícula × escolas). Próxima iteração (v0.6) implementa a
+  acessibilidade Pereira-style completa (isócronas + decomposição por SES).
+  Inclui ingestão + catálogo empírico de 127 Excels + 35 PDFs do data.rio,
+  pacote acec instalável, e CI com testes de invariância matemática.
 type: software
 authors:
   - family-names: "Freire"
@@ -35,6 +38,21 @@ identifiers:
     value: "10.5281/zenodo.20060620"
     description: "Concept DOI (always resolves to the latest version)"
 references:
+  - type: report
+    authors:
+      - family-names: "Pereira"
+        given-names: "Rafael H. M."
+      - family-names: "Braga"
+        given-names: "Carlos Kauê Vieira"
+      - family-names: "Serra"
+        given-names: "Bernardo"
+      - family-names: "Nadalin"
+        given-names: "Vanessa Gapriotti"
+    title: "Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras — 2019"
+    institution:
+      name: "Instituto de Pesquisa Econômica Aplicada (IPEA)"
+    year: 2019
+    url: "https://hdl.handle.net/10419/240730"
   - type: book
     authors:
       - family-names: "Theil"

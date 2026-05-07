@@ -56,9 +56,6 @@ nav:
   - Produtos:
       - Visão geral: produtos/index.md
       - HEX-EDU: produtos/hex_edu.md
-      - THESHA-Rio: produtos/thesha_rio.md
-      - FUN-Rio: produtos/fun_rio.md
-      - PM-12: produtos/pm_12.md
   - Bairros prioritários: bairros-prioritarios.md
   - Investigação:
       - Visão geral: investigacao.md
