@@ -3,8 +3,7 @@
 [![pages](https://github.com/freirelucas/rio-edu-lab/actions/workflows/pages.yml/badge.svg)](https://github.com/freirelucas/rio-edu-lab/actions/workflows/pages.yml)
 [![ci](https://github.com/freirelucas/rio-edu-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/freirelucas/rio-edu-lab/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-<!-- DOI badge será inserido após ativação do webhook Zenodo (instruções em CHANGELOG.md) -->
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620)
 Laboratório exploratório sobre o Grupo Educação do [data.rio](https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310). Sandbox que precede e alimenta o produto **ACEC-Hub** (cuja estrutura-alvo está versionada em `reference/`).
 
 **Achado-headline (v0.5.0)**: três padrões convergentes mostram que a granularidade de bairro é a escala correta de intervenção em educação no Rio Municipal.
@@ -56,7 +55,7 @@ mkdocs serve
 
 ## Citar
 
-Ver [`CITATION.cff`](./CITATION.cff). Após ativação do webhook Zenodo (instruções em `CHANGELOG.md`), citações também via DOI.
+Ver [`CITATION.cff`](./CITATION.cff). DOI Zenodo: <https://doi.org/10.5281/zenodo.20060620>.
 
 ## Histórico
 

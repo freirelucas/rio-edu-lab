@@ -2,6 +2,8 @@
 
 > Laboratório exploratório sobre o Grupo Educação do data.rio.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620)
+
 Sandbox de pesquisa que precede e alimenta o produto **ACEC-Hub** — Atlas Cibernético da Educação Carioca. Aqui ficam as análises do inventário, probes de ingestão e relatórios reprodutíveis. A arquitetura-alvo do produto está versionada em [`reference/acec-hub/`](https://github.com/freirelucas/rio-edu-lab/tree/main/reference/acec-hub).
 
 ## Em uma linha
