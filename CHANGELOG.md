@@ -4,6 +4,35 @@ Formato adaptado de [Keep a Changelog](https://keepachangelog.com/) e [SemVer](h
 
 ## [Unreleased — v0.6 in progress]
 
+### v0.6.1 — HEX-EDU acessibilidade entregue (Pereira-style, haversine)
+
+Operacionalização parcial de Pereira et al. (2019) IPEA: para cada hex H3 res 8 do município, computamos `acesso_quality(i) = Σ_j IDEB(j) · exp(-d(i,j)/d0)` sobre 1022 equipamentos elegíveis (Escola Municipal + CIEP + Especial). `d0 = 1.5 km`, distância haversine (linha reta).
+
+Achados:
+
+- AP 3 (Zona Norte) lidera (média 113), seguida do Centro (96).
+- Zona Sul (AP 2) em 59 — IDEB médio mais alto não compensa baixa densidade.
+- AP 4 (Barra/Jacarepaguá) em 29 — sprawl + dependência de transporte.
+- 18 hexes têm zero escolas elegíveis em raio de 5 km.
+
+Adições:
+
+- `analysis/25_fetch_escolas_municipais.py` — Feature Service IPP (1590 features → 1022 elegíveis).
+- `analysis/26_hex_accessibility.py` — métrica Pereira simplificada.
+- `analysis/27_accessibility_charts.py` — Plotly figures.
+- `data/raw/geo/escolas_municipais.geojson`
+- `data/processed/hex_accessibility.csv`
+- `docs/reports/14_acessibilidade.md`
+- `docs/_assets/charts/acessibilidade_{map,dist}.json`
+
+Não entrega ainda (v0.7):
+
+- OSM road network + isócronas reais (substituem haversine).
+- Decomposição por SES (IPS/IDS) em vez de só geográfica.
+- IDEB por escola (microdado INEP, não em data.rio) — atualmente IDEB é por bairro.
+
+
+
 ### Honest re-framing of the MVP catalog
 
 Revisão crítica do framing "4 produtos paper-driven" da v0.5 expôs que a fundamentação acadêmica de 3 dos 4 produtos era frouxa:

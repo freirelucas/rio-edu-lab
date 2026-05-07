@@ -32,8 +32,8 @@ Lab que opera papers em produtos. Cada produto **operacionaliza um paper especí
 
 <a class="paper-badge" href="produtos/hex_edu/">
 <span class="paper-icon">📐</span>
-<span class="paper-title">HEX-EDU</span>
-<span class="paper-cite">Pereira et al. (2019) IPEA — acessibilidade via H3 · v0.5 (Theil) → v0.6 (acessibilidade)</span>
+<span class="paper-title">HEX-EDU v0.6.1</span>
+<span class="paper-cite">Pereira et al. (2019) IPEA — acessibilidade via H3 · 1022 escolas, 1593 hexes</span>
 </a>
 
 <a class="paper-badge" href="produtos/index/">
@@ -43,6 +43,8 @@ Lab que opera papers em produtos. Cada produto **operacionaliza um paper especí
 </a>
 
 </div>
+
+> **HEX-EDU v0.6.1 entregue**: acessibilidade ponderada por IDEB (Pereira-style, distância haversine). Ver [Relatório 14](reports/14_acessibilidade.md). v0.7 trará isócronas via OSM road network.
 
 > **Nota de transparência:** a v0.5 publicou 4 produtos. A revisão v0.6 (em curso) consolida em **1 produto ativo + 1 em planejamento**. Os 3 cortados (THESHA-Rio, FUN-Rio, PM-12) viraram análises de robustez — o código continua reproduzível, mas a fundamentação acadêmica deles era frágil. Detalhe em [Produtos](produtos/index.md).
 

@@ -5,11 +5,11 @@ description: Operacionalização da metodologia Pereira et al. (2019) IPEA para 
 
 # 📐 HEX-EDU
 
-> Aplicação do **H3 hexagonal grid** ao IDEB municipal carioca por bairro. Versão atual entrega decomposição Theil-T da inequidade educacional. Próxima iteração estende para **análise de acessibilidade** seguindo Pereira et al. (2019) IPEA.
+> Aplicação do **H3 hexagonal grid** ao IDEB municipal carioca. **v0.6.1 entrega replicação parcial de Pereira et al. (2019) IPEA**: acessibilidade ponderada por IDEB. v0.5 decomposição Theil-T continua disponível como análise complementar.
 
 [![paper](https://img.shields.io/badge/paper--base-Pereira_et_al._2019_IPEA-008572)](https://hdl.handle.net/10419/240730)
-[![paper](https://img.shields.io/badge/m%C3%A9todo--base-Theil_1967-008572)](https://en.wikipedia.org/wiki/Theil_index)
-[![relatórios](https://img.shields.io/badge/leitura_t%C3%A9cnica-relat%C3%B3rios_06%2C_07%2C_08-grey)](../reports/06_theil_ideb.md)
+[![v0.6](https://img.shields.io/badge/v0.6.1-acessibilidade_haversine-2166ac)](../reports/14_acessibilidade.md)
+[![v0.5](https://img.shields.io/badge/v0.5-Theil_decomposition-008572)](../reports/06_theil_ideb.md)
 [![mapa](https://img.shields.io/badge/mapa_interativo-%E2%86%92-2166ac)](../mapa.md)
 
 ## Paper-base
@@ -20,23 +20,27 @@ description: Operacionalização da metodologia Pereira et al. (2019) IPEA para 
 
 **Cidades cobertas no paper**: São Paulo, Rio de Janeiro, Belo Horizonte, Recife, Fortaleza, Porto Alegre, Curitiba (transporte público) + 20 cidades para transporte ativo.
 
-## O que entregamos hoje (v0.5)
+## v0.6.1 — acessibilidade ponderada por IDEB ✅
 
-**Subseção do método Pereira aplicada ao Rio**: usamos H3 resolução 8 (≈ 0.7 km², ≈ 1593 hexes para o município) sobre o IDEB municipal por bairro. Cada hexágono herda o IDEB do bairro do seu centroide. Em vez da métrica de acessibilidade do paper original, **aplicamos decomposição Theil-T** do IDEB para mensurar a heterogeneidade espacial.
+Para cada hex H3 (1593 unidades, res 8) computamos:
 
-**Achado**: 66% da desigualdade do IDEB municipal carioca está **dentro das RAs**, não entre. Coropléticos por RA mascaram a maior parte da variância relevante. ([Relatório 06](../reports/06_theil_ideb.md))
+```
+acesso_quality(i) = Σ_j IDEB(j) · exp(-d(i,j)/d0)
+```
 
-## O que falta para a replicação completa (v0.6)
+onde j são os equipamentos eleg. (Escola Municipal + CIEP + Especial = 1022) em raio de 5 km, `d` é a distância haversine ao equipamento, e `d0 = 1.5 km` é o parâmetro de impedância. **`acesso_quality` é a métrica Pereira-style**: oportunidade educacional ponderada pela qualidade de cada opção e penalizada exponencialmente pela distância.
 
-A versão atual **não entrega** a métrica de acessibilidade per se. Falta:
+**Achado da v0.6.1**: AP 3 (Zona Norte) lidera o acesso ponderado (média **113**), seguida do Centro (96). Zona Sul fica em 59 e AP 4 (Barra/Jacarepaguá) em 29. **Zona Norte alta densidade > Zona Sul alta qualidade isolada**. Detalhes técnicos no [Relatório 14](../reports/14_acessibilidade.md).
 
-1. **Pontos das escolas municipais geocoded** — disponível como Feature Service no data.rio (item `0a220ea7972449e39a28210dd317f636`).
-2. **Rede viária** — extração via OSMnx ou OSM Planet.
-3. **Isócronas** — tempos de viagem por hex até as N escolas mais próximas (a pé e/ou ônibus).
-4. **Ponderação por qualidade** — multiplicar acessibilidade por IDEB da escola atingida.
-5. **Decomposição por SES** — usar IPS/IDS por bairro (ambos disponíveis no data.rio) como variável de equidade.
+**Próximo (v0.7)**: substituir distância haversine por isócronas reais via OSM road network (osmnx) + decompor por SES real (IPS/IDS).
 
-Esse é o roadmap explicito do **PR-E** subsequente. Até lá, a página comunica honestamente: HEX-EDU v0.5 = Theil + H3 grid pronto; acessibilidade Pereira-style em construção.
+## v0.5 — decomposição Theil-T ✅
+
+Análise complementar da inequidade do IDEB municipal por bairro. Usa o mesmo grid H3 da v0.6 mas aplica decomposição de Theil em vez de métrica de acesso.
+
+**Achado**: 66% da desigualdade do IDEB municipal carioca está **dentro das RAs**, não entre. Coropléticos por RA mascaram a maior parte da variância. ([Relatório 06](../reports/06_theil_ideb.md))
+
+Ambas as análises usam o mesmo substrato espacial (H3 res 8 + bairros oficiais IPP). A v0.6 mede "quanta opção tenho perto"; a v0.5 mede "quanta variância existe entre opções, agregada por escala administrativa".
 
 ## Visualizações disponíveis hoje
 
