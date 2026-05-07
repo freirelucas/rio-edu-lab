@@ -8,3 +8,5 @@ pandas>=2.0
 matplotlib>=3.8
 folium>=0.17
 branca>=0.7
+plotly>=5.20
+numpy>=1.26
