@@ -1,80 +1,125 @@
-# rio-edu-lab
+---
+title: rio-edu-lab — desigualdade educacional do Rio em granularidade que importa
+description: 67% da desigualdade do IDEB municipal carioca está dentro das RAs, não entre. Mapa H3 + decomposição Theil + DOI Zenodo.
+hide:
+  - toc
+---
 
-> Laboratório exploratório sobre o Grupo Educação do data.rio.
+<div class="hero" markdown>
+
+<div class="hero-text" markdown>
+# **2 em cada 3** das diferenças no IDEB do Rio são **dentro** da mesma RA — não entre.
+
+> Atlas Cibernético da Educação Carioca — desigualdade educacional do Rio em granularidade que importa.
+
+[:material-map: Ver o mapa interativo](mapa.md){ .md-button .md-button--primary }
+[:material-rocket-launch-outline: Tour de 5 minutos](tour.md){ .md-button }
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620)
+</div>
 
-Sandbox de pesquisa que precede e alimenta o produto **ACEC-Hub** — Atlas Cibernético da Educação Carioca. Aqui ficam as análises do inventário, probes de ingestão e relatórios reprodutíveis. A arquitetura-alvo do produto está versionada em [`reference/acec-hub/`](https://github.com/freirelucas/rio-edu-lab/tree/main/reference/acec-hub).
+<div class="hero-viz" markdown>
+<div id="hero-toggle-map" data-chart="_assets/charts/hero_toggle.json"></div>
+</div>
 
-## Em uma linha
+</div>
 
-O Grupo Educação do data.rio publica **186 itens** (1991–2024) — séries históricas, mapas, painéis. Este lab destrincha esse acervo, valida o caminho de ingestão e produz inputs para os produtos do ACEC-Hub.
+## 4 papers, 4 produtos, 1 conclusão
 
-## Onde começar
+Operacionalizamos métodos publicados sobre o acervo educacional do data.rio. Cada produto compara o que o paper original descobriu com o que encontramos aplicando ao Rio.
 
-| Quero… | Vá para |
+<div class="papers-strip" markdown>
+
+<a class="paper-badge" href="produtos/hex_edu/">
+<span class="paper-icon">📐</span>
+<span class="paper-title">HEX-EDU</span>
+<span class="paper-cite">Theil (1967) — entropia</span>
+</a>
+
+<a class="paper-badge" href="produtos/thesha_rio/">
+<span class="paper-icon">🪜</span>
+<span class="paper-title">THESHA-Rio</span>
+<span class="paper-cite">Bourguignon, Ferreira & Menéndez (2007) — decomposição hierárquica</span>
+</a>
+
+<a class="paper-badge" href="produtos/fun_rio/">
+<span class="paper-icon">⏳</span>
+<span class="paper-title">FUN-Rio</span>
+<span class="paper-cite">Mare (1980) + Reardon & Owens (2014) — transições escolares</span>
+</a>
+
+<a class="paper-badge" href="produtos/pm_12/">
+<span class="paper-icon">📈</span>
+<span class="paper-title">PM-12</span>
+<span class="paper-cite">Bettencourt (2010) + Heinrich Mora (2023) — leis de escala</span>
+</a>
+
+</div>
+
+## Para quem é isto
+
+<div class="grid cards" markdown>
+
+-   :material-newspaper-variant-multiple-outline:{ .lg } **Jornalista / cidadão**
+
+    ---
+
+    Mostra como a granularidade administrativa esconde a desigualdade real.
+
+    [:octicons-arrow-right-24: Tour 5 min](tour.md)
+
+-   :material-city-variant-outline:{ .lg } **Gestor público / IPP**
+
+    ---
+
+    Lista de bairros prioritários cruzando déficit de escolas e queda de IDEB.
+
+    [:octicons-arrow-right-24: Bairros prioritários](bairros-prioritarios.md)
+
+-   :material-flask-outline:{ .lg } **Pesquisador**
+
+    ---
+
+    4 produtos paper-driven, código reproduzível, DOI Zenodo, 28 testes verdes.
+
+    [:octicons-arrow-right-24: Paper draft](paper/hex_edu_manuscript.md)
+
+-   :material-code-tags:{ .lg } **Desenvolvedor**
+
+    ---
+
+    Pipeline reproduzível ponta-a-ponta, pacote `acec` instalável.
+
+    [:octicons-arrow-right-24: Reproduzir](reproduzir.md)
+
+</div>
+
+## O que cada produto descobriu
+
+| Produto | Em uma frase |
 |---|---|
-| Entender o acervo | [Relatório 01 — EDA do manifest](reports/01_manifest_eda.md) |
-| Entender como acessar os dados | [API do data.rio](data-rio-api.md) |
-| Ver se o pipeline de ingestão funciona | [Relatório 02 — Probe de ingestão](reports/02_ingestion_probe.md) |
-| Ver o que tem dentro dos 127 Excels | [Relatório 03 — Catálogo empírico dos Excels](reports/03_excel_catalog.md) |
-| Saber quais Excels prestam para HEX-EDU | [Relatório 04 — Auditoria do shortlist](reports/04_shortlist_audit.md) |
-| Ver os 35 PDFs catalogados | [Relatório 05 — Corpus dos PDFs](reports/05_pdf_corpus.md) |
-| Ver Theil sobre IDEB do Rio | [Relatório 06 — Theil sobre IDEB por bairro](reports/06_theil_ideb.md) |
-| Ver o mapa HEX-EDU (estático) | [Relatório 07 — HEX-EDU estático](reports/07_hex_edu_static.md) |
-| Brincar com o mapa HEX-EDU | [Relatório 08 — HEX-EDU interativo](reports/08_hex_edu_interactive.md) |
-| Ver Theil em 3 níveis (AP / RA / bairro) | [Relatório 11 — THESHA-Rio](reports/11_thesha_rio.md) |
-| Ver trajetórias 5º→9º por bairro | [Relatório 12 — FUN-Rio](reports/12_fun_rio.md) |
-| Ver lei de escala matrícula × escolas | [Relatório 13 — PM-12](reports/13_pm_12.md) |
-| Ler o paper consolidado (HEX-EDU) | [HEX-EDU manuscript v0.1 draft](paper/hex_edu_manuscript.md) |
-| Ler o produto-alvo | [README do ACEC-Hub](https://github.com/freirelucas/rio-edu-lab/blob/main/reference/README-acec-hub.md) |
+| **HEX-EDU** | Mapa H3 do IDEB por bairro — **66% da desigualdade está dentro das RAs**, não entre. |
+| **THESHA-Rio** | Decomposição em 3 níveis: bairro = **67%**, RA-em-AP = 26%, AP = 8%. Política em escala ampla esconde quase tudo. |
+| **FUN-Rio** | **87%** das pseudocoortes 5º→9º pioram. Slope −0.53 vs IDEB inicial — bairros de IDEB mais alto caem mais. |
+| **PM-12** | β = **0.77** (sublinear). Bairros maiores em matrícula têm desproporcionalmente menos escolas. |
 
-## MVP-1 do ACEC-Hub (v0.5.0)
+Os 4 padrões apontam para a mesma direção de política: **a granularidade de bairro é a escala correta**.
 
-Os 4 produtos paper-driven entregues:
+## Citar
 
-| Produto | Paper-base | Achado |
-|---|---|---|
-| **HEX-EDU** | Theil (1967) | 66% da desigualdade do IDEB é within-RA |
-| **THESHA-Rio** | Bourguignon, Ferreira & Menéndez (2007) | Decomposição 3-níveis: bairro = 67%, RA-em-AP = 26%, AP = 8% |
-| **FUN-Rio** | Mare (1980) + Reardon & Owens (2014) | 87% das pseudocoortes 5º→9º pioram; slope −0.53 vs ponto-de-partida |
-| **PM-12** | Bettencourt et al. (2010) + Heinrich Mora et al. (2023) | β = 0.77 (alocação sublinear); bairros grandes sub-servidos em escolas |
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620) — versão atual **v0.5.0**, ver [`CITATION.cff`](https://github.com/freirelucas/rio-edu-lab/blob/main/CITATION.cff).
 
-## Achados-chave (medidos, não estimados)
-
-- **186 itens** no manifest, dominados por séries históricas em Excel (127, 68%).
-- **89% das visualizações** se concentram em 5 itens interativos — confirma o gap que o ACEC-Hub propõe ocupar.
-- **127/127 Excels acessíveis** via API: 92 s, 12.3 MiB total. A estimativa anterior de 100 MiB (extrapolada de 1 amostra) estava ~8× errada.
-- **126 dos 127 Excels são `.xls` legacy**, não `.xlsx`, apesar do `Content-Type` da API afirmar o contrário. Implicação: precisa `xlrd>=2.0`, não só `openpyxl`.
-- **Janela temporal real do conteúdo**: 1991–2024. 30 arquivos com span ≥ 21 anos.
-- **Granularidade dominante**: ~52% dos Excels têm 13–30 valores únicos na coluna 0 (compatível com RP / parcial RA); apenas 13 chegam à granularidade de bairro e 3 a escola.
-- **35/35 PDFs baixados**, 71% com camada de texto extraível (10 são imagens escaneadas). Quatro coleções editoriais do IPP cobrem 32 deles.
-- **66% da desigualdade do IDEB municipal está DENTRO das RAs** (média 2007–2023), não entre elas — política em granularidade de RA mascara a maior parte da variação relevante. Justificativa direta para HEX-EDU.
-
-## Reproduzir
-
-```bash
-git clone https://github.com/freirelucas/rio-edu-lab.git
-cd rio-edu-lab
-
-# Análises 01 e 02 usam só a stdlib do Python 3.10+
-python3 analysis/01_manifest_eda.py    # gera CSV enriquecido + relatório 01
-python3 analysis/02_ingestion_probe.py # probe da API + relatório 02
-
-# Análise 03 lê conteúdo real dos arquivos
-pip install -r requirements.txt
-python3 analysis/03_download_excels.py     # ~92 s, 12.3 MiB
-python3 analysis/04_excel_catalog.py       # <1 s
-python3 analysis/05_report_excel_catalog.py
-```
-
-Para rodar o site localmente:
-
-```bash
-pip install -r requirements-docs.txt
-mkdocs serve
+```bibtex
+@misc{freire2026rioedulab,
+  author       = {Freire, Lucas},
+  title        = {{rio-edu-lab} — Atlas Cibern\'etico da Educa\c{c}\~ao Carioca},
+  year         = {2026},
+  version      = {v0.5.0},
+  doi          = {10.5281/zenodo.20060620},
+  url          = {https://doi.org/10.5281/zenodo.20060620},
+}
 ```
 
 ## Licença
 
-Código MIT. Dados derivados CC BY 4.0. Dados brutos seguem licença original do data.rio / IPP.
+Código MIT · dados derivados CC BY 4.0 · dados brutos seguem licença original do data.rio / IPP.

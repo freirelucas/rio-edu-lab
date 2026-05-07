@@ -51,24 +51,39 @@ extra_javascript:
 
 nav:
   - Início: index.md
-  - API do data.rio: data-rio-api.md
-  - Relatórios:
-      - 01 — EDA do manifest: reports/01_manifest_eda.md
-      - 02 — Probe de ingestão: reports/02_ingestion_probe.md
-      - 03 — Catálogo empírico dos Excels: reports/03_excel_catalog.md
-      - 04 — Auditoria do shortlist: reports/04_shortlist_audit.md
-      - 05 — Corpus dos PDFs: reports/05_pdf_corpus.md
-      - 06 — Theil sobre IDEB por bairro: reports/06_theil_ideb.md
-      - 06b — Theil ponderado por matrícula: reports/06b_theil_weighted.md
-      - 07 — HEX-EDU estático: reports/07_hex_edu_static.md
-      - 08 — HEX-EDU interativo: reports/08_hex_edu_interactive.md
-      - 09 — IDEB séries finais (9º): reports/09_anos_finais.md
-      - 10 — Replicação metodológica: reports/10_method_replication.md
-      - 11 — THESHA-Rio (3-level Theil): reports/11_thesha_rio.md
-      - 12 — FUN-Rio (pseudocoortes 5º→9º): reports/12_fun_rio.md
-      - 13 — PM-12 (lei de escala intra-Rio): reports/13_pm_12.md
-  - Paper:
-      - HEX-EDU manuscript (v0.1 draft): paper/hex_edu_manuscript.md
+  - Tour: tour.md
+  - Mapa: mapa.md
+  - Produtos:
+      - Visão geral: produtos/index.md
+      - HEX-EDU: produtos/hex_edu.md
+      - THESHA-Rio: produtos/thesha_rio.md
+      - FUN-Rio: produtos/fun_rio.md
+      - PM-12: produtos/pm_12.md
+  - Bairros prioritários: bairros-prioritarios.md
+  - Investigação:
+      - Visão geral: investigacao.md
+      - Inventário do acervo:
+          - 01 — Manifest: reports/01_manifest_eda.md
+          - 02 — API probe: reports/02_ingestion_probe.md
+          - 03 — Catálogo Excels: reports/03_excel_catalog.md
+          - 04 — Shortlist: reports/04_shortlist_audit.md
+          - 05 — Corpus PDFs: reports/05_pdf_corpus.md
+      - HEX-EDU profundo:
+          - 06 — Theil base: reports/06_theil_ideb.md
+          - 06b — Theil ponderado: reports/06b_theil_weighted.md
+          - 07 — Mapa estático: reports/07_hex_edu_static.md
+          - 08 — Mapa interativo (técnico): reports/08_hex_edu_interactive.md
+          - 09 — ANOS_FINAIS: reports/09_anos_finais.md
+          - 10 — Replicação metodológica: reports/10_method_replication.md
+      - Outros produtos:
+          - 11 — THESHA-Rio: reports/11_thesha_rio.md
+          - 12 — FUN-Rio: reports/12_fun_rio.md
+          - 13 — PM-12: reports/13_pm_12.md
+  - Paper: paper/hex_edu_manuscript.md
+  - Recursos:
+      - API do data.rio: data-rio-api.md
+      - Glossário: glossario.md
+      - Reproduzir: reproduzir.md
 
 markdown_extensions:
   - admonition
