@@ -29,3 +29,11 @@ Fonte da matrícula: data.rio item `bba0d7d3c31c4cfd8a6940cc283d52cc` ('Matrícu
 python3 analysis/16_theil_weighted.py
 ```
 Saídas: `data/processed/matriculas_bairros.csv` e `data/processed/theil_ideb_weighted.csv`.
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [HEX-EDU (página de produto)](../produtos/hex_edu.md)
+    - [09 — IDEB séries finais (9º)](09_anos_finais.md)

@@ -134,3 +134,11 @@ python3 analysis/05_report_excel_catalog.py
 ```
 
 Os binários em `data/raw/excel/` ficam gitignored (12.3 MiB cabe no repo tranquilamente, mas seria poluição — o catálogo derivado em `data/processed/` já condensa o que importa, com 2 CSVs leves).
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [04 — Auditoria do shortlist](04_shortlist_audit.md)
+    - [Glossário](../glossario.md)

@@ -84,6 +84,7 @@ nav:
       - API do data.rio: data-rio-api.md
       - Glossário: glossario.md
       - Reproduzir: reproduzir.md
+      - Editar deposit Zenodo: zenodo-deposit.md
 
 markdown_extensions:
   - admonition

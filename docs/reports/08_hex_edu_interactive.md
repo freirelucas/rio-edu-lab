@@ -23,3 +23,12 @@ Mesmo conteúdo do [Relatório 07](07_hex_edu_static.md), mas em formato interat
 pip install -r requirements.txt   # inclui folium e branca
 python3 analysis/14_hex_edu_folium.py
 ```
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [Mapa (página pública)](../mapa.md)
+    - [HEX-EDU (página de produto)](../produtos/hex_edu.md)
+    - [Tour 5 min](../tour.md)

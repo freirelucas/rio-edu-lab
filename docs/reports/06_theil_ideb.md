@@ -106,3 +106,13 @@ python3 analysis/03_download_excels.py    # se ainda não baixou
 python3 analysis/10_theil_ideb.py
 ```
 Saídas: `data/processed/ideb_bairros.csv` (long format) e `data/processed/theil_ideb_anos_iniciais.csv`.
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [HEX-EDU (página de produto)](../produtos/hex_edu.md)
+    - [06b — Theil ponderado](06b_theil_weighted.md)
+    - [07 — Mapa estático](07_hex_edu_static.md)
+    - [10 — Replicação metodológica](10_method_replication.md)
