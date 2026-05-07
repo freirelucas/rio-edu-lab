@@ -102,10 +102,7 @@ Justificativa quantitativa direta para o produto visual HEX-EDU (mapa H3 em gran
 - Refatoração para package Python instalável.
 - THESHA-Rio, PM-12, FUN-Rio (outros produtos do roadmap MVP-1 do ACEC-Hub).
 
-### Ativação manual do DOI no Zenodo
+### DOI Zenodo
 
-Para que este release receba DOI:
-
-1. Habilitar webhook em <https://zenodo.org/account/settings/github/>, ativando a sincronização do repo `freirelucas/rio-edu-lab`.
-2. Criar o release `v0.1.0` no GitHub (ou re-criar se já existir antes da ativação).
-3. Zenodo emite o DOI automaticamente. Substituir o placeholder no `README.md` pelo DOI real.
+- **Concept DOI** (sempre aponta para a última versão): <https://doi.org/10.5281/zenodo.20060620>
+- Emitido em 2026-05-06 a partir do GitHub Release v0.5.0 (que englobou também o conteúdo da v0.1.0). Webhook ativado em <https://zenodo.org/account/settings/github/>.
