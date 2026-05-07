@@ -38,3 +38,11 @@ Tudo do Relatório 06 continua valendo. Para 9º ano, um adicional: muitos bairr
 python3 analysis/15_anos_finais.py
 ```
 Saídas: `data/processed/ideb_anos_finais.csv`, `data/processed/theil_ideb_anos_finais.csv`, `data/processed/theil_iniciais_vs_finais.csv`.
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [12 — FUN-Rio (trajetórias)](12_fun_rio.md)
+    - [HEX-EDU (página de produto)](../produtos/hex_edu.md)

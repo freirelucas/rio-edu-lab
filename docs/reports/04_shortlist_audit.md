@@ -332,3 +332,11 @@ _Outras sheets: `Definições`, `RA_2000`, `Bairros_1991`, `Bairros_2000`_
 | 5 | Copacabana | 43.92247680266795 | 11.991321503776547 | 11.93190846485184 | 8.639214051796355 | 8.02132546216663 |
 
 _Outras sheets: `Definições`, `RA_2000`, `Bairros_1991`, `Bairros_2000`_
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [06 — Theil base](06_theil_ideb.md)
+    - [HEX-EDU (página de produto)](../produtos/hex_edu.md)

@@ -64,3 +64,11 @@ Esta replicação interna **fortalece o argumento do Relatório 06**: a desigual
 python3 analysis/17_theil_components.py
 ```
 Saídas: `data/processed/ideb_components_long.csv` e `data/processed/theil_components.csv`. Decomposição aditiva validada via `check_sum ≈ 0` em todos os 27 component-year rows.
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [HEX-EDU (página de produto)](../produtos/hex_edu.md)
+    - [Glossário](../glossario.md)

@@ -73,3 +73,12 @@ _Portal: `https://pcrj.maps.arcgis.com/sharing/rest`_
 5. **Custo de download estimado**: 127 Excels × ~800 KiB ≈ **100 MiB**, 35 PDFs × ~3 MiB ≈ **105 MiB**. Total dos artefatos baixáveis ≈ 200 MiB — totalmente viável para um cache local; não precisa de DVC nesta fase.
 
 **Próximo passo natural:** baixar todos os Excels (script de ingestão lote, respeitando `sleep` entre chamadas), salvar em `data/raw/excel/{id}.xlsx`, e fazer EDA do conteúdo (sheets, headers, granularidade real) para o shortlist do HEX-EDU.
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [03 — Catálogo dos Excels](03_excel_catalog.md)
+    - [API do data.rio](../data-rio-api.md)
+    - [Tour 5 min](../tour.md)

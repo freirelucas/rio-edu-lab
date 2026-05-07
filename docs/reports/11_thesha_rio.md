@@ -55,3 +55,12 @@ pip install -r requirements.txt
 python3 analysis/18_thesha_rio.py
 ```
 Saídas: `data/processed/thesha_rio.csv` e os PNGs em `docs/reports/_assets/`.
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [THESHA-Rio (página de produto)](../produtos/thesha_rio.md)
+    - [HEX-EDU (2-níveis)](../produtos/hex_edu.md)
+    - [Bairros prioritários](../bairros-prioritarios.md)

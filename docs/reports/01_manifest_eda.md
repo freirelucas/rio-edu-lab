@@ -154,3 +154,12 @@ _Group: https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310_
 - **Concentração de atenção**: os 5 itens mais vistos somam 490,286 de 550,131 views (89%). Todos são interativos (Hub Site, Web Map App, Feature Service) — confirma o gap entre Excels históricos e ferramentas de exploração que o ACEC-Hub propõe ocupar.
 - **URLs ausentes**: 170 de 186 itens (91%) não têm URL direta no manifest. Antes de qualquer pipeline de ingestão, validar se a URL é resolvida sob demanda pela API do ArcGIS Hub ou se está realmente quebrada.
 - **127 Excels = backlog do MVP**: a triagem por tema e granularidade no CSV enriquecido (`data/manifest_enriched.csv`) deve guiar o shortlist do HEX-EDU.
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [02 — Probe da API](02_ingestion_probe.md)
+    - [Tour 5 min](../tour.md)
+    - [Reproduzir](../reproduzir.md)

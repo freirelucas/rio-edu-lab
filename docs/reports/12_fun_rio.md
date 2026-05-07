@@ -62,3 +62,12 @@ python3 analysis/10_theil_ideb.py     # gera ideb_bairros.csv
 python3 analysis/15_anos_finais.py    # gera ideb_anos_finais.csv
 python3 analysis/19_fun_rio.py        # este script
 ```
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [FUN-Rio (página de produto)](../produtos/fun_rio.md)
+    - [Bairros prioritários](../bairros-prioritarios.md)
+    - [09 — IDEB séries finais (9º)](09_anos_finais.md)

@@ -68,3 +68,11 @@ python3 analysis/09_report_pdf_corpus.py
 ```
 
 Textos completos da 1ª página de cada PDF ficam em `data/raw/pdf/_first_pages/{id}.txt` (gitignored, mas reproduzíveis), úteis para grep manual quando precisar achar uma metodologia citada.
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [Tour 5 min](../tour.md)
+    - [Reproduzir](../reproduzir.md)

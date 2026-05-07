@@ -44,3 +44,12 @@ python3 analysis/12_h3_grid.py
 python3 analysis/13_hex_edu_static.py
 ```
 Saídas: `data/processed/hex_ideb_panel.csv`, e os PNGs em `docs/reports/_assets/`.
+
+<!-- continue-lendo -->
+
+## Continue lendo
+
+!!! tip ""
+    - [08 — Mapa interativo (técnico)](08_hex_edu_interactive.md)
+    - [Mapa interativo (página pública)](../mapa.md)
+    - [HEX-EDU (página de produto)](../produtos/hex_edu.md)
