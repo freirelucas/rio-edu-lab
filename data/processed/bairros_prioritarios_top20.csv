@@ -1,0 +1,21 @@
+rank,bairro,ap,ra,matriculas,escolas,ideb,sami,delta_mean,delta_n,ideb5_mean,ideb9_mean,sami_z,delta_z,priority_score
+1,Humaitá,Área de Planejamento 2,IV Botafogo,952.0,1.0,6.6,-0.492,-1.42,5,5.76,4.34,-1.539,-2.005,3.543
+2,Pilares,Área de Planejamento 3,XIII Méier,2547.0,2.0,5.954,-0.555,-1.167,6,5.801,4.635,-1.726,-1.35,3.076
+3,Leblon,Área de Planejamento 2,VI Lagoa,3011.0,3.0,6.53,-0.278,-1.479,5,5.979,4.5,-0.896,-2.156,3.052
+4,Curicica,Área de Planejamento 4,XVI Jacarepaguá,6485.0,4.0,5.558,-0.579,-1.009,6,5.439,4.43,-1.799,-0.943,2.742
+5,Jardim América,Área de Planejamento 3,XXXI Vigário Geral,4851.0,4.0,5.525,-0.356,-1.14,6,5.326,4.186,-1.131,-1.281,2.412
+6,Bonsucesso,Área de Planejamento 3,X Ramos,2879.0,2.0,5.338,-0.649,-0.705,6,5.596,4.892,-2.008,-0.156,2.164
+7,Pedra de Guaratiba,Área de Planejamento 5,XXVI Guaratiba,3526.0,3.0,5.166,-0.399,-0.989,7,5.446,4.456,-1.259,-0.892,2.151
+8,Maria da Graça,Área de Planejamento 3,XII Inhaúma,1322.0,1.0,4.7,-0.745,-0.543,7,4.543,4.0,-2.294,0.261,2.033
+9,Jardim Sulacap,Área de Planejamento 5,XXXII Realengo,703.0,1.0,6.0,-0.26,-1.05,6,6.033,4.983,-0.841,-1.049,1.889
+10,Colégio,Área de Planejamento 3,XIV Irajá,3044.0,4.0,5.601,0.001,-1.288,6,5.535,4.247,-0.059,-1.664,1.723
+11,Zumbi,Área de Planejamento 3,XX Ilha do Governador,780.0,1.0,5.8,-0.339,-0.85,6,5.65,4.8,-1.08,-0.532,1.612
+12,Del Castilho,Área de Planejamento 3,XII Inhaúma,2247.0,3.0,5.476,-0.053,-1.102,6,5.302,4.2,-0.222,-1.183,1.406
+13,Lins de Vasconcelos,Área de Planejamento 3,XIII Méier,3188.0,2.0,4.918,-0.727,-0.314,7,4.602,4.288,-2.242,0.851,1.391
+14,Água Santa,Área de Planejamento 3,XIII Méier,769.0,1.0,5.6,-0.328,-0.775,4,5.325,4.55,-1.047,-0.338,1.385
+15,Manguinhos,Área de Planejamento 3,X Ramos,3535.0,4.0,4.449,-0.114,-1.009,4,4.709,3.7,-0.403,-0.942,1.345
+16,Todos os Santos,Área de Planejamento 3,XIII Méier,522.0,1.0,6.6,-0.031,-1.08,5,5.7,4.62,-0.156,-1.126,1.282
+17,Praça Seca,Área de Planejamento 4,XVI Jacarepaguá,7299.0,7.0,5.239,-0.111,-0.988,6,5.197,4.209,-0.394,-0.888,1.282
+18,Vargem Grande,Área de Planejamento 4,XXIV Barra da Tijuca,2365.0,2.0,5.818,-0.498,-0.51,6,5.483,4.974,-1.555,0.347,1.208
+19,Parque Anchieta,Área de Planejamento 3,XXII Anchieta,7389.0,9.0,6.161,0.131,-1.237,6,5.755,4.518,0.331,-1.531,1.2
+20,Praça da Bandeira,Área de Planejamento 2,VIII Tijuca,1073.0,2.0,5.28,0.109,-1.21,6,5.577,4.367,0.264,-1.462,1.199
