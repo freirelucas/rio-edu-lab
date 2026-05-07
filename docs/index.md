@@ -24,37 +24,27 @@ hide:
 
 </div>
 
-## 4 papers, 4 produtos, 1 conclusão
+## Pipeline paper-driven
 
-Operacionalizamos métodos publicados sobre o acervo educacional do data.rio. Cada produto compara o que o paper original descobriu com o que encontramos aplicando ao Rio.
+Lab que opera papers em produtos. Cada produto **operacionaliza um paper específico** com dados disponíveis no data.rio (ou complementares públicos). O catálogo é honesto sobre maturidade.
 
 <div class="papers-strip" markdown>
 
 <a class="paper-badge" href="produtos/hex_edu/">
 <span class="paper-icon">📐</span>
 <span class="paper-title">HEX-EDU</span>
-<span class="paper-cite">Theil (1967) — entropia</span>
+<span class="paper-cite">Pereira et al. (2019) IPEA — acessibilidade via H3 · v0.5 (Theil) → v0.6 (acessibilidade)</span>
 </a>
 
-<a class="paper-badge" href="produtos/thesha_rio/">
-<span class="paper-icon">🪜</span>
-<span class="paper-title">THESHA-Rio</span>
-<span class="paper-cite">Bourguignon, Ferreira & Menéndez (2007) — decomposição hierárquica</span>
-</a>
-
-<a class="paper-badge" href="produtos/fun_rio/">
-<span class="paper-icon">⏳</span>
-<span class="paper-title">FUN-Rio</span>
-<span class="paper-cite">Mare (1980) + Reardon & Owens (2014) — transições escolares</span>
-</a>
-
-<a class="paper-badge" href="produtos/pm_12/">
-<span class="paper-icon">📈</span>
-<span class="paper-title">PM-12</span>
-<span class="paper-cite">Bettencourt (2010) + Heinrich Mora (2023) — leis de escala</span>
+<a class="paper-badge" href="produtos/index/">
+<span class="paper-icon">🧭</span>
+<span class="paper-title">VULN-EDU</span>
+<span class="paper-cite">Paper-base a definir (Reardon 2011 candidato) · em planejamento</span>
 </a>
 
 </div>
+
+> **Nota de transparência:** a v0.5 publicou 4 produtos. A revisão v0.6 (em curso) consolida em **1 produto ativo + 1 em planejamento**. Os 3 cortados (THESHA-Rio, FUN-Rio, PM-12) viraram análises de robustez — o código continua reproduzível, mas a fundamentação acadêmica deles era frágil. Detalhe em [Produtos](produtos/index.md).
 
 ## Para quem é isto
 
@@ -80,7 +70,7 @@ Operacionalizamos métodos publicados sobre o acervo educacional do data.rio. Ca
 
     ---
 
-    4 produtos paper-driven, código reproduzível, DOI Zenodo, 28 testes verdes.
+    1 produto ativo + 1 em planejamento, paper-base canônico (Pereira IPEA 2019), pipeline reprodutível, DOI Zenodo, 28 testes verdes.
 
     [:octicons-arrow-right-24: Produtos](produtos/index.md)
 
@@ -94,16 +84,16 @@ Operacionalizamos métodos publicados sobre o acervo educacional do data.rio. Ca
 
 </div>
 
-## O que cada produto descobriu
+## O que o lab descobriu (até v0.5)
 
-| Produto | Em uma frase |
-|---|---|
-| **HEX-EDU** | Mapa H3 do IDEB por bairro — **66% da desigualdade está dentro das RAs**, não entre. |
-| **THESHA-Rio** | Decomposição em 3 níveis: bairro = **67%**, RA-em-AP = 26%, AP = 8%. Política em escala ampla esconde quase tudo. |
-| **FUN-Rio** | **87%** das pseudocoortes 5º→9º pioram. Slope −0.53 vs IDEB inicial — bairros de IDEB mais alto caem mais. |
-| **PM-12** | β = **0.77** (sublinear). Bairros maiores em matrícula têm desproporcionalmente menos escolas. |
+A análise central — **decomposição Theil-T do IDEB municipal por bairro** — é robusta em 6 séries (anos iniciais/finais, ponderação por matrícula, Aprovação/SAEB/IDEB):
 
-Os 4 padrões apontam para a mesma direção de política: **a granularidade de bairro é a escala correta**.
+- **66% da desigualdade do IDEB municipal está dentro das RAs**, não entre. Coropléticos por RA mascaram a maior parte da variância. ([Relatório 06](reports/06_theil_ideb.md))
+- **3-níveis aninhados**: bairro = 67%, RA-em-AP = 26%, AP = 8%. ([Relatório 11](reports/11_thesha_rio.md))
+- Pseudocoortes 5º→9º pioram em **87%** dos casos; bairros que começam com IDEB alto caem mais. Confound provável: migração para escola privada no 6º ano. ([Relatório 12](reports/12_fun_rio.md))
+- Lei de escala intra-Rio entre escolas e matrícula: β = 0.77 (sublinear) — bairros maiores em matrícula têm desproporcionalmente menos escolas. ([Relatório 13](reports/13_pm_12.md))
+
+Os 4 padrões apontam para **granularidade de bairro como escala correta** de intervenção.
 
 ## Citar
 

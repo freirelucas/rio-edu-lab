@@ -4,16 +4,13 @@
 [![ci](https://github.com/freirelucas/rio-edu-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/freirelucas/rio-edu-lab/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620)
-Laboratório exploratório sobre o Grupo Educação do [data.rio](https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310). Sandbox que precede e alimenta o produto **ACEC-Hub** (cuja estrutura-alvo está versionada em `reference/`).
+Laboratório **paper-driven** sobre o Grupo Educação do [data.rio](https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310). Operacionaliza o método **Pereira, Braga, Serra & Nadalin (2019)** [IPEA — Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras](https://hdl.handle.net/10419/240730) sobre o IDEB municipal carioca.
 
-**Achado-headline (v0.5.0)**: três padrões convergentes mostram que a granularidade de bairro é a escala correta de intervenção em educação no Rio Municipal.
+**Achado central da v0.5**: na decomposição Theil-T do IDEB por bairro, **66% da desigualdade está dentro das RAs** (não entre). Coropléticos por RA mascaram a maior parte da variância. Robusto em 6 séries (anos iniciais/finais, ponderação por matrícula, Aprovação/SAEB/IDEB).
 
-1. **Decomposição espacial Theil em 3 níveis** (THESHA-Rio): 67% da desigualdade do IDEB está entre bairros dentro da mesma RA; só 8% entre Áreas de Planejamento.
-2. **Trajetórias 5º→9º ano** (FUN-Rio): 87% das pseudocoortes pioram; bairros que começam mais altos caem mais (slope −0.53), refutando o efeito Mateus.
-3. **Lei de escala** (PM-12): alocação de escolas é sublinear (β = 0.77) — bairros maiores em matrícula têm desproporcionalmente menos escolas.
+**Status do MVP**: 1 produto ativo (HEX-EDU em v0.5 entregue como Theil sobre H3 grid; v0.6 estende para acessibilidade Pereira-style) + 1 em planejamento (VULN-EDU, cruzamento socioeconômico × IDEB). A v0.6 corrigiu o catálogo da v0.5 que tinha 4 produtos com fundamentação acadêmica heterogênea — detalhes no [CHANGELOG](./CHANGELOG.md).
 
 Site publicado: <https://freirelucas.github.io/rio-edu-lab/>.
-Versão atual: **v0.5.0** (ver [`CHANGELOG.md`](./CHANGELOG.md)).
 
 ## Estrutura
 

@@ -82,8 +82,8 @@ Termos técnicos em ordem alfabética. Cardinalidades reportadas para o municíp
     
     Aceita decomposição aditiva exata em parcelas **between-grupo** + **within-grupo**. É o método-base do HEX-EDU e do THESHA-Rio.
 
-**THESHA-Rio**
-:   Decomposição Theil em 3 níveis aninhados (AP → RA-em-AP → bairro-em-RA). Adapta Bourguignon, Ferreira & Menéndez (2007) para a hierarquia administrativa do Rio.
+**Theil 3-níveis**
+:   Decomposição Theil aplicada a uma hierarquia aninhada (AP → RA-em-AP → bairro-em-RA). Análise de robustez do HEX-EDU. Resultado: 8% / 26% / 67%, comprovando que granularidade administrativa larga esconde a maior parte da variância. Ver [Relatório 11](reports/11_thesha_rio.md).
 
 ## Continue
 

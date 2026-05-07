@@ -61,6 +61,6 @@ Saídas: `data/processed/thesha_rio.csv` e os PNGs em `docs/reports/_assets/`.
 ## Continue lendo
 
 !!! tip ""
-    - [THESHA-Rio (página de produto)](../produtos/thesha_rio.md)
+    - [HEX-EDU (produto canônico — Theil 3-níveis vive aqui como robustez)](../produtos/hex_edu.md)
     - [HEX-EDU (2-níveis)](../produtos/hex_edu.md)
     - [Bairros prioritários](../bairros-prioritarios.md)
