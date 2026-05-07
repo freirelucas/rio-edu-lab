@@ -8,14 +8,19 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   language: pt-BR
+  logo: _assets/logo.svg
+  favicon: _assets/logo.svg
   features:
     - navigation.tabs
     - navigation.sections
     - navigation.top
     - navigation.indexes
     - navigation.tracking
+    - navigation.footer
+    - header.autohide
     - content.code.copy
     - content.action.edit
+    - content.tabs.link
     - search.suggest
     - search.highlight
     - toc.follow
@@ -36,6 +41,13 @@ theme:
         name: Modo claro
   icon:
     repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.plot.ly/plotly-2.35.0.min.js
+  - javascripts/charts.js
 
 nav:
   - Início: index.md

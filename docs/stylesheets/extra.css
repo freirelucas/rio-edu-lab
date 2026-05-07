@@ -1,0 +1,228 @@
+/* rio-edu-lab — UX v0.6 — paleta + hero + cards */
+
+:root {
+  --rio-teal: #008572;
+  --rio-red: #b2182b;
+  --rio-blue: #2166ac;
+  --rio-gray: #6c757d;
+  --rio-bg-soft: #f5f8f7;
+}
+
+[data-md-color-scheme="slate"] {
+  --rio-bg-soft: rgba(255,255,255,.04);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 2rem 0 3rem;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  margin-bottom: 2rem;
+}
+
+[data-md-color-scheme="slate"] .hero {
+  border-bottom-color: rgba(255,255,255,.08);
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 1rem;
+}
+
+.hero-text h1 .accent-red { color: var(--rio-red); }
+.hero-text h1 .accent-blue { color: var(--rio-blue); }
+
+.hero-text blockquote {
+  border: none;
+  padding: 0;
+  margin: 0 0 1.4rem;
+  color: var(--rio-gray);
+  font-size: 1.05rem;
+  font-style: normal;
+}
+
+.hero-text .md-button { margin: 0 .5rem .5rem 0; }
+
+.hero-viz {
+  background: var(--rio-bg-soft);
+  border-radius: 12px;
+  padding: 1rem;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-viz img { max-width: 100%; border-radius: 8px; }
+
+@media (max-width: 800px) {
+  .hero { grid-template-columns: 1fr; gap: 1.2rem; }
+  .hero-text h1 { font-size: 1.6rem; }
+  .hero-viz { min-height: 280px; }
+}
+
+/* ---------- Paper-replication badges ---------- */
+
+.papers-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.paper-badge {
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+  padding: .9rem 1rem;
+  background: var(--rio-bg-soft);
+  border-left: 4px solid var(--rio-teal);
+  border-radius: 4px;
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.paper-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,.08);
+}
+
+.paper-badge .paper-icon { font-size: 1.4rem; line-height: 1; }
+.paper-badge .paper-title { font-weight: 600; font-size: .95rem; color: var(--rio-teal); }
+.paper-badge .paper-cite { font-size: .8rem; color: var(--rio-gray); }
+
+/* ---------- Tour slides ---------- */
+
+.tour-slide {
+  padding: 2rem 0;
+  scroll-margin-top: 4rem;
+}
+
+.tour-slide + .tour-slide {
+  border-top: 1px dashed rgba(0,0,0,.08);
+}
+
+[data-md-color-scheme="slate"] .tour-slide + .tour-slide {
+  border-top-color: rgba(255,255,255,.1);
+}
+
+.tour-slide-num {
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+  line-height: 2.2rem;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--rio-teal);
+  color: white;
+  font-weight: 700;
+  margin-right: .5rem;
+}
+
+.tour-next {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ---------- Plotly chart containers ---------- */
+
+[data-chart] {
+  width: 100%;
+  min-height: 360px;
+  border-radius: 8px;
+  background: var(--rio-bg-soft);
+  margin: 1rem 0;
+}
+
+[data-chart][data-loading="true"]::before {
+  content: "carregando…";
+  display: block;
+  text-align: center;
+  padding-top: 160px;
+  color: var(--rio-gray);
+  font-size: .9rem;
+}
+
+/* ---------- Comparison side-by-side (Fio B / paper-replication) ---------- */
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.compare-grid > div {
+  background: var(--rio-bg-soft);
+  padding: 1.25rem;
+  border-radius: 10px;
+  border-top: 4px solid var(--rio-gray);
+}
+
+.compare-grid .compare-paper { border-top-color: var(--rio-blue); }
+.compare-grid .compare-rio { border-top-color: var(--rio-red); }
+
+.compare-grid h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--rio-gray);
+}
+
+@media (max-width: 800px) {
+  .compare-grid { grid-template-columns: 1fr; }
+}
+
+/* ---------- Iframe lazy mapa ---------- */
+
+.lazy-iframe-wrap {
+  position: relative;
+  padding-bottom: 70%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+  margin: 1.5rem 0;
+}
+
+.lazy-iframe-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ---------- Priority list ---------- */
+
+.priority-row {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr auto;
+  align-items: center;
+  gap: .75rem;
+  padding: .55rem 0;
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.priority-rank {
+  text-align: right;
+  color: var(--rio-gray);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.priority-score {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .85rem;
+  color: var(--rio-red);
+}
