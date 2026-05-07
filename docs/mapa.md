@@ -14,7 +14,7 @@ Cada hexágono H3 (resolução 8, ≈ 0.7 km²) herda o IDEB do bairro do seu ce
     - 7 bairros muito pequenos (Lapa, Saúde, Bancários, Cocotá, Abolição, Argentino, Jabour) não têm hex centroide nesta resolução; aparecem em branco mesmo com dado.
 
 <div class="lazy-iframe-wrap">
-<iframe src="reports/_assets/08_hex_edu_interactive.html"
+<iframe src="../reports/_assets/08_hex_edu_interactive.html"
         loading="lazy"
         title="Mapa HEX-EDU interativo"></iframe>
 </div>

@@ -20,7 +20,7 @@ Bairros com **SAMI negativo E Δ negativo** são duplamente prioritários: infra
 
 ## Top 20
 
-<div data-chart="_assets/charts/tour_slide_5.json"></div>
+<div data-chart="../_assets/charts/tour_slide_5.json"></div>
 
 A lista completa de 115 bairros está em [`data/processed/bairros_prioritarios.csv`](https://github.com/freirelucas/rio-edu-lab/blob/main/data/processed/bairros_prioritarios.csv).
 

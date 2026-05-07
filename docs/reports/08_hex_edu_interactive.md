@@ -2,7 +2,7 @@
 
 Mesmo conteúdo do [Relatório 07](07_hex_edu_static.md), mas em formato interativo: panning, zoom, tooltip por hex, e seletor de ano (toggle entre os 9 IDEBs disponíveis, 2007–2023).
 
-<iframe src="_assets/08_hex_edu_interactive.html" width="100%" height="640" style="border:1px solid #ddd; border-radius:4px;"></iframe>
+<iframe src="../_assets/08_hex_edu_interactive.html" width="100%" height="640" style="border:1px solid #ddd; border-radius:4px;"></iframe>
 
 ## Como usar
 
