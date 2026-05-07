@@ -1,0 +1,24 @@
+{
+  "fetched_at": "2026-05-07T23:41:54+00:00",
+  "fetched_by": "analysis/25_fetch_escolas_municipais.py",
+  "manifest_item": {
+    "id": "0a220ea7972449e39a28210dd317f636",
+    "title": "Escolas Municipais",
+    "type": "Feature Service",
+    "owner": "PrefeituraRio",
+    "modified_epoch_ms": 1713994614000,
+    "modified": "2024-04-24T21:36:54+00:00",
+    "snippet": "Camada de dados das unidades da Secretaria Municipal de Educação, contendo Escolas Municipais, Espaços de Desenvolvimento Infantil (EDI), Creches e outros. Última atualização: Junho/2023"
+  },
+  "service_url": "https://pgeo3.rio.rj.gov.br/arcgis/rest/services/Educacao/SME/MapServer/1",
+  "n_features": 1590,
+  "sample_properties_keys": [
+    "cre",
+    "denominacao",
+    "designacao",
+    "latitude",
+    "longitude",
+    "objectid",
+    "tipo"
+  ]
+}
