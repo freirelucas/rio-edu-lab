@@ -82,7 +82,7 @@ Operacionalizamos métodos publicados sobre o acervo educacional do data.rio. Ca
 
     4 produtos paper-driven, código reproduzível, DOI Zenodo, 28 testes verdes.
 
-    [:octicons-arrow-right-24: Paper draft](paper/hex_edu_manuscript.md)
+    [:octicons-arrow-right-24: Produtos](produtos/index.md)
 
 -   :material-code-tags:{ .lg } **Desenvolvedor**
 

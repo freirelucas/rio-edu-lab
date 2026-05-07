@@ -113,7 +113,6 @@ rio-edu-lab/
 
 -   [:material-source-branch: Repo no GitHub](https://github.com/freirelucas/rio-edu-lab)
 -   [:material-package-variant: 4 produtos](produtos/index.md)
--   [:material-flask-outline: Paper draft](paper/hex_edu_manuscript.md)
 -   [:material-book-open-variant: Glossário](glossario.md)
 
 </div>

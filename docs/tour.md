@@ -83,8 +83,8 @@ Cruzando os dois sinais (déficit de escola por SAMI + queda de IDEB por Δ FUN-
 
 -   [:material-map: Mapa interativo](mapa.md)
 -   [:material-format-list-bulleted: Lista de bairros prioritários](bairros-prioritarios.md)
--   [:material-flask-outline: Paper consolidado](paper/hex_edu_manuscript.md)
--   [:material-package-variant: 4 produtos detalhados](produtos/index.md)
+-   [:material-package-variant: Produtos detalhados](produtos/index.md)
+-   [:material-source-branch: Repo no GitHub](https://github.com/freirelucas/rio-edu-lab)
 
 </div>
 

@@ -106,6 +106,6 @@ print(f"share_within = {tw/t:.0%}")  # 68%
 -   [:material-map: Mapa interativo](../mapa.md)
 -   [:material-rocket-launch-outline: Tour 5 min](../tour.md)
 -   [:material-format-list-bulleted: Bairros prioritários](../bairros-prioritarios.md)
--   [:material-flask-outline: Paper draft](../paper/hex_edu_manuscript.md)
+-   [:material-text-box-outline: Relatório técnico (Theil base)](../reports/06_theil_ideb.md)
 
 </div>

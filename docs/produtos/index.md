@@ -67,7 +67,7 @@ Plus: caveats explícitos, links para o relatório técnico profundo, instruçõ
 
 -   [:material-rocket-launch-outline: Tour 5 min](../tour.md)
 -   [:material-map: Mapa interativo](../mapa.md)
--   [:material-flask-outline: Paper consolidado](../paper/hex_edu_manuscript.md)
 -   [:material-format-list-bulleted: Bairros prioritários](../bairros-prioritarios.md)
+-   [:material-book-open-variant: Glossário](../glossario.md)
 
 </div>
