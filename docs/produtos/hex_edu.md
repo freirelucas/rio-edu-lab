@@ -58,7 +58,7 @@ Esquerda: por RA (33 unidades). Direita: por bairro (1593 hex H3 res 8). Mesma e
 
 A parcela within-RA não é peculiar a 2023. Em todos os 9 anos, fica entre 59% e 73%:
 
-<div data-chart="../_assets/charts/tour_slide_3.json"></div>
+<div data-chart="../../_assets/charts/tour_slide_3.json"></div>
 
 Confirmado também sob 2 alternativas (relatórios 06b e 10):
 - **Ponderação por matrícula** (2 anos): share_within continua > 50%.
