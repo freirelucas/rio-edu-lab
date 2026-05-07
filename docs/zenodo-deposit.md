@@ -42,7 +42,7 @@ rio-edu-lab — Atlas Cibernético da Educação Carioca (lab MVP-1) version 0.5
 
 **Parte 2 — Changelog dessa versão**:
 
-> v0.5.0 ships the complete ACEC-Hub MVP-1 (4 products), the `acec` package, CI tests including the central within>between identity as a hard test, and the consolidated paper draft for HEX-EDU. See CHANGELOG.md for full per-product details.
+> v0.5.0 ships the complete ACEC-Hub MVP-1 (4 products), the `acec` package, and CI tests including the central within>between identity as a hard test. See CHANGELOG.md for full per-product details.
 
 ### 3. Authors com afiliação + ORCID
 

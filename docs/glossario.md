@@ -90,7 +90,7 @@ Termos técnicos em ordem alfabética. Cardinalidades reportadas para o municíp
 <div class="grid cards" markdown>
 
 -   [:material-rocket-launch-outline: Tour 5 min](tour.md)
--   [:material-package-variant: 4 produtos](produtos/index.md)
--   [:material-flask-outline: Paper](paper/hex_edu_manuscript.md)
+-   [:material-package-variant: Produtos](produtos/index.md)
+-   [:material-map: Mapa interativo](mapa.md)
 
 </div>
