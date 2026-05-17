@@ -4,15 +4,17 @@ title: "rio-edu-lab — laboratório exploratório sobre o Grupo Educação do d
 abstract: >
   Laboratório paper-driven sobre o Grupo Educação do data.rio (portal de
   dados abertos da Cidade do Rio de Janeiro, mantido pelo Instituto Pereira
-  Passos). Operacionaliza o método Pereira et al. (2019, IPEA) de
-  acessibilidade espacial via H3 + métricas de equidade educacional, aplicado
-  ao IDEB municipal carioca. A v0.5 entrega a base do pipeline (decomposição
-  Theil-T do IDEB por bairro: 66% within-RA), com 3 análises de robustez
-  acopladas (Theil 3-níveis aninhado AP/RA/bairro; pseudocoortes 5º→9º; lei
-  de escala matrícula × escolas). Próxima iteração (v0.6) implementa a
-  acessibilidade Pereira-style completa (isócronas + decomposição por SES).
-  Inclui ingestão + catálogo empírico de 127 Excels + 35 PDFs do data.rio,
-  pacote acec instalável, e CI com testes de invariância matemática.
+  Passos). Dois produtos ativos: (1) HEX-EDU, que operacionaliza Pereira et
+  al. (2019, IPEA) — decomposição Theil-T do IDEB por bairro (66% within-RA)
+  na v0.5 e métrica de acessibilidade ponderada por IDEB (Pereira-style com
+  distância haversine) na v0.6.1; (2) VULN-EDU v0.1, que operacionaliza
+  Reardon (2011) cruzando o IDS (Censo 2010, IPP) com o IDEB séries iniciais
+  2023 por bairro — achado: gradiente real mas modesto (Pearson +0.40,
+  R²=0.16), com 39% dos bairros em quadrantes não-concordantes (resilientes
+  + sub-performance). Próxima iteração (v0.7) implementa isócronas OSM reais
+  para HEX-EDU e OLS multivariado por sub-indicador para VULN-EDU. Inclui
+  ingestão + catálogo empírico de 127 Excels + 35 PDFs do data.rio, pacote
+  acec instalável, e CI com testes de invariância matemática.
 type: software
 authors:
   - family-names: "Freire"
@@ -61,3 +63,17 @@ references:
     publisher:
       name: "North-Holland Publishing Company"
     year: 1967
+  - type: book-chapter
+    authors:
+      - family-names: "Reardon"
+        given-names: "Sean F."
+    title: "The widening academic-achievement gap between the rich and the poor: New evidence and possible explanations"
+    publisher:
+      name: "Russell Sage Foundation"
+    year: 2011
+    pages: "91--116"
+    editors:
+      - family-names: "Duncan"
+        given-names: "Greg J."
+      - family-names: "Murnane"
+        given-names: "Richard J."

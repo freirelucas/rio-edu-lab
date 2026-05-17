@@ -4,6 +4,37 @@ Formato adaptado de [Keep a Changelog](https://keepachangelog.com/) e [SemVer](h
 
 ## [Unreleased — v0.6 in progress]
 
+### v0.6.2 — VULN-EDU v0.1 entregue (IDS × IDEB por bairro)
+
+Segundo produto ativo do MVP-honesto. Operacionaliza Reardon (2011) "The widening academic-achievement gap between the rich and the poor" sobre dados cariocas: cruza IDS (Censo 2010, IPP) por bairro com IDEB séries iniciais 2023 para mensurar empiricamente o gradiente socioeconômico-educacional.
+
+Achados:
+
+- Pearson(IDS, IDEB) = +0.404 ; Spearman = +0.389. OLS `IDEB = 4.29 + 2.87·IDS` com **R² = 0.16** — IDS explica só 16% da variância do IDEB.
+- 144/147 bairros casam (98% do município). 3 sem casamento por renomeação pós-Censo 2010.
+- Quadrantes (pela mediana): Q1 privilegiado 47, Q2 resiliente 32, Q3 sub-performance 25, Q4 vulnerável 40 — **39% dos bairros caem nos quadrantes não-concordantes** (Q2+Q3).
+- Concordância em quintis 5×5 = 30%. Política pública que assume IDS → IDEB erra mais que acerta.
+- Top-5 vulneráveis (VULN_score composto): Santo Cristo, Sampaio, Gardênia Azul, Parque Columbia, Acari.
+
+Adições:
+
+- `analysis/28_fetch_ids.py` — IDS Feature Service (10.504 setores censitários).
+- `analysis/29_vuln_edu.py` — agregação, correlação, OLS, quadrantes, VULN_score.
+- `analysis/30_vuln_edu_charts.py` — 3 Plotly (scatter, mapa quadrantes, top-15).
+- `data/raw/geo/ids_setores.csv` (~2 MiB slim — atributos por setor; geometria opt-in via `--with-geometry`).
+- `data/processed/vuln_edu_bairros.csv` (144 × 20).
+- `data/processed/vuln_edu_summary.json`.
+- `docs/reports/15_vuln_edu.md`.
+- `docs/produtos/vuln_edu.md` — VULN-EDU sai do "em planejamento" e vira segundo produto ativo.
+- `docs/_assets/charts/vuln_edu_{scatter,map,top}.json`.
+
+Não entrega ainda (v0.2):
+
+- OLS multivariado por sub-indicador (renda/analfabetismo/saneamento isolados).
+- Painel temporal IPS por RA (2016–2024) — IDS é decenal, IPS é anual.
+- IDEB por escola via microdado INEP (resolve gargalo Q3 — sub-performance possivelmente por migração para rede privada).
+- Moran's I dos resíduos OLS.
+
 ### v0.6.1 — HEX-EDU acessibilidade entregue (Pereira-style, haversine)
 
 Operacionalização parcial de Pereira et al. (2019) IPEA: para cada hex H3 res 8 do município, computamos `acesso_quality(i) = Σ_j IDEB(j) · exp(-d(i,j)/d0)` sobre 1022 equipamentos elegíveis (Escola Municipal + CIEP + Especial). `d0 = 1.5 km`, distância haversine (linha reta).

@@ -36,17 +36,17 @@ Lab que opera papers em produtos. Cada produto **operacionaliza um paper especí
 <span class="paper-cite">Pereira et al. (2019) IPEA — acessibilidade via H3 · 1022 escolas, 1593 hexes</span>
 </a>
 
-<a class="paper-badge" href="produtos/index/">
+<a class="paper-badge" href="produtos/vuln_edu/">
 <span class="paper-icon">🧭</span>
-<span class="paper-title">VULN-EDU</span>
-<span class="paper-cite">Paper-base a definir (Reardon 2011 candidato) · em planejamento</span>
+<span class="paper-title">VULN-EDU v0.1</span>
+<span class="paper-cite">Reardon (2011) — IDS Censo 2010 × IDEB 2023 · 144 bairros, gradiente modesto (R²=0.16)</span>
 </a>
 
 </div>
 
-> **HEX-EDU v0.6.1 entregue**: acessibilidade ponderada por IDEB (Pereira-style, distância haversine). Ver [Relatório 14](reports/14_acessibilidade.md). v0.7 trará isócronas via OSM road network.
+> **VULN-EDU v0.1 entregue**: cruzamento IDS Censo 2010 × IDEB 2023 por bairro (144 bairros, 98% do município). Achado: gradiente socioeconômico-educacional real mas modesto (Pearson +0.40, R²=0.16) — **39% dos bairros estão em quadrantes não-concordantes**. Ver [Relatório 15](reports/15_vuln_edu.md).
 
-> **Nota de transparência:** a v0.5 publicou 4 produtos. A revisão v0.6 (em curso) consolida em **1 produto ativo + 1 em planejamento**. Os 3 cortados (THESHA-Rio, FUN-Rio, PM-12) viraram análises de robustez — o código continua reproduzível, mas a fundamentação acadêmica deles era frágil. Detalhe em [Produtos](produtos/index.md).
+> **Nota de transparência:** a v0.5 publicou 4 produtos. A revisão v0.6 consolidou em **2 produtos ativos** (HEX-EDU + VULN-EDU). Os 3 cortados (THESHA-Rio, FUN-Rio, PM-12) viraram análises de robustez — o código continua reproduzível, mas a fundamentação acadêmica deles era frágil. Detalhe em [Produtos](produtos/index.md).
 
 ## Para quem é isto
 

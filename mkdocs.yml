@@ -56,6 +56,7 @@ nav:
   - Produtos:
       - Visão geral: produtos/index.md
       - HEX-EDU: produtos/hex_edu.md
+      - VULN-EDU: produtos/vuln_edu.md
   - Bairros prioritários: bairros-prioritarios.md
   - Investigação:
       - Visão geral: investigacao.md
@@ -78,6 +79,8 @@ nav:
           - 13 — PM-12: reports/13_pm_12.md
       - HEX-EDU acessibilidade:
           - 14 — Acessibilidade Pereira-style: reports/14_acessibilidade.md
+      - VULN-EDU:
+          - 15 — IDS × IDEB por bairro: reports/15_vuln_edu.md
   - Recursos:
       - API do data.rio: data-rio-api.md
       - Glossário: glossario.md

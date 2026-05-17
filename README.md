@@ -8,7 +8,12 @@ Laboratório **paper-driven** sobre o Grupo Educação do [data.rio](https://www
 
 **Achado central da v0.5**: na decomposição Theil-T do IDEB por bairro, **66% da desigualdade está dentro das RAs** (não entre). Coropléticos por RA mascaram a maior parte da variância. Robusto em 6 séries (anos iniciais/finais, ponderação por matrícula, Aprovação/SAEB/IDEB).
 
-**Status do MVP**: 1 produto ativo (HEX-EDU em v0.5 entregue como Theil sobre H3 grid; v0.6 estende para acessibilidade Pereira-style) + 1 em planejamento (VULN-EDU, cruzamento socioeconômico × IDEB). A v0.6 corrigiu o catálogo da v0.5 que tinha 4 produtos com fundamentação acadêmica heterogênea — detalhes no [CHANGELOG](./CHANGELOG.md).
+**Status do MVP**: 2 produtos ativos.
+
+- **HEX-EDU**: v0.5 (Theil sobre H3 grid, **66% within-RA**) + v0.6.1 (acessibilidade Pereira-style com distância haversine, 1022 escolas elegíveis). v0.7 planejado para isócronas OSM reais.
+- **VULN-EDU v0.1**: cruzamento IDS Censo 2010 × IDEB 2023 por bairro. Achado — gradiente socioeconômico-educacional real mas modesto (Pearson +0.40, R²=0.16); **39% dos bairros estão em quadrantes não-concordantes** (resilientes + sub-performance).
+
+A v0.6 consolidou o catálogo da v0.5 que tinha 4 produtos com fundamentação acadêmica heterogênea — detalhes no [CHANGELOG](./CHANGELOG.md).
 
 Site publicado: <https://freirelucas.github.io/rio-edu-lab/>.
 

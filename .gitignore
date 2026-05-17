@@ -12,6 +12,11 @@ data/raw/pdf/_first_pages/
 !data/raw/pdf/_index.json
 !data/raw/geo/
 
+# IDS por setor censitário em GeoJSON é pesado (~27 MiB) e não usado pelo
+# pipeline atual (VULN-EDU agrega via CSV slim). Opt-in via
+# `python3 analysis/28_fetch_ids.py --with-geometry`.
+data/raw/geo/ids_setores.geojson
+
 # Python
 __pycache__/
 *.py[cod]
