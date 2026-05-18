@@ -69,3 +69,10 @@ jobs:
             git --no-pager diff docs/papers-by-data-rio.md
             exit 1
           fi
+
+      - name: Validate paper funnel schema
+        # Schema check for data/papers_funnel.yml (Stage 1-3 staging area).
+        # Catches corrupted YAML, invalid decision values, or category_ids
+        # pointing outside requirements_taxonomy.yml. Funnel is curator-edited;
+        # CI just guards the shape so 48_promote_funnel.py never breaks.
+        run: python3 analysis/31_build_paper_catalog.py --validate-funnel

@@ -29,11 +29,7 @@ from __future__ import annotations
 
 import argparse
 import csv
-import json
 import sys
-import time
-import urllib.parse
-import urllib.request
 from pathlib import Path
 
 try:
@@ -42,24 +38,13 @@ except ImportError:
     print("PyYAML required: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+# Import shared OpenAlex helpers from sibling module.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _openalex import iterate_works  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG_YML = ROOT / "data" / "papers_catalog.yml"
 OUT_CSV = ROOT / "data" / "processed" / "openalex_candidates.csv"
-
-USER_AGENT = "rio-edu-lab/0.8 (https://github.com/freirelucas/rio-edu-lab; mailto:none)"
-TIMEOUT = 20
-THROTTLE_S = 1.0
-PER_PAGE = 25
-
-
-def fetch(url: str) -> dict | None:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    try:
-        with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
-            return json.loads(resp.read().decode("utf-8"))
-    except Exception as e:
-        print(f"  [warn] {e}", file=sys.stderr)
-        return None
 
 
 def existing_dois() -> set[str]:
@@ -85,82 +70,6 @@ def existing_dois() -> set[str]:
         if url:
             dois.add(url.lower())
     return dois
-
-
-def build_query_url(
-    query: str,
-    concept_id: str | None,
-    year_from: int | None,
-    year_to: int | None,
-    min_citations: int,
-    page: int,
-) -> str:
-    filters: list[str] = []
-    if concept_id:
-        filters.append(f"concepts.id:{concept_id}")
-    if year_from:
-        filters.append(f"from_publication_year:{year_from}")
-    if year_to:
-        filters.append(f"to_publication_year:{year_to}")
-    if min_citations:
-        filters.append(f"cited_by_count:>{min_citations}")
-    parts: list[str] = []
-    if query:
-        parts.append(f"search={urllib.parse.quote_plus(query)}")
-    if filters:
-        parts.append("filter=" + ",".join(filters))
-    parts.append("sort=cited_by_count:desc")
-    parts.append(f"per-page={PER_PAGE}")
-    parts.append(f"page={page}")
-    return "https://api.openalex.org/works?" + "&".join(parts)
-
-
-def authors_summary(authorships: list[dict]) -> str:
-    names: list[str] = []
-    for a in authorships[:3]:
-        au = a.get("author") or {}
-        n = au.get("display_name")
-        if n:
-            names.append(n)
-    suffix = " et al." if len(authorships) > 3 else ""
-    return ", ".join(names) + suffix
-
-
-def concepts_top3(concepts: list[dict]) -> str:
-    return "; ".join(c.get("display_name", "") for c in concepts[:3])
-
-
-def reconstruct_abstract(inverted: dict | None, max_chars: int = 500) -> str:
-    """OpenAlex returns abstract as a position → word inverted index."""
-    if not inverted:
-        return ""
-    positions: dict[int, str] = {}
-    for word, locs in inverted.items():
-        for loc in locs:
-            positions[loc] = word
-    ordered = [positions[i] for i in sorted(positions)]
-    text = " ".join(ordered)
-    if len(text) > max_chars:
-        return text[: max_chars - 1] + "…"
-    return text
-
-
-def doi_from_work(work: dict) -> str:
-    doi = (work.get("doi") or "").strip()
-    if doi.startswith("https://doi.org/"):
-        doi = doi[len("https://doi.org/"):]
-    return doi
-
-
-def pdf_oa_url(work: dict) -> str:
-    oa = work.get("open_access") or {}
-    return oa.get("oa_url") or ""
-
-
-def venue_display(work: dict) -> str:
-    pl = work.get("primary_location") or {}
-    src = pl.get("source") or {}
-    return src.get("display_name") or ""
 
 
 FIELDS = [
@@ -207,51 +116,18 @@ def main() -> int:
     known = existing_dois()
     print(f"  catalog has {len(known)} DOI/URLs (used to flag duplicates)")
 
-    rows: list[dict] = []
-    seen: set[str] = set()
-    page = 1
-    while len(rows) < args.top:
-        url = build_query_url(
-            args.query, args.concept, args.year_from, args.year_to,
-            args.min_citations, page,
-        )
-        print(f"  page {page}: {url[:160]}")
-        data = fetch(url)
-        if not data or "results" not in data:
-            print("    [warn] empty results, stopping")
-            break
-        results = data["results"]
-        if not results:
-            print("    [info] no more results")
-            break
-        for w in results:
-            oid = w.get("id", "")
-            if oid in seen:
-                continue
-            seen.add(oid)
-            doi = doi_from_work(w)
-            row = {
-                "openalex_id": oid,
-                "doi": doi,
-                "title": w.get("title") or "",
-                "authors": authors_summary(w.get("authorships") or []),
-                "year": w.get("publication_year") or "",
-                "venue": venue_display(w),
-                "cited_by_count": w.get("cited_by_count") or 0,
-                "concepts_top3": concepts_top3(w.get("concepts") or []),
-                "abstract": reconstruct_abstract(w.get("abstract_inverted_index")),
-                "pdf_url_oa": pdf_oa_url(w),
-                "already_in_catalog": doi.lower() in known if doi else False,
-            }
-            rows.append(row)
-            if len(rows) >= args.top:
-                break
-        page += 1
-        time.sleep(THROTTLE_S)
-
-    # Sort once more (defensive — OpenAlex already sorts by cited_by_count desc)
-    rows.sort(key=lambda r: -int(r.get("cited_by_count") or 0))
-    rows = rows[: args.top]
+    works = iterate_works(
+        query=args.query,
+        concept_id=args.concept,
+        year_from=args.year_from,
+        year_to=args.year_to,
+        min_citations=args.min_citations,
+        top=args.top,
+    )
+    rows = [
+        {**w, "already_in_catalog": w["doi"].lower() in known if w.get("doi") else False}
+        for w in works
+    ]
 
     with out_path.open("w", encoding="utf-8", newline="") as fh:
         writer = csv.DictWriter(fh, fieldnames=FIELDS)

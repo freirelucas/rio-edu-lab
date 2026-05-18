@@ -32,10 +32,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
-import re
 import sys
-import unicodedata
-from collections import defaultdict
 from pathlib import Path
 
 try:
@@ -44,6 +41,15 @@ except ImportError:
     print("PyYAML required: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+# Import shared tokenizer/scorer from sibling module.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _match import (  # noqa: E402
+    category_keywords,
+    load_taxonomy,
+    score_item,
+    tokenize,  # noqa: F401  # re-exported for backward compat callers
+)
+
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG_YML = ROOT / "data" / "papers_catalog.yml"
 TAXONOMY_YML = ROOT / "data" / "requirements_taxonomy.yml"
@@ -51,79 +57,6 @@ MANIFEST_JSON = ROOT / "data" / "manifest.json"
 OUT_SUGGESTIONS = ROOT / "data" / "processed" / "data_rio_match_suggestions.csv"
 OUT_REVERSE = ROOT / "data" / "processed" / "data_rio_reverse_links.json"
 OUT_DOC = ROOT / "docs" / "papers-by-data-rio.md"
-
-# Palavras-função pt-BR que nunca devem virar keyword de matching.
-STOPWORDS = {
-    "a", "o", "as", "os", "um", "uma", "uns", "umas",
-    "de", "da", "do", "das", "dos", "no", "na", "nos", "nas",
-    "por", "para", "em", "com", "sem", "ou", "e", "ao", "à",
-    "se", "que", "qual", "como", "via", "ser", "ter",
-    "the", "of", "in", "on", "by", "to", "and", "or", "for",
-}
-
-WEIGHT_TITLE = 3.0
-WEIGHT_TAGS = 2.0
-WEIGHT_SNIPPET = 1.0
-
-
-def strip_accents(s: str) -> str:
-    nfkd = unicodedata.normalize("NFKD", s)
-    return "".join(c for c in nfkd if not unicodedata.combining(c))
-
-
-def tokenize(text: str) -> set[str]:
-    """Lowercase, strip accents, split on non-word, drop stopwords + short tokens."""
-    if not text:
-        return set()
-    norm = strip_accents(text.lower())
-    parts = re.split(r"[^a-z0-9]+", norm)
-    return {p for p in parts if len(p) >= 3 and p not in STOPWORDS}
-
-
-def category_keywords(cat: dict) -> set[str]:
-    """Build keyword set from label_pt + aliases + notes."""
-    chunks = [cat.get("label_pt", "")]
-    chunks.extend(cat.get("aliases") or [])
-    if cat.get("notes"):
-        chunks.append(cat["notes"])
-    tokens: set[str] = set()
-    for c in chunks:
-        tokens |= tokenize(c)
-    return tokens
-
-
-def score_item(item: dict, keywords: set[str]) -> float:
-    title_tokens = tokenize(item.get("title", ""))
-    snippet_tokens = tokenize(item.get("snippet", ""))
-    tag_tokens: set[str] = set()
-    for t in item.get("tags") or []:
-        tag_tokens |= tokenize(t)
-    score = 0.0
-    for kw in keywords:
-        if kw in title_tokens:
-            score += WEIGHT_TITLE
-        if kw in tag_tokens:
-            score += WEIGHT_TAGS
-        if kw in snippet_tokens:
-            score += WEIGHT_SNIPPET
-    return score
-
-
-def load_taxonomy() -> tuple[dict[str, dict], dict[str, str]]:
-    """Returns (category_by_id, alias_to_cat_id)."""
-    if not TAXONOMY_YML.exists():
-        return {}, {}
-    data = yaml.safe_load(TAXONOMY_YML.read_text(encoding="utf-8")) or {}
-    cats: dict[str, dict] = {}
-    alias_to_cat: dict[str, str] = {}
-    for c in data.get("categories") or []:
-        cid = c.get("id", "")
-        if not cid:
-            continue
-        cats[cid] = c
-        for a in c.get("aliases") or []:
-            alias_to_cat[a.strip().lower()] = cid
-    return cats, alias_to_cat
 
 
 def build_suggestions(
@@ -283,7 +216,7 @@ def main() -> int:
     papers = catalog.get("papers", [])
     manifest = json.loads(MANIFEST_JSON.read_text(encoding="utf-8"))
     items = manifest.get("items", [])
-    cats, alias_to_cat = load_taxonomy()
+    cats, alias_to_cat = load_taxonomy(TAXONOMY_YML)
     print(f"loaded: {len(papers)} papers, {len(items)} manifest items, "
           f"{len(cats)} taxonomy categories")
 

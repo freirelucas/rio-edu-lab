@@ -38,11 +38,13 @@ ROOT = Path(__file__).resolve().parent.parent
 CATALOG_YML = ROOT / "data" / "papers_catalog.yml"
 TAXONOMY_YML = ROOT / "data" / "requirements_taxonomy.yml"
 OPENALEX_JSON = ROOT / "data" / "processed" / "openalex_citations.json"
+FUNNEL_YML = ROOT / "data" / "papers_funnel.yml"
 OUT_MAPPING = ROOT / "data" / "processed" / "paper_data_mapping.csv"
 OUT_SUMMARY = ROOT / "data" / "processed" / "papers_catalog_summary.json"
 
 VALID_REPL = {"full", "partial", "pending", "unfeasible"}
 VALID_STATUS = {"available", "partial", "external", "missing"}
+VALID_DECISION = {"", "accept", "reject"}
 KEBAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
@@ -207,10 +209,73 @@ def build_summary(papers: list[dict], mapping: list[dict]) -> dict:
     }
 
 
+def validate_funnel(funnel_doc: dict, alias_to_cat: dict[str, str]) -> list[str]:
+    """Schema check for `data/papers_funnel.yml`. Returns list of error strings."""
+    errs: list[str] = []
+    cands = funnel_doc.get("candidates") or []
+    seen_oids: set[str] = set()
+    valid_cat_ids = set(alias_to_cat.values())
+    for i, c in enumerate(cands):
+        loc = f"candidate[{i}] {c.get('openalex_id', '?')}"
+        oid = c.get("openalex_id")
+        if not oid or not isinstance(oid, str):
+            errs.append(f"{loc}: missing/invalid openalex_id")
+        elif oid in seen_oids:
+            errs.append(f"{loc}: duplicate openalex_id")
+        else:
+            seen_oids.add(oid)
+        dec = c.get("decision", "")
+        if dec not in VALID_DECISION:
+            errs.append(f"{loc}: decision='{dec}' not in {VALID_DECISION}")
+        for s in c.get("suggested_requirements") or []:
+            cid = s.get("category_id")
+            if valid_cat_ids and cid not in valid_cat_ids:
+                errs.append(f"{loc}: suggested_requirement category_id='{cid}' not in taxonomy")
+            sc = s.get("score")
+            if not isinstance(sc, (int, float)):
+                errs.append(f"{loc}: suggested_requirement score not numeric")
+        for cov in c.get("coverage") or []:
+            cid = cov.get("category_id")
+            if valid_cat_ids and cid not in valid_cat_ids:
+                errs.append(f"{loc}: coverage category_id='{cid}' not in taxonomy")
+            st = cov.get("status")
+            if st not in VALID_STATUS:
+                errs.append(f"{loc}: coverage.status='{st}' not in {VALID_STATUS}")
+    return errs
+
+
+def run_validate_funnel() -> int:
+    """Standalone funnel validation entry-point for --validate-funnel mode."""
+    if not FUNNEL_YML.exists():
+        print(f"  funnel: {FUNNEL_YML.relative_to(ROOT)} not present, skipping")
+        return 0
+    doc = yaml.safe_load(FUNNEL_YML.read_text(encoding="utf-8")) or {}
+    cands = doc.get("candidates") or []
+    alias_to_cat = load_taxonomy()
+    errs = validate_funnel(doc, alias_to_cat)
+    print(f"funnel: {len(cands)} candidates")
+    if errs:
+        for e in errs:
+            print(f"  [error] {e}", file=sys.stderr)
+        print(f"\n{len(errs)} funnel validation errors", file=sys.stderr)
+        return 2
+    print("  funnel: ok")
+    n_accept = sum(1 for c in cands if c.get("decision") == "accept")
+    n_reject = sum(1 for c in cands if c.get("decision") == "reject")
+    n_undec = len(cands) - n_accept - n_reject
+    print(f"  by decision: accept={n_accept} reject={n_reject} undecided={n_undec}")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--strict", action="store_true")
+    ap.add_argument("--validate-funnel", action="store_true",
+                    help="Only validate data/papers_funnel.yml schema (used in CI)")
     args = ap.parse_args()
+
+    if args.validate_funnel:
+        return run_validate_funnel()
 
     if not CATALOG_YML.exists():
         print(f"missing {CATALOG_YML.relative_to(ROOT)}", file=sys.stderr)

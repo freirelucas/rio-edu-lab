@@ -1,0 +1,42 @@
+# Staging area do funil de papers (Estágios 1–3)
+# ------------------------------------------------
+# Lista de candidatos descobertos via `analysis/45_bulk_discover.py` contra
+# `data/openalex_concepts.yml`. Decisões do curador (`decision: accept|reject`)
+# persistem aqui através de re-runs da descoberta.
+#
+# Schema por candidato (chave = openalex_id, único):
+#
+#   openalex_id              URL canônica do OpenAlex (W…). Chave única.
+#   doi                      DOI sem prefixo (e.g., 10.1257/aer.97.2.31)
+#   title                    título do paper
+#   authors                  string "First, Second et al." (parsing do OpenAlex)
+#   year                     ano de publicação (int)
+#   venue                    journal / livro / TD
+#   citations                cited_by_count snapshot do momento da descoberta
+#   abstract                 abstract reconstruído (≤500 chars)
+#   pdf_url_oa               URL OA quando disponível (vazio se não)
+#   concepts_top3            "; ".join dos top-3 concepts OpenAlex
+#   discovered_via           [theme_id, …] (themes do concepts.yml que retornaram)
+#
+#   suggested_requirements   preenchido por 46 — sugestões da taxonomia:
+#     - category_id          id em data/requirements_taxonomy.yml
+#       score                # hits do scorer text→aliases
+#
+#   coverage                 preenchido por 47 — cobertura no data.rio:
+#     - category_id          id em data/requirements_taxonomy.yml
+#       manifest_item_id     id do item em data/manifest.json (ou null)
+#       manifest_title       título amigável do item
+#       status               available | partial | external | missing
+#
+#   decision                 ""=undecided, "accept", "reject"
+#   decision_reason          (opcional) nota curta do curador
+#
+# Workflow:
+#   45 → 46 → 47 → [curador edita decision] → 48 (promove ao catalog.yml)
+#
+# Re-runs: 45 preserva campos abaixo de `discovered_via` em entradas
+# existentes (decision, suggested_requirements, coverage não são sobrescritos).
+
+version: 1
+
+candidates: []
