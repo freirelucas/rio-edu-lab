@@ -33,6 +33,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -238,10 +239,13 @@ def render_catalog_entry(c: dict, slug: str, cats: dict[str, dict]) -> str:
 
 
 def _yaml_str(s: str) -> str:
-    """Quote a string for inline YAML list (only if needed)."""
-    if re.match(r"^[A-Za-z0-9_.\-/ ]+$", s):
-        return f'"{s}"'
-    return yaml.safe_dump(s, default_flow_style=True, allow_unicode=True).strip().rstrip("\n")
+    """Quote a string for inline YAML list.
+
+    JSON strings are a subset of YAML flow scalars — always safe, always
+    quoted correctly even for parens/colons/special chars. Prevents the
+    document-end marker bug from `yaml.safe_dump(scalar, flow_style=True)`.
+    """
+    return json.dumps(s, ensure_ascii=False)
 
 
 def _wrap(text: str, width: int) -> list[str]:

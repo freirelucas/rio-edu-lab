@@ -113,11 +113,14 @@ def main() -> int:
           f"{len(cats)} taxonomy categories")
 
     # Pre-compute top manifest item per category (avoids quadratic scan).
+    # include_notes=False evita poluir o token set com metadados (root cause
+    # PoSWID #3: notes tipo "Feature Service" matchavam manifest items
+    # genéricos, inflando scores e nunca emitindo `partial`/`missing`).
     cat_top: dict[str, dict] = {}
     for cid, cat in cats.items():
         if is_external_category(cat):
             continue
-        kws = category_keywords(cat)
+        kws = category_keywords(cat, include_notes=False)
         scored = [(score_item(it, kws), it) for it in items]
         scored = [(s, it) for s, it in scored if s > 0]
         scored.sort(key=lambda x: -x[0])
