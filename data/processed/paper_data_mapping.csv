@@ -1,0 +1,28 @@
+paper_id,year,title,requirement,data_rio_item_id,status,replication_status
+pereira-2019-ipea,2019,Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras — 2019,geometria de escolas,0a220ea7972d4adf85b3e63d23a4b9b1,available,partial
+pereira-2019-ipea,2019,Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras — 2019,indicador de qualidade educacional,ideb-municipal-bairros,available,partial
+pereira-2019-ipea,2019,Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras — 2019,rede viária / tempos de viagem,,external,partial
+pereira-2019-ipea,2019,Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras — 2019,geometria de bairros,bairros-ipp,available,partial
+reardon-2011-whither,2011,The widening academic-achievement gap between the rich and the poor: New evidence and possible explanations,indicador socioeconômico granular,ids-rm-2010,available,partial
+reardon-2011-whither,2011,The widening academic-achievement gap between the rich and the poor: New evidence and possible explanations,indicador de desempenho educacional,ideb-municipal-bairros,available,partial
+theil-1967-economics,1967,Economics and Information Theory,valores positivos por unidade,ideb-municipal-bairros,available,full
+theil-1967-economics,1967,Economics and Information Theory,agrupamento hierárquico,bairros-ipp,available,full
+soares-andrade-2006,2006,"Nível socioeconômico, qualidade e equidade das escolas de Belo Horizonte",desempenho por escola,ideb-municipal-bairros,partial,pending
+soares-andrade-2006,2006,"Nível socioeconômico, qualidade e equidade das escolas de Belo Horizonte",NSE por escola ou bairro,ids-rm-2010,available,pending
+soares-andrade-2006,2006,"Nível socioeconômico, qualidade e equidade das escolas de Belo Horizonte",matrículas por escola,,external,pending
+alves-soares-2013,2013,Contexto escolar e indicadores educacionais: condições desiguais para a efetivação de uma política de avaliação,IDEB por bairro,ideb-municipal-bairros,available,pending
+alves-soares-2013,2013,Contexto escolar e indicadores educacionais: condições desiguais para a efetivação de uma política de avaliação,INSE por escola,,external,pending
+coleman-1966-eeo,1966,Equality of Educational Opportunity,desempenho por unidade,ideb-municipal-bairros,available,pending
+coleman-1966-eeo,1966,Equality of Educational Opportunity,agrupamento espacial,bairros-ipp,available,pending
+hanushek-1986-jel,1986,The economics of schooling: Production and efficiency in public schools,indicador de input,0a220ea7972d4adf85b3e63d23a4b9b1,available,pending
+hanushek-1986-jel,1986,The economics of schooling: Production and efficiency in public schools,indicador de output,ideb-municipal-bairros,available,pending
+reardon-owens-2014,2014,60 years after Brown: Trends and consequences of school segregation,composição SES por bairro,ids-rm-2010,available,pending
+reardon-owens-2014,2014,60 years after Brown: Trends and consequences of school segregation,indicador de matrícula,ideb-municipal-bairros,partial,pending
+becker-1964-human-capital,1964,Human Capital: A Theoretical and Empirical Analysis,anos de estudo individuais,,external,unfeasible
+becker-1964-human-capital,1964,Human Capital: A Theoretical and Empirical Analysis,renda individual,,external,unfeasible
+cunha-heckman-2007,2007,The technology of skill formation,testes longitudinais individuais,,external,unfeasible
+cunha-heckman-2007,2007,The technology of skill formation,investimentos parentais observáveis,,external,unfeasible
+hoxby-2000-aer,2000,Does competition among public schools benefit students and taxpayers?,indicador de oferta de escolas,0a220ea7972d4adf85b3e63d23a4b9b1,available,pending
+hoxby-2000-aer,2000,Does competition among public schools benefit students and taxpayers?,indicador de desempenho,ideb-municipal-bairros,available,pending
+card-krueger-1992-jpe,1992,Does school quality matter? Returns to education and the characteristics of public schools in the United States,característica de escola por região,,external,unfeasible
+card-krueger-1992-jpe,1992,Does school quality matter? Returns to education and the characteristics of public schools in the United States,renda adulta por coorte,,external,unfeasible

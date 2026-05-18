@@ -1,0 +1,259 @@
+{
+  "ideb_year": 2023,
+  "ids_source": "Censo 2010 (IPP / data.rio IDS_RM_2010)",
+  "n_bairros_matched": 144,
+  "n_bairros_ideb_dropped": 3,
+  "n_bairros_only_in_ids": 16,
+  "correlation": {
+    "pearson_ids_ideb": 0.4043,
+    "spearman_ids_ideb": 0.3885
+  },
+  "ols_ideb_on_ids": {
+    "intercept": 4.2937,
+    "slope": 2.865,
+    "r2": 0.1635,
+    "se_slope": 0.5439,
+    "t_slope": 5.2674,
+    "interpretation": "+0.1 IDS ↔ +0.287 IDEB (séries iniciais 2023)"
+  },
+  "quintile_grid": {
+    "matrix": [
+      [
+        12,
+        8,
+        3,
+        4,
+        2
+      ],
+      [
+        6,
+        9,
+        5,
+        7,
+        2
+      ],
+      [
+        4,
+        9,
+        5,
+        7,
+        3
+      ],
+      [
+        6,
+        6,
+        4,
+        5,
+        8
+      ],
+      [
+        3,
+        2,
+        5,
+        7,
+        12
+      ]
+    ],
+    "rows_ids_quintiles": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "cols_ideb_quintiles": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "n_total": 144,
+    "n_diagonal": 43,
+    "share_diagonal": 0.2986111111111111
+  },
+  "quadrants": {
+    "ids_median_threshold": 0.5813,
+    "ideb_median_threshold": 6.0,
+    "counts": {
+      "Q1: alto IDS · alto IDEB": 47,
+      "Q2: baixo IDS · alto IDEB (resiliente)": 32,
+      "Q3: alto IDS · baixo IDEB (sub-performance)": 25,
+      "Q4: baixo IDS · baixo IDEB (vulnerável)": 40
+    }
+  },
+  "by_ap": [
+    {
+      "ap": "Área de Planejamento 1",
+      "n": 11,
+      "ids_med": 0.551,
+      "ideb_med": 5.8,
+      "vuln_med": 0.48
+    },
+    {
+      "ap": "Área de Planejamento 3",
+      "n": 73,
+      "ids_med": 0.581,
+      "ideb_med": 5.9,
+      "vuln_med": 0.23
+    },
+    {
+      "ap": "Área de Planejamento 5",
+      "n": 20,
+      "ids_med": 0.555,
+      "ideb_med": 6.15,
+      "vuln_med": 0.163
+    },
+    {
+      "ap": "Área de Planejamento 4",
+      "n": 16,
+      "ids_med": 0.587,
+      "ideb_med": 6.15,
+      "vuln_med": 0.051
+    },
+    {
+      "ap": "Área de Planejamento 2",
+      "n": 24,
+      "ids_med": 0.723,
+      "ideb_med": 6.25,
+      "vuln_med": -1.142
+    }
+  ],
+  "top_15_vulneraveis": [
+    {
+      "bairro": "Santo Cristo",
+      "ra": "I Portuária",
+      "ap": "Área de Planejamento 1",
+      "ids_median": 0.5493,
+      "ideb": 4.9,
+      "vuln_score": 1.4453,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Sampaio",
+      "ra": "XIII Méier",
+      "ap": "Área de Planejamento 3",
+      "ids_median": 0.5648,
+      "ideb": 4.8,
+      "vuln_score": 1.4353,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Gardênia Azul",
+      "ra": "XVI Jacarepaguá",
+      "ap": "Área de Planejamento 4",
+      "ids_median": 0.5439,
+      "ideb": 5.0,
+      "vuln_score": 1.384,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Parque Columbia",
+      "ra": "XXV Pavuna",
+      "ap": "Área de Planejamento 3",
+      "ids_median": 0.5304,
+      "ideb": 5.1,
+      "vuln_score": 1.3796,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Acari",
+      "ra": "XXV Pavuna",
+      "ap": "Área de Planejamento 3",
+      "ids_median": 0.5252,
+      "ideb": 5.2,
+      "vuln_score": 1.3166,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Jacarezinho",
+      "ra": "XXVIII Jacarezinho",
+      "ap": "Área de Planejamento 3",
+      "ids_median": 0.5274,
+      "ideb": 5.2,
+      "vuln_score": 1.3015,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Costa Barros",
+      "ra": "XXV Pavuna",
+      "ap": "Área de Planejamento 3",
+      "ids_median": 0.5275,
+      "ideb": 5.2,
+      "vuln_score": 1.3008,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Vidigal",
+      "ra": "VI Lagoa",
+      "ap": "Área de Planejamento 2",
+      "ids_median": 0.5348,
+      "ideb": 5.2,
+      "vuln_score": 1.249,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Parada de Lucas",
+      "ra": "XXXI Vigário Geral",
+      "ap": "Área de Planejamento 3",
+      "ids_median": 0.5365,
+      "ideb": 5.2,
+      "vuln_score": 1.2374,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Itanhangá",
+      "ra": "XXIV Barra da Tijuca",
+      "ap": "Área de Planejamento 4",
+      "ids_median": 0.4995,
+      "ideb": 5.5,
+      "vuln_score": 1.2,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Jacaré",
+      "ra": "XIII Méier",
+      "ap": "Área de Planejamento 3",
+      "ids_median": 0.5606,
+      "ideb": 5.1,
+      "vuln_score": 1.1672,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Complexo do Alemão",
+      "ra": "XXIX Complexo do Alemão",
+      "ap": "Área de Planejamento 3",
+      "ids_median": 0.523,
+      "ideb": 5.4,
+      "vuln_score": 1.1334,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Barros Filho",
+      "ra": "XXV Pavuna",
+      "ap": "Área de Planejamento 3",
+      "ids_median": 0.5331,
+      "ideb": 5.4,
+      "vuln_score": 1.0626,
+      "quadrante": "Q4: baixo IDS · baixo IDEB (vulnerável)"
+    },
+    {
+      "bairro": "Vargem Grande",
+      "ra": "XXIV Barra da Tijuca",
+      "ap": "Área de Planejamento 4",
+      "ids_median": 0.4202,
+      "ideb": 6.2,
+      "vuln_score": 1.0625,
+      "quadrante": "Q2: baixo IDS · alto IDEB (resiliente)"
+    },
+    {
+      "bairro": "Maria da Graça",
+      "ra": "XII Inhaúma",
+      "ap": "Área de Planejamento 3",
+      "ids_median": 0.6185,
+      "ideb": 4.8,
+      "vuln_score": 1.0572,
+      "quadrante": "Q3: alto IDS · baixo IDEB (sub-performance)"
+    }
+  ]
+}

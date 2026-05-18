@@ -20,6 +20,15 @@ description: Operacionalização da metodologia Pereira et al. (2019) IPEA para 
 
 **Cidades cobertas no paper**: São Paulo, Rio de Janeiro, Belo Horizonte, Recife, Fortaleza, Porto Alegre, Curitiba (transporte público) + 20 cidades para transporte ativo.
 
+!!! info "Para gestores públicos"
+    - **Achado em uma frase**: a AP 3 (Zona Norte) entrega o maior acesso ponderado por IDEB do município (média 113); a Zona Sul, apesar de IDEB médio alto, fica em 59 por baixa densidade de escolas — e a AP 4 (Barra/Jacarepaguá) em 29.
+    - **Implicação para política**: planejamento educacional municipal precisa combinar **qualidade** e **densidade**. Olhar só média de IDEB por região esconde vazios de oferta em áreas onde a qualidade existe mas a opção é distante.
+    - **Três ações concretas**:
+        1. Priorizar **expansão da rede em AP 4** (raio 5 km com poucas escolas elegíveis acima da mediana de IDEB).
+        2. Auditar o **Centro (AP 1)** — 2º maior acesso ponderado (96) com uso potencialmente subaproveitado por residentes não-Centro.
+        3. Combinar este mapa com o de [VULN-EDU](vuln_edu.md) para identificar bairros onde **baixo acesso × alta vulnerabilidade socioeconômica** se sobrepõem.
+    - **Como auditar**: [Relatório 14](../reports/14_acessibilidade.md), código em `analysis/26_hex_accessibility.py`, dados em `data/processed/hex_accessibility.csv`.
+
 ## v0.6.1 — acessibilidade ponderada por IDEB ✅
 
 Para cada hex H3 (1593 unidades, res 8) computamos:

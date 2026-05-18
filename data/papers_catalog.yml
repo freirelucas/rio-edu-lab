@@ -1,0 +1,400 @@
+# rio-edu-lab — catálogo de papers
+# ----------------------------------
+# Esta é a fonte canônica do catálogo de papers replicados/catalogados pelo lab.
+# Cada entrada descreve o paper + os requisitos de dados + o status de replicação
+# + o cruzamento com itens disponíveis no data.rio.
+#
+# Schema (campos por entrada):
+#   id                              slug autor-ano-fonte (único, kebab-case)
+#   authors                         lista de sobrenomes
+#   year                            ano de publicação (inteiro)
+#   title                           título do paper
+#   venue                           nome do journal / livro / IPEA TD / etc.
+#   doi_or_url                      DOI canônico ou URL estável
+#   pdf_url                         (opcional) link direto para PDF aberto
+#   openalex_id                     (opcional) preenchido por analysis/34_fetch_openalex.py
+#   citations_openalex              (opcional) snapshot da contagem; idem
+#   citations_openalex_fetched_at   (opcional) data ISO do snapshot
+#   abstract                        resumo em pt-BR (1-3 frases)
+#   area                            tags temáticas (lista)
+#   method                          tags metodológicas (lista)
+#   brazil_specific                 true se o paper trata especificamente do Brasil
+#   data_requirements               lista de dados necessários para replicar
+#   data_rio_coverage               cruzamento com manifest data.rio (lista de dicts)
+#     - requirement: "..."          (string)
+#       item_id: "..."              (id do data.rio ou null)
+#       status: available | partial | external | missing
+#   replication_status              full | partial | pending | unfeasible
+#   product                         (opcional) sigla do produto associado, ex. "HEX-EDU"
+#   report_ids                      (opcional) lista de IDs de relatórios docs/reports/NN_*.md
+#   scripts                         (opcional) lista de IDs de scripts analysis/NN_*.py
+#   policy_insight                  (opcional) 1 frase para gestores públicos
+#
+# Convenções de curadoria:
+#   - A v0.7 entrega o framework + 12 papers seed (3 já replicados + 5 alvo de
+#     novas replicações leves + 4 metodológicos). Os outros ~88 papers entram
+#     em PRs subsequentes, em batches temáticos.
+#   - Citações são snapshots do OpenAlex (script 34). Não refletem o ranking em
+#     tempo real — recurar é trivial (rerodar o script).
+#   - "Brasil-específico" inclui replicações em contexto brasileiro (Soares,
+#     Alves, Albernaz, Riani) e exclui referências teóricas globais aplicáveis.
+
+papers:
+
+  # ============================================================
+  # JÁ REPLICADOS (base atual da v0.6.2)
+  # ============================================================
+
+  - id: pereira-2019-ipea
+    authors: [Pereira, Braga, Serra, Nadalin]
+    year: 2019
+    title: "Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras — 2019"
+    venue: "IPEA Texto para Discussão 2535"
+    doi_or_url: "https://hdl.handle.net/10419/240730"
+    pdf_url: "https://repositorio.ipea.gov.br/bitstream/11058/9756/1/td_2535.pdf"
+    abstract: >
+      Discretiza o território urbano em hexágonos H3 e calcula acessibilidade
+      a oportunidades (educação, saúde, emprego) ponderada por proximidade
+      temporal via isócronas OSM e pela qualidade da oportunidade. Decompõe
+      por renda e raça em 7 capitais brasileiras.
+    area: ["acessibilidade", "equidade espacial", "geografia urbana"]
+    method: ["H3 grid", "acessibilidade ponderada", "decomposição por SES"]
+    brazil_specific: true
+    data_requirements:
+      - "geometria de escolas"
+      - "indicador de qualidade educacional"
+      - "rede viária / tempos de viagem"
+      - "geometria de bairros"
+    data_rio_coverage:
+      - requirement: "geometria de escolas"
+        item_id: "0a220ea7972d4adf85b3e63d23a4b9b1"
+        status: available
+      - requirement: "indicador de qualidade educacional"
+        item_id: "ideb-municipal-bairros"
+        status: available
+      - requirement: "rede viária / tempos de viagem"
+        item_id: null
+        status: external
+      - requirement: "geometria de bairros"
+        item_id: "bairros-ipp"
+        status: available
+    replication_status: partial
+    product: "HEX-EDU"
+    report_ids: [14]
+    scripts: [25, 26, 27]
+    policy_insight: >
+      AP 3 (Zona Norte) lidera acesso ponderado por IDEB; Zona Sul tem IDEB
+      médio mais alto mas baixa densidade. Coropléticos por AP escondem
+      variância intra-AP.
+
+  - id: reardon-2011-whither
+    authors: [Reardon]
+    year: 2011
+    title: "The widening academic-achievement gap between the rich and the poor: New evidence and possible explanations"
+    venue: "Whither Opportunity? (Duncan & Murnane eds.), Russell Sage Foundation, ch. 5"
+    doi_or_url: "https://cepa.stanford.edu/sites/default/files/reardon%20whither%20opportunity%20-%20chapter%205.pdf"
+    pdf_url: "https://cepa.stanford.edu/sites/default/files/reardon%20whither%20opportunity%20-%20chapter%205.pdf"
+    abstract: >
+      Documenta que o gap de desempenho entre o quintil mais rico e o mais
+      pobre nos EUA cresceu ~40% desde os anos 1970 e excede o gap racial
+      branco-negro. Método: ordenar por SES, ordenar por desempenho,
+      decompor o gap por percentil.
+    area: ["desigualdade", "SES e desempenho", "tendências longitudinais"]
+    method: ["gap por percentil", "decomposição de variância"]
+    brazil_specific: false
+    data_requirements:
+      - "indicador socioeconômico granular"
+      - "indicador de desempenho educacional"
+    data_rio_coverage:
+      - requirement: "indicador socioeconômico granular"
+        item_id: "ids-rm-2010"
+        status: available
+      - requirement: "indicador de desempenho educacional"
+        item_id: "ideb-municipal-bairros"
+        status: available
+    replication_status: partial
+    product: "VULN-EDU"
+    report_ids: [15]
+    scripts: [28, 29, 30]
+    policy_insight: >
+      Gradiente SES × IDEB no Rio existe mas é modesto (R²=0.16); 39% dos
+      bairros estão em quadrantes não-concordantes (resilientes ou
+      sub-performance) — desfaz a leitura "Zona Sul = privilégio uniforme".
+
+  - id: theil-1967-economics
+    authors: [Theil]
+    year: 1967
+    title: "Economics and Information Theory"
+    venue: "North-Holland Publishing"
+    doi_or_url: "https://www.worldcat.org/title/economics-and-information-theory/oclc/489908"
+    abstract: >
+      Introduz o índice T da entropia (GE(1)) e a decomposição aditiva
+      between/within. Base metodológica para todas as análises de desigualdade
+      decomponível do lab.
+    area: ["desigualdade", "teoria da informação"]
+    method: ["entropia generalizada", "decomposição aditiva"]
+    brazil_specific: false
+    data_requirements:
+      - "valores positivos por unidade"
+      - "agrupamento hierárquico"
+    data_rio_coverage:
+      - requirement: "valores positivos por unidade"
+        item_id: "ideb-municipal-bairros"
+        status: available
+      - requirement: "agrupamento hierárquico"
+        item_id: "bairros-ipp"
+        status: available
+    replication_status: full
+    product: "HEX-EDU"
+    report_ids: [6, 7, 9, 11]
+    scripts: [10, 16, 17, 18]
+    policy_insight: >
+      Decomposição Theil revela que 66% da desigualdade do IDEB municipal
+      carioca está dentro das RAs, não entre — coropléticos por RA escondem
+      a maior parte do sinal.
+
+  # ============================================================
+  # ALVO DE REPLICAÇÃO LEVE EM v0.7+
+  # ============================================================
+
+  - id: soares-andrade-2006
+    authors: [Soares, Andrade]
+    year: 2006
+    title: "Nível socioeconômico, qualidade e equidade das escolas de Belo Horizonte"
+    venue: "Ensaio: Avaliação e Políticas Públicas em Educação, 14(50)"
+    doi_or_url: "https://doi.org/10.1590/S0104-40362006000100007"
+    abstract: >
+      Decompõe a variância do desempenho de alunos em escolas de BH em
+      componente entre-escolas e dentro-escola, modela como função do NSE
+      e mede equidade pelo efeito-escola líquido.
+    area: ["sociologia educacional", "efeito-escola", "equidade"]
+    method: ["modelo hierárquico linear", "variance components"]
+    brazil_specific: true
+    data_requirements:
+      - "desempenho por escola"
+      - "NSE por escola ou bairro"
+      - "matrículas por escola"
+    data_rio_coverage:
+      - requirement: "desempenho por escola"
+        item_id: "ideb-municipal-bairros"
+        status: partial
+      - requirement: "NSE por escola ou bairro"
+        item_id: "ids-rm-2010"
+        status: available
+      - requirement: "matrículas por escola"
+        item_id: null
+        status: external
+    replication_status: pending
+    policy_insight: null
+
+  - id: alves-soares-2013
+    authors: [Alves, Soares]
+    year: 2013
+    title: "Contexto escolar e indicadores educacionais: condições desiguais para a efetivação de uma política de avaliação"
+    venue: "Educação e Pesquisa, 39(1)"
+    doi_or_url: "https://doi.org/10.1590/S1517-97022013000100012"
+    abstract: >
+      Mostra que o IDEB confunde efeito-escola com efeito-NSE, comparando
+      escolas em contextos socioeconômicos heterogêneos. Propõe ajuste por
+      INSE para isolar a contribuição da escola.
+    area: ["política educacional", "avaliação", "equidade"]
+    method: ["regressão multinível", "ajuste por NSE"]
+    brazil_specific: true
+    data_requirements:
+      - "IDEB por bairro"
+      - "INSE por escola"
+    data_rio_coverage:
+      - requirement: "IDEB por bairro"
+        item_id: "ideb-municipal-bairros"
+        status: available
+      - requirement: "INSE por escola"
+        item_id: null
+        status: external
+    replication_status: pending
+    policy_insight: null
+
+  - id: coleman-1966-eeo
+    authors: [Coleman, Campbell, Hobson, McPartland, Mood, Weinfeld, York]
+    year: 1966
+    title: "Equality of Educational Opportunity"
+    venue: "U.S. Department of Health, Education, and Welfare"
+    doi_or_url: "https://files.eric.ed.gov/fulltext/ED012275.pdf"
+    abstract: >
+      Estabeleceu que a variância no desempenho entre alunos é
+      majoritariamente dentro de escolas, não entre — achado que reorientou
+      a política educacional americana e gerou o conceito de "efeito-Coleman".
+    area: ["sociologia educacional", "desigualdade", "efeito-escola"]
+    method: ["decomposição within/between", "regressão"]
+    brazil_specific: false
+    data_requirements:
+      - "desempenho por unidade"
+      - "agrupamento espacial"
+    data_rio_coverage:
+      - requirement: "desempenho por unidade"
+        item_id: "ideb-municipal-bairros"
+        status: available
+      - requirement: "agrupamento espacial"
+        item_id: "bairros-ipp"
+        status: available
+    replication_status: pending
+    policy_insight: null
+
+  - id: hanushek-1986-jel
+    authors: [Hanushek]
+    year: 1986
+    title: "The economics of schooling: Production and efficiency in public schools"
+    venue: "Journal of Economic Literature, 24(3)"
+    doi_or_url: "https://www.jstor.org/stable/2725865"
+    abstract: >
+      Survey clássico sobre função-produção educacional: meta-análise de
+      147 estudos mostra que a relação entre input (gasto, recursos físicos,
+      qualificação docente) e output (desempenho) é fraca e inconsistente.
+    area: ["economia da educação", "função-produção"]
+    method: ["meta-análise", "regressão input-output"]
+    brazil_specific: false
+    data_requirements:
+      - "indicador de input"
+      - "indicador de output"
+    data_rio_coverage:
+      - requirement: "indicador de input"
+        item_id: "0a220ea7972d4adf85b3e63d23a4b9b1"
+        status: available
+      - requirement: "indicador de output"
+        item_id: "ideb-municipal-bairros"
+        status: available
+    replication_status: pending
+    policy_insight: null
+
+  - id: reardon-owens-2014
+    authors: [Reardon, Owens]
+    year: 2014
+    title: "60 years after Brown: Trends and consequences of school segregation"
+    venue: "Annual Review of Sociology, 40"
+    doi_or_url: "https://doi.org/10.1146/annurev-soc-071913-043152"
+    abstract: >
+      Revisa medidas de segregação escolar (raça, SES) nos EUA nos 60 anos
+      pós-Brown v. Board, mostrando declínio inicial seguido de re-segregação
+      por SES nas últimas décadas.
+    area: ["segregação escolar", "equidade", "tendências longitudinais"]
+    method: ["índice de dissimilaridade", "índice de isolamento"]
+    brazil_specific: false
+    data_requirements:
+      - "composição SES por bairro"
+      - "indicador de matrícula"
+    data_rio_coverage:
+      - requirement: "composição SES por bairro"
+        item_id: "ids-rm-2010"
+        status: available
+      - requirement: "indicador de matrícula"
+        item_id: "ideb-municipal-bairros"
+        status: partial
+    replication_status: pending
+    policy_insight: null
+
+  # ============================================================
+  # METODOLÓGICOS / CANÔNICOS (sustentam o catálogo)
+  # ============================================================
+
+  - id: becker-1964-human-capital
+    authors: [Becker]
+    year: 1964
+    title: "Human Capital: A Theoretical and Empirical Analysis"
+    venue: "NBER / Columbia University Press"
+    doi_or_url: "https://www.nber.org/books-and-chapters/human-capital-theoretical-and-empirical-analysis-special-reference-education"
+    abstract: >
+      Estabelece o framework do capital humano: educação como investimento
+      com retornos mensuráveis. Base teórica para grande parte da economia
+      da educação subsequente.
+    area: ["economia da educação", "teoria do capital humano"]
+    method: ["teoria econômica", "regressão de retornos"]
+    brazil_specific: false
+    data_requirements:
+      - "anos de estudo individuais"
+      - "renda individual"
+    data_rio_coverage:
+      - requirement: "anos de estudo individuais"
+        item_id: null
+        status: external
+      - requirement: "renda individual"
+        item_id: null
+        status: external
+    replication_status: unfeasible
+    policy_insight: null
+
+  - id: cunha-heckman-2007
+    authors: [Cunha, Heckman]
+    year: 2007
+    title: "The technology of skill formation"
+    venue: "American Economic Review, 97(2)"
+    doi_or_url: "https://doi.org/10.1257/aer.97.2.31"
+    abstract: >
+      Modela a formação de habilidades cognitivas e não-cognitivas ao longo
+      do ciclo de vida com complementaridade dinâmica entre estágios.
+      Sustenta a tese do investimento precoce na primeira infância.
+    area: ["economia da educação", "primeira infância", "ciclo de vida"]
+    method: ["modelagem estrutural", "trajetórias de habilidade"]
+    brazil_specific: false
+    data_requirements:
+      - "testes longitudinais individuais"
+      - "investimentos parentais observáveis"
+    data_rio_coverage:
+      - requirement: "testes longitudinais individuais"
+        item_id: null
+        status: external
+      - requirement: "investimentos parentais observáveis"
+        item_id: null
+        status: external
+    replication_status: unfeasible
+    policy_insight: null
+
+  - id: hoxby-2000-aer
+    authors: [Hoxby]
+    year: 2000
+    title: "Does competition among public schools benefit students and taxpayers?"
+    venue: "American Economic Review, 90(5)"
+    doi_or_url: "https://doi.org/10.1257/aer.90.5.1209"
+    abstract: >
+      Usa variação geográfica em distritos escolares como IV para identificar
+      efeitos de competição entre escolas. Achado: mais opções → melhor
+      desempenho per dólar, com elasticidade pequena mas significante.
+    area: ["economia da educação", "school choice", "competição"]
+    method: ["variável instrumental", "geografia natural"]
+    brazil_specific: false
+    data_requirements:
+      - "indicador de oferta de escolas"
+      - "indicador de desempenho"
+    data_rio_coverage:
+      - requirement: "indicador de oferta de escolas"
+        item_id: "0a220ea7972d4adf85b3e63d23a4b9b1"
+        status: available
+      - requirement: "indicador de desempenho"
+        item_id: "ideb-municipal-bairros"
+        status: available
+    replication_status: pending
+    policy_insight: null
+
+  - id: card-krueger-1992-jpe
+    authors: [Card, Krueger]
+    year: 1992
+    title: "Does school quality matter? Returns to education and the characteristics of public schools in the United States"
+    venue: "Journal of Political Economy, 100(1)"
+    doi_or_url: "https://doi.org/10.1086/261805"
+    abstract: >
+      Mostra que características de escola (razão aluno-professor, salário
+      docente, duração do ano letivo) afetam retornos da educação na vida
+      adulta, usando variação inter-estadual nos EUA.
+    area: ["economia da educação", "qualidade docente", "retornos da educação"]
+    method: ["regressão com efeitos fixos", "variação inter-regional"]
+    brazil_specific: false
+    data_requirements:
+      - "característica de escola por região"
+      - "renda adulta por coorte"
+    data_rio_coverage:
+      - requirement: "característica de escola por região"
+        item_id: null
+        status: external
+      - requirement: "renda adulta por coorte"
+        item_id: null
+        status: external
+    replication_status: unfeasible
+    policy_insight: null

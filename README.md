@@ -4,11 +4,16 @@
 [![ci](https://github.com/freirelucas/rio-edu-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/freirelucas/rio-edu-lab/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620)
-Laboratório **paper-driven** sobre o Grupo Educação do [data.rio](https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310). Operacionaliza o método **Pereira, Braga, Serra & Nadalin (2019)** [IPEA — Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras](https://hdl.handle.net/10419/240730) sobre o IDEB municipal carioca.
+**Laboratório de replicação de papers em educação aplicados ao Rio.** Catálogo aberto de papers seminais (foco em educação) cruzado com o [Grupo Educação do data.rio](https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310). Cada entrada do catálogo mapeia requisitos de dados → itens disponíveis → status de replicação no lab + insight para gestores quando replicado.
 
-**Achado central da v0.5**: na decomposição Theil-T do IDEB por bairro, **66% da desigualdade está dentro das RAs** (não entre). Coropléticos por RA mascaram a maior parte da variância. Robusto em 6 séries (anos iniciais/finais, ponderação por matrícula, Aprovação/SAEB/IDEB).
+**Achado-central que originou o lab**: na decomposição Theil-T do IDEB por bairro, **66% da desigualdade está dentro das RAs** (não entre). Coropléticos por RA mascaram a maior parte da variância. Robusto em 6 séries (anos iniciais/finais, ponderação por matrícula, Aprovação/SAEB/IDEB).
 
-**Status do MVP**: 1 produto ativo (HEX-EDU em v0.5 entregue como Theil sobre H3 grid; v0.6 estende para acessibilidade Pereira-style) + 1 em planejamento (VULN-EDU, cruzamento socioeconômico × IDEB). A v0.6 corrigiu o catálogo da v0.5 que tinha 4 produtos com fundamentação acadêmica heterogênea — detalhes no [CHANGELOG](./CHANGELOG.md).
+**Estado atual (v0.7)**: 12 papers seed catalogados (3 já replicados, 5 alvo de replicação leve, 4 metodológicos); roadmap = expandir para 100 papers. 2 produtos ativos:
+
+- **HEX-EDU**: v0.5 (Theil sobre H3 grid, **66% within-RA**) + v0.6.1 (acessibilidade Pereira-style com distância haversine, 1022 escolas elegíveis). Operacionaliza Pereira et al. 2019.
+- **VULN-EDU v0.1**: cruzamento IDS Censo 2010 × IDEB 2023 por bairro. Achado — gradiente SES-educacional real mas modesto (Pearson +0.40, R²=0.16); **39% dos bairros estão em quadrantes não-concordantes** (resilientes + sub-performance). Operacionaliza Reardon 2011.
+
+**Renomeação na v0.7.** Até a v0.6.2 o lab foi apresentado como "Atlas Cibernético da Educação Carioca". A v0.7 reposiciona o trabalho como laboratório de replicação de papers; o catálogo público (`docs/papers/`) é o produto primário. DOI Zenodo preservado.
 
 Site publicado: <https://freirelucas.github.io/rio-edu-lab/>.
 

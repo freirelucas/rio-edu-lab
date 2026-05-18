@@ -40,6 +40,18 @@ Theil base, robustez, mapa estático, mapa interativo, replicação metodológic
 | 12 | [FUN-Rio (pseudocoortes)](reports/12_fun_rio.md) | 768 transições 5º→9º; 87% pioram, slope −0.53 vs IDEB inicial. |
 | 13 | [PM-12 (lei de escala)](reports/13_pm_12.md) | β = 0.77 sublinear (R² 0.80); SAMI mapeia déficit infra-estrutural. |
 
+## HEX-EDU v0.6 acessibilidade (14)
+
+| # | Relatório | Em uma frase |
+|---|---|---|
+| 14 | [Acessibilidade Pereira-style](reports/14_acessibilidade.md) | Acesso ponderado por IDEB sobre H3 res 8; AP 3 lidera (113), AP 4 último (29). |
+
+## VULN-EDU (15)
+
+| # | Relatório | Em uma frase |
+|---|---|---|
+| 15 | [IDS × IDEB por bairro](reports/15_vuln_edu.md) | Reardon (2011) intra-Rio; gradiente +0.40, R²=0.16; 39% dos bairros em quadrantes não-concordantes. |
+
 ## Recursos auxiliares
 
 - [API do data.rio](data-rio-api.md) — endpoints validados pelo probe.
@@ -48,4 +60,4 @@ Theil base, robustez, mapa estático, mapa interativo, replicação metodológic
 
 ## Ler na ordem cronológica
 
-Se quiser seguir como o lab foi se construindo: 01 → 02 → 03 → 04 → 05 → 06 → 06b → 07 → 08 → 09 → 10 → 11 → 12 → 13. Cada relatório foi mergeado em PR separado, então o histórico de commits também conta a história.
+Se quiser seguir como o lab foi se construindo: 01 → 02 → 03 → 04 → 05 → 06 → 06b → 07 → 08 → 09 → 10 → 11 → 12 → 13 → 14 → 15. Cada relatório foi mergeado em PR separado, então o histórico de commits também conta a história.

@@ -1,18 +1,26 @@
 cff-version: 1.2.0
 message: "If you use this lab's analysis, code, or derived data, please cite it as below."
-title: "rio-edu-lab — laboratório exploratório sobre o Grupo Educação do data.rio"
+title: "rio-edu-lab — laboratório de replicação de papers em educação aplicados ao Rio"
 abstract: >
-  Laboratório paper-driven sobre o Grupo Educação do data.rio (portal de
-  dados abertos da Cidade do Rio de Janeiro, mantido pelo Instituto Pereira
-  Passos). Operacionaliza o método Pereira et al. (2019, IPEA) de
-  acessibilidade espacial via H3 + métricas de equidade educacional, aplicado
-  ao IDEB municipal carioca. A v0.5 entrega a base do pipeline (decomposição
-  Theil-T do IDEB por bairro: 66% within-RA), com 3 análises de robustez
-  acopladas (Theil 3-níveis aninhado AP/RA/bairro; pseudocoortes 5º→9º; lei
-  de escala matrícula × escolas). Próxima iteração (v0.6) implementa a
-  acessibilidade Pereira-style completa (isócronas + decomposição por SES).
-  Inclui ingestão + catálogo empírico de 127 Excels + 35 PDFs do data.rio,
-  pacote acec instalável, e CI com testes de invariância matemática.
+  Laboratório de replicação de papers em educação aplicados ao Rio. Mantém
+  um catálogo público de papers seminais (top-citados em economia,
+  sociologia e política educacional + papers brasileiros relevantes +
+  metodológicos canônicos) cruzado com os itens do Grupo Educação do
+  data.rio (portal de dados abertos da Cidade, mantido pelo Instituto
+  Pereira Passos). Cada paper do catálogo mapeia requisitos de dados →
+  cobertura no data.rio → status de replicação no lab, com citações via
+  OpenAlex. A v0.7 entrega o framework do catálogo + 12 papers seed, dos
+  quais 3 já operacionalizados em produtos: (1) HEX-EDU — replica Pereira
+  et al. (2019, IPEA) com decomposição Theil-T (66% within-RA) e métrica
+  de acessibilidade ponderada por IDEB; (2) VULN-EDU v0.1 — replica
+  Reardon (2011) cruzando IDS (Censo 2010, IPP) × IDEB séries iniciais
+  2023 (Pearson +0.40, R²=0.16; 39% dos bairros em quadrantes
+  não-concordantes). Cada produto ganha bloco "Para gestores públicos"
+  com achado, implicação e ações concretas. Replicações leves de mais 5
+  papers planejadas (Soares & Andrade 2006, Alves & Soares 2013, Coleman
+  1966, Hanushek 1986, Reardon & Owens 2014) para sub-releases. Inclui
+  pacote acec instalável com primitivas canônicas (theil_t, ols_simple,
+  quintile_grid) e CI com testes de invariância matemática.
 type: software
 authors:
   - family-names: "Freire"
@@ -29,9 +37,11 @@ keywords:
   - "Theil index"
   - "spatial inequality"
   - "H3"
+  - "paper catalog"
+  - "OpenAlex"
   - "reproducible research"
 date-released: "2026-05-06"
-version: "0.5.0"
+version: "0.7.0"
 doi: "10.5281/zenodo.20060620"
 identifiers:
   - type: doi
@@ -61,3 +71,69 @@ references:
     publisher:
       name: "North-Holland Publishing Company"
     year: 1967
+  - type: book-chapter
+    authors:
+      - family-names: "Reardon"
+        given-names: "Sean F."
+    title: "The widening academic-achievement gap between the rich and the poor: New evidence and possible explanations"
+    publisher:
+      name: "Russell Sage Foundation"
+    year: 2011
+    pages: "91--116"
+    editors:
+      - family-names: "Duncan"
+        given-names: "Greg J."
+      - family-names: "Murnane"
+        given-names: "Richard J."
+  - type: article
+    authors:
+      - family-names: "Soares"
+        given-names: "José Francisco"
+      - family-names: "Andrade"
+        given-names: "Renato Júdice de"
+    title: "Nível socioeconômico, qualidade e equidade das escolas de Belo Horizonte"
+    journal: "Ensaio: Avaliação e Políticas Públicas em Educação"
+    volume: "14"
+    issue: "50"
+    year: 2006
+    doi: "10.1590/S0104-40362006000100007"
+  - type: article
+    authors:
+      - family-names: "Alves"
+        given-names: "Maria Teresa Gonzaga"
+      - family-names: "Soares"
+        given-names: "José Francisco"
+    title: "Contexto escolar e indicadores educacionais: condições desiguais para a efetivação de uma política de avaliação"
+    journal: "Educação e Pesquisa"
+    volume: "39"
+    issue: "1"
+    year: 2013
+    doi: "10.1590/S1517-97022013000100012"
+  - type: report
+    authors:
+      - family-names: "Coleman"
+        given-names: "James S."
+    title: "Equality of Educational Opportunity"
+    institution:
+      name: "U.S. Department of Health, Education, and Welfare"
+    year: 1966
+  - type: article
+    authors:
+      - family-names: "Hanushek"
+        given-names: "Eric A."
+    title: "The economics of schooling: Production and efficiency in public schools"
+    journal: "Journal of Economic Literature"
+    volume: "24"
+    issue: "3"
+    year: 1986
+  - type: article
+    authors:
+      - family-names: "Reardon"
+        given-names: "Sean F."
+      - family-names: "Owens"
+        given-names: "Ann"
+    title: "60 years after Brown: Trends and consequences of school segregation"
+    journal: "Annual Review of Sociology"
+    volume: "40"
+    year: 2014
+    doi: "10.1146/annurev-soc-071913-043152"
