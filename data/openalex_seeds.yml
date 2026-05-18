@@ -1,0 +1,173 @@
+# Núcleo bibliométrico do funil de papers (Stage 1).
+# ---------------------------------------------------
+# Cada seed é um paper canônico que ancora a descoberta. O `45_bulk_discover.py`
+# faz snowball a partir desta lista:
+#
+#   - backward (mainstream): pega `referenced_works` do seed via OpenAlex →
+#     papers que o seed cita herdam a curadoria do seed.
+#   - forward (outsider): pega papers que citam o seed (filtro lateral
+#     20 ≤ cited_by_count ≤ 500) → diversidade controlada, foco em
+#     papers com sinal de replicabilidade (github/osf/dataverse).
+#
+# Schema por seed:
+#   openalex_id    obrigatório, formato W… (sem prefixo https://)
+#   label          humano, usado em logs e em discovered_via
+#   track          mainstream | outsider
+#                    mainstream → backward + forward
+#                    outsider   → forward only (sem snowball backward)
+#   top_forward    (opcional) cap de papers no forward; default 50
+#   enabled        (opcional) bool; default true
+#
+# Convenção: minimo 15 seeds, máximo ~30 (custo OpenAlex é 1 req/s).
+# Curador adiciona/remove em PR para este arquivo. IDs descobertos em
+# https://openalex.org (busca por título → copiar do URL).
+
+version: 1
+
+seeds:
+
+  # ============================================================
+  # Mainstream — os 12 papers do catalog atual (v0.7.3)
+  # IDs extraídos de data/processed/openalex_citations.json
+  # ============================================================
+
+  - openalex_id: W2147138207
+    label: "coleman-1966 — Equality of Educational Opportunity"
+    track: mainstream
+
+  - openalex_id: W1529260143
+    label: "hanushek-1986 — Economics of Schooling, Production and Efficiency"
+    track: mainstream
+
+  - openalex_id: W2260600530
+    label: "card-krueger-1992 — Does School Quality Matter? (JPE)"
+    track: mainstream
+
+  - openalex_id: W2796050217
+    label: "becker-1964 — Human Capital"
+    track: mainstream
+
+  - openalex_id: W3124133911
+    label: "hoxby-2000 — Competition Among Public Schools (AER)"
+    track: mainstream
+
+  - openalex_id: W2186570755
+    label: "reardon-2011 — Widening Academic Achievement Gap"
+    track: mainstream
+
+  - openalex_id: W3125864288
+    label: "cunha-heckman-2007 — Technology of Skill Formation"
+    track: mainstream
+
+  - openalex_id: W2104117291
+    label: "reardon-owens-2014 — 60 Years After Brown: School Segregation"
+    track: mainstream
+
+  - openalex_id: W2037368675
+    label: "alves-soares-2013 — Contexto escolar e indicadores educacionais (BR)"
+    track: mainstream
+
+  - openalex_id: W3118415806
+    label: "pereira-2019 — Desigualdade e COVID-19 no Brasil (IPEA)"
+    track: mainstream
+
+  # Os 2 papers abaixo têm match incorreto na snapshot (Theil 1967 / Soares 2006);
+  # curador deve verificar IDs reais antes do primeiro run real.
+  - openalex_id: W2031753087
+    label: "theil-1967 — Economics and Information Theory (VERIFY ID)"
+    track: mainstream
+    enabled: false
+
+  - openalex_id: W1964624078
+    label: "soares-andrade-2006 — Violência escolar (VERIFY ID)"
+    track: mainstream
+    enabled: false
+
+  # ============================================================
+  # Mainstream — landmarks propostos (curador resolve IDs)
+  # ============================================================
+  # Os IDs abaixo são placeholders. Para resolver:
+  #   1. Buscar o paper em https://openalex.org
+  #   2. Copiar o W… do URL e substituir o placeholder
+  #   3. Setar enabled: true
+
+  - openalex_id: W3121388701
+    label: "rivkin-hanushek-kain-2005 — Teachers, Schools, and Academic Achievement (Econometrica)"
+    track: mainstream
+
+  # ============================================================
+  # IPEA — Institute of Applied Economic Research (I3131024195)
+  # Top works afiliados ao IPEA com tema educação, ordenados por citação.
+  # Foco em Brasil: desigualdade, retornos, financiamento.
+  # ============================================================
+
+  - openalex_id: W2035731659
+    label: "castro-2009 — Evolução e desigualdade na educação brasileira (IPEA)"
+    track: mainstream
+
+  - openalex_id: W2065489451
+    label: "souza-2010 — Desigualdade de oportunidades: classe, educação, raça (IPEA)"
+    track: mainstream
+
+  - openalex_id: W1772859700
+    label: "reis-2011 — Escolaridade dos pais e desigualdade de rendimentos (IPEA)"
+    track: mainstream
+
+  - openalex_id: W2011333499
+    label: "souza-2014 — Estrutura de Classes, Educação e Queda da Desigualdade (IPEA)"
+    track: mainstream
+
+  - openalex_id: W1963754226
+    label: "abrahao-2005 — Financiamento da educação básica no Brasil (IPEA)"
+    track: mainstream
+
+  - openalex_id: W2902634982
+    label: "martins-2018 — Escolha do curso superior no Brasil (IPEA)"
+    track: mainstream
+
+  - openalex_id: W1976479784
+    label: "castro-2007 — Financiamento e gasto público na educação básica 1995-2005 (IPEA)"
+    track: mainstream
+
+  - openalex_id: W1837357803
+    label: "suliano-2012 — Retornos da educação no Brasil regional (IPEA)"
+    track: mainstream
+
+  # ============================================================
+  # Demais landmarks propostos (placeholders, curador resolve IDs)
+  # ============================================================
+
+  # - openalex_id: <id-tbd>
+  #   label: "chetty-friedman-rockoff-2014 — Measuring Impacts of Teachers (AER)"
+  #   track: mainstream
+  #   enabled: false
+  #
+  # - openalex_id: <id-tbd>
+  #   label: "angrist-lavy-1999 — Maimonides Rule Class Size (QJE)"
+  #   track: mainstream
+  #   enabled: false
+  #
+  # - openalex_id: <id-tbd>
+  #   label: "krueger-1999 — Experimental Estimates Project STAR (QJE)"
+  #   track: mainstream
+  #   enabled: false
+  #
+  # - openalex_id: <id-tbd>
+  #   label: "hanushek-woessmann-2008 — Role of Cognitive Skills in Economic Development (JEL)"
+  #   track: mainstream
+  #   enabled: false
+  #
+  # - openalex_id: <id-tbd>
+  #   label: "heckman-stixrud-urzua-2006 — Cognitive and Noncognitive Abilities (JOLE)"
+  #   track: mainstream
+  #   enabled: false
+  #
+  # - openalex_id: <id-tbd>
+  #   label: "card-1999 — Causal Effect of Education on Earnings (Handbook)"
+  #   track: mainstream
+  #   enabled: false
+  #
+  # - openalex_id: <id-tbd>
+  #   label: "duflo-2001 — Schooling and Labor Market Consequences (AER)"
+  #   track: mainstream
+  #   enabled: false

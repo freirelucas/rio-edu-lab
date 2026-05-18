@@ -16,14 +16,22 @@ import time
 import urllib.parse
 import urllib.request
 
-USER_AGENT = "rio-edu-lab/0.8 (https://github.com/freirelucas/rio-edu-lab; mailto:none)"
+USER_AGENT = "rio-edu-lab/0.8 (https://github.com/freirelucas/rio-edu-lab)"
+OPENALEX_MAILTO = "rio-edu-lab@example.com"  # polite-pool identifier; OpenAlex docs recommend including mailto
+
+
+def _with_mailto(url: str) -> str:
+    """Append mailto= query param so OpenAlex routes us to the polite pool."""
+    sep = "&" if "?" in url else "?"
+    return f"{url}{sep}mailto={OPENALEX_MAILTO}"
 TIMEOUT = 20
 THROTTLE_S = 1.0
 PER_PAGE = 25
 
 
 def fetch(url: str) -> dict | None:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    polite_url = _with_mailto(url) if "api.openalex.org" in url else url
+    req = urllib.request.Request(polite_url, headers={"User-Agent": USER_AGENT})
     try:
         with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
             return json.loads(resp.read().decode("utf-8"))
@@ -167,10 +175,132 @@ def iterate_works(
     return rows[:top]
 
 
+def _normalize_id(openalex_id: str) -> str:
+    """Strip the URL prefix so callers can pass either form."""
+    s = (openalex_id or "").strip()
+    if s.startswith("https://openalex.org/"):
+        s = s[len("https://openalex.org/"):]
+    return s
+
+
+def fetch_work_by_id(openalex_id: str, verbose: bool = True) -> dict | None:
+    """GET /works/{id} → full Work dict including `referenced_works`.
+
+    Caller picks fields; we don't pre-parse so the full snowball structure
+    (referenced_works, cited_by_count, abstract_inverted_index, etc.) stays
+    available. Throttles once per call.
+    """
+    wid = _normalize_id(openalex_id)
+    if not wid:
+        return None
+    url = f"https://api.openalex.org/works/{wid}"
+    if verbose:
+        print(f"  fetch_work_by_id: {wid}", file=sys.stderr)
+    data = fetch(url)
+    time.sleep(THROTTLE_S)
+    return data
+
+
+def fetch_works_batch(
+    openalex_ids: list[str],
+    chunk: int = 50,
+    verbose: bool = True,
+) -> list[dict]:
+    """Batch-fetch many works via `?filter=openalex_id:W1|W2|...`.
+
+    Reduces N individual fetches to N/50 calls (OpenAlex per-page max 200,
+    but the filter-id syntax tolerates ≤50 OR'd ids safely). Returns the
+    raw Work dicts (NOT parsed). Order not guaranteed; caller dedupes via
+    `work['id']`. Skips ids that OpenAlex doesn't return (silently dropped
+    by the API for invalid/withdrawn works).
+    """
+    out: list[dict] = []
+    ids_clean = [_normalize_id(x) for x in openalex_ids if x]
+    ids_clean = [x for x in ids_clean if x.startswith("W")]
+    if not ids_clean:
+        return []
+    for i in range(0, len(ids_clean), chunk):
+        batch = ids_clean[i:i + chunk]
+        filt = "openalex_id:" + "|".join(batch)
+        url = (
+            "https://api.openalex.org/works?"
+            f"filter={urllib.parse.quote(filt, safe=':|')}"
+            f"&per-page={len(batch)}&page=1"
+        )
+        if verbose:
+            print(
+                f"  fetch_works_batch chunk {i // chunk + 1}: {len(batch)} ids",
+                file=sys.stderr,
+            )
+        data = fetch(url)
+        if data and "results" in data:
+            got = data["results"]
+            out.extend(got)
+            if verbose and len(got) < len(batch):
+                missing = len(batch) - len(got)
+                print(f"  [warn] {missing} ids not returned by API", file=sys.stderr)
+        time.sleep(THROTTLE_S)
+    return out
+
+
+def iterate_cites(
+    seed_openalex_id: str,
+    top: int = 50,
+    min_citations: int = 0,
+    max_citations: int | None = None,
+    verbose: bool = True,
+) -> list[dict]:
+    """Paginate `/works?filter=cites:W{id}` → forward snowball.
+
+    Returns parsed rows (via parse_work) sorted by cited_by_count desc,
+    capped at `top`. `min_citations`/`max_citations` apply as inline
+    filters so the API does the pruning. Mirrors iterate_works pagination
+    and throttling.
+    """
+    wid = _normalize_id(seed_openalex_id)
+    if not wid:
+        return []
+    rows: list[dict] = []
+    seen: set[str] = set()
+    page = 1
+    while len(rows) < top:
+        filters = [f"cites:{wid}"]
+        if min_citations:
+            filters.append(f"cited_by_count:>{min_citations}")
+        if max_citations:
+            filters.append(f"cited_by_count:<{max_citations}")
+        url = (
+            "https://api.openalex.org/works?"
+            f"filter={','.join(filters)}"
+            f"&sort=cited_by_count:desc&per-page={PER_PAGE}&page={page}"
+        )
+        if verbose:
+            print(f"  iterate_cites {wid} page {page}", file=sys.stderr)
+        data = fetch(url)
+        if not data or "results" not in data:
+            break
+        results = data["results"]
+        if not results:
+            break
+        for w in results:
+            oid = w.get("id", "")
+            if not oid or oid in seen:
+                continue
+            seen.add(oid)
+            rows.append(parse_work(w))
+            if len(rows) >= top:
+                break
+        page += 1
+        time.sleep(THROTTLE_S)
+    rows.sort(key=lambda r: -int(r.get("cited_by_count") or 0))
+    return rows[:top]
+
+
 __all__ = [
     "USER_AGENT", "TIMEOUT", "THROTTLE_S", "PER_PAGE",
     "fetch", "build_query_url",
     "authors_summary", "concepts_top3", "reconstruct_abstract",
     "doi_from_work", "pdf_oa_url", "venue_display",
     "parse_work", "iterate_works",
+    "fetch_work_by_id", "fetch_works_batch", "iterate_cites",
 ]
