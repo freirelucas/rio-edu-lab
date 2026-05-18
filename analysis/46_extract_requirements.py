@@ -1,22 +1,29 @@
 """Stage 2 do funil — extração semi-automática de requisitos de dados.
 
 Para cada candidato em `data/papers_funnel.yml` sem `suggested_requirements`,
-tokeniza `title + " " + abstract` e pontua contra os aliases das 10 categorias
-em `data/requirements_taxonomy.yml`. Escreve top-K (default 3) sugestões com
-score (= número de aliases que aparecem no texto).
+tokeniza `title + " " + abstract` e pontua contra `aliases + aliases_en` das
+10 categorias em `data/requirements_taxonomy.yml`. Escreve top-K (default 3)
+sugestões com score.
+
+**Pré-filtro (v0.7.5):** candidato deve mentar >= 2 tokens de `EDU_KEYWORDS`
+(education/school/teacher/student/etc. em EN e PT) no title+abstract antes
+de ser scoreado. Papers fora do domínio (médicos, COVID, infra) recebem
+`suggested_requirements: []` direto.
+
+**Notes excluídas do scoring (v0.7.5):** o campo `notes` da taxonomia contém
+metadados ("Feature Service", "INEP per-school", "data.rio") que poluíam o
+token set e geravam falsos positivos. 46 chama `category_keywords` com
+`include_notes=False`.
 
 Idempotente: candidatos com sugestões já preenchidas são pulados, a menos
-que `--force` seja passada (recomputa tudo).
-
-Curador revisa em `papers_funnel.yml` e pode editar à mão antes de aceitar
-no estágio 4. Sem sugestões acima do threshold → lista vazia (curador
-preenche manualmente).
+que `--force` seja passada (recomputa tudo). Primeira run pós-v0.7.5 sobre
+funnel pré-existente: use `--force` para re-scorear sob novos thresholds.
 
 Uso:
   python3 analysis/46_extract_requirements.py
   python3 analysis/46_extract_requirements.py --top-k 5
   python3 analysis/46_extract_requirements.py --force         # recomputa tudo
-  python3 analysis/46_extract_requirements.py --min-score 2.0 # cutoff mais alto
+  python3 analysis/46_extract_requirements.py --min-score 2.0 # cutoff mais permissivo
 """
 
 from __future__ import annotations
@@ -32,14 +39,15 @@ except ImportError:
     sys.exit(1)
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _match import load_taxonomy, score_against_categories  # noqa: E402
+from _match import edu_signal, load_taxonomy, score_against_categories  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 FUNNEL_YML = ROOT / "data" / "papers_funnel.yml"
 TAXONOMY_YML = ROOT / "data" / "requirements_taxonomy.yml"
 
 DEFAULT_TOP_K = 3
-DEFAULT_MIN_SCORE = 1.0
+DEFAULT_MIN_SCORE = 2.0
+DEFAULT_EDU_MIN = 1
 
 
 def write_funnel(candidates: list[dict]) -> None:
@@ -66,6 +74,8 @@ def main() -> int:
                     help=f"Top-K suggestions per candidate (default {DEFAULT_TOP_K})")
     ap.add_argument("--min-score", type=float, default=DEFAULT_MIN_SCORE,
                     help=f"Minimum score to include (default {DEFAULT_MIN_SCORE})")
+    ap.add_argument("--edu-min", type=int, default=DEFAULT_EDU_MIN,
+                    help=f"Minimum edu_signal hits for paper to be scored (default {DEFAULT_EDU_MIN})")
     ap.add_argument("--force", action="store_true",
                     help="Recompute suggestions even when already present")
     args = ap.parse_args()
@@ -86,13 +96,17 @@ def main() -> int:
     n_scored = 0
     n_skipped = 0
     n_empty = 0
+    n_off_topic = 0
     for c in candidates:
         if c.get("suggested_requirements") and not args.force:
             n_skipped += 1
             continue
         text = (c.get("title") or "") + " " + (c.get("abstract") or "")
-        ranked = score_against_categories(text, cats)
-        # Filter by score threshold and take top-K
+        if edu_signal(text) < args.edu_min:
+            c["suggested_requirements"] = []
+            n_off_topic += 1
+            continue
+        ranked = score_against_categories(text, cats, include_notes=False)
         kept = [
             {"category_id": cid, "score": round(s, 1)}
             for cid, s in ranked
@@ -104,9 +118,10 @@ def main() -> int:
         else:
             n_empty += 1
 
-    print(f"\n=== summary ===")
+    print("\n=== summary ===")
     print(f"  scored: {n_scored}")
-    print(f"  empty (no category above min-score): {n_empty}")
+    print(f"  empty (passed edu-filter, no category above min-score): {n_empty}")
+    print(f"  off-topic (edu_signal < {args.edu_min}): {n_off_topic}")
     print(f"  skipped (already had suggestions): {n_skipped}")
 
     if n_scored == 0 and n_empty == 0:

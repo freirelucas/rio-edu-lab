@@ -10,20 +10,25 @@
 # bate nenhum alias.
 #
 # Schema de cada categoria:
-#   id        — kebab-case, único, estável (vira chave em outputs)
-#   label_pt  — rótulo humano em pt-BR (usado em UI / relatórios)
-#   level     — granularidade-fonte:
-#                 individual        = microdado por sujeito (aluno/domicílio)
-#                 aggregated_unit   = agregado por unidade espacial (escola/bairro/RA)
-#                 meta              = atributo do espaço/sistema (rede, partição)
-#   aliases   — strings históricas/equivalentes (lookup case-insensitive)
-#   notes     — (opcional) caveat de interpretação ou fonte típica
+#   id          — kebab-case, único, estável (vira chave em outputs)
+#   label_pt    — rótulo humano em pt-BR (usado em UI / relatórios)
+#   level       — granularidade-fonte:
+#                   individual        = microdado por sujeito (aluno/domicílio)
+#                   aggregated_unit   = agregado por unidade espacial (escola/bairro/RA)
+#                   meta              = atributo do espaço/sistema (rede, partição)
+#   aliases     — strings históricas/equivalentes em pt-BR (lookup case-insensitive)
+#   aliases_en  — (v2+) termos em inglês para matching de abstracts EN (OpenAlex
+#                 retorna abstracts mostly-EN, então sem aliases_en o Stage 2
+#                 do funil dava 67% de zero-suggestion). Tokenizados via
+#                 bag-of-words (multi-word vira N tokens).
+#   notes       — (opcional) caveat de interpretação ou fonte típica.
+#                 NÃO entram no scorer do Stage 2/3 (poluiriam com tokens
+#                 genéricos tipo "Feature Service"). 41 ainda usa por
+#                 backward-compat.
 #
-# Adicionar nova categoria: PR para este arquivo. Adicionar alias: PR também.
-# Tooling de matching (`analysis/41_match_requirements.py`) consome este arquivo
-# para sugerir itens do manifest data.rio dado um requirement.
+# Adicionar nova categoria ou alias: PR para este arquivo.
 
-version: 1
+version: 2
 
 categories:
 
@@ -34,6 +39,12 @@ categories:
       - "geometria de escolas"
       - "localização de escolas"
       - "coordenadas de escolas"
+    aliases_en:
+      - "school location"
+      - "school coordinates"
+      - "georeferenced schools"
+      - "school geolocation"
+      - "geocoded schools"
     notes: "Cobre escolas municipais, EDIs, creches. data.rio: `Escolas Municipais` (Feature Service)."
 
   - id: geometry-neighborhoods
@@ -43,6 +54,12 @@ categories:
       - "geometria de bairros"
       - "shapefile de bairros"
       - "limites de bairros"
+    aliases_en:
+      - "neighborhood boundaries"
+      - "neighborhood polygons"
+      - "census tract"
+      - "spatial unit"
+      - "administrative boundaries"
     notes: "data.rio: `Bairros (IPP)`. Inclui partições derivadas via IPP."
 
   - id: performance-aggregated
@@ -58,6 +75,14 @@ categories:
       - "indicador de output"
       - "valores positivos por unidade"
       - "característica de escola por região"
+    aliases_en:
+      - "school performance"
+      - "test score"
+      - "proficiency"
+      - "achievement gap"
+      - "value-added"
+      - "school quality measure"
+      - "academic outcomes"
     notes: "Cobre IDEB, SAEB, Aprovação, por bairro / escola / RA. Granularidade pode variar."
 
   - id: ses-aggregated
@@ -68,6 +93,12 @@ categories:
       - "NSE por escola ou bairro"
       - "composição SES por bairro"
       - "indicador socioeconômico granular"
+    aliases_en:
+      - "socioeconomic index"
+      - "socioeconomic composition"
+      - "school socioeconomic status"
+      - "neighborhood disadvantage"
+      - "school SES"
     notes: "INSE = INEP per-school; IDS = IPP per-bairro (Censo 2010); NSE = genérico."
 
   - id: spatial-partition
@@ -76,6 +107,11 @@ categories:
     aliases:
       - "agrupamento espacial"
       - "agrupamento hierárquico"
+    aliases_en:
+      - "spatial aggregation"
+      - "hierarchical clustering"
+      - "administrative region"
+      - "spatial partition"
     notes: "RA / AP / CRE / cluster — qualquer partição derivada de bairros."
 
   - id: travel-network
@@ -85,6 +121,13 @@ categories:
       - "rede viária / tempos de viagem"
       - "isócronas"
       - "OSM road network"
+    aliases_en:
+      - "travel time"
+      - "isochrone"
+      - "road network"
+      - "commute time"
+      - "spatial accessibility"
+      - "school accessibility"
     notes: "Não disponível no data.rio. Tipicamente OSM (open) ou GTFS (operadora)."
 
   - id: enrollment-counts
@@ -95,6 +138,12 @@ categories:
       - "indicador de matrícula"
       - "indicador de oferta de escolas"
       - "indicador de input"
+    aliases_en:
+      - "school enrollment"
+      - "enrollment counts"
+      - "school capacity"
+      - "school supply"
+      - "intake numbers"
     notes: "Cobre matrículas por escola, ano, série, rede. data.rio: vários Excels do INEP."
 
   - id: microdata-student
@@ -104,6 +153,13 @@ categories:
       - "anos de estudo individuais"
       - "renda individual"
       - "testes longitudinais individuais"
+    aliases_en:
+      - "student-level microdata"
+      - "student microdata"
+      - "individual test scores"
+      - "SAEB microdata"
+      - "PISA microdata"
+      - "longitudinal student data"
     notes: "Não disponível no data.rio. Fonte: microdado INEP (SAEB, Prova Brasil), PNAD, Censo."
 
   - id: microdata-household
@@ -112,6 +168,12 @@ categories:
     aliases:
       - "investimentos parentais observáveis"
       - "renda domiciliar individual"
+    aliases_en:
+      - "household microdata"
+      - "household income"
+      - "parental investment"
+      - "PNAD microdata"
+      - "census microdata"
     notes: "Não disponível no data.rio. Fonte: PNAD, Censo microdado."
 
   - id: longitudinal-cohort
@@ -120,4 +182,10 @@ categories:
     aliases:
       - "renda adulta por coorte"
       - "trajetória educacional longitudinal"
+    aliases_en:
+      - "longitudinal cohort"
+      - "cohort panel"
+      - "labor market outcomes"
+      - "longitudinal earnings"
+      - "adult earnings"
     notes: "Não disponível no data.rio. Fonte: RAIS, painel longitudinal acadêmico."

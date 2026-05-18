@@ -75,11 +75,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 1.0
-  - category_id: microdata-household
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -210,11 +206,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 1.0
-  - category_id: microdata-household
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -271,11 +263,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: ses-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -481,13 +469,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
-  - category_id: microdata-household
-    score: 2.0
-  - category_id: geometry-schools
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -527,13 +509,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -616,9 +592,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: ses-aggregated
     manifest_item_id: 0afd8c122fb4400b847693e715106304
@@ -673,8 +647,15 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements: []
-  coverage: []
+  suggested_requirements:
+  - category_id: performance-aggregated
+    score: 3.0
+  coverage:
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
+    status: available
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2147138207
@@ -790,13 +771,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -904,8 +879,15 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements: []
-  coverage: []
+  suggested_requirements:
+  - category_id: performance-aggregated
+    score: 4.0
+  coverage:
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
+    status: available
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2106789212
@@ -996,9 +978,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: ses-aggregated
     manifest_item_id: 0afd8c122fb4400b847693e715106304
@@ -1146,9 +1126,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: ses-aggregated
     manifest_item_id: 0afd8c122fb4400b847693e715106304
@@ -1346,8 +1324,15 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements: []
-  coverage: []
+  suggested_requirements:
+  - category_id: longitudinal-cohort
+    score: 3.0
+  coverage:
+  - category_id: longitudinal-cohort
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1976137404
@@ -1442,13 +1427,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -1507,13 +1486,20 @@ candidates:
     score: 0
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: geometry-schools
+    score: 2.0
+  - category_id: performance-aggregated
+    score: 2.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: geometry-schools
+    manifest_item_id: 0a220ea7972449e39a28210dd317f636
+    manifest_title: Escolas Municipais
+    score: 6.0
+    status: available
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -1539,25 +1525,10 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  - category_id: microdata-household
+    score: 2.0
   coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 13.0
-    status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: ae64616d363e48c897818b640e2a22cd
-    manifest_title: Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões
-      de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013
-    score: 10.0
-    status: available
-  - category_id: travel-network
+  - category_id: microdata-household
     manifest_item_id: null
     manifest_title: (fora do data.rio — fonte externa)
     score: 0.0
@@ -1679,13 +1650,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 2.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -1773,14 +1738,28 @@ candidates:
     score: 0
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: geometry-schools
+    score: 2.0
+  - category_id: performance-aggregated
+    score: 2.0
+  - category_id: travel-network
+    score: 2.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: geometry-schools
+    manifest_item_id: 0a220ea7972449e39a28210dd317f636
+    manifest_title: Escolas Municipais
+    score: 6.0
     status: available
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
+    status: available
+  - category_id: travel-network
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1483062237
@@ -1830,28 +1809,27 @@ candidates:
     score: 0
     hits: []
   suggested_requirements:
+  - category_id: microdata-student
+    score: 3.0
   - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: ses-aggregated
-    score: 1.0
+    score: 2.0
+  - category_id: performance-aggregated
+    score: 2.0
   coverage:
+  - category_id: microdata-student
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
     manifest_title: Escolas Municipais
-    score: 13.0
+    score: 6.0
     status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: ae64616d363e48c897818b640e2a22cd
-    manifest_title: Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões
-      de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013
-    score: 10.0
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -1876,8 +1854,15 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements: []
-  coverage: []
+  suggested_requirements:
+  - category_id: ses-aggregated
+    score: 2.0
+  coverage:
+  - category_id: ses-aggregated
+    manifest_item_id: af77acf434244df883b9683b87913afe
+    manifest_title: 'NOTA TÉCNICA 44 - Adaptação Metodológica do IDS: Rumo à Análise Comparativa com o Censo 2022 (Dezembro/2024)'
+    score: 7.0
+    status: available
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1597774618
@@ -1964,9 +1949,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: ses-aggregated
     manifest_item_id: 0afd8c122fb4400b847693e715106304
@@ -2021,13 +2004,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -2115,13 +2092,13 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: performance-aggregated
+    score: 2.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -2172,13 +2149,13 @@ candidates:
     score: 0
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: performance-aggregated
+    score: 2.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -2229,25 +2206,10 @@ candidates:
     score: 0
     hits: []
   suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  - category_id: microdata-student
+    score: 2.0
   coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 13.0
-    status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: ae64616d363e48c897818b640e2a22cd
-    manifest_title: Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões
-      de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013
-    score: 10.0
-    status: available
-  - category_id: travel-network
+  - category_id: microdata-student
     manifest_item_id: null
     manifest_title: (fora do data.rio — fonte externa)
     score: 0.0
@@ -2276,13 +2238,13 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: performance-aggregated
+    score: 3.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -2329,13 +2291,13 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 2.0
+  - category_id: performance-aggregated
+    score: 4.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -2385,13 +2347,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 2.0
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: longitudinal-cohort
     manifest_item_id: null
@@ -2483,28 +2439,20 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
+  - category_id: microdata-student
+    score: 3.0
+  - category_id: performance-aggregated
     score: 2.0
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 13.0
-    status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: ae64616d363e48c897818b640e2a22cd
-    manifest_title: Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões
-      de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013
-    score: 10.0
+  - category_id: microdata-student
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -2653,28 +2601,27 @@ candidates:
     score: 2
     hits: []
   suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 2.0
+  - category_id: microdata-student
+    score: 4.0
+  - category_id: performance-aggregated
+    score: 3.0
   - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
+    score: 2.0
   coverage:
-  - category_id: longitudinal-cohort
+  - category_id: microdata-student
     manifest_item_id: null
     manifest_title: (fora do data.rio — fonte externa)
     score: 0.0
     status: external
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
+    status: available
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
     manifest_title: Escolas Municipais
-    score: 13.0
-    status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: ae64616d363e48c897818b640e2a22cd
-    manifest_title: Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões
-      de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013
-    score: 10.0
+    score: 6.0
     status: available
   decision: ''
   decision_reason: ''
@@ -2720,13 +2667,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -2839,13 +2780,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -2908,9 +2843,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -3013,29 +2946,14 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: travel-network
+    score: 2.0
   coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 13.0
-    status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: ae64616d363e48c897818b640e2a22cd
-    manifest_title: Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões
-      de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013
-    score: 10.0
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
-    status: available
+  - category_id: travel-network
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2011410928
@@ -3059,8 +2977,22 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements: []
-  coverage: []
+  suggested_requirements:
+  - category_id: performance-aggregated
+    score: 3.0
+  - category_id: microdata-student
+    score: 2.0
+  coverage:
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
+    status: available
+  - category_id: microdata-student
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1517543107
@@ -3182,29 +3114,20 @@ candidates:
     hits: []
   suggested_requirements:
   - category_id: performance-aggregated
-    score: 1.0
-  - category_id: ses-aggregated
-    score: 1.0
+    score: 3.0
   - category_id: enrollment-counts
-    score: 1.0
+    score: 2.0
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 7888fde5637e4f2fa54cfb80f32321e4
-    manifest_title: 'Ensino Fundamental Regular - IDEB de rede pública municipal: séries finais (6º ao 9º ano) - taxa de aprovação,
-      nota média padronizada do SAEB e IDEB por municípios das capitais selecionadas entre 2005 - 2021'
-    score: 10.0
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   - category_id: enrollment-counts
-    manifest_item_id: b854cc4ce2c541e0bef62fc22d1f6fbc
-    manifest_title: 'Educação Infantil (pré-escola) e Ensino Fundamental: matrícula e no. de escolas na rede pública municipal
-      de ensino, por Área de Planejamento (AP), CREs, Região Administrativa (RA) e Bairros no Município do Rio de Janeiro
-      entre Janeiro/2006-Janeiro/2009'
-    score: 15.0
+    manifest_item_id: 1b8da7c026f84de78c6704438c8cda2f
+    manifest_title: 'Educação Infantil (creche/pré-escola), Ensino Fundamental, Classe Especial e Educação Juvenil (PEJ):
+      matrículas na rede municipal de ensino por idade, segundo as séries e matrícula inicial - 1999'
+    score: 10.0
     status: available
   decision: ''
   decision_reason: ''
@@ -3276,13 +3199,13 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: performance-aggregated
+    score: 3.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -3492,21 +3415,13 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 2.0
   - category_id: performance-aggregated
-    score: 1.0
+    score: 3.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
-    status: available
   - category_id: performance-aggregated
-    manifest_item_id: 7888fde5637e4f2fa54cfb80f32321e4
-    manifest_title: 'Ensino Fundamental Regular - IDEB de rede pública municipal: séries finais (6º ao 9º ano) - taxa de aprovação,
-      nota média padronizada do SAEB e IDEB por municípios das capitais selecionadas entre 2005 - 2021'
-    score: 10.0
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -3532,28 +3447,27 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
+  - category_id: performance-aggregated
+    score: 3.0
+  - category_id: microdata-student
+    score: 3.0
   - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: ses-aggregated
-    score: 1.0
+    score: 2.0
   coverage:
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
+    status: available
+  - category_id: microdata-student
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
     manifest_title: Escolas Municipais
-    score: 13.0
-    status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: ae64616d363e48c897818b640e2a22cd
-    manifest_title: Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões
-      de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013
-    score: 10.0
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+    score: 6.0
     status: available
   decision: ''
   decision_reason: ''
@@ -3600,13 +3514,20 @@ candidates:
     score: 0
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: performance-aggregated
+    score: 3.0
+  - category_id: geometry-schools
+    score: 2.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
+    status: available
+  - category_id: geometry-schools
+    manifest_item_id: 0a220ea7972449e39a28210dd317f636
+    manifest_title: Escolas Municipais
+    score: 6.0
     status: available
   decision: ''
   decision_reason: ''
@@ -3678,13 +3599,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -3746,13 +3661,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: microdata-student
-    score: 1.0
-  - category_id: microdata-household
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-neighborhoods
     manifest_item_id: ae64616d363e48c897818b640e2a22cd
@@ -3793,8 +3702,15 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements: []
-  coverage: []
+  suggested_requirements:
+  - category_id: microdata-student
+    score: 3.0
+  coverage:
+  - category_id: microdata-student
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1572342981
@@ -3819,22 +3735,21 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
+  - category_id: performance-aggregated
+    score: 4.0
+  - category_id: microdata-student
     score: 2.0
-  - category_id: performance-aggregated
-    score: 1.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
-    status: available
   - category_id: performance-aggregated
-    manifest_item_id: 7888fde5637e4f2fa54cfb80f32321e4
-    manifest_title: 'Ensino Fundamental Regular - IDEB de rede pública municipal: séries finais (6º ao 9º ano) - taxa de aprovação,
-      nota média padronizada do SAEB e IDEB por municípios das capitais selecionadas entre 2005 - 2021'
-    score: 10.0
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
+  - category_id: microdata-student
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W602422113
@@ -3878,13 +3793,20 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: geometry-schools
+    score: 2.0
+  - category_id: performance-aggregated
+    score: 2.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: geometry-schools
+    manifest_item_id: 0a220ea7972449e39a28210dd317f636
+    manifest_title: Escolas Municipais
+    score: 6.0
+    status: available
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -3935,13 +3857,21 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: travel-network
+    score: 2.0
+  - category_id: enrollment-counts
+    score: 2.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: travel-network
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
+  - category_id: enrollment-counts
+    manifest_item_id: 1b8da7c026f84de78c6704438c8cda2f
+    manifest_title: 'Educação Infantil (creche/pré-escola), Ensino Fundamental, Classe Especial e Educação Juvenil (PEJ):
+      matrículas na rede municipal de ensino por idade, segundo as séries e matrícula inicial - 1999'
+    score: 10.0
     status: available
   decision: ''
   decision_reason: ''
@@ -3963,29 +3893,14 @@ candidates:
     score: 0
     hits: []
   suggested_requirements:
-  - category_id: longitudinal-cohort
+  - category_id: microdata-student
     score: 2.0
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
   coverage:
-  - category_id: longitudinal-cohort
+  - category_id: microdata-student
     manifest_item_id: null
     manifest_title: (fora do data.rio — fonte externa)
     score: 0.0
     status: external
-  - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 13.0
-    status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: ae64616d363e48c897818b640e2a22cd
-    manifest_title: Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões
-      de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013
-    score: 10.0
-    status: available
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3021796743
@@ -4033,9 +3948,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -4064,13 +3977,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 3.0
-  - category_id: microdata-household
-    score: 2.0
-  - category_id: longitudinal-cohort
-    score: 2.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -4131,9 +4038,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -4189,13 +4094,13 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: performance-aggregated
+    score: 2.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -4218,13 +4123,13 @@ candidates:
     score: 0
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: performance-aggregated
+    score: 2.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -4273,28 +4178,27 @@ candidates:
     hits: []
   suggested_requirements:
   - category_id: ses-aggregated
-    score: 2.0
+    score: 4.0
   - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
+    score: 2.0
+  - category_id: microdata-student
+    score: 2.0
   coverage:
   - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+    manifest_item_id: af77acf434244df883b9683b87913afe
+    manifest_title: 'NOTA TÉCNICA 44 - Adaptação Metodológica do IDS: Rumo à Análise Comparativa com o Censo 2022 (Dezembro/2024)'
+    score: 7.0
     status: available
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
     manifest_title: Escolas Municipais
-    score: 13.0
+    score: 6.0
     status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: ae64616d363e48c897818b640e2a22cd
-    manifest_title: Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões
-      de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013
-    score: 10.0
-    status: available
+  - category_id: microdata-student
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1486904609
@@ -4378,13 +4282,20 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
+  - category_id: performance-aggregated
+    score: 2.0
   - category_id: ses-aggregated
-    score: 1.0
+    score: 2.0
   coverage:
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
+    status: available
   - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+    manifest_item_id: af77acf434244df883b9683b87913afe
+    manifest_title: 'NOTA TÉCNICA 44 - Adaptação Metodológica do IDS: Rumo à Análise Comparativa com o Censo 2022 (Dezembro/2024)'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -4409,13 +4320,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 3.0
-  - category_id: microdata-household
-    score: 3.0
-  - category_id: longitudinal-cohort
-    score: 3.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -4633,13 +4538,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 3.0
-  - category_id: microdata-household
-    score: 1.0
-  - category_id: longitudinal-cohort
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -4679,9 +4578,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: ses-aggregated
     manifest_item_id: 0afd8c122fb4400b847693e715106304
@@ -4749,9 +4646,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: ses-aggregated
     manifest_item_id: 0afd8c122fb4400b847693e715106304
@@ -4780,13 +4675,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
-  - category_id: microdata-household
-    score: 2.0
-  - category_id: geometry-schools
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -4847,11 +4736,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 1.0
-  - category_id: enrollment-counts
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: performance-aggregated
     manifest_item_id: 7888fde5637e4f2fa54cfb80f32321e4
@@ -4886,9 +4771,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: travel-network
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: travel-network
     manifest_item_id: null
@@ -4964,9 +4847,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -4996,13 +4877,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
-  - category_id: microdata-household
-    score: 1.0
-  - category_id: longitudinal-cohort
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -5042,8 +4917,22 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements: []
-  coverage: []
+  suggested_requirements:
+  - category_id: performance-aggregated
+    score: 2.0
+  - category_id: microdata-student
+    score: 2.0
+  coverage:
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
+    status: available
+  - category_id: microdata-student
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2105333171
@@ -5093,9 +4982,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -5150,13 +5037,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -5268,13 +5149,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
-  - category_id: microdata-household
-    score: 1.0
-  - category_id: longitudinal-cohort
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -5336,29 +5211,14 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
   - category_id: longitudinal-cohort
     score: 2.0
-  - category_id: performance-aggregated
-    score: 1.0
   coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
   - category_id: longitudinal-cohort
     manifest_item_id: null
     manifest_title: (fora do data.rio — fonte externa)
     score: 0.0
     status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 7888fde5637e4f2fa54cfb80f32321e4
-    manifest_title: 'Ensino Fundamental Regular - IDEB de rede pública municipal: séries finais (6º ao 9º ano) - taxa de aprovação,
-      nota média padronizada do SAEB e IDEB por municípios das capitais selecionadas entre 2005 - 2021'
-    score: 10.0
-    status: available
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3162995892
@@ -5408,11 +5268,7 @@ candidates:
     score: 5
     hits:
     - osf.io
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 1.0
-  - category_id: microdata-household
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -5516,13 +5372,13 @@ candidates:
     score: 0
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: geometry-schools
+    score: 2.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: geometry-schools
+    manifest_item_id: 0a220ea7972449e39a28210dd317f636
+    manifest_title: Escolas Municipais
+    score: 6.0
     status: available
   decision: ''
   decision_reason: ''
@@ -5571,13 +5427,13 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: geometry-schools
+    score: 2.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: geometry-schools
+    manifest_item_id: 0a220ea7972449e39a28210dd317f636
+    manifest_title: Escolas Municipais
+    score: 6.0
     status: available
   decision: ''
   decision_reason: ''
@@ -5602,9 +5458,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-neighborhoods
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-neighborhoods
     manifest_item_id: ae64616d363e48c897818b640e2a22cd
@@ -5681,13 +5535,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
-  - category_id: microdata-household
-    score: 1.0
-  - category_id: longitudinal-cohort
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -5729,29 +5577,14 @@ candidates:
     score: 0
     hits: []
   suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
   - category_id: longitudinal-cohort
     score: 2.0
-  - category_id: performance-aggregated
-    score: 1.0
   coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
   - category_id: longitudinal-cohort
     manifest_item_id: null
     manifest_title: (fora do data.rio — fonte externa)
     score: 0.0
     status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 7888fde5637e4f2fa54cfb80f32321e4
-    manifest_title: 'Ensino Fundamental Regular - IDEB de rede pública municipal: séries finais (6º ao 9º ano) - taxa de aprovação,
-      nota média padronizada do SAEB e IDEB por municípios das capitais selecionadas entre 2005 - 2021'
-    score: 10.0
-    status: available
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2172107927
@@ -5872,9 +5705,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -5926,8 +5757,15 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements: []
-  coverage: []
+  suggested_requirements:
+  - category_id: microdata-household
+    score: 2.0
+  coverage:
+  - category_id: microdata-household
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2102395463
@@ -5951,13 +5789,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: ses-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -5998,8 +5830,15 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements: []
-  coverage: []
+  suggested_requirements:
+  - category_id: microdata-household
+    score: 2.0
+  coverage:
+  - category_id: microdata-household
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1577654789
@@ -6044,13 +5883,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -6091,13 +5924,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
-  - category_id: ses-aggregated
-    score: 1.0
-  - category_id: microdata-household
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -6164,29 +5991,14 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: travel-network
+    score: 2.0
   coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 13.0
-    status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: ae64616d363e48c897818b640e2a22cd
-    manifest_title: Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões
-      de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013
-    score: 10.0
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
-    status: available
+  - category_id: travel-network
+    manifest_item_id: null
+    manifest_title: (fora do data.rio — fonte externa)
+    score: 0.0
+    status: external
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3103392468
@@ -6210,13 +6022,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 3.0
-  - category_id: microdata-household
-    score: 3.0
-  - category_id: ses-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -6257,28 +6063,21 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
   - category_id: microdata-student
-    score: 1.0
-  - category_id: microdata-household
-    score: 1.0
+    score: 4.0
+  - category_id: performance-aggregated
+    score: 3.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
-    status: available
   - category_id: microdata-student
     manifest_item_id: null
     manifest_title: (fora do data.rio — fonte externa)
     score: 0.0
     status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
+    status: available
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1489925231
@@ -6303,13 +6102,13 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  - category_id: performance-aggregated
+    score: 3.0
   coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
+  - category_id: performance-aggregated
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -6359,9 +6158,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: travel-network
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: travel-network
     manifest_item_id: null
@@ -6411,13 +6208,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
-  - category_id: microdata-household
-    score: 1.0
-  - category_id: longitudinal-cohort
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -6457,13 +6248,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: performance-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -6505,13 +6290,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 2.0
-  - category_id: geometry-neighborhoods
-    score: 2.0
-  - category_id: travel-network
-    score: 2.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -6548,9 +6327,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: ses-aggregated
     manifest_item_id: 0afd8c122fb4400b847693e715106304
@@ -6580,13 +6357,7 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 2.0
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: longitudinal-cohort
     manifest_item_id: null
@@ -6648,9 +6419,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -6680,11 +6449,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
-  - category_id: microdata-student
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: ses-aggregated
     manifest_item_id: 0afd8c122fb4400b847693e715106304
@@ -6715,13 +6480,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: geometry-schools
     manifest_item_id: 0a220ea7972449e39a28210dd317f636
@@ -6810,13 +6569,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 3.0
-  - category_id: microdata-household
-    score: 2.0
-  - category_id: longitudinal-cohort
-    score: 2.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -6884,28 +6637,11 @@ candidates:
   suggested_requirements:
   - category_id: performance-aggregated
     score: 2.0
-  - category_id: ses-aggregated
-    score: 1.0
-  - category_id: enrollment-counts
-    score: 1.0
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 7888fde5637e4f2fa54cfb80f32321e4
-    manifest_title: 'Ensino Fundamental Regular - IDEB de rede pública municipal: séries finais (6º ao 9º ano) - taxa de aprovação,
-      nota média padronizada do SAEB e IDEB por municípios das capitais selecionadas entre 2005 - 2021'
-    score: 10.0
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: 0afd8c122fb4400b847693e715106304
-    manifest_title: Índice de Desenvolvimento Social (IDS) - Região Metropolitana do RJ (2010)
-    score: 17.0
-    status: available
-  - category_id: enrollment-counts
-    manifest_item_id: b854cc4ce2c541e0bef62fc22d1f6fbc
-    manifest_title: 'Educação Infantil (pré-escola) e Ensino Fundamental: matrícula e no. de escolas na rede pública municipal
-      de ensino, por Área de Planejamento (AP), CREs, Região Administrativa (RA) e Bairros no Município do Rio de Janeiro
-      entre Janeiro/2006-Janeiro/2009'
-    score: 15.0
+    manifest_item_id: 29d517eedb9c44379a07430280a12839
+    manifest_title: 'Favelas Cariocas: Índice de Qualidade Urbana - Reedição digital 2026 - 1ª Edição (Impressa) 1997'
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -6951,9 +6687,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: ses-aggregated
     manifest_item_id: 0afd8c122fb4400b847693e715106304
@@ -6983,9 +6717,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: enrollment-counts
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: enrollment-counts
     manifest_item_id: b854cc4ce2c541e0bef62fc22d1f6fbc
@@ -7084,9 +6816,7 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -7209,13 +6939,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 2.0
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null
@@ -7257,25 +6981,10 @@ candidates:
     score: 1
     hits: []
   suggested_requirements:
-  - category_id: geometry-schools
-    score: 1.0
-  - category_id: geometry-neighborhoods
-    score: 1.0
-  - category_id: travel-network
-    score: 1.0
+  - category_id: microdata-student
+    score: 3.0
   coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 13.0
-    status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: ae64616d363e48c897818b640e2a22cd
-    manifest_title: Unidades escolares da rede municipal de educação, por tipo, segundo as Áreas de Planejamento (AP), Regiões
-      de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro entre 2010-2013
-    score: 10.0
-    status: available
-  - category_id: travel-network
+  - category_id: microdata-student
     manifest_item_id: null
     manifest_title: (fora do data.rio — fonte externa)
     score: 0.0
@@ -7345,9 +7054,7 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 3.0
+  suggested_requirements: []
   coverage:
   - category_id: microdata-student
     manifest_item_id: null

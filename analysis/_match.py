@@ -37,6 +37,32 @@ WEIGHT_TITLE = 3.0
 WEIGHT_TAGS = 2.0
 WEIGHT_SNIPPET = 1.0
 
+# Vocabulário de educação para o pré-filtro do Stage 2.
+# Paper deve mentar >= 1 destes tokens em title+abstract para ser scoreado
+# contra a taxonomia (default; ajustável via --edu-min). Cuts papers
+# tangenciais (médicos, infra-de-rede) que descobrimos via co-citação mas
+# não são domínio do lab.
+EDU_KEYWORDS = frozenset({
+    # EN — core
+    "education", "educational", "school", "schools", "schooling",
+    "teacher", "teachers", "student", "students", "pupil", "pupils",
+    # EN — outcomes
+    "achievement", "learning", "literacy", "numeracy", "proficiency",
+    "graduate", "graduation", "dropout", "enrollment",
+    # EN — levels
+    "kindergarten", "preschool", "primary", "secondary", "elementary",
+    "college", "university", "academic", "tertiary",
+    # EN — instruction
+    "curriculum", "classroom", "instruction", "instructional",
+    "pedagogy", "pedagogical", "vocational",
+    # PT (accent-stripped via tokenize)
+    "educacao", "educacional", "escola", "escolas", "escolar",
+    "aluno", "alunos", "professor", "professores", "ensino",
+    "aprendizado", "aprendizagem", "matricula", "matriculas",
+    "alfabetizacao", "creche", "creches", "ideb", "saeb",
+    "fundamental", "medio", "superior",
+})
+
 
 def strip_accents(s: str) -> str:
     nfkd = unicodedata.normalize("NFKD", s)
@@ -52,16 +78,44 @@ def tokenize(text: str) -> set[str]:
     return {p for p in parts if len(p) >= 3 and p not in STOPWORDS}
 
 
-def category_keywords(cat: dict) -> set[str]:
-    """Build keyword set from a taxonomy category (label_pt + aliases + notes)."""
+def category_keywords(
+    cat: dict,
+    *,
+    include_notes: bool = True,
+    include_en: bool = True,
+) -> set[str]:
+    """Build keyword set from a taxonomy category.
+
+    Default behaviour preserves backward compatibility (used by 41): combines
+    `label_pt + aliases + notes`. Funnel scripts (46/47) pass
+    `include_notes=False` to avoid polluting tokens with metadata words
+    ("Feature Service", "INEP", "data.rio") that match too many papers.
+
+    `aliases_en` is taxonomia v2+ (additive). Categories without that field
+    contribute nothing extra (silent default).
+    """
     chunks = [cat.get("label_pt", "")]
     chunks.extend(cat.get("aliases") or [])
-    if cat.get("notes"):
+    if include_en:
+        chunks.extend(cat.get("aliases_en") or [])
+    if include_notes and cat.get("notes"):
         chunks.append(cat["notes"])
     tokens: set[str] = set()
     for c in chunks:
         tokens |= tokenize(c)
     return tokens
+
+
+def edu_signal(text: str) -> int:
+    """Count of EDU_KEYWORDS hits in text (tokenized).
+
+    Used as a pre-filter in Stage 2 (46_extract_requirements): a paper must
+    show >=2 education-domain tokens before being scored against the
+    taxonomy. Avoids classifying medical/COVID/infra papers that happened
+    to surface via the bibliometric snowball but aren't on-topic.
+    """
+    tokens = tokenize(text)
+    return sum(1 for kw in EDU_KEYWORDS if kw in tokens)
 
 
 def score_item(item: dict, keywords: set[str]) -> float:
@@ -85,20 +139,24 @@ def score_item(item: dict, keywords: set[str]) -> float:
 def score_against_categories(
     text: str,
     cats: dict[str, dict],
+    *,
+    include_notes: bool = True,
+    include_en: bool = True,
 ) -> list[tuple[str, float]]:
     """Score arbitrary text (e.g., paper title+abstract) against taxonomy categories.
 
     For each category, count how many of its keyword tokens appear in the text.
     Returns [(category_id, score)] sorted desc. Empty list if text empty or no hits.
-    Unlike score_item, this is a symmetric token-overlap (no title/tags/snippet
-    weighting on the text side, since arbitrary text has no such structure).
+
+    `include_notes` / `include_en` are forwarded to `category_keywords`. Funnel
+    scripts (46/47) should pass `include_notes=False` to skip metadata pollution.
     """
     tokens = tokenize(text)
     if not tokens:
         return []
     scored: list[tuple[str, float]] = []
     for cid, cat in cats.items():
-        kws = category_keywords(cat)
+        kws = category_keywords(cat, include_notes=include_notes, include_en=include_en)
         hits = sum(1 for kw in kws if kw in tokens)
         if hits > 0:
             scored.append((cid, float(hits)))
@@ -131,12 +189,14 @@ def load_taxonomy(path: Path) -> tuple[dict[str, dict], dict[str, str]]:
 
 __all__ = [
     "STOPWORDS",
+    "EDU_KEYWORDS",
     "WEIGHT_TITLE",
     "WEIGHT_TAGS",
     "WEIGHT_SNIPPET",
     "strip_accents",
     "tokenize",
     "category_keywords",
+    "edu_signal",
     "score_item",
     "score_against_categories",
     "load_taxonomy",
