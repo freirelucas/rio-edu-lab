@@ -1,0 +1,123 @@
+# Taxonomia canônica de `data_requirements`
+# -----------------------------------------
+# Lista fechada das categorias de dados que papers do catálogo declaram precisar.
+# Cada `data_requirements: [str]` em `data/papers_catalog.yml` SHOULD mapear para
+# pelo menos um `id` desta taxonomia, via match em `aliases` (case-insensitive).
+#
+# Match não é obrigatório (backward-compat — strings livres continuam aceitas
+# até a migração completa do catálogo), mas o validador
+# `analysis/31_build_paper_catalog.py` emite warning para cada string que não
+# bate nenhum alias.
+#
+# Schema de cada categoria:
+#   id        — kebab-case, único, estável (vira chave em outputs)
+#   label_pt  — rótulo humano em pt-BR (usado em UI / relatórios)
+#   level     — granularidade-fonte:
+#                 individual        = microdado por sujeito (aluno/domicílio)
+#                 aggregated_unit   = agregado por unidade espacial (escola/bairro/RA)
+#                 meta              = atributo do espaço/sistema (rede, partição)
+#   aliases   — strings históricas/equivalentes (lookup case-insensitive)
+#   notes     — (opcional) caveat de interpretação ou fonte típica
+#
+# Adicionar nova categoria: PR para este arquivo. Adicionar alias: PR também.
+# Tooling de matching (`analysis/41_match_requirements.py`) consome este arquivo
+# para sugerir itens do manifest data.rio dado um requirement.
+
+version: 1
+
+categories:
+
+  - id: geometry-schools
+    label_pt: "Geometria de escolas"
+    level: aggregated_unit
+    aliases:
+      - "geometria de escolas"
+      - "localização de escolas"
+      - "coordenadas de escolas"
+    notes: "Cobre escolas municipais, EDIs, creches. data.rio: `Escolas Municipais` (Feature Service)."
+
+  - id: geometry-neighborhoods
+    label_pt: "Geometria de bairros / unidades espaciais"
+    level: aggregated_unit
+    aliases:
+      - "geometria de bairros"
+      - "shapefile de bairros"
+      - "limites de bairros"
+    notes: "data.rio: `Bairros (IPP)`. Inclui partições derivadas via IPP."
+
+  - id: performance-aggregated
+    label_pt: "Desempenho educacional por unidade agregada"
+    level: aggregated_unit
+    aliases:
+      - "IDEB por bairro"
+      - "desempenho por escola"
+      - "desempenho por unidade"
+      - "indicador de qualidade educacional"
+      - "indicador de desempenho"
+      - "indicador de desempenho educacional"
+      - "indicador de output"
+      - "valores positivos por unidade"
+      - "característica de escola por região"
+    notes: "Cobre IDEB, SAEB, Aprovação, por bairro / escola / RA. Granularidade pode variar."
+
+  - id: ses-aggregated
+    label_pt: "SES agregado por unidade (NSE, INSE, IDS)"
+    level: aggregated_unit
+    aliases:
+      - "INSE por escola"
+      - "NSE por escola ou bairro"
+      - "composição SES por bairro"
+      - "indicador socioeconômico granular"
+    notes: "INSE = INEP per-school; IDS = IPP per-bairro (Censo 2010); NSE = genérico."
+
+  - id: spatial-partition
+    label_pt: "Partição / agrupamento espacial hierárquico"
+    level: meta
+    aliases:
+      - "agrupamento espacial"
+      - "agrupamento hierárquico"
+    notes: "RA / AP / CRE / cluster — qualquer partição derivada de bairros."
+
+  - id: travel-network
+    label_pt: "Rede viária / tempos de viagem (isócronas)"
+    level: meta
+    aliases:
+      - "rede viária / tempos de viagem"
+      - "isócronas"
+      - "OSM road network"
+    notes: "Não disponível no data.rio. Tipicamente OSM (open) ou GTFS (operadora)."
+
+  - id: enrollment-counts
+    label_pt: "Matrículas / oferta de escolas por unidade"
+    level: aggregated_unit
+    aliases:
+      - "matrículas por escola"
+      - "indicador de matrícula"
+      - "indicador de oferta de escolas"
+      - "indicador de input"
+    notes: "Cobre matrículas por escola, ano, série, rede. data.rio: vários Excels do INEP."
+
+  - id: microdata-student
+    label_pt: "Microdado individual de aluno"
+    level: individual
+    aliases:
+      - "anos de estudo individuais"
+      - "renda individual"
+      - "testes longitudinais individuais"
+    notes: "Não disponível no data.rio. Fonte: microdado INEP (SAEB, Prova Brasil), PNAD, Censo."
+
+  - id: microdata-household
+    label_pt: "Microdado individual de domicílio"
+    level: individual
+    aliases:
+      - "investimentos parentais observáveis"
+      - "renda domiciliar individual"
+    notes: "Não disponível no data.rio. Fonte: PNAD, Censo microdado."
+
+  - id: longitudinal-cohort
+    label_pt: "Painel longitudinal por coorte"
+    level: individual
+    aliases:
+      - "renda adulta por coorte"
+      - "trajetória educacional longitudinal"
+    notes: "Não disponível no data.rio. Fonte: RAIS, painel longitudinal acadêmico."

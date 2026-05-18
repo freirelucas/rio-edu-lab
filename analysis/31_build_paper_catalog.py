@@ -36,6 +36,7 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG_YML = ROOT / "data" / "papers_catalog.yml"
+TAXONOMY_YML = ROOT / "data" / "requirements_taxonomy.yml"
 OPENALEX_JSON = ROOT / "data" / "processed" / "openalex_citations.json"
 OUT_MAPPING = ROOT / "data" / "processed" / "paper_data_mapping.csv"
 OUT_SUMMARY = ROOT / "data" / "processed" / "papers_catalog_summary.json"
@@ -43,6 +44,36 @@ OUT_SUMMARY = ROOT / "data" / "processed" / "papers_catalog_summary.json"
 VALID_REPL = {"full", "partial", "pending", "unfeasible"}
 VALID_STATUS = {"available", "partial", "external", "missing"}
 KEBAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+
+
+def load_taxonomy() -> dict[str, str]:
+    """Returns mapping {alias_lower → category_id} from requirements_taxonomy.yml.
+
+    Empty dict if taxonomy file absent — backward-compat (free-text strings OK).
+    """
+    if not TAXONOMY_YML.exists():
+        return {}
+    data = yaml.safe_load(TAXONOMY_YML.read_text(encoding="utf-8")) or {}
+    alias_to_cat: dict[str, str] = {}
+    for cat in data.get("categories", []):
+        cid = cat.get("id", "")
+        for alias in cat.get("aliases", []) or []:
+            alias_to_cat[alias.strip().lower()] = cid
+    return alias_to_cat
+
+
+def check_taxonomy(papers: list[dict], alias_to_cat: dict[str, str]) -> list[str]:
+    """Warnings (not errors) for `data_requirements` strings outside the taxonomy."""
+    if not alias_to_cat:
+        return []
+    warns: list[str] = []
+    for p in papers:
+        pid = p.get("id", "?")
+        for req in p.get("data_requirements") or []:
+            key = (req or "").strip().lower()
+            if key and key not in alias_to_cat:
+                warns.append(f"paper '{pid}': requirement '{req}' not in taxonomy")
+    return warns
 
 
 def validate(papers: list[dict]) -> list[str]:
@@ -134,6 +165,29 @@ def build_summary(papers: list[dict], mapping: list[dict]) -> dict:
             if v.get("citations_openalex") is not None
         )
 
+    # Taxonomy coverage — share of (paper × requirement) pairs mapping to a
+    # known category in requirements_taxonomy.yml.
+    alias_to_cat = load_taxonomy()
+    n_pairs = 0
+    n_mapped = 0
+    by_category: Counter = Counter()
+    for p in papers:
+        for req in p.get("data_requirements") or []:
+            n_pairs += 1
+            key = (req or "").strip().lower()
+            if key in alias_to_cat:
+                n_mapped += 1
+                by_category[alias_to_cat[key]] += 1
+    taxonomy_summary = {
+        "loaded": bool(alias_to_cat),
+        "n_categories": len({v for v in alias_to_cat.values()}) if alias_to_cat else 0,
+        "n_aliases": len(alias_to_cat),
+        "requirements_total": n_pairs,
+        "requirements_mapped": n_mapped,
+        "requirements_unmapped": n_pairs - n_mapped,
+        "by_category_top": dict(by_category.most_common(15)),
+    }
+
     return {
         "n_papers": len(papers),
         "by_replication_status": dict(by_status),
@@ -148,6 +202,7 @@ def build_summary(papers: list[dict], mapping: list[dict]) -> dict:
         ),
         "openalex_snapshot_present": openalex_present,
         "openalex_n_with_citations": n_with_citations,
+        "taxonomy": taxonomy_summary,
         "top_5_by_coverage": paper_coverage[:5],
     }
 
@@ -172,6 +227,26 @@ def main() -> int:
         print(f"\n{len(errs)} validation errors", file=sys.stderr)
         return 2
     print("  validation: ok")
+
+    alias_to_cat = load_taxonomy()
+    taxonomy_warns: list[str] = []
+    if alias_to_cat:
+        taxonomy_warns = check_taxonomy(papers, alias_to_cat)
+        if taxonomy_warns:
+            for w in taxonomy_warns:
+                print(f"  [warn] {w}", file=sys.stderr)
+            print(
+                f"  taxonomy: {len(taxonomy_warns)} requirements outside "
+                f"`data/requirements_taxonomy.yml` (see warnings)",
+                file=sys.stderr,
+            )
+        else:
+            print("  taxonomy: all data_requirements map to a known category")
+        if args.strict and taxonomy_warns:
+            print("\nstrict mode: failing due to taxonomy warnings", file=sys.stderr)
+            return 3
+    else:
+        print("  taxonomy: `data/requirements_taxonomy.yml` not found, skipping check")
 
     mapping = build_mapping(papers)
     OUT_MAPPING.parent.mkdir(parents=True, exist_ok=True)
