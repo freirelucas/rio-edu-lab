@@ -37,3 +37,35 @@ jobs:
 
       - name: Run acec package tests
         run: pytest -v reference/acec-hub/tests/test_acec_stats.py
+
+      - name: Validate paper catalog schema
+        # Hard checks (id, year, replication_status, report_ids invariant)
+        # + soft warnings for data_requirements outside taxonomy.
+        # Soft mode default — taxonomy warnings don't fail CI yet.
+        run: python3 analysis/31_build_paper_catalog.py
+
+      - name: Verify paper mini-pages in sync with catalog
+        # Re-renders docs/papers/*.md and fails if the generated content
+        # diverges from what's committed. Forces contributors to run
+        # `python3 analysis/32_render_papers_pages.py` before pushing
+        # any change to data/papers_catalog.yml.
+        run: |
+          python3 analysis/32_render_papers_pages.py
+          if ! git diff --quiet docs/papers/; then
+            echo "::error::docs/papers/ out of sync with data/papers_catalog.yml"
+            echo "::error::run: python3 analysis/32_render_papers_pages.py && git add docs/papers/"
+            git --no-pager diff docs/papers/
+            exit 1
+          fi
+
+      - name: Verify papers-by-data-rio reverse link in sync
+        # Re-renders docs/papers-by-data-rio.md (link reverso item × papers)
+        # and fails if drift vs committed. Same rationale as mini-pages.
+        run: |
+          python3 analysis/41_match_requirements.py
+          if ! git diff --quiet docs/papers-by-data-rio.md; then
+            echo "::error::docs/papers-by-data-rio.md out of sync"
+            echo "::error::run: python3 analysis/41_match_requirements.py && git add docs/"
+            git --no-pager diff docs/papers-by-data-rio.md
+            exit 1
+          fi
