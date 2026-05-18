@@ -95,6 +95,48 @@ seeds:
     label: "rivkin-hanushek-kain-2005 — Teachers, Schools, and Academic Achievement (Econometrica)"
     track: mainstream
 
+  # ============================================================
+  # IPEA — Institute of Applied Economic Research (I3131024195)
+  # Top works afiliados ao IPEA com tema educação, ordenados por citação.
+  # Foco em Brasil: desigualdade, retornos, financiamento.
+  # ============================================================
+
+  - openalex_id: W2035731659
+    label: "castro-2009 — Evolução e desigualdade na educação brasileira (IPEA)"
+    track: mainstream
+
+  - openalex_id: W2065489451
+    label: "souza-2010 — Desigualdade de oportunidades: classe, educação, raça (IPEA)"
+    track: mainstream
+
+  - openalex_id: W1772859700
+    label: "reis-2011 — Escolaridade dos pais e desigualdade de rendimentos (IPEA)"
+    track: mainstream
+
+  - openalex_id: W2011333499
+    label: "souza-2014 — Estrutura de Classes, Educação e Queda da Desigualdade (IPEA)"
+    track: mainstream
+
+  - openalex_id: W1963754226
+    label: "abrahao-2005 — Financiamento da educação básica no Brasil (IPEA)"
+    track: mainstream
+
+  - openalex_id: W2902634982
+    label: "martins-2018 — Escolha do curso superior no Brasil (IPEA)"
+    track: mainstream
+
+  - openalex_id: W1976479784
+    label: "castro-2007 — Financiamento e gasto público na educação básica 1995-2005 (IPEA)"
+    track: mainstream
+
+  - openalex_id: W1837357803
+    label: "suliano-2012 — Retornos da educação no Brasil regional (IPEA)"
+    track: mainstream
+
+  # ============================================================
+  # Demais landmarks propostos (placeholders, curador resolve IDs)
+  # ============================================================
+
   # - openalex_id: <id-tbd>
   #   label: "chetty-friedman-rockoff-2014 — Measuring Impacts of Teachers (AER)"
   #   track: mainstream
