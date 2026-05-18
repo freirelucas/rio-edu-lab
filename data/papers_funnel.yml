@@ -1,8 +1,9 @@
 # Staging area do funil de papers (Estágios 1–3)
 # ------------------------------------------------
-# Lista de candidatos descobertos via `analysis/45_bulk_discover.py` contra
-# `data/openalex_concepts.yml`. Decisões do curador (`decision: accept|reject`)
-# persistem aqui através de re-runs da descoberta.
+# Lista de candidatos descobertos via `analysis/45_bulk_discover.py` a partir
+# do núcleo bibliométrico em `data/openalex_seeds.yml` (snowball backward +
+# forward). Decisões do curador (`decision: accept|reject`) persistem aqui
+# através de re-runs da descoberta.
 #
 # Schema por candidato (chave = openalex_id, único):
 #
@@ -16,7 +17,19 @@
 #   abstract                 abstract reconstruído (≤500 chars)
 #   pdf_url_oa               URL OA quando disponível (vazio se não)
 #   concepts_top3            "; ".join dos top-3 concepts OpenAlex
-#   discovered_via           [theme_id, …] (themes do concepts.yml que retornaram)
+#   discovered_via           [str, …] — origem(s) do candidato:
+#                              "backward-from-Wxxx" (citado pelo seed Wxxx)
+#                              "forward-from-Wxxx"  (cita o seed Wxxx)
+#                              "seed-mainstream" / "seed-outsider" (é o próprio seed)
+#                              "legacy" (entrada pré-snowball)
+#   track                    "mainstream" | "outsider" | "legacy"
+#                              mainstream → cocitation_count ≥ 1 ou veio de seed
+#                              outsider   → forward-only, passou pelo filtro
+#                              legacy     → entrada pré-redesign (v0.7.3)
+#   cocitation_count         int — quantos seeds (via backward) citam este paper
+#   data_signal              sinal de replicabilidade (replication package / dados):
+#     score                  int — 3 por hit regex + 1 doi + 1 pdf_url_oa
+#     hits                   [str] — fragmentos que casaram (github.com, osf.io, …)
 #
 #   suggested_requirements   preenchido por 46 — sugestões da taxonomia:
 #     - category_id          id em data/requirements_taxonomy.yml
@@ -32,10 +45,11 @@
 #   decision_reason          (opcional) nota curta do curador
 #
 # Workflow:
-#   45 → 46 → 47 → [curador edita decision] → 48 (promove ao catalog.yml)
+#   45 (snowball) → 46 → 47 → [curador edita decision] → 48 (promove ao catalog.yml)
 #
-# Re-runs: 45 preserva campos abaixo de `discovered_via` em entradas
-# existentes (decision, suggested_requirements, coverage não são sobrescritos).
+# Re-runs: 45 preserva (decision, decision_reason, suggested_requirements,
+# coverage) intactos. track, cocitation_count, data_signal, discovered_via,
+# citations e metadata são refrescados a cada run.
 
 version: 1
 
