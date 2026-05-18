@@ -3,7 +3,7 @@ title: HEX-EDU — H3 hexagonal grid aplicado ao IDEB do Rio
 description: Operacionalização da metodologia Pereira et al. (2019) IPEA para acessibilidade educacional no Rio Municipal.
 ---
 
-# 📐 HEX-EDU
+# HEX-EDU
 
 > Aplicação do **H3 hexagonal grid** ao IDEB municipal carioca. **v0.6.1 entrega replicação parcial de Pereira et al. (2019) IPEA**: acessibilidade ponderada por IDEB. v0.5 decomposição Theil-T continua disponível como análise complementar.
 
@@ -20,14 +20,20 @@ description: Operacionalização da metodologia Pereira et al. (2019) IPEA para 
 
 **Cidades cobertas no paper**: São Paulo, Rio de Janeiro, Belo Horizonte, Recife, Fortaleza, Porto Alegre, Curitiba (transporte público) + 20 cidades para transporte ativo.
 
-!!! info "Para gestores públicos"
-    - **Achado em uma frase**: a AP 3 (Zona Norte) entrega o maior acesso ponderado por IDEB do município (média 113); a Zona Sul, apesar de IDEB médio alto, fica em 59 por baixa densidade de escolas — e a AP 4 (Barra/Jacarepaguá) em 29.
-    - **Implicação para política**: planejamento educacional municipal precisa combinar **qualidade** e **densidade**. Olhar só média de IDEB por região esconde vazios de oferta em áreas onde a qualidade existe mas a opção é distante.
-    - **Três ações concretas**:
-        1. Priorizar **expansão da rede em AP 4** (raio 5 km com poucas escolas elegíveis acima da mediana de IDEB).
-        2. Auditar o **Centro (AP 1)** — 2º maior acesso ponderado (96) com uso potencialmente subaproveitado por residentes não-Centro.
-        3. Combinar este mapa com o de [VULN-EDU](vuln_edu.md) para identificar bairros onde **baixo acesso × alta vulnerabilidade socioeconômica** se sobrepõem.
-    - **Como auditar**: [Relatório 14](../reports/14_acessibilidade.md), código em `analysis/26_hex_accessibility.py`, dados em `data/processed/hex_accessibility.csv`.
+<div class="policy-callout" markdown>
+  <header>
+    <span class="icon" aria-hidden="true">🔬</span>
+    <h3>Insight da replicação aplicado ao Rio</h3>
+  </header>
+  <div class="body" markdown>
+  <div class="cell" markdown>
+**Achado replicado**: aplicando a acessibilidade Pereira-style (H3 res 8 + IDEB ponderado por distância, raio 5 km, `d0 = 1.5 km`) sobre 1022 escolas elegíveis e 1593 hexes, **AP 3 (Zona Norte) lidera o acesso ponderado (média 113)**. Centro (AP 1) fica em 96, Zona Sul (AP 2) em 59, AP 4 (Barra/Jacarepaguá) em 29.
+
+**Caveat do paper**: Pereira et al. (2019) usa isócronas reais via OSM road network e decompõe a acessibilidade por **renda** e **raça**. Nossa replicação parcial usa distância haversine e ainda não decompõe por SES — a v0.7 traz osmnx + IDS/IPS. O achado fica dentro do escopo já replicado; não há claim sobre causalidade ou prescrição de política.
+  </div>
+  </div>
+  <footer><a href="../../reports/14_acessibilidade/">Como auditar: relatório 14 + <code>analysis/26_hex_accessibility.py</code> →</a></footer>
+</div>
 
 ## v0.6.1 — acessibilidade ponderada por IDEB ✅
 

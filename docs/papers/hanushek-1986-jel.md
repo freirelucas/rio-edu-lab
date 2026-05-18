@@ -11,9 +11,15 @@ _Journal of Economic Literature, 24(3)_
 
 <a href="https://www.jstor.org/stable/2725865" target="_blank">https://www.jstor.org/stable/2725865</a>
 
-**Citações (OpenAlex, 2026-05-18):** 2.715
+<div class="status-hero status-pending" aria-label="Status no lab: Catalogado — pendente">
+  <span class="icon" aria-hidden="true">⏳</span>
+  <div class="text">
+    <span class="label">Catalogado — pendente</span>
+    <span class="headline">Replicação leve planejada para release próxima; dados básicos cobertos no data.rio.</span>
+  </div>
+</div>
 
-**Status:** _Catalogado_
+**Citações (OpenAlex, 2026-05-18):** 2.715
 
 ## Resumo
 
@@ -31,10 +37,6 @@ Survey clássico sobre função-produção educacional: meta-análise de 147 est
 |---|---|---|
 | indicador de input | ✅ disponível no data.rio | `0a220ea7972d4adf85b3e63d23a4b9b1` |
 | indicador de output | ✅ disponível no data.rio | `ideb-municipal-bairros` |
-
-## Status no lab
-
-Catalogado, replicação leve planejada para release próxima. Dados básicos cobertos no data.rio.
 
 ## Referência completa
 

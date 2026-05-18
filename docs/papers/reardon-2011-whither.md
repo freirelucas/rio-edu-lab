@@ -11,9 +11,15 @@ _Whither Opportunity? (Duncan & Murnane eds.), Russell Sage Foundation, ch. 5_
 
 <a href="https://cepa.stanford.edu/sites/default/files/reardon%20whither%20opportunity%20-%20chapter%205.pdf" target="_blank">https://cepa.stanford.edu/sites/default/files/reardon%20whither%20opportunity%20-%20chapter%205.pdf</a>
 
-**Citações (OpenAlex, 2026-05-18):** 1.146
+<div class="status-hero status-partial" aria-label="Status no lab: Replicação parcial">
+  <span class="icon" aria-hidden="true">◐</span>
+  <div class="text">
+    <span class="label">Replicação parcial</span>
+    <span class="headline">Operacionalizado no produto <a href="../../produtos/vuln_edu/">VULN-EDU</a>. Ver <a href="../../reports/15_vuln_edu/">relatório 15</a>.</span>
+  </div>
+</div>
 
-**Status:** _Replicação parcial_
+**Citações (OpenAlex, 2026-05-18):** 1.146
 
 ## Resumo
 
@@ -38,9 +44,17 @@ Documenta que o gap de desempenho entre o quintil mais rico e o mais pobre nos E
 - **Relatórios:** [15](../reports/15_vuln_edu.md)
 - **Scripts:** `analysis/28_*.py`, `analysis/29_*.py`, `analysis/30_*.py`
 
-## Para gestores públicos
+<div class="policy-callout">
+  <header>
+    <span class="icon" aria-hidden="true">🔬</span>
+    <h3>Insight da replicação aplicado ao Rio</h3>
+  </header>
+  <div class="body">
+    <div class="cell"><strong>Achado replicado</strong>: Gradiente SES × IDEB no Rio existe mas é modesto (R²=0.16); 39% dos bairros estão em quadrantes não-concordantes (resilientes ou sub-performance) — desfaz a leitura "Zona Sul = privilégio uniforme".</div>
+  </div>
+  <footer><a href="../../reports/15_vuln_edu/">Como auditar: relatório 15 →</a></footer>
+</div>
 
-> Gradiente SES × IDEB no Rio existe mas é modesto (R²=0.16); 39% dos bairros estão em quadrantes não-concordantes (resilientes ou sub-performance) — desfaz a leitura "Zona Sul = privilégio uniforme".
 
 ## Referência completa
 

@@ -1,16 +1,16 @@
 ---
-title: Bairros prioritários — onde política educacional rende mais
-description: Top 20 bairros cruzando déficit de escolas (SAMI) e queda de IDEB 5º→9º (Δ FUN-Rio).
+title: Bairros prioritários — cruzamento SAMI × Δ FUN-Rio
+description: Lista descritiva dos bairros que cruzam déficit de escolas (SAMI < 0) e queda de IDEB 5º→9º (Δ FUN-Rio < 0). Interpretação política fica com o leitor.
 ---
 
-# Bairros prioritários
+# Bairros prioritários — cruzamento SAMI × Δ FUN-Rio
 
-Cruzamento de dois sinais ortogonais do MVP-1:
+Lista descritiva dos bairros que cruzam dois sinais ortogonais do MVP-1. **Interpretação política fica com o leitor** — o lab entrega o cruzamento, não a recomendação.
 
 - **SAMI** ([Relatório 13](reports/13_pm_12.md)): desvio da lei de escala. SAMI &lt; 0 = bairro tem **menos escolas** que o esperado pelo seu volume de matrícula (sub-servido em infraestrutura).
 - **Δ médio** ([Relatório 12](reports/12_fun_rio.md)): média da queda de IDEB do 5º para o 9º ano em pseudocoortes. Δ &lt; 0 = a turma piora ao longo do fundamental.
 
-Bairros com **SAMI negativo E Δ negativo** são duplamente prioritários: infraestrutura defasada e qualidade educacional caindo no ciclo. O score combinado é a soma negativa dos z-scores das duas métricas.
+Bairros com **SAMI negativo E Δ negativo** cruzam os dois sinais negativos. O score combinado é a soma negativa dos z-scores das duas métricas — descreve quem está nos dois sinais ao mesmo tempo, sem prescrever ação.
 
 !!! warning "Distinção importante (confound de migração privada)"
     Alguns bairros que aparecem no topo (Humaitá, Leblon, Jardim Botânico) provavelmente refletem **migração para escola privada** entre 5º e 9º ano: alunos com mais recursos saem da rede municipal no 6º ano, e o cohorte municipal do 9º fica enviesado para baixo. Esse é um problema **real** mas de natureza diferente do subinvestimento estrutural (Pavuna, Pilares, Curicica). Sem microdado por escola e cobertura privada, não conseguimos separar mecanicamente. Use a coluna "AP" como heurística:

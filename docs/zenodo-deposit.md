@@ -1,11 +1,11 @@
 ---
 title: Como editar o deposit Zenodo do rio-edu-lab
-description: Passo-a-passo para refinar o deposit v0.5.0 (10.5281/zenodo.20060620) seguindo padrões de comunidades como Generic Mapping Tools.
+description: Passo-a-passo para refinar o deposit v0.7 (10.5281/zenodo.20060620) seguindo padrões de comunidades como Generic Mapping Tools.
 ---
 
 # Editar o deposit Zenodo
 
-> Este guia documenta o **passo manual** que requer login do autor no Zenodo. O webhook GitHub→Zenodo já está ativo; futuros releases mintam DOI automaticamente. Esta página existe para padronizar o que editar **uma vez** no v0.5.0 (e em cada bump major futuro).
+> Este guia documenta o **passo manual** que requer login do autor no Zenodo. O webhook GitHub→Zenodo já está ativo; futuros releases mintam DOI automaticamente. Esta página existe para padronizar o que editar a cada bump major (v0.7 e seguintes).
 
 ## DOI atual
 
@@ -24,25 +24,25 @@ A community **Generic Mapping Tools** ([zenodo.org/communities/generic-mapping-t
 - License destacada (BSD 3-Clause). License múltipla quando aplicável.
 - Stats de view/download visíveis por padrão.
 
-## Edição recomendada (para o v0.5.0)
+## Edição recomendada (para o v0.7)
 
 ### 1. Título (substitui o auto-gerado pelo GitHub)
 
 ```
-rio-edu-lab — Atlas Cibernético da Educação Carioca (lab MVP-1) version 0.5.0
+rio-edu-lab — laboratório de replicação de papers em educação aplicados ao Rio version 0.7.0
 ```
 
-(Em vez do `freirelucas/rio-edu-lab: v0.5.0` que o GitHub auto-gera.)
+(Em vez do `freirelucas/rio-edu-lab: v0.7.0` que o GitHub auto-gera.)
 
 ### 2. Description em duas partes
 
 **Parte 1 — Resumo funcional estável** (não muda entre versões; descreve o lab):
 
-> rio-edu-lab is a paper-driven research lab on the Education group of data.rio (the open-data portal of the City of Rio de Janeiro, maintained by Instituto Pereira Passos). The lab operationalizes the methodology of Pereira, Braga, Serra & Nadalin (2019) — *Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras*, IPEA — on Rio's municipal IDEB data, using H3 hexagonal grids and equity decomposition. Pipeline ingests, catalogs, and analyzes the 186 items of data.rio's Education group, producing reproducible artifacts (Theil-T decomposition of IDEB by bairro, H3 spatial substrate, accessibility-aware extension in development). Companion Python package `acec` provides canonical statistics with formal additive-decomposition invariants tested in CI.
+> rio-edu-lab is a paper-driven replication laboratory on the Education group of data.rio (the open-data portal of the City of Rio de Janeiro, maintained by Instituto Pereira Passos). The lab maintains an open catalog of education papers — each entry cross-referenced with data.rio coverage, replication status, and (when replicated) a policy insight for municipal managers. Pipeline ingests, catalogs, and analyzes the 186 items of data.rio's Education group, producing reproducible artifacts (Theil-T decomposition of IDEB by bairro, H3 spatial substrate with Pereira-style accessibility, IDS×IDEB gradient decomposition). Companion Python package `acec` provides canonical statistics with formal additive-decomposition invariants tested in CI.
 
 **Parte 2 — Changelog desta versão**:
 
-> v0.5.0 delivers the Theil-T pipeline foundation: IDEB decomposition by 163 bairros across 33 RAs and 5 APs, robust across 6 series (years × Aprovação/SAEB/IDEB × weighting). Central finding: 66% of IDEB inequality is within-RA, not between. Three companion robustness analyses are included as technical reports (THESHA-Rio 3-level decomposition, FUN-Rio pseudo-cohort transitions, PM-12 intra-city scaling). The full Pereira-style accessibility analysis (isochrones via OSM + decomposition by SES) ships in v0.6. See CHANGELOG.md for full version history.
+> v0.7.0 introduces the paper catalog as primary product: 12 seed papers (3 fully/partially replicated + 5 catalogued for upcoming replications + 4 methodological reference). Each catalog entry crosses paper data requirements with data.rio item coverage. Conceptual rebrand from "Atlas Cibernético da Educação Carioca" (v0.5–v0.6.2) to "laboratório de replicação de papers em educação aplicados ao Rio". Concept DOI preserved. Two active products: HEX-EDU (Pereira 2019 IPEA — H3 accessibility, v0.6.1) and VULN-EDU (Reardon 2011 — IDS×IDEB gradient, v0.1). See CHANGELOG.md for full version history.
 
 ### 3. Authors com afiliação + ORCID
 
