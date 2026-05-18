@@ -2,7 +2,57 @@
 
 Formato adaptado de [Keep a Changelog](https://keepachangelog.com/) e [SemVer](https://semver.org/lang/pt-BR/).
 
-## [Unreleased — v0.6 in progress]
+## [Unreleased — v0.7 in progress]
+
+### v0.7.0 — virada conceitual: catálogo de papers + rebrand do lab
+
+Mudança estrutural: o lab deixa de se apresentar como "Atlas Cibernético da Educação Carioca com 2 produtos" e passa a se apresentar como **laboratório de replicação de papers em educação aplicados ao Rio**, com um catálogo público de papers como produto primário. Os 2 produtos ativos (HEX-EDU e VULN-EDU) permanecem inalterados — passam a ser as 2 entradas "replicadas" do catálogo.
+
+Motivação:
+
+- O padrão "1 paper = 1 produto = 1 PR" não escala. Para chegar nos 100 papers mais influentes da área, precisa de catálogo estruturado.
+- Faltava cruzamento explícito **paper → requisitos de dados → item disponível no data.rio**. Cada análise descobria suas dependências ad-hoc.
+- Relatórios técnicos são pouco acionáveis para gestores municipais. Agora cada produto inclui um bloco "Para gestores públicos" com achado, implicação e ações concretas.
+
+Adições (infraestrutura do catálogo):
+
+- `data/papers_catalog.yml` — fonte canônica do catálogo. 12 papers seed nesta v0.7: 3 já replicados (Pereira 2019, Reardon 2011, Theil 1967), 5 alvos de replicação leve em releases próximas (Soares & Andrade 2006, Alves & Soares 2013, Coleman et al. 1966, Hanushek 1986, Reardon & Owens 2014), 4 metodológicos canônicos (Becker 1964, Cunha & Heckman 2007, Hoxby 2000, Card & Krueger 1992).
+- `analysis/31_build_paper_catalog.py` — valida YAML + gera mapping CSV + summary JSON.
+- `analysis/32_render_papers_pages.py` — renderiza mini-pages por paper + index do catálogo.
+- `analysis/34_fetch_openalex.py` — busca metadata e contagem de citações via OpenAlex API (12/12 papers matched no snapshot inicial; ranges de 3 a 7659 citações).
+- `data/processed/paper_data_mapping.csv` — derivado, 27 linhas (paper × requisito × cobertura no data.rio).
+- `data/processed/papers_catalog_summary.json` — agregados.
+- `data/processed/openalex_citations.json` — snapshot OpenAlex de 2026-05-18.
+- `docs/papers/index.md` — landing do catálogo com 3 tabelas (replicados / catalogados pendentes / dados indisponíveis).
+- `docs/papers/*.md` (×12) — mini-pages por paper.
+
+Adições (utilidades canônicas no pacote `acec`):
+
+- `acec.stats.regression` com `pearson`, `spearman`, `ols_simple`, `quintile_grid` — promovidos do `analysis/29_vuln_edu.py`. Novos scripts de replicação importarão daqui.
+- Testes em `reference/acec-hub/tests/test_acec_stats.py`: 11 novos casos → 20/20 verdes (era 9).
+
+Modificações (rebrand):
+
+- `docs/index.md` — hero reposicionado: título do site agora é "laboratório de replicação de papers em educação aplicados ao Rio". Botão "Catálogo" passa a ser CTA primário. BibTeX atualizado para v0.7. Nota de transparência sobre a renomeação.
+- `mkdocs.yml` — `site_description` reescrito. Seção `Papers` adicionada ao nav com 13 entries (index + 12 papers).
+- `README.md` — identidade + estado v0.7 + nota de renomeação.
+- `docs/produtos/hex_edu.md` + `docs/produtos/vuln_edu.md` — bloco `!!! info "Para gestores públicos"` adicionado em cada produto. Achado em 1 frase, implicação para política, 3 ações concretas, como auditar.
+
+Não muda (preservado):
+
+- 2 produtos ativos (HEX-EDU + VULN-EDU) continuam reproduzíveis sem alteração de código analítico.
+- 30 scripts em `analysis/` inalterados — só foram adicionados 31, 32, 34.
+- DOI Zenodo `10.5281/zenodo.20060620` (concept) preservado — versionamento contínuo.
+- `data/manifest.json` + insumos derivados intocados.
+- Site ganhou seção `/papers/` mas o resto do nav permanece.
+
+Próximas iterações (deferred):
+
+- v0.7.x: replicações leves dos 5 papers-alvo (Soares & Andrade, Alves & Soares, Coleman, Hanushek, Reardon & Owens). Cada uma vira PR com 1 script + 1 relatório.
+- Curadoria dos ~88 papers restantes para chegar nos 100. Batches temáticos (segregação, primeira infância, economia da educação, sociologia, política educacional, Brasil-específicos).
+- `acec.viz.plotly_helpers` (palette + write_json) — refactor não-bloqueante.
+
+## [Released]
 
 ### v0.6.2 — VULN-EDU v0.1 entregue (IDS × IDEB por bairro)
 

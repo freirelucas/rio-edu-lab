@@ -1,5 +1,5 @@
 site_name: rio-edu-lab
-site_description: Laboratório exploratório sobre o Grupo Educação do data.rio.
+site_description: Laboratório de replicação de papers em educação aplicados ao Rio — catálogo cruzado com o data.rio.
 site_url: https://freirelucas.github.io/rio-edu-lab/
 repo_url: https://github.com/freirelucas/rio-edu-lab
 repo_name: freirelucas/rio-edu-lab
@@ -53,6 +53,20 @@ nav:
   - Início: index.md
   - Tour: tour.md
   - Mapa: mapa.md
+  - Papers:
+      - Catálogo: papers/index.md
+      - "Pereira et al. (2019) — H3 acessibilidade": papers/pereira-2019-ipea.md
+      - "Reardon (2011) — SES × desempenho": papers/reardon-2011-whither.md
+      - "Theil (1967) — entropia": papers/theil-1967-economics.md
+      - "Soares & Andrade (2006) — NSE × IDEB BH": papers/soares-andrade-2006.md
+      - "Alves & Soares (2013) — contexto escolar": papers/alves-soares-2013.md
+      - "Coleman et al. (1966) — EEO": papers/coleman-1966-eeo.md
+      - "Hanushek (1986) — função-produção": papers/hanushek-1986-jel.md
+      - "Reardon & Owens (2014) — segregação SES": papers/reardon-owens-2014.md
+      - "Becker (1964) — capital humano": papers/becker-1964-human-capital.md
+      - "Cunha & Heckman (2007) — formação de habilidades": papers/cunha-heckman-2007.md
+      - "Hoxby (2000) — school choice": papers/hoxby-2000-aer.md
+      - "Card & Krueger (1992) — school quality": papers/card-krueger-1992-jpe.md
   - Produtos:
       - Visão geral: produtos/index.md
       - HEX-EDU: produtos/hex_edu.md

@@ -1,6 +1,6 @@
 ---
-title: rio-edu-lab — desigualdade educacional do Rio em granularidade que importa
-description: 67% da desigualdade do IDEB municipal carioca está dentro das RAs, não entre. Mapa H3 + decomposição Theil + DOI Zenodo.
+title: rio-edu-lab — laboratório de replicação de papers em educação aplicados ao Rio
+description: Catálogo aberto de papers em educação cruzados com o data.rio. 67% da desigualdade do IDEB municipal está dentro das RAs, não entre. Mapa H3 + decomposição Theil + DOI Zenodo.
 hide:
   - toc
 ---
@@ -10,9 +10,10 @@ hide:
 <div class="hero-text" markdown>
 # **2 em cada 3** das diferenças no IDEB do Rio são **dentro** da mesma RA — não entre.
 
-> Atlas Cibernético da Educação Carioca — desigualdade educacional do Rio em granularidade que importa.
+> **rio-edu-lab** — laboratório de replicação de papers em educação aplicados ao Rio. **100 papers, 1 base de dados**.
 
-[:material-map: Ver o mapa interativo](mapa.md){ .md-button .md-button--primary }
+[:material-library-shelves: Ver o catálogo](papers/index.md){ .md-button .md-button--primary }
+[:material-map: Mapa interativo](mapa.md){ .md-button }
 [:material-rocket-launch-outline: Tour de 5 minutos](tour.md){ .md-button }
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620)
@@ -24,9 +25,13 @@ hide:
 
 </div>
 
-## Pipeline paper-driven
+## O que o lab faz
 
-Lab que opera papers em produtos. Cada produto **operacionaliza um paper específico** com dados disponíveis no data.rio (ou complementares públicos). O catálogo é honesto sobre maturidade.
+Catálogo aberto de **papers em educação aplicados ao Rio**: cada entrada cruza requisitos de dados do paper com itens disponíveis no [data.rio](https://www.data.rio), indica o status de replicação no lab e (quando replicado) traz um insight para gestores públicos. O catálogo é versionado, auditável via git e enriquecido com citações OpenAlex.
+
+**Estado atual (v0.7):** 12 papers seed catalogados — 3 já operacionalizados em produtos (Pereira 2019, Reardon 2011, Theil 1967), 5 alvo de replicação leve na próxima release (Soares & Andrade, Alves & Soares, Coleman, Hanushek, Reardon & Owens), 4 metodológicos canônicos (Becker, Cunha & Heckman, Hoxby, Card & Krueger). **Roadmap:** expandir para 100 papers em sprints temáticos.
+
+[Ver o catálogo completo →](papers/index.md){ .md-button }
 
 <div class="papers-strip" markdown>
 
@@ -99,18 +104,20 @@ Os 4 padrões apontam para **granularidade de bairro como escala correta** de in
 
 ## Citar
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620) — versão atual **v0.5.0**, ver [`CITATION.cff`](https://github.com/freirelucas/rio-edu-lab/blob/main/CITATION.cff).
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620) — release atual em preparação **v0.7.0**, ver [`CITATION.cff`](https://github.com/freirelucas/rio-edu-lab/blob/main/CITATION.cff).
 
 ```bibtex
 @misc{freire2026rioedulab,
   author       = {Freire, Lucas},
-  title        = {{rio-edu-lab} — Atlas Cibern\'etico da Educa\c{c}\~ao Carioca},
+  title        = {{rio-edu-lab} --- laborat\'orio de replica\c{c}\~ao de papers em educa\c{c}\~ao aplicados ao Rio},
   year         = {2026},
-  version      = {v0.5.0},
+  version      = {v0.7.0},
   doi          = {10.5281/zenodo.20060620},
   url          = {https://doi.org/10.5281/zenodo.20060620},
 }
 ```
+
+> **Renomeação na v0.7.** Até a v0.6.2 o lab era apresentado como "Atlas Cibernético da Educação Carioca". A v0.7 reposiciona o trabalho como **laboratório de replicação de papers**, com o catálogo público como produto primário. O DOI Zenodo é preservado (concept DOI). Detalhe no [CHANGELOG](https://github.com/freirelucas/rio-edu-lab/blob/main/CHANGELOG.md).
 
 ## Licença
 

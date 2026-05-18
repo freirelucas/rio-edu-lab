@@ -203,4 +203,14 @@ def theil_decompose_nested(
     }
 
 
-__all__ = ["theil_t", "theil_decompose", "theil_decompose_nested"]
+__all__ = ["theil_t", "theil_decompose", "theil_decompose_nested",
+           "pearson", "spearman", "ols_simple", "quintile_grid"]
+
+
+# Re-export regression primitives so callers can `from acec.stats import ols_simple`.
+from acec.stats.regression import (  # noqa: E402
+    ols_simple,
+    pearson,
+    quintile_grid,
+    spearman,
+)
