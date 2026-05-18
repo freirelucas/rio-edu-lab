@@ -4,6 +4,66 @@ Formato adaptado de [Keep a Changelog](https://keepachangelog.com/) e [SemVer](h
 
 ## [Unreleased — v0.7 in progress]
 
+### v0.7.3 — funil de papers de impacto (descoberta → requisitos → coverage → promoção)
+
+Infra para escalar o catálogo de 12 papers seed para muitos papers de impacto, cada um com `data_requirements` mapeados à taxonomia fechada. Os slices A+B+C (v0.7.x) entregaram peças isoladas — discovery OpenAlex, matching de requisitos vs data.rio, validator strict, scaffold de replicação. Faltava o **pipeline ponta-a-ponta** que liga essas peças num funil de 4 estágios.
+
+Os 4 estágios:
+
+1. **OpenAlex mapeia papers de impacto** — descoberta em lote sobre lista curada de themes (`data/openalex_concepts.yml`).
+2. **Cada paper é investigado** — top-3 categorias da taxonomia sugeridas automaticamente a partir de título+abstract (reusa tokenizer do Slice B).
+3. **Coverage check vs data.rio** — para cada requisito sugerido, top-1 item do manifest com status `available`/`partial`/`external`/`missing`.
+4. **Promoção ao catálogo** — candidatos marcados `decision: accept` viram entradas válidas em `papers_catalog.yml` com `replication_status` auto-derivado e schema completo.
+
+Adições (pipeline do funil):
+
+- `analysis/_match.py` — primitivas extraídas de 41 (tokenize, score_item, category_keywords, load_taxonomy) + novo `score_against_categories` (text-side classifier). Reusado por 41, 46 e 47.
+- `analysis/_openalex.py` — primitivas extraídas de 40 (fetch, build_query_url, parse_work) + novo `iterate_works` (paginação + throttle 1 req/s). Reusado por 40 e 45.
+- `analysis/45_bulk_discover.py` — Stage 1: itera themes em `openalex_concepts.yml`, deduplica por `openalex_id`, faz **upsert** em `papers_funnel.yml` preservando decisões do curador. CLI: `--concepts`, `--top`, `--dry-run`.
+- `analysis/46_extract_requirements.py` — Stage 2: para cada candidato sem sugestões, tokeniza title+abstract, pontua contra aliases das 10 categorias, escreve top-K (default 3). Idempotente; `--force` recomputa.
+- `analysis/47_check_coverage.py` — Stage 3: para cada requisito sugerido, encontra top-1 item do manifest. Categorias `level=individual` ou notes "Não disponível no data.rio" são marcadas `external` direto (skip matching). Threshold default 5.0 para `available`.
+- `analysis/48_promote_funnel.py` — Stage 4: filtra `decision: accept`, gera entrada YAML válida (schema do 31), anexa ao catalog com seção marker. `--dry-run` mostra antes de escrever. `replication_status` auto-derivado.
+- `data/openalex_concepts.yml` — seed de 8 themes (educational inequality, school segregation, economics of education, school effects, early childhood, accessibility, education-Brazil, human capital).
+- `data/papers_funnel.yml` — staging area, inicialmente vazio. Curador edita `decision` à mão antes de promover.
+
+Edições:
+
+- `analysis/40_openalex_discover.py` — agora importa de `_openalex`. Comportamento de saída idêntico.
+- `analysis/41_match_requirements.py` — agora importa de `_match`. Comportamento de saída idêntico.
+- `analysis/_openalex.py build_query_url` — fix de breaking change do OpenAlex: `from_publication_year` foi removido, agora é `publication_year:from-to` (range). 40 quebrava com HTTP 400 contra a API atual.
+- `analysis/31_build_paper_catalog.py` — novo flag `--validate-funnel` valida schema de `papers_funnel.yml` (openalex_id único, decision em enum, category_ids na taxonomia, status em enum). Soft-fail se YAML ausente.
+- `.github/workflows/ci.yml` — novo step `Validate paper funnel schema` (hard-fail se YAML corrompido).
+
+Workflow do curador (end-to-end):
+
+```bash
+# uma vez: editar data/openalex_concepts.yml para calibrar themes
+python3 analysis/45_bulk_discover.py                # Stage 1: ~30s/theme
+python3 analysis/46_extract_requirements.py         # Stage 2: instantâneo
+python3 analysis/47_check_coverage.py               # Stage 3: instantâneo
+# editar data/papers_funnel.yml: decision: accept nos top-N escolhidos
+python3 analysis/48_promote_funnel.py               # Stage 4: append ao catalog
+python3 analysis/31_build_paper_catalog.py          # valida
+python3 analysis/32_render_papers_pages.py          # gera mini-pages
+python3 analysis/41_match_requirements.py           # link reverso
+python3 analysis/34_fetch_openalex.py               # snapshot citations
+# por paper que vire replicação:
+python3 analysis/42_scaffold_replication.py <id>    # script + report stubs
+```
+
+Não muda (preservado):
+
+- 12 papers seed do catálogo inalterados.
+- Outputs de 31, 32, 34, 41 byte-idênticos ao estado anterior (refactor preserva comportamento — verificado via smoke test).
+- Taxonomia fechada (10 categorias) inalterada — agora também enforçada para entradas auto-promovidas via `48_promote_funnel.py` (que usa `aliases[0]` como string canônica do requirement).
+
+Próximas iterações (deferred):
+
+- Curador roda 45 com os 8 themes seed → ~150 candidatos brutos esperados, ~30-50 com sugestões válidas após Stage 2 → primeira batch de promoção.
+- Replicações leves dos papers promovidos viáveis (todos requisitos `available`/`partial`). Cada uma usa o scaffold de 42 → PR pequeno por paper.
+- Fix dos 4 item_ids "(unknown — not in manifest)" no `papers-by-data-rio.md` — slugs (`ideb-municipal-bairros`, `bairros-ipp`, `ids-rm-2010`) que não existem no manifest; resolver via alias-table ou re-ingest do manifest.
+- Calibração dos thresholds de 46 (`--min-score`) e 47 (`--threshold`) conforme primeiro batch de uso real.
+
 ### v0.7.0 — virada conceitual: catálogo de papers + rebrand do lab
 
 Mudança estrutural: o lab deixa de se apresentar como "Atlas Cibernético da Educação Carioca com 2 produtos" e passa a se apresentar como **laboratório de replicação de papers em educação aplicados ao Rio**, com um catálogo público de papers como produto primário. Os 2 produtos ativos (HEX-EDU e VULN-EDU) permanecem inalterados — passam a ser as 2 entradas "replicadas" do catálogo.
