@@ -1,6 +1,6 @@
 ---
 title: rio-edu-lab — laboratório de replicação de papers em educação aplicados ao Rio
-description: Catálogo aberto de papers em educação cruzados com o data.rio. 67% da desigualdade do IDEB municipal está dentro das RAs, não entre. Mapa H3 + decomposição Theil + DOI Zenodo.
+description: Catálogo aberto de papers em educação cruzados com o data.rio. Replicação fria, exata e replicável; insight literal aplicado ao Rio sem extrapolação. Mapa H3 + decomposição Theil + DOI Zenodo.
 hide:
   - toc
 ---
@@ -8,9 +8,9 @@ hide:
 <div class="hero" markdown>
 
 <div class="hero-text" markdown>
-# **2 em cada 3** das diferenças no IDEB do Rio são **dentro** da mesma RA — não entre.
+# Replicação **fria, exata e replicável** de papers em educação aplicados ao Rio.
 
-> **rio-edu-lab** — laboratório de replicação de papers em educação aplicados ao Rio. **100 papers, 1 base de dados**.
+> Catálogo aberto de papers seminais. Cada entrada cruza **método publicado** × **dados abertos do data.rio**. Replicação exata quando os dados permitem; insight literal aplicado ao Rio, sem extrapolação.
 
 [:material-library-shelves: Ver o catálogo](papers/index.md){ .md-button .md-button--primary }
 [:material-map: Mapa interativo](mapa.md){ .md-button }
@@ -28,7 +28,7 @@ hide:
 <div class="how-to-read" markdown>
 ### Como ler este site
 
-O produto primário é o **[catálogo de papers](papers/index.md)** — cada entrada cruza um paper de educação com a cobertura no data.rio + status de replicação + insight para gestores. Para a leitura curta, use o **[Tour 5 min](tour.md)**. Para implicações de política, **[Para gestores](gestores.md)**. Para a sala de máquinas (15 relatórios técnicos), **[Investigação](investigacao.md)**.
+O produto primário é o **[catálogo de papers](papers/index.md)** — cada entrada cruza um paper de educação com a cobertura no data.rio + status de replicação + achado literal aplicado ao Rio. Para a leitura curta, use o **[Tour 5 min](tour.md)**. Para a sala de máquinas (15 relatórios técnicos), **[Investigação](investigacao.md)**.
 </div>
 
 ## O que o lab faz
@@ -63,50 +63,42 @@ Catálogo aberto de **papers em educação aplicados ao Rio**: cada entrada cruz
 
 <div class="grid cards" markdown>
 
+-   :material-flask-outline:{ .lg } **Replicador / pesquisador**
+
+    ---
+
+    Catálogo paper × dado, status de replicação, DOI Zenodo, pipeline reprodutível, 39 testes verdes em CI. Schema YAML auditável via git diff.
+
+    [:octicons-arrow-right-24: Catálogo de papers](papers/index.md)
+
 -   :material-newspaper-variant-multiple-outline:{ .lg } **Jornalista / cidadão**
 
     ---
 
-    Mostra como a granularidade administrativa esconde a desigualdade real.
+    Achados replicados em linguagem direta. 5 painéis curtos mostram o que sai de cada replicação aplicada ao Rio.
 
     [:octicons-arrow-right-24: Tour 5 min](tour.md)
-
--   :material-city-variant-outline:{ .lg } **Gestor público / IPP**
-
-    ---
-
-    Síntese consolidada — 15 bairros prioritários + insights HEX-EDU e VULN-EDU + "como auditar".
-
-    [:octicons-arrow-right-24: Para gestores](gestores.md)
-
--   :material-flask-outline:{ .lg } **Pesquisador**
-
-    ---
-
-    1 produto ativo + 1 em planejamento, paper-base canônico (Pereira IPEA 2019), pipeline reprodutível, DOI Zenodo, 28 testes verdes.
-
-    [:octicons-arrow-right-24: Produtos](produtos/index.md)
 
 -   :material-code-tags:{ .lg } **Desenvolvedor**
 
     ---
 
-    Pipeline reproduzível ponta-a-ponta, pacote `acec` instalável.
+    Pipeline reproduzível ponta-a-ponta, pacote `acec` instalável, CSVs em `data/processed/`.
 
     [:octicons-arrow-right-24: Reproduzir](reproduzir.md)
 
 </div>
 
-## O que o lab descobriu (até v0.5)
+## O que o lab replicou (estado atual)
 
-A análise central — **decomposição Theil-T do IDEB municipal por bairro** — é robusta em 6 séries (anos iniciais/finais, ponderação por matrícula, Aprovação/SAEB/IDEB):
+Cada item é um método publicado aplicado literalmente aos dados do data.rio. Achados são descritivos — nenhum carrega claim de causalidade ou recomendação de política. O leitor decide o que fazer com eles.
 
-- **66% da desigualdade do IDEB municipal está dentro das RAs**, não entre. Coropléticos por RA mascaram a maior parte da variância. ([Relatório 06](reports/06_theil_ideb.md))
-- **3-níveis aninhados**: bairro = 67%, RA-em-AP = 26%, AP = 8%. ([Relatório 11](reports/11_thesha_rio.md))
-- Pseudocoortes 5º→9º pioram em **87%** dos casos; bairros que começam com IDEB alto caem mais. Confound provável: migração para escola privada no 6º ano. ([Relatório 12](reports/12_fun_rio.md))
-- Lei de escala intra-Rio entre escolas e matrícula: β = 0.77 (sublinear) — bairros maiores em matrícula têm desproporcionalmente menos escolas. ([Relatório 13](reports/13_pm_12.md))
-
-Os 4 padrões apontam para **granularidade de bairro como escala correta** de intervenção.
+- **Theil (1967) — decomposição Theil-T aplicada ao IDEB municipal por bairro**: a parcela within-RA fica em **66%**. Robusto em 6 séries (anos iniciais/finais × ponderação × Aprovação/SAEB/IDEB). ([Relatório 06](reports/06_theil_ideb.md))
+- **Theil hierárquico aplicado em 3 níveis** (AP / RA-em-AP / bairro-em-RA): 8% / 26% / 67%. ([Relatório 11](reports/11_thesha_rio.md))
+- **Pseudocoortes 5º→9º (descritivo, não Mare 1980 fully)**: em 768 transições, 87% pioram. Confound provável: migração à rede privada no 6º ano. ([Relatório 12](reports/12_fun_rio.md))
+- **Lei de escala intra-Rio (escolas × matrícula)**: β = 0,77 (sublinear, R² 0,80). ([Relatório 13](reports/13_pm_12.md))
+- **Pereira et al. (2019) IPEA — acessibilidade Pereira-style (parcial, haversine + IDEB)**: AP 3 lidera (113), AP 4 último (29). ([Relatório 14](reports/14_acessibilidade.md))
+- **Reardon (2011) intra-Rio — gradiente IDS Censo 2010 × IDEB 2023**: Pearson +0,40, R² 0,16, 39% dos bairros em quadrantes não-concordantes. ([Relatório 15](reports/15_vuln_edu.md))
 
 ## Citar
 

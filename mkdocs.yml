@@ -57,17 +57,15 @@ validation:
 nav:
   - Início: index.md
   - Tour: tour.md
+  - Catálogo de papers: papers/index.md
   - Mapa: mapa.md
-  - Papers: papers/index.md
   - Produtos:
       - Visão geral: produtos/index.md
       - HEX-EDU: produtos/hex_edu.md
       - VULN-EDU: produtos/vuln_edu.md
-  - Para gestores:
-      - Síntese: gestores.md
-      - Bairros prioritários: bairros-prioritarios.md
   - Investigação: investigacao.md
   - Recursos:
+      - Bairros prioritários: bairros-prioritarios.md
       - API do data.rio: data-rio-api.md
       - Glossário: glossario.md
       - Reproduzir: reproduzir.md

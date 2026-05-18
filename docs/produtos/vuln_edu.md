@@ -19,26 +19,14 @@ O paper documenta que o gap de desempenho entre o quintil mais rico e o mais pob
 
 <div class="policy-callout" markdown>
   <header>
-    <span class="icon" aria-hidden="true">🏛️</span>
-    <h3>Para gestores públicos</h3>
+    <span class="icon" aria-hidden="true">🔬</span>
+    <h3>Insight da replicação aplicado ao Rio</h3>
   </header>
   <div class="body" markdown>
   <div class="cell" markdown>
-**Achado**
+**Achado replicado**: aplicando a operacionalização Reardon (2011) intra-Rio (SES → IDS Censo 2010 por bairro; desempenho → IDEB 2023 séries iniciais), o gradiente é **Pearson +0,40 e R² = 0,16**. **39% dos 144 bairros estão em quadrantes não-concordantes**: 22% resilientes (baixo IDS, bom IDEB), 17% sub-performando (alto IDS, baixo IDEB).
 
-Gradiente SES × IDEB existe (Pearson +0,40) mas é **modesto** — IDS explica só **16%** da variância. **39% dos bairros estão em quadrantes não-concordantes**: 22% resilientes (baixo IDS, bom IDEB) + 17% sub-performando (alto IDS, baixo IDEB).
-  </div>
-  <div class="cell" markdown>
-**Implicação**
-
-Investir onde o SES é baixo **não basta** para subir o IDEB. Bairros de SES alto não necessariamente entregam alto IDEB na rede municipal — provável efeito de migração para a rede privada.
-  </div>
-  <div class="cell" markdown>
-**Ações**
-
-1. Investigar os **32 bairros resilientes** (Q2) — Vargem Grande, periferia de Jacarepaguá.
-2. Priorizar os **5 mais vulneráveis**: Santo Cristo, Sampaio, Gardênia Azul, Parque Columbia, Acari.
-3. Auditar os **25 em sub-performance** (Q3) — Maria da Graça, partes da Tijuca.
+**Caveat do paper**: Reardon (2011) analisa séries temporais de SES × desempenho nos EUA (1970–2010) e decompõe o gap por quintis. Nossa adaptação é **cross-sectional** (1 ano) e usa **agregação por bairro** (não microdado por aluno). IDS de 2010 vs IDEB de 2023 deixa lacuna temporal (~13 anos); v0.2 re-roda quando IDS 2022 sair. Sem claim sobre causalidade.
   </div>
   </div>
   <footer><a href="../../reports/15_vuln_edu/">Como auditar: relatório 15 + <code>analysis/29_vuln_edu.py</code> →</a></footer>

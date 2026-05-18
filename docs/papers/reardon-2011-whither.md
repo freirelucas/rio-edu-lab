@@ -46,11 +46,11 @@ Documenta que o gap de desempenho entre o quintil mais rico e o mais pobre nos E
 
 <div class="policy-callout">
   <header>
-    <span class="icon" aria-hidden="true">🏛️</span>
-    <h3>Para gestores públicos</h3>
+    <span class="icon" aria-hidden="true">🔬</span>
+    <h3>Insight da replicação aplicado ao Rio</h3>
   </header>
   <div class="body">
-    <div class="cell"><strong>Achado</strong>: Gradiente SES × IDEB no Rio existe mas é modesto (R²=0.16); 39% dos bairros estão em quadrantes não-concordantes (resilientes ou sub-performance) — desfaz a leitura "Zona Sul = privilégio uniforme".</div>
+    <div class="cell"><strong>Achado replicado</strong>: Gradiente SES × IDEB no Rio existe mas é modesto (R²=0.16); 39% dos bairros estão em quadrantes não-concordantes (resilientes ou sub-performance) — desfaz a leitura "Zona Sul = privilégio uniforme".</div>
   </div>
   <footer><a href="../../reports/15_vuln_edu/">Como auditar: relatório 15 →</a></footer>
 </div>

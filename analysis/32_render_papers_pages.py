@@ -133,7 +133,12 @@ def _status_hero_block(p: dict) -> str:
 
 
 def _policy_callout(insight: str, p: dict) -> str:
-    """Render policy_insight as visual .policy-callout component."""
+    """Render policy_insight as visual .policy-callout component.
+
+    Stance: replication-first. Header is "Insight da replicação aplicado ao Rio";
+    body is a single cell with the literal paper × Rio finding. No advocacy,
+    no policy recommendations, no "Ações" lists.
+    """
     insight = insight.strip()
     audit_link = ""
     if p.get("report_ids"):
@@ -144,11 +149,11 @@ def _policy_callout(insight: str, p: dict) -> str:
     return (
         f'<div class="policy-callout">\n'
         f'  <header>\n'
-        f'    <span class="icon" aria-hidden="true">🏛️</span>\n'
-        f'    <h3>Para gestores públicos</h3>\n'
+        f'    <span class="icon" aria-hidden="true">🔬</span>\n'
+        f'    <h3>Insight da replicação aplicado ao Rio</h3>\n'
         f'  </header>\n'
         f'  <div class="body">\n'
-        f'    <div class="cell"><strong>Achado</strong>{insight}</div>\n'
+        f'    <div class="cell"><strong>Achado replicado</strong>{insight}</div>\n'
         f'  </div>\n'
         f'{audit_link}'
         f'</div>\n'

@@ -46,11 +46,11 @@ Introduz o índice T da entropia (GE(1)) e a decomposição aditiva between/with
 
 <div class="policy-callout">
   <header>
-    <span class="icon" aria-hidden="true">🏛️</span>
-    <h3>Para gestores públicos</h3>
+    <span class="icon" aria-hidden="true">🔬</span>
+    <h3>Insight da replicação aplicado ao Rio</h3>
   </header>
   <div class="body">
-    <div class="cell"><strong>Achado</strong>: Decomposição Theil revela que 66% da desigualdade do IDEB municipal carioca está dentro das RAs, não entre — coropléticos por RA escondem a maior parte do sinal.</div>
+    <div class="cell"><strong>Achado replicado</strong>: Decomposição Theil revela que 66% da desigualdade do IDEB municipal carioca está dentro das RAs, não entre — coropléticos por RA escondem a maior parte do sinal.</div>
   </div>
   <footer><a href="../../reports/06_theil_ideb/">Como auditar: relatório 06 →</a></footer>
 </div>

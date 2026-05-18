@@ -342,9 +342,15 @@
 
 .policy-callout .body {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.25rem;
   margin: 0;
+}
+
+/* Quando há mais de uma cell (uso histórico em páginas de produto), expande
+   para grid auto-fit responsiva. Single-cell continua full-width. */
+.policy-callout .body:has(.cell + .cell) {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .policy-callout .cell {
@@ -380,7 +386,8 @@
 }
 
 @media (max-width: 800px) {
-  .policy-callout .body { grid-template-columns: 1fr; gap: 1rem; }
+  .policy-callout .body,
+  .policy-callout .body:has(.cell + .cell) { grid-template-columns: 1fr; gap: 1rem; }
   .policy-callout { padding: 1.25rem 1.25rem; }
 }
 

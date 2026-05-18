@@ -34,23 +34,23 @@ Cada entrada do catálogo segue o mesmo template — visível em qualquer [mini-
 3. **Categorias** (área, método, Brasil-específico).
 4. **Requisitos de dados × cobertura no data.rio** — tabela paper-driven, não data-driven. O paper diz o que precisa; o lab declara o que está disponível no portal (✅ disponível, ◐ parcial, ⚠️ externo, ✗ ausente).
 5. **Status de replicação** (replicado, parcial, catalogado, sem cobertura).
-6. **Para gestores públicos** (quando o paper é replicado): achado + implicação + ações — sempre com link "Como auditar" para o relatório técnico.
+6. **Insight da replicação aplicado ao Rio** (quando o paper é replicado): achado replicado em uma frase + caveats do paper — sempre com link "Como auditar" para o relatório técnico.
 
 O catálogo é **versionado em YAML** ([`data/papers_catalog.yml`](https://github.com/freirelucas/rio-edu-lab/blob/main/data/papers_catalog.yml)) — `git diff` audita curadoria.
 
-[Próximo →](#3-o-achado-empirico-que-sustenta-tudo){ .tour-next }
+[Próximo →](#3-theil-1967-aplicado-ao-rio-replicacao-direta){ .tour-next }
 
 </section>
 
 <section class="tour-slide" markdown>
 
-## <span class="tour-slide-num">3</span> O achado-empírico que sustenta tudo
+## <span class="tour-slide-num">3</span> Theil (1967) aplicado ao Rio — replicação direta
 
-O lab gira em torno de **um achado empírico anchor**: aplicando a decomposição **Theil-T** (Theil 1967) sobre o IDEB municipal por bairro, **66% da desigualdade está dentro das Regiões Administrativas**, não entre.
+Aplicando a decomposição **Theil-T** (Theil, *Economics and Information Theory*, 1967) ao IDEB municipal por bairro, **a parcela within-RA fica em 66%**. Replicação literal do método: índice GE(1), decomposição aditiva between/within sobre a partição RA→bairro. Achado descritivo, sem claim de causalidade.
 
 <div data-chart="../_assets/charts/tour_slide_3.json"></div>
 
-A parcela within-RA fica entre 59% e 73% em **9 anos × 6 séries** (5º, 9º, ponderado por matrícula, Aprovação, SAEB, IDEB). Nenhuma série cruza a paridade 50%. O achado **justifica a granularidade de bairro** como escala de intervenção — e é a razão de HEX-EDU operar sobre H3 (1593 hexes) em vez de RA (33 unidades).
+A parcela within-RA fica entre 59% e 73% em **9 anos × 6 séries** (5º, 9º, ponderado por matrícula, Aprovação, SAEB, IDEB). Nenhuma série cruza a paridade 50%. Implicação operacional **para a replicação**: HEX-EDU usa a partição H3 (1593 hexes) por consistência com a granularidade do achado; outras interpretações (escala correta de intervenção etc.) ficam com o leitor.
 
 [Próximo →](#4-como-voce-navega-o-catalogo){ .tour-next }
 
@@ -90,7 +90,7 @@ O lab tem **DOI Zenodo** ([10.5281/zenodo.20060620](https://doi.org/10.5281/zeno
 
 -   [:material-library-shelves: Catálogo de papers](papers/index.md)
 -   [:material-package-variant: Produtos detalhados](produtos/index.md)
--   [:material-account-tie: Para gestores](gestores.md)
+-   [:material-format-list-bulleted: Bairros prioritários](bairros-prioritarios.md)
 -   [:material-source-branch: Repo no GitHub](https://github.com/freirelucas/rio-edu-lab)
 
 </div>

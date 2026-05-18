@@ -48,11 +48,11 @@ Discretiza o território urbano em hexágonos H3 e calcula acessibilidade a opor
 
 <div class="policy-callout">
   <header>
-    <span class="icon" aria-hidden="true">🏛️</span>
-    <h3>Para gestores públicos</h3>
+    <span class="icon" aria-hidden="true">🔬</span>
+    <h3>Insight da replicação aplicado ao Rio</h3>
   </header>
   <div class="body">
-    <div class="cell"><strong>Achado</strong>: AP 3 (Zona Norte) lidera acesso ponderado por IDEB; Zona Sul tem IDEB médio mais alto mas baixa densidade. Coropléticos por AP escondem variância intra-AP.</div>
+    <div class="cell"><strong>Achado replicado</strong>: AP 3 (Zona Norte) lidera acesso ponderado por IDEB; Zona Sul tem IDEB médio mais alto mas baixa densidade. Coropléticos por AP escondem variância intra-AP.</div>
   </div>
   <footer><a href="../../reports/14_acessibilidade/">Como auditar: relatório 14 →</a></footer>
 </div>
