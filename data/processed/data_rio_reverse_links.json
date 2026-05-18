@@ -1,0 +1,120 @@
+{
+  "0a220ea7972d4adf85b3e63d23a4b9b1": {
+    "item_id": "0a220ea7972d4adf85b3e63d23a4b9b1",
+    "item_title": "(unknown — not in manifest)",
+    "item_type": "",
+    "papers": [
+      {
+        "paper_id": "pereira-2019-ipea",
+        "requirement": "geometria de escolas",
+        "status": "available"
+      },
+      {
+        "paper_id": "hanushek-1986-jel",
+        "requirement": "indicador de input",
+        "status": "available"
+      },
+      {
+        "paper_id": "hoxby-2000-aer",
+        "requirement": "indicador de oferta de escolas",
+        "status": "available"
+      }
+    ]
+  },
+  "bairros-ipp": {
+    "item_id": "bairros-ipp",
+    "item_title": "(unknown — not in manifest)",
+    "item_type": "",
+    "papers": [
+      {
+        "paper_id": "pereira-2019-ipea",
+        "requirement": "geometria de bairros",
+        "status": "available"
+      },
+      {
+        "paper_id": "theil-1967-economics",
+        "requirement": "agrupamento hierárquico",
+        "status": "available"
+      },
+      {
+        "paper_id": "coleman-1966-eeo",
+        "requirement": "agrupamento espacial",
+        "status": "available"
+      }
+    ]
+  },
+  "ideb-municipal-bairros": {
+    "item_id": "ideb-municipal-bairros",
+    "item_title": "(unknown — not in manifest)",
+    "item_type": "",
+    "papers": [
+      {
+        "paper_id": "pereira-2019-ipea",
+        "requirement": "indicador de qualidade educacional",
+        "status": "available"
+      },
+      {
+        "paper_id": "reardon-2011-whither",
+        "requirement": "indicador de desempenho educacional",
+        "status": "available"
+      },
+      {
+        "paper_id": "theil-1967-economics",
+        "requirement": "valores positivos por unidade",
+        "status": "available"
+      },
+      {
+        "paper_id": "soares-andrade-2006",
+        "requirement": "desempenho por escola",
+        "status": "partial"
+      },
+      {
+        "paper_id": "alves-soares-2013",
+        "requirement": "IDEB por bairro",
+        "status": "available"
+      },
+      {
+        "paper_id": "coleman-1966-eeo",
+        "requirement": "desempenho por unidade",
+        "status": "available"
+      },
+      {
+        "paper_id": "hanushek-1986-jel",
+        "requirement": "indicador de output",
+        "status": "available"
+      },
+      {
+        "paper_id": "reardon-owens-2014",
+        "requirement": "indicador de matrícula",
+        "status": "partial"
+      },
+      {
+        "paper_id": "hoxby-2000-aer",
+        "requirement": "indicador de desempenho",
+        "status": "available"
+      }
+    ]
+  },
+  "ids-rm-2010": {
+    "item_id": "ids-rm-2010",
+    "item_title": "(unknown — not in manifest)",
+    "item_type": "",
+    "papers": [
+      {
+        "paper_id": "reardon-2011-whither",
+        "requirement": "indicador socioeconômico granular",
+        "status": "available"
+      },
+      {
+        "paper_id": "soares-andrade-2006",
+        "requirement": "NSE por escola ou bairro",
+        "status": "available"
+      },
+      {
+        "paper_id": "reardon-owens-2014",
+        "requirement": "composição SES por bairro",
+        "status": "available"
+      }
+    ]
+  }
+}

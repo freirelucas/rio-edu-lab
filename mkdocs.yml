@@ -67,6 +67,7 @@ nav:
   - Recursos:
       - Bairros prioritários: bairros-prioritarios.md
       - API do data.rio: data-rio-api.md
+      - Papers por item do data.rio: papers-by-data-rio.md
       - Glossário: glossario.md
       - Reproduzir: reproduzir.md
       - Editar deposit Zenodo: zenodo-deposit.md

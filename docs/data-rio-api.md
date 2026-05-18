@@ -90,3 +90,7 @@ Validados em produção (HTTP 200, conteúdo esperado):
 - `8644dbd04a0c472faa2b727718a8bcad` — CSV Collection — Taxa de Analfabetismo
 
 Respostas brutas em [`data/raw/probe/`](https://github.com/freirelucas/rio-edu-lab/tree/main/data/raw/probe).
+
+## Link reverso: papers por item
+
+Para cada item do data.rio referenciado pelo catálogo, a página [Papers por item do data.rio](papers-by-data-rio.md) lista quais papers o utilizam e que requisito ele atende. Auto-gerada por `analysis/41_match_requirements.py`.
