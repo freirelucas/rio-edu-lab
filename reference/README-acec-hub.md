@@ -1,4 +1,6 @@
-# ACEC-Hub — Atlas Cibernético da Educação Carioca
+# ACEC-Hub — pacote Python interno do rio-edu-lab
+
+> Pacote `acec` (legacy "Atlas Cibernético da Educação Carioca", retido como nome de pacote por compat). Usado pelo **[rio-edu-lab](https://freirelucas.github.io/rio-edu-lab/)** — laboratório de replicação de papers em educação aplicados ao Rio.
 
 > Operacionalização de papers acadêmicos sobre os 186 itens do Grupo Educação do [data.rio](https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310), na forma de análises reproduzíveis e visualizações interativas.
 

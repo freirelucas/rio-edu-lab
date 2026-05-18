@@ -11,9 +11,15 @@ _IPEA Texto para Discussão 2535_
 
 <a href="https://hdl.handle.net/10419/240730" target="_blank">https://hdl.handle.net/10419/240730</a>
 
-**Citações (OpenAlex, 2026-05-18):** 79
+<div class="status-hero status-partial" aria-label="Status no lab: Replicação parcial">
+  <span class="icon" aria-hidden="true">◐</span>
+  <div class="text">
+    <span class="label">Replicação parcial</span>
+    <span class="headline">Operacionalizado no produto <a href="../../produtos/hex_edu/">HEX-EDU</a>. Ver <a href="../../reports/14_acessibilidade/">relatório 14</a>.</span>
+  </div>
+</div>
 
-**Status:** _Replicação parcial_
+**Citações (OpenAlex, 2026-05-18):** 79
 
 ## Resumo
 
@@ -40,9 +46,17 @@ Discretiza o território urbano em hexágonos H3 e calcula acessibilidade a opor
 - **Relatórios:** [14](../reports/14_acessibilidade.md)
 - **Scripts:** `analysis/25_*.py`, `analysis/26_*.py`, `analysis/27_*.py`
 
-## Para gestores públicos
+<div class="policy-callout">
+  <header>
+    <span class="icon" aria-hidden="true">🏛️</span>
+    <h3>Para gestores públicos</h3>
+  </header>
+  <div class="body">
+    <div class="cell"><strong>Achado</strong>: AP 3 (Zona Norte) lidera acesso ponderado por IDEB; Zona Sul tem IDEB médio mais alto mas baixa densidade. Coropléticos por AP escondem variância intra-AP.</div>
+  </div>
+  <footer><a href="../../reports/14_acessibilidade/">Como auditar: relatório 14 →</a></footer>
+</div>
 
-> AP 3 (Zona Norte) lidera acesso ponderado por IDEB; Zona Sul tem IDEB médio mais alto mas baixa densidade. Coropléticos por AP escondem variância intra-AP.
 
 ## Referência completa
 

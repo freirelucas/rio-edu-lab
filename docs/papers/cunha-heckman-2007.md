@@ -11,9 +11,15 @@ _American Economic Review, 97(2)_
 
 <a href="https://doi.org/10.1257/aer.97.2.31" target="_blank">https://doi.org/10.1257/aer.97.2.31</a>
 
-**Citações (OpenAlex, 2026-05-18):** 3.001
+<div class="status-hero status-unfeasible" aria-label="Status no lab: Sem cobertura no data.rio">
+  <span class="icon" aria-hidden="true">⚠</span>
+  <div class="text">
+    <span class="label">Sem cobertura no data.rio</span>
+    <span class="headline">Catalogado para referência. Replicação exige fontes externas (microdado individual, painel longitudinal).</span>
+  </div>
+</div>
 
-**Status:** _Dados indisponíveis_
+**Citações (OpenAlex, 2026-05-18):** 3.001
 
 ## Resumo
 
@@ -31,10 +37,6 @@ Modela a formação de habilidades cognitivas e não-cognitivas ao longo do cicl
 |---|---|---|
 | testes longitudinais individuais | ⚠️ dado externo necessário | `—` |
 | investimentos parentais observáveis | ⚠️ dado externo necessário | `—` |
-
-## Status no lab
-
-Catalogado para referência. Requer dados não disponíveis no data.rio (ex.: microdado individual, painel longitudinal) — replicação exigiria fontes externas.
 
 ## Referência completa
 

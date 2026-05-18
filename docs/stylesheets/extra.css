@@ -1,15 +1,55 @@
-/* rio-edu-lab — UX v0.6 — paleta + hero + cards */
+/* rio-edu-lab — UX v0.7.1 — design system Reuters/Pudding-light */
 
 :root {
   --rio-teal: #008572;
+  --rio-teal-light: #5aa897;
+  --rio-teal-dark: #00614f;
   --rio-red: #b2182b;
   --rio-blue: #2166ac;
   --rio-gray: #6c757d;
+  --rio-amber: #d97706;
+  --rio-green: #1a9850;
   --rio-bg-soft: #f5f8f7;
+  --rio-border-soft: rgba(0,0,0,.06);
 }
 
 [data-md-color-scheme="slate"] {
   --rio-bg-soft: rgba(255,255,255,.04);
+  --rio-border-soft: rgba(255,255,255,.08);
+}
+
+/* ---------- Editorial typography (Reuters/Pudding-light) ---------- */
+
+.md-typeset h1 {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.md-typeset h2 {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-top: 2.5rem;
+}
+
+.md-typeset h3 {
+  font-weight: 700;
+}
+
+.md-typeset p,
+.md-typeset li {
+  line-height: 1.65;
+}
+
+/* ---------- Focus-visible (a11y) ---------- */
+
+.md-button:focus-visible,
+.paper-badge:focus-visible,
+.paper-card:focus-visible,
+.policy-callout a:focus-visible,
+.status-hero a:focus-visible {
+  outline: 2px solid var(--rio-teal);
+  outline-offset: 3px;
 }
 
 /* ---------- Hero ---------- */
@@ -225,4 +265,408 @@
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: .85rem;
   color: var(--rio-red);
+}
+
+/* ---------- Tabela Markdown estilizada ---------- */
+
+.md-typeset table:not([class]) {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--rio-border-soft);
+  font-size: .85rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--rio-bg-soft);
+  font-weight: 700;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  font-size: .75rem;
+  color: var(--rio-gray);
+}
+
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+  border: none;
+  border-bottom: 1px solid var(--rio-border-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.md-typeset table:not([class]) tr:last-child td {
+  border-bottom: none;
+}
+
+.md-typeset table:not([class]) tr:hover td {
+  background: rgba(0,133,114,.04);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover td {
+  background: rgba(90,168,151,.08);
+}
+
+/* ---------- Policy callout (substitui !!! info "Para gestores") ---------- */
+
+.policy-callout {
+  background: var(--rio-bg-soft);
+  border-left: 6px solid var(--rio-teal);
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,.04);
+}
+
+.policy-callout > header {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  margin-bottom: 1rem;
+  padding-bottom: .75rem;
+  border-bottom: 1px solid var(--rio-border-soft);
+}
+
+.policy-callout > header .icon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.policy-callout > header h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--rio-teal);
+  font-weight: 700;
+}
+
+.policy-callout .body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 0;
+}
+
+.policy-callout .cell {
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.policy-callout .cell strong {
+  display: block;
+  text-transform: uppercase;
+  font-size: .72rem;
+  letter-spacing: .08em;
+  color: var(--rio-gray);
+  margin-bottom: .35rem;
+  font-weight: 700;
+}
+
+.policy-callout > footer {
+  margin-top: 1.25rem;
+  padding-top: .9rem;
+  border-top: 1px solid var(--rio-border-soft);
+  font-size: .85rem;
+}
+
+.policy-callout > footer a {
+  color: var(--rio-teal);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.policy-callout > footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .policy-callout .body { grid-template-columns: 1fr; gap: 1rem; }
+  .policy-callout { padding: 1.25rem 1.25rem; }
+}
+
+/* ---------- Status hero (mini-pages dos papers) ---------- */
+
+.status-hero {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  background: var(--rio-bg-soft);
+  border-left: 6px solid var(--rio-gray);
+  margin: 1.5rem 0 2rem;
+}
+
+.status-hero .icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.status-hero .text { flex: 1; }
+
+.status-hero .label {
+  display: block;
+  text-transform: uppercase;
+  font-size: .72rem;
+  letter-spacing: .12em;
+  font-weight: 800;
+  margin-bottom: .35rem;
+  color: var(--rio-gray);
+}
+
+.status-hero .headline {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.status-hero .headline a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--rio-teal);
+  text-underline-offset: 3px;
+}
+
+.status-hero.status-full {
+  border-left-color: var(--rio-green);
+  background: rgba(26,152,80,.06);
+}
+.status-hero.status-full .label { color: var(--rio-green); }
+
+.status-hero.status-partial {
+  border-left-color: var(--rio-teal);
+  background: rgba(0,133,114,.06);
+}
+.status-hero.status-partial .label { color: var(--rio-teal); }
+
+.status-hero.status-pending {
+  border-left-color: var(--rio-blue);
+  background: rgba(33,102,172,.06);
+}
+.status-hero.status-pending .label { color: var(--rio-blue); }
+
+.status-hero.status-unfeasible {
+  border-left-color: var(--rio-gray);
+  background: rgba(108,117,125,.05);
+}
+.status-hero.status-unfeasible .label { color: var(--rio-gray); }
+
+/* ---------- Paper cards (catálogo, estilo Pudding) ---------- */
+
+.paper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.paper-card {
+  position: relative;
+  background: var(--rio-bg-soft);
+  padding: 1.25rem 1.25rem 1rem;
+  border-radius: 10px;
+  border-top: 4px solid var(--rio-teal);
+  text-decoration: none !important;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.paper-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+.paper-card .drop-cap {
+  font-size: 3.2rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--rio-teal);
+  float: left;
+  margin: -.15rem .5rem 0 0;
+  letter-spacing: -0.04em;
+}
+
+.paper-card h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.paper-card .meta {
+  font-size: .78rem;
+  color: var(--rio-gray);
+  margin: 0;
+  letter-spacing: .02em;
+}
+
+.paper-card .insight {
+  font-size: .9rem;
+  line-height: 1.5;
+  margin: .35rem 0 0;
+  color: inherit;
+}
+
+.paper-card .cta {
+  margin-top: auto;
+  padding-top: .75rem;
+  font-size: .82rem;
+  font-weight: 700;
+  color: var(--rio-teal);
+  letter-spacing: .02em;
+}
+
+.paper-card.status-pending { border-top-color: var(--rio-blue); }
+.paper-card.status-pending .drop-cap,
+.paper-card.status-pending .cta { color: var(--rio-blue); }
+
+.paper-card.status-unfeasible { border-top-color: var(--rio-gray); opacity: .85; }
+.paper-card.status-unfeasible .drop-cap,
+.paper-card.status-unfeasible .cta { color: var(--rio-gray); }
+
+/* ---------- Big numerals (Reuters-style highlights) ---------- */
+
+.big-num-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.big-num {
+  text-align: left;
+}
+
+.big-num .num {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--rio-teal);
+}
+
+.big-num .label {
+  display: block;
+  font-size: .85rem;
+  margin-top: .35rem;
+  color: var(--rio-gray);
+  line-height: 1.4;
+}
+
+/* ---------- How-to-read (Pudding-style intro block) ---------- */
+
+.how-to-read {
+  background: linear-gradient(to right, rgba(0,133,114,.06), transparent);
+  border-left: 3px solid var(--rio-teal);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.how-to-read h3 {
+  margin: 0 0 .5rem;
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--rio-teal);
+  font-weight: 700;
+}
+
+.how-to-read p {
+  margin: 0;
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+/* ---------- Timeline chapter (investigacao.md narrative) ---------- */
+
+.chapter {
+  margin: 2.5rem 0;
+  padding-left: 2rem;
+  position: relative;
+  border-left: 2px solid var(--rio-border-soft);
+}
+
+.chapter::before {
+  content: attr(data-num);
+  position: absolute;
+  left: -1.25rem;
+  top: -.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--rio-teal);
+  color: white;
+  font-weight: 800;
+  font-size: .85rem;
+  letter-spacing: .02em;
+  box-shadow: 0 2px 6px rgba(0,133,114,.25);
+}
+
+.chapter h2 {
+  margin-top: 0;
+  font-weight: 800;
+}
+
+.chapter .lede {
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: var(--rio-gray);
+  margin: 0 0 1rem;
+}
+
+.chapter .reports {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: .75rem;
+  margin: .5rem 0;
+}
+
+.chapter .report-link {
+  display: block;
+  padding: .75rem 1rem;
+  background: var(--rio-bg-soft);
+  border-radius: 6px;
+  text-decoration: none !important;
+  color: inherit;
+  border-left: 3px solid var(--rio-teal-light);
+  transition: transform .12s ease;
+}
+
+.chapter .report-link:hover {
+  transform: translateX(2px);
+  border-left-color: var(--rio-teal);
+}
+
+.chapter .report-link .rid {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .75rem;
+  color: var(--rio-gray);
+  font-weight: 700;
+}
+
+.chapter .report-link .title {
+  display: block;
+  font-size: .92rem;
+  font-weight: 600;
+  margin-top: .15rem;
+}
+
+/* ---------- Tour-slide bigger numerals ---------- */
+
+.tour-slide-num {
+  width: 2.6rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  font-size: 1.1rem;
+  margin-right: .75rem;
+  box-shadow: 0 2px 8px rgba(0,133,114,.3);
 }

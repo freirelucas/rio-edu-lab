@@ -11,9 +11,15 @@ _NBER / Columbia University Press_
 
 <a href="https://www.nber.org/books-and-chapters/human-capital-theoretical-and-empirical-analysis-special-reference-education" target="_blank">https://www.nber.org/books-and-chapters/human-capital-theoretical-and-empirical-analysis-special-reference-education</a>
 
-**Citações (OpenAlex, 2026-05-18):** 5.240
+<div class="status-hero status-unfeasible" aria-label="Status no lab: Sem cobertura no data.rio">
+  <span class="icon" aria-hidden="true">⚠</span>
+  <div class="text">
+    <span class="label">Sem cobertura no data.rio</span>
+    <span class="headline">Catalogado para referência. Replicação exige fontes externas (microdado individual, painel longitudinal).</span>
+  </div>
+</div>
 
-**Status:** _Dados indisponíveis_
+**Citações (OpenAlex, 2026-05-18):** 5.240
 
 ## Resumo
 
@@ -31,10 +37,6 @@ Estabelece o framework do capital humano: educação como investimento com retor
 |---|---|---|
 | anos de estudo individuais | ⚠️ dado externo necessário | `—` |
 | renda individual | ⚠️ dado externo necessário | `—` |
-
-## Status no lab
-
-Catalogado para referência. Requer dados não disponíveis no data.rio (ex.: microdado individual, painel longitudinal) — replicação exigiria fontes externas.
 
 ## Referência completa
 

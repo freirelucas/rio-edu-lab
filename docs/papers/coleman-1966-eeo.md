@@ -11,9 +11,15 @@ _U.S. Department of Health, Education, and Welfare_
 
 <a href="https://files.eric.ed.gov/fulltext/ED012275.pdf" target="_blank">https://files.eric.ed.gov/fulltext/ED012275.pdf</a>
 
-**Citações (OpenAlex, 2026-05-18):** 2.776
+<div class="status-hero status-pending" aria-label="Status no lab: Catalogado — pendente">
+  <span class="icon" aria-hidden="true">⏳</span>
+  <div class="text">
+    <span class="label">Catalogado — pendente</span>
+    <span class="headline">Replicação leve planejada para release próxima; dados básicos cobertos no data.rio.</span>
+  </div>
+</div>
 
-**Status:** _Catalogado_
+**Citações (OpenAlex, 2026-05-18):** 2.776
 
 ## Resumo
 
@@ -31,10 +37,6 @@ Estabeleceu que a variância no desempenho entre alunos é majoritariamente dent
 |---|---|---|
 | desempenho por unidade | ✅ disponível no data.rio | `ideb-municipal-bairros` |
 | agrupamento espacial | ✅ disponível no data.rio | `bairros-ipp` |
-
-## Status no lab
-
-Catalogado, replicação leve planejada para release próxima. Dados básicos cobertos no data.rio.
 
 ## Referência completa
 

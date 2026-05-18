@@ -11,9 +11,15 @@ _Educação e Pesquisa, 39(1)_
 
 <a href="https://doi.org/10.1590/S1517-97022013000100012" target="_blank">https://doi.org/10.1590/S1517-97022013000100012</a>
 
-**Citações (OpenAlex, 2026-05-18):** 101
+<div class="status-hero status-pending" aria-label="Status no lab: Catalogado — pendente">
+  <span class="icon" aria-hidden="true">⏳</span>
+  <div class="text">
+    <span class="label">Catalogado — pendente</span>
+    <span class="headline">Replicação leve planejada para release próxima; dados básicos cobertos no data.rio.</span>
+  </div>
+</div>
 
-**Status:** _Catalogado_
+**Citações (OpenAlex, 2026-05-18):** 101
 
 ## Resumo
 
@@ -31,10 +37,6 @@ Mostra que o IDEB confunde efeito-escola com efeito-NSE, comparando escolas em c
 |---|---|---|
 | IDEB por bairro | ✅ disponível no data.rio | `ideb-municipal-bairros` |
 | INSE por escola | ⚠️ dado externo necessário | `—` |
-
-## Status no lab
-
-Catalogado, replicação leve planejada para release próxima. Dados básicos cobertos no data.rio.
 
 ## Referência completa
 

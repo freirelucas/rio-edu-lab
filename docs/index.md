@@ -25,6 +25,12 @@ hide:
 
 </div>
 
+<div class="how-to-read" markdown>
+### Como ler este site
+
+O produto primário é o **[catálogo de papers](papers/index.md)** — cada entrada cruza um paper de educação com a cobertura no data.rio + status de replicação + insight para gestores. Para a leitura curta, use o **[Tour 5 min](tour.md)**. Para implicações de política, **[Para gestores](gestores.md)**. Para a sala de máquinas (15 relatórios técnicos), **[Investigação](investigacao.md)**.
+</div>
+
 ## O que o lab faz
 
 Catálogo aberto de **papers em educação aplicados ao Rio**: cada entrada cruza requisitos de dados do paper com itens disponíveis no [data.rio](https://www.data.rio), indica o status de replicação no lab e (quando replicado) traz um insight para gestores públicos. O catálogo é versionado, auditável via git e enriquecido com citações OpenAlex.
@@ -69,9 +75,9 @@ Catálogo aberto de **papers em educação aplicados ao Rio**: cada entrada cruz
 
     ---
 
-    Lista de bairros prioritários cruzando déficit de escolas e queda de IDEB.
+    Síntese consolidada — 15 bairros prioritários + insights HEX-EDU e VULN-EDU + "como auditar".
 
-    [:octicons-arrow-right-24: Bairros prioritários](bairros-prioritarios.md)
+    [:octicons-arrow-right-24: Para gestores](gestores.md)
 
 -   :material-flask-outline:{ .lg } **Pesquisador**
 

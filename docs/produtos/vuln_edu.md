@@ -3,7 +3,7 @@ title: VULN-EDU — gradiente socioeconômico × educacional por bairro
 description: Cruzamento IDS (Censo 2010) × IDEB 2023 por bairro do Rio. Achado v0.1 — 40% de correlação, mas só 16% de R²; metade dos bairros está em quadrantes não-concordantes.
 ---
 
-# 🧭 VULN-EDU
+# VULN-EDU
 
 > **Vulnerabilidade socioeconômica prediz desempenho educacional no Rio?** Parcialmente. A correlação IDS × IDEB existe (Pearson +0.40), mas o IDS explica só **16%** da variância do IDEB municipal. **Quase metade dos bairros desafia o gradiente esperado** — 22% são resilientes (baixo SES, bom IDEB), 17% sub-performam (bom SES, baixo IDEB).
 
@@ -17,14 +17,32 @@ description: Cruzamento IDS (Censo 2010) × IDEB 2023 por bairro do Rio. Achado 
 
 O paper documenta que o gap de desempenho entre o quintil mais rico e o mais pobre nos EUA **cresceu ~40% desde os anos 1970** e **excede o gap racial branco-negro**. A operacionalização é direta: ordenar por SES, ordenar por desempenho, decompor o gap. Aqui, fazemos o análogo intra-Rio usando IDS (proxy SES composto) e IDEB séries iniciais.
 
-!!! info "Para gestores públicos"
-    - **Achado em uma frase**: o gradiente socioeconômico × educacional existe no Rio (Pearson +0,40) mas é **modesto** — o IDS explica só 16% da variância do IDEB municipal. **39% dos bairros estão em quadrantes não-concordantes**: 22% são resilientes (baixo IDS, bom IDEB) e 17% sub-performam (alto IDS, baixo IDEB).
-    - **Implicação para política**: investir onde o SES é baixo **não basta** para subir o IDEB; e bairros de SES alto não necessariamente entregam alto IDEB na rede municipal (provável efeito de migração para a rede privada).
-    - **Três ações concretas**:
-        1. **Investigar os 32 bairros resilientes** (Q2) — Vargem Grande e a periferia de Jacarepaguá são candidatos. O que eles fazem diferente?
-        2. **Priorizar os 5 mais vulneráveis** para intervenção integrada: Santo Cristo, Sampaio, Gardênia Azul, Parque Columbia, Acari.
-        3. **Auditar os 25 bairros em sub-performance** (Q3) — Maria da Graça, partes da Tijuca — para entender se a rede municipal está sub-utilizada por migração à rede privada/estadual.
-    - **Como auditar**: [Relatório 15](../reports/15_vuln_edu.md), código em `analysis/29_vuln_edu.py`, dados em `data/processed/vuln_edu_bairros.csv` (1 linha por bairro com quadrante + score).
+<div class="policy-callout" markdown>
+  <header>
+    <span class="icon" aria-hidden="true">🏛️</span>
+    <h3>Para gestores públicos</h3>
+  </header>
+  <div class="body" markdown>
+  <div class="cell" markdown>
+**Achado**
+
+Gradiente SES × IDEB existe (Pearson +0,40) mas é **modesto** — IDS explica só **16%** da variância. **39% dos bairros estão em quadrantes não-concordantes**: 22% resilientes (baixo IDS, bom IDEB) + 17% sub-performando (alto IDS, baixo IDEB).
+  </div>
+  <div class="cell" markdown>
+**Implicação**
+
+Investir onde o SES é baixo **não basta** para subir o IDEB. Bairros de SES alto não necessariamente entregam alto IDEB na rede municipal — provável efeito de migração para a rede privada.
+  </div>
+  <div class="cell" markdown>
+**Ações**
+
+1. Investigar os **32 bairros resilientes** (Q2) — Vargem Grande, periferia de Jacarepaguá.
+2. Priorizar os **5 mais vulneráveis**: Santo Cristo, Sampaio, Gardênia Azul, Parque Columbia, Acari.
+3. Auditar os **25 em sub-performance** (Q3) — Maria da Graça, partes da Tijuca.
+  </div>
+  </div>
+  <footer><a href="../../reports/15_vuln_edu/">Como auditar: relatório 15 + <code>analysis/29_vuln_edu.py</code> →</a></footer>
+</div>
 
 ## O que entrega
 

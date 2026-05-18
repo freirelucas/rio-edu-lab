@@ -2,7 +2,21 @@
  * Each <div data-chart="path/to/figure.json"> on a page gets its
  * Plotly figure JSON fetched and rendered. Mobile-friendly via
  * config.responsive=true. We hide the modeBar by default to keep
- * the look polished; specific charts can override via fig.config. */
+ * the look polished; specific charts can override via fig.config.
+ *
+ * RIO_COLORWAY is the lab's canonical Plotly colorway, injected when
+ * the figure layout doesn't define one. Charts that set marker.color
+ * explicitly (e.g. choropleths, heatmaps) are unaffected. */
+
+var RIO_COLORWAY = [
+  "#008572",  // teal — primary
+  "#2166ac",  // blue — secondary
+  "#b2182b",  // red — accent
+  "#5aa897",  // teal-light
+  "#d97706",  // amber
+  "#88419d",  // purple — uso pontual
+  "#6c757d"   // gray — fallback
+];
 
 (function () {
   function plotElement(el) {
@@ -17,7 +31,11 @@
           { responsive: true, displayModeBar: false, displaylogo: false },
           fig.config || {}
         );
-        Plotly.newPlot(el, fig.data || [], fig.layout || {}, config);
+        var layout = Object.assign({}, fig.layout || {});
+        if (!layout.colorway) {
+          layout.colorway = RIO_COLORWAY;
+        }
+        Plotly.newPlot(el, fig.data || [], layout, config);
         el.dataset.loading = "false";
       })
       .catch(function (err) {

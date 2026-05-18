@@ -1,89 +1,96 @@
 ---
-title: Tour de 5 minutos — rio-edu-lab
-description: Em 5 painéis, o que descobrimos aplicando 4 papers seminais ao IDEB municipal do Rio.
+title: Tour de 5 minutos — como ler o rio-edu-lab
+description: Em 5 painéis, como o lab opera, o achado-base que sustenta tudo, e como contribuir.
 hide:
   - toc
 ---
 
 # Tour de 5 minutos
 
-Cinco painéis, cada um com um chart interativo. Tempo total de leitura: ~5 min. Ao final, link para o paper consolidado e para os 4 produtos.
+Cinco painéis, cada um com um chart interativo. Tempo total de leitura: ~5 min. Ao final, links para o catálogo de papers, os produtos e o repo. Este tour **não recapitula achados** — é uma orientação sobre **como ler o lab**.
 
 <section class="tour-slide" markdown>
 
-## <span class="tour-slide-num">1</span> O problema: granularidade de RA
+## <span class="tour-slide-num">1</span> O que este lab é
 
-Painéis municipais costumam reportar IDEB por **Região Administrativa** (RA, 33 unidades). A média da RA suaviza extremos. Em 2023, quase todas as RAs estão em IDEB ≥ 5.5 — parece que está tudo razoavelmente bem.
+**rio-edu-lab** é um **laboratório de replicação de papers em educação aplicados ao Rio**. O produto primário é um **catálogo aberto de papers** ([12 seed, alvo 100](papers/index.md)) cruzado com o data.rio — cada paper indica requisitos de dados, cobertura no portal e status de replicação.
+
+A premissa é que **a infra de dados aberta do Rio (IPP + data.rio) é rica o suficiente para operacionalizar achados clássicos da literatura de educação** — bastava cruzar. O lab é o pipeline + catálogo + DOI Zenodo que materializa essa premissa.
 
 <div data-chart="../_assets/charts/tour_slide_1.json"></div>
 
-[Próximo →](#2-a-descoberta-mesmo-dado-mais-fino){ .tour-next }
+[Próximo →](#2-como-nos-lemos-um-paper){ .tour-next }
 
 </section>
 
 <section class="tour-slide" markdown>
 
-## <span class="tour-slide-num">2</span> A descoberta: mesmo dado, mais fino
+## <span class="tour-slide-num">2</span> Como nós lemos um paper
 
-Mesmos números, mesma escala de cor — mas agora cada bairro herda o IDEB para sua célula H3. **Bolsões vermelhos pulam aos olhos**: bairros com IDEB &lt; 5.5 dentro de RAs cuja média parece "ok".
+Cada entrada do catálogo segue o mesmo template — visível em qualquer [mini-page de paper](papers/pereira-2019-ipea.md):
 
-<div data-chart="../_assets/charts/tour_slide_2.json"></div>
+1. **Bibliografia + DOI** + snapshot de citações OpenAlex (versionado em CI).
+2. **Resumo** em pt-BR, 1-3 frases.
+3. **Categorias** (área, método, Brasil-específico).
+4. **Requisitos de dados × cobertura no data.rio** — tabela paper-driven, não data-driven. O paper diz o que precisa; o lab declara o que está disponível no portal (✅ disponível, ◐ parcial, ⚠️ externo, ✗ ausente).
+5. **Status de replicação** (replicado, parcial, catalogado, sem cobertura).
+6. **Para gestores públicos** (quando o paper é replicado): achado + implicação + ações — sempre com link "Como auditar" para o relatório técnico.
 
-A decomposição **Theil-T** (Theil, 1967) confirma que essa heterogeneidade é majoritária: 66% da desigualdade total do IDEB municipal está **dentro das RAs**, não entre.
+O catálogo é **versionado em YAML** ([`data/papers_catalog.yml`](https://github.com/freirelucas/rio-edu-lab/blob/main/data/papers_catalog.yml)) — `git diff` audita curadoria.
 
-[Próximo →](#3-robustez-em-3-direcoes){ .tour-next }
+[Próximo →](#3-o-achado-empirico-que-sustenta-tudo){ .tour-next }
 
 </section>
 
 <section class="tour-slide" markdown>
 
-## <span class="tour-slide-num">3</span> Robustez em 3 direções
+## <span class="tour-slide-num">3</span> O achado-empírico que sustenta tudo
 
-O achado não é artefato da escolha de indicador, da etapa escolar, ou de pesos arbitrários. Em 6 séries diferentes, a parcela within-RA fica entre 60% e 80%.
+O lab gira em torno de **um achado empírico anchor**: aplicando a decomposição **Theil-T** (Theil 1967) sobre o IDEB municipal por bairro, **66% da desigualdade está dentro das Regiões Administrativas**, não entre.
 
 <div data-chart="../_assets/charts/tour_slide_3.json"></div>
 
-A linha pontilhada em 50% é a "paridade" — abaixo dela, a desigualdade between-RA dominaria. Nenhuma série a cruza.
+A parcela within-RA fica entre 59% e 73% em **9 anos × 6 séries** (5º, 9º, ponderado por matrícula, Aprovação, SAEB, IDEB). Nenhuma série cruza a paridade 50%. O achado **justifica a granularidade de bairro** como escala de intervenção — e é a razão de HEX-EDU operar sobre H3 (1593 hexes) em vez de RA (33 unidades).
 
-[Próximo →](#4-mecanismos-estruturais){ .tour-next }
-
-</section>
-
-<section class="tour-slide" markdown>
-
-## <span class="tour-slide-num">4</span> Mecanismos estruturais
-
-Dois sinais ortogonais explicam parte da heterogeneidade:
-
-- **Lei de escala** (Bettencourt et al., 2010 — adaptado): infra de escolas escala com matrícula como `escolas = 0.008 · matrículas^0.77`. Sublinear (β &lt; 1) significa que **bairros maiores têm desproporcionalmente menos escolas por aluno**.
-- **Trajetórias** (Mare 1980 + Reardon & Owens 2014 — adaptado): em 768 pseudocoortes 5º→9º ano, a média do delta é **−0.65** (87% das coortes pioram).
-
-<div data-chart="../_assets/charts/tour_slide_4.json"></div>
-
-Os dois mecanismos apontam para a mesma direção: a infraestrutura municipal não acompanha a demanda nas zonas que mais precisam, e a qualidade educacional cai durante o ensino fundamental II nessas mesmas zonas.
-
-[Próximo →](#5-quem-precisa-mais){ .tour-next }
+[Próximo →](#4-como-voce-navega-o-catalogo){ .tour-next }
 
 </section>
 
 <section class="tour-slide" markdown>
 
-## <span class="tour-slide-num">5</span> Quem precisa mais
+## <span class="tour-slide-num">4</span> Como você navega o catálogo
 
-Cruzando os dois sinais (déficit de escola por SAMI + queda de IDEB por Δ FUN-Rio), os 15 bairros prioritários:
+O [catálogo de papers](papers/index.md) está organizado em **três faixas** acessíveis por tabs:
 
-<div data-chart="../_assets/charts/tour_slide_5.json"></div>
+- **Replicados (3)** — papers já operacionalizados em produtos do lab (Theil 1967, Reardon 2011, Pereira et al. 2019).
+- **Catalogados (6)** — próxima leitura: dados básicos cobertos no data.rio, replicação leve planejada (Coleman, Hanushek, Hoxby, Soares & Andrade, Alves & Soares, Reardon & Owens).
+- **Sem cobertura (3)** — papers seminais que pedem dados externos (Becker, Card & Krueger, Cunha & Heckman). Ficam aqui para referência teórica.
 
-!!! warning "Confound importante"
-    Bairros de Zona Sul (Humaitá, Leblon) aparecem nos primeiros lugares **porque** a sua coorte 5º→9º cai mais — provavelmente porque os alunos com mais recursos migram para escola privada no 6º ano, deixando o cohorte municipal do 9º enviesado para baixo. Não é o mesmo problema de Zona Norte/Oeste, onde a migração privada é menor e o sinal reflete subinvestimento real. A lista completa em [Bairros prioritários](bairros-prioritarios.md) traz a separação por mecanismo.
+Cada faixa é navegável por cards Pudding-style — clique no card para a mini-page do paper, ou use a busca nativa do site para nomes de autores e áreas.
+
+[Próximo →](#5-como-contribuir){ .tour-next }
+
+</section>
+
+<section class="tour-slide" markdown>
+
+## <span class="tour-slide-num">5</span> Como contribuir
+
+O catálogo é **público e aberto a contribuição**. Roteiro:
+
+1. **Sugerir um paper**: PR para [`data/papers_catalog.yml`](https://github.com/freirelucas/rio-edu-lab/blob/main/data/papers_catalog.yml) seguindo o schema (autor, ano, DOI, abstract, requisitos de dados). CI valida + gera mini-page automaticamente via [`32_render_papers_pages.py`](https://github.com/freirelucas/rio-edu-lab/blob/main/analysis/32_render_papers_pages.py).
+2. **Replicação leve**: pegar um paper em `pending`, escrever um relatório `analysis/NN_*.py` + `docs/reports/NN_*.md`, mover status para `partial` ou `full`.
+3. **Erratas / críticas**: abrir [issue no repo](https://github.com/freirelucas/rio-edu-lab/issues) — replicações são auditáveis via `acec` package (28 testes invariantes em CI).
+
+O lab tem **DOI Zenodo** ([10.5281/zenodo.20060620](https://doi.org/10.5281/zenodo.20060620)) — pode citar em paper, relatório técnico, post de blog. Contribuições viram co-autoria via [`CITATION.cff`](https://github.com/freirelucas/rio-edu-lab/blob/main/CITATION.cff).
 
 ## Continue
 
 <div class="grid cards" markdown>
 
--   [:material-map: Mapa interativo](mapa.md)
--   [:material-format-list-bulleted: Lista de bairros prioritários](bairros-prioritarios.md)
+-   [:material-library-shelves: Catálogo de papers](papers/index.md)
 -   [:material-package-variant: Produtos detalhados](produtos/index.md)
+-   [:material-account-tie: Para gestores](gestores.md)
 -   [:material-source-branch: Repo no GitHub](https://github.com/freirelucas/rio-edu-lab)
 
 </div>

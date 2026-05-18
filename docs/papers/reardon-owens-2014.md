@@ -11,9 +11,15 @@ _Annual Review of Sociology, 40_
 
 <a href="https://doi.org/10.1146/annurev-soc-071913-043152" target="_blank">https://doi.org/10.1146/annurev-soc-071913-043152</a>
 
-**Citações (OpenAlex, 2026-05-18):** 503
+<div class="status-hero status-pending" aria-label="Status no lab: Catalogado — pendente">
+  <span class="icon" aria-hidden="true">⏳</span>
+  <div class="text">
+    <span class="label">Catalogado — pendente</span>
+    <span class="headline">Replicação leve planejada para release próxima; dados básicos cobertos no data.rio.</span>
+  </div>
+</div>
 
-**Status:** _Catalogado_
+**Citações (OpenAlex, 2026-05-18):** 503
 
 ## Resumo
 
@@ -31,10 +37,6 @@ Revisa medidas de segregação escolar (raça, SES) nos EUA nos 60 anos pós-Bro
 |---|---|---|
 | composição SES por bairro | ✅ disponível no data.rio | `ids-rm-2010` |
 | indicador de matrícula | ◐ cobertura parcial | `ideb-municipal-bairros` |
-
-## Status no lab
-
-Catalogado, replicação leve planejada para release próxima. Dados básicos cobertos no data.rio.
 
 ## Referência completa
 
