@@ -1492,9 +1492,9 @@ candidates:
     score: 2.0
   coverage:
   - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 6.0
+    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
+    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
+    score: 7.0
     status: available
   - category_id: performance-aggregated
     manifest_item_id: 29d517eedb9c44379a07430280a12839
@@ -1746,9 +1746,9 @@ candidates:
     score: 2.0
   coverage:
   - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 6.0
+    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
+    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
+    score: 7.0
     status: available
   - category_id: performance-aggregated
     manifest_item_id: 29d517eedb9c44379a07430280a12839
@@ -1822,9 +1822,9 @@ candidates:
     score: 0.0
     status: external
   - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 6.0
+    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
+    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
+    score: 7.0
     status: available
   - category_id: performance-aggregated
     manifest_item_id: 29d517eedb9c44379a07430280a12839
@@ -1859,9 +1859,10 @@ candidates:
     score: 2.0
   coverage:
   - category_id: ses-aggregated
-    manifest_item_id: af77acf434244df883b9683b87913afe
-    manifest_title: 'NOTA TÉCNICA 44 - Adaptação Metodológica do IDS: Rumo à Análise Comparativa com o Censo 2022 (Dezembro/2024)'
-    score: 7.0
+    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
+    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
+      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
+    score: 8.0
     status: available
   decision: ''
   decision_reason: ''
@@ -2619,9 +2620,9 @@ candidates:
     score: 7.0
     status: available
   - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 6.0
+    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
+    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -3465,9 +3466,9 @@ candidates:
     score: 0.0
     status: external
   - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 6.0
+    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
+    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -3525,9 +3526,9 @@ candidates:
     score: 7.0
     status: available
   - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 6.0
+    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
+    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -3799,9 +3800,9 @@ candidates:
     score: 2.0
   coverage:
   - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 6.0
+    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
+    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
+    score: 7.0
     status: available
   - category_id: performance-aggregated
     manifest_item_id: 29d517eedb9c44379a07430280a12839
@@ -4185,14 +4186,15 @@ candidates:
     score: 2.0
   coverage:
   - category_id: ses-aggregated
-    manifest_item_id: af77acf434244df883b9683b87913afe
-    manifest_title: 'NOTA TÉCNICA 44 - Adaptação Metodológica do IDS: Rumo à Análise Comparativa com o Censo 2022 (Dezembro/2024)'
-    score: 7.0
+    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
+    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
+      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
+    score: 8.0
     status: available
   - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 6.0
+    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
+    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
+    score: 7.0
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -4293,9 +4295,10 @@ candidates:
     score: 7.0
     status: available
   - category_id: ses-aggregated
-    manifest_item_id: af77acf434244df883b9683b87913afe
-    manifest_title: 'NOTA TÉCNICA 44 - Adaptação Metodológica do IDS: Rumo à Análise Comparativa com o Censo 2022 (Dezembro/2024)'
-    score: 7.0
+    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
+    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
+      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
+    score: 8.0
     status: available
   decision: ''
   decision_reason: ''
@@ -5376,9 +5379,9 @@ candidates:
     score: 2.0
   coverage:
   - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 6.0
+    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
+    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
@@ -5431,9 +5434,9 @@ candidates:
     score: 2.0
   coverage:
   - category_id: geometry-schools
-    manifest_item_id: 0a220ea7972449e39a28210dd317f636
-    manifest_title: Escolas Municipais
-    score: 6.0
+    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
+    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
+    score: 7.0
     status: available
   decision: ''
   decision_reason: ''
