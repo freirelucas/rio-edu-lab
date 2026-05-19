@@ -30,13 +30,38 @@ Base usada: `https://pcrj.maps.arcgis.com/sharing/rest`. Sem autenticação.
 
 **Importante**: o nome real do arquivo aparece no header `Content-Disposition` da resposta de `/data` (ex.: `filename="3726.xlsx"`). O ID amigável do título fica só no metadata `title`.
 
-## Grupo Educação
+## Manifest org-wide
+
+A partir da v0.8, o manifest do laboratório cobre **todo o portal data.rio**, não só o Grupo Educação. Isso permite matchar requisitos de papers contra qualquer fonte de dado público do Rio (transporte para acessibilidade espacial, demografia para SES agregado, etc.), não apenas os datasets pre-tagueados com "educação".
 
 ```
-group_id  = 91117c15dceb41eaa08df881fa9f9310
-group_url = https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310
-total     = 186 itens (snapshot 2026-05-05)
+org_id    = OlP4dGNtIcnD3RYf (PrefeituraRio)
+portal    = https://www.data.rio/
+total     = 9855 itens (snapshot 2026-05-18)
+fetched   = via /sharing/rest/search?q=orgid:OlP4dGNtIcnD3RYf
+script    = analysis/00_fetch_manifest.py
 ```
+
+Distribuição por tipo (top-10):
+
+| Tipo | Quantidade |
+|---|---|
+| PDF | 4,073 |
+| Image | 1,115 |
+| Microsoft Excel | 987 |
+| Feature Service | 876 |
+| Web Map | 506 |
+| Hub Page | 391 |
+| Scene Service | 331 |
+| Dashboard | 294 |
+| Web Mapping Application | 269 |
+| Form | 197 |
+
+Para regenerar: `python3 analysis/00_fetch_manifest.py` (~1m30s wall clock, 1 req/0.3s).
+
+### Histórico
+
+Snapshot anterior (até v0.7.x): apenas Grupo Educação (group_id `91117c15dceb41eaa08df881fa9f9310`, 186 itens). Era um filtro útil para o MVP centrado em educação, mas limitava o matching paper↔dado a fontes pré-tagueadas.
 
 ## Exemplo: baixar todos os Excels
 

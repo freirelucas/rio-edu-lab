@@ -33,9 +33,9 @@ O produto primário é o **[catálogo de papers](papers/index.md)** — cada ent
 
 ## O que o lab faz
 
-Catálogo aberto de **papers em educação aplicados ao Rio**: cada entrada cruza requisitos de dados do paper com itens disponíveis no [data.rio](https://www.data.rio), indica o status de replicação no lab e (quando replicado) traz um insight para gestores públicos. O catálogo é versionado, auditável via git e enriquecido com citações OpenAlex.
+Catálogo aberto de **papers em educação aplicados ao Rio**: cada entrada cruza requisitos de dados do paper com itens do [data.rio](https://www.data.rio) (cobertura org-wide desde v0.8 — **9.855 itens em todos os domínios públicos do Rio**, não só os pré-tagueados como educação), indica o status de replicação no lab e (quando replicado) traz um insight para gestores públicos. O catálogo é versionado, auditável via git e enriquecido com citações OpenAlex.
 
-**Estado atual (v0.7):** 12 papers seed catalogados — 3 já operacionalizados em produtos (Pereira 2019, Reardon 2011, Theil 1967), 5 alvo de replicação leve na próxima release (Soares & Andrade, Alves & Soares, Coleman, Hanushek, Reardon & Owens), 4 metodológicos canônicos (Becker, Cunha & Heckman, Hoxby, Card & Krueger). **Roadmap:** expandir para 100 papers em sprints temáticos.
+**Estado atual (v0.8):** 12 papers seed catalogados — 3 já operacionalizados em produtos (Pereira 2019, Reardon 2011, Theil 1967), 5 alvo de replicação leve na próxima release (Soares & Andrade, Alves & Soares, Coleman, Hanushek, Reardon & Owens), 4 metodológicos canônicos (Becker, Cunha & Heckman, Hoxby, Card & Krueger). Funil bibliométrico (v0.7.4) descobre candidatos via snowball sobre seeds curados; v0.7.5 calibrou matching paper↔taxonomia. **Roadmap:** expandir para 100 papers em sprints temáticos; broadening da experiência de replicação (per-paper vs per-dataset) em v1.0.
 
 [Ver o catálogo completo →](papers/index.md){ .md-button }
 

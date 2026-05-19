@@ -2,7 +2,83 @@
 
 Formato adaptado de [Keep a Changelog](https://keepachangelog.com/) e [SemVer](https://semver.org/lang/pt-BR/).
 
-## [Unreleased — v0.7 in progress]
+## [Unreleased — v0.8 in progress]
+
+### v0.8 — manifest org-wide (de 186 → 9855 itens)
+
+Pivô estratégico: o lab se posiciona como **seletor + replicador de papers genérico contra dados públicos do Rio**, não só "12 papers de educação". Papers ficam focados em educação (domínio do laboratório), mas o lado dos dados expande para **todo o portal data.rio**, não só os pré-tagueados como educação.
+
+Antes (v0.7.x):
+- `data/manifest.json` cobria apenas o Grupo Educação do data.rio (group_id `91117c15dceb41eaa08df881fa9f9310`).
+- 186 itens, scrapeados via `acec manifest refresh` (cliente acec-hub) em 2026-05-05.
+- Limitava o matching paper↔dado a fontes pré-tagueadas com "educação", ignorando datasets de transporte (acessibilidade espacial), demografia (SES agregado), urbanismo (geometria), etc., que poderiam servir replicação de papers de educação.
+
+Agora (v0.8):
+- `data/manifest.json` cobre **todo o portal data.rio** — `orgid:OlP4dGNtIcnD3RYf` (PrefeituraRio).
+- 9.855 itens, scrapeados via novo `analysis/00_fetch_manifest.py` (urllib stdlib + throttle 0.3s, segue padrão de `_openalex.py`).
+- Endpoint: `/sharing/rest/search?q=orgid:...&num=100&start=N&f=json`. Paginação automática.
+
+Adições:
+- `analysis/00_fetch_manifest.py` — scraper org-wide. CLI: `--dry-run`, `--max N`.
+- `data/manifest.json` regenerado (53x mais itens, schema preservado).
+- `docs/data-rio-api.md` documenta o novo escopo + distribuição por tipo.
+- `docs/index.md` reflete posicionamento ampliado.
+
+Não regrediu:
+- `analysis/41_match_requirements.py`: `docs/papers-by-data-rio.md` byte-idêntico (top-1 match canônico inalterado para os 4 itens referenciados pelo catalog).
+- `analysis/47_check_coverage.py`: 35 candidatos com full coverage (idem v0.7.5).
+- pytest 19/19, 31 ok, 32 sem drift.
+
+Drift esperado e aceito:
+- `data/processed/data_rio_match_suggestions.csv`: 117 rows atualizadas (mais candidatos por requirement, mas top-1 estável).
+
+Próximos passos (v0.9):
+- Site redesign (landing + nav) com `data-explorer.md` (filtro do manifest) e `replicator.md` (walkthrough).
+
+---
+
+## [v0.7 — released]
+
+### v0.7.5 — calibração Stage 2/3 + bug #4 (PoSWID #2, #3, #4 fixados)
+
+Calibração do pipeline pós-v0.7.4 Stage 1 redesign. Endereça issues #2 (crítica), #3 (alta) e bug #4 (baixa) do PoSWID. Root cause identificado em `_match.py`: `category_keywords` misturava `label_pt + aliases + notes` num bag-of-words, e `notes` continha metadados ("Feature Service", "INEP per-school") que poluíam o token set.
+
+Mudanças:
+- `_match.py`: `category_keywords(cat, *, include_notes=True, include_en=True)` com defaults backward-compat para 41; funnel scripts passam `include_notes=False`. Novo `EDU_KEYWORDS` frozenset + `edu_signal(text)`.
+- `data/requirements_taxonomy.yml`: version 1 → 2; campo opcional `aliases_en` por categoria (3-7 termos EN cada).
+- `46_extract_requirements.py`: pré-filtro `edu_signal ≥ 1`; `DEFAULT_MIN_SCORE` 1.0 → 2.0; chama `score_against_categories(include_notes=False)`.
+- `47_check_coverage.py`: chama `category_keywords(include_notes=False)`.
+- `48_promote_funnel.py`: bug #4 fix — `_yaml_str` usa `json.dumps` (JSON é subset de YAML flow, sempre quota correto).
+
+Validação:
+- 43 scoreados (vs 91 baseline com noise), 0% noise no scored set (vs ~30%).
+- Top-1 distribuição balanceada: `performance-aggregated:19, microdata-student:8, geometry-schools:5, ...` (vs geometry-schools=30 dominante).
+- 35 full-coverage (vs 14 espúrios no PoSWID baseline).
+
+### v0.7.4 — Stage 1 redesign — bibliometric snowball + data signal
+
+Reescreve o Stage 1 do funil como **snowball bibliométrico 2-track + sinal de replicabilidade**. Endereça issue crítica #1 do PoSWID v0.7.3 (95% noise em Stage 1).
+
+Antes: 45 buscava papers via `search="educational inequality"` textual no OpenAlex, sort por `cited_by_count:desc`. Top hits dominados por papers de oncologia/cardiologia que mencionavam "education" tangencialmente.
+
+Agora:
+- **Track A (mainstream)**: backward snowball — para cada seed, fetch `referenced_works` via OpenAlex. Papers que o seed cita herdam a curadoria. `cocitation_count` = #seeds que citam o paper.
+- **Track B (outsider)**: forward snowball — papers que citam o seed via `?filter=cites:Wxxx&cited_by_count:[20,500]`. Sobrevive se `data_signal.score > 0` E ≥1 regex hit.
+- **Data signal**: scan regex em `abstract + pdf_url_oa` por `github\.com|osf\.io|dataverse|replication package|data available`.
+
+Validação:
+- 253 candidatos vs 161 noise da v0.7.3.
+- Top-10 100% relevantes (Coleman, Bowles-Gintis, Lareau, Turkheimer, Carneiro-Heckman, Becker, Bell Curve, Mincer) vs 0/10 v0.7.3.
+- 41 full-coverage candidates (clássicos legítimos) vs 14 (noise médico).
+- "Os Determinantes da Desigualdade de Renda no Brasil" descoberto organicamente como paper BR co-citado por 2 seeds IPEA.
+
+Adições:
+- `data/openalex_seeds.yml` (substitui `openalex_concepts.yml`) — 19 enabled seeds (12 catalog + 8 IPEA via inst_id `I3131024195` + Rivkin 2005).
+- `analysis/_openalex.py` ganha `fetch_work_by_id`, `fetch_works_batch` (20x mais rápido que individual), `iterate_cites` + polite-pool via `mailto=`.
+- `analysis/45_bulk_discover.py` rewrite completo: per-seed snowball + 3 campos novos no funnel (`track`, `cocitation_count`, `data_signal`).
+
+Bug fix latente:
+- `requirements.txt` agora inclui `pyyaml>=6.0` (todos os scripts YAML quebravam em CI Python 3.12 limpo).
 
 ### v0.7.3 — funil de papers de impacto (descoberta → requisitos → coverage → promoção)
 
