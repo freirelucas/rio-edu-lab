@@ -2,6 +2,7 @@
 title: rio-edu-lab — pipeline aberto de replicação de papers de educação contra os dados públicos do Rio
 description: Um sistema que processa papers acadêmicos sobre educação contra os 9.855 itens do data.rio. 253 candidatos no funil, 12 no catálogo curado, 3 replicados. Aberto em todos os passos.
 hide:
+  - navigation
   - toc
 ---
 
@@ -108,23 +109,23 @@ O pipeline tem 4 estágios, todos auditáveis. Hoje:
 
 </div>
 
-<div class="grid cards" markdown>
+<div class="chart-duo" markdown>
 
--   :material-chart-donut:{ .lg } **Cobertura do data.rio**
+<div class="chart-card" markdown>
+#### :material-chart-donut: Cobertura do data.rio
 
-    ---
+<div data-chart="_assets/charts/data_rio_coverage.json"></div>
 
-    <div data-chart="_assets/charts/data_rio_coverage.json"></div>
+4 itens cobertos pelo catálogo. 9.851 inexplorados. [Browse →](dados.md)
+</div>
 
-    4 itens cobertos pelo catálogo. 9.851 inexplorados. [Browse →](dados.md)
+<div class="chart-card" markdown>
+#### :material-chart-bar: Temas no funil
 
--   :material-chart-bar:{ .lg } **Temas no funil**
+<div data-chart="_assets/charts/themes.json"></div>
 
-    ---
-
-    <div data-chart="_assets/charts/themes.json"></div>
-
-    Distribuição dos 253 candidatos por categoria de dado requerida. [Detalhe →](dados.md)
+Distribuição dos 253 candidatos por categoria de dado requerida. [Detalhe →](dados.md)
+</div>
 
 </div>
 

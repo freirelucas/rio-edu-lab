@@ -677,3 +677,38 @@
   margin-right: .75rem;
   box-shadow: 0 2px 8px rgba(0,133,114,.3);
 }
+
+/* ---------- Chart duo (landing bottom row) ---------- */
+
+.chart-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.chart-card {
+  background: var(--rio-bg-soft);
+  border-radius: 12px;
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.chart-card h4 {
+  margin: 0 0 .75rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.chart-card > div[data-chart] {
+  min-height: 280px;
+}
+
+.chart-card p {
+  margin: .75rem 0 0;
+  font-size: .9rem;
+  color: var(--rio-gray);
+}
+
+@media (max-width: 800px) {
+  .chart-duo { grid-template-columns: 1fr; gap: 1rem; }
+}

@@ -133,10 +133,10 @@ def render_funnel_chart(state: dict) -> dict:
             {
                 "type": "funnel",
                 "y": [
-                    f"{state['stage1_candidates']} · candidatos (snowball)",
-                    f"{state['stage2_with_requirements']} · tema relevante",
-                    f"{state['stage4_catalog']} · catálogo curado",
-                    f"{state['replicated_total']} · replicados publicados",
+                    "candidatos",
+                    "tema relevante",
+                    "catálogo",
+                    "replicados",
                 ],
                 "x": [
                     state["stage1_candidates"],
@@ -152,7 +152,7 @@ def render_funnel_chart(state: dict) -> dict:
             }
         ],
         "layout": {
-            "margin": {"l": 220, "r": 30, "t": 20, "b": 20},
+            "margin": {"l": 110, "r": 30, "t": 20, "b": 20},
             "height": 320,
             "font": PLOTLY_FONT,
             "paper_bgcolor": "rgba(0,0,0,0)",

@@ -24,7 +24,7 @@ onde `T_within / T_total` mede a fração da desigualdade que vive dentro das RA
 
 ### Robustez (6 séries × 9 anos)
 
-<div data-chart="../_assets/charts/tour_slide_3.json"></div>
+<div data-chart="../../_assets/charts/tour_slide_3.json"></div>
 
 A parcela within-RA fica entre 59% e 73% em todos os 9 anos, em todas as 6 séries (5º, 9º, ponderado por matrícula, Aprovação/SAEB/IDEB).
 

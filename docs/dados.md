@@ -7,23 +7,23 @@ description: 9.855 itens públicos no data.rio. 4 ativados pelo catálogo. 9.851
 
 **9.855 itens públicos no data.rio. 4 ativados pelo catálogo. 9.851 inexplorados.** Cada paper do funil é matchado contra esse substrato — quando bate, vira candidato a replicação; quando não, vira sinal do que falta no portal.
 
-<div class="grid cards" markdown>
+<div class="chart-duo" markdown>
 
--   :material-chart-donut:{ .lg } **Cobertura atual**
+<div class="chart-card" markdown>
+#### :material-chart-donut: Cobertura atual
 
-    ---
+<div data-chart="../_assets/charts/data_rio_coverage.json"></div>
 
-    <div data-chart="_assets/charts/data_rio_coverage.json"></div>
+Cobertura é baixa **por construção**: o catálogo curado tem só 12 papers, e cada um cita 1-4 itens. O resto do portal é território pra próximos sprints.
+</div>
 
-    Cobertura é baixa **por construção**: o catálogo curado tem só 12 papers, e cada um cita 1-4 itens. O resto do portal é território pra próximos sprints.
+<div class="chart-card" markdown>
+#### :material-chart-bar: Temas no funil
 
--   :material-chart-bar:{ .lg } **Temas no funil**
+<div data-chart="../_assets/charts/themes.json"></div>
 
-    ---
-
-    <div data-chart="_assets/charts/themes.json"></div>
-
-    253 candidatos do snowball, distribuídos por categoria de dado que precisariam pra replicar. **Performance agregada** lidera (26) — IDEB-style; **microdado de aluno** vem em seguida (13) mas é majoritariamente *external* no Rio (INEP não publica nominal).
+253 candidatos do snowball, distribuídos por categoria de dado que precisariam pra replicar. **Performance agregada** lidera (26) — IDEB-style; **microdado de aluno** vem em seguida (13) mas é majoritariamente *external* no Rio (INEP não publica nominal).
+</div>
 
 </div>
 

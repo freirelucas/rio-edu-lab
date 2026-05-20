@@ -3,10 +3,10 @@
     {
       "type": "funnel",
       "y": [
-        "253 · candidatos (snowball)",
-        "43 · tema relevante",
-        "12 · catálogo curado",
-        "3 · replicados publicados"
+        "candidatos",
+        "tema relevante",
+        "catálogo",
+        "replicados"
       ],
       "x": [
         253,
@@ -33,7 +33,7 @@
   ],
   "layout": {
     "margin": {
-      "l": 220,
+      "l": 110,
       "r": 30,
       "t": 20,
       "b": 20
