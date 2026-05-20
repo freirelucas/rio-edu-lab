@@ -2,6 +2,86 @@
 
 Formato adaptado de [Keep a Changelog](https://keepachangelog.com/) e [SemVer](https://semver.org/lang/pt-BR/).
 
+## [Unreleased — v0.10 in progress]
+
+### v0.10 — pivot completo: funnel-first, MVPs como artefato de design
+
+Crítica direta ao plano anterior (v0.9 + v0.10-draft):
+
+> "ainda não tá refletindo a melhoria do pipeline em termos de exploração dos temas de papers, cruzamentos com dados disponíveis no data.rio TODO, e um funil de replicação. aproveite os mvps como artefato de design, mas acredito que é hora de pivotar arquitetura, experiência, tudo coerente com o propósito geral. Já aprendemos artefatos do mvp, agora é escalar para verdadeira identidade do site"
+
+Diagnóstico: o site v0.9 (e o draft v0.10 inicial) ainda apresentavam o lab como "papers de educação no Rio com 2 MVPs e relatórios". A identidade verdadeira do que foi construído é **um pipeline em produção que processa papers acadêmicos contra TODOS os dados públicos do Rio (9.855 itens) e produz achados auditáveis quando há cobertura**. HEX-EDU e VULN-EDU são saídas de exemplo, não produtos.
+
+**Decisões (via AskUserQuestion rodada 2):**
+- Big swing — pivot completo (~1.500 LoC).
+- Audiência primária: ambos em camadas (visitor camada 1, researcher camada 2).
+
+**Mudanças centrais:**
+
+1. **Landing reescrita finalmente funnel-first** (`docs/index.md`):
+   - H1: "Da academia até o achado, com paper e código."
+   - Hero viz: **Plotly Funnel** (253 → 43 → 12 → 3) substituindo o `hero_toggle` (mapa IDEB) — o hero agora prova a identidade do site (o pipeline), não um achado isolado.
+   - Camada 1 visitor: 3 achados como cards (Theil, Pereira, Reardon) com perguntas-resposta + finding-first prose.
+   - Camada 2 researcher: big-nums do sistema (253 / 43 / 12 / 3) + 4 cards explicando cada estágio do funil + 2 vizes (cobertura donut + temas bar).
+   - Princípios + DOI + cite no fim.
+
+2. **Novo script `analysis/25_funnel_state.py`** — lê `papers_funnel.yml`, `papers_catalog.yml`, `manifest.json`, `requirements_taxonomy.yml` e gera 4 artefatos:
+   - `docs/_assets/charts/funnel.json` (Plotly Funnel 4 estágios)
+   - `docs/_assets/charts/data_rio_coverage.json` (Donut 4 ativos / 9.851 órfãos)
+   - `docs/_assets/charts/themes.json` (Bar horizontal 10 categorias × candidatos no funil)
+   - `data/processed/funnel_state.json` (métricas flat para CI/docs)
+
+3. **Páginas novas:**
+   - `docs/achados.md`: index dos 3 replicados com anchors `#desigualdade`, `#acessibilidade`, `#vulnerabilidade`. Cada achado: question + headline + lede + viz + "como auditar". Mais "próximos achados" (6 pending no catálogo).
+   - `docs/dados.md`: explorer do data.rio. Hero "9.855 itens · 4 ativados · 9.851 inexplorados". Donut + bar de temas. 10 categorias canônicas. Top-10 tipos. Walkthrough do matching paper↔dado.
+
+4. **`docs/papers/index.md` reorganizado por TEMA** (via `analysis/32_render_papers_pages.py` reescrito):
+   - 5 temas: Desigualdade & equidade · Acessibilidade & geografia escolar · Sociologia & efeito-escola · Política educacional & avaliação · Economia da educação.
+   - Mapping `THEMES` em script: cada paper assigned a um tema único baseado em prioridade da lista `area` no YAML.
+   - Dentro do tema: replicados primeiro, pending depois, unfeasible no fim.
+
+5. **Mini-pages dos 12 papers — template novo story-driven** (3 variants em `analysis/32_render_papers_pages.py`):
+   - `full`/`partial`: H1 é a `applied_finding_question` do YAML; **lead headline**; lede; status hero; "O que esse paper diz" (abstract); "Aplicado ao Rio" (policy_insight + link produto); "Como auditar" (relatórios + scripts); Provenance compactado no fim.
+   - `pending`: H1 com pergunta; "Por que dá pra rodar no Rio" com cobertura table; Provenance.
+   - `unfeasible`: H1 com pergunta; "Falta dado essencial: X"; "O que precisaria pra rodar"; Provenance.
+   - YAML schema estendido: campos opcionais `applied_finding_question` + `applied_finding_headline` + `applied_finding_lede`. Adicionados aos 3 replicados (Theil, Pereira, Reardon). Fallback gracioso pra papers sem esses campos.
+
+6. **MVPs como detail pages, não destinos:**
+   - `docs/produtos/hex_edu.md` reescrito finding-first com 2 anchors (`#desigualdade` + `#acessibilidade`). H1: "HEX-EDU — detalhe técnico". Lede: "Saída do funil. Dois papers cruzados num substrato comum (H3 + bairros)."
+   - `docs/produtos/vuln_edu.md` tightenado. H1: "VULN-EDU — detalhe técnico".
+   - `docs/produtos/index.md` deletado (função absorvida por `achados.md`).
+
+7. **Páginas reframed pra voz visitor-side:**
+   - `docs/bairros-prioritarios.md`: H1 "Bairros que sofrem dois sinais ao mesmo tempo". Drop "ortogonal/MVP-1/interpretação política fica com o leitor" defensivo.
+   - `docs/mapa.md`: H1 "Onde a educação no Rio é mais desigual (por bairro)". Lede focado no achado, especs técnicas em seção secundária.
+   - `docs/investigacao.md`: H1 "Como o lab descobriu isso (histórico técnico)". Drop "sala de máquinas".
+   - `docs/sobre.md`: lede atualizado pra "pipeline aberto" + links de Histórico/API/Reproduzir.
+
+8. **Nav reorganizado** (mkdocs.yml):
+   - **Antes (v0.9):** Início · Papers · Dados · Mapa · Achados · Reproduzir · Sobre (7)
+   - **Depois (v0.10):** Início · Achados · Papers · Dados · Sobre (5 com sub-itens)
+   - "Achados" no nav agora aponta pra `achados.md` (não mais `investigacao.md`).
+   - "Histórico técnico" + "Reproduzir" viram sub-itens de Sobre.
+   - HEX-EDU/VULN-EDU/Bairros/Mapa viram sub-itens de Achados.
+
+9. **`data/papers_catalog.yml`**: schema doc estendido. 3 papers replicados ganham `applied_finding_*` fields.
+
+**Verificações verdes:**
+- `mkdocs build --strict`: 0 warnings.
+- `pytest tests/`: 19/19.
+- `pytest reference/acec-hub/tests/test_acec_stats.py`: 20/20.
+- `analysis/31_build_paper_catalog.py --validate-funnel`: ok (253 candidates).
+- `analysis/41_match_requirements.py`: 27 requirements, 0 unmapped, sem drift em `papers-by-data-rio.md`.
+
+**LoC: ~1.500 líquido** (criados: 25_funnel_state.py + achados.md + dados.md + 4 JSONs; reescritos: index.md + papers/index.md + 12 mini-pages + hex_edu + bairros + mapa + investigacao reframings + 32_render_papers_pages.py; deletado: produtos/index.md).
+
+**Próximos passos (v0.11+):**
+- Browse reverso "item data.rio → papers candidatos" como UX page.
+- Curadoria dos 100 candidatos Stage 3 do funil (decision: accept/reject).
+- Expandir snowball: novos seeds temáticos pra ampliar 253 → 500+.
+- Filtro client-side em `papers/?theme=X`.
+- Achado-da-semana / timeline interativa.
+
 ## [Unreleased — v0.9 in progress]
 
 ### v0.9 — redesign do site (landing + IA + voz)

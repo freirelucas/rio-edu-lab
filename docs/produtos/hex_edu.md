@@ -1,86 +1,102 @@
 ---
-title: HEX-EDU — H3 hexagonal grid aplicado ao IDEB do Rio
-description: Operacionalização da metodologia Pereira et al. (2019) IPEA para acessibilidade educacional no Rio Municipal.
+title: HEX-EDU — detalhe técnico (Theil + Pereira aplicados ao Rio)
+description: Decomposição Theil-T do IDEB por bairro + acessibilidade Pereira-style. Substrato H3 res 8 (1.593 hexes). Achados, viz e código.
 ---
 
-# HEX-EDU
+# HEX-EDU — detalhe técnico
 
-> Aplicação do **H3 hexagonal grid** ao IDEB municipal carioca. **v0.6.1 entrega replicação parcial de Pereira et al. (2019) IPEA**: acessibilidade ponderada por IDEB. v0.5 decomposição Theil-T continua disponível como análise complementar.
+> **Saída do funil. Dois papers cruzados num substrato comum (H3 res 8 + bairros IPP).**
+> Theil (1967) responde "onde está a desigualdade do IDEB"; Pereira et al. (2019) responde "qual zona tem mais acesso a boas escolas".
 
-[![paper](https://img.shields.io/badge/paper--base-Pereira_et_al._2019_IPEA-008572)](https://hdl.handle.net/10419/240730)
-[![v0.6](https://img.shields.io/badge/v0.6.1-acessibilidade_haversine-2166ac)](../reports/14_acessibilidade.md)
-[![v0.5](https://img.shields.io/badge/v0.5-Theil_decomposition-008572)](../reports/06_theil_ideb.md)
-[![mapa](https://img.shields.io/badge/mapa_interativo-%E2%86%92-2166ac)](../mapa.md)
+[← Voltar pra Achados](../achados.md){ .md-button }
 
-## Paper-base
+## Desigualdade do IDEB — 66% within-RA { #desigualdade }
 
-**Pereira, R. H. M.; Braga, C. K. V.; Serra, B.; Nadalin, V. G. (2019).** *Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras — 2019.* IPEA Texto para Discussão. <https://hdl.handle.net/10419/240730>
+**Achado:** **66% da variância do IDEB municipal carioca está dentro das Regiões Administrativas, não entre.** Robusto em 6 séries × 9 anos: a parcela within-RA fica entre 59% e 73%. Nenhuma série cruza paridade 50%.
 
-**Método dos autores**: discretização do território urbano em hexágonos H3 (resolução variável conforme densidade), cálculo de **acessibilidade a oportunidades** (educação, saúde, emprego, lazer) ponderada pela **proximidade temporal** (isócronas via OSM) e pela **qualidade/quantidade** da oportunidade. Decomposição da acessibilidade por **renda** e **raça** revela inequidades sistemáticas: pessoas brancas e de alta renda têm maior acessibilidade.
+**Paper:** Theil, H. (1967). *Economics and Information Theory*. North-Holland. [Mini-page →](../papers/theil-1967-economics.md)
 
-**Cidades cobertas no paper**: São Paulo, Rio de Janeiro, Belo Horizonte, Recife, Fortaleza, Porto Alegre, Curitiba (transporte público) + 20 cidades para transporte ativo.
+**Método aplicado.** Decomposição Theil-T (índice GE(α=1)) do IDEB por bairro, particionado por RA:
 
-<div class="policy-callout" markdown>
-  <header>
-    <span class="icon" aria-hidden="true">🔬</span>
-    <h3>Insight da replicação aplicado ao Rio</h3>
-  </header>
-  <div class="body" markdown>
-  <div class="cell" markdown>
-**Achado replicado**: aplicando a acessibilidade Pereira-style (H3 res 8 + IDEB ponderado por distância, raio 5 km, `d0 = 1.5 km`) sobre 1022 escolas elegíveis e 1593 hexes, **AP 3 (Zona Norte) lidera o acesso ponderado (média 113)**. Centro (AP 1) fica em 96, Zona Sul (AP 2) em 59, AP 4 (Barra/Jacarepaguá) em 29.
+$$T_{total} = T_{between} + T_{within}$$
 
-**Caveat do paper**: Pereira et al. (2019) usa isócronas reais via OSM road network e decompõe a acessibilidade por **renda** e **raça**. Nossa replicação parcial usa distância haversine e ainda não decompõe por SES — a v0.7 traz osmnx + IDS/IPS. O achado fica dentro do escopo já replicado; não há claim sobre causalidade ou prescrição de política.
-  </div>
-  </div>
-  <footer><a href="../../reports/14_acessibilidade/">Como auditar: relatório 14 + <code>analysis/26_hex_accessibility.py</code> →</a></footer>
-</div>
+onde `T_within / T_total` mede a fração da desigualdade que vive dentro das RAs (não entre).
 
-## v0.6.1 — acessibilidade ponderada por IDEB ✅
+### Robustez (6 séries × 9 anos)
 
-Para cada hex H3 (1593 unidades, res 8) computamos:
+<div data-chart="../_assets/charts/tour_slide_3.json"></div>
+
+A parcela within-RA fica entre 59% e 73% em todos os 9 anos, em todas as 6 séries (5º, 9º, ponderado por matrícula, Aprovação/SAEB/IDEB).
+
+### Visualização espacial (RA vs H3)
+
+![HEX-EDU 2023](../reports/_assets/07_hex_edu_2023.png)
+
+Esquerda: por RA (33 unidades). Direita: por hex H3 (1.593, resolução 8). Mesma escala de cor, mesmo dado. Bolsões vermelhos visíveis na direita estão dentro de RAs cuja média é "ok".
+
+[:material-map: Versão interativa em /mapa/](../mapa.md){ .md-button }
+
+### Como auditar
+
+- [Relatório 06 — Decomposição Theil do IDEB por bairro](../reports/06_theil_ideb.md)
+- [Relatório 11 — Theil 3-níveis (AP/RA/bairro)](../reports/11_thesha_rio.md): 8% / 26% / 67%
+- Código: `analysis/10_theil_ideb.py`, `analysis/16_theil_weighted.py`, `analysis/18_thesha_rio.py`
+
+```python
+from acec.stats import theil_decompose
+import pandas as pd
+df = pd.read_csv("data/processed/ideb_bairros.csv")
+df = df[df["year"] == 2023].dropna()
+t, tb, tw = theil_decompose(df["ideb"], df["ra"])
+print(f"share_within = {tw/t:.0%}")  # 68%
+```
+
+---
+
+## Acessibilidade — AP 3 lidera, não Zona Sul { #acessibilidade }
+
+**Achado:** **AP 3 (Zona Norte) lidera o acesso ponderado por IDEB com média 113.** Centro (AP 1) fica em 96, Zona Sul (AP 2) em 59, AP 4 (Barra/Jacarepaguá) em 29. **Densidade vence qualidade isolada.**
+
+**Paper:** Pereira, R. H. M., Braga, C. K. V., Serra, B., & Nadalin, V. G. (2019). *Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras — 2019*. IPEA Texto para Discussão 2535. [Mini-page →](../papers/pereira-2019-ipea.md)
+
+**Método aplicado (parcial).** Para cada hex H3 (1.593 unidades, res 8) computamos:
 
 ```
 acesso_quality(i) = Σ_j IDEB(j) · exp(-d(i,j)/d0)
 ```
 
-onde j são os equipamentos eleg. (Escola Municipal + CIEP + Especial = 1022) em raio de 5 km, `d` é a distância haversine ao equipamento, e `d0 = 1.5 km` é o parâmetro de impedância. **`acesso_quality` é a métrica Pereira-style**: oportunidade educacional ponderada pela qualidade de cada opção e penalizada exponencialmente pela distância.
+onde *j* são as escolas elegíveis (Municipal + CIEP + Especial = 1.022) em raio de 5 km, *d* é a distância haversine, e `d0 = 1.5 km` é o parâmetro de impedância.
 
-**Achado da v0.6.1**: AP 3 (Zona Norte) lidera o acesso ponderado (média **113**), seguida do Centro (96). Zona Sul fica em 59 e AP 4 (Barra/Jacarepaguá) em 29. **Zona Norte alta densidade > Zona Sul alta qualidade isolada**. Detalhes técnicos no [Relatório 14](../reports/14_acessibilidade.md).
+### Limites da replicação atual
 
-**Próximo (v0.7)**: substituir distância haversine por isócronas reais via OSM road network (osmnx) + decompor por SES real (IPS/IDS).
+- Pereira et al. usam isócronas reais via OpenTripPlanner (rede viária + GTFS). Aqui usamos haversine como proxy — versão futura precisa adicionar OSM + GTFS RioCard (categoria `travel-network` no funil, hoje **external**).
+- Decomposição por **renda** e **raça** do paper original não está replicada — fica pra próximo bump quando microdado SES per-hex estiver disponível.
 
-## v0.5 — decomposição Theil-T ✅
+### Como auditar
 
-Análise complementar da inequidade do IDEB municipal por bairro. Usa o mesmo grid H3 da v0.6 mas aplica decomposição de Theil em vez de métrica de acesso.
+- [Relatório 14 — Acessibilidade Pereira-style](../reports/14_acessibilidade.md)
+- Código: `analysis/13_hex_edu_static.py`, `analysis/14_hex_edu_folium.py`
 
-**Achado**: 66% da desigualdade do IDEB municipal carioca está **dentro das RAs**, não entre. Coropléticos por RA mascaram a maior parte da variância. ([Relatório 06](../reports/06_theil_ideb.md))
+---
 
-Ambas as análises usam o mesmo substrato espacial (H3 res 8 + bairros oficiais IPP). A v0.6 mede "quanta opção tenho perto"; a v0.5 mede "quanta variância existe entre opções, agregada por escala administrativa".
+## Caveats compartilhados
 
-## Visualizações disponíveis hoje
+- **MAUP** (Modifiable Areal Unit Problem, Brewer & Pickle 1999): sensibilidade à definição de unidade de área. Documentado.
+- **Apenas rede municipal.** Bairros com escola privada/estadual dominante saem do dataset municipal de IDEB.
+- **Peso igual por bairro** na versão base; ponderação por matrícula reduz T_total ~44% mas preserva achado within > between ([Relatório 06b](../reports/06b_theil_weighted.md)).
 
-### Mapa estático: RA vs H3 (2023)
+## Substrato espacial (compartilhado pelas duas análises)
 
-![HEX-EDU 2023](../reports/_assets/07_hex_edu_2023.png)
+Ambas usam o mesmo grid:
 
-Esquerda: por RA (33). Direita: por hex H3 (1593). Mesma escala de cor, mesmo dado. Bolsões vermelhos visíveis na direita estão dentro de RAs cuja média é "ok".
+- **H3 hexagonal grid**, resolução 8 (~0,7 km² por hex)
+- **1.593 hexes** cobrindo o município
+- **163 bairros oficiais** (IPP) como partição administrativa
+- Geometry: data.rio item `dc94b29fc3594a5bb4d297bee0c9a3f2`
 
-[:material-map: Versão interativa em /mapa/](../mapa.md){ .md-button }
+A v0.6 mede "quanta opção tenho perto"; a v0.5 mede "quanta variância existe entre opções, agregada por escala administrativa". Mesmo substrato, perguntas diferentes — duas saídas do funil sobre o mesmo dado.
 
-### Robustez do achado Theil (linha do tempo, 6 séries)
-
-<div data-chart="../../_assets/charts/tour_slide_3.json"></div>
-
-A parcela within-RA fica entre 59% e 73% em todos os 9 anos, em todas as 6 séries (5º, 9º, ponderado, Aprovação, SAEB, IDEB).
-
-## Caveats
-
-- **A v0.5 não é Pereira et al. 2019 ainda**. É uma sub-análise (Theil sobre H3 grid) que reusa o substrato espacial. A replicação completa fica para v0.6 — declarado explicitamente.
-- **Apenas rede municipal**. Bairros com escola privada/estadual dominante saem do dataset municipal de IDEB.
-- **MAUP** (Brewer & Pickle 1999): sensibilidade à definição de unidade de área. Documentado.
-- **Peso igual por bairro** na versão base. Ponderação por matrícula reduz T_total ~44% mas preserva o achado within > between (Relatório 06b).
-
-## Reproduzir (v0.5)
+## Reproduzir
 
 ```bash
 pip install -r requirements.txt
@@ -94,23 +110,6 @@ python3 analysis/13_hex_edu_static.py      # mapas estáticos
 python3 analysis/14_hex_edu_folium.py      # mapa interativo
 ```
 
-Sanity check do achado:
-
-```python
-from acec.stats import theil_decompose
-import pandas as pd
-df = pd.read_csv("data/processed/ideb_bairros.csv")
-df = df[df["year"] == 2023].dropna()
-t, tb, tw = theil_decompose(df["ideb"], df["ra"])
-print(f"share_within = {tw/t:.0%}")  # 68%
-```
-
-## Referências
-
-- **Pereira, R. H. M.; Braga, C. K. V.; Serra, B.; Nadalin, V. G. (2019).** *Desigualdades socioespaciais de acesso a oportunidades nas cidades brasileiras — 2019.* IPEA. <https://hdl.handle.net/10419/240730>. **Paper-base canônico do HEX-EDU**.
-- **Theil, H. (1967).** *Economics and Information Theory*. North-Holland. **Método estatístico-base da decomposição Theil-T usada na sub-análise atual.**
-- Brewer, C. A.; Pickle, L. (1999) — método do MAUP, citado nos caveats.
-
 ## Continue
 
 <div class="grid cards" markdown>
@@ -118,6 +117,6 @@ print(f"share_within = {tw/t:.0%}")  # 68%
 -   [:material-map: Mapa interativo](../mapa.md)
 -   [:material-library-shelves: Papers](../papers/index.md)
 -   [:material-format-list-bulleted: Bairros prioritários](../bairros-prioritarios.md)
--   [:material-book-open-variant: Investigação técnica](../investigacao.md)
+-   [:material-magnify: Outros achados](../achados.md)
 
 </div>

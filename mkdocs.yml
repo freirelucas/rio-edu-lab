@@ -56,18 +56,21 @@ validation:
 
 nav:
   - Início: index.md
-  - Papers: papers/index.md
-  - Dados: data-rio-api.md
-  - Mapa: mapa.md
   - Achados:
-      - Visão geral: investigacao.md
-      - HEX-EDU: produtos/hex_edu.md
-      - VULN-EDU: produtos/vuln_edu.md
+      - Visão geral: achados.md
+      - HEX-EDU (Theil + Pereira): produtos/hex_edu.md
+      - VULN-EDU (Reardon): produtos/vuln_edu.md
       - Bairros prioritários: bairros-prioritarios.md
-      - Produtos (índice): produtos/index.md
+      - Mapa interativo: mapa.md
+  - Papers: papers/index.md
+  - Dados:
+      - Visão geral: dados.md
+      - API técnica do data.rio: data-rio-api.md
       - Papers por item do data.rio: papers-by-data-rio.md
-  - Reproduzir: reproduzir.md
-  - Sobre: sobre.md
+  - Sobre:
+      - Visão geral: sobre.md
+      - Histórico técnico: investigacao.md
+      - Reproduzir: reproduzir.md
 
 markdown_extensions:
   - admonition

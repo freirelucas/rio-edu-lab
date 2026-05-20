@@ -5,7 +5,13 @@ description: O que o lab é, como citá-lo, glossário dos termos técnicos e pa
 
 # Sobre
 
-O **rio-edu-lab** é um laboratório de replicação de papers em educação contra os dados públicos do Rio de Janeiro. Para cada paper do catálogo, o lab lista os requisitos de dados, bate contra os 9.855 itens públicos do [data.rio](data-rio-api.md), declara o status de replicação e (quando os dados existem) publica o achado + código + relatório técnico. Catálogo versionado em YAML auditável via git, pipeline reproduzível ponta-a-ponta, 28 testes invariantes verdes em CI, DOI Zenodo. Sem claim de causalidade — só replicação literal de método publicado contra dado público.
+O **rio-edu-lab** é um pipeline aberto de replicação de papers acadêmicos sobre educação contra os 9.855 dados públicos do Rio de Janeiro. **4 estágios:** descoberta via snowball bibliométrico, filtro temático contra a [taxonomia de 10 categorias](dados.md), checagem de cobertura no data.rio, curadoria e replicação. Pipeline reproduzível ponta-a-ponta, 28 testes invariantes verdes em CI, DOI Zenodo. Sem claim de causalidade — só replicação literal de método publicado contra dado público.
+
+**Páginas relacionadas:**
+
+- [Histórico técnico](investigacao.md) — os 15 relatórios cronológicos de como o lab foi se construindo desde o inventário do data.rio.
+- [API técnica do data.rio](data-rio-api.md) — endpoints validados pra quem quer baixar dado direto do portal.
+- [Reproduzir em 4 minutos](reproduzir.md) — clone limpo → charts da landing.
 
 ## Citar
 

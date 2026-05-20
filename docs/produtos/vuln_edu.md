@@ -1,15 +1,17 @@
 ---
-title: VULN-EDU — gradiente socioeconômico × educacional por bairro
-description: Cruzamento IDS (Censo 2010) × IDEB 2023 por bairro do Rio. Achado v0.1 — 40% de correlação, mas só 16% de R²; metade dos bairros está em quadrantes não-concordantes.
+title: VULN-EDU — detalhe técnico (Reardon aplicado ao Rio)
+description: Cruzamento IDS Censo 2010 × IDEB 2023 por bairro. Pearson +0,40, R²=0,16. 39% dos bairros desafiam o gradiente esperado.
 ---
 
-# VULN-EDU
+# VULN-EDU — detalhe técnico
 
-> **Vulnerabilidade socioeconômica prediz desempenho educacional no Rio?** Parcialmente. A correlação IDS × IDEB existe (Pearson +0.40), mas o IDS explica só **16%** da variância do IDEB municipal. **Quase metade dos bairros desafia o gradiente esperado** — 22% são resilientes (baixo SES, bom IDEB), 17% sub-performam (bom SES, baixo IDEB).
+> **Saída do funil.** Replicação parcial de Reardon (2011) aplicada intra-Rio: IDS Censo 2010 × IDEB 2023 por bairro (144 bairros, 98% do município).
 
-[![paper](https://img.shields.io/badge/paper--base-Reardon_2011-008572)](https://cepa.stanford.edu/sites/default/files/reardon%20whither%20opportunity%20-%20chapter%205.pdf)
-[![v0.1](https://img.shields.io/badge/v0.1-IDS_%C3%97_IDEB_bairros-2166ac)](../reports/15_vuln_edu.md)
-[![mapa](https://img.shields.io/badge/mapa_de_quadrantes-%E2%86%92-2166ac)](../reports/15_vuln_edu.md)
+[← Voltar pra Achados](../achados.md){ .md-button }
+
+## Achado
+
+**Vulnerabilidade socioeconômica prediz desempenho educacional no Rio? Parcialmente.** Correlação IDS × IDEB existe (Pearson +0,40), mas o IDS explica só **16%** da variância do IDEB municipal. **39% dos bairros desafiam o gradiente esperado** — 22% resilientes (baixo SES, bom IDEB), 17% sub-performando (bom SES, baixo IDEB).
 
 ## Paper-base
 
@@ -105,9 +107,9 @@ python3 analysis/30_vuln_edu_charts.py
 
 <div class="grid cards" markdown>
 
+-   [:material-magnify: Outros achados](../achados.md)
 -   [:material-library-shelves: Papers](../papers/index.md)
--   [:material-map: Mapa interativo](../mapa.md)
 -   [:material-format-list-bulleted: Bairros prioritários](../bairros-prioritarios.md)
--   [:material-book-open-variant: Investigação técnica](../investigacao.md)
+-   [:material-map: Mapa interativo](../mapa.md)
 
 </div>
