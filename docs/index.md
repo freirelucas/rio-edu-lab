@@ -1,6 +1,6 @@
 ---
-title: rio-edu-lab — papers de educação testados contra os dados públicos do Rio
-description: Catálogo de papers de educação cruzados com os 9.855 datasets públicos do data.rio. Status de replicação, código aberto, DOI Zenodo. Reproduzível em 4 minutos.
+title: rio-edu-lab — pipeline aberto de replicação de papers de educação contra os dados públicos do Rio
+description: Um sistema que processa papers acadêmicos sobre educação contra os 9.855 itens do data.rio. 253 candidatos no funil, 12 no catálogo curado, 3 replicados. Aberto em todos os passos.
 hide:
   - toc
 ---
@@ -8,75 +8,135 @@ hide:
 <div class="hero" markdown>
 
 <div class="hero-text" markdown>
-# Selecione um paper. Cheque se replica no Rio. Reproduza em 4 minutos.
+# Da academia até o achado, com paper e código.
 
-> Cada paper de educação aqui é cruzado com os 9.855 datasets públicos do Rio.
-> Se os dados existem, replicamos. O código é seu.
+> Um pipeline aberto que processa papers acadêmicos sobre educação contra os **9.855 itens públicos do data.rio**. Aberto em todos os passos: você vê o que entrou no funil, o que sobreviveu, e o que virou achado.
 
-[:material-library-shelves: Explorar papers](papers/index.md){ .md-button .md-button--primary }
-[:material-filter-check-outline: O que dá pra replicar](papers/index.md#replicados-3){ .md-button }
-[:material-rocket-launch-outline: Rodar você mesmo](reproduzir.md){ .md-button }
+[:material-magnify: Achados](achados.md){ .md-button .md-button--primary }
+[:material-library-shelves: Papers](papers/index.md){ .md-button }
+[:material-database-search: Dados](dados.md){ .md-button }
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620)
 </div>
 
 <div class="hero-viz" markdown>
-<div id="hero-toggle-map" data-chart="_assets/charts/hero_toggle.json"></div>
+<div data-chart="_assets/charts/funnel.json"></div>
 </div>
 
 </div>
 
-## Como funciona
+## O que descobrimos até agora
 
-Pegamos 12 papers de educação relevantes pro Rio. Pra cada um, listamos os dados que ele precisa, batemos contra o [data.rio](data-rio-api.md) e marcamos: **✅ replicado** · **⚠ parcial** · **⛔ falta dado**. Quando replicamos, publicamos o achado e o código. Quando não dá, dizemos o que tá faltando. Tudo aberto, tudo versionado, [reprodutível em 4 minutos](reproduzir.md).
+Três achados sobre educação no Rio. Cada um é a replicação literal de um paper acadêmico publicado, aplicado aos dados públicos do município. Sem opinião, sem extrapolação — só método aberto contra dado aberto.
+
+<div class="paper-grid">
+
+<a class="paper-card status-full" href="achados/#desigualdade">
+  <span class="drop-cap" aria-hidden="true">1</span>
+  <h4>Onde está a desigualdade educacional?</h4>
+  <p class="meta">Theil (1967) · IDEB por bairro</p>
+  <p class="insight"><strong>Dentro dos bairros, não entre regiões.</strong> 66% da variância do IDEB municipal carioca está dentro das Regiões Administrativas. Coropléticos por RA escondem a maior parte do problema.</p>
+  <span class="cta">Ver achado →</span>
+</a>
+
+<a class="paper-card status-partial" href="achados/#acessibilidade">
+  <span class="drop-cap" aria-hidden="true">2</span>
+  <h4>Qual zona tem mais acesso a boas escolas?</h4>
+  <p class="meta">Pereira et al. (2019) · acessibilidade ponderada</p>
+  <p class="insight"><strong>AP 3 (Zona Norte) lidera — não a Zona Sul.</strong> Acesso ponderado por IDEB: AP 3 com 113, AP 4 com 29. A Zona Sul tem IDEB médio mais alto mas baixa densidade de escolas boas.</p>
+  <span class="cta">Ver achado →</span>
+</a>
+
+<a class="paper-card status-partial" href="achados/#vulnerabilidade">
+  <span class="drop-cap" aria-hidden="true">3</span>
+  <h4>Riqueza prediz boa escola no Rio?</h4>
+  <p class="meta">Reardon (2011) · IDS Censo × IDEB</p>
+  <p class="insight"><strong>Parcialmente.</strong> Gradiente SES → IDEB é real (Pearson +0,40) mas modesto (R²=0,16). <strong>39% dos bairros</strong> desafiam o gradiente esperado — resilientes ou sub-performando.</p>
+  <span class="cta">Ver achado →</span>
+</a>
+
+</div>
+
+[Ver todos os achados em detalhe →](achados.md){ .md-button }
+
+## O sistema em estado
+
+O pipeline tem 4 estágios, todos auditáveis. Hoje:
 
 <div class="big-num-grid">
-  <div class="big-num"><span class="num">12</span><span class="label">papers no catálogo</span></div>
-  <div class="big-num"><span class="num">3</span><span class="label">replicados</span></div>
-  <div class="big-num"><span class="num">6</span><span class="label">prontos pra replicar</span></div>
-  <div class="big-num"><span class="num">9.855</span><span class="label">datasets do data.rio cobertos</span></div>
+  <div class="big-num"><span class="num">253</span><span class="label">candidatos no funil (snowball bibliométrico)</span></div>
+  <div class="big-num"><span class="num">43</span><span class="label">com tema educacional relevante</span></div>
+  <div class="big-num"><span class="num">12</span><span class="label">papers no catálogo curado</span></div>
+  <div class="big-num"><span class="num">3</span><span class="label">replicados publicados</span></div>
 </div>
 
-## O que já foi replicado
-
-Cada item é um método publicado aplicado literalmente aos dados do data.rio. Achados descritivos — sem claim de causalidade, sem recomendação de política. O leitor decide o que fazer com eles.
-
-- **[Theil (1967)](papers/theil-1967-economics.md) — desigualdade do IDEB por bairro.** Decomposição Theil-T mostra **66% da variância dentro das RAs**, não entre. Robusto em 6 séries × 9 anos. [Relatório 06](reports/06_theil_ideb.md).
-- **[Pereira et al. (2019) IPEA](papers/pereira-2019-ipea.md) — acessibilidade escolar.** Replicação parcial (haversine + IDEB): AP 3 lidera (113), AP 4 último (29). [Relatório 14](reports/14_acessibilidade.md).
-- **[Reardon (2011)](papers/reardon-2011-whither.md) — gradiente SES × educação.** IDS Censo 2010 × IDEB 2023 por bairro: Pearson +0,40, R²=0,16, **39% dos bairros em quadrantes não-concordantes**. [Relatório 15](reports/15_vuln_edu.md).
-
-[Ver todos os papers →](papers/index.md){ .md-button }
-
-## Quem usa isto
+## Como o funil funciona
 
 <div class="grid cards" markdown>
 
--   :material-newspaper-variant-multiple-outline:{ .lg } **Jornalista ou cidadão**
+-   :material-magnify-scan:{ .lg } **Stage 1 — Descoberta**
 
     ---
 
-    Achados em linguagem direta. Cada paper diz o que foi descoberto e o que falta pra checar no Rio.
+    Snowball bibliométrico sobre 20 seeds canônicos da literatura de educação, expansão backward + forward via OpenAlex. Produz 253 candidatos brutos.
 
-    [:octicons-arrow-right-24: Explorar papers](papers/index.md)
+    `analysis/45_bulk_discover.py`
 
--   :material-flask-outline:{ .lg } **Replicador ou pesquisador**
-
-    ---
-
-    Catálogo paper × dado em YAML auditável. DOI Zenodo, pipeline reprodutível, 28 testes em CI.
-
-    [:octicons-arrow-right-24: Sobre o método](sobre.md)
-
--   :material-code-tags:{ .lg } **Desenvolvedor**
+-   :material-filter-variant:{ .lg } **Stage 2 — Filtro temático**
 
     ---
 
-    Pipeline ponta-a-ponta. Pacote `acec` instalável. CSVs derivados em `data/processed/`.
+    Edu-filter por keywords (≥2 termos educacionais EN/PT) + scoring contra 10 categorias da taxonomia. 253 → 43 com tema relevante.
 
-    [:octicons-arrow-right-24: Reproduzir](reproduzir.md)
+    `analysis/46_extract_requirements.py`
+
+-   :material-database-check:{ .lg } **Stage 3 — Cobertura no data.rio**
+
+    ---
+
+    Cada requisito é matchado contra os 9.855 itens do data.rio. Marca status: disponível, parcial, externo (microdado INEP/PNAD), missing. 4 itens ativados hoje, **9.851 inexplorados**.
+
+    `analysis/47_check_coverage.py`
+
+-   :material-check-decagram:{ .lg } **Stage 4 — Promoção ao catálogo**
+
+    ---
+
+    Curadoria humana revisa candidatos e promove ao catálogo. Cada paper aceito ganha mini-page com cruzamento de dados + status de replicação.
+
+    `analysis/48_promote_funnel.py`
 
 </div>
 
-## Licença
+<div class="grid cards" markdown>
 
-Código MIT · dados derivados CC BY 4.0 · dados brutos seguem licença original do [data.rio](https://www.data.rio) / IPP.
+-   :material-chart-donut:{ .lg } **Cobertura do data.rio**
+
+    ---
+
+    <div data-chart="_assets/charts/data_rio_coverage.json"></div>
+
+    4 itens cobertos pelo catálogo. 9.851 inexplorados. [Browse →](dados.md)
+
+-   :material-chart-bar:{ .lg } **Temas no funil**
+
+    ---
+
+    <div data-chart="_assets/charts/themes.json"></div>
+
+    Distribuição dos 253 candidatos por categoria de dado requerida. [Detalhe →](dados.md)
+
+</div>
+
+## Princípios
+
+- **Replicação literal.** O método do paper é aplicado exatamente como publicado. Sem extrapolação, sem opinião — só o que sai dos números.
+- **Aberto em todos os passos.** YAML versionado por git, scripts numerados, CSVs derivados commitados. Cada decisão é auditável.
+- **Cobertura honesta.** Quando o data.rio não tem o dado, dizemos. Os 3 papers `unfeasible` ficam no catálogo como referência, com o que falta documentado.
+- **Sem produto, sem cliente.** O lab é um pipeline de descoberta científica. HEX-EDU e VULN-EDU são saídas de exemplo, não produtos finais.
+
+## Citar e contribuir
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620) · Código MIT · dados derivados CC BY 4.0 · dados brutos seguem licença original do [data.rio](https://www.data.rio) / IPP.
+
+[Reproduzir em 4 minutos](reproduzir.md){ .md-button } [Sobre o lab](sobre.md){ .md-button } [Repo no GitHub](https://github.com/freirelucas/rio-edu-lab){ .md-button }
