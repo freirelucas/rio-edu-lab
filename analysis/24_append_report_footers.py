@@ -6,7 +6,7 @@ restructuring nav).
 
 Each footer is tailored: links forward to the natural next report (or
 to the relevant product page for technical reports) plus 1-2 jumps to
-the public-facing surfaces (tour / mapa / glossário).
+the public-facing surfaces (papers / mapa / sobre).
 """
 
 from __future__ import annotations
@@ -23,24 +23,24 @@ MARKER = "<!-- continue-lendo -->"
 FOOTERS: dict[str, str] = {
     "01_manifest_eda.md": """
 - [02 — Probe da API](02_ingestion_probe.md)
-- [Tour 5 min](../tour.md)
+- [Papers](../papers/index.md)
 - [Reproduzir](../reproduzir.md)
 """,
     "02_ingestion_probe.md": """
 - [03 — Catálogo dos Excels](03_excel_catalog.md)
 - [API do data.rio](../data-rio-api.md)
-- [Tour 5 min](../tour.md)
+- [Papers](../papers/index.md)
 """,
     "03_excel_catalog.md": """
 - [04 — Auditoria do shortlist](04_shortlist_audit.md)
-- [Glossário](../glossario.md)
+- [Sobre — glossário](../sobre.md#glossario)
 """,
     "04_shortlist_audit.md": """
 - [06 — Theil base](06_theil_ideb.md)
 - [HEX-EDU (página de produto)](../produtos/hex_edu.md)
 """,
     "05_pdf_corpus.md": """
-- [Tour 5 min](../tour.md)
+- [Papers](../papers/index.md)
 - [Reproduzir](../reproduzir.md)
 """,
     "06_theil_ideb.md": """
@@ -61,7 +61,7 @@ FOOTERS: dict[str, str] = {
     "08_hex_edu_interactive.md": """
 - [Mapa (página pública)](../mapa.md)
 - [HEX-EDU (página de produto)](../produtos/hex_edu.md)
-- [Tour 5 min](../tour.md)
+- [Papers](../papers/index.md)
 """,
     "09_anos_finais.md": """
 - [12 — FUN-Rio (trajetórias)](12_fun_rio.md)
@@ -69,22 +69,22 @@ FOOTERS: dict[str, str] = {
 """,
     "10_method_replication.md": """
 - [HEX-EDU (página de produto)](../produtos/hex_edu.md)
-- [Glossário](../glossario.md)
+- [Sobre — glossário](../sobre.md#glossario)
 """,
     "11_thesha_rio.md": """
-- [THESHA-Rio (página de produto)](../produtos/thesha_rio.md)
+- [HEX-EDU (produto canônico — Theil 3-níveis vive aqui como robustez)](../produtos/hex_edu.md)
 - [HEX-EDU (2-níveis)](../produtos/hex_edu.md)
 - [Bairros prioritários](../bairros-prioritarios.md)
 """,
     "12_fun_rio.md": """
-- [FUN-Rio (página de produto)](../produtos/fun_rio.md)
-- [Bairros prioritários](../bairros-prioritarios.md)
+- [Bairros prioritários (cruzamento com PM-12)](../bairros-prioritarios.md)
 - [09 — IDEB séries finais (9º)](09_anos_finais.md)
+- [HEX-EDU (produto canônico)](../produtos/hex_edu.md)
 """,
     "13_pm_12.md": """
-- [PM-12 (página de produto)](../produtos/pm_12.md)
-- [Bairros prioritários](../bairros-prioritarios.md)
-- [FUN-Rio](../produtos/fun_rio.md)
+- [Bairros prioritários (cruzamento SAMI + Δ FUN)](../bairros-prioritarios.md)
+- [Trajetórias 5º→9º (Relatório 12)](12_fun_rio.md)
+- [HEX-EDU (produto canônico)](../produtos/hex_edu.md)
 """,
 }
 

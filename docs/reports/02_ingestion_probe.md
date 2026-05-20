@@ -81,4 +81,4 @@ _Portal: `https://pcrj.maps.arcgis.com/sharing/rest`_
 !!! tip ""
     - [03 — Catálogo dos Excels](03_excel_catalog.md)
     - [API do data.rio](../data-rio-api.md)
-    - [Tour 5 min](../tour.md)
+    - [Papers](../papers/index.md)

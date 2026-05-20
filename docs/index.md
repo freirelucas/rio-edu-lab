@@ -1,6 +1,6 @@
 ---
-title: rio-edu-lab — laboratório de replicação de papers em educação aplicados ao Rio
-description: Catálogo aberto de papers em educação cruzados com o data.rio. Replicação fria, exata e replicável; insight literal aplicado ao Rio sem extrapolação. Mapa H3 + decomposição Theil + DOI Zenodo.
+title: rio-edu-lab — papers de educação testados contra os dados públicos do Rio
+description: Catálogo de papers de educação cruzados com os 9.855 datasets públicos do data.rio. Status de replicação, código aberto, DOI Zenodo. Reproduzível em 4 minutos.
 hide:
   - toc
 ---
@@ -8,13 +8,14 @@ hide:
 <div class="hero" markdown>
 
 <div class="hero-text" markdown>
-# Replicação **fria, exata e replicável** de papers em educação aplicados ao Rio.
+# Selecione um paper. Cheque se replica no Rio. Reproduza em 4 minutos.
 
-> Catálogo aberto de papers seminais. Cada entrada cruza **método publicado** × **dados abertos do data.rio**. Replicação exata quando os dados permitem; insight literal aplicado ao Rio, sem extrapolação.
+> Cada paper de educação aqui é cruzado com os 9.855 datasets públicos do Rio.
+> Se os dados existem, replicamos. O código é seu.
 
-[:material-library-shelves: Ver o catálogo](papers/index.md){ .md-button .md-button--primary }
-[:material-map: Mapa interativo](mapa.md){ .md-button }
-[:material-rocket-launch-outline: Tour de 5 minutos](tour.md){ .md-button }
+[:material-library-shelves: Explorar papers](papers/index.md){ .md-button .md-button--primary }
+[:material-filter-check-outline: O que dá pra replicar](papers/index.md#replicados-3){ .md-button }
+[:material-rocket-launch-outline: Rodar você mesmo](reproduzir.md){ .md-button }
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620)
 </div>
@@ -25,98 +26,57 @@ hide:
 
 </div>
 
-<div class="how-to-read" markdown>
-### Como ler este site
+## Como funciona
 
-O produto primário é o **[catálogo de papers](papers/index.md)** — cada entrada cruza um paper de educação com a cobertura no data.rio + status de replicação + achado literal aplicado ao Rio. Para a leitura curta, use o **[Tour 5 min](tour.md)**. Para a sala de máquinas (15 relatórios técnicos), **[Investigação](investigacao.md)**.
+Pegamos 12 papers de educação relevantes pro Rio. Pra cada um, listamos os dados que ele precisa, batemos contra o [data.rio](data-rio-api.md) e marcamos: **✅ replicado** · **⚠ parcial** · **⛔ falta dado**. Quando replicamos, publicamos o achado e o código. Quando não dá, dizemos o que tá faltando. Tudo aberto, tudo versionado, [reprodutível em 4 minutos](reproduzir.md).
+
+<div class="big-num-grid">
+  <div class="big-num"><span class="num">12</span><span class="label">papers no catálogo</span></div>
+  <div class="big-num"><span class="num">3</span><span class="label">replicados</span></div>
+  <div class="big-num"><span class="num">6</span><span class="label">prontos pra replicar</span></div>
+  <div class="big-num"><span class="num">9.855</span><span class="label">datasets do data.rio cobertos</span></div>
 </div>
 
-## O que o lab faz
+## O que já foi replicado
 
-Catálogo aberto de **papers em educação aplicados ao Rio**: cada entrada cruza requisitos de dados do paper com itens do [data.rio](https://www.data.rio) (cobertura org-wide desde v0.8 — **9.855 itens em todos os domínios públicos do Rio**, não só os pré-tagueados como educação), indica o status de replicação no lab e (quando replicado) traz um insight para gestores públicos. O catálogo é versionado, auditável via git e enriquecido com citações OpenAlex.
+Cada item é um método publicado aplicado literalmente aos dados do data.rio. Achados descritivos — sem claim de causalidade, sem recomendação de política. O leitor decide o que fazer com eles.
 
-**Estado atual (v0.8):** 12 papers seed catalogados — 3 já operacionalizados em produtos (Pereira 2019, Reardon 2011, Theil 1967), 5 alvo de replicação leve na próxima release (Soares & Andrade, Alves & Soares, Coleman, Hanushek, Reardon & Owens), 4 metodológicos canônicos (Becker, Cunha & Heckman, Hoxby, Card & Krueger). Funil bibliométrico (v0.7.4) descobre candidatos via snowball sobre seeds curados; v0.7.5 calibrou matching paper↔taxonomia. **Roadmap:** expandir para 100 papers em sprints temáticos; broadening da experiência de replicação (per-paper vs per-dataset) em v1.0.
+- **[Theil (1967)](papers/theil-1967-economics.md) — desigualdade do IDEB por bairro.** Decomposição Theil-T mostra **66% da variância dentro das RAs**, não entre. Robusto em 6 séries × 9 anos. [Relatório 06](reports/06_theil_ideb.md).
+- **[Pereira et al. (2019) IPEA](papers/pereira-2019-ipea.md) — acessibilidade escolar.** Replicação parcial (haversine + IDEB): AP 3 lidera (113), AP 4 último (29). [Relatório 14](reports/14_acessibilidade.md).
+- **[Reardon (2011)](papers/reardon-2011-whither.md) — gradiente SES × educação.** IDS Censo 2010 × IDEB 2023 por bairro: Pearson +0,40, R²=0,16, **39% dos bairros em quadrantes não-concordantes**. [Relatório 15](reports/15_vuln_edu.md).
 
-[Ver o catálogo completo →](papers/index.md){ .md-button }
+[Ver todos os papers →](papers/index.md){ .md-button }
 
-<div class="papers-strip" markdown>
-
-<a class="paper-badge" href="produtos/hex_edu/">
-<span class="paper-icon">📐</span>
-<span class="paper-title">HEX-EDU v0.6.1</span>
-<span class="paper-cite">Pereira et al. (2019) IPEA — acessibilidade via H3 · 1022 escolas, 1593 hexes</span>
-</a>
-
-<a class="paper-badge" href="produtos/vuln_edu/">
-<span class="paper-icon">🧭</span>
-<span class="paper-title">VULN-EDU v0.1</span>
-<span class="paper-cite">Reardon (2011) — IDS Censo 2010 × IDEB 2023 · 144 bairros, gradiente modesto (R²=0.16)</span>
-</a>
-
-</div>
-
-> **VULN-EDU v0.1 entregue**: cruzamento IDS Censo 2010 × IDEB 2023 por bairro (144 bairros, 98% do município). Achado: gradiente socioeconômico-educacional real mas modesto (Pearson +0.40, R²=0.16) — **39% dos bairros estão em quadrantes não-concordantes**. Ver [Relatório 15](reports/15_vuln_edu.md).
-
-> **Nota de transparência:** a v0.5 publicou 4 produtos. A revisão v0.6 consolidou em **2 produtos ativos** (HEX-EDU + VULN-EDU). Os 3 cortados (THESHA-Rio, FUN-Rio, PM-12) viraram análises de robustez — o código continua reproduzível, mas a fundamentação acadêmica deles era frágil. Detalhe em [Produtos](produtos/index.md).
-
-## Para quem é isto
+## Quem usa isto
 
 <div class="grid cards" markdown>
 
--   :material-flask-outline:{ .lg } **Replicador / pesquisador**
+-   :material-newspaper-variant-multiple-outline:{ .lg } **Jornalista ou cidadão**
 
     ---
 
-    Catálogo paper × dado, status de replicação, DOI Zenodo, pipeline reprodutível, 39 testes verdes em CI. Schema YAML auditável via git diff.
+    Achados em linguagem direta. Cada paper diz o que foi descoberto e o que falta pra checar no Rio.
 
-    [:octicons-arrow-right-24: Catálogo de papers](papers/index.md)
+    [:octicons-arrow-right-24: Explorar papers](papers/index.md)
 
--   :material-newspaper-variant-multiple-outline:{ .lg } **Jornalista / cidadão**
+-   :material-flask-outline:{ .lg } **Replicador ou pesquisador**
 
     ---
 
-    Achados replicados em linguagem direta. 5 painéis curtos mostram o que sai de cada replicação aplicada ao Rio.
+    Catálogo paper × dado em YAML auditável. DOI Zenodo, pipeline reprodutível, 28 testes em CI.
 
-    [:octicons-arrow-right-24: Tour 5 min](tour.md)
+    [:octicons-arrow-right-24: Sobre o método](sobre.md)
 
 -   :material-code-tags:{ .lg } **Desenvolvedor**
 
     ---
 
-    Pipeline reproduzível ponta-a-ponta, pacote `acec` instalável, CSVs em `data/processed/`.
+    Pipeline ponta-a-ponta. Pacote `acec` instalável. CSVs derivados em `data/processed/`.
 
     [:octicons-arrow-right-24: Reproduzir](reproduzir.md)
 
 </div>
 
-## O que o lab replicou (estado atual)
-
-Cada item é um método publicado aplicado literalmente aos dados do data.rio. Achados são descritivos — nenhum carrega claim de causalidade ou recomendação de política. O leitor decide o que fazer com eles.
-
-- **Theil (1967) — decomposição Theil-T aplicada ao IDEB municipal por bairro**: a parcela within-RA fica em **66%**. Robusto em 6 séries (anos iniciais/finais × ponderação × Aprovação/SAEB/IDEB). ([Relatório 06](reports/06_theil_ideb.md))
-- **Theil hierárquico aplicado em 3 níveis** (AP / RA-em-AP / bairro-em-RA): 8% / 26% / 67%. ([Relatório 11](reports/11_thesha_rio.md))
-- **Pseudocoortes 5º→9º (descritivo, não Mare 1980 fully)**: em 768 transições, 87% pioram. Confound provável: migração à rede privada no 6º ano. ([Relatório 12](reports/12_fun_rio.md))
-- **Lei de escala intra-Rio (escolas × matrícula)**: β = 0,77 (sublinear, R² 0,80). ([Relatório 13](reports/13_pm_12.md))
-- **Pereira et al. (2019) IPEA — acessibilidade Pereira-style (parcial, haversine + IDEB)**: AP 3 lidera (113), AP 4 último (29). ([Relatório 14](reports/14_acessibilidade.md))
-- **Reardon (2011) intra-Rio — gradiente IDS Censo 2010 × IDEB 2023**: Pearson +0,40, R² 0,16, 39% dos bairros em quadrantes não-concordantes. ([Relatório 15](reports/15_vuln_edu.md))
-
-## Citar
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620) — release atual em preparação **v0.7.0**, ver [`CITATION.cff`](https://github.com/freirelucas/rio-edu-lab/blob/main/CITATION.cff).
-
-```bibtex
-@misc{freire2026rioedulab,
-  author       = {Freire, Lucas},
-  title        = {{rio-edu-lab} --- laborat\'orio de replica\c{c}\~ao de papers em educa\c{c}\~ao aplicados ao Rio},
-  year         = {2026},
-  version      = {v0.7.0},
-  doi          = {10.5281/zenodo.20060620},
-  url          = {https://doi.org/10.5281/zenodo.20060620},
-}
-```
-
-> **Renomeação na v0.7.** Até a v0.6.2 o lab era apresentado como "Atlas Cibernético da Educação Carioca". A v0.7 reposiciona o trabalho como **laboratório de replicação de papers**, com o catálogo público como produto primário. O DOI Zenodo é preservado (concept DOI). Detalhe no [CHANGELOG](https://github.com/freirelucas/rio-edu-lab/blob/main/CHANGELOG.md).
-
 ## Licença
 
-Código MIT · dados derivados CC BY 4.0 · dados brutos seguem licença original do data.rio / IPP.
+Código MIT · dados derivados CC BY 4.0 · dados brutos seguem licença original do [data.rio](https://www.data.rio) / IPP.

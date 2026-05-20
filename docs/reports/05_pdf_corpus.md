@@ -74,5 +74,5 @@ Textos completos da 1ª página de cada PDF ficam em `data/raw/pdf/_first_pages/
 ## Continue lendo
 
 !!! tip ""
-    - [Tour 5 min](../tour.md)
+    - [Papers](../papers/index.md)
     - [Reproduzir](../reproduzir.md)

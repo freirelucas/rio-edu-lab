@@ -35,7 +35,7 @@ A premissa do lab é "operacionalização de papers" — não "análises ad hoc 
 
 <div class="grid cards" markdown>
 
--   [:material-rocket-launch-outline: Tour 5 min](../tour.md)
+-   [:material-library-shelves: Papers](../papers/index.md)
 -   [:material-map: Mapa interativo](../mapa.md)
 -   [:material-format-list-bulleted: Bairros prioritários](../bairros-prioritarios.md)
 -   [:material-book-open-variant: Investigação técnica](../investigacao.md)

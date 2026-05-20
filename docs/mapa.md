@@ -30,7 +30,7 @@ Cada hexágono H3 (resolução 8, ≈ 0.7 km²) herda o IDEB do bairro do seu ce
 <div class="grid cards" markdown>
 
 -   [:material-map-outline: Versão estática (4 anos × RA vs H3)](reports/07_hex_edu_static.md)
--   [:material-rocket-launch-outline: Tour 5 min](tour.md)
+-   [:material-library-shelves: Papers](papers/index.md)
 -   [:material-format-list-bulleted: Bairros prioritários](bairros-prioritarios.md)
 -   [:material-text-box-outline: Análise técnica do HEX-EDU](produtos/hex_edu.md)
 

@@ -10,7 +10,7 @@ Os 15 relatórios documentam, em ordem cronológica, como o laboratório se cons
 <div class="how-to-read" markdown>
 ### Como ler esta página
 
-Cada capítulo abre com 2-3 parágrafos contextuais explicando **por que aquela fase aconteceu** e **o que ficou aprendido**. Depois, os relatórios da fase aparecem como cards com link direto. Para a narrativa principal e os produtos finais, vá para [Tour](tour.md) ou [Produtos](produtos/index.md) — esta página é a sala de máquinas.
+Cada capítulo abre com 2-3 parágrafos contextuais explicando **por que aquela fase aconteceu** e **o que ficou aprendido**. Depois, os relatórios da fase aparecem como cards com link direto. Para a narrativa principal e os produtos finais, vá para [Papers](papers/index.md) ou [Produtos](produtos/index.md) — esta página é a sala de máquinas.
 </div>
 
 <div class="chapter" data-num="I" markdown>
@@ -109,7 +109,7 @@ A resposta empírica: parcialmente. Correlação +0.40, R² = 0.16. **39% dos ba
 ## Recursos auxiliares
 
 - [API do data.rio](data-rio-api.md) — endpoints validados pelo probe (relatório 02).
-- [Glossário](glossario.md) — IDEB, Theil, AP, RA, bairro, H3, SAMI, IDS.
+- [Sobre — glossário](sobre.md#glossario) — IDEB, Theil, AP, RA, bairro, H3, SAMI, IDS.
 - [Reproduzir](reproduzir.md) — quickstart técnico ponta-a-ponta.
 
 ## Ler na ordem cronológica

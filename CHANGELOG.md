@@ -2,7 +2,40 @@
 
 Formato adaptado de [Keep a Changelog](https://keepachangelog.com/) e [SemVer](https://semver.org/lang/pt-BR/).
 
-## [Unreleased — v0.8 in progress]
+## [Unreleased — v0.9 in progress]
+
+### v0.9 — redesign do site (landing + IA + voz)
+
+Crítica direta ao header anterior ("Replicação fria, exata e replicável de papers em educação aplicados ao Rio") motivou redesign da camada de apresentação: três adjetivos jargonosos em sequência, defensivo, descrevia o método antes do valor pro visitante.
+
+Decisões:
+- **Voz: ferramenta-utilitária** — direta, action-oriented, sem academiquês.
+- **Audiência primária: curioso geral** (jornalista, cidadão), não pesquisador.
+- **Escopo: landing + IA + voz core** em 4-5 páginas. Mini-pages dos papers continuam intactas (rendering por `32_render_papers_pages.py` mantém formato).
+
+Mudanças:
+- `docs/index.md` reescrito. Hero H1 imperativo ("Selecione um paper. Cheque se replica no Rio. Reproduza em 4 minutos."), sub direto, 3 CTAs (Explorar / O que dá pra replicar / Rodar), seção "Como funciona" em 1 parágrafo, "Estado atual" em big-nums (12 papers · 3 replicados · 6 prontos · 9.855 datasets), bloco "O que já foi replicado" com 3 achados-headline diretos, grid "Quem usa isto" com 3 perfis, fim com licença. Drop dos blocos académicos ("Como ler este site", "Roadmap pós-v0.7", "Renomeação na v0.7").
+- `docs/papers/index.md` (via `analysis/32_render_papers_pages.py`): "Catálogo de papers" → **"Papers"**. Faixas renomeadas: "Catalogados — próxima leitura" → **"Prontos pra replicar"**; "Sem cobertura no data.rio" → **"Faltam dados"**. Drop do bloco "Como ler este catálogo" e da nota de roadmap. Big-num labels tightenados.
+- `docs/reproduzir.md`: H1 "Reproduzir o pipeline" → **"Reproduzir em 4 minutos"**. Footer "Continue" aponta pra Papers + Sobre (em vez de Produtos + Glossário).
+- `docs/data-rio-api.md`: H1 "API do data.rio" → **"Dados do data.rio"**. Frontmatter + lede direto ("9.855 itens públicos.").
+- `docs/sobre.md` (NOVO): combina mission do lab + DOI Zenodo + glossário (condensado) + padrões do deposit Zenodo numa única página. Substitui `glossario.md` + `zenodo-deposit.md`.
+- `mkdocs.yml`: nav reorganizado de 11+ items pra 7 (Início, Papers, Dados, Mapa, Achados, Reproduzir, Sobre). "Tour" sai (função absorvida pela landing). "Produtos > HEX-EDU/VULN-EDU" vira seção dentro de Achados. "Recursos" some — itens viram navegação direta.
+- Deletados: `docs/tour.md`, `docs/glossario.md`, `docs/zenodo-deposit.md`.
+- Links órfãos pra `tour.md` / `glossario.md` em `docs/mapa.md`, `docs/bairros-prioritarios.md`, `docs/investigacao.md`, `docs/produtos/*.md` redirecionados pra `papers/index.md` ou `sobre.md`.
+- `analysis/24_append_report_footers.py`: footers regenerados — `tour.md` → `papers/index.md`, `glossario.md` → `sobre.md#glossario`. Footers de 11/12/13 alinhados aos targets reais (correção de drift script↔reports preexistente: produtos descontinuados thesha_rio/fun_rio/pm_12 não eram mais linkados manualmente, mas o script gerava broken links).
+
+Não regrediu:
+- Mini-pages dos papers (formato + voz mantidos via `32` template).
+- Pipeline analítico (00-23) intocado.
+- `mkdocs build --strict`: 0 warnings.
+- pytest: 19/19 lab + 20/20 acec verdes.
+- 31/32/41 drift checks limpos pós-regen.
+
+Próximos passos (v1.0):
+- Redesign das mini-pages dos papers (story-driven, não mais template auto-renderizado uniforme).
+- Filtro funcional `/papers/?filter=full-coverage` (precisa client-side JS).
+- "Achado da semana" + timeline interativa.
+- Replicator walkthrough page.
 
 ### v0.8 — manifest org-wide (de 186 → 9855 itens)
 

@@ -1,30 +1,24 @@
 ---
-title: "Catálogo de papers — rio-edu-lab"
-description: "Papers em educação aplicados ao Rio: status de replicação + cobertura no data.rio."
+title: "Papers — rio-edu-lab"
+description: "Papers de educação cruzados contra o data.rio. Status de replicação + cobertura de dados + achado quando aplicável."
 ---
 
-# Catálogo de papers
+# Papers
 
-Cada entrada do catálogo é um paper em educação cruzado com o **data.rio**. O lab declara o status de replicação, lista os requisitos de dados, mostra a cobertura no portal e (quando aplicável) aponta o insight para gestores públicos.
+12 papers de educação. Cada um cruzado contra o data.rio. Status de replicação + cobertura de dados + achado quando aplicável.
 
-<div class="how-to-read" markdown>
-### Como ler este catálogo
-
-O catálogo está organizado em três faixas. **Replicados** são papers já operacionalizados em produtos do lab. **Catalogados** são alvos das próximas releases — os dados básicos já estão cobertos no data.rio. **Sem cobertura** são papers seminais que ficam aqui para referência teórica — replicação exigiria fontes externas.
-</div>
+Os papers vivem em **três faixas**: **Replicados** (operacionalizados em produtos do lab), **Prontos pra replicar** (dados cobertos no data.rio, replicação leve na próxima release), **Faltam dados** (papers seminais que pedem fontes fora do portal — ficam aqui pra referência).
 
 <div class="big-num-grid">
-  <div class="big-num"><span class="num">12</span><span class="label">papers no catálogo seed (v0.7)</span></div>
-  <div class="big-num"><span class="num">3</span><span class="label">replicados ou em replicação parcial</span></div>
-  <div class="big-num"><span class="num">6</span><span class="label">catalogados — próxima leitura</span></div>
-  <div class="big-num"><span class="num">3</span><span class="label">sem cobertura no data.rio</span></div>
+  <div class="big-num"><span class="num">12</span><span class="label">papers no catálogo</span></div>
+  <div class="big-num"><span class="num">3</span><span class="label">replicados</span></div>
+  <div class="big-num"><span class="num">6</span><span class="label">prontos pra replicar</span></div>
+  <div class="big-num"><span class="num">3</span><span class="label">faltam dados</span></div>
 </div>
-
-> **Roadmap pós-v0.7:** ampliar para os 100 papers mais influentes. A v0.7 entrega o framework + 12 papers seed (3 já replicados + 5 alvo de novas replicações + 4 metodológicos canônicos).
 
 ## Replicados (3)
 
-Papers operacionalizados em produtos do lab — HEX-EDU, VULN-EDU. Cada card linka para a mini-page do paper com o cruzamento de dados, link para o relatório técnico e insight para gestores.
+Papers operacionalizados em produtos do lab. Cada card linka pra mini-page com cruzamento de dados, link pro relatório técnico e achado aplicado ao Rio.
 
 <div class="paper-grid">
 <a class="paper-card status-full" href="theil-1967-economics/">
@@ -52,9 +46,9 @@ Papers operacionalizados em produtos do lab — HEX-EDU, VULN-EDU. Cada card lin
 </a>
 </div>
 
-## Catalogados — próxima leitura (6)
+## Prontos pra replicar (6)
 
-Dados básicos cobertos no data.rio; replicação leve planejada para release próxima.
+Dados básicos cobertos no data.rio. Replicação leve planejada pra próxima release.
 
 <div class="paper-grid">
 <a class="paper-card status-pending" href="coleman-1966-eeo/">
@@ -106,9 +100,9 @@ Dados básicos cobertos no data.rio; replicação leve planejada para release pr
 </a>
 </div>
 
-## Sem cobertura no data.rio (3)
+## Faltam dados (3)
 
-Papers seminais que pedem dados não cobertos no data.rio (microdado individual, painel longitudinal). Catalogados para referência teórica.
+Papers seminais que pedem dados não cobertos no data.rio (microdado individual, painel longitudinal). Catalogados pra referência.
 
 | Paper | Ano | Área | Brasil? | Citações | Cobertura data.rio |
 |---|---|---|---|---|---|

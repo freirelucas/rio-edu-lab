@@ -116,7 +116,7 @@ print(f"share_within = {tw/t:.0%}")  # 68%
 <div class="grid cards" markdown>
 
 -   [:material-map: Mapa interativo](../mapa.md)
--   [:material-rocket-launch-outline: Tour 5 min](../tour.md)
+-   [:material-library-shelves: Papers](../papers/index.md)
 -   [:material-format-list-bulleted: Bairros prioritários](../bairros-prioritarios.md)
 -   [:material-book-open-variant: Investigação técnica](../investigacao.md)
 

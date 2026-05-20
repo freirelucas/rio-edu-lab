@@ -1,11 +1,11 @@
 ---
-title: Reproduzir o pipeline — rio-edu-lab
-description: Como rodar todos os 21 scripts em sequência, do download dos dados até os charts da landing.
+title: Reproduzir em 4 minutos — rio-edu-lab
+description: Clone limpo do repo até charts da landing. 96s de download + ~3 min de processing.
 ---
 
-# Reproduzir o pipeline
+# Reproduzir em 4 minutos
 
-Todo o lab é reprodutível ponta-a-ponta a partir de um clone limpo. Tempo total: **~4 minutos** (96 s de download + ~3 min de processing).
+Clone limpo do repo → charts da landing. **96 s de download + ~3 min de processing**.
 
 ## Setup
 
@@ -112,7 +112,7 @@ rio-edu-lab/
 <div class="grid cards" markdown>
 
 -   [:material-source-branch: Repo no GitHub](https://github.com/freirelucas/rio-edu-lab)
--   [:material-package-variant: 4 produtos](produtos/index.md)
--   [:material-book-open-variant: Glossário](glossario.md)
+-   [:material-library-shelves: Papers](papers/index.md)
+-   [:material-information-outline: Sobre o lab](sobre.md)
 
 </div>

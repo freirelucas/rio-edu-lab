@@ -48,7 +48,7 @@ Saídas: `data/processed/bairros_prioritarios.csv` (115 bairros) e `bairros_prio
 <div class="grid cards" markdown>
 
 -   [:material-map: Ver no mapa interativo](mapa.md)
--   [:material-rocket-launch-outline: Tour 5 min](tour.md)
+-   [:material-library-shelves: Papers](papers/index.md)
 -   [:material-text-box-outline: Lei de escala (Relatório 13)](reports/13_pm_12.md)
 -   [:material-clock-time-eight-outline: Trajetórias 5º→9º (Relatório 12)](reports/12_fun_rio.md)
 
