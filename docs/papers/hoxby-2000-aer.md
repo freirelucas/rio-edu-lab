@@ -1,15 +1,11 @@
 ---
-title: "Hoxby (2000) — Does competition among public schools benefit students and taxpayers?"
-description: "Usa variação geográfica em distritos escolares como IV para identificar efeitos de competição entre escolas. Achado: mais opções → melhor desempenho per dólar, "
+title: "Hoxby (2000) — Hoxby (2000) — replicação pendente"
+description: "Usa variação geográfica em distritos escolares como IV para identificar efeitos de competição entre escolas. Achado: mais opções → melhor desempenho per dólar, com elasticidade pequena mas significant"
 ---
 
-# Hoxby (2000)
+# Hoxby (2000) — replicação pendente
 
-**Does competition among public schools benefit students and taxpayers?**
-
-_American Economic Review, 90(5)_
-
-<a href="https://doi.org/10.1257/aer.90.5.1209" target="_blank">https://doi.org/10.1257/aer.90.5.1209</a>
+**Dados básicos cobertos no data.rio. Replicação pendente — Hoxby (2000) está na fila.**
 
 <div class="status-hero status-pending" aria-label="Status no lab: Catalogado — pendente">
   <span class="icon" aria-hidden="true">⏳</span>
@@ -19,27 +15,34 @@ _American Economic Review, 90(5)_
   </div>
 </div>
 
-**Citações (OpenAlex, 2026-05-18):** 1.105
 
-## Resumo
+## O que esse paper faz
 
 Usa variação geográfica em distritos escolares como IV para identificar efeitos de competição entre escolas. Achado: mais opções → melhor desempenho per dólar, com elasticidade pequena mas significante.
 
-## Categorias
+## Por que dá pra rodar no Rio
 
-- **Área:** economia da educação, school choice, competição
-- **Método:** variável instrumental, geografia natural
-- **Brasil-específico:** não
+Dos 2 requisitos de dados do paper, **2 têm cobertura no data.rio**. Detalhe abaixo em Provenance.
 
-## Requisitos de dados × cobertura no data.rio
+## Provenance
+
+**Does competition among public schools benefit students and taxpayers?**
+
+_Hoxby (2000). American Economic Review, 90(5)._
+
+<a href="https://doi.org/10.1257/aer.90.5.1209" target="_blank">https://doi.org/10.1257/aer.90.5.1209</a>
+
+**Citações (OpenAlex, 2026-05-18):** 1.105
+
+**Área:** economia da educação, school choice, competição
+
+**Método:** variável instrumental, geografia natural
+
+### Requisitos de dados × cobertura no data.rio
 
 | Requisito | Status | Item data.rio |
 |---|---|---|
 | indicador de oferta de escolas | ✅ disponível no data.rio | `0a220ea7972d4adf85b3e63d23a4b9b1` |
 | indicador de desempenho | ✅ disponível no data.rio | `ideb-municipal-bairros` |
 
-## Referência completa
-
-Hoxby (2000). _Does competition among public schools benefit students and taxpayers?_. American Economic Review, 90(5).
-
-[← Voltar ao catálogo](index.md)
+[← Voltar aos papers](index.md)

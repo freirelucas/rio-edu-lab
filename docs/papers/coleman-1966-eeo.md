@@ -1,15 +1,11 @@
 ---
-title: "Coleman et al. (1966) — Equality of Educational Opportunity"
-description: "Estabeleceu que a variância no desempenho entre alunos é majoritariamente dentro de escolas, não entre — achado que reorientou a política educacional americana "
+title: "Coleman et al. (1966) — Coleman et al. (1966) — replicação pendente"
+description: "Estabeleceu que a variância no desempenho entre alunos é majoritariamente dentro de escolas, não entre — achado que reorientou a política educacional americana e gerou o conceito de "efeito-Coleman"."
 ---
 
-# Coleman et al. (1966)
+# Coleman et al. (1966) — replicação pendente
 
-**Equality of Educational Opportunity**
-
-_U.S. Department of Health, Education, and Welfare_
-
-<a href="https://files.eric.ed.gov/fulltext/ED012275.pdf" target="_blank">https://files.eric.ed.gov/fulltext/ED012275.pdf</a>
+**Dados básicos cobertos no data.rio. Replicação pendente — Coleman et al. (1966) está na fila.**
 
 <div class="status-hero status-pending" aria-label="Status no lab: Catalogado — pendente">
   <span class="icon" aria-hidden="true">⏳</span>
@@ -19,27 +15,34 @@ _U.S. Department of Health, Education, and Welfare_
   </div>
 </div>
 
-**Citações (OpenAlex, 2026-05-18):** 2.776
 
-## Resumo
+## O que esse paper faz
 
 Estabeleceu que a variância no desempenho entre alunos é majoritariamente dentro de escolas, não entre — achado que reorientou a política educacional americana e gerou o conceito de "efeito-Coleman".
 
-## Categorias
+## Por que dá pra rodar no Rio
 
-- **Área:** sociologia educacional, desigualdade, efeito-escola
-- **Método:** decomposição within/between, regressão
-- **Brasil-específico:** não
+Dos 2 requisitos de dados do paper, **2 têm cobertura no data.rio**. Detalhe abaixo em Provenance.
 
-## Requisitos de dados × cobertura no data.rio
+## Provenance
+
+**Equality of Educational Opportunity**
+
+_Coleman, Campbell, Hobson, McPartland, Mood, Weinfeld, York (1966). U.S. Department of Health, Education, and Welfare._
+
+<a href="https://files.eric.ed.gov/fulltext/ED012275.pdf" target="_blank">https://files.eric.ed.gov/fulltext/ED012275.pdf</a>
+
+**Citações (OpenAlex, 2026-05-18):** 2.776
+
+**Área:** sociologia educacional, desigualdade, efeito-escola
+
+**Método:** decomposição within/between, regressão
+
+### Requisitos de dados × cobertura no data.rio
 
 | Requisito | Status | Item data.rio |
 |---|---|---|
 | desempenho por unidade | ✅ disponível no data.rio | `ideb-municipal-bairros` |
 | agrupamento espacial | ✅ disponível no data.rio | `bairros-ipp` |
 
-## Referência completa
-
-Coleman, Campbell, Hobson, McPartland, Mood, Weinfeld, York (1966). _Equality of Educational Opportunity_. U.S. Department of Health, Education, and Welfare.
-
-[← Voltar ao catálogo](index.md)
+[← Voltar aos papers](index.md)

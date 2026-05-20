@@ -29,6 +29,9 @@
 #   report_ids                      (opcional) lista de IDs de relatórios docs/reports/NN_*.md
 #   scripts                         (opcional) lista de IDs de scripts analysis/NN_*.py
 #   policy_insight                  (opcional) 1 frase para gestores públicos
+#   applied_finding_question        (opcional, full/partial) pergunta visitor-side que o paper responde
+#   applied_finding_headline        (opcional, full/partial) resposta em 1 frase
+#   applied_finding_lede            (opcional, full/partial) 1-3 frases de contexto/números
 #
 # Convenções de curadoria:
 #   - A v0.7 entrega o framework + 12 papers seed (3 já replicados + 5 alvo de
@@ -86,6 +89,12 @@ papers:
       AP 3 (Zona Norte) lidera acesso ponderado por IDEB; Zona Sul tem IDEB
       médio mais alto mas baixa densidade. Coropléticos por AP escondem
       variância intra-AP.
+    applied_finding_question: "Qual zona do Rio tem mais acesso a boas escolas?"
+    applied_finding_headline: "AP 3 (Zona Norte) lidera — não a Zona Sul."
+    applied_finding_lede: >
+      Acesso ponderado por IDEB: AP 3 com 113, AP 4 (Jacarepaguá/Barra) com 29.
+      A Zona Sul tem escolas excelentes, mas espalhadas e poucas — por isso o
+      acesso ponderado fica abaixo.
 
   - id: reardon-2011-whither
     authors: [Reardon]
@@ -120,6 +129,13 @@ papers:
       Gradiente SES × IDEB no Rio existe mas é modesto (R²=0.16); 39% dos
       bairros estão em quadrantes não-concordantes (resilientes ou
       sub-performance) — desfaz a leitura "Zona Sul = privilégio uniforme".
+    applied_finding_question: "Riqueza prediz boa escola no Rio?"
+    applied_finding_headline: "Parcialmente. R²=0,16; 39% dos bairros desafiam o gradiente."
+    applied_finding_lede: >
+      O gradiente SES → IDEB existe (Pearson +0,40) mas é modesto. 22% dos
+      bairros são resilientes (baixo SES, bom IDEB) e 17% sub-performam (bom
+      SES, baixo IDEB) — quase metade desafia a leitura "Zona Sul = privilégio
+      uniforme".
 
   - id: theil-1967-economics
     authors: [Theil]
@@ -152,6 +168,13 @@ papers:
       Decomposição Theil revela que 66% da desigualdade do IDEB municipal
       carioca está dentro das RAs, não entre — coropléticos por RA escondem
       a maior parte do sinal.
+    applied_finding_question: "Onde está a desigualdade educacional no Rio?"
+    applied_finding_headline: "Dentro dos bairros — não entre regiões."
+    applied_finding_lede: >
+      66% da variância do IDEB municipal carioca está dentro das Regiões
+      Administrativas, não entre. Robusto em 6 séries × 9 anos (5º/9º ano,
+      ponderado por matrícula, Aprovação/SAEB/IDEB). Nenhuma série cruza
+      a paridade 50%.
 
   # ============================================================
   # ALVO DE REPLICAÇÃO LEVE EM v0.7+

@@ -1,12 +1,11 @@
 """Renderiza páginas Markdown a partir de `data/papers_catalog.yml`.
 
-Para cada paper, escreve `docs/papers/<id>.md` com cabeçalho bibliográfico,
-abstract, requisitos de dados, cobertura no data.rio e (se replicado)
-links para relatórios + insight para gestores. Também atualiza o catálogo
-em `docs/papers/index.md` (com tabs internas e cards Pudding-style para
-replicados).
+Para cada paper, escreve `docs/papers/<id>.md` com template story-driven:
+finding-first quando há `applied_finding_*` no YAML, paper-first quando
+pending, what-is-missing quando unfeasible. Também escreve o index do
+catálogo em `docs/papers/index.md` organizado por TEMA (não por status).
 
-Determinístico: o output depende exclusivamente do YAML + opcionalmente do
+Determinístico: output depende exclusivamente do YAML + opcionalmente do
 snapshot `openalex_citations.json`. Pode rodar em CI.
 
 Uso:
@@ -67,6 +66,43 @@ COVERAGE_BADGES = {
     "external": ("⚠️", "dado externo necessário"),
     "missing": ("✗", "não disponível"),
 }
+
+# Mapping de áreas (do YAML) pra temas de alto nível. Ordem importa:
+# o primeiro tema com match em qualquer área do paper define o tema do paper.
+THEMES = [
+    (
+        "Desigualdade & equidade",
+        {"desigualdade", "equidade", "equidade espacial", "segregação escolar",
+         "SES e desempenho", "teoria da informação"},
+    ),
+    (
+        "Acessibilidade & geografia escolar",
+        {"acessibilidade", "geografia urbana"},
+    ),
+    (
+        "Sociologia & efeito-escola",
+        {"sociologia educacional", "efeito-escola", "tendências longitudinais"},
+    ),
+    (
+        "Política educacional & avaliação",
+        {"política educacional", "avaliação", "school choice", "competição"},
+    ),
+    (
+        "Economia da educação",
+        {"economia da educação", "função-produção", "retornos da educação",
+         "teoria do capital humano", "primeira infância", "ciclo de vida",
+         "qualidade docente"},
+    ),
+]
+DEFAULT_THEME = "Outros"
+
+
+def assign_theme(p: dict) -> str:
+    areas = set(p.get("area") or [])
+    for theme, tags in THEMES:
+        if areas & tags:
+            return theme
+    return DEFAULT_THEME
 
 
 def fmt_authors(authors: list[str]) -> str:
@@ -160,50 +196,46 @@ def _policy_callout(insight: str, p: dict) -> str:
     )
 
 
-def render_paper_page(p: dict, openalex: dict | None) -> str:
-    pid = p["id"]
-    status = p["replication_status"]
-    badge_label, _ = STATUS_BADGES[status]
-
-    lines = [
+def _frontmatter(p: dict, title: str) -> list[str]:
+    desc = (p.get("applied_finding_lede") or p.get("abstract") or "").strip()[:200]
+    desc = " ".join(desc.split())
+    return [
         "---",
-        f"title: \"{fmt_authors(p['authors'])} ({p['year']}) — {p['title'][:80]}\"",
-        f"description: \"{(p.get('abstract') or '').strip()[:160]}\"",
+        f"title: \"{title}\"",
+        f"description: \"{desc}\"",
         "---",
         "",
-        f"# {fmt_authors(p['authors'])} ({p['year']})",
-        "",
-        f"**{p['title']}**",
-        "",
-        f"_{p['venue']}_",
-        "",
-        f"<a href=\"{p['doi_or_url']}\" target=\"_blank\">{p['doi_or_url']}</a>",
-        "",
-        _status_hero_block(p),
     ]
 
-    # OpenAlex citation snapshot
+
+def _provenance_block(p: dict, openalex: dict | None) -> list[str]:
+    """Compact provenance: bibliography + DOI + citations + cobertura."""
+    pid = p["id"]
+    lines = ["## Provenance", ""]
+    lines.append(f"**{p['title']}**")
+    lines.append("")
+    lines.append(f"_{fmt_authors_full(p['authors'])} ({p['year']}). {p['venue']}._")
+    lines.append("")
+    lines.append(f"<a href=\"{p['doi_or_url']}\" target=\"_blank\">{p['doi_or_url']}</a>")
+    lines.append("")
+
     if openalex and pid in openalex:
         oa = openalex[pid]
         if oa.get("citations_openalex") is not None:
             cit_pt = f"{oa['citations_openalex']:,}".replace(",", ".")
-            lines += [
-                f"**Citações (OpenAlex, {oa['fetched_at']}):** {cit_pt}",
-                "",
-            ]
+            lines.append(f"**Citações (OpenAlex, {oa['fetched_at']}):** {cit_pt}")
+            lines.append("")
+
+    lines.append(f"**Área:** {', '.join(p.get('area', []))}")
+    lines.append("")
+    lines.append(f"**Método:** {', '.join(p.get('method', []))}")
+    lines.append("")
+    if p.get("brazil_specific"):
+        lines.append("**🇧🇷 Brasil-específico.**")
+        lines.append("")
 
     lines += [
-        "## Resumo",
-        "",
-        (p.get("abstract") or "_(resumo a redigir)_").strip(),
-        "",
-        "## Categorias",
-        "",
-        f"- **Área:** {', '.join(p.get('area', []))}",
-        f"- **Método:** {', '.join(p.get('method', []))}",
-        f"- **Brasil-específico:** {'sim' if p.get('brazil_specific') else 'não'}",
-        "",
-        "## Requisitos de dados × cobertura no data.rio",
+        "### Requisitos de dados × cobertura no data.rio",
         "",
         "| Requisito | Status | Item data.rio |",
         "|---|---|---|",
@@ -216,32 +248,185 @@ def render_paper_page(p: dict, openalex: dict | None) -> str:
         lines.append(f"| {req} | {icon} {label} | `{item}` |")
     lines.append("")
 
-    if status in ("full", "partial"):
-        lines += ["## Replicação no lab", ""]
-        if p.get("product"):
-            lines.append(f"- **Produto associado:** {p['product']}")
-        if p.get("report_ids"):
-            ids = ", ".join(f"[{i}]({_resolve_report_link(i)})" for i in p["report_ids"])
-            lines.append(f"- **Relatórios:** {ids}")
-        if p.get("scripts"):
-            ids = ", ".join(f"`analysis/{i:02d}_*.py`" for i in p["scripts"])
-            lines.append(f"- **Scripts:** {ids}")
+    if p.get("scripts"):
+        sids = ", ".join(f"`analysis/{i:02d}_*.py`" for i in p["scripts"])
+        lines.append(f"**Código:** {sids}")
         lines.append("")
-        if p.get("policy_insight"):
-            lines += [
-                _policy_callout(": " + p["policy_insight"], p),
-                "",
-            ]
 
+    return lines
+
+
+def _render_full_or_partial(p: dict, openalex: dict | None) -> str:
+    """Story-driven template for replicated papers (full or partial)."""
+    question = (
+        p.get("applied_finding_question")
+        or f"{fmt_authors(p['authors'])} ({p['year']}) aplicado ao Rio"
+    )
+    headline = p.get("applied_finding_headline") or ""
+    lede = (p.get("applied_finding_lede") or p.get("policy_insight") or "").strip()
+    status = p["replication_status"]
+
+    title = f"{fmt_authors(p['authors'])} ({p['year']}) — {question}"
+
+    lines = _frontmatter(p, title)
     lines += [
-        "## Referência completa",
-        "",
-        f"{fmt_authors_full(p['authors'])} ({p['year']}). _{p['title']}_. {p['venue']}.",
-        "",
-        "[← Voltar ao catálogo](index.md)",
+        f"# {question}",
         "",
     ]
+
+    if headline:
+        lines += [f"**{headline}**", ""]
+
+    if lede:
+        lines += [lede, ""]
+
+    lines.append(_status_hero_block(p))
+    lines.append("")
+
+    abstract = (p.get("abstract") or "").strip()
+    if abstract:
+        lines += [
+            "## O que esse paper diz",
+            "",
+            abstract,
+            "",
+        ]
+
+    lines += ["## Aplicado ao Rio", ""]
+    rio_para = []
+    if p.get("policy_insight"):
+        rio_para.append(p["policy_insight"].strip())
+    if p.get("product"):
+        rio_para.append(
+            f"Operacionalizado no produto **{p['product']}** "
+            f"([detalhe técnico](../produtos/{p['product'].lower().replace('-', '_')}.md))."
+        )
+    if rio_para:
+        lines.append(" ".join(rio_para))
+        lines.append("")
+
+    if p.get("report_ids"):
+        lines.append("**Como auditar:**")
+        lines.append("")
+        for r_id in p["report_ids"]:
+            r_link = _resolve_report_link(r_id)
+            lines.append(f"- [Relatório {r_id:02d}]({r_link})")
+        lines.append("")
+
+    lines += _provenance_block(p, openalex)
+    lines += ["[← Voltar aos papers](index.md)", ""]
     return "\n".join(lines)
+
+
+def _render_pending(p: dict, openalex: dict | None) -> str:
+    """Template for pending papers: 'what would this say about Rio if we ran it'."""
+    question = (
+        p.get("applied_finding_question")
+        or f"{fmt_authors(p['authors'])} ({p['year']}) — replicação pendente"
+    )
+    title = f"{fmt_authors(p['authors'])} ({p['year']}) — {question}"
+
+    lines = _frontmatter(p, title)
+    lines += [
+        f"# {question}",
+        "",
+        f"**Dados básicos cobertos no data.rio. Replicação pendente — {fmt_authors(p['authors'])} ({p['year']}) está na fila.**",
+        "",
+    ]
+
+    lines.append(_status_hero_block(p))
+    lines.append("")
+
+    abstract = (p.get("abstract") or "").strip()
+    if abstract:
+        lines += [
+            "## O que esse paper faz",
+            "",
+            abstract,
+            "",
+        ]
+
+    lines += ["## Por que dá pra rodar no Rio", ""]
+    coverage = p.get("data_rio_coverage") or []
+    n_avail = sum(1 for c in coverage if c.get("status") in {"available", "partial"})
+    n_req = len(p.get("data_requirements") or [])
+    lines.append(
+        f"Dos {n_req} requisitos de dados do paper, **{n_avail} têm cobertura no data.rio**. "
+        f"Detalhe abaixo em Provenance."
+    )
+    lines.append("")
+
+    lines += _provenance_block(p, openalex)
+    lines += ["[← Voltar aos papers](index.md)", ""]
+    return "\n".join(lines)
+
+
+def _render_unfeasible(p: dict, openalex: dict | None) -> str:
+    """Template for unfeasible papers: 'what's missing to run this in Rio'."""
+    question = (
+        p.get("applied_finding_question")
+        or f"{fmt_authors(p['authors'])} ({p['year']}) — dados ausentes"
+    )
+    title = f"{fmt_authors(p['authors'])} ({p['year']}) — {question}"
+
+    coverage = p.get("data_rio_coverage") or []
+    missing_reqs = [
+        c["requirement"] for c in coverage if c.get("status") in {"external", "missing"}
+    ]
+
+    lines = _frontmatter(p, title)
+    lines += [
+        f"# {question}",
+        "",
+    ]
+
+    if missing_reqs:
+        lines += [
+            f"**Falta dado essencial no data.rio:** {', '.join(missing_reqs)}.",
+            "",
+        ]
+    else:
+        lines += [
+            "**Replicação no Rio inviável com o data.rio atual.**",
+            "",
+        ]
+
+    lines.append(_status_hero_block(p))
+    lines.append("")
+
+    abstract = (p.get("abstract") or "").strip()
+    if abstract:
+        lines += [
+            "## O paper",
+            "",
+            abstract,
+            "",
+        ]
+
+    lines += [
+        "## O que precisaria pra rodar no Rio",
+        "",
+        "Os requisitos abaixo não são cobertos pelo data.rio. Tipicamente envolvem "
+        "microdado individual (INEP nominal não publicado), painel longitudinal "
+        "(RAIS/INEP coorte) ou domicílios (PNAD anual). Se isso mudar, o paper sai "
+        "automaticamente desta seção via re-run do funil.",
+        "",
+    ]
+
+    lines += _provenance_block(p, openalex)
+    lines += ["[← Voltar aos papers](index.md)", ""]
+    return "\n".join(lines)
+
+
+def render_paper_page(p: dict, openalex: dict | None) -> str:
+    status = p["replication_status"]
+    if status in ("full", "partial"):
+        return _render_full_or_partial(p, openalex)
+    if status == "pending":
+        return _render_pending(p, openalex)
+    if status == "unfeasible":
+        return _render_unfeasible(p, openalex)
+    raise ValueError(f"unknown status: {status}")
 
 
 def _render_card(p: dict, openalex: dict | None) -> str:
@@ -317,56 +502,58 @@ def _render_table(papers: list[dict], openalex: dict | None) -> str:
 
 
 def render_index(papers: list[dict], openalex: dict | None) -> str:
-    """Renders the searchable catalog landing page with status sections."""
-    by_status: dict[str, list[dict]] = {k: [] for k in STATUS_BADGES}
+    """Renders the catalog landing organized by theme (not status)."""
+    by_theme: dict[str, list[dict]] = {}
     for p in papers:
-        by_status[p["replication_status"]].append(p)
+        by_theme.setdefault(assign_theme(p), []).append(p)
 
-    n_repl = len(by_status["full"]) + len(by_status["partial"])
-    n_pend = len(by_status["pending"])
-    n_unf = len(by_status["unfeasible"])
+    n_full = sum(1 for p in papers if p["replication_status"] == "full")
+    n_partial = sum(1 for p in papers if p["replication_status"] == "partial")
+    n_pend = sum(1 for p in papers if p["replication_status"] == "pending")
+    n_unf = sum(1 for p in papers if p["replication_status"] == "unfeasible")
+    n_repl = n_full + n_partial
 
     lines = [
         "---",
         "title: \"Papers — rio-edu-lab\"",
-        "description: \"Papers de educação cruzados contra o data.rio. Status de replicação + cobertura de dados + achado quando aplicável.\"",
+        "description: \"12 papers acadêmicos sobre educação. Organizados por tema. Cada um cruzado contra os 9.855 itens do data.rio.\"",
         "---",
         "",
         "# Papers",
         "",
-        f"{len(papers)} papers de educação. Cada um cruzado contra o data.rio. Status de replicação + cobertura de dados + achado quando aplicável.",
+        f"**{len(papers)} papers acadêmicos sobre educação.** Organizados por tema. Cada um cruzado contra os "
+        "**9.855 itens do data.rio**. Status de replicação + cobertura de dados + achado quando aplicável.",
         "",
-        "Os papers vivem em **três faixas**: **Replicados** (operacionalizados em produtos do lab), **Prontos pra replicar** "
-        "(dados cobertos no data.rio, replicação leve na próxima release), **Faltam dados** (papers seminais que pedem fontes "
-        "fora do portal — ficam aqui pra referência).",
+        "O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois do snowball bibliométrico, "
+        "filtro temático e checagem de cobertura. [Ver o funil completo →](../index.md#como-o-funil-funciona)",
         "",
         '<div class="big-num-grid">',
         f'  <div class="big-num"><span class="num">{len(papers)}</span><span class="label">papers no catálogo</span></div>',
-        f'  <div class="big-num"><span class="num">{n_repl}</span><span class="label">replicados</span></div>',
+        f'  <div class="big-num"><span class="num">{n_repl}</span><span class="label">replicados (full + partial)</span></div>',
         f'  <div class="big-num"><span class="num">{n_pend}</span><span class="label">prontos pra replicar</span></div>',
-        f'  <div class="big-num"><span class="num">{n_unf}</span><span class="label">faltam dados</span></div>',
+        f'  <div class="big-num"><span class="num">{n_unf}</span><span class="label">faltam dados externos</span></div>',
         "</div>",
         "",
-        f"## Replicados ({n_repl})",
+        "**Legenda de status:** ✓ replicado · ◐ replicação parcial · ⏳ catalogado pendente · ⚠ dados ausentes",
         "",
-        "Papers operacionalizados em produtos do lab. Cada card linka pra mini-page com cruzamento de dados, "
-        "link pro relatório técnico e achado aplicado ao Rio.",
-        "",
-        _render_card_grid(by_status["full"] + by_status["partial"], openalex),
-        "",
-        f"## Prontos pra replicar ({n_pend})",
-        "",
-        "Dados básicos cobertos no data.rio. Replicação leve planejada pra próxima release.",
-        "",
-        _render_card_grid(by_status["pending"], openalex),
-        "",
-        f"## Faltam dados ({n_unf})",
-        "",
-        "Papers seminais que pedem dados não cobertos no data.rio (microdado individual, painel longitudinal). "
-        "Catalogados pra referência.",
-        "",
-        _render_table(by_status["unfeasible"], openalex),
-        "",
+    ]
+
+    theme_order = [t for t, _ in THEMES] + [DEFAULT_THEME]
+    for theme in theme_order:
+        ps = by_theme.get(theme, [])
+        if not ps:
+            continue
+        # Sort: replicados first, then pending, then unfeasible; by year within
+        status_rank = {"full": 0, "partial": 1, "pending": 2, "unfeasible": 3}
+        ps_sorted = sorted(ps, key=lambda x: (status_rank[x["replication_status"]], x["year"]))
+        lines += [
+            f"## {theme} ({len(ps)})",
+            "",
+            _render_card_grid(ps_sorted, openalex),
+            "",
+        ]
+
+    lines += [
         "## Sobre a curadoria",
         "",
         "- **Critério de inclusão:** papers seminais em educação (top-citados em economia, sociologia, política educacional) "
@@ -375,6 +562,8 @@ def render_index(papers: list[dict], openalex: dict | None) -> str:
         "`analysis/34_fetch_openalex.py`.",
         "- **Catálogo versionado:** edits ao YAML são auditáveis via git diff.",
         "- **Não é ranking objetivo:** é lista justificada por curadoria.",
+        "- **Não é destino do funil:** novos papers entram pela curadoria de candidatos do "
+        "[funil de descoberta](../index.md#como-o-funil-funciona) (253 candidatos no Stage 1 hoje).",
         "",
         "## Reproduzir",
         "",
