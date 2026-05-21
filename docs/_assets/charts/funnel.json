@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "type": "funnel",
+      "y": [
+        "candidatos",
+        "tema relevante",
+        "catálogo",
+        "replicados"
+      ],
+      "x": [
+        253,
+        43,
+        12,
+        3
+      ],
+      "textinfo": "value+percent initial",
+      "marker": {
+        "color": [
+          "#d8d8d8",
+          "#a8a8a8",
+          "#6f6f6f",
+          "#1a9850"
+        ]
+      },
+      "connector": {
+        "line": {
+          "color": "#ddd",
+          "width": 1
+        }
+      }
+    }
+  ],
+  "layout": {
+    "margin": {
+      "l": 110,
+      "r": 30,
+      "t": 20,
+      "b": 20
+    },
+    "height": 320,
+    "font": {
+      "family": "Inter, system-ui, sans-serif",
+      "size": 14
+    },
+    "paper_bgcolor": "rgba(0,0,0,0)",
+    "plot_bgcolor": "rgba(0,0,0,0)"
+  },
+  "config": {
+    "displayModeBar": false,
+    "responsive": true
+  }
+}

@@ -71,4 +71,4 @@ Saídas: `data/processed/ideb_components_long.csv` e `data/processed/theil_compo
 
 !!! tip ""
     - [HEX-EDU (página de produto)](../produtos/hex_edu.md)
-    - [Glossário](../glossario.md)
+    - [Sobre — glossário](../sobre.md#glossario)

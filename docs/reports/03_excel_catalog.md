@@ -141,4 +141,4 @@ Os binários em `data/raw/excel/` ficam gitignored (12.3 MiB cabe no repo tranqu
 
 !!! tip ""
     - [04 — Auditoria do shortlist](04_shortlist_audit.md)
-    - [Glossário](../glossario.md)
+    - [Sobre — glossário](../sobre.md#glossario)

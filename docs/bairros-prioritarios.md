@@ -1,22 +1,18 @@
 ---
-title: Bairros prioritários — cruzamento SAMI × Δ FUN-Rio
-description: Lista descritiva dos bairros que cruzam déficit de escolas (SAMI < 0) e queda de IDEB 5º→9º (Δ FUN-Rio < 0). Interpretação política fica com o leitor.
+title: Bairros que sofrem dois sinais ao mesmo tempo — rio-edu-lab
+description: Bairros com déficit de escolas E queda de IDEB ao longo do fundamental. Lista descritiva, sem prescrição.
 ---
 
-# Bairros prioritários — cruzamento SAMI × Δ FUN-Rio
+# Bairros que sofrem dois sinais ao mesmo tempo
 
-Lista descritiva dos bairros que cruzam dois sinais ortogonais do MVP-1. **Interpretação política fica com o leitor** — o lab entrega o cruzamento, não a recomendação.
+**Alguns bairros do Rio têm dois problemas simultâneos: menos escolas do que a matrícula sugere E alunos que pioram entre 5º e 9º ano.** Esta página lista quem cruza os dois sinais. A lista é descritiva — o lab mostra a coincidência, não prescreve ação.
 
-- **SAMI** ([Relatório 13](reports/13_pm_12.md)): desvio da lei de escala. SAMI &lt; 0 = bairro tem **menos escolas** que o esperado pelo seu volume de matrícula (sub-servido em infraestrutura).
-- **Δ médio** ([Relatório 12](reports/12_fun_rio.md)): média da queda de IDEB do 5º para o 9º ano em pseudocoortes. Δ &lt; 0 = a turma piora ao longo do fundamental.
+Os dois sinais vêm de análises de robustez:
 
-Bairros com **SAMI negativo E Δ negativo** cruzam os dois sinais negativos. O score combinado é a soma negativa dos z-scores das duas métricas — descreve quem está nos dois sinais ao mesmo tempo, sem prescrever ação.
+- **SAMI** ([Relatório 13](reports/13_pm_12.md)) mede infraestrutura: SAMI < 0 = bairro tem **menos escolas** que o esperado pelo volume de matrícula.
+- **Δ médio** ([Relatório 12](reports/12_fun_rio.md)) mede trajetória: Δ < 0 = a turma piora ao longo do fundamental (queda de IDEB do 5º pro 9º ano em pseudocoortes).
 
-!!! warning "Distinção importante (confound de migração privada)"
-    Alguns bairros que aparecem no topo (Humaitá, Leblon, Jardim Botânico) provavelmente refletem **migração para escola privada** entre 5º e 9º ano: alunos com mais recursos saem da rede municipal no 6º ano, e o cohorte municipal do 9º fica enviesado para baixo. Esse é um problema **real** mas de natureza diferente do subinvestimento estrutural (Pavuna, Pilares, Curicica). Sem microdado por escola e cobertura privada, não conseguimos separar mecanicamente. Use a coluna "AP" como heurística:
-    
-    - **AP 2** (Zona Sul) → mais provável confound de privatização.
-    - **AP 3 e 5** (Zona Norte / Oeste) → mais provável subinvestimento estrutural.
+Bairros com **SAMI negativo E Δ negativo** estão nos dois sinais. O score combinado é a soma dos z-scores das duas métricas.
 
 ## Top 20
 
@@ -24,10 +20,16 @@ Bairros com **SAMI negativo E Δ negativo** cruzam os dois sinais negativos. O s
 
 A lista completa de 115 bairros está em [`data/processed/bairros_prioritarios.csv`](https://github.com/freirelucas/rio-edu-lab/blob/main/data/processed/bairros_prioritarios.csv).
 
-## Como reproduzir
+## Cuidado importante: confound de migração privada
+
+Alguns bairros no topo (Humaitá, Leblon, Jardim Botânico) provavelmente refletem **migração pra escola privada** entre 5º e 9º ano: alunos com mais recursos saem da rede municipal no 6º ano, e o cohorte municipal do 9º fica enviesado pra baixo. Esse é um problema **real** mas de natureza diferente do subinvestimento estrutural (Pavuna, Pilares, Curicica). Sem microdado por escola e cobertura privada, não dá pra separar mecanicamente. A coluna "AP" é heurística:
+
+- **AP 2** (Zona Sul) → mais provável confound de privatização.
+- **AP 3 e 5** (Zona Norte / Oeste) → mais provável subinvestimento estrutural.
+
+## Reproduzir
 
 ```bash
-# Pré-requisitos: matrículas, FUN-Rio, PM-12 já gerados.
 python3 analysis/16_theil_weighted.py     # gera matriculas_bairros.csv
 python3 analysis/19_fun_rio.py            # gera fun_rio_transitions.csv
 python3 analysis/20_pm_12.py              # gera pm12_scaling.csv
@@ -38,17 +40,17 @@ Saídas: `data/processed/bairros_prioritarios.csv` (115 bairros) e `bairros_prio
 
 ## Caveats
 
-- **Janela temporal mista**: SAMI é de 2011 (único ano com matrícula + IDEB), Δ FUN-Rio é média de 2007–2023. Estamos comparando "estoque infra-estrutural" com "trajetória temporal". Um bairro pode ter melhorado em infra após 2011 sem aparecer aqui.
+- **Janela temporal mista**: SAMI é de 2011 (único ano com matrícula + IDEB), Δ FUN-Rio é média de 2007–2023. Comparamos "estoque infra" com "trajetória temporal". Um bairro pode ter melhorado em infra após 2011 sem aparecer aqui.
 - **Pseudocoorte ≠ coorte real**: o 5º ano de 2007 não é o mesmo grupo do 9º de 2011. Sem microdado por escola não dá pra segui-los individualmente.
-- **Fora da rede municipal**: bairros com escola dominantemente privada/estadual (parte da Zona Sul, Barra) saem do dataset porque o IDEB municipal é suprimido. Aparecem como "sem dado" — não foram analisados.
-- **Score combinado é heurística** simples (soma de z-scores). Outras combinações possíveis (média ponderada por matrícula, máximo dos dois, etc.) podem reordenar a lista. O CSV traz os componentes separados para você combinar como preferir.
+- **Fora da rede municipal**: bairros com escola dominantemente privada/estadual (parte da Zona Sul, Barra) saem do dataset porque o IDEB municipal é suprimido. Aparecem como "sem dado".
+- **Score combinado é heurística simples** (soma de z-scores). Outras combinações são possíveis e podem reordenar a lista. O CSV traz os componentes separados.
 
 ## Continue
 
 <div class="grid cards" markdown>
 
--   [:material-map: Ver no mapa interativo](mapa.md)
--   [:material-rocket-launch-outline: Tour 5 min](tour.md)
+-   [:material-magnify: Outros achados](achados.md)
+-   [:material-library-shelves: Papers](papers/index.md)
 -   [:material-text-box-outline: Lei de escala (Relatório 13)](reports/13_pm_12.md)
 -   [:material-clock-time-eight-outline: Trajetórias 5º→9º (Relatório 12)](reports/12_fun_rio.md)
 

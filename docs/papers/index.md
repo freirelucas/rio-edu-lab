@@ -1,60 +1,24 @@
 ---
-title: "Catálogo de papers — rio-edu-lab"
-description: "Papers em educação aplicados ao Rio: status de replicação + cobertura no data.rio."
+title: "Papers — rio-edu-lab"
+description: "12 papers acadêmicos sobre educação. Organizados por tema. Cada um cruzado contra os 9.855 itens do data.rio."
 ---
 
-# Catálogo de papers
+# Papers
 
-Cada entrada do catálogo é um paper em educação cruzado com o **data.rio**. O lab declara o status de replicação, lista os requisitos de dados, mostra a cobertura no portal e (quando aplicável) aponta o insight para gestores públicos.
+**12 papers acadêmicos sobre educação.** Organizados por tema. Cada um cruzado contra os **9.855 itens do data.rio**. Status de replicação + cobertura de dados + achado quando aplicável.
 
-<div class="how-to-read" markdown>
-### Como ler este catálogo
-
-O catálogo está organizado em três faixas. **Replicados** são papers já operacionalizados em produtos do lab. **Catalogados** são alvos das próximas releases — os dados básicos já estão cobertos no data.rio. **Sem cobertura** são papers seminais que ficam aqui para referência teórica — replicação exigiria fontes externas.
-</div>
+O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois do snowball bibliométrico, filtro temático e checagem de cobertura. [Ver o funil completo →](../index.md#como-o-funil-funciona)
 
 <div class="big-num-grid">
-  <div class="big-num"><span class="num">12</span><span class="label">papers no catálogo seed (v0.7)</span></div>
-  <div class="big-num"><span class="num">3</span><span class="label">replicados ou em replicação parcial</span></div>
-  <div class="big-num"><span class="num">6</span><span class="label">catalogados — próxima leitura</span></div>
-  <div class="big-num"><span class="num">3</span><span class="label">sem cobertura no data.rio</span></div>
+  <div class="big-num"><span class="num">12</span><span class="label">papers no catálogo</span></div>
+  <div class="big-num"><span class="num">3</span><span class="label">replicados (full + partial)</span></div>
+  <div class="big-num"><span class="num">6</span><span class="label">prontos pra replicar</span></div>
+  <div class="big-num"><span class="num">3</span><span class="label">faltam dados externos</span></div>
 </div>
 
-> **Roadmap pós-v0.7:** ampliar para os 100 papers mais influentes. A v0.7 entrega o framework + 12 papers seed (3 já replicados + 5 alvo de novas replicações + 4 metodológicos canônicos).
+**Legenda de status:** ✓ replicado · ◐ replicação parcial · ⏳ catalogado pendente · ⚠ dados ausentes
 
-## Replicados (3)
-
-Papers operacionalizados em produtos do lab — HEX-EDU, VULN-EDU. Cada card linka para a mini-page do paper com o cruzamento de dados, link para o relatório técnico e insight para gestores.
-
-<div class="paper-grid">
-<a class="paper-card status-full" href="theil-1967-economics/">
-  <span class="drop-cap" aria-hidden="true">T</span>
-  <h4>Theil (1967)</h4>
-  <p class="meta">7.659 citações · desigualdade</p>
-  <p class="insight">Decomposição Theil revela que 66% da desigualdade do IDEB municipal carioca está dentro das RAs, não entre — coropléticos por RA escondem…</p>
-  <span class="cta">Replicado →</span>
-</a>
-
-<a class="paper-card status-partial" href="reardon-2011-whither/">
-  <span class="drop-cap" aria-hidden="true">R</span>
-  <h4>Reardon (2011)</h4>
-  <p class="meta">1.146 citações · desigualdade</p>
-  <p class="insight">Gradiente SES × IDEB no Rio existe mas é modesto (R²=0.16); 39% dos bairros estão em quadrantes não-concordantes (resilientes ou sub-perf…</p>
-  <span class="cta">Replicação parcial →</span>
-</a>
-
-<a class="paper-card status-partial" href="pereira-2019-ipea/">
-  <span class="drop-cap" aria-hidden="true">P</span>
-  <h4>Pereira et al. (2019)</h4>
-  <p class="meta">79 citações · acessibilidade · 🇧🇷</p>
-  <p class="insight">AP 3 (Zona Norte) lidera acesso ponderado por IDEB; Zona Sul tem IDEB médio mais alto mas baixa densidade. Coropléticos por AP escondem v…</p>
-  <span class="cta">Replicação parcial →</span>
-</a>
-</div>
-
-## Catalogados — próxima leitura (6)
-
-Dados básicos cobertos no data.rio; replicação leve planejada para release próxima.
+## Desigualdade & equidade (7)
 
 <div class="paper-grid">
 <a class="paper-card status-pending" href="coleman-1966-eeo/">
@@ -65,20 +29,12 @@ Dados básicos cobertos no data.rio; replicação leve planejada para release pr
   <span class="cta">Próxima leitura →</span>
 </a>
 
-<a class="paper-card status-pending" href="hanushek-1986-jel/">
-  <span class="drop-cap" aria-hidden="true">H</span>
-  <h4>Hanushek (1986)</h4>
-  <p class="meta">2.715 citações · economia da educação</p>
-  <p class="insight">Survey clássico sobre função-produção educacional: meta-análise de 147 estudos mostra que a relação entre input (gasto, recursos físicos,…</p>
-  <span class="cta">Próxima leitura →</span>
-</a>
-
-<a class="paper-card status-pending" href="hoxby-2000-aer/">
-  <span class="drop-cap" aria-hidden="true">H</span>
-  <h4>Hoxby (2000)</h4>
-  <p class="meta">1.105 citações · economia da educação</p>
-  <p class="insight">Usa variação geográfica em distritos escolares como IV para identificar efeitos de competição entre escolas. Achado: mais opções → melhor…</p>
-  <span class="cta">Próxima leitura →</span>
+<a class="paper-card status-full" href="theil-1967-economics/">
+  <span class="drop-cap" aria-hidden="true">T</span>
+  <h4>Theil (1967)</h4>
+  <p class="meta">7.659 citações · desigualdade</p>
+  <p class="insight">Decomposição Theil revela que 66% da desigualdade do IDEB municipal carioca está dentro das RAs, não entre — coropléticos por RA escondem…</p>
+  <span class="cta">Replicado →</span>
 </a>
 
 <a class="paper-card status-pending" href="soares-andrade-2006/">
@@ -87,6 +43,14 @@ Dados básicos cobertos no data.rio; replicação leve planejada para release pr
   <p class="meta">3 citações · sociologia educacional · 🇧🇷</p>
   <p class="insight">Decompõe a variância do desempenho de alunos em escolas de BH em componente entre-escolas e dentro-escola, modela como função do NSE e me…</p>
   <span class="cta">Próxima leitura →</span>
+</a>
+
+<a class="paper-card status-partial" href="reardon-2011-whither/">
+  <span class="drop-cap" aria-hidden="true">R</span>
+  <h4>Reardon (2011)</h4>
+  <p class="meta">1.146 citações · desigualdade</p>
+  <p class="insight">Gradiente SES × IDEB no Rio existe mas é modesto (R²=0.16); 39% dos bairros estão em quadrantes não-concordantes (resilientes ou sub-perf…</p>
+  <span class="cta">Replicação parcial →</span>
 </a>
 
 <a class="paper-card status-pending" href="alves-soares-2013/">
@@ -104,17 +68,63 @@ Dados básicos cobertos no data.rio; replicação leve planejada para release pr
   <p class="insight">Revisa medidas de segregação escolar (raça, SES) nos EUA nos 60 anos pós-Brown v. Board, mostrando declínio inicial seguido de re-segrega…</p>
   <span class="cta">Próxima leitura →</span>
 </a>
+
+<a class="paper-card status-partial" href="pereira-2019-ipea/">
+  <span class="drop-cap" aria-hidden="true">P</span>
+  <h4>Pereira et al. (2019)</h4>
+  <p class="meta">79 citações · acessibilidade · 🇧🇷</p>
+  <p class="insight">AP 3 (Zona Norte) lidera acesso ponderado por IDEB; Zona Sul tem IDEB médio mais alto mas baixa densidade. Coropléticos por AP escondem v…</p>
+  <span class="cta">Replicação parcial →</span>
+</a>
 </div>
 
-## Sem cobertura no data.rio (3)
+## Política educacional & avaliação (1)
 
-Papers seminais que pedem dados não cobertos no data.rio (microdado individual, painel longitudinal). Catalogados para referência teórica.
+<div class="paper-grid">
+<a class="paper-card status-pending" href="hoxby-2000-aer/">
+  <span class="drop-cap" aria-hidden="true">H</span>
+  <h4>Hoxby (2000)</h4>
+  <p class="meta">1.105 citações · economia da educação</p>
+  <p class="insight">Usa variação geográfica em distritos escolares como IV para identificar efeitos de competição entre escolas. Achado: mais opções → melhor…</p>
+  <span class="cta">Próxima leitura →</span>
+</a>
+</div>
 
-| Paper | Ano | Área | Brasil? | Citações | Cobertura data.rio |
-|---|---|---|---|---|---|
-| [Becker (1964)](becker-1964-human-capital.md) | 1964 | economia da educação |  | 5.240 | 0/2 |
-| [Card & Krueger (1992)](card-krueger-1992-jpe.md) | 1992 | economia da educação |  | 1.183 | 0/2 |
-| [Cunha & Heckman (2007)](cunha-heckman-2007.md) | 2007 | economia da educação |  | 3.001 | 0/2 |
+## Economia da educação (4)
+
+<div class="paper-grid">
+<a class="paper-card status-unfeasible" href="becker-1964-human-capital/">
+  <span class="drop-cap" aria-hidden="true">B</span>
+  <h4>Becker (1964)</h4>
+  <p class="meta">5.240 citações · economia da educação</p>
+  <p class="insight">Estabelece o framework do capital humano: educação como investimento com retornos mensuráveis. Base teórica para grande parte da economia…</p>
+  <span class="cta">Sem cobertura →</span>
+</a>
+
+<a class="paper-card status-pending" href="hanushek-1986-jel/">
+  <span class="drop-cap" aria-hidden="true">H</span>
+  <h4>Hanushek (1986)</h4>
+  <p class="meta">2.715 citações · economia da educação</p>
+  <p class="insight">Survey clássico sobre função-produção educacional: meta-análise de 147 estudos mostra que a relação entre input (gasto, recursos físicos,…</p>
+  <span class="cta">Próxima leitura →</span>
+</a>
+
+<a class="paper-card status-unfeasible" href="card-krueger-1992-jpe/">
+  <span class="drop-cap" aria-hidden="true">C</span>
+  <h4>Card & Krueger (1992)</h4>
+  <p class="meta">1.183 citações · economia da educação</p>
+  <p class="insight">Mostra que características de escola (razão aluno-professor, salário docente, duração do ano letivo) afetam retornos da educação na vida …</p>
+  <span class="cta">Sem cobertura →</span>
+</a>
+
+<a class="paper-card status-unfeasible" href="cunha-heckman-2007/">
+  <span class="drop-cap" aria-hidden="true">C</span>
+  <h4>Cunha & Heckman (2007)</h4>
+  <p class="meta">3.001 citações · economia da educação</p>
+  <p class="insight">Modela a formação de habilidades cognitivas e não-cognitivas ao longo do ciclo de vida com complementaridade dinâmica entre estágios. Sus…</p>
+  <span class="cta">Sem cobertura →</span>
+</a>
+</div>
 
 ## Sobre a curadoria
 
@@ -122,6 +132,7 @@ Papers seminais que pedem dados não cobertos no data.rio (microdado individual,
 - **Fonte de citações:** [OpenAlex](https://openalex.org), snapshot na curadoria. Atualizado periodicamente por `analysis/34_fetch_openalex.py`.
 - **Catálogo versionado:** edits ao YAML são auditáveis via git diff.
 - **Não é ranking objetivo:** é lista justificada por curadoria.
+- **Não é destino do funil:** novos papers entram pela curadoria de candidatos do [funil de descoberta](../index.md#como-o-funil-funciona) (253 candidatos no Stage 1 hoje).
 
 ## Reproduzir
 

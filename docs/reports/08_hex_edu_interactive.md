@@ -31,4 +31,4 @@ python3 analysis/14_hex_edu_folium.py
 !!! tip ""
     - [Mapa (página pública)](../mapa.md)
     - [HEX-EDU (página de produto)](../produtos/hex_edu.md)
-    - [Tour 5 min](../tour.md)
+    - [Papers](../papers/index.md)

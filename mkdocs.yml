@@ -1,5 +1,5 @@
 site_name: rio-edu-lab
-site_description: Laboratório de replicação de papers em educação aplicados ao Rio — catálogo cruzado com o data.rio.
+site_description: Papers de educação cruzados com os 9.855 datasets públicos do data.rio. Status de replicação, código aberto, DOI Zenodo. Reproduzível em 4 minutos.
 site_url: https://freirelucas.github.io/rio-edu-lab/
 repo_url: https://github.com/freirelucas/rio-edu-lab
 repo_name: freirelucas/rio-edu-lab
@@ -56,21 +56,21 @@ validation:
 
 nav:
   - Início: index.md
-  - Tour: tour.md
-  - Catálogo de papers: papers/index.md
-  - Mapa: mapa.md
-  - Produtos:
-      - Visão geral: produtos/index.md
-      - HEX-EDU: produtos/hex_edu.md
-      - VULN-EDU: produtos/vuln_edu.md
-  - Investigação: investigacao.md
-  - Recursos:
+  - Achados:
+      - Visão geral: achados.md
+      - HEX-EDU (Theil + Pereira): produtos/hex_edu.md
+      - VULN-EDU (Reardon): produtos/vuln_edu.md
       - Bairros prioritários: bairros-prioritarios.md
-      - API do data.rio: data-rio-api.md
+      - Mapa interativo: mapa.md
+  - Papers: papers/index.md
+  - Dados:
+      - Visão geral: dados.md
+      - API técnica do data.rio: data-rio-api.md
       - Papers por item do data.rio: papers-by-data-rio.md
-      - Glossário: glossario.md
+  - Sobre:
+      - Visão geral: sobre.md
+      - Histórico técnico: investigacao.md
       - Reproduzir: reproduzir.md
-      - Editar deposit Zenodo: zenodo-deposit.md
 
 markdown_extensions:
   - admonition
@@ -82,6 +82,9 @@ markdown_extensions:
   - toc:
       permalink: true
   - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite

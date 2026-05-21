@@ -1,0 +1,56 @@
+{
+  "data": [
+    {
+      "type": "pie",
+      "values": [
+        4,
+        9851
+      ],
+      "labels": [
+        "Ativos (4)",
+        "Inexplorados (9.851)"
+      ],
+      "hole": 0.6,
+      "marker": {
+        "colors": [
+          "#1a9850",
+          "#e8e8e8"
+        ]
+      },
+      "textinfo": "label",
+      "textposition": "outside",
+      "showlegend": false,
+      "sort": false
+    }
+  ],
+  "layout": {
+    "margin": {
+      "l": 20,
+      "r": 20,
+      "t": 20,
+      "b": 20
+    },
+    "height": 280,
+    "font": {
+      "family": "Inter, system-ui, sans-serif",
+      "size": 14
+    },
+    "annotations": [
+      {
+        "text": "<b>0.04%</b><br>cobertura",
+        "x": 0.5,
+        "y": 0.5,
+        "showarrow": false,
+        "font": {
+          "size": 18
+        }
+      }
+    ],
+    "paper_bgcolor": "rgba(0,0,0,0)",
+    "plot_bgcolor": "rgba(0,0,0,0)"
+  },
+  "config": {
+    "displayModeBar": false,
+    "responsive": true
+  }
+}

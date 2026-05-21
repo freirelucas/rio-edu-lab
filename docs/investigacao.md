@@ -1,17 +1,13 @@
 ---
-title: Investigação técnica — cronograma do laboratório
-description: O lab em 5 capítulos — do inventário do data.rio à acessibilidade Pereira-style + IDS×IDEB. Cada capítulo agrupa os relatórios da fase com contexto narrativo.
+title: Como o lab descobriu isso (histórico técnico) — rio-edu-lab
+description: Os 15 relatórios cronológicos que documentam como o lab evoluiu — do inventário inicial do data.rio aos achados de hoje. Para auditoria + leitura sequencial.
 ---
 
-# Investigação técnica
+# Como o lab descobriu isso (histórico técnico)
 
-Os 15 relatórios documentam, em ordem cronológica, como o laboratório se construiu — do inventário inicial do data.rio até o catálogo de papers v0.7. Esta página agrupa os relatórios em **cinco capítulos** com contexto narrativo. Para a leitura linear cronológica, siga 01 → 15 dentro de cada capítulo.
+Os 15 relatórios documentam, em ordem cronológica, como o lab evoluiu — do inventário inicial do data.rio até o catálogo + funil de papers atual. Esta página agrupa os relatórios em **cinco capítulos** com contexto narrativo. Para auditoria pé-a-pé, siga 01 → 15 dentro de cada capítulo.
 
-<div class="how-to-read" markdown>
-### Como ler esta página
-
-Cada capítulo abre com 2-3 parágrafos contextuais explicando **por que aquela fase aconteceu** e **o que ficou aprendido**. Depois, os relatórios da fase aparecem como cards com link direto. Para a narrativa principal e os produtos finais, vá para [Tour](tour.md) ou [Produtos](produtos/index.md) — esta página é a sala de máquinas.
-</div>
+Pra os achados em si (sem o passo-a-passo), vá pra [Achados](achados.md). Pra os papers organizados por tema, vá pra [Papers](papers/index.md). Esta página é a documentação cronológica.
 
 <div class="chapter" data-num="I" markdown>
 
@@ -109,7 +105,7 @@ A resposta empírica: parcialmente. Correlação +0.40, R² = 0.16. **39% dos ba
 ## Recursos auxiliares
 
 - [API do data.rio](data-rio-api.md) — endpoints validados pelo probe (relatório 02).
-- [Glossário](glossario.md) — IDEB, Theil, AP, RA, bairro, H3, SAMI, IDS.
+- [Sobre — glossário](sobre.md#glossario) — IDEB, Theil, AP, RA, bairro, H3, SAMI, IDS.
 - [Reproduzir](reproduzir.md) — quickstart técnico ponta-a-ponta.
 
 ## Ler na ordem cronológica

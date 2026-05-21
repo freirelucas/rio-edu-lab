@@ -1,15 +1,13 @@
 ---
-title: "Reardon (2011) — The widening academic-achievement gap between the rich and the poor: New evidenc"
-description: "Documenta que o gap de desempenho entre o quintil mais rico e o mais pobre nos EUA cresceu ~40% desde os anos 1970 e excede o gap racial branco-negro. Método: o"
+title: "Reardon (2011) — Riqueza prediz boa escola no Rio?"
+description: "O gradiente SES → IDEB existe (Pearson +0,40) mas é modesto. 22% dos bairros são resilientes (baixo SES, bom IDEB) e 17% sub-performam (bom SES, baixo IDEB) — quase metade desafia a leitura "Zona Sul"
 ---
 
-# Reardon (2011)
+# Riqueza prediz boa escola no Rio?
 
-**The widening academic-achievement gap between the rich and the poor: New evidence and possible explanations**
+**Parcialmente. R²=0,16; 39% dos bairros desafiam o gradiente.**
 
-_Whither Opportunity? (Duncan & Murnane eds.), Russell Sage Foundation, ch. 5_
-
-<a href="https://cepa.stanford.edu/sites/default/files/reardon%20whither%20opportunity%20-%20chapter%205.pdf" target="_blank">https://cepa.stanford.edu/sites/default/files/reardon%20whither%20opportunity%20-%20chapter%205.pdf</a>
+O gradiente SES → IDEB existe (Pearson +0,40) mas é modesto. 22% dos bairros são resilientes (baixo SES, bom IDEB) e 17% sub-performam (bom SES, baixo IDEB) — quase metade desafia a leitura "Zona Sul = privilégio uniforme".
 
 <div class="status-hero status-partial" aria-label="Status no lab: Replicação parcial">
   <span class="icon" aria-hidden="true">◐</span>
@@ -19,45 +17,40 @@ _Whither Opportunity? (Duncan & Murnane eds.), Russell Sage Foundation, ch. 5_
   </div>
 </div>
 
-**Citações (OpenAlex, 2026-05-18):** 1.146
 
-## Resumo
+## O que esse paper diz
 
 Documenta que o gap de desempenho entre o quintil mais rico e o mais pobre nos EUA cresceu ~40% desde os anos 1970 e excede o gap racial branco-negro. Método: ordenar por SES, ordenar por desempenho, decompor o gap por percentil.
 
-## Categorias
+## Aplicado ao Rio
 
-- **Área:** desigualdade, SES e desempenho, tendências longitudinais
-- **Método:** gap por percentil, decomposição de variância
-- **Brasil-específico:** não
+Gradiente SES × IDEB no Rio existe mas é modesto (R²=0.16); 39% dos bairros estão em quadrantes não-concordantes (resilientes ou sub-performance) — desfaz a leitura "Zona Sul = privilégio uniforme". Operacionalizado no produto **VULN-EDU** ([detalhe técnico](../produtos/vuln_edu.md)).
 
-## Requisitos de dados × cobertura no data.rio
+**Como auditar:**
+
+- [Relatório 15](../reports/15_vuln_edu.md)
+
+## Provenance
+
+**The widening academic-achievement gap between the rich and the poor: New evidence and possible explanations**
+
+_Reardon (2011). Whither Opportunity? (Duncan & Murnane eds.), Russell Sage Foundation, ch. 5._
+
+<a href="https://cepa.stanford.edu/sites/default/files/reardon%20whither%20opportunity%20-%20chapter%205.pdf" target="_blank">https://cepa.stanford.edu/sites/default/files/reardon%20whither%20opportunity%20-%20chapter%205.pdf</a>
+
+**Citações (OpenAlex, 2026-05-18):** 1.146
+
+**Área:** desigualdade, SES e desempenho, tendências longitudinais
+
+**Método:** gap por percentil, decomposição de variância
+
+### Requisitos de dados × cobertura no data.rio
 
 | Requisito | Status | Item data.rio |
 |---|---|---|
 | indicador socioeconômico granular | ✅ disponível no data.rio | `ids-rm-2010` |
 | indicador de desempenho educacional | ✅ disponível no data.rio | `ideb-municipal-bairros` |
 
-## Replicação no lab
+**Código:** `analysis/28_*.py`, `analysis/29_*.py`, `analysis/30_*.py`
 
-- **Produto associado:** VULN-EDU
-- **Relatórios:** [15](../reports/15_vuln_edu.md)
-- **Scripts:** `analysis/28_*.py`, `analysis/29_*.py`, `analysis/30_*.py`
-
-<div class="policy-callout">
-  <header>
-    <span class="icon" aria-hidden="true">🔬</span>
-    <h3>Insight da replicação aplicado ao Rio</h3>
-  </header>
-  <div class="body">
-    <div class="cell"><strong>Achado replicado</strong>: Gradiente SES × IDEB no Rio existe mas é modesto (R²=0.16); 39% dos bairros estão em quadrantes não-concordantes (resilientes ou sub-performance) — desfaz a leitura "Zona Sul = privilégio uniforme".</div>
-  </div>
-  <footer><a href="../../reports/15_vuln_edu/">Como auditar: relatório 15 →</a></footer>
-</div>
-
-
-## Referência completa
-
-Reardon (2011). _The widening academic-achievement gap between the rich and the poor: New evidence and possible explanations_. Whither Opportunity? (Duncan & Murnane eds.), Russell Sage Foundation, ch. 5.
-
-[← Voltar ao catálogo](index.md)
+[← Voltar aos papers](index.md)

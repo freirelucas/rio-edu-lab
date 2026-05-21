@@ -161,5 +161,5 @@ _Group: https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310_
 
 !!! tip ""
     - [02 — Probe da API](02_ingestion_probe.md)
-    - [Tour 5 min](../tour.md)
+    - [Papers](../papers/index.md)
     - [Reproduzir](../reproduzir.md)

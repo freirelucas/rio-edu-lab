@@ -1,6 +1,13 @@
-# API do data.rio
+---
+title: Dados (data.rio) — rio-edu-lab
+description: 9.855 itens públicos no portal data.rio. Como funciona a API, como bater contra um paper.
+---
 
-O portal [data.rio](https://www.data.rio/) é uma instância do **ArcGIS Hub** rodando em `pcrj.maps.arcgis.com`. **Não há documentação própria do IPP** — tudo segue o padrão público da [ArcGIS REST API](https://developers.arcgis.com/rest/). Esta página resume os endpoints úteis para o caso de uso do ACEC-Hub, validados experimentalmente no [Relatório 02](reports/02_ingestion_probe.md).
+# Dados do data.rio
+
+**9.855 itens públicos.** O lab snapshota o portal inteiro e cruza cada paper do catálogo contra ele. Esta página explica como o portal funciona e como você bate dados contra papers por conta própria.
+
+O portal [data.rio](https://www.data.rio/) é uma instância do **ArcGIS Hub** rodando em `pcrj.maps.arcgis.com`. Não há documentação própria do IPP — tudo segue o padrão público da [ArcGIS REST API](https://developers.arcgis.com/rest/). Endpoints validados no [Relatório 02](reports/02_ingestion_probe.md).
 
 ## Endpoints principais
 

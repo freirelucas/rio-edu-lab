@@ -1,15 +1,11 @@
 ---
-title: "Reardon & Owens (2014) — 60 years after Brown: Trends and consequences of school segregation"
-description: "Revisa medidas de segregação escolar (raça, SES) nos EUA nos 60 anos pós-Brown v. Board, mostrando declínio inicial seguido de re-segregação por SES nas últimas"
+title: "Reardon & Owens (2014) — Reardon & Owens (2014) — replicação pendente"
+description: "Revisa medidas de segregação escolar (raça, SES) nos EUA nos 60 anos pós-Brown v. Board, mostrando declínio inicial seguido de re-segregação por SES nas últimas décadas."
 ---
 
-# Reardon & Owens (2014)
+# Reardon & Owens (2014) — replicação pendente
 
-**60 years after Brown: Trends and consequences of school segregation**
-
-_Annual Review of Sociology, 40_
-
-<a href="https://doi.org/10.1146/annurev-soc-071913-043152" target="_blank">https://doi.org/10.1146/annurev-soc-071913-043152</a>
+**Dados básicos cobertos no data.rio. Replicação pendente — Reardon & Owens (2014) está na fila.**
 
 <div class="status-hero status-pending" aria-label="Status no lab: Catalogado — pendente">
   <span class="icon" aria-hidden="true">⏳</span>
@@ -19,27 +15,34 @@ _Annual Review of Sociology, 40_
   </div>
 </div>
 
-**Citações (OpenAlex, 2026-05-18):** 503
 
-## Resumo
+## O que esse paper faz
 
 Revisa medidas de segregação escolar (raça, SES) nos EUA nos 60 anos pós-Brown v. Board, mostrando declínio inicial seguido de re-segregação por SES nas últimas décadas.
 
-## Categorias
+## Por que dá pra rodar no Rio
 
-- **Área:** segregação escolar, equidade, tendências longitudinais
-- **Método:** índice de dissimilaridade, índice de isolamento
-- **Brasil-específico:** não
+Dos 2 requisitos de dados do paper, **2 têm cobertura no data.rio**. Detalhe abaixo em Provenance.
 
-## Requisitos de dados × cobertura no data.rio
+## Provenance
+
+**60 years after Brown: Trends and consequences of school segregation**
+
+_Reardon, Owens (2014). Annual Review of Sociology, 40._
+
+<a href="https://doi.org/10.1146/annurev-soc-071913-043152" target="_blank">https://doi.org/10.1146/annurev-soc-071913-043152</a>
+
+**Citações (OpenAlex, 2026-05-18):** 503
+
+**Área:** segregação escolar, equidade, tendências longitudinais
+
+**Método:** índice de dissimilaridade, índice de isolamento
+
+### Requisitos de dados × cobertura no data.rio
 
 | Requisito | Status | Item data.rio |
 |---|---|---|
 | composição SES por bairro | ✅ disponível no data.rio | `ids-rm-2010` |
 | indicador de matrícula | ◐ cobertura parcial | `ideb-municipal-bairros` |
 
-## Referência completa
-
-Reardon, Owens (2014). _60 years after Brown: Trends and consequences of school segregation_. Annual Review of Sociology, 40.
-
-[← Voltar ao catálogo](index.md)
+[← Voltar aos papers](index.md)
