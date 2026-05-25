@@ -71,6 +71,7 @@ nav:
       - Visão geral: sobre.md
       - Histórico técnico: investigacao.md
       - Reproduzir: reproduzir.md
+      - Qualidade do pipeline: qualidade.md
 
 markdown_extensions:
   - admonition
