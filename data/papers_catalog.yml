@@ -421,3 +421,103 @@ papers:
         status: external
     replication_status: unfeasible
     policy_insight: null
+
+  # ============================================================
+  # DESCOBERTOS VIA FUNIL (auto-promovidos por 48_promote_funnel.py)
+  # ============================================================
+
+  - id: coleman-1982-high
+    authors: [Coleman, Hoffer, Kilgore]
+    year: 1982
+    title: "High school achievement : public, Catholic, and private schools compared"
+    venue: "Basic Books"
+    doi_or_url: ""
+    openalex_id: "https://openalex.org/W627462258"
+    citations_openalex: 983
+    abstract: >
+      (abstract não disponível no OpenAlex)
+    area: ["efeito-escola", "sociologia educacional", "avaliação"]
+    method: []
+    brazil_specific: false
+    data_requirements:
+      - "geometria de escolas"
+      - "IDEB por bairro"
+      - "INSE por escola"
+    data_rio_coverage:
+      - requirement: "geometria de escolas"
+        item_id: "498e637753bd4e0da76e90103dd21eb7"
+        status: available
+      - requirement: "IDEB por bairro"
+        item_id: "6b375a1fcab642779398aa12108c906f"
+        status: available
+      - requirement: "INSE por escola"
+        item_id: "fa85ddc76a524380ad7fc60e3006ee97"
+        status: available
+    replication_status: pending
+    policy_insight: null
+
+  - id: dupriez-2006-inequalities
+    authors: [Dupriez, Dumay]
+    year: 2006
+    title: "Inequalities in school systems: effect of school structure or of society structure?"
+    venue: "Comparative Education"
+    doi_or_url: "https://doi.org/10.1080/03050060600628074"
+    openalex_id: "https://openalex.org/W2080712097"
+    citations_openalex: 102
+    abstract: >
+      In this study the authors start from the observed fact that equality of
+      opportunities of educational achievement is higher in integrated school systems
+      than in differentiated school systems. In other words, in integrated school
+      systems, a pupil’s school achievement depends less than elsewhere on the social
+      and cultural resources of his or her family. However, before concluding that
+      school structure has a significant influence on inequalities at school, it is
+      important to distinguish between the…
+    area: ["desigualdade", "equidade", "política educacional"]
+    method: []
+    brazil_specific: false
+    data_requirements:
+      - "IDEB por bairro"
+      - "geometria de escolas"
+      - "INSE por escola"
+    data_rio_coverage:
+      - requirement: "IDEB por bairro"
+        item_id: "6b375a1fcab642779398aa12108c906f"
+        status: available
+      - requirement: "geometria de escolas"
+        item_id: "498e637753bd4e0da76e90103dd21eb7"
+        status: available
+      - requirement: "INSE por escola"
+        item_id: "fa85ddc76a524380ad7fc60e3006ee97"
+        status: available
+    replication_status: pending
+    policy_insight: null
+
+  - id: schwartz-2011-housing
+    authors: [Schwartz]
+    year: 2011
+    title: "Housing Policy Is School Policy: Economically Integrative Housing Promotes Academic Success in Montgomery County, MD."
+    venue: "Education Digest: Essential Readings Condensed for Quick Review"
+    doi_or_url: ""
+    openalex_id: "https://openalex.org/W230040584"
+    citations_openalex: 102
+    abstract: >
+      (abstract não disponível no OpenAlex)
+    area: ["segregação escolar", "equidade espacial", "política educacional"]
+    method: []
+    brazil_specific: false
+    data_requirements:
+      - "IDEB por bairro"
+      - "geometria de escolas"
+      - "INSE por escola"
+    data_rio_coverage:
+      - requirement: "IDEB por bairro"
+        item_id: "6b375a1fcab642779398aa12108c906f"
+        status: available
+      - requirement: "geometria de escolas"
+        item_id: "498e637753bd4e0da76e90103dd21eb7"
+        status: available
+      - requirement: "INSE por escola"
+        item_id: "fa85ddc76a524380ad7fc60e3006ee97"
+        status: available
+    replication_status: pending
+    policy_insight: null

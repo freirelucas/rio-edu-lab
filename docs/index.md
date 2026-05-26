@@ -68,7 +68,7 @@ O pipeline tem 4 estágios, todos auditáveis. Hoje:
 <div class="big-num-grid">
   <div class="big-num"><span class="num">374</span><span class="label">candidatos no funil (snowball bibliométrico)</span></div>
   <div class="big-num"><span class="num">109</span><span class="label">com tema educacional relevante</span></div>
-  <div class="big-num"><span class="num">12</span><span class="label">papers no catálogo curado</span></div>
+  <div class="big-num"><span class="num">15</span><span class="label">papers no catálogo curado</span></div>
   <div class="big-num"><span class="num">3</span><span class="label">replicados publicados</span></div>
 </div>
 <!-- funnel:bignums:end -->

@@ -5,20 +5,20 @@ description: "12 papers acadêmicos sobre educação. Organizados por tema. Cada
 
 # Papers
 
-**12 papers acadêmicos sobre educação.** Organizados por tema. Cada um cruzado contra os **9.855 itens do data.rio**. Status de replicação + cobertura de dados + achado quando aplicável.
+**15 papers acadêmicos sobre educação.** Organizados por tema. Cada um cruzado contra os **9.855 itens do data.rio**. Status de replicação + cobertura de dados + achado quando aplicável.
 
 O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois do snowball bibliométrico, filtro temático e checagem de cobertura. [Ver o funil completo →](../index.md#como-o-funil-funciona)
 
 <div class="big-num-grid">
-  <div class="big-num"><span class="num">12</span><span class="label">papers no catálogo</span></div>
+  <div class="big-num"><span class="num">15</span><span class="label">papers no catálogo</span></div>
   <div class="big-num"><span class="num">3</span><span class="label">replicados (full + partial)</span></div>
-  <div class="big-num"><span class="num">6</span><span class="label">prontos pra replicar</span></div>
+  <div class="big-num"><span class="num">9</span><span class="label">prontos pra replicar</span></div>
   <div class="big-num"><span class="num">3</span><span class="label">faltam dados externos</span></div>
 </div>
 
 **Legenda de status:** ✓ replicado · ◐ replicação parcial · ⏳ catalogado pendente · ⚠ dados ausentes
 
-## Desigualdade & equidade (7)
+## Desigualdade & equidade (9)
 
 <div class="paper-grid">
 <a class="paper-card status-pending" href="coleman-1966-eeo/">
@@ -45,12 +45,28 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
   <span class="cta">Próxima leitura →</span>
 </a>
 
+<a class="paper-card status-pending" href="dupriez-2006-inequalities/">
+  <span class="drop-cap" aria-hidden="true">D</span>
+  <h4>Dupriez & Dumay (2006)</h4>
+  <p class="meta">desigualdade</p>
+  <p class="insight">In this study the authors start from the observed fact that equality of opportunities of educational achievement is higher in integrated …</p>
+  <span class="cta">Próxima leitura →</span>
+</a>
+
 <a class="paper-card status-partial" href="reardon-2011-whither/">
   <span class="drop-cap" aria-hidden="true">R</span>
   <h4>Reardon (2011)</h4>
   <p class="meta">1.146 citações · desigualdade</p>
   <p class="insight">Gradiente SES × IDEB no Rio existe mas é modesto (R²=0.16); 39% dos bairros estão em quadrantes não-concordantes (resilientes ou sub-perf…</p>
   <span class="cta">Replicação parcial →</span>
+</a>
+
+<a class="paper-card status-pending" href="schwartz-2011-housing/">
+  <span class="drop-cap" aria-hidden="true">S</span>
+  <h4>Schwartz (2011)</h4>
+  <p class="meta">segregação escolar</p>
+  <p class="insight">(abstract não disponível no OpenAlex)</p>
+  <span class="cta">Próxima leitura →</span>
 </a>
 
 <a class="paper-card status-pending" href="alves-soares-2013/">
@@ -75,6 +91,18 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
   <p class="meta">79 citações · acessibilidade · 🇧🇷</p>
   <p class="insight">AP 3 (Zona Norte) lidera acesso ponderado por IDEB; Zona Sul tem IDEB médio mais alto mas baixa densidade. Coropléticos por AP escondem v…</p>
   <span class="cta">Replicação parcial →</span>
+</a>
+</div>
+
+## Sociologia & efeito-escola (1)
+
+<div class="paper-grid">
+<a class="paper-card status-pending" href="coleman-1982-high/">
+  <span class="drop-cap" aria-hidden="true">C</span>
+  <h4>Coleman et al. (1982)</h4>
+  <p class="meta">efeito-escola</p>
+  <p class="insight">(abstract não disponível no OpenAlex)</p>
+  <span class="cta">Próxima leitura →</span>
 </a>
 </div>
 

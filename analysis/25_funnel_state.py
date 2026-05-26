@@ -70,15 +70,14 @@ def compute_state() -> dict:
 
     status_breakdown = Counter(p.get("replication_status") for p in papers)
 
+    # "Ativados" = itens do data.rio usados por papers REPLICADOS (full/partial).
+    # Coberturas de papers `pending` são sugestões provisórias do matching IDF
+    # (validadas só na replicação real), então não contam como ativadas — senão
+    # promover candidatos infla o número sem nenhuma replicação nova.
     active_items = set()
     for p in papers:
-        for cov in p.get("data_rio_coverage") or []:
-            iid = cov.get("item_id")
-            if iid and iid not in {"bairros-ipp", "ideb-municipal-bairros", "ids-rm-2010"}:
-                # Only true manifest items (skip our synthetic slugs)
-                active_items.add(iid)
-    # Include synthetic slugs as 'active' for counting purpose (4 ativos)
-    for p in papers:
+        if p.get("replication_status") not in ("full", "partial"):
+            continue
         for cov in p.get("data_rio_coverage") or []:
             iid = cov.get("item_id")
             if iid:

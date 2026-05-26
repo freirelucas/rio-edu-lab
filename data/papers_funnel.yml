@@ -2248,8 +2248,8 @@ candidates:
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
     score: 18.99
     status: available
-  decision: ''
-  decision_reason: ''
+  decision: accept
+  decision_reason: v0.11 — setor escolar × desempenho, estende Coleman-1966
 - openalex_id: https://openalex.org/W2157522835
   doi: 10.1257/jep.25.1.159
   title: 'Priceless: The Nonpecuniary Benefits of Schooling'
@@ -6776,8 +6776,8 @@ candidates:
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
     score: 18.99
     status: available
-  decision: ''
-  decision_reason: ''
+  decision: accept
+  decision_reason: v0.11 — desigualdade sistêmica (between/within), eixo Theil
 - openalex_id: https://openalex.org/W230040584
   doi: ''
   title: 'Housing Policy Is School Policy: Economically Integrative Housing Promotes Academic Success in Montgomery County,
@@ -6820,8 +6820,8 @@ candidates:
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
     score: 18.99
     status: available
-  decision: ''
-  decision_reason: ''
+  decision: accept
+  decision_reason: v0.11 — habitação × escola/segregação, eixo Reardon/VULN-EDU
 - openalex_id: https://openalex.org/W2117388862
   doi: 10.1111/1468-0262.00057
   title: Lorenz Dominance and the Variance of Logarithms

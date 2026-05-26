@@ -1,20 +1,20 @@
 {
   "stage1_candidates": 374,
   "stage2_with_requirements": 109,
-  "stage4_catalog": 12,
+  "stage4_catalog": 15,
   "replicated_total": 3,
   "status_breakdown": {
     "partial": 2,
     "full": 1,
-    "pending": 6,
+    "pending": 9,
     "unfeasible": 3
   },
   "data_rio_total": 9855,
   "data_rio_active": 4,
   "data_rio_orphan": 9851,
   "coverage_pct": 0.04,
-  "conversion_rate_pct": 3.2,
-  "replication_rate_pct": 25.0,
+  "conversion_rate_pct": 4.0,
+  "replication_rate_pct": 20.0,
   "categories": [
     {
       "id": "geometry-schools",
