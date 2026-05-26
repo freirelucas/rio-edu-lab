@@ -2,8 +2,8 @@
 
 Para cada `data_requirement` do catálogo (canonicalizado via taxonomia em
 `data/requirements_taxonomy.yml`), procura itens do manifest data.rio que
-provavelmente o satisfazem. Algoritmo: scoring por keyword × peso por
-local (title=3, tags=2, snippet=1).
+provavelmente o satisfazem. Algoritmo: scoring IDF-weighted sobre unigrams +
+bigrams (ver `_match.py`).
 
 Output é sugestão para o curador, não atribuição final. O curador valida
 e edita `data_rio_coverage` em `data/papers_catalog.yml` manualmente.
@@ -44,10 +44,9 @@ except ImportError:
 # Import shared tokenizer/scorer from sibling module.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _match import (  # noqa: E402
-    category_keywords,
+    build_idf_index,
     load_taxonomy,
-    score_item,
-    tokenize,  # noqa: F401  # re-exported for backward compat callers
+    weighted_score,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -67,11 +66,14 @@ def build_suggestions(
     top_k: int,
 ) -> list[dict]:
     """For each (paper, requirement) pair, top-K candidate manifest items."""
-    # Cache: category_id → ranked candidates
+    # IDF-weighted scoring over taxonomy categories + manifest items.
+    idf, cat_tokens, item_tokens = build_idf_index(cats, items)
     cat_candidates: dict[str, list[tuple[float, dict]]] = {}
-    for cid, cat in cats.items():
-        kws = category_keywords(cat)
-        scored = [(score_item(it, kws), it) for it in items]
+    for cid in cats:
+        scored = [
+            (weighted_score(item_tokens[k], cat_tokens[cid], idf), it)
+            for k, it in enumerate(items)
+        ]
         scored = [(s, it) for s, it in scored if s > 0]
         scored.sort(key=lambda x: -x[0])
         cat_candidates[cid] = scored[:top_k]
@@ -104,7 +106,7 @@ def build_suggestions(
                     "requirement": req,
                     "category_id": cid,
                     "rank": rank,
-                    "score": round(score, 1),
+                    "score": round(score, 2),
                     "candidate_item_id": it.get("id", ""),
                     "candidate_title": it.get("title", ""),
                     "currently_assigned": current.get("item_id") or "",

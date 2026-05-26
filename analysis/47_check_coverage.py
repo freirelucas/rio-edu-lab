@@ -38,7 +38,13 @@ except ImportError:
     sys.exit(1)
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _match import category_keywords, load_taxonomy, score_item  # noqa: E402
+from _match import (  # noqa: E402
+    build_idf_index,
+    candidate_text,
+    load_taxonomy,
+    tokenize_bigrams,
+    weighted_score,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 FUNNEL_YML = ROOT / "data" / "papers_funnel.yml"
@@ -46,6 +52,7 @@ TAXONOMY_YML = ROOT / "data" / "requirements_taxonomy.yml"
 MANIFEST_JSON = ROOT / "data" / "manifest.json"
 
 DEFAULT_AVAILABLE_THRESHOLD = 5.0
+DEFAULT_PARTIAL_THRESHOLD = 2.0
 
 # Categorias cujos dados notoriamente vivem fora do data.rio (microdado INEP,
 # PNAD, RAIS, OSM). Marcamos `external` sem rodar matching.
@@ -64,10 +71,10 @@ def is_external_category(cat: dict) -> bool:
     return False
 
 
-def status_from_score(score: float, threshold: float) -> str:
+def status_from_score(score: float, threshold: float, partial_threshold: float) -> str:
     if score >= threshold:
         return "available"
-    if score > 0:
+    if score >= partial_threshold:
         return "partial"
     return "missing"
 
@@ -93,6 +100,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--threshold", type=float, default=DEFAULT_AVAILABLE_THRESHOLD,
                     help=f"Score ≥ threshold → available (default {DEFAULT_AVAILABLE_THRESHOLD})")
+    ap.add_argument("--partial-threshold", type=float, default=DEFAULT_PARTIAL_THRESHOLD,
+                    help=f"Score ≥ this (but < threshold) → partial (default {DEFAULT_PARTIAL_THRESHOLD})")
     ap.add_argument("--force", action="store_true",
                     help="Recompute coverage even when already present")
     args = ap.parse_args()
@@ -112,28 +121,39 @@ def main() -> int:
     print(f"loaded {len(candidates)} candidates, {len(items)} manifest items, "
           f"{len(cats)} taxonomy categories")
 
-    # Pre-compute top manifest item per category (avoids quadratic scan).
-    # include_notes=False evita poluir o token set com metadados (root cause
-    # PoSWID #3: notes tipo "Feature Service" matchavam manifest items
-    # genéricos, inflando scores e nunca emitindo `partial`/`missing`).
+    # IDF over taxonomy categories + manifest items + candidate abstracts
+    # (same corpus as Stage 2 in 46, so scores are comparable across stages).
+    cand_tokens = [tokenize_bigrams(candidate_text(c)) for c in candidates]
+    idf, cat_tokens, item_tokens = build_idf_index(cats, items, extra_docs=cand_tokens)
+
+    # Pre-compute the best-matching manifest item per category (avoids quadratic
+    # rescans). External categories are skipped — their data lives off data.rio.
     cat_top: dict[str, dict] = {}
     for cid, cat in cats.items():
         if is_external_category(cat):
             continue
-        kws = category_keywords(cat, include_notes=False)
-        scored = [(score_item(it, kws), it) for it in items]
-        scored = [(s, it) for s, it in scored if s > 0]
-        scored.sort(key=lambda x: -x[0])
-        if scored:
-            cat_top[cid] = {"score": scored[0][0], "item": scored[0][1]}
+        best_score, best_item = 0.0, None
+        for k, it in enumerate(items):
+            s = weighted_score(item_tokens[k], cat_tokens[cid], idf)
+            if s > best_score:
+                best_score, best_item = s, it
+        if best_item is not None:
+            cat_top[cid] = {"score": best_score, "item": best_item}
 
     n_processed = 0
     n_skipped = 0
     n_no_suggestions = 0
+    n_cleared = 0
     for c in candidates:
         sugg = c.get("suggested_requirements") or []
         if not sugg:
-            n_no_suggestions += 1
+            # No suggestions → no coverage. Clear any stale rows left from a
+            # previous scoring run (keeps derived state consistent).
+            if c.get("coverage"):
+                c["coverage"] = []
+                n_cleared += 1
+            else:
+                n_no_suggestions += 1
             continue
         if c.get("coverage") and not args.force:
             n_skipped += 1
@@ -168,18 +188,19 @@ def main() -> int:
                 "category_id": cid,
                 "manifest_item_id": it.get("id"),
                 "manifest_title": it.get("title", ""),
-                "score": round(score, 1),
-                "status": status_from_score(score, args.threshold),
+                "score": round(score, 2),
+                "status": status_from_score(score, args.threshold, args.partial_threshold),
             })
         c["coverage"] = coverage_rows
         n_processed += 1
 
-    print(f"\n=== summary ===")
+    print("\n=== summary ===")
     print(f"  candidates processed: {n_processed}")
     print(f"  skipped (already had coverage): {n_skipped}")
+    print(f"  stale coverage cleared (no suggestions): {n_cleared}")
     print(f"  no suggestions to check: {n_no_suggestions}")
 
-    if n_processed > 0 or args.force:
+    if n_processed > 0 or n_cleared > 0 or args.force:
         write_funnel(candidates)
         print(f"wrote {FUNNEL_YML.relative_to(ROOT)}")
 

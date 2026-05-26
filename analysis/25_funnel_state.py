@@ -21,6 +21,7 @@ Uso:
 from __future__ import annotations
 
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -39,6 +40,12 @@ MANIFEST_JSON = ROOT / "data" / "manifest.json"
 
 CHARTS_DIR = ROOT / "docs" / "_assets" / "charts"
 STATE_JSON = ROOT / "data" / "processed" / "funnel_state.json"
+INDEX_MD = ROOT / "docs" / "index.md"
+
+# Funil analítico: os números do funil na landing são derivados do estado, não
+# hardcoded. 25 reescreve o bloco entre estes marcadores em docs/index.md.
+BIGNUMS_START = "<!-- funnel:bignums:start (gerado por analysis/25_funnel_state.py) -->"
+BIGNUMS_END = "<!-- funnel:bignums:end -->"
 
 PLOTLY_FONT = {"family": "Inter, system-ui, sans-serif", "size": 14}
 
@@ -63,15 +70,14 @@ def compute_state() -> dict:
 
     status_breakdown = Counter(p.get("replication_status") for p in papers)
 
+    # "Ativados" = itens do data.rio usados por papers REPLICADOS (full/partial).
+    # Coberturas de papers `pending` são sugestões provisórias do matching IDF
+    # (validadas só na replicação real), então não contam como ativadas — senão
+    # promover candidatos infla o número sem nenhuma replicação nova.
     active_items = set()
     for p in papers:
-        for cov in p.get("data_rio_coverage") or []:
-            iid = cov.get("item_id")
-            if iid and iid not in {"bairros-ipp", "ideb-municipal-bairros", "ids-rm-2010"}:
-                # Only true manifest items (skip our synthetic slugs)
-                active_items.add(iid)
-    # Include synthetic slugs as 'active' for counting purpose (4 ativos)
-    for p in papers:
+        if p.get("replication_status") not in ("full", "partial"):
+            continue
         for cov in p.get("data_rio_coverage") or []:
             iid = cov.get("item_id")
             if iid:
@@ -238,6 +244,42 @@ def write_json(path: Path, payload: dict) -> None:
     )
 
 
+def render_bignums(state: dict) -> str:
+    """The 4-stage big-num grid for the landing, sourced from funnel state."""
+    cells = [
+        (state["stage1_candidates"], "candidatos no funil (snowball bibliométrico)"),
+        (state["stage2_with_requirements"], "com tema educacional relevante"),
+        (state["stage4_catalog"], "papers no catálogo curado"),
+        (state["replicated_total"], "replicados publicados"),
+    ]
+    lines = ['<div class="big-num-grid">']
+    for num, label in cells:
+        lines.append(
+            f'  <div class="big-num"><span class="num">{num}</span>'
+            f'<span class="label">{label}</span></div>'
+        )
+    lines.append("</div>")
+    return "\n".join(lines)
+
+
+def inject_block(path: Path, start: str, end: str, content: str) -> bool:
+    """Replace the text between `start` and `end` markers with `content`.
+
+    Returns True if the file changed. Raises if markers are absent (so a
+    renamed/removed marker fails loudly in CI instead of silently no-op'ing).
+    """
+    text = path.read_text(encoding="utf-8")
+    block = f"{start}\n{content}\n{end}"
+    pat = re.compile(re.escape(start) + r".*?" + re.escape(end), re.DOTALL)
+    if not pat.search(text):
+        raise SystemExit(f"markers not found in {path.relative_to(ROOT)}: {start!r}")
+    new = pat.sub(lambda _m: block, text)
+    if new != text:
+        path.write_text(new, encoding="utf-8")
+        return True
+    return False
+
+
 def main() -> int:
     for required in (FUNNEL_YML, CATALOG_YML, TAXONOMY_YML, MANIFEST_JSON):
         if not required.exists():
@@ -250,6 +292,9 @@ def main() -> int:
     write_json(CHARTS_DIR / "data_rio_coverage.json", render_coverage_chart(state))
     write_json(CHARTS_DIR / "themes.json", render_themes_chart(state))
     write_json(STATE_JSON, state)
+
+    if INDEX_MD.exists() and inject_block(INDEX_MD, BIGNUMS_START, BIGNUMS_END, render_bignums(state)):
+        print(f"updated big-nums in {INDEX_MD.relative_to(ROOT)}")
 
     print(
         f"funnel: {state['stage1_candidates']} → {state['stage2_with_requirements']} → "

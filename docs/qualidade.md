@@ -55,7 +55,7 @@ O `rio-edu-lab` não tem um front/back web literal:
 **Critérios de qualidade.**
 
 - Schema **estrito** do funil (`31_build_paper_catalog.py --validate-funnel`): sem `openalex_id` duplicado, `decision` válida, `category_ids` ∈ taxonomia fechada de 10 categorias.
-- **Matching com limiar explícito** (score de keywords ≥ 5,0 = `available`) → auditável, não subjetivo.
+- **Matching com limiar explícito** (score **IDF-weighted** ≥ 5,0 = `available`) → auditável, não subjetivo.
 - **Drift check** do índice reverso (CI reroda `41` e diffa a página).
 
 ## 4. Análise dos dados disponíveis em toda a API do data.rio
@@ -103,7 +103,7 @@ O `rio-edu-lab` não tem um front/back web literal:
 **Critérios de qualidade.**
 
 - **Auditabilidade por design:** relatórios 01→15; cada produto cita o paper-base e replica o método antes de estender ("paper-driven").
-- **Reprodutibilidade testável:** suíte verde (19 testes do lab + 20 do `acec`); sanity do `share_within`; build estrito.
+- **Reprodutibilidade testável:** suíte verde (26 testes do lab + 20 do `acec`); sanity do `share_within`; build estrito.
 - Proveniência/licenciamento creditados; DOI Zenodo preservado entre releases.
 
 ## Portões transversais
@@ -112,7 +112,7 @@ Valem para todo o pipeline e são aplicados no CI (`.github/workflows/{ci,pages}
 
 | Portão | O que garante |
 |---|---|
-| `pytest` (19 lab + 20 `acec`) | Invariantes do Theil (2 e 3 níveis) e o achado `share_within` como *hard-fail* |
+| `pytest` (26 lab + 20 `acec`) | Invariantes do Theil (2 e 3 níveis), primitivas do matching IDF, e o achado `share_within` como *hard-fail* |
 | `ruff` | Lint (hoje *warn-only*; a apertar) |
 | Validação de schema | Catálogo e funil (`31_build_paper_catalog.py [--validate-funnel]`) |
 | Drift checks | Páginas geradas == commitadas (papers, índice reverso, charts) |

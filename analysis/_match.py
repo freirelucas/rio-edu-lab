@@ -1,21 +1,31 @@
-"""Tokenization + scoring primitives shared by 41 + funnel scripts (46, 47).
+"""Tokenization + IDF-weighted scoring shared by the funnel pipeline (41, 46, 47).
 
-Promoted out of `41_match_requirements.py` to avoid duplication across the
-funnel pipeline. Stdlib + PyYAML only — same as the rest of `analysis/*`.
+Stdlib + PyYAML only — same as the rest of `analysis/*`.
+
+Scoring (v0.11): tokens are unigrams + bigrams; each token is weighted by its
+IDF over a corpus (taxonomy categories + manifest items, optionally the funnel
+candidates). A match score is the sum of IDF weights of the tokens shared
+between a query (paper text or category) and a target (category or manifest
+item). Rare, discriminative tokens ("longitudinal cohort") dominate; common
+domain tokens ("school", "data") are downweighted. Replaces the earlier
+bag-of-words count/positional scoring (validated in 49_match_dryrun.py: kills
+the Income-Inequality→geometry-schools false positive and roughly halves the
+`external` noise).
 
 Functions:
-  - tokenize(text)                       -> set[str]
-  - category_keywords(cat_dict)          -> set[str]
-  - score_item(item_dict, keywords)      -> float          (manifest item lookup)
-  - score_against_categories(text, cats) -> list[(cid, hits)]  (text-side classifier)
+  - tokenize(text)                       -> set[str]   (unigrams; edu_signal)
+  - tokenize_bigrams(text)               -> set[str]   (unigrams + bigrams)
+  - edu_signal(text)                     -> int        (Stage-2 domain pre-filter)
+  - category_text/manifest_item_text/candidate_text(x) -> str  (corpus builders)
+  - compute_idf(list[set[str]])          -> dict[str, float]
+  - weighted_score(query, target, idf)   -> float
+  - build_idf_index(cats, items, *, extra_docs=()) -> (idf, cat_tokens, item_tokens)
   - load_taxonomy(path)                  -> (cat_by_id, alias_lookup)
-
-Constants:
-  - STOPWORDS, WEIGHT_TITLE, WEIGHT_TAGS, WEIGHT_SNIPPET
 """
 
 from __future__ import annotations
 
+import math
 import re
 import unicodedata
 from pathlib import Path
@@ -31,15 +41,13 @@ STOPWORDS = {
     "por", "para", "em", "com", "sem", "ou", "e", "ao", "à",
     "se", "que", "qual", "como", "via", "ser", "ter",
     "the", "of", "in", "on", "by", "to", "and", "or", "for",
+    "is", "are", "was", "were", "be", "been", "this", "that",
+    "these", "those", "from", "with", "at",
 }
 
-WEIGHT_TITLE = 3.0
-WEIGHT_TAGS = 2.0
-WEIGHT_SNIPPET = 1.0
-
 # Vocabulário de educação para o pré-filtro do Stage 2.
-# Paper deve mentar >= 1 destes tokens em title+abstract para ser scoreado
-# contra a taxonomia (default; ajustável via --edu-min). Cuts papers
+# Paper deve mentar >= N destes tokens em title+abstract para ser scoreado
+# contra a taxonomia (default 2; ajustável via --edu-min). Cuts papers
 # tangenciais (médicos, infra-de-rede) que descobrimos via co-citação mas
 # não são domínio do lab.
 EDU_KEYWORDS = frozenset({
@@ -69,99 +77,101 @@ def strip_accents(s: str) -> str:
     return "".join(c for c in nfkd if not unicodedata.combining(c))
 
 
-def tokenize(text: str) -> set[str]:
+def _parts(text: str) -> list[str]:
     """Lowercase, strip accents, split on non-word, drop stopwords + short tokens."""
     if not text:
-        return set()
+        return []
     norm = strip_accents(text.lower())
-    parts = re.split(r"[^a-z0-9]+", norm)
-    return {p for p in parts if len(p) >= 3 and p not in STOPWORDS}
+    return [p for p in re.split(r"[^a-z0-9]+", norm) if len(p) >= 3 and p not in STOPWORDS]
 
 
-def category_keywords(
-    cat: dict,
-    *,
-    include_notes: bool = True,
-    include_en: bool = True,
-) -> set[str]:
-    """Build keyword set from a taxonomy category.
+def tokenize(text: str) -> set[str]:
+    """Unigram token set (used by edu_signal's keyword pre-filter)."""
+    return set(_parts(text))
 
-    Default behaviour preserves backward compatibility (used by 41): combines
-    `label_pt + aliases + notes`. Funnel scripts (46/47) pass
-    `include_notes=False` to avoid polluting tokens with metadata words
-    ("Feature Service", "INEP", "data.rio") that match too many papers.
 
-    `aliases_en` is taxonomia v2+ (additive). Categories without that field
-    contribute nothing extra (silent default).
-    """
-    chunks = [cat.get("label_pt", "")]
-    chunks.extend(cat.get("aliases") or [])
-    if include_en:
-        chunks.extend(cat.get("aliases_en") or [])
-    if include_notes and cat.get("notes"):
-        chunks.append(cat["notes"])
-    tokens: set[str] = set()
-    for c in chunks:
-        tokens |= tokenize(c)
+def tokenize_bigrams(text: str) -> set[str]:
+    """Unigrams + consecutive bigrams. Bigrams let rare phrases
+    ("longitudinal cohort", "school census") discriminate where single
+    common tokens ("school", "data") would not."""
+    parts = _parts(text)
+    tokens: set[str] = set(parts)
+    for a, b in zip(parts, parts[1:], strict=False):
+        tokens.add(f"{a} {b}")
     return tokens
 
 
 def edu_signal(text: str) -> int:
     """Count of EDU_KEYWORDS hits in text (tokenized).
 
-    Used as a pre-filter in Stage 2 (46_extract_requirements): a paper must
-    show >=2 education-domain tokens before being scored against the
-    taxonomy. Avoids classifying medical/COVID/infra papers that happened
-    to surface via the bibliometric snowball but aren't on-topic.
+    Stage-2 pre-filter (46_extract_requirements): a paper must show >= N
+    education-domain tokens before being scored against the taxonomy. Avoids
+    classifying medical/COVID/infra papers that surfaced via the bibliometric
+    snowball but aren't on-topic.
     """
     tokens = tokenize(text)
     return sum(1 for kw in EDU_KEYWORDS if kw in tokens)
 
 
-def score_item(item: dict, keywords: set[str]) -> float:
-    """Score a manifest item against a keyword set: title=3, tags=2, snippet=1."""
-    title_tokens = tokenize(item.get("title", ""))
-    snippet_tokens = tokenize(item.get("snippet", ""))
-    tag_tokens: set[str] = set()
-    for t in item.get("tags") or []:
-        tag_tokens |= tokenize(t)
-    score = 0.0
-    for kw in keywords:
-        if kw in title_tokens:
-            score += WEIGHT_TITLE
-        if kw in tag_tokens:
-            score += WEIGHT_TAGS
-        if kw in snippet_tokens:
-            score += WEIGHT_SNIPPET
-    return score
+def category_text(cat: dict) -> str:
+    """Category 'document': label_pt + aliases (PT) + aliases_en, concatenated.
 
-
-def score_against_categories(
-    text: str,
-    cats: dict[str, dict],
-    *,
-    include_notes: bool = True,
-    include_en: bool = True,
-) -> list[tuple[str, float]]:
-    """Score arbitrary text (e.g., paper title+abstract) against taxonomy categories.
-
-    For each category, count how many of its keyword tokens appear in the text.
-    Returns [(category_id, score)] sorted desc. Empty list if text empty or no hits.
-
-    `include_notes` / `include_en` are forwarded to `category_keywords`. Funnel
-    scripts (46/47) should pass `include_notes=False` to skip metadata pollution.
+    Excludes `notes` on purpose — that field holds metadata ("Feature Service",
+    "INEP per-school", "data.rio") that pollutes the token set and inflates
+    spurious matches.
     """
-    tokens = tokenize(text)
-    if not tokens:
-        return []
-    scored: list[tuple[str, float]] = []
-    for cid, cat in cats.items():
-        kws = category_keywords(cat, include_notes=include_notes, include_en=include_en)
-        hits = sum(1 for kw in kws if kw in tokens)
-        if hits > 0:
-            scored.append((cid, float(hits)))
-    scored.sort(key=lambda x: -x[1])
-    return scored
+    chunks = [cat.get("label_pt", "")]
+    chunks.extend(cat.get("aliases") or [])
+    chunks.extend(cat.get("aliases_en") or [])
+    return " ".join(chunks).strip()
+
+
+def manifest_item_text(item: dict) -> str:
+    title = item.get("title", "")
+    snippet = item.get("snippet", "")
+    tags = " ".join(item.get("tags") or [])
+    return f"{title} {tags} {snippet}".strip()
+
+
+def candidate_text(c: dict) -> str:
+    return f"{c.get('title', '')} {c.get('abstract', '')}".strip()
+
+
+def compute_idf(docs_tokens: list[set[str]]) -> dict[str, float]:
+    """Smoothed IDF over a corpus of token-sets: log((N+1)/(df+1)) + 1.
+
+    Common tokens (high df) approach weight 1.0; rare tokens (df=1) get the
+    heaviest weight. Unknown tokens default to 1.0 in `weighted_score`.
+    """
+    n = len(docs_tokens)
+    df: dict[str, int] = {}
+    for tokens in docs_tokens:
+        for t in tokens:
+            df[t] = df.get(t, 0) + 1
+    return {t: math.log((n + 1) / (d + 1)) + 1.0 for t, d in df.items()}
+
+
+def weighted_score(query_tokens: set[str], target_tokens: set[str], idf: dict[str, float]) -> float:
+    """Sum of IDF weights for tokens shared by query and target."""
+    return sum(idf.get(t, 1.0) for t in (query_tokens & target_tokens))
+
+
+def build_idf_index(
+    cats: dict[str, dict],
+    items: list[dict],
+    *,
+    extra_docs: list[set[str]] | tuple = (),
+) -> tuple[dict[str, float], dict[str, set[str]], list[set[str]]]:
+    """Tokenize categories + manifest items and compute IDF over the combined
+    corpus. `extra_docs` (e.g., funnel-candidate token-sets) are folded into the
+    IDF document-frequency counts but not returned.
+
+    Returns (idf, cat_tokens_by_id, item_tokens_list).
+    """
+    cat_tokens = {cid: tokenize_bigrams(category_text(cat)) for cid, cat in cats.items()}
+    item_tokens = [tokenize_bigrams(manifest_item_text(it)) for it in items]
+    idf = compute_idf(list(cat_tokens.values()) + item_tokens + list(extra_docs))
+    return idf, cat_tokens, item_tokens
 
 
 def load_taxonomy(path: Path) -> tuple[dict[str, dict], dict[str, str]]:
@@ -190,14 +200,15 @@ def load_taxonomy(path: Path) -> tuple[dict[str, dict], dict[str, str]]:
 __all__ = [
     "STOPWORDS",
     "EDU_KEYWORDS",
-    "WEIGHT_TITLE",
-    "WEIGHT_TAGS",
-    "WEIGHT_SNIPPET",
     "strip_accents",
     "tokenize",
-    "category_keywords",
+    "tokenize_bigrams",
     "edu_signal",
-    "score_item",
-    "score_against_categories",
+    "category_text",
+    "manifest_item_text",
+    "candidate_text",
+    "compute_idf",
+    "weighted_score",
+    "build_idf_index",
     "load_taxonomy",
 ]

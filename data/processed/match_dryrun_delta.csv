@@ -1,0 +1,267 @@
+openalex_id,title,category_id,old_stage2_score,new_stage2_sim,old_status,new_status,old_score,new_score,old_item,new_item
+https://openalex.org/W1945524409,Childhood and Society,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1945524409,Childhood and Society,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1559924327,61. Capitalism and Freedom,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1559924327,61. Capitalism and Freedom,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2079872858,EQUALITY OF EDUCATIONAL OPPORTUNITY,performance-aggregated,0.0,6.461,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2079872858,EQUALITY OF EDUCATIONAL OPPORTUNITY,ses-aggregated,0.0,6.461,available,available,17.0,18.95,0afd8c122fb4400b847693e715106304,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W2079872858,EQUALITY OF EDUCATIONAL OPPORTUNITY,geometry-schools,0.0,6.461,available,available,13.0,21.8,0a220ea7972449e39a28210dd317f636,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2021551171,The Bell Curve: Intelligence and Class Structure in American Life.,spatial-partition,0.0,9.124,,available,0.0,7.92,,e98e29d2a46a4264bb7e33b274e00873
+https://openalex.org/W2148501506,"Income Inequality in the United States, 1913-1998",microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2148501506,"Income Inequality in the United States, 1913-1998",geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W2148501506,"Income Inequality in the United States, 1913-1998",microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3123464746,Handbook of Labor Economics,travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3123464746,Handbook of Labor Economics,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W3123464746,Handbook of Labor Economics,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W2074037558,Schooling in Capitalist America: Educational Reform and the Contradictions of Economic Life,performance-aggregated,0.0,6.461,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2074037558,Schooling in Capitalist America: Educational Reform and the Contradictions of Economic Life,ses-aggregated,0.0,6.461,available,available,17.0,18.95,0afd8c122fb4400b847693e715106304,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W2074037558,Schooling in Capitalist America: Educational Reform and the Contradictions of Economic Life,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W1990914822,The Effects of Poverty on Children,longitudinal-cohort,0.0,7.514,,external,0.0,0.0,,
+https://openalex.org/W1990914822,The Effects of Poverty on Children,performance-aggregated,3.0,22.583,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2127195548,The Constant Flux: A Study of Class Mobility in Industrial Societies.,travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2127195548,The Constant Flux: A Study of Class Mobility in Industrial Societies.,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W2127195548,The Constant Flux: A Study of Class Mobility in Industrial Societies.,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W1895891998,The Black-White Test Score Gap,performance-aggregated,4.0,0.0,available,,7.0,0.0,29d517eedb9c44379a07430280a12839,
+https://openalex.org/W2057988546,Home Advantage: Social Class and Parental Intervention in Elementary Education,microdata-household,0.0,8.43,,external,0.0,0.0,,
+https://openalex.org/W2057988546,Home Advantage: Social Class and Parental Intervention in Elementary Education,performance-aggregated,0.0,6.461,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2057988546,Home Advantage: Social Class and Parental Intervention in Elementary Education,ses-aggregated,0.0,0.0,available,,17.0,0.0,0afd8c122fb4400b847693e715106304,
+https://openalex.org/W2057988546,Home Advantage: Social Class and Parental Intervention in Elementary Education,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2106915081,Socioeconomic Status Modifies Heritability of IQ in Young Children,ses-aggregated,0.0,0.0,available,,17.0,0.0,0afd8c122fb4400b847693e715106304,
+https://openalex.org/W1987724300,The Determinants of Earnings: A Behavioral Approach,travel-network,0.0,7.087,,external,0.0,0.0,,
+https://openalex.org/W1987724300,The Determinants of Earnings: A Behavioral Approach,longitudinal-cohort,3.0,31.204,external,external,0.0,0.0,,
+https://openalex.org/W2076596522,Life Cycle Schooling and Dynamic Selection Bias: Models and Evidence for Five Cohorts of American Ma,microdata-student,0.0,7.583,,external,0.0,0.0,,
+https://openalex.org/W2160420871,Trends in educational assortative marriage from 1940 to 2003,travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2160420871,Trends in educational assortative marriage from 1940 to 2003,microdata-student,0.0,5.853,,external,0.0,0.0,,
+https://openalex.org/W2160420871,Trends in educational assortative marriage from 1940 to 2003,microdata-household,0.0,8.836,,external,0.0,0.0,,
+https://openalex.org/W2160420871,Trends in educational assortative marriage from 1940 to 2003,geometry-neighborhoods,0.0,8.836,available,available,10.0,18.92,ae64616d363e48c897818b640e2a22cd,dc94b29fc3594a5bb4d297bee0c9a3f2
+https://openalex.org/W2160420871,Trends in educational assortative marriage from 1940 to 2003,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W627462258,"High school achievement : public, Catholic, and private schools compared",performance-aggregated,2.0,13.793,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W627462258,"High school achievement : public, Catholic, and private schools compared",ses-aggregated,0.0,6.461,,available,0.0,18.95,,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W627462258,"High school achievement : public, Catholic, and private schools compared",geometry-schools,2.0,13.793,available,available,7.0,21.8,498e637753bd4e0da76e90103dd21eb7,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2086001270,"The Dynamics of Educational Attainment for Black, Hispanic, and White Males",microdata-student,0.0,5.853,,external,0.0,0.0,,
+https://openalex.org/W2086001270,"The Dynamics of Educational Attainment for Black, Hispanic, and White Males",microdata-household,2.0,15.517,external,external,0.0,0.0,,
+https://openalex.org/W1489569725,Why Do Some Occupations Pay More than Others? Social Closure and Earnings Inequality in the United S,travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1489569725,Why Do Some Occupations Pay More than Others? Social Closure and Earnings Inequality in the United S,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W1489569725,Why Do Some Occupations Pay More than Others? Social Closure and Earnings Inequality in the United S,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W1588107190,Do Schools Make a Difference,travel-network,2.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1588107190,Do Schools Make a Difference,microdata-student,0.0,15.32,,external,0.0,0.0,,
+https://openalex.org/W1588107190,Do Schools Make a Difference,performance-aggregated,2.0,13.793,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1588107190,Do Schools Make a Difference,geometry-schools,2.0,13.793,available,available,7.0,21.8,498e637753bd4e0da76e90103dd21eb7,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W1483062237,The Distribution of Labor Incomes: A Survey with Special Reference to the Human Capital Approach,longitudinal-cohort,0.0,7.514,,external,0.0,0.0,,
+https://openalex.org/W1524285948,Analysis of the School Preferred Reading Program in Selected Los Angeles Minority Schools.,microdata-student,3.0,21.247,external,external,0.0,0.0,,
+https://openalex.org/W1524285948,Analysis of the School Preferred Reading Program in Selected Los Angeles Minority Schools.,performance-aggregated,2.0,13.793,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1524285948,Analysis of the School Preferred Reading Program in Selected Los Angeles Minority Schools.,geometry-schools,2.0,13.793,available,available,7.0,21.8,498e637753bd4e0da76e90103dd21eb7,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2075664771,"More Universalism, Less Structural Mobility: The American Occupational Structure in the 1980s",ses-aggregated,2.0,15.88,available,available,8.0,18.95,fa85ddc76a524380ad7fc60e3006ee97,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W2107623883,Estimation of Educational Borrowing Constraints Using Returns to Schooling,longitudinal-cohort,0.0,7.389,,external,0.0,0.0,,
+https://openalex.org/W2107623883,Estimation of Educational Borrowing Constraints Using Returns to Schooling,performance-aggregated,0.0,6.461,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2107623883,Estimation of Educational Borrowing Constraints Using Returns to Schooling,ses-aggregated,0.0,0.0,available,,17.0,0.0,0afd8c122fb4400b847693e715106304,
+https://openalex.org/W2107623883,Estimation of Educational Borrowing Constraints Using Returns to Schooling,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2053646573,"Investing in Children: Changes in Parental Spending on Children, 1972–2007",travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2053646573,"Investing in Children: Changes in Parental Spending on Children, 1972–2007",geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W2053646573,"Investing in Children: Changes in Parental Spending on Children, 1972–2007",geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W2054588116,A Decomposition Analysis of the Trend in UK Income Inequality,microdata-household,0.0,7.087,,external,0.0,0.0,,
+https://openalex.org/W2054588116,A Decomposition Analysis of the Trend in UK Income Inequality,performance-aggregated,2.0,15.074,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2054588116,A Decomposition Analysis of the Trend in UK Income Inequality,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W1486258806,Schooling and Economic Well-Being: The Role of Nonmarket Effects,microdata-student,0.0,7.583,,external,0.0,0.0,,
+https://openalex.org/W1486258806,Schooling and Economic Well-Being: The Role of Nonmarket Effects,longitudinal-cohort,0.0,7.389,,external,0.0,0.0,,
+https://openalex.org/W1486258806,Schooling and Economic Well-Being: The Role of Nonmarket Effects,performance-aggregated,0.0,8.836,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1488238200,The quality of schooling : quantity alone is misleading,longitudinal-cohort,0.0,7.389,,external,0.0,0.0,,
+https://openalex.org/W1488238200,The quality of schooling : quantity alone is misleading,performance-aggregated,2.0,22.394,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1488238200,The quality of schooling : quantity alone is misleading,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W1551873802,Teacher Characteristics and Gains in Student Achievement: Estimation Using Micro Data.,microdata-student,2.0,13.59,external,external,0.0,0.0,,
+https://openalex.org/W1551873802,Teacher Characteristics and Gains in Student Achievement: Estimation Using Micro Data.,performance-aggregated,0.0,7.332,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2086394294,The Hispanic-White Achievement Gap in Math and Reading in the Elementary Grades,performance-aggregated,3.0,30.836,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2086394294,The Hispanic-White Achievement Gap in Math and Reading in the Elementary Grades,ses-aggregated,0.0,6.461,,available,0.0,18.95,,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W2086394294,The Hispanic-White Achievement Gap in Math and Reading in the Elementary Grades,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2108478320,The Black-White Test Score Gap Through Third Grade,performance-aggregated,4.0,0.0,available,,7.0,0.0,29d517eedb9c44379a07430280a12839,
+https://openalex.org/W2042956476,The Effects of Global Severe Privation on Cognitive Competence: Extension and Longitudinal Follow-up,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W2042956476,The Effects of Global Severe Privation on Cognitive Competence: Extension and Longitudinal Follow-up,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W2042956476,The Effects of Global Severe Privation on Cognitive Competence: Extension and Longitudinal Follow-up,longitudinal-cohort,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W592964263,The Determinants of Scholastic Achievement-An Appraisal of Some Recent Evidence,microdata-student,3.0,21.173,external,external,0.0,0.0,,
+https://openalex.org/W592964263,The Determinants of Scholastic Achievement-An Appraisal of Some Recent Evidence,performance-aggregated,2.0,13.793,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W592964263,The Determinants of Scholastic Achievement-An Appraisal of Some Recent Evidence,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W1995235257,History Matters: The Long-Term Impact of Colonial Public Investments in French West Africa,microdata-household,0.0,8.143,,external,0.0,0.0,,
+https://openalex.org/W1995235257,History Matters: The Long-Term Impact of Colonial Public Investments in French West Africa,geometry-neighborhoods,0.0,7.824,,available,0.0,18.92,,dc94b29fc3594a5bb4d297bee0c9a3f2
+https://openalex.org/W1995235257,History Matters: The Long-Term Impact of Colonial Public Investments in French West Africa,spatial-partition,0.0,7.824,,available,0.0,7.92,,e98e29d2a46a4264bb7e33b274e00873
+https://openalex.org/W1545916181,School Quality and the Longer-Term Effects of Head Start,microdata-student,4.0,36.883,external,external,0.0,0.0,,
+https://openalex.org/W1545916181,School Quality and the Longer-Term Effects of Head Start,performance-aggregated,3.0,29.572,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1545916181,School Quality and the Longer-Term Effects of Head Start,geometry-schools,2.0,13.793,available,available,7.0,21.8,498e637753bd4e0da76e90103dd21eb7,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2169163541,Testing the validity of the Goldthorpe class schema,travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2169163541,Testing the validity of the Goldthorpe class schema,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W2169163541,Testing the validity of the Goldthorpe class schema,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W4300469646,Social Class in Modern Britain,travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W4300469646,Social Class in Modern Britain,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W4300469646,Social Class in Modern Britain,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W2997876560,Desigualdade e pobreza no Brasil,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2116185897,"Changes in Compulsory Schooling, Education and the Distribution of Wages in Europe",travel-network,2.0,13.548,external,external,0.0,0.0,,
+https://openalex.org/W2116185897,"Changes in Compulsory Schooling, Education and the Distribution of Wages in Europe",longitudinal-cohort,0.0,7.389,,external,0.0,0.0,,
+https://openalex.org/W2116185897,"Changes in Compulsory Schooling, Education and the Distribution of Wages in Europe",geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2011410928,Changes in the Black-White Gap in Achievement Test Scores,microdata-student,2.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2011410928,Changes in the Black-White Gap in Achievement Test Scores,performance-aggregated,3.0,0.0,available,,7.0,0.0,29d517eedb9c44379a07430280a12839,
+https://openalex.org/W1593156393,How Effective is Schooling? A Critical Review and Synthesis of Research Findings,enrollment-counts,2.0,15.297,available,available,10.0,20.24,1b8da7c026f84de78c6704438c8cda2f,d1e1192de4854ee4b53095a6f3274018
+https://openalex.org/W1593156393,How Effective is Schooling? A Critical Review and Synthesis of Research Findings,microdata-student,0.0,7.92,,external,0.0,0.0,,
+https://openalex.org/W1593156393,How Effective is Schooling? A Critical Review and Synthesis of Research Findings,performance-aggregated,3.0,22.406,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2127991917,Cross-National Differences and Accounting for Social Class Inequalities in Education,microdata-student,0.0,7.737,,external,0.0,0.0,,
+https://openalex.org/W2127991917,Cross-National Differences and Accounting for Social Class Inequalities in Education,performance-aggregated,3.0,22.223,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2127991917,Cross-National Differences and Accounting for Social Class Inequalities in Education,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W1577074868,Social Returns to Quantity and Quality of Schooling,microdata-student,0.0,7.737,,external,0.0,0.0,,
+https://openalex.org/W1577074868,Social Returns to Quantity and Quality of Schooling,microdata-household,0.0,8.143,,external,0.0,0.0,,
+https://openalex.org/W1577074868,Social Returns to Quantity and Quality of Schooling,performance-aggregated,3.0,22.549,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1736412576,Effects of High Schools on Their Students,microdata-student,3.0,28.607,external,external,0.0,0.0,,
+https://openalex.org/W1736412576,Effects of High Schools on Their Students,performance-aggregated,3.0,29.572,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1736412576,Effects of High Schools on Their Students,ses-aggregated,0.0,13.911,,available,0.0,18.95,,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W1736412576,Effects of High Schools on Their Students,geometry-schools,2.0,0.0,available,,7.0,0.0,498e637753bd4e0da76e90103dd21eb7,
+https://openalex.org/W1606730309,Raising school quality in developing countries: What investments boost learning?,microdata-student,0.0,7.737,,external,0.0,0.0,,
+https://openalex.org/W1606730309,Raising school quality in developing countries: What investments boost learning?,performance-aggregated,3.0,29.726,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1606730309,Raising school quality in developing countries: What investments boost learning?,geometry-schools,2.0,13.793,available,available,7.0,21.8,498e637753bd4e0da76e90103dd21eb7,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2536486826,A panorama of health inequalities in Brazil,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2536486826,A panorama of health inequalities in Brazil,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W2536486826,A panorama of health inequalities in Brazil,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W1978305964,Análise estatística de dados da PNAD: incorporando a estrutura do plano amostral,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1978305964,Análise estatística de dados da PNAD: incorporando a estrutura do plano amostral,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1978305964,Análise estatística de dados da PNAD: incorporando a estrutura do plano amostral,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W2008336234,"Organisation and Context, Efficiency and Equity of Educational Systems: What PISA Tells Us",microdata-student,3.0,24.518,external,external,0.0,0.0,,
+https://openalex.org/W2008336234,"Organisation and Context, Efficiency and Equity of Educational Systems: What PISA Tells Us",performance-aggregated,0.0,7.332,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1572342981,Economies of Scale in Iowa High School Operations,microdata-student,2.0,22.754,external,external,0.0,0.0,,
+https://openalex.org/W1572342981,Economies of Scale in Iowa High School Operations,performance-aggregated,4.0,38.003,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1572342981,Economies of Scale in Iowa High School Operations,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W1527010927,Are There Unusually Effective Schools?,performance-aggregated,2.0,13.793,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1527010927,Are There Unusually Effective Schools?,ses-aggregated,0.0,6.461,,available,0.0,18.95,,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W1527010927,Are There Unusually Effective Schools?,geometry-schools,2.0,13.793,available,available,7.0,21.8,498e637753bd4e0da76e90103dd21eb7,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2120490228,Who Gets an Early Education? Family Income and the Enrollment of Three‐ to Five‐Year‐Olds from 1968 ,travel-network,2.0,13.548,external,external,0.0,0.0,,
+https://openalex.org/W2120490228,Who Gets an Early Education? Family Income and the Enrollment of Three‐ to Five‐Year‐Olds from 1968 ,enrollment-counts,2.0,15.585,available,available,10.0,20.24,1b8da7c026f84de78c6704438c8cda2f,d1e1192de4854ee4b53095a6f3274018
+https://openalex.org/W2120490228,Who Gets an Early Education? Family Income and the Enrollment of Three‐ to Five‐Year‐Olds from 1968 ,microdata-household,0.0,7.087,,external,0.0,0.0,,
+https://openalex.org/W2724502012,Education Longitudinal Study of 2002 (ELS:2002) Base-Year to Second: Follow-up Data File Documentati,microdata-student,2.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2133565765,Parenting for Cognitive Development from 1950 to 2000,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W1193570217,Uma Sugestão de deflatores para rendas obtidas a partir de algumas pesquisas domiciliares do IBGE,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1193570217,Uma Sugestão de deflatores para rendas obtidas a partir de algumas pesquisas domiciliares do IBGE,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1193570217,Uma Sugestão de deflatores para rendas obtidas a partir de algumas pesquisas domiciliares do IBGE,longitudinal-cohort,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2124337656,"Classe, raça e mobilidade social no Brasil",microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2080712097,Inequalities in school systems: effect of school structure or of society structure?,performance-aggregated,2.0,13.793,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2080712097,Inequalities in school systems: effect of school structure or of society structure?,ses-aggregated,0.0,6.461,,available,0.0,18.95,,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W2080712097,Inequalities in school systems: effect of school structure or of society structure?,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W230040584,Housing Policy Is School Policy: Economically Integrative Housing Promotes Academic Success in Montg,performance-aggregated,2.0,15.074,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W230040584,Housing Policy Is School Policy: Economically Integrative Housing Promotes Academic Success in Montg,ses-aggregated,0.0,6.461,,available,0.0,18.95,,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W230040584,Housing Policy Is School Policy: Economically Integrative Housing Promotes Academic Success in Montg,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W1592769789,Teacher Mobility and Allocation,microdata-student,2.0,13.59,external,external,0.0,0.0,,
+https://openalex.org/W1592769789,Teacher Mobility and Allocation,ses-aggregated,4.0,40.013,available,available,8.0,18.95,fa85ddc76a524380ad7fc60e3006ee97,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W1592769789,Teacher Mobility and Allocation,geometry-schools,2.0,13.793,available,available,7.0,21.8,498e637753bd4e0da76e90103dd21eb7,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W135779082,Unions and public schools : the effect of collective bargaining on American education,geometry-schools,0.0,7.332,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W6217144,Educational Achievement and School Peer Group Composition,performance-aggregated,2.0,13.793,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W6217144,Educational Achievement and School Peer Group Composition,ses-aggregated,2.0,15.585,available,available,8.0,18.95,fa85ddc76a524380ad7fc60e3006ee97,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W6217144,Educational Achievement and School Peer Group Composition,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2108197019,Desigualdade de renda e situação de saúde: o caso do Rio de Janeiro,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2108197019,Desigualdade de renda e situação de saúde: o caso do Rio de Janeiro,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2108197019,Desigualdade de renda e situação de saúde: o caso do Rio de Janeiro,longitudinal-cohort,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1649184474,O Topo da Distribuição de Renda no Brasil: Primeiras Estimativas com Dados Tributários e Comparação ,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1649184474,O Topo da Distribuição de Renda no Brasil: Primeiras Estimativas com Dados Tributários e Comparação ,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1649184474,O Topo da Distribuição de Renda no Brasil: Primeiras Estimativas com Dados Tributários e Comparação ,longitudinal-cohort,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1565590505,Teacher Mobility Revisited,microdata-student,0.0,7.737,,external,0.0,0.0,,
+https://openalex.org/W1565590505,Teacher Mobility Revisited,performance-aggregated,0.0,6.461,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1565590505,Teacher Mobility Revisited,ses-aggregated,0.0,0.0,available,,17.0,0.0,0afd8c122fb4400b847693e715106304,
+https://openalex.org/W1565590505,Teacher Mobility Revisited,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W1481856004,School finance: The economics and politics of public education,performance-aggregated,0.0,6.461,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1481856004,School finance: The economics and politics of public education,ses-aggregated,0.0,6.461,available,available,17.0,18.95,0afd8c122fb4400b847693e715106304,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W1481856004,School finance: The economics and politics of public education,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2039178249,Individual Level Models for Mobility Tables and other Cross-Classifications,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2039178249,Individual Level Models for Mobility Tables and other Cross-Classifications,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W2039178249,Individual Level Models for Mobility Tables and other Cross-Classifications,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1530594506,Input-output analysis in public education,enrollment-counts,0.0,0.0,available,,15.0,0.0,b854cc4ce2c541e0bef62fc22d1f6fbc,
+https://openalex.org/W1530594506,Input-output analysis in public education,performance-aggregated,0.0,0.0,available,,10.0,0.0,7888fde5637e4f2fa54cfb80f32321e4,
+https://openalex.org/W3044580668,"Crise, condicionantes e desafios de coordenação do Estado federativo brasileiro no contexto da COVID",travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2094987661,Uma classificação socioeconômica para o Brasil,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1585792772,A Queda Recente da Desigualdade de Renda no Brasil,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1585792772,A Queda Recente da Desigualdade de Renda no Brasil,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1585792772,A Queda Recente da Desigualdade de Renda no Brasil,longitudinal-cohort,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2097536917,DIVORCE AND THE COGNITIVE ACHIEVEMENT OF CHILDREN,microdata-student,2.0,22.754,external,external,0.0,0.0,,
+https://openalex.org/W2097536917,DIVORCE AND THE COGNITIVE ACHIEVEMENT OF CHILDREN,performance-aggregated,2.0,14.509,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2097536917,DIVORCE AND THE COGNITIVE ACHIEVEMENT OF CHILDREN,ses-aggregated,0.0,7.45,,available,0.0,18.95,,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W2065489451,"Desigualdade de oportunidades no Brasil: considerações sobre classe, educação e raça",microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3025985387,"Vulnerabilidade a formas graves de COVID-19: uma análise intramunicipal na cidade do Rio de Janeiro,",microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3025985387,"Vulnerabilidade a formas graves de COVID-19: uma análise intramunicipal na cidade do Rio de Janeiro,",geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W3025985387,"Vulnerabilidade a formas graves de COVID-19: uma análise intramunicipal na cidade do Rio de Janeiro,",geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W1977352451,Distribuição de Renda no Brasil de 1976 a 2004 com Ênfase no Período Entre 2001 e 2004,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1977352451,Distribuição de Renda no Brasil de 1976 a 2004 com Ênfase no Período Entre 2001 e 2004,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1977352451,Distribuição de Renda no Brasil de 1976 a 2004 com Ênfase no Período Entre 2001 e 2004,longitudinal-cohort,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W126803569,Organized teachers in American schools,geometry-schools,0.0,7.332,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W3143441633,Os determinantes da desigualdade de renda no Brasil: Luta de classes ou heterogeneidade educacional?,longitudinal-cohort,2.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3035033144,The Political Scar of Epidemics,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3035033144,The Political Scar of Epidemics,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W340377713,Optimal Fiscal Reform of Metropolitan Schools: Some Simulation Results,performance-aggregated,0.0,6.461,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W340377713,Optimal Fiscal Reform of Metropolitan Schools: Some Simulation Results,ses-aggregated,0.0,6.461,,available,0.0,18.95,,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W340377713,Optimal Fiscal Reform of Metropolitan Schools: Some Simulation Results,geometry-schools,2.0,13.793,available,available,7.0,21.8,498e637753bd4e0da76e90103dd21eb7,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W1536920196,A Review Essay-Comparisons of Public and Private Schools: Lessons from the Uproar,longitudinal-cohort,0.0,7.514,,external,0.0,0.0,,
+https://openalex.org/W1536920196,A Review Essay-Comparisons of Public and Private Schools: Lessons from the Uproar,performance-aggregated,0.0,7.514,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1536920196,A Review Essay-Comparisons of Public and Private Schools: Lessons from the Uproar,geometry-schools,0.0,7.332,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W350117068,For the Plaintiffs- Equal School Resource Allocation,performance-aggregated,0.0,6.461,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W350117068,For the Plaintiffs- Equal School Resource Allocation,ses-aggregated,0.0,6.461,,available,0.0,18.95,,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W350117068,For the Plaintiffs- Equal School Resource Allocation,geometry-schools,2.0,13.793,available,available,7.0,21.8,498e637753bd4e0da76e90103dd21eb7,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2050454953,História dos conceitos e teoria política e social: referências preliminares,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W631224826,A distribuição da renda no Brasil,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W631224826,A distribuição da renda no Brasil,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W631224826,A distribuição da renda no Brasil,longitudinal-cohort,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1578041490,Os Determinantes da Desigualdade de Renda no Brasil: Luta de Classes ou Heterogeneidade Educacional?,longitudinal-cohort,2.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2801595228,"Práticas de saúde em contextos de vulnerabilização e negligência de doenças, sujeitos e territórios:",microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2100297951,Far away from a skill-biased change: falling educational wage premia in Italy,travel-network,0.0,7.087,,external,0.0,0.0,,
+https://openalex.org/W2100297951,Far away from a skill-biased change: falling educational wage premia in Italy,microdata-household,2.0,25.046,external,external,0.0,0.0,,
+https://openalex.org/W2102395463,The effect of a social experiment in education,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W2102395463,The effect of a social experiment in education,performance-aggregated,0.0,6.461,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2102395463,The effect of a social experiment in education,ses-aggregated,0.0,6.461,available,available,17.0,18.95,0afd8c122fb4400b847693e715106304,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W2102395463,The effect of a social experiment in education,geometry-schools,0.0,6.461,available,available,13.0,21.8,0a220ea7972449e39a28210dd317f636,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2026651953,EDUCATION OR INFLATION?: THE MICRO AND MACROECONOMICS OF THE BRAZILIAN INCOME DISTRIBUTION DURING 19,microdata-household,2.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3038346093,"Interfaces between Vulnerabilities, Governance, Innovation and Capacity of Response to COVID-19 in B",travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3038346093,"Interfaces between Vulnerabilities, Governance, Innovation and Capacity of Response to COVID-19 in B",geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W3038346093,"Interfaces between Vulnerabilities, Governance, Innovation and Capacity of Response to COVID-19 in B",geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W1566236920,Discriminação e Segmentação no Mercado de Trabalho e Desigualdade de Renda no Brasil,ses-aggregated,0.0,0.0,available,,17.0,0.0,0afd8c122fb4400b847693e715106304,
+https://openalex.org/W1566236920,Discriminação e Segmentação no Mercado de Trabalho e Desigualdade de Renda no Brasil,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1566236920,Discriminação e Segmentação no Mercado de Trabalho e Desigualdade de Renda no Brasil,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2106465281,Cognitive and non‐cognitive predictors of success in adult education programs: Evidence from experim,travel-network,2.0,13.548,external,external,0.0,0.0,,
+https://openalex.org/W2106465281,Cognitive and non‐cognitive predictors of success in adult education programs: Evidence from experim,microdata-household,0.0,7.087,,external,0.0,0.0,,
+https://openalex.org/W2106465281,Cognitive and non‐cognitive predictors of success in adult education programs: Evidence from experim,longitudinal-cohort,0.0,8.43,,external,0.0,0.0,,
+https://openalex.org/W3103392468,"Desigualdade de renda no Brasil, 1995-2019",ses-aggregated,0.0,0.0,available,,17.0,0.0,0afd8c122fb4400b847693e715106304,
+https://openalex.org/W3103392468,"Desigualdade de renda no Brasil, 1995-2019",microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3103392468,"Desigualdade de renda no Brasil, 1995-2019",microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2033364671,"Cognitive Skills, Test Scores, and Social Stratification: The Role of Family and School-Level Resour",microdata-student,4.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2033364671,"Cognitive Skills, Test Scores, and Social Stratification: The Role of Family and School-Level Resour",performance-aggregated,3.0,0.0,available,,7.0,0.0,29d517eedb9c44379a07430280a12839,
+https://openalex.org/W1489925231,High School Inputs and Their Contribution to School Performance,performance-aggregated,3.0,31.347,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1489925231,High School Inputs and Their Contribution to School Performance,ses-aggregated,0.0,6.461,,available,0.0,18.95,,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W1489925231,High School Inputs and Their Contribution to School Performance,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W3022064754,"GEOGRAFIA E COVID-19: NEOLIBERALISMO, VULNERABILIDADES E LUTA PELA VIDA",travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2286363053,Considerações sobre a evolução recente da distribuição da renda no Brasil,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2286363053,Considerações sobre a evolução recente da distribuição da renda no Brasil,microdata-household,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2286363053,Considerações sobre a evolução recente da distribuição da renda no Brasil,longitudinal-cohort,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3019651901,A COVID-19 na Baixada Fluminense: Colapso e apreensão a partir da periferia metropolitana do Rio de ,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W3019651901,A COVID-19 na Baixada Fluminense: Colapso e apreensão a partir da periferia metropolitana do Rio de ,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W3019651901,A COVID-19 na Baixada Fluminense: Colapso e apreensão a partir da periferia metropolitana do Rio de ,performance-aggregated,0.0,0.0,available,,10.0,0.0,7888fde5637e4f2fa54cfb80f32321e4,
+https://openalex.org/W3022036644,Relação dos indicadores de desigualdade social na distribuição espacial dos casos de Zika Vírus,travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3022036644,Relação dos indicadores de desigualdade social na distribuição espacial dos casos de Zika Vírus,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W3022036644,Relação dos indicadores de desigualdade social na distribuição espacial dos casos de Zika Vírus,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W211003090,School Finance In Transition.,ses-aggregated,0.0,0.0,available,,17.0,0.0,0afd8c122fb4400b847693e715106304,
+https://openalex.org/W1549799882,"Food, Economics, and Health",geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W1549799882,"Food, Economics, and Health",geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W1549799882,"Food, Economics, and Health",longitudinal-cohort,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2075651775,Testando as hipóteses do modelo de mincer para o Brasil,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1673609236,Retorno da Educação no Brasil,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1673609236,Retorno da Educação no Brasil,performance-aggregated,0.0,6.461,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1673609236,Retorno da Educação no Brasil,ses-aggregated,0.0,6.461,available,available,17.0,18.95,0afd8c122fb4400b847693e715106304,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W1673609236,Retorno da Educação no Brasil,geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2244636703,Recent Trends in Top Income Shares in the USA: Reconciling Estimates from March CPS and IRS Tax Retu,travel-network,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W2244636703,Recent Trends in Top Income Shares in the USA: Reconciling Estimates from March CPS and IRS Tax Retu,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W2244636703,Recent Trends in Top Income Shares in the USA: Reconciling Estimates from March CPS and IRS Tax Retu,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W1950932221,Um modelo para análise da estratificação educacional no Brasil.,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W1950932221,Um modelo para análise da estratificação educacional no Brasil.,microdata-household,0.0,6.855,external,external,0.0,0.0,,
+https://openalex.org/W1950932221,Um modelo para análise da estratificação educacional no Brasil.,longitudinal-cohort,0.0,7.92,external,external,0.0,0.0,,
+https://openalex.org/W1950932221,Um modelo para análise da estratificação educacional no Brasil.,performance-aggregated,0.0,7.92,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2805485529,Relatório do Grupo de Trabalho sobre Financiamento da Educação,enrollment-counts,0.0,6.509,,available,0.0,20.24,,d1e1192de4854ee4b53095a6f3274018
+https://openalex.org/W2805485529,Relatório do Grupo de Trabalho sobre Financiamento da Educação,performance-aggregated,2.0,13.553,available,available,7.0,15.54,29d517eedb9c44379a07430280a12839,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W2805485529,Relatório do Grupo de Trabalho sobre Financiamento da Educação,ses-aggregated,0.0,6.509,,available,0.0,18.95,,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W1497608962,"Graduation, Graduate School Attendance, and Investments in College Training",performance-aggregated,0.0,6.461,,available,0.0,15.54,,79bed9c0ee4e46ac8f0c8effc89a62ab
+https://openalex.org/W1497608962,"Graduation, Graduate School Attendance, and Investments in College Training",ses-aggregated,0.0,6.461,available,available,17.0,18.95,0afd8c122fb4400b847693e715106304,fa85ddc76a524380ad7fc60e3006ee97
+https://openalex.org/W1497608962,"Graduation, Graduate School Attendance, and Investments in College Training",geometry-schools,0.0,6.461,,available,0.0,21.8,,498e637753bd4e0da76e90103dd21eb7
+https://openalex.org/W2914435195,Gastos com educação no período de 1994 a 1999,enrollment-counts,0.0,0.0,available,,15.0,0.0,b854cc4ce2c541e0bef62fc22d1f6fbc,
+https://openalex.org/W2025547977,Segmentação no Mercado de Trabalho e Desigualdade de Rendimentos no Brasil: Uma Análise Empírica,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3015632451,4 - Estimativa de risco de espalhamento da Covid-19 no Brasil e avaliação da vulnerabilidade socioec,microdata-student,0.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3015632451,4 - Estimativa de risco de espalhamento da Covid-19 no Brasil e avaliação da vulnerabilidade socioec,geometry-schools,0.0,0.0,available,,13.0,0.0,0a220ea7972449e39a28210dd317f636,
+https://openalex.org/W3015632451,4 - Estimativa de risco de espalhamento da Covid-19 no Brasil e avaliação da vulnerabilidade socioec,geometry-neighborhoods,0.0,0.0,available,,10.0,0.0,ae64616d363e48c897818b640e2a22cd,
+https://openalex.org/W2001375627,FOSTERING EDUCATIONAL ENROLMENT THROUGH SUBSIDIES: THE ISSUE OF TIMING,microdata-student,3.0,0.0,external,,0.0,0.0,,
+https://openalex.org/W3032567223,Avaliação geográfica para risco de COVID-19 em população a partir de 50 anos na área urbana de Santa,microdata-student,0.0,0.0,external,,0.0,0.0,,

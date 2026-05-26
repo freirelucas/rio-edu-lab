@@ -22,7 +22,7 @@ Cobertura é baixa **por construção**: o catálogo curado tem só 12 papers, e
 
 <div data-chart="../_assets/charts/themes.json"></div>
 
-253 candidatos do snowball, distribuídos por categoria de dado que precisariam pra replicar. **Performance agregada** lidera (26) — IDEB-style; **microdado de aluno** vem em seguida (13) mas é majoritariamente *external* no Rio (INEP não publica nominal).
+Os candidatos do snowball, distribuídos por categoria de dado que precisariam pra replicar. **Performance agregada** lidera (estilo IDEB); **microdado de aluno** aparece forte, mas é majoritariamente *external* no Rio (INEP não publica nominal). Os números por categoria saem do funil — leia direto no gráfico.
 </div>
 
 </div>
@@ -83,10 +83,10 @@ PDFs dominam (estudos cariocas, notas técnicas). Excels e Feature Services são
 O pipeline de matching segue 3 passos:
 
 1. **Extrair requisitos do paper.** O script `46_extract_requirements.py` tokeniza título + abstract do candidato e classifica em uma das 10 categorias da taxonomia (top-3 sugestões por candidato, com score).
-2. **Matchar contra manifest data.rio.** O script `47_check_coverage.py` toma cada categoria sugerida e busca best-match no manifest (9.855 itens) por scoring de keywords. Threshold ≥5.0 = `available`; <5.0 = `partial`; categoria sem cobertura no portal = `external`; nada encontrado = `missing`.
+2. **Matchar contra manifest data.rio.** O script `47_check_coverage.py` toma cada categoria sugerida e busca best-match no manifest (9.855 itens) por scoring **IDF-weighted** (unigrams + bigrams). Score ≥5,0 = `available`; ≥2,0 = `partial`; categoria sem cobertura no portal = `external`; abaixo disso = `missing`.
 3. **Promover ao catálogo (curador).** Quando há cobertura e o paper é relevante, o curador marca `accept` em `papers_funnel.yml` e roda `48_promote_funnel.py` pra gerar entrada em `papers_catalog.yml`.
 
-Calibração atual: o matching **nunca traz zero** — sempre acha algo no portal. A pergunta é se o score é alto o bastante pra `available`. Os 3 papers `unfeasible` do catálogo têm categorias intrinsecamente externas (microdado), não score baixo.
+Calibração atual: o best-match quase sempre acha algo no portal; a pergunta é se o score IDF passa o corte de `available` (≥5,0) ou cai pra `partial`/`missing`. Os 3 papers `unfeasible` do catálogo têm categorias intrinsecamente externas (microdado), não score baixo.
 
 ## Inexplorado — 9.851 itens órfãos
 

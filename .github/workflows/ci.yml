@@ -76,3 +76,16 @@ jobs:
         # pointing outside requirements_taxonomy.yml. Funnel is curator-edited;
         # CI just guards the shape so 48_promote_funnel.py never breaks.
         run: python3 analysis/31_build_paper_catalog.py --validate-funnel
+
+      - name: Verify funnel state + landing numbers in sync
+        # Re-runs 25_funnel_state.py (charts + funnel_state.json + the
+        # data-driven big-nums injected into docs/index.md) and fails on drift.
+        # Funil analítico: the landing numbers are derived from the funnel, not
+        # hand-edited — this guards against stale absolute numbers.
+        run: |
+          python3 analysis/25_funnel_state.py
+          if ! git diff --quiet docs/index.md docs/_assets/charts/funnel.json docs/_assets/charts/data_rio_coverage.json docs/_assets/charts/themes.json data/processed/funnel_state.json; then
+            echo "::error::funnel state out of sync — run: python3 analysis/25_funnel_state.py && git add docs/ data/processed/funnel_state.json"
+            git --no-pager diff docs/index.md docs/_assets/charts/ data/processed/funnel_state.json
+            exit 1
+          fi

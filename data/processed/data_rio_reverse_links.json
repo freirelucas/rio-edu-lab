@@ -21,6 +21,50 @@
       }
     ]
   },
+  "498e637753bd4e0da76e90103dd21eb7": {
+    "item_id": "498e637753bd4e0da76e90103dd21eb7",
+    "item_title": "Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde",
+    "item_type": "Web Map",
+    "papers": [
+      {
+        "paper_id": "coleman-1982-high",
+        "requirement": "geometria de escolas",
+        "status": "available"
+      },
+      {
+        "paper_id": "dupriez-2006-inequalities",
+        "requirement": "geometria de escolas",
+        "status": "available"
+      },
+      {
+        "paper_id": "schwartz-2011-housing",
+        "requirement": "geometria de escolas",
+        "status": "available"
+      }
+    ]
+  },
+  "6b375a1fcab642779398aa12108c906f": {
+    "item_id": "6b375a1fcab642779398aa12108c906f",
+    "item_title": "Índice de Qualidade do Emprego Municipal  (Março/2026)",
+    "item_type": "PDF",
+    "papers": [
+      {
+        "paper_id": "coleman-1982-high",
+        "requirement": "IDEB por bairro",
+        "status": "available"
+      },
+      {
+        "paper_id": "dupriez-2006-inequalities",
+        "requirement": "IDEB por bairro",
+        "status": "available"
+      },
+      {
+        "paper_id": "schwartz-2011-housing",
+        "requirement": "IDEB por bairro",
+        "status": "available"
+      }
+    ]
+  },
   "bairros-ipp": {
     "item_id": "bairros-ipp",
     "item_title": "(unknown — not in manifest)",
@@ -39,6 +83,28 @@
       {
         "paper_id": "coleman-1966-eeo",
         "requirement": "agrupamento espacial",
+        "status": "available"
+      }
+    ]
+  },
+  "fa85ddc76a524380ad7fc60e3006ee97": {
+    "item_id": "fa85ddc76a524380ad7fc60e3006ee97",
+    "item_title": "Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010",
+    "item_type": "Microsoft Excel",
+    "papers": [
+      {
+        "paper_id": "coleman-1982-high",
+        "requirement": "INSE por escola",
+        "status": "available"
+      },
+      {
+        "paper_id": "dupriez-2006-inequalities",
+        "requirement": "INSE por escola",
+        "status": "available"
+      },
+      {
+        "paper_id": "schwartz-2011-housing",
+        "requirement": "INSE por escola",
         "status": "available"
       }
     ]

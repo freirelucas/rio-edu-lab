@@ -1,70 +1,70 @@
 {
-  "stage1_candidates": 253,
-  "stage2_with_requirements": 43,
-  "stage4_catalog": 12,
+  "stage1_candidates": 374,
+  "stage2_with_requirements": 109,
+  "stage4_catalog": 15,
   "replicated_total": 3,
   "status_breakdown": {
     "partial": 2,
     "full": 1,
-    "pending": 6,
+    "pending": 9,
     "unfeasible": 3
   },
   "data_rio_total": 9855,
   "data_rio_active": 4,
   "data_rio_orphan": 9851,
   "coverage_pct": 0.04,
-  "conversion_rate_pct": 4.7,
-  "replication_rate_pct": 25.0,
+  "conversion_rate_pct": 4.0,
+  "replication_rate_pct": 20.0,
   "categories": [
     {
       "id": "geometry-schools",
       "label": "Geometria de escolas",
-      "n_funnel": 10
+      "n_funnel": 57
     },
     {
       "id": "geometry-neighborhoods",
       "label": "Geometria de bairros / unidades espaciais",
-      "n_funnel": 0
+      "n_funnel": 3
     },
     {
       "id": "performance-aggregated",
       "label": "Desempenho educacional por unidade agregada",
-      "n_funnel": 26
+      "n_funnel": 88
     },
     {
       "id": "ses-aggregated",
       "label": "SES agregado por unidade (NSE, INSE, IDS)",
-      "n_funnel": 3
+      "n_funnel": 29
     },
     {
       "id": "spatial-partition",
       "label": "Partição / agrupamento espacial hierárquico",
-      "n_funnel": 0
+      "n_funnel": 3
     },
     {
       "id": "travel-network",
       "label": "Rede viária / tempos de viagem (isócronas)",
-      "n_funnel": 4
+      "n_funnel": 8
     },
     {
       "id": "enrollment-counts",
       "label": "Matrículas / oferta de escolas por unidade",
-      "n_funnel": 2
+      "n_funnel": 7
     },
     {
       "id": "microdata-student",
       "label": "Microdado individual de aluno",
-      "n_funnel": 13
+      "n_funnel": 56
     },
     {
       "id": "microdata-household",
       "label": "Microdado individual de domicílio",
-      "n_funnel": 3
+      "n_funnel": 14
     },
     {
       "id": "longitudinal-cohort",
       "label": "Painel longitudinal por coorte",
-      "n_funnel": 3
+      "n_funnel": 30
     }
   ],
   "type_top10": [

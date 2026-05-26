@@ -26,3 +26,12 @@ hoxby-2000-aer,2000,Does competition among public schools benefit students and t
 hoxby-2000-aer,2000,Does competition among public schools benefit students and taxpayers?,indicador de desempenho,ideb-municipal-bairros,available,pending
 card-krueger-1992-jpe,1992,Does school quality matter? Returns to education and the characteristics of public schools in the United States,característica de escola por região,,external,unfeasible
 card-krueger-1992-jpe,1992,Does school quality matter? Returns to education and the characteristics of public schools in the United States,renda adulta por coorte,,external,unfeasible
+coleman-1982-high,1982,"High school achievement : public, Catholic, and private schools compared",geometria de escolas,498e637753bd4e0da76e90103dd21eb7,available,pending
+coleman-1982-high,1982,"High school achievement : public, Catholic, and private schools compared",IDEB por bairro,6b375a1fcab642779398aa12108c906f,available,pending
+coleman-1982-high,1982,"High school achievement : public, Catholic, and private schools compared",INSE por escola,fa85ddc76a524380ad7fc60e3006ee97,available,pending
+dupriez-2006-inequalities,2006,Inequalities in school systems: effect of school structure or of society structure?,IDEB por bairro,6b375a1fcab642779398aa12108c906f,available,pending
+dupriez-2006-inequalities,2006,Inequalities in school systems: effect of school structure or of society structure?,geometria de escolas,498e637753bd4e0da76e90103dd21eb7,available,pending
+dupriez-2006-inequalities,2006,Inequalities in school systems: effect of school structure or of society structure?,INSE por escola,fa85ddc76a524380ad7fc60e3006ee97,available,pending
+schwartz-2011-housing,2011,"Housing Policy Is School Policy: Economically Integrative Housing Promotes Academic Success in Montgomery County, MD.",IDEB por bairro,6b375a1fcab642779398aa12108c906f,available,pending
+schwartz-2011-housing,2011,"Housing Policy Is School Policy: Economically Integrative Housing Promotes Academic Success in Montgomery County, MD.",geometria de escolas,498e637753bd4e0da76e90103dd21eb7,available,pending
+schwartz-2011-housing,2011,"Housing Policy Is School Policy: Economically Integrative Housing Promotes Academic Success in Montgomery County, MD.",INSE por escola,fa85ddc76a524380ad7fc60e3006ee97,available,pending
