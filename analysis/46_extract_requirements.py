@@ -29,6 +29,7 @@ Uso:
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
@@ -39,15 +40,23 @@ except ImportError:
     sys.exit(1)
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _match import edu_signal, load_taxonomy, score_against_categories  # noqa: E402
+from _match import (  # noqa: E402
+    build_idf_index,
+    candidate_text,
+    edu_signal,
+    load_taxonomy,
+    tokenize_bigrams,
+    weighted_score,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 FUNNEL_YML = ROOT / "data" / "papers_funnel.yml"
 TAXONOMY_YML = ROOT / "data" / "requirements_taxonomy.yml"
+MANIFEST_JSON = ROOT / "data" / "manifest.json"
 
 DEFAULT_TOP_K = 3
-DEFAULT_MIN_SCORE = 2.0
-DEFAULT_EDU_MIN = 1
+DEFAULT_MIN_SCORE = 3.0  # IDF-weighted score (see _match)
+DEFAULT_EDU_MIN = 2
 
 
 def write_funnel(candidates: list[dict]) -> None:
@@ -91,25 +100,35 @@ def main() -> int:
     if not cats:
         print(f"missing taxonomy {TAXONOMY_YML.relative_to(ROOT)}", file=sys.stderr)
         return 1
-    print(f"loaded {len(cats)} taxonomy categories")
+    if not MANIFEST_JSON.exists():
+        print(f"missing {MANIFEST_JSON.relative_to(ROOT)}", file=sys.stderr)
+        return 1
+    items = json.loads(MANIFEST_JSON.read_text(encoding="utf-8")).get("items", [])
+    print(f"loaded {len(cats)} taxonomy categories, {len(items)} manifest items")
+
+    # IDF over taxonomy categories + manifest items + candidate abstracts.
+    cand_tokens = [tokenize_bigrams(candidate_text(c)) for c in candidates]
+    idf, cat_tokens, _ = build_idf_index(cats, items, extra_docs=cand_tokens)
 
     n_scored = 0
     n_skipped = 0
     n_empty = 0
     n_off_topic = 0
-    for c in candidates:
+    for i, c in enumerate(candidates):
         if c.get("suggested_requirements") and not args.force:
             n_skipped += 1
             continue
-        text = (c.get("title") or "") + " " + (c.get("abstract") or "")
-        if edu_signal(text) < args.edu_min:
+        if edu_signal(candidate_text(c)) < args.edu_min:
             c["suggested_requirements"] = []
             n_off_topic += 1
             continue
-        ranked = score_against_categories(text, cats, include_notes=False)
+        scored = [
+            (cid, weighted_score(cand_tokens[i], cat_tokens[cid], idf))
+            for cid in cats
+        ]
         kept = [
-            {"category_id": cid, "score": round(s, 1)}
-            for cid, s in ranked
+            {"category_id": cid, "score": round(s, 2)}
+            for cid, s in sorted(scored, key=lambda x: -x[1])
             if s >= args.min_score
         ][: args.top_k]
         c["suggested_requirements"] = kept
