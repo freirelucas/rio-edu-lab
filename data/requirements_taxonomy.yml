@@ -35,6 +35,12 @@ categories:
   - id: geometry-schools
     label_pt: "Geometria de escolas"
     level: aggregated_unit
+    # `expects` (protótipo v0.12): granularidade/domínio esperados, casados
+    # contra o `code_book` dos itens do manifest em _match.code_book_bonus.
+    expects:
+      domain: educacao-basica
+      unit_of_observation: escola
+      spatial_granularity: ponto
     aliases:
       - "geometria de escolas"
       - "localização de escolas"

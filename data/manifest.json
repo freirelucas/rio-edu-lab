@@ -20611,6 +20611,13 @@
     },
     {
       "id": "498e637753bd4e0da76e90103dd21eb7",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "escola",
+        "spatial_granularity": "ponto",
+        "temporal_coverage": "2014-2019 (camada locacional)",
+        "key_variables": ["nome_escola", "rede", "geometria_ponto", "area_estrategia_saude_familia"]
+      },
       "title": "Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde",
       "type": "Web Map",
       "snippet": "Localização das Escolas Municipais em Áreas do Estratégia de Saúde da Família",

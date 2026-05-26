@@ -156,6 +156,37 @@ def weighted_score(query_tokens: set[str], target_tokens: set[str], idf: dict[st
     return sum(idf.get(t, 1.0) for t in (query_tokens & target_tokens))
 
 
+# --- Code-book alignment (protótipo v0.12) ---------------------------------
+# Descritores estruturados opcionais de um item (`code_book`) casados contra o
+# que uma categoria espera (`expects`). PURO ADITIVO: item ou categoria sem
+# esses campos contribuem 0, então o matching lexical existente fica idêntico.
+# Conflito de domínio é penalizado (demove homônimos cross-domínio tipo
+# "Escolas de Samba"/"Escolas de música" numa query de escola de ensino);
+# alinhamento de unidade/granularidade dá empurrões positivos menores.
+DOMAIN_MATCH_BONUS = 6.0
+DOMAIN_CONFLICT_PENALTY = -8.0
+UNIT_MATCH_BONUS = 3.0
+GRANULARITY_MATCH_BONUS = 2.0
+
+
+def code_book_bonus(item: dict, cat: dict) -> float:
+    """Granularity/domain alignment adjustment between an item's `code_book`
+    and a category's `expects`. Returns 0.0 when either side lacks the field."""
+    cb = item.get("code_book")
+    exp = cat.get("expects")
+    if not cb or not exp:
+        return 0.0
+    bonus = 0.0
+    exp_dom, cb_dom = exp.get("domain"), cb.get("domain")
+    if exp_dom and cb_dom:
+        bonus += DOMAIN_MATCH_BONUS if cb_dom == exp_dom else DOMAIN_CONFLICT_PENALTY
+    if exp.get("unit_of_observation") and cb.get("unit_of_observation") == exp.get("unit_of_observation"):
+        bonus += UNIT_MATCH_BONUS
+    if exp.get("spatial_granularity") and cb.get("spatial_granularity") == exp.get("spatial_granularity"):
+        bonus += GRANULARITY_MATCH_BONUS
+    return bonus
+
+
 def build_idf_index(
     cats: dict[str, dict],
     items: list[dict],
@@ -209,6 +240,7 @@ __all__ = [
     "candidate_text",
     "compute_idf",
     "weighted_score",
+    "code_book_bonus",
     "build_idf_index",
     "load_taxonomy",
 ]
