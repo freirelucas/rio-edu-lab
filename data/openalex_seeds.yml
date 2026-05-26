@@ -134,40 +134,46 @@ seeds:
     track: mainstream
 
   # ============================================================
-  # Demais landmarks propostos (placeholders, curador resolve IDs)
+  # Subáreas de educação (v0.11 — IDs resolvidos via OpenAlex)
+  # Efeito-professor, tamanho de turma, retornos, habilidades cognitivas.
   # ============================================================
 
-  # - openalex_id: <id-tbd>
-  #   label: "chetty-friedman-rockoff-2014 — Measuring Impacts of Teachers (AER)"
-  #   track: mainstream
-  #   enabled: false
-  #
-  # - openalex_id: <id-tbd>
-  #   label: "angrist-lavy-1999 — Maimonides Rule Class Size (QJE)"
-  #   track: mainstream
-  #   enabled: false
-  #
-  # - openalex_id: <id-tbd>
-  #   label: "krueger-1999 — Experimental Estimates Project STAR (QJE)"
-  #   track: mainstream
-  #   enabled: false
-  #
-  # - openalex_id: <id-tbd>
-  #   label: "hanushek-woessmann-2008 — Role of Cognitive Skills in Economic Development (JEL)"
-  #   track: mainstream
-  #   enabled: false
-  #
-  # - openalex_id: <id-tbd>
-  #   label: "heckman-stixrud-urzua-2006 — Cognitive and Noncognitive Abilities (JOLE)"
-  #   track: mainstream
-  #   enabled: false
-  #
-  # - openalex_id: <id-tbd>
-  #   label: "card-1999 — Causal Effect of Education on Earnings (Handbook)"
-  #   track: mainstream
-  #   enabled: false
-  #
-  # - openalex_id: <id-tbd>
-  #   label: "duflo-2001 — Schooling and Labor Market Consequences (AER)"
-  #   track: mainstream
-  #   enabled: false
+  - openalex_id: W1976049077
+    label: "chetty-friedman-rockoff-2014 — Measuring the Impacts of Teachers II (AER)"
+    track: mainstream
+
+  - openalex_id: W4240884942
+    label: "angrist-lavy-1999 — Maimonides' Rule / class size (QJE)"
+    track: mainstream
+
+  - openalex_id: W2156471102
+    label: "krueger-1999 — Experimental Estimates of Education Production Functions / STAR (QJE)"
+    track: mainstream
+
+  - openalex_id: W1480274481
+    label: "hanushek-woessmann-2008 — Role of Cognitive Skills in Economic Development (JEL)"
+    track: mainstream
+
+  - openalex_id: W2050931047
+    label: "card-1999 — The Causal Effect of Education on Earnings (Handbook)"
+    track: mainstream
+
+  - openalex_id: W3124366560
+    label: "duflo-2001 — Schooling & Labor Market Consequences of School Construction in Indonesia (AER)"
+    track: mainstream
+
+  # ============================================================
+  # Transporte & acesso à escola (v0.11)
+  # Âncoras metodológicas de acessibilidade (reforça o eixo Pereira/HEX-EDU).
+  # track: outsider → forward-only (quem cita), filtrado por data_signal — não
+  # puxa a teoria de transporte pura via backward; o edu-filter do Stage 2
+  # mantém só o que é relevante pra educação.
+  # ============================================================
+
+  - openalex_id: W1973573843
+    label: "geurs-vanwee-2004 — Accessibility evaluation of land-use and transport strategies"
+    track: outsider
+
+  - openalex_id: W2101834443
+    label: "hansen-1959 — How Accessibility Shapes Land Use"
+    track: outsider

@@ -1,6 +1,6 @@
 ---
 title: rio-edu-lab — pipeline aberto de replicação de papers de educação contra os dados públicos do Rio
-description: Um sistema que processa papers acadêmicos sobre educação contra os 9.855 itens do data.rio. 253 candidatos no funil, 12 no catálogo curado, 3 replicados. Aberto em todos os passos.
+description: Um sistema que processa papers acadêmicos sobre educação contra os 9.855 itens do data.rio. Do snowball bibliométrico ao catálogo curado e aos achados replicados — aberto em todos os passos.
 hide:
   - navigation
   - toc
@@ -66,8 +66,8 @@ O pipeline tem 4 estágios, todos auditáveis. Hoje:
 
 <!-- funnel:bignums:start (gerado por analysis/25_funnel_state.py) -->
 <div class="big-num-grid">
-  <div class="big-num"><span class="num">253</span><span class="label">candidatos no funil (snowball bibliométrico)</span></div>
-  <div class="big-num"><span class="num">53</span><span class="label">com tema educacional relevante</span></div>
+  <div class="big-num"><span class="num">374</span><span class="label">candidatos no funil (snowball bibliométrico)</span></div>
+  <div class="big-num"><span class="num">109</span><span class="label">com tema educacional relevante</span></div>
   <div class="big-num"><span class="num">12</span><span class="label">papers no catálogo curado</span></div>
   <div class="big-num"><span class="num">3</span><span class="label">replicados publicados</span></div>
 </div>
@@ -81,7 +81,7 @@ O pipeline tem 4 estágios, todos auditáveis. Hoje:
 
     ---
 
-    Snowball bibliométrico sobre 20 seeds canônicos da literatura de educação, expansão backward + forward via OpenAlex. Produz 253 candidatos brutos.
+    Snowball bibliométrico sobre os seeds canônicos da literatura de educação (incluindo acesso/transporte escolar), expansão backward + forward via OpenAlex. Produz a leva bruta de candidatos.
 
     `analysis/45_bulk_discover.py`
 
@@ -126,7 +126,7 @@ O pipeline tem 4 estágios, todos auditáveis. Hoje:
 
 <div data-chart="_assets/charts/themes.json"></div>
 
-Distribuição dos 253 candidatos por categoria de dado requerida. [Detalhe →](dados.md)
+Distribuição dos candidatos do funil por categoria de dado requerida. [Detalhe →](dados.md)
 </div>
 
 </div>

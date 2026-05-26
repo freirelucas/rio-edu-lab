@@ -22,7 +22,7 @@ Cobertura é baixa **por construção**: o catálogo curado tem só 12 papers, e
 
 <div data-chart="../_assets/charts/themes.json"></div>
 
-253 candidatos do snowball, distribuídos por categoria de dado que precisariam pra replicar. **Performance agregada** lidera (estilo IDEB); **microdado de aluno** aparece forte, mas é majoritariamente *external* no Rio (INEP não publica nominal). Os números por categoria saem do funil — leia direto no gráfico.
+Os candidatos do snowball, distribuídos por categoria de dado que precisariam pra replicar. **Performance agregada** lidera (estilo IDEB); **microdado de aluno** aparece forte, mas é majoritariamente *external* no Rio (INEP não publica nominal). Os números por categoria saem do funil — leia direto no gráfico.
 </div>
 
 </div>
