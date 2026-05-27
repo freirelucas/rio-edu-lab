@@ -318,18 +318,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -458,14 +459,15 @@ candidates:
     score: 12.17
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -753,18 +755,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -842,9 +845,10 @@ candidates:
     score: 7.02
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: longitudinal-cohort
     manifest_item_id: null
@@ -929,20 +933,21 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -983,12 +988,13 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -1299,9 +1305,10 @@ candidates:
     score: 7.02
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -1398,12 +1405,13 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -1493,16 +1501,17 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: enrollment-counts
     manifest_item_id: d1e1192de4854ee4b53095a6f3274018
     manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
       Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
       e matrícula final, entre 1999-2012 '
-    score: 20.28
+    score: 29.28
     status: available
   decision: ''
   decision_reason: ''
@@ -1591,9 +1600,10 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -1744,9 +1754,10 @@ candidates:
     score: 8.62
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -1756,7 +1767,7 @@ candidates:
   - category_id: geometry-neighborhoods
     manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
     manifest_title: Limite de Bairros
-    score: 18.96
+    score: 23.96
     status: available
   decision: ''
   decision_reason: ''
@@ -1884,9 +1895,10 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -1896,7 +1908,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -2012,9 +2024,10 @@ candidates:
     score: 12.14
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -2172,7 +2185,7 @@ candidates:
   - category_id: geometry-neighborhoods
     manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
     manifest_title: Limite de Bairros
-    score: 18.96
+    score: 23.96
     status: available
   - category_id: microdata-household
     manifest_item_id: null
@@ -2235,18 +2248,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: accept
   decision_reason: v0.11 — setor escolar × desempenho, estende Coleman-1966
@@ -2407,14 +2421,15 @@ candidates:
     score: 12.14
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -2482,12 +2497,13 @@ candidates:
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: longitudinal-cohort
     manifest_item_id: null
@@ -2622,9 +2638,10 @@ candidates:
     score: 6.6
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -2758,9 +2775,10 @@ candidates:
     score: 27.19
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -2812,7 +2830,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -2851,14 +2869,15 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -2956,12 +2975,13 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -3019,7 +3039,7 @@ candidates:
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -3187,14 +3207,15 @@ candidates:
     score: 7.93
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: longitudinal-cohort
     manifest_item_id: null
@@ -3261,12 +3282,13 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -3377,18 +3399,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -3444,9 +3467,10 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -3456,7 +3480,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -3490,9 +3514,10 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-household
     manifest_item_id: null
@@ -3502,7 +3527,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -3536,9 +3561,10 @@ candidates:
     score: 6.6
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -3601,9 +3627,10 @@ candidates:
     score: 19.0
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -3642,9 +3669,10 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: longitudinal-cohort
     manifest_item_id: null
@@ -3654,7 +3682,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -3717,9 +3745,10 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -3753,14 +3782,15 @@ candidates:
     score: 12.14
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -3799,20 +3829,21 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -3871,9 +3902,10 @@ candidates:
     score: 9.14
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -3885,7 +3917,7 @@ candidates:
     manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
       Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
       e matrícula final, entre 1999-2012 '
-    score: 20.28
+    score: 29.28
     status: available
   decision: ''
   decision_reason: ''
@@ -4059,18 +4091,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -4182,18 +4215,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -4257,14 +4291,15 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -4376,12 +4411,13 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -4443,7 +4479,7 @@ candidates:
   - category_id: geometry-neighborhoods
     manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
     manifest_title: Limite de Bairros
-    score: 18.96
+    score: 23.96
     status: available
   - category_id: spatial-partition
     manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
@@ -4565,14 +4601,15 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -4893,14 +4930,15 @@ candidates:
     score: 12.17
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -4951,7 +4989,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -4990,12 +5028,13 @@ candidates:
     manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
       Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
       e matrícula final, entre 1999-2012 '
-    score: 20.28
+    score: 29.28
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -5104,9 +5143,10 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -5253,16 +5293,17 @@ candidates:
     score: 7.67
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: enrollment-counts
     manifest_item_id: d1e1192de4854ee4b53095a6f3274018
     manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
       Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
       e matrícula final, entre 1999-2012 '
-    score: 20.28
+    score: 29.28
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -5416,9 +5457,10 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -5428,7 +5470,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -5707,9 +5749,10 @@ candidates:
     score: 6.6
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: longitudinal-cohort
     manifest_item_id: null
@@ -5774,9 +5817,10 @@ candidates:
     score: 6.6
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-household
     manifest_item_id: null
@@ -5820,9 +5864,10 @@ candidates:
     score: 13.23
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -5833,7 +5878,7 @@ candidates:
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -5888,14 +5933,15 @@ candidates:
     score: 6.6
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -5934,9 +5980,10 @@ candidates:
     score: 12.66
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -5946,7 +5993,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -6057,18 +6104,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -6152,9 +6200,10 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -6209,9 +6258,10 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -6221,7 +6271,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -6304,9 +6354,10 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -6340,9 +6391,10 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -6352,7 +6404,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -6407,18 +6459,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -6481,7 +6534,7 @@ candidates:
     manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
       Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
       e matrícula final, entre 1999-2012 '
-    score: 20.28
+    score: 29.28
     status: available
   - category_id: travel-network
     manifest_item_id: null
@@ -6575,9 +6628,10 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -6761,20 +6815,21 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: accept
   decision_reason: v0.11 — desigualdade sistêmica (between/within), eixo Theil
@@ -6805,20 +6860,21 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: accept
   decision_reason: v0.11 — habitação × escola/segregação, eixo Reardon/VULN-EDU
@@ -6877,12 +6933,12 @@ candidates:
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -6967,9 +7023,10 @@ candidates:
     score: 6.6
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: spatial-partition
     manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
@@ -7007,7 +7064,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -7041,9 +7098,10 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -7053,7 +7111,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -7107,17 +7165,18 @@ candidates:
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -7386,12 +7445,13 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -7491,18 +7551,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -7534,18 +7595,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -7632,12 +7694,13 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -7781,9 +7844,10 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -7863,9 +7927,10 @@ candidates:
     score: 12.66
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -7875,7 +7940,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -7914,9 +7979,10 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: longitudinal-cohort
     manifest_item_id: null
@@ -8025,9 +8091,10 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -8066,15 +8133,16 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -8205,9 +8273,10 @@ candidates:
     score: 14.95
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -8366,7 +8435,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -8401,9 +8470,10 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -8583,18 +8653,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -8647,9 +8718,10 @@ candidates:
     score: 6.77
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: longitudinal-cohort
     manifest_item_id: null
@@ -8659,7 +8731,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -8695,18 +8767,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -8740,9 +8813,10 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -8752,7 +8826,7 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -8836,9 +8910,10 @@ candidates:
     score: 13.61
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -9238,9 +9313,10 @@ candidates:
     score: 6.6
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: longitudinal-cohort
     manifest_item_id: null
@@ -9307,18 +9383,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -9519,18 +9596,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -9707,20 +9785,21 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -9779,20 +9858,21 @@ candidates:
     score: 5.89
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -9852,16 +9932,17 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: enrollment-counts
     manifest_item_id: d1e1192de4854ee4b53095a6f3274018
     manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
       Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
       e matrícula final, entre 1999-2012 '
-    score: 20.28
+    score: 29.28
     status: available
   decision: ''
   decision_reason: ''
@@ -9985,9 +10066,10 @@ candidates:
     score: 20.59
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: microdata-student
     manifest_item_id: null
@@ -10148,14 +10230,15 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   decision: ''
   decision_reason: ''
@@ -10262,18 +10345,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''
@@ -10375,9 +10459,10 @@ candidates:
     score: 0.0
     status: external
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   decision: ''
   decision_reason: ''
@@ -10411,9 +10496,10 @@ candidates:
     score: 6.87
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: longitudinal-cohort
     manifest_item_id: null
@@ -10482,22 +10568,23 @@ candidates:
     score: 6.52
   coverage:
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   - category_id: enrollment-counts
     manifest_item_id: d1e1192de4854ee4b53095a6f3274018
     manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
       Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
       e matrícula final, entre 1999-2012 '
-    score: 20.28
+    score: 29.28
     status: available
   decision: ''
   decision_reason: ''
@@ -10554,18 +10641,19 @@ candidates:
   - category_id: geometry-schools
     manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
     manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 21.84
+    score: 32.84
     status: available
   - category_id: performance-aggregated
-    manifest_item_id: 6b375a1fcab642779398aa12108c906f
-    manifest_title: Índice de Qualidade do Emprego Municipal  (Março/2026)
-    score: 15.34
+    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
+    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
+      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
+    score: 21.21
     status: available
   - category_id: ses-aggregated
     manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
     manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
       Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 18.99
+    score: 23.99
     status: available
   decision: ''
   decision_reason: ''

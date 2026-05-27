@@ -37,6 +37,7 @@ except ImportError:
 ROOT = Path(__file__).resolve().parent.parent
 CATALOG_YML = ROOT / "data" / "papers_catalog.yml"
 TAXONOMY_YML = ROOT / "data" / "requirements_taxonomy.yml"
+MANIFEST_JSON = ROOT / "data" / "manifest.json"
 OPENALEX_JSON = ROOT / "data" / "processed" / "openalex_citations.json"
 FUNNEL_YML = ROOT / "data" / "papers_funnel.yml"
 OUT_MAPPING = ROOT / "data" / "processed" / "paper_data_mapping.csv"
@@ -45,6 +46,7 @@ OUT_SUMMARY = ROOT / "data" / "processed" / "papers_catalog_summary.json"
 VALID_REPL = {"full", "partial", "pending", "unfeasible"}
 VALID_STATUS = {"available", "partial", "external", "missing"}
 VALID_DECISION = {"", "accept", "reject"}
+CODEBOOK_FIELDS = ("domain", "unit_of_observation", "spatial_granularity")
 KEBAB_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
@@ -107,6 +109,41 @@ def validate(papers: list[dict]) -> list[str]:
         if repl in {"full", "partial"}:
             if not p.get("report_ids"):
                 errs.append(f"{loc}: status={repl} but no report_ids")
+    return errs
+
+
+def validate_codebook_vocab() -> list[str]:
+    """Errors for any `expects` (taxonomy) or `code_book` (manifest) value
+    outside the controlled `vocabularies` block. A typo there would silently
+    zero `_match.code_book_bonus`, so it must be a hard fail. No-op when the
+    taxonomy has no `vocabularies` block (backward-compat)."""
+    if not TAXONOMY_YML.exists():
+        return []
+    tax = yaml.safe_load(TAXONOMY_YML.read_text(encoding="utf-8")) or {}
+    vocab = tax.get("vocabularies") or {}
+    if not vocab:
+        return []
+    allowed = {f: set(vocab.get(f) or []) for f in CODEBOOK_FIELDS}
+    errs: list[str] = []
+
+    def check(values: dict, loc: str) -> None:
+        for f in CODEBOOK_FIELDS:
+            v = values.get(f)
+            if v is None:
+                continue
+            for token in (v if isinstance(v, list) else [v]):
+                if token not in allowed[f]:
+                    errs.append(f"{loc}: {f}='{token}' not in vocabularies.{f}")
+
+    for cat in tax.get("categories") or []:
+        if cat.get("expects"):
+            check(cat["expects"], f"taxonomy expects[{cat.get('id', '?')}]")
+
+    if MANIFEST_JSON.exists():
+        manifest = json.loads(MANIFEST_JSON.read_text(encoding="utf-8"))
+        for it in manifest.get("items") or []:
+            if it.get("code_book"):
+                check(it["code_book"], f"manifest code_book[{(it.get('id') or '?')[:8]}]")
     return errs
 
 
@@ -292,6 +329,14 @@ def main() -> int:
         print(f"\n{len(errs)} validation errors", file=sys.stderr)
         return 2
     print("  validation: ok")
+
+    vocab_errs = validate_codebook_vocab()
+    if vocab_errs:
+        for e in vocab_errs:
+            print(f"  [error] {e}", file=sys.stderr)
+        print(f"\n{len(vocab_errs)} code_book/expects vocab errors", file=sys.stderr)
+        return 2
+    print("  code_book/expects vocab: ok")
 
     alias_to_cat = load_taxonomy()
     taxonomy_warns: list[str] = []

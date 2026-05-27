@@ -25,16 +25,65 @@
 #                 NÃO entram no scorer do Stage 2/3 (poluiriam com tokens
 #                 genéricos tipo "Feature Service"). 41 ainda usa por
 #                 backward-compat.
+#   expects     — (opcional, v0.12) descritores estruturados que a categoria
+#                 espera de um item do manifest, casados contra o `code_book`
+#                 do item em `_match.code_book_bonus` (somado ao score lexical
+#                 no Stage 3 / 47). Campos: domain, unit_of_observation,
+#                 spatial_granularity. Cada um é escalar OU lista (a lista =
+#                 "qualquer um conta", para categorias de granularidade
+#                 variável, ex. performance por bairro/RA). Valores DEVEM estar
+#                 em `vocabularies` abaixo — o validador (31) falha em typo,
+#                 pra não zerar o bônus silenciosamente.
+#
+# `code_book` (em data/manifest.json, por item): o lado-item de `expects`,
+# mesmos campos + temporal_coverage / key_variables (estes dois são doc, não
+# entram em score nenhum). Enriquecer um item: PR para manifest.json.
 #
 # Adicionar nova categoria ou alias: PR para este arquivo.
 
 version: 2
+
+# Vocabulários controlados para `expects` (categorias) e `code_book` (itens).
+# Lista fechada — valor fora daqui falha no validador 31 (typo != bônus zero
+# silencioso). Crescer conforme novos domínios/unidades forem tagueados.
+vocabularies:
+  domain:                  # domínio temático — discrimina homônimos cross-área
+    - educacao-basica
+    - educacao-superior
+    - economia             # ex.: Índice de Qualidade do Emprego (confusor de "desempenho")
+    - cultura              # ex.: Escolas de Samba / Música (confusor de "escola")
+    - saude
+    - transporte
+    - assistencia-social
+    - demografia
+  unit_of_observation:     # grão da linha (uma observação =)
+    - escola
+    - aluno
+    - turma
+    - professor
+    - bairro
+    - ra                   # Região Administrativa
+    - ap                   # Área de Planejamento
+    - cre                  # Coordenadoria Regional de Educação
+    - municipio
+  spatial_granularity:     # resolução geográfica (ortogonal à unidade)
+    - ponto
+    - bairro
+    - ra
+    - ap
+    - cre
+    - municipio
+    - none
 
 categories:
 
   - id: geometry-schools
     label_pt: "Geometria de escolas"
     level: aggregated_unit
+    expects:
+      domain: educacao-basica
+      unit_of_observation: escola
+      spatial_granularity: ponto
     aliases:
       - "geometria de escolas"
       - "localização de escolas"
@@ -50,6 +99,10 @@ categories:
   - id: geometry-neighborhoods
     label_pt: "Geometria de bairros / unidades espaciais"
     level: aggregated_unit
+    # Camada-base espacial — sem domínio temático; casa por unidade/resolução.
+    expects:
+      unit_of_observation: bairro
+      spatial_granularity: bairro
     aliases:
       - "geometria de bairros"
       - "shapefile de bairros"
@@ -65,6 +118,13 @@ categories:
   - id: performance-aggregated
     label_pt: "Desempenho educacional por unidade agregada"
     level: aggregated_unit
+    # Granularidade varia (IDEB por bairro / RA / AP) → unit e spatial são listas.
+    # O domain separa "desempenho educacional" de "desempenho" de transporte,
+    # emprego, saúde etc. — confusores que dominam as aliases genéricas.
+    expects:
+      domain: educacao-basica
+      unit_of_observation: [bairro, ra]
+      spatial_granularity: [bairro, ra, ap]
     aliases:
       - "IDEB por bairro"
       - "desempenho por escola"
@@ -88,6 +148,10 @@ categories:
   - id: ses-aggregated
     label_pt: "SES agregado por unidade (NSE, INSE, IDS)"
     level: aggregated_unit
+    # SES atravessa domínios (social/econômico) → sem domain; casa por unidade.
+    expects:
+      unit_of_observation: [bairro, ra, ap]
+      spatial_granularity: [bairro, ra, ap]
     aliases:
       - "INSE por escola"
       - "NSE por escola ou bairro"
@@ -133,6 +197,9 @@ categories:
   - id: enrollment-counts
     label_pt: "Matrículas / oferta de escolas por unidade"
     level: aggregated_unit
+    expects:
+      domain: educacao-basica
+      unit_of_observation: [escola, aluno, turma]
     aliases:
       - "matrículas por escola"
       - "indicador de matrícula"

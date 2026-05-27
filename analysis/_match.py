@@ -19,6 +19,7 @@ Functions:
   - category_text/manifest_item_text/candidate_text(x) -> str  (corpus builders)
   - compute_idf(list[set[str]])          -> dict[str, float]
   - weighted_score(query, target, idf)   -> float
+  - code_book_bonus(item, cat)           -> float      (domain/granularity nudge)
   - build_idf_index(cats, items, *, extra_docs=()) -> (idf, cat_tokens, item_tokens)
   - load_taxonomy(path)                  -> (cat_by_id, alias_lookup)
 """
@@ -156,6 +157,55 @@ def weighted_score(query_tokens: set[str], target_tokens: set[str], idf: dict[st
     return sum(idf.get(t, 1.0) for t in (query_tokens & target_tokens))
 
 
+# --- Code-book alignment (v0.12) -------------------------------------------
+# Optional structured descriptors of a manifest item (`code_book`) matched
+# against what a taxonomy category expects (`expects`). PURELY ADDITIVE: an item
+# or category lacking these fields contributes 0, so lexical matching is
+# unchanged where they are absent. The positive nudges lift a thinly-worded but
+# correct item above lexical confusers — e.g. the IDEB-by-RA item (whose generic
+# aliases "indicador de desempenho" otherwise rank it below "Saúde", "Qualidade
+# do Emprego" and bus-transport "desempenho"). The domain *conflict* penalty
+# (held in reserve, not applied to any item in v0.12) demotes cross-domain
+# homonyms when boosting the correct item alone is not enough.
+#
+# `expects` fields may be a scalar (equality) or a list (membership) — the list
+# form lets a variable-granularity category accept several units, e.g.
+# performance-aggregated `unit_of_observation: [bairro, ra]`.
+DOMAIN_MATCH_BONUS = 6.0
+DOMAIN_CONFLICT_PENALTY = -8.0
+UNIT_MATCH_BONUS = 3.0
+GRANULARITY_MATCH_BONUS = 2.0
+
+
+def _expect_match(expected, actual) -> bool:
+    """True if `actual` (item code_book value) satisfies `expected` (category):
+    scalar equality, or membership when `expected` is a list. None on either
+    side never matches."""
+    if expected is None or actual is None:
+        return False
+    if isinstance(expected, (list, tuple)):
+        return actual in expected
+    return actual == expected
+
+
+def code_book_bonus(item: dict, cat: dict) -> float:
+    """Granularity/domain alignment adjustment between an item's `code_book`
+    and a category's `expects`. Returns 0.0 when either side lacks the field."""
+    cb = item.get("code_book")
+    exp = cat.get("expects")
+    if not cb or not exp:
+        return 0.0
+    bonus = 0.0
+    exp_dom, cb_dom = exp.get("domain"), cb.get("domain")
+    if exp_dom and cb_dom:
+        bonus += DOMAIN_MATCH_BONUS if _expect_match(exp_dom, cb_dom) else DOMAIN_CONFLICT_PENALTY
+    if _expect_match(exp.get("unit_of_observation"), cb.get("unit_of_observation")):
+        bonus += UNIT_MATCH_BONUS
+    if _expect_match(exp.get("spatial_granularity"), cb.get("spatial_granularity")):
+        bonus += GRANULARITY_MATCH_BONUS
+    return bonus
+
+
 def build_idf_index(
     cats: dict[str, dict],
     items: list[dict],
@@ -209,6 +259,7 @@ __all__ = [
     "candidate_text",
     "compute_idf",
     "weighted_score",
+    "code_book_bonus",
     "build_idf_index",
     "load_taxonomy",
 ]

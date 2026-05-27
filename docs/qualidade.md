@@ -55,7 +55,8 @@ O `rio-edu-lab` não tem um front/back web literal:
 **Critérios de qualidade.**
 
 - Schema **estrito** do funil (`31_build_paper_catalog.py --validate-funnel`): sem `openalex_id` duplicado, `decision` válida, `category_ids` ∈ taxonomia fechada de 10 categorias.
-- **Matching com limiar explícito** (score **IDF-weighted** ≥ 5,0 = `available`) → auditável, não subjetivo.
+- **Matching com limiar explícito** (score **IDF-weighted** + alinhamento de *code-book* ≥ 5,0 = `available`) → auditável, não subjetivo.
+- **Code-book** (v0.12): domínio/unidade/granularidade declarados por item (`code_book` no manifest) vs. `expects` da categoria desempatam homônimos cross-domínio — ex.: `performance-aggregated` passou a casar o **IDEB por RA**, não o "Índice de Qualidade do Emprego". Vocabulário controlado validado no `31` (typo falha o build).
 - **Drift check** do índice reverso (CI reroda `41` e diffa a página).
 
 ## 4. Análise dos dados disponíveis em toda a API do data.rio

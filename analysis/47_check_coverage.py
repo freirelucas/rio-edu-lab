@@ -41,6 +41,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _match import (  # noqa: E402
     build_idf_index,
     candidate_text,
+    code_book_bonus,
     load_taxonomy,
     tokenize_bigrams,
     weighted_score,
@@ -134,7 +135,9 @@ def main() -> int:
             continue
         best_score, best_item = 0.0, None
         for k, it in enumerate(items):
-            s = weighted_score(item_tokens[k], cat_tokens[cid], idf)
+            # Lexical IDF score + code-book alignment nudge (0 unless both the
+            # item's `code_book` and the category's `expects` are populated).
+            s = weighted_score(item_tokens[k], cat_tokens[cid], idf) + code_book_bonus(it, cat)
             if s > best_score:
                 best_score, best_item = s, it
         if best_item is not None:

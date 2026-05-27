@@ -58,6 +58,11 @@
     },
     {
       "id": "dc94b29fc3594a5bb4d297bee0c9a3f2",
+      "code_book": {
+        "unit_of_observation": "bairro",
+        "spatial_granularity": "bairro",
+        "key_variables": ["nome_bairro", "codbairro", "geometria_poligono"]
+      },
       "title": "Limite de Bairros",
       "type": "Feature Service",
       "snippet": "Limites dos Bairros da Cidade do Rio de Janeiro. Clique abaixo para ver mais opções de acesso.",
@@ -3790,6 +3795,12 @@
     },
     {
       "id": "fa85ddc76a524380ad7fc60e3006ee97",
+      "code_book": {
+        "unit_of_observation": "bairro",
+        "spatial_granularity": "bairro",
+        "temporal_coverage": "2010 (Censo IBGE)",
+        "key_variables": ["ids", "area_planejamento", "regiao_administrativa", "bairro", "favela"]
+      },
       "title": "Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010",
       "type": "Microsoft Excel",
       "snippet": "Foram utilizados 8 indicadores, construídos a partir do Censo Demográfico de 2010 do IBGE, para a composição do Índice de Desenvolvimento Social.",
@@ -20611,6 +20622,13 @@
     },
     {
       "id": "498e637753bd4e0da76e90103dd21eb7",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "escola",
+        "spatial_granularity": "ponto",
+        "temporal_coverage": "2014-2019 (camada locacional)",
+        "key_variables": ["nome_escola", "rede", "geometria_ponto", "area_estrategia_saude_familia"]
+      },
       "title": "Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde",
       "type": "Web Map",
       "snippet": "Localização das Escolas Municipais em Áreas do Estratégia de Saúde da Família",
@@ -21439,6 +21457,13 @@
     },
     {
       "id": "9fd1a8cc207a48c5bda7131e4e74b1ca",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "bairro",
+        "spatial_granularity": "bairro",
+        "temporal_coverage": "2007-2023 (bienal)",
+        "key_variables": ["ideb", "ano", "area_planejamento", "regiao_administrativa", "bairro"]
+      },
       "title": "IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023",
       "type": "Microsoft Excel",
       "snippet": "Entre os anos de 2021 e 2023 o IDEB do município do Rio de Janeiro subiu de 5,4 para 6,0, com a maior nota por Região Administrativa sendo a da RA IV Botafogo, com 6,5, e a menor nota a da RA XXVIII Jacarezinho, com 5,2.",
@@ -90128,6 +90153,13 @@
     },
     {
       "id": "d1e1192de4854ee4b53095a6f3274018",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "aluno",
+        "spatial_granularity": "cre",
+        "temporal_coverage": "1999-2012",
+        "key_variables": ["matriculas", "turmas", "cre", "etapa_ensino"]
+      },
       "title": "Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE) e matrícula final, entre 1999-2012 ",
       "type": "Microsoft Excel",
       "snippet": "Número de matrículas do Ens. Fundamental por série e projetos de correção de fluxo (matrícula final)",

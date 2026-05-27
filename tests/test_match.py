@@ -12,7 +12,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "analysis"))
 
 from _match import (  # noqa: E402
+    DOMAIN_CONFLICT_PENALTY,
+    DOMAIN_MATCH_BONUS,
+    GRANULARITY_MATCH_BONUS,
+    UNIT_MATCH_BONUS,
     build_idf_index,
+    code_book_bonus,
     compute_idf,
     edu_signal,
     tokenize,
@@ -71,3 +76,49 @@ def test_common_token_does_not_dominate():
     s_perf = weighted_score(ideb_item, cat_tokens["perf"], idf)
     s_geo = weighted_score(ideb_item, cat_tokens["geo"], idf)
     assert s_perf > s_geo
+
+
+# --- code_book_bonus -------------------------------------------------------
+
+def test_code_book_bonus_zero_when_field_absent():
+    """Purely additive: no `code_book` or no `expects` → 0 (lexical unchanged)."""
+    cat = {"expects": {"domain": "educacao-basica"}}
+    item = {"code_book": {"domain": "educacao-basica"}}
+    assert code_book_bonus({}, cat) == 0.0
+    assert code_book_bonus(item, {}) == 0.0
+    assert code_book_bonus({"code_book": {}}, cat) == 0.0
+
+
+def test_code_book_bonus_domain_match_and_conflict():
+    cat = {"expects": {"domain": "educacao-basica"}}
+    assert code_book_bonus({"code_book": {"domain": "educacao-basica"}}, cat) == DOMAIN_MATCH_BONUS
+    assert code_book_bonus({"code_book": {"domain": "economia"}}, cat) == DOMAIN_CONFLICT_PENALTY
+
+
+def test_code_book_bonus_sums_aligned_fields():
+    cat = {"expects": {"domain": "educacao-basica", "unit_of_observation": "escola",
+                       "spatial_granularity": "ponto"}}
+    item = {"code_book": {"domain": "educacao-basica", "unit_of_observation": "escola",
+                          "spatial_granularity": "ponto"}}
+    assert code_book_bonus(item, cat) == (
+        DOMAIN_MATCH_BONUS + UNIT_MATCH_BONUS + GRANULARITY_MATCH_BONUS
+    )
+
+
+def test_code_book_bonus_unit_list_membership():
+    """A variable-granularity category lists several acceptable units."""
+    cat = {"expects": {"unit_of_observation": ["bairro", "ra"]}}
+    assert code_book_bonus({"code_book": {"unit_of_observation": "ra"}}, cat) == UNIT_MATCH_BONUS
+    assert code_book_bonus({"code_book": {"unit_of_observation": "escola"}}, cat) == 0.0
+
+
+def test_code_book_bonus_lifts_correct_item_over_lexical_confuser():
+    """The motivating case: an IDEB item (thin lexical score) must end up above a
+    cross-domain 'desempenho' confuser once the code-book nudge is added."""
+    cat = {"expects": {"domain": "educacao-basica", "unit_of_observation": ["bairro", "ra"],
+                       "spatial_granularity": ["bairro", "ra", "ap"]}}
+    ideb = {"code_book": {"domain": "educacao-basica", "unit_of_observation": "bairro",
+                          "spatial_granularity": "bairro"}}
+    confuser = {"title": "employment quality index"}  # no code_book
+    ideb_lexical, confuser_lexical = 10.0, 16.0
+    assert ideb_lexical + code_book_bonus(ideb, cat) > confuser_lexical + code_book_bonus(confuser, cat)
