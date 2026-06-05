@@ -175,12 +175,16 @@ class TestRealDataSanity:
             assert abs(float(r["check_sum"])) < 1e-6
 
     def test_within_dominates_in_anos_iniciais(self):
-        """The headline finding of the project: share_within > 0.5 in every year."""
+        """Headline finding bound bilaterally: share_within ∈ [55%, 75%] em todo
+        ano. A narrativa pública (docs/achados.md) diz "entre 59% e 73%"; este
+        bound buffereia ~3pp dos extremos observados (0.59 mínimo, 0.73 máximo
+        arredondado) — apertado o suficiente pra falhar se o número cair pra
+        51% (atual `> 0.5` deixava passar), com folga pra variação ano-a-ano."""
         path = ROOT / "data" / "processed" / "theil_ideb_anos_iniciais.csv"
         rows = list(csv.DictReader(path.open(encoding="utf-8")))
         for r in rows:
             sw = float(r["share_within"])
-            assert sw > 0.5, (
-                f"year {r['year']}: share_within {sw:.0%} <= 50%, "
-                "the central finding is broken"
+            assert 0.55 <= sw <= 0.75, (
+                f"year {r['year']}: share_within {sw:.0%} fora de [55%, 75%], "
+                "guarda-corpo do achado central quebrou"
             )

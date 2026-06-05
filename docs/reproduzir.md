@@ -59,11 +59,11 @@ python3 analysis/23_build_priority_list.py
 ## Testes
 
 ```bash
-pytest tests/                                                      # 19 lab tests
-pytest reference/acec-hub/tests/test_acec_stats.py                 # 9 acec tests
+pytest tests/                                                      # 31 lab tests
+pytest reference/acec-hub/tests/test_acec_stats.py                 # 20 acec tests
 ```
 
-Total: **28 testes verdes** (incluindo invariantes Theil 2-níveis e 3-níveis, e o achado central `share_within > 50%` como teste hard-fail).
+Total: **51 testes verdes** (incluindo invariantes Theil 2-níveis e 3-níveis, primitivas do matching IDF/code-book, e o achado central `share_within ∈ [55%, 75%]` — bound bilateral — como teste hard-fail).
 
 ## Site
 
