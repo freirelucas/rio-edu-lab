@@ -194,7 +194,14 @@ def aggregate_candidates(
             existing["discovered_via"] = sorted(via)
             if int(row.get("cited_by_count") or 0) > int(existing.get("cited_by_count") or 0):
                 existing["cited_by_count"] = row["cited_by_count"]
-            for k in ("title", "authors", "year", "venue", "doi", "abstract", "pdf_url_oa", "concepts_top3"):
+            for k in (
+                # legacy fields
+                "title", "authors", "year", "venue", "doi", "abstract", "pdf_url_oa", "concepts_top3",
+                # v2 rich fields (preencher se outra discovery trouxe valor)
+                "concepts", "topics", "primary_topic", "keywords", "institutions",
+                "is_brazilian", "related_works", "best_oa_pdf_url", "fwci",
+                "counts_by_year", "is_retracted", "mesh", "sdg",
+            ):
                 if not existing.get(k) and row.get(k):
                     existing[k] = row[k]
     # If a seed openalex_id ended up as an aggregated row (auto-citation case),
@@ -206,7 +213,7 @@ def aggregate_candidates(
             via.add(f"seed-{seed['track']}")
             agg[oid_full]["discovered_via"] = sorted(via)
 
-    for oid, row in agg.items():
+    for row in agg.values():
         backward_seeds = [s for s in row["discovered_via"] if s.startswith("backward-from-")]
         row["cocitation_count"] = len(backward_seeds)
         if row["cocitation_count"] >= 1 or any(s.startswith("seed-mainstream") for s in row["discovered_via"]):
@@ -261,6 +268,21 @@ def merge_candidate(existing: dict, new: dict) -> dict:
         "abstract": new.get("abstract") or existing.get("abstract") or "",
         "pdf_url_oa": new.get("pdf_url_oa") or existing.get("pdf_url_oa") or "",
         "concepts_top3": new.get("concepts_top3") or existing.get("concepts_top3") or "",
+        # v2 rich fields
+        "concepts": new.get("concepts") or existing.get("concepts") or [],
+        "topics": new.get("topics") or existing.get("topics") or [],
+        "primary_topic": new.get("primary_topic") or existing.get("primary_topic"),
+        "keywords": new.get("keywords") or existing.get("keywords") or [],
+        "institutions": new.get("institutions") or existing.get("institutions") or [],
+        "is_brazilian": bool(new.get("is_brazilian") or existing.get("is_brazilian")),
+        "related_works": new.get("related_works") or existing.get("related_works") or [],
+        "best_oa_pdf_url": new.get("best_oa_pdf_url") or existing.get("best_oa_pdf_url") or "",
+        "fwci": new.get("fwci") if new.get("fwci") is not None else existing.get("fwci"),
+        "counts_by_year": new.get("counts_by_year") or existing.get("counts_by_year") or [],
+        "is_retracted": bool(new.get("is_retracted") or existing.get("is_retracted")),
+        "mesh": new.get("mesh") or existing.get("mesh") or [],
+        "sdg": new.get("sdg") or existing.get("sdg") or [],
+        # Discovery metadata
         "discovered_via": sorted(discovered),
         "track": new.get("track") or existing.get("track") or "legacy",
         "cocitation_count": int(new.get("cocitation_count") or existing.get("cocitation_count") or 0),
@@ -285,6 +307,21 @@ def new_candidate(row: dict) -> dict:
         "abstract": row.get("abstract") or "",
         "pdf_url_oa": row.get("pdf_url_oa") or "",
         "concepts_top3": row.get("concepts_top3") or "",
+        # v2 rich fields
+        "concepts": row.get("concepts") or [],
+        "topics": row.get("topics") or [],
+        "primary_topic": row.get("primary_topic"),
+        "keywords": row.get("keywords") or [],
+        "institutions": row.get("institutions") or [],
+        "is_brazilian": bool(row.get("is_brazilian")),
+        "related_works": row.get("related_works") or [],
+        "best_oa_pdf_url": row.get("best_oa_pdf_url") or "",
+        "fwci": row.get("fwci"),
+        "counts_by_year": row.get("counts_by_year") or [],
+        "is_retracted": bool(row.get("is_retracted")),
+        "mesh": row.get("mesh") or [],
+        "sdg": row.get("sdg") or [],
+        # Discovery metadata
         "discovered_via": row.get("discovered_via") or [],
         "track": row.get("track") or "outsider",
         "cocitation_count": int(row.get("cocitation_count") or 0),
