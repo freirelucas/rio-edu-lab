@@ -35,7 +35,7 @@
   "papers_with_full_coverage": 8,
   "papers_with_zero_coverage": 3,
   "openalex_snapshot_present": true,
-  "openalex_n_with_citations": 12,
+  "openalex_n_with_citations": 15,
   "taxonomy": {
     "loaded": true,
     "n_categories": 10,

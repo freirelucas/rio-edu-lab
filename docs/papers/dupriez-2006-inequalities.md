@@ -32,6 +32,8 @@ _Dupriez, Dumay (2006). Comparative Education._
 
 <a href="https://doi.org/10.1080/03050060600628074" target="_blank">https://doi.org/10.1080/03050060600628074</a>
 
+**Citações (OpenAlex, 2026-06-06):** 102
+
 **Área:** desigualdade, equidade, política educacional
 
 **Método:** 

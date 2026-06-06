@@ -32,7 +32,7 @@ _Reardon, Owens (2014). Annual Review of Sociology, 40._
 
 <a href="https://doi.org/10.1146/annurev-soc-071913-043152" target="_blank">https://doi.org/10.1146/annurev-soc-071913-043152</a>
 
-**Citações (OpenAlex, 2026-05-18):** 503
+**Citações (OpenAlex, 2026-06-06):** 508
 
 **Área:** segregação escolar, equidade, tendências longitudinais
 

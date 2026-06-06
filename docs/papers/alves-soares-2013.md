@@ -32,7 +32,7 @@ _Alves, Soares (2013). Educação e Pesquisa, 39(1)._
 
 <a href="https://doi.org/10.1590/S1517-97022013000100012" target="_blank">https://doi.org/10.1590/S1517-97022013000100012</a>
 
-**Citações (OpenAlex, 2026-05-18):** 101
+**Citações (OpenAlex, 2026-06-06):** 102
 
 **Área:** política educacional, avaliação, equidade
 

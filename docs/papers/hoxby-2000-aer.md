@@ -32,7 +32,7 @@ _Hoxby (2000). American Economic Review, 90(5)._
 
 <a href="https://doi.org/10.1257/aer.90.5.1209" target="_blank">https://doi.org/10.1257/aer.90.5.1209</a>
 
-**Citações (OpenAlex, 2026-05-18):** 1.105
+**Citações (OpenAlex, 2026-06-06):** 1.107
 
 **Área:** economia da educação, school choice, competição
 

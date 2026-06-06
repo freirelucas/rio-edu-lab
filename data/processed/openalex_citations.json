@@ -4,7 +4,7 @@
     "citations_openalex": 79,
     "openalex_title": "Desigualdade, situação geográfica e sentidos da ação na pandemia da COVID-19 no Brasil",
     "openalex_year": 2020,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "search"
   },
   "reardon-2011-whither": {
@@ -12,15 +12,15 @@
     "citations_openalex": 1146,
     "openalex_title": "The Widening Academic Achievement Gap Between the Rich and the Poor: New Evidence and Possible Explanations",
     "openalex_year": 2011,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "search"
   },
   "theil-1967-economics": {
     "openalex_id": "https://openalex.org/W2031753087",
-    "citations_openalex": 7659,
+    "citations_openalex": 7675,
     "openalex_title": "Fractional Brownian Motions, Fractional Noises and Applications",
     "openalex_year": 1968,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "search"
   },
   "soares-andrade-2006": {
@@ -28,15 +28,15 @@
     "citations_openalex": 3,
     "openalex_title": "Pressupostos de uma avaliação de contexto existencial da violência escolar para o planejamento de condutas motoras educacionais voltadas para pré-adolescentes de classes de progressão",
     "openalex_year": 2006,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "doi"
   },
   "alves-soares-2013": {
     "openalex_id": "https://openalex.org/W2037368675",
-    "citations_openalex": 101,
+    "citations_openalex": 102,
     "openalex_title": "Contexto escolar e indicadores educacionais: condições desiguais para a efetivação de uma política de avaliação educacional",
     "openalex_year": 2013,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "doi"
   },
   "coleman-1966-eeo": {
@@ -44,7 +44,7 @@
     "citations_openalex": 2776,
     "openalex_title": "Equality of Educational Opportunity.",
     "openalex_year": 1967,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "search"
   },
   "hanushek-1986-jel": {
@@ -52,15 +52,15 @@
     "citations_openalex": 2715,
     "openalex_title": "The Economics of Schooling: Production and Efficiency in Public Schools.",
     "openalex_year": 1986,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "search"
   },
   "reardon-owens-2014": {
     "openalex_id": "https://openalex.org/W2104117291",
-    "citations_openalex": 503,
+    "citations_openalex": 508,
     "openalex_title": "60 Years After<i>Brown</i>: Trends and Consequences of School Segregation",
     "openalex_year": 2014,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "doi"
   },
   "becker-1964-human-capital": {
@@ -68,31 +68,55 @@
     "citations_openalex": 5240,
     "openalex_title": "Human Capital. A Theoretical and Empirical Analysis, with Special Reference to Education",
     "openalex_year": 1965,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "search"
   },
   "cunha-heckman-2007": {
     "openalex_id": "https://openalex.org/W3125864288",
-    "citations_openalex": 3001,
+    "citations_openalex": 3013,
     "openalex_title": "The Technology of Skill Formation",
     "openalex_year": 2007,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "doi"
   },
   "hoxby-2000-aer": {
     "openalex_id": "https://openalex.org/W3124133911",
-    "citations_openalex": 1105,
+    "citations_openalex": 1107,
     "openalex_title": "Does Competition Among Public Schools Benefit Students and Taxpayers?",
     "openalex_year": 2000,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "doi"
   },
   "card-krueger-1992-jpe": {
     "openalex_id": "https://openalex.org/W2260600530",
-    "citations_openalex": 1183,
+    "citations_openalex": 1184,
     "openalex_title": "Does School Quality Matter? Returns to Education and the Characteristics of Public Schools in the United States",
     "openalex_year": 1992,
-    "fetched_at": "2026-05-18",
+    "fetched_at": "2026-06-06",
     "match": "doi"
+  },
+  "coleman-1982-high": {
+    "openalex_id": "https://openalex.org/W1992680417",
+    "citations_openalex": 4414,
+    "openalex_title": "International regimes, transactions, and change: embedded liberalism in the postwar economic order",
+    "openalex_year": 1982,
+    "fetched_at": "2026-06-06",
+    "match": "search"
+  },
+  "dupriez-2006-inequalities": {
+    "openalex_id": "https://openalex.org/W2080712097",
+    "citations_openalex": 102,
+    "openalex_title": "Inequalities in school systems: effect of school structure or of society structure?",
+    "openalex_year": 2006,
+    "fetched_at": "2026-06-06",
+    "match": "doi"
+  },
+  "schwartz-2011-housing": {
+    "openalex_id": "https://openalex.org/W230040584",
+    "citations_openalex": 102,
+    "openalex_title": "Housing Policy Is School Policy: Economically Integrative Housing Promotes Academic Success in Montgomery County, MD.",
+    "openalex_year": 2011,
+    "fetched_at": "2026-06-06",
+    "match": "search"
   }
 }

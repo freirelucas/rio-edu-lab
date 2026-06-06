@@ -32,7 +32,7 @@ _Soares, Andrade (2006). Ensaio: Avaliação e Políticas Públicas em Educaçã
 
 <a href="https://doi.org/10.1590/S0104-40362006000100007" target="_blank">https://doi.org/10.1590/S0104-40362006000100007</a>
 
-**Citações (OpenAlex, 2026-05-18):** 3
+**Citações (OpenAlex, 2026-06-06):** 3
 
 **Área:** sociologia educacional, efeito-escola, equidade
 

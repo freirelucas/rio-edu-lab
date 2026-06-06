@@ -32,6 +32,8 @@ _Coleman, Hoffer, Kilgore (1982). Basic Books._
 
 <a href="" target="_blank"></a>
 
+**Citações (OpenAlex, 2026-06-06):** 4.414
+
 **Área:** efeito-escola, sociologia educacional, avaliação
 
 **Método:** 

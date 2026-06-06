@@ -32,7 +32,7 @@ _Coleman, Campbell, Hobson, McPartland, Mood, Weinfeld, York (1966). U.S. Depart
 
 <a href="https://files.eric.ed.gov/fulltext/ED012275.pdf" target="_blank">https://files.eric.ed.gov/fulltext/ED012275.pdf</a>
 
-**Citações (OpenAlex, 2026-05-18):** 2.776
+**Citações (OpenAlex, 2026-06-06):** 2.776
 
 **Área:** sociologia educacional, desigualdade, efeito-escola
 

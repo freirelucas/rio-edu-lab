@@ -32,6 +32,8 @@ _Schwartz (2011). Education Digest: Essential Readings Condensed for Quick Revie
 
 <a href="" target="_blank"></a>
 
+**Citações (OpenAlex, 2026-06-06):** 102
+
 **Área:** segregação escolar, equidade espacial, política educacional
 
 **Método:** 

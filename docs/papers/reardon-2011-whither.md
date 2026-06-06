@@ -38,7 +38,7 @@ _Reardon (2011). Whither Opportunity? (Duncan & Murnane eds.), Russell Sage Foun
 
 <a href="https://cepa.stanford.edu/sites/default/files/reardon%20whither%20opportunity%20-%20chapter%205.pdf" target="_blank">https://cepa.stanford.edu/sites/default/files/reardon%20whither%20opportunity%20-%20chapter%205.pdf</a>
 
-**Citações (OpenAlex, 2026-05-18):** 1.146
+**Citações (OpenAlex, 2026-06-06):** 1.146
 
 **Área:** desigualdade, SES e desempenho, tendências longitudinais
 

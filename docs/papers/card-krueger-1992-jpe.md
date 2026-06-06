@@ -32,7 +32,7 @@ _Card, Krueger (1992). Journal of Political Economy, 100(1)._
 
 <a href="https://doi.org/10.1086/261805" target="_blank">https://doi.org/10.1086/261805</a>
 
-**Citações (OpenAlex, 2026-05-18):** 1.183
+**Citações (OpenAlex, 2026-06-06):** 1.184
 
 **Área:** economia da educação, qualidade docente, retornos da educação
 

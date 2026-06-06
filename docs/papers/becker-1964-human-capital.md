@@ -32,7 +32,7 @@ _Becker (1964). NBER / Columbia University Press._
 
 <a href="https://www.nber.org/books-and-chapters/human-capital-theoretical-and-empirical-analysis-special-reference-education" target="_blank">https://www.nber.org/books-and-chapters/human-capital-theoretical-and-empirical-analysis-special-reference-education</a>
 
-**Citações (OpenAlex, 2026-05-18):** 5.240
+**Citações (OpenAlex, 2026-06-06):** 5.240
 
 **Área:** economia da educação, teoria do capital humano
 

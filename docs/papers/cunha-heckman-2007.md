@@ -32,7 +32,7 @@ _Cunha, Heckman (2007). American Economic Review, 97(2)._
 
 <a href="https://doi.org/10.1257/aer.97.2.31" target="_blank">https://doi.org/10.1257/aer.97.2.31</a>
 
-**Citações (OpenAlex, 2026-05-18):** 3.001
+**Citações (OpenAlex, 2026-06-06):** 3.013
 
 **Área:** economia da educação, primeira infância, ciclo de vida
 

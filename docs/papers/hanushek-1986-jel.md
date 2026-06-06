@@ -32,7 +32,7 @@ _Hanushek (1986). Journal of Economic Literature, 24(3)._
 
 <a href="https://www.jstor.org/stable/2725865" target="_blank">https://www.jstor.org/stable/2725865</a>
 
-**Citações (OpenAlex, 2026-05-18):** 2.715
+**Citações (OpenAlex, 2026-06-06):** 2.715
 
 **Área:** economia da educação, função-produção
 

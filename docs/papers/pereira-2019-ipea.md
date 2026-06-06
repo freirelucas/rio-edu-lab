@@ -38,7 +38,7 @@ _Pereira, Braga, Serra, Nadalin (2019). IPEA Texto para Discussão 2535._
 
 <a href="https://hdl.handle.net/10419/240730" target="_blank">https://hdl.handle.net/10419/240730</a>
 
-**Citações (OpenAlex, 2026-05-18):** 79
+**Citações (OpenAlex, 2026-06-06):** 79
 
 **Área:** acessibilidade, equidade espacial, geografia urbana
 

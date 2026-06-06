@@ -41,7 +41,7 @@ _Theil (1967). North-Holland Publishing._
 
 <a href="https://www.worldcat.org/title/economics-and-information-theory/oclc/489908" target="_blank">https://www.worldcat.org/title/economics-and-information-theory/oclc/489908</a>
 
-**Citações (OpenAlex, 2026-05-18):** 7.659
+**Citações (OpenAlex, 2026-06-06):** 7.675
 
 **Área:** desigualdade, teoria da informação
 

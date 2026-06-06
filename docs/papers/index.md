@@ -32,7 +32,7 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
 <a class="paper-card status-full" href="theil-1967-economics/">
   <span class="drop-cap" aria-hidden="true">T</span>
   <h4>Theil (1967)</h4>
-  <p class="meta">7.659 citações · desigualdade</p>
+  <p class="meta">7.675 citações · desigualdade</p>
   <p class="insight">Decomposição Theil revela que 66% da desigualdade do IDEB municipal carioca está dentro das RAs, não entre — coropléticos por RA escondem…</p>
   <span class="cta">Replicado →</span>
 </a>
@@ -48,7 +48,7 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
 <a class="paper-card status-pending" href="dupriez-2006-inequalities/">
   <span class="drop-cap" aria-hidden="true">D</span>
   <h4>Dupriez & Dumay (2006)</h4>
-  <p class="meta">desigualdade</p>
+  <p class="meta">102 citações · desigualdade</p>
   <p class="insight">In this study the authors start from the observed fact that equality of opportunities of educational achievement is higher in integrated …</p>
   <span class="cta">Próxima leitura →</span>
 </a>
@@ -64,7 +64,7 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
 <a class="paper-card status-pending" href="schwartz-2011-housing/">
   <span class="drop-cap" aria-hidden="true">S</span>
   <h4>Schwartz (2011)</h4>
-  <p class="meta">segregação escolar</p>
+  <p class="meta">102 citações · segregação escolar</p>
   <p class="insight">(abstract não disponível no OpenAlex)</p>
   <span class="cta">Próxima leitura →</span>
 </a>
@@ -72,7 +72,7 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
 <a class="paper-card status-pending" href="alves-soares-2013/">
   <span class="drop-cap" aria-hidden="true">A</span>
   <h4>Alves & Soares (2013)</h4>
-  <p class="meta">101 citações · política educacional · 🇧🇷</p>
+  <p class="meta">102 citações · política educacional · 🇧🇷</p>
   <p class="insight">Mostra que o IDEB confunde efeito-escola com efeito-NSE, comparando escolas em contextos socioeconômicos heterogêneos. Propõe ajuste por …</p>
   <span class="cta">Próxima leitura →</span>
 </a>
@@ -80,7 +80,7 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
 <a class="paper-card status-pending" href="reardon-owens-2014/">
   <span class="drop-cap" aria-hidden="true">R</span>
   <h4>Reardon & Owens (2014)</h4>
-  <p class="meta">503 citações · segregação escolar</p>
+  <p class="meta">508 citações · segregação escolar</p>
   <p class="insight">Revisa medidas de segregação escolar (raça, SES) nos EUA nos 60 anos pós-Brown v. Board, mostrando declínio inicial seguido de re-segrega…</p>
   <span class="cta">Próxima leitura →</span>
 </a>
@@ -100,7 +100,7 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
 <a class="paper-card status-pending" href="coleman-1982-high/">
   <span class="drop-cap" aria-hidden="true">C</span>
   <h4>Coleman et al. (1982)</h4>
-  <p class="meta">efeito-escola</p>
+  <p class="meta">4.414 citações · efeito-escola</p>
   <p class="insight">(abstract não disponível no OpenAlex)</p>
   <span class="cta">Próxima leitura →</span>
 </a>
@@ -112,7 +112,7 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
 <a class="paper-card status-pending" href="hoxby-2000-aer/">
   <span class="drop-cap" aria-hidden="true">H</span>
   <h4>Hoxby (2000)</h4>
-  <p class="meta">1.105 citações · economia da educação</p>
+  <p class="meta">1.107 citações · economia da educação</p>
   <p class="insight">Usa variação geográfica em distritos escolares como IV para identificar efeitos de competição entre escolas. Achado: mais opções → melhor…</p>
   <span class="cta">Próxima leitura →</span>
 </a>
@@ -140,7 +140,7 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
 <a class="paper-card status-unfeasible" href="card-krueger-1992-jpe/">
   <span class="drop-cap" aria-hidden="true">C</span>
   <h4>Card & Krueger (1992)</h4>
-  <p class="meta">1.183 citações · economia da educação</p>
+  <p class="meta">1.184 citações · economia da educação</p>
   <p class="insight">Mostra que características de escola (razão aluno-professor, salário docente, duração do ano letivo) afetam retornos da educação na vida …</p>
   <span class="cta">Sem cobertura →</span>
 </a>
@@ -148,7 +148,7 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
 <a class="paper-card status-unfeasible" href="cunha-heckman-2007/">
   <span class="drop-cap" aria-hidden="true">C</span>
   <h4>Cunha & Heckman (2007)</h4>
-  <p class="meta">3.001 citações · economia da educação</p>
+  <p class="meta">3.013 citações · economia da educação</p>
   <p class="insight">Modela a formação de habilidades cognitivas e não-cognitivas ao longo do ciclo de vida com complementaridade dinâmica entre estágios. Sus…</p>
   <span class="cta">Sem cobertura →</span>
 </a>
