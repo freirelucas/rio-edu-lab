@@ -1,0 +1,430 @@
+# Gold-set para medir qualidade do match (paper → categoria).
+# Gerado por `analysis/50_sample_gold_set.py`; rerodar é idempotente (preserva labels
+# por openalex_id). Curador edita inline e commita.
+#
+# Schema por label:
+#   openalex_id, title, predicted_category, score, sample_band: campos do sample (não editar)
+#   is_correct: null | true | false | "unsure"   ← curador preenche
+#   true_category: null | <category_id>          ← se is_correct=false e sabe a certa
+#   notes: ""                                    ← rationale opcional (obrigatório se ambíguo)
+#
+# Heurística pra is_correct:
+#   true  = a `predicted_category` É um dos data_requirements explícitos OU implícitos do paper
+#           (na narrativa do abstract). Ex.: "estima IDEB por bairro" → performance-aggregated true.
+#   false = não corresponde. Preencher `true_category` se souber qual seria.
+#   unsure = não dá pra decidir do abstract sozinho. Exclui dos cálculos P/R mas conta
+#            em "needs-second-opinion %".
+#
+# Bands (estratificação para garantir cobertura do regime de score):
+#   top        = top-25% de score na categoria (sistema confiante)
+#   mid        = middle-50% (sistema convicto)
+#   borderline = score ∈ [4.0, 6.0] (zona de erro provável; está na borda do threshold available=5.0)
+#   wild       = random de qualquer categoria fora das 6 core (incl. external — detecta leak)
+
+version: 1
+sampled_from_funnel_commit: 1eda168b8f11
+n_target: 50
+n_sampled: 50
+labels:
+- openalex_id: https://openalex.org/W627462258
+  title: 'High school achievement : public, Catholic, and private schools compared'
+  predicted_category: geometry-schools
+  score: 12.66
+  sample_band: top
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W350117068
+  title: For the Plaintiffs- Equal School Resource Allocation
+  predicted_category: geometry-schools
+  score: 12.66
+  sample_band: top
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2161584222
+  title: 'Answers and Questions About Class Size: A Statewide Experiment'
+  predicted_category: geometry-schools
+  score: 5.89
+  sample_band: mid
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2074037558
+  title: 'Schooling in Capitalist America: Educational Reform and the Contradictions of Economic Life'
+  predicted_category: geometry-schools
+  score: 5.89
+  sample_band: mid
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1590379693
+  title: Estimating the Payoff to Schooling Using the Vietnam-Era Draft Lottery
+  predicted_category: geometry-schools
+  score: 5.89
+  sample_band: borderline
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2160420871
+  title: Trends in educational assortative marriage from 1940 to 2003
+  predicted_category: geometry-neighborhoods
+  score: 8.85
+  sample_band: top
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1995235257
+  title: 'History Matters: The Long-Term Impact of Colonial Public Investments in French West Africa'
+  predicted_category: geometry-neighborhoods
+  score: 7.84
+  sample_band: mid
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W228881977
+  title: 'The Long-Term Impacts of Teachers: Teacher Value-Added and Student Outcomes in Adulthood. NBER Working Paper No.
+    17699.'
+  predicted_category: performance-aggregated
+  score: 29.89
+  sample_band: top
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W3121388701
+  title: Teachers, Schools, and Academic Achievement
+  predicted_category: performance-aggregated
+  score: 34.91
+  sample_band: top
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2156471102
+  title: Experimental Estimates of Education Production Functions
+  predicted_category: performance-aggregated
+  score: 29.17
+  sample_band: mid
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1768684682
+  title: 'The Effect of Measured School Inputs on Academic Achievement: Evidence from the 1920s, 1930s and 1940s Birth Cohorts'
+  predicted_category: performance-aggregated
+  score: 20.67
+  sample_band: mid
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1592769789
+  title: Teacher Mobility and Allocation
+  predicted_category: ses-aggregated
+  score: 38.86
+  sample_band: top
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2080083786
+  title: '<i>An Exchange: Part I</i> : Does Money Matter? A Meta-Analysis of Studies of the Effects of Differential School
+    Inputs '
+  predicted_category: ses-aggregated
+  score: 30.01
+  sample_band: mid
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2075664771
+  title: 'More Universalism, Less Structural Mobility: The American Occupational Structure in the 1980s'
+  predicted_category: ses-aggregated
+  score: 15.5
+  sample_band: mid
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2114256915
+  title: Experimental Evidence on the Effect of Childhood Investments on Postsecondary Attainment and Degree Completion
+  predicted_category: enrollment-counts
+  score: 14.51
+  sample_band: top
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2120490228
+  title: Who Gets an Early Education? Family Income and the Enrollment of Three‐ to Five‐Year‐Olds from 1968 to 2000<sup>*</sup>
+  predicted_category: enrollment-counts
+  score: 14.51
+  sample_band: mid
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2021551171
+  title: 'The Bell Curve: Intelligence and Class Structure in American Life.'
+  predicted_category: spatial-partition
+  score: 9.14
+  sample_band: top
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W196621328
+  title: 'The State of Tennessee''s Student/Teacher Achievement Ratio (STAR) Project: Technical Report (1985-1990).'
+  predicted_category: microdata-student
+  score: 6.6
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2100297951
+  title: 'Far away from a skill-biased change: falling educational wage premia in Italy'
+  predicted_category: microdata-household
+  score: 24.56
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1989535774
+  title: Does Compulsory School Attendance Affect Schooling and Earnings?
+  predicted_category: longitudinal-cohort
+  score: 6.6
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2015710403
+  title: Evidence from project star about class size and student achievement
+  predicted_category: microdata-student
+  score: 6.6
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2166353773
+  title: The Tennessee Study of Class Size in the Early School Grades
+  predicted_category: performance-aggregated
+  score: 19.79
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1489925231
+  title: High School Inputs and Their Contribution to School Performance
+  predicted_category: performance-aggregated
+  score: 29.89
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W3124214120
+  title: 'The Long-Term Impacts of Teachers: Teacher Value-Added and Student Outcomes in Adulthood'
+  predicted_category: performance-aggregated
+  score: 63.14
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1993857279
+  title: 'Labor Market Effects of School Quality: Theory and Evidence'
+  predicted_category: longitudinal-cohort
+  score: 29.34
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2036308389
+  title: Does Professor Quality Matter? Evidence from Random Assignment of Students to Professors
+  predicted_category: performance-aggregated
+  score: 28.19
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W135779082
+  title: 'Unions and public schools : the effect of collective bargaining on American education'
+  predicted_category: geometry-schools
+  score: 6.77
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2155099780
+  title: Predictive effects of teachers and schools on test scores, college attendance, and earnings
+  predicted_category: performance-aggregated
+  score: 34.67
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2107815207
+  title: Searching for Effective Teachers with Imperfect Information
+  predicted_category: geometry-schools
+  score: 5.89
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2079872858
+  title: EQUALITY OF EDUCATIONAL OPPORTUNITY
+  predicted_category: geometry-schools
+  score: 5.89
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1483062237
+  title: 'The Distribution of Labor Incomes: A Survey with Special Reference to the Human Capital Approach'
+  predicted_category: longitudinal-cohort
+  score: 7.24
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2080712097
+  title: 'Inequalities in school systems: effect of school structure or of society structure?'
+  predicted_category: performance-aggregated
+  score: 12.39
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2127991917
+  title: Cross-National Differences and Accounting for Social Class Inequalities in Education
+  predicted_category: performance-aggregated
+  score: 20.75
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1571316882
+  title: The Effects of School and Family Characteristics on the Return to Education
+  predicted_category: geometry-schools
+  score: 5.89
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2135067597
+  title: 'Estimating Teacher Impacts on Student Achievement: An Experimental Evaluation'
+  predicted_category: microdata-student
+  score: 27.19
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1486258806
+  title: 'Schooling and Economic Well-Being: The Role of Nonmarket Effects'
+  predicted_category: performance-aggregated
+  score: 7.53
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W3124176971
+  title: 'Making College Worth It: A Review of Research on the Returns to Higher Education'
+  predicted_category: microdata-household
+  score: 7.84
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2157522835
+  title: 'Priceless: The Nonpecuniary Benefits of Schooling'
+  predicted_category: microdata-household
+  score: 6.8
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1987724300
+  title: 'The Determinants of Earnings: A Behavioral Approach'
+  predicted_category: longitudinal-cohort
+  score: 29.34
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2063184673
+  title: The Persistence of Teacher-Induced Learning
+  predicted_category: microdata-student
+  score: 12.17
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2076596522
+  title: 'Life Cycle Schooling and Dynamic Selection Bias: Models and Evidence for Five Cohorts of American Males'
+  predicted_category: microdata-student
+  score: 7.4
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1736412576
+  title: Effects of High Schools on Their Students
+  predicted_category: performance-aggregated
+  score: 27.13
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W1577074868
+  title: Social Returns to Quantity and Quality of Schooling
+  predicted_category: performance-aggregated
+  score: 21.17
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2122121570
+  title: 'Left Behind by Design: Proficiency Counts and Test-Based Accountability'
+  predicted_category: performance-aggregated
+  score: 22.2
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2057988546
+  title: 'Home Advantage: Social Class and Parental Intervention in Elementary Education'
+  predicted_category: microdata-household
+  score: 8.15
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2098802032
+  title: 'Inputs in the Production of Early Childhood Human Capital: Evidence from Head Start'
+  predicted_category: performance-aggregated
+  score: 27.66
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2023627305
+  title: The Impact of School Resources on the Learning of Inner City Children
+  predicted_category: geometry-schools
+  score: 5.89
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2135730600
+  title: How Does Your Kindergarten Classroom Affect Your Earnings? Evidence from Project Star
+  predicted_category: microdata-student
+  score: 26.16
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W6217144
+  title: Educational Achievement and School Peer Group Composition
+  predicted_category: ses-aggregated
+  score: 15.03
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''
+- openalex_id: https://openalex.org/W2107623883
+  title: Estimation of Educational Borrowing Constraints Using Returns to Schooling
+  predicted_category: longitudinal-cohort
+  score: 6.6
+  sample_band: wild
+  is_correct: null
+  true_category: null
+  notes: ''

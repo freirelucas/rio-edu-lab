@@ -89,3 +89,17 @@ jobs:
             git --no-pager diff docs/index.md docs/_assets/charts/ data/processed/funnel_state.json
             exit 1
           fi
+
+      - name: Verify match-quality report in sync
+        # Re-runs 51_match_quality_report.py over data/match_quality_gold.yml
+        # (the curator-labeled sample) and fails if drift vs committed
+        # docs/match-quality.md or data/processed/match_quality_summary.json.
+        # Guards against forgetting to re-render after labeling new pairs.
+        run: |
+          python3 analysis/51_match_quality_report.py
+          if ! git diff --quiet docs/match-quality.md data/processed/match_quality_summary.json; then
+            echo "::error::match-quality report out of sync after labeling"
+            echo "::error::run: python3 analysis/51_match_quality_report.py && git add docs/match-quality.md data/processed/match_quality_summary.json"
+            git --no-pager diff docs/match-quality.md data/processed/match_quality_summary.json
+            exit 1
+          fi

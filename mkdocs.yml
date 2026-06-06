@@ -72,6 +72,7 @@ nav:
       - Histórico técnico: investigacao.md
       - Reproduzir: reproduzir.md
       - Qualidade do pipeline: qualidade.md
+      - Qualidade do match: match-quality.md
 
 markdown_extensions:
   - admonition

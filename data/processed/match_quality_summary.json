@@ -1,0 +1,117 @@
+{
+  "n_labels": 50,
+  "n_correct": 0,
+  "n_wrong": 0,
+  "n_unsure": 0,
+  "n_unlabeled": 50,
+  "n_decided": 0,
+  "overall_precision": null,
+  "per_category": {
+    "enrollment-counts": {
+      "n_predicted_labeled": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null
+    },
+    "geometry-neighborhoods": {
+      "n_predicted_labeled": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null
+    },
+    "geometry-schools": {
+      "n_predicted_labeled": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null
+    },
+    "longitudinal-cohort": {
+      "n_predicted_labeled": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null
+    },
+    "microdata-household": {
+      "n_predicted_labeled": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null
+    },
+    "microdata-student": {
+      "n_predicted_labeled": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null
+    },
+    "performance-aggregated": {
+      "n_predicted_labeled": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null
+    },
+    "ses-aggregated": {
+      "n_predicted_labeled": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null
+    },
+    "spatial-partition": {
+      "n_predicted_labeled": 0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": null,
+      "recall": null
+    }
+  },
+  "confusion_matrix": {},
+  "score_bands": [
+    {
+      "band": "5-7",
+      "n_labeled": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "precision": null
+    },
+    {
+      "band": "7-10",
+      "n_labeled": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "precision": null
+    },
+    {
+      "band": "10-15",
+      "n_labeled": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "precision": null
+    },
+    {
+      "band": "15-100",
+      "n_labeled": 0,
+      "n_correct": 0,
+      "n_wrong": 0,
+      "precision": null
+    }
+  ],
+  "failure_modes": {},
+  "failure_examples": [],
+  "sampled_from_funnel_commit": "1eda168b8f11"
+}
