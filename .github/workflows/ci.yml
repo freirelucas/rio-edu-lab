@@ -117,3 +117,16 @@ jobs:
             git --no-pager diff docs/llm-vs-bow.md data/processed/llm_vs_bow_comparison.json
             exit 1
           fi
+
+      - name: Verify theil bootstrap CI in sync
+        # Re-runs 35_bootstrap_theil_ci.py (seed=42 fixo + year offset → determinístico)
+        # e diffa data/processed/theil_bootstrap_ci.csv. Guarda contra drift se
+        # alguém mexer no script ou na primitiva acec.stats.theil_decompose.
+        run: |
+          python3 analysis/35_bootstrap_theil_ci.py
+          if ! git diff --quiet data/processed/theil_bootstrap_ci.csv; then
+            echo "::error::theil_bootstrap_ci.csv out of sync"
+            echo "::error::run: python3 analysis/35_bootstrap_theil_ci.py && git add data/processed/theil_bootstrap_ci.csv"
+            git --no-pager diff data/processed/theil_bootstrap_ci.csv
+            exit 1
+          fi
