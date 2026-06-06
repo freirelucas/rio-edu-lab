@@ -56,6 +56,7 @@ from _openalex import (  # noqa: E402
     iterate_cites,
     parse_work,
 )
+from _semanticscholar import fetch_papers_batch as ss_fetch_papers_batch  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SEEDS_YML = ROOT / "data" / "openalex_seeds.yml"
@@ -224,6 +225,58 @@ def aggregate_candidates(
     return agg
 
 
+def enrich_with_semscholar(agg: dict[str, dict], verbose: bool = True) -> None:
+    """Fallback abstract via Semantic Scholar para candidates com abstract vazio + DOI.
+
+    Não duplica calls — OpenAlex sempre vai primeiro; SS é a rede de segurança.
+    Marca `abstract_source` em cada candidate ("openalex" | "semscholar" | "none").
+    Mutates agg in place.
+    """
+    needs_ss: list[tuple[str, dict]] = []
+    for oid, row in agg.items():
+        has_abs = bool((row.get("abstract") or "").strip())
+        if has_abs:
+            row["abstract_source"] = "openalex"
+        elif (row.get("doi") or "").strip():
+            needs_ss.append((oid, row))
+        else:
+            row["abstract_source"] = "none"
+
+    if not needs_ss:
+        if verbose:
+            print("  ss fallback: 0 candidates need it", file=sys.stderr)
+        return
+
+    if verbose:
+        print(
+            f"  ss fallback: {len(needs_ss)} candidates com abstract vazio + DOI",
+            file=sys.stderr,
+        )
+
+    dois = [row["doi"] for _, row in needs_ss]
+    results = ss_fetch_papers_batch(dois, verbose=verbose)
+
+    n_filled = 0
+    for _, row in needs_ss:
+        doi_lc = row["doi"].lower()
+        paper = results.get(doi_lc)
+        abs_text = (paper.get("abstract") if paper else None) or ""
+        if abs_text:
+            row["abstract"] = abs_text
+            row["abstract_source"] = "semscholar"
+            # Recompute data_signal — abstract mudou, pode ter github/osf/etc.
+            row["data_signal"] = compute_data_signal(row)
+            n_filled += 1
+        else:
+            row["abstract_source"] = "none"
+
+    if verbose:
+        print(
+            f"  ss fallback: filled {n_filled}/{len(needs_ss)} empty abstracts",
+            file=sys.stderr,
+        )
+
+
 def filter_outsiders(agg: dict[str, dict]) -> dict[str, dict]:
     """Outsiders must have at least 1 regex data-signal hit (not just DOI/OA).
 
@@ -266,6 +319,7 @@ def merge_candidate(existing: dict, new: dict) -> dict:
         "venue": new.get("venue") or existing.get("venue") or "",
         "citations": int(new.get("cited_by_count") or existing.get("citations") or 0),
         "abstract": new.get("abstract") or existing.get("abstract") or "",
+        "abstract_source": new.get("abstract_source") or existing.get("abstract_source") or "",
         "pdf_url_oa": new.get("pdf_url_oa") or existing.get("pdf_url_oa") or "",
         "concepts_top3": new.get("concepts_top3") or existing.get("concepts_top3") or "",
         # v2 rich fields
@@ -305,6 +359,7 @@ def new_candidate(row: dict) -> dict:
         "venue": row.get("venue") or "",
         "citations": int(row.get("cited_by_count") or 0),
         "abstract": row.get("abstract") or "",
+        "abstract_source": row.get("abstract_source") or "",
         "pdf_url_oa": row.get("pdf_url_oa") or "",
         "concepts_top3": row.get("concepts_top3") or "",
         # v2 rich fields
@@ -374,6 +429,11 @@ def main() -> int:
     )
     ap.add_argument("--no-forward", action="store_true", help="Skip forward snowball")
     ap.add_argument("--no-backward", action="store_true", help="Skip backward snowball")
+    ap.add_argument(
+        "--no-semscholar",
+        action="store_true",
+        help="Skip Semantic Scholar fallback para abstracts vazios",
+    )
     ap.add_argument("--dry-run", action="store_true", help="Don't write papers_funnel.yml")
     args = ap.parse_args()
 
@@ -401,6 +461,8 @@ def main() -> int:
     print(f"\nraw rows collected: {len(all_rows)}")
     agg = aggregate_candidates(all_rows, seeds_by_id)
     print(f"unique after aggregation: {len(agg)}")
+    if not args.no_semscholar:
+        enrich_with_semscholar(agg)
     agg = filter_outsiders(agg)
     print(f"after outsider filter: {len(agg)}")
 
