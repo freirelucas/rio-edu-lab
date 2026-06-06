@@ -28,6 +28,27 @@ onde `T_within / T_total` mede a fração da desigualdade que vive dentro das RA
 
 A parcela within-RA fica entre 59% e 73% em todos os 9 anos, em todas as 6 séries (5º, 9º, ponderado por matrícula, Aprovação/SAEB/IDEB).
 
+#### Bootstrap CI (v0.14 — sensitivity analysis)
+
+Bootstrap stratified por RA (n=1000, `analysis/35_bootstrap_theil_ci.py`) testa a sensibilidade do `share_within` à composição específica de bairros amostrados *dentro* das RAs. **Achado honesto:**
+
+- **Point estimates [0.59, 0.73] são estáveis** ano-a-ano — esse é o achado central, ancorado na população real de bairros (não há sampling externo).
+- **Bootstrap CIs são largas (~22pp)** com paridade 50% incluída no IC95 em todo ano. Median do bootstrap (~0.51-0.59) abaixo do point estimate.
+- Interpretação: a decomposição Theil é intrinsecamente sensível a *quais* bairros estão dentro de cada RA. A estabilidade dos pontos ano-a-ano é a evidência mais forte de robustez, **não o IC bootstrap**.
+
+CSV completo em [`data/processed/theil_bootstrap_ci.csv`](https://github.com/freirelucas/rio-edu-lab/blob/main/data/processed/theil_bootstrap_ci.csv).
+
+#### Autocorrelação espacial (Moran's I + LISA)
+
+`analysis/37_moran_lisa.py` computa Moran's I global + LISA local hand-implementados sobre os 163 bairros do IPP (queen contiguity, 999 permutações):
+
+| Variável | Moran's I | pseudo-p | HH/LL/HL/LH/NS | Interpretação |
+|---|---:|---:|---|---|
+| **IDEB 2023** | 0.148 | 0.003 | 3/4/3/1/134 | Autocorrelação positiva fraca-moderada — IDEB é *menos* cluster-coeso |
+| **IDS 2010** | 0.481 | 0.001 | 17/6/0/3/116 | Autocorrelação positiva alta — SES é *muito mais* cluster-coeso |
+
+**Δ Moran's I (IDS 0.48 vs IDEB 0.15)** confirma que a desigualdade educacional **não está alinhada** com a desigualdade socioeconômica. IDS clusters geograficamente (vetor Norte/Sul, favelas concentradas); IDEB varia bastante *dentro* de áreas SES-similares — exatamente o que a decomposição Theil já mostrou de outro ângulo (66% within-RA).
+
 ### Visualização espacial (RA vs H3)
 
 ![HEX-EDU 2023](../reports/_assets/07_hex_edu_2023.png)
