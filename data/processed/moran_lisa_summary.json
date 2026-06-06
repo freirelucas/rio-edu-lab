@@ -1,0 +1,36 @@
+[
+  {
+    "variable": "IDEB_2023",
+    "n_bairros": 145,
+    "mean": 6.0055,
+    "std": 0.5017,
+    "morans_i_global": 0.148,
+    "pseudo_p_global": 0.003,
+    "n_permutations": 999,
+    "class_counts": {
+      "HH": 3,
+      "LL": 4,
+      "HL": 3,
+      "LH": 1,
+      "NS": 134
+    },
+    "significant_at_0.05": 11
+  },
+  {
+    "variable": "IDS_2010",
+    "n_bairros": 142,
+    "mean": 0.5984,
+    "std": 0.0715,
+    "morans_i_global": 0.481,
+    "pseudo_p_global": 0.001,
+    "n_permutations": 999,
+    "class_counts": {
+      "HH": 17,
+      "LL": 6,
+      "HL": 0,
+      "LH": 3,
+      "NS": 116
+    },
+    "significant_at_0.05": 26
+  }
+]
