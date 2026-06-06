@@ -1,6 +1,6 @@
 {
-  "n_candidates_total": 374,
-  "n_with_bow": 109,
+  "n_candidates_total": 2080,
+  "n_with_bow": 556,
   "n_with_llm": 0,
   "n_with_both": 0,
   "top1_agreement": {
@@ -20,6 +20,6 @@
   "llm_top1_distribution": {},
   "confusion_matrix": {},
   "disagreement_examples": [],
-  "funnel_size": 374,
+  "funnel_size": 2080,
   "gold_set_eval": null
 }

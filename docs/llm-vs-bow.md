@@ -9,8 +9,8 @@ _Gerado por `analysis/56_llm_vs_bow_compare.py` sobre os candidatos do funil que
 
 ## Cobertura
 
-- **Total no funil:** 374
-- **Com bow signal:** 109
+- **Total no funil:** 2080
+- **Com bow signal:** 556
 - **Com llm signal:** 0
 - **Com ambos (= sample da comparação):** 0
 
