@@ -103,3 +103,17 @@ jobs:
             git --no-pager diff docs/match-quality.md data/processed/match_quality_summary.json
             exit 1
           fi
+
+      - name: Verify llm-vs-bow comparison in sync
+        # Re-runs 56_llm_vs_bow_compare.py over funnel + gold-set.
+        # Guarda que report fica sincronizado após populates de llm_* via 55
+        # (que é manual + opt-in; CI não chama API). Sem llm_* nos candidates,
+        # report renderiza um "nothing yet" admonition — drift-stable.
+        run: |
+          python3 analysis/56_llm_vs_bow_compare.py
+          if ! git diff --quiet docs/llm-vs-bow.md data/processed/llm_vs_bow_comparison.json; then
+            echo "::error::llm-vs-bow report out of sync after populating llm_* signals"
+            echo "::error::run: python3 analysis/56_llm_vs_bow_compare.py && git add docs/llm-vs-bow.md data/processed/llm_vs_bow_comparison.json"
+            git --no-pager diff docs/llm-vs-bow.md data/processed/llm_vs_bow_comparison.json
+            exit 1
+          fi

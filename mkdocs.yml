@@ -73,6 +73,7 @@ nav:
       - Reproduzir: reproduzir.md
       - Qualidade do pipeline: qualidade.md
       - Qualidade do match: match-quality.md
+      - LLM vs IDF: llm-vs-bow.md
 
 markdown_extensions:
   - admonition

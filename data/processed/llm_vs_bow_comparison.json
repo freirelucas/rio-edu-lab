@@ -1,0 +1,25 @@
+{
+  "n_candidates_total": 374,
+  "n_with_bow": 109,
+  "n_with_llm": 0,
+  "n_with_both": 0,
+  "top1_agreement": {
+    "n_agree": 0,
+    "rate": null
+  },
+  "jaccard": {
+    "mean": null,
+    "n": 0
+  },
+  "taxonomy_gap": {
+    "n_flagged": 0,
+    "rate": null,
+    "examples": []
+  },
+  "bow_top1_distribution": {},
+  "llm_top1_distribution": {},
+  "confusion_matrix": {},
+  "disagreement_examples": [],
+  "funnel_size": 374,
+  "gold_set_eval": null
+}
