@@ -39,6 +39,7 @@ Rede: OpenAlex public API, 1 req/s. ~5 min wall clock com 20 seeds full.
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -62,11 +63,17 @@ ROOT = Path(__file__).resolve().parent.parent
 SEEDS_YML = ROOT / "data" / "openalex_seeds.yml"
 LEGACY_CONCEPTS_YML = ROOT / "data" / "openalex_concepts.yml"
 FUNNEL_YML = ROOT / "data" / "papers_funnel.yml"
+VISITED_FILE = ROOT / "data" / "snowball_visited.json"
 
 DEFAULT_TOP_FORWARD = 50
 DEFAULT_BACKWARD_CAP = 50
 OUTSIDER_MIN_CITATIONS = 20
 OUTSIDER_MAX_CITATIONS = 500
+# v2 depth-2 snowball
+DEFAULT_DEPTH = 1
+DEFAULT_MAX_NEW = 2000
+DEFAULT_PASS2_SIZE = 100
+PASS2_MIN_CITATIONS = 10  # mais permissivo que OUTSIDER_MIN; pass2 cresce de cima pra baixo
 
 DATA_SIGNAL_PATTERNS = [
     r"github\.com",
@@ -78,6 +85,56 @@ DATA_SIGNAL_PATTERNS = [
     r"supplement(?:ary)? data",
 ]
 _DATA_SIGNAL_RE = re.compile("|".join(DATA_SIGNAL_PATTERNS), re.IGNORECASE)
+
+
+# ─── Visited tracker (snowball v2) ─────────────────────────────────────────
+# Persiste IDs já usados como seed (Pass 1 ou Pass 2) entre runs, pra que
+# depth-2 não re-expanda os mesmos hubs em runs subsequentes. Reset com
+# --reset-visited.
+
+def load_visited() -> set[str]:
+    if not VISITED_FILE.exists():
+        return set()
+    try:
+        data = json.loads(VISITED_FILE.read_text(encoding="utf-8"))
+        return set(data.get("visited") or [])
+    except (json.JSONDecodeError, OSError):
+        return set()
+
+
+def save_visited(visited: set[str]) -> None:
+    VISITED_FILE.parent.mkdir(parents=True, exist_ok=True)
+    VISITED_FILE.write_text(
+        json.dumps({"visited": sorted(visited), "n": len(visited)}, indent=2),
+        encoding="utf-8",
+    )
+
+
+def _norm_id(openalex_id: str) -> str:
+    """Strip URL prefix de OpenAlex ID."""
+    s = (openalex_id or "").strip()
+    if s.startswith("https://openalex.org/"):
+        s = s[len("https://openalex.org/"):]
+    return s
+
+
+def pick_pass2_seeds(
+    agg: dict[str, dict], n: int, visited: set[str],
+    min_citations: int = PASS2_MIN_CITATIONS,
+) -> list[str]:
+    """Top-N candidates do Pass 1 (por citation) pra virarem seeds do Pass 2.
+
+    Filtros: tem abstract, ≥ min_citations citations, ainda não visitado.
+    """
+    candidates = [
+        (oid, row) for oid, row in agg.items()
+        if (row.get("abstract") or "").strip()
+        and int(row.get("cited_by_count") or 0) >= min_citations
+        and _norm_id(oid) not in visited
+        and not row.get("is_retracted")
+    ]
+    candidates.sort(key=lambda kv: -int(kv[1].get("cited_by_count") or 0))
+    return [oid for oid, _ in candidates[:n]]
 
 
 def load_seeds(args_seeds: str | None = None) -> list[dict]:
@@ -434,6 +491,29 @@ def main() -> int:
         action="store_true",
         help="Skip Semantic Scholar fallback para abstracts vazios",
     )
+    ap.add_argument(
+        "--depth",
+        type=int,
+        default=DEFAULT_DEPTH,
+        help=f"Hops do snowball (1 = só seeds, 2 = expande top Pass 1; default {DEFAULT_DEPTH})",
+    )
+    ap.add_argument(
+        "--max-new",
+        type=int,
+        default=DEFAULT_MAX_NEW,
+        help=f"Cap de candidates NOVOS adicionados ao funil por run (default {DEFAULT_MAX_NEW})",
+    )
+    ap.add_argument(
+        "--pass2-size",
+        type=int,
+        default=DEFAULT_PASS2_SIZE,
+        help=f"Quantos candidates do Pass 1 viram seeds do Pass 2 (default {DEFAULT_PASS2_SIZE})",
+    )
+    ap.add_argument(
+        "--reset-visited",
+        action="store_true",
+        help="Reseta data/snowball_visited.json antes do run",
+    )
     ap.add_argument("--dry-run", action="store_true", help="Don't write papers_funnel.yml")
     args = ap.parse_args()
 
@@ -447,6 +527,16 @@ def main() -> int:
     doc, by_id = load_funnel()
     print(f"funnel has {len(by_id)} existing candidates")
 
+    visited = set() if args.reset_visited else load_visited()
+    if args.reset_visited:
+        print("--reset-visited: visited set cleared")
+    elif visited:
+        print(f"visited set: {len(visited)} previously-snowballed IDs")
+    for seed in seeds:
+        visited.add(_norm_id(seed["openalex_id"]))
+
+    # === Pass 1: snowball a partir dos seeds curados ===
+    print(f"\n=== Pass 1: snowball from {len(seeds)} seeds ===")
     all_rows: list[dict] = []
     for seed in seeds:
         sid = seed["openalex_id"]
@@ -458,13 +548,54 @@ def main() -> int:
             top_fwd = seed.get("top_forward") or args.top_forward
             all_rows += forward_snowball(sid, top=top_fwd)
 
-    print(f"\nraw rows collected: {len(all_rows)}")
+    print(f"\nPass 1 raw rows: {len(all_rows)}")
     agg = aggregate_candidates(all_rows, seeds_by_id)
-    print(f"unique after aggregation: {len(agg)}")
+    print(f"Pass 1 unique: {len(agg)}")
+
+    # === Pass 2 (depth-2): expande top Pass 1 candidates ===
+    if args.depth >= 2:
+        pass2_seeds = pick_pass2_seeds(agg, args.pass2_size, visited)
+        print(f"\n=== Pass 2: snowball from top-{len(pass2_seeds)} Pass 1 candidates ===")
+        pass2_rows: list[dict] = []
+        for sid in pass2_seeds:
+            visited.add(_norm_id(sid))
+            label = (agg[sid].get("title") or "")[:60]
+            print(f"\n[{sid}] pass2 — {label}")
+            if not args.no_backward:
+                pass2_rows += backward_snowball(sid, cap=args.backward_cap)
+            if not args.no_forward:
+                pass2_rows += forward_snowball(sid, top=args.top_forward)
+
+        print(f"\nPass 2 raw rows: {len(pass2_rows)}")
+        if pass2_rows:
+            pass2_agg = aggregate_candidates(pass2_rows, {})
+            new_in_pass2 = sum(1 for oid in pass2_agg if oid not in agg)
+            print(f"Pass 2 unique: {len(pass2_agg)} (new vs Pass 1: {new_in_pass2})")
+            # Merge: prefer Pass 1 values quando já existe (mais autoritativo via seed)
+            for oid, row in pass2_agg.items():
+                if oid not in agg:
+                    agg[oid] = row
+
+    save_visited(visited)
+    print(f"visited set after run: {len(visited)} IDs")
+
     if not args.no_semscholar:
         enrich_with_semscholar(agg)
     agg = filter_outsiders(agg)
     print(f"after outsider filter: {len(agg)}")
+
+    # === --max-new cap: limita quantos NOVOS candidates entram no funil ===
+    new_oids = [oid for oid in agg if oid not in by_id]
+    if len(new_oids) > args.max_new:
+        # Ordena por citation desc e fica com top max_new
+        new_oids_sorted = sorted(
+            new_oids,
+            key=lambda oid: -int(agg[oid].get("cited_by_count") or 0),
+        )
+        kept_new = set(new_oids_sorted[:args.max_new])
+        dropped = len(new_oids) - args.max_new
+        print(f"--max-new cap: keep top {args.max_new} novos, drop {dropped} de baixa citação")
+        agg = {oid: row for oid, row in agg.items() if oid in by_id or oid in kept_new}
 
     n_new = 0
     n_updated = 0

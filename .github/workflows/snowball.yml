@@ -1,0 +1,170 @@
+name: snowball
+
+# Snowball v2: roda 45_bulk_discover.py (depth-2 + SS fallback) periodicamente
+# e abre PR pra revisão curatorial. Sprint C do v2 (efficient + big + rich).
+#
+# Secrets necessários (Settings → Secrets and variables → Actions):
+# - OPENALEX_EMAIL (required) → polite-pool da OpenAlex
+# - OPENALEX_API_KEY (optional) → premium tier OpenAlex
+# - SEMANTIC_SCHOLAR_API_KEY (optional) → throughput maior na SS
+
+on:
+  schedule:
+    # Segunda 06h UTC = 03h BRT — fora do horário de uso esperado.
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      depth:
+        description: 'Hops do snowball (1 ou 2)'
+        required: false
+        default: '2'
+        type: choice
+        options: ['1', '2']
+      max_new:
+        description: 'Cap de candidates NOVOS por run'
+        required: false
+        default: '2000'
+        type: string
+      pass2_size:
+        description: 'Quantos top-Pass-1 viram seeds do Pass 2 (depth=2 only)'
+        required: false
+        default: '100'
+        type: string
+      reset_visited:
+        description: 'Reseta data/snowball_visited.json antes do run'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  snowball:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      OPENALEX_EMAIL: ${{ secrets.OPENALEX_EMAIL }}
+      OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+      SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # pra create-pull-request comparar contra main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install deps
+        run: |
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+          pip install -e reference/acec-hub
+
+      - name: Validate OPENALEX_EMAIL secret
+        run: |
+          if [ -z "$OPENALEX_EMAIL" ]; then
+            echo "::error::OPENALEX_EMAIL secret ausente"
+            echo "Configure em: Settings → Secrets and variables → Actions"
+            exit 1
+          fi
+          echo "polite-pool email: ${OPENALEX_EMAIL:0:3}…${OPENALEX_EMAIL: -10}"
+
+      - name: Snapshot funnel state (pre-run)
+        run: |
+          python3 -c "
+          import yaml
+          fn = yaml.safe_load(open('data/papers_funnel.yml'))
+          c = fn['candidates']
+          print(f'funnel pre-run: {len(c)} candidates')
+          print(f'  empty abstract: {sum(1 for x in c if not x.get(\"abstract\"))} / {len(c)}')
+          print(f'  with brazil flag: {sum(1 for x in c if x.get(\"is_brazilian\"))} / {len(c)}')
+          " | tee /tmp/snowball_pre.txt
+
+      - name: Run snowball v2
+        run: |
+          DEPTH="${{ github.event.inputs.depth || '2' }}"
+          MAX_NEW="${{ github.event.inputs.max_new || '2000' }}"
+          PASS2="${{ github.event.inputs.pass2_size || '100' }}"
+          RESET="${{ github.event.inputs.reset_visited || 'false' }}"
+          ARGS="--depth $DEPTH --max-new $MAX_NEW --pass2-size $PASS2"
+          if [ "$RESET" = "true" ]; then
+            ARGS="$ARGS --reset-visited"
+          fi
+          echo "running: python3 analysis/45_bulk_discover.py $ARGS"
+          python3 analysis/45_bulk_discover.py $ARGS 2>&1 | tee /tmp/snowball.log
+
+      - name: Re-run Stage 2 (extract requirements)
+        run: python3 analysis/46_extract_requirements.py --force 2>&1 | tee /tmp/stage2.log
+
+      - name: Re-run Stage 3 (check coverage)
+        run: python3 analysis/47_check_coverage.py --force 2>&1 | tee /tmp/stage3.log
+
+      - name: Re-run match quality report
+        run: python3 analysis/51_match_quality_report.py 2>&1 | tee /tmp/quality.log
+
+      - name: Snapshot funnel state (post-run) + delta
+        id: delta
+        run: |
+          python3 -c "
+          import yaml
+          fn = yaml.safe_load(open('data/papers_funnel.yml'))
+          c = fn['candidates']
+          n_brazil = sum(1 for x in c if x.get('is_brazilian'))
+          n_empty = sum(1 for x in c if not x.get('abstract'))
+          n_ss = sum(1 for x in c if x.get('abstract_source') == 'semscholar')
+          print(f'funnel post-run: {len(c)} candidates')
+          print(f'  empty abstract: {n_empty} / {len(c)} ({100*n_empty/len(c):.0f}%)')
+          print(f'  filled via SS:  {n_ss} / {len(c)} ({100*n_ss/len(c):.0f}%)')
+          print(f'  brazil flag:    {n_brazil} / {len(c)} ({100*n_brazil/len(c):.0f}%)')
+          " | tee /tmp/snowball_post.txt
+          echo "n_total=$(python3 -c 'import yaml; print(len(yaml.safe_load(open(\"data/papers_funnel.yml\"))[\"candidates\"]))')" >> $GITHUB_OUTPUT
+
+      - name: Create PR if funnel changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: auto/snowball-${{ github.run_id }}
+          delete-branch: true
+          commit-message: |
+            auto/snowball · ${{ github.event_name }} run #${{ github.run_id }}
+
+            depth=${{ github.event.inputs.depth || '2' }} max-new=${{ github.event.inputs.max_new || '2000' }}
+          title: "auto/snowball · funnel update (#${{ github.run_id }})"
+          body: |
+            **Snowball v2 run autônomo** — Sprint C do v2 (efficient + big + rich).
+
+            **Configuração:**
+            - depth: `${{ github.event.inputs.depth || '2' }}`
+            - max-new: `${{ github.event.inputs.max_new || '2000' }}`
+            - pass2-size: `${{ github.event.inputs.pass2_size || '100' }}`
+            - reset-visited: `${{ github.event.inputs.reset_visited || 'false' }}`
+
+            **Pre-run snapshot:**
+            ```
+            $(cat /tmp/snowball_pre.txt)
+            ```
+
+            **Post-run snapshot:**
+            ```
+            $(cat /tmp/snowball_post.txt)
+            ```
+
+            **Snowball summary** (últimas 30 linhas do log):
+            ```
+            $(tail -30 /tmp/snowball.log)
+            ```
+
+            **Match quality summary** (últimas 10 linhas):
+            ```
+            $(tail -10 /tmp/quality.log)
+            ```
+
+            ---
+            _Auto-generated por `.github/workflows/snowball.yml`. Curador revisa antes do merge._
+          labels: |
+            automated
+            snowball-v2
