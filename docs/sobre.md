@@ -5,7 +5,9 @@ description: O que o lab é, como citá-lo, glossário dos termos técnicos e pa
 
 # Sobre
 
-O **rio-edu-lab** é um pipeline aberto de replicação de papers acadêmicos sobre educação contra os 9.855 dados públicos do Rio de Janeiro. **4 estágios:** descoberta via snowball bibliométrico, filtro temático contra a [taxonomia de 10 categorias](dados.md), checagem de cobertura no data.rio, curadoria e replicação. Pipeline reproduzível ponta-a-ponta, 28 testes invariantes verdes em CI, DOI Zenodo. Sem claim de causalidade — só replicação literal de método publicado contra dado público.
+O **rio-edu-lab** é um pipeline aberto de replicação de papers acadêmicos sobre educação contra os 9.855 dados públicos do Rio de Janeiro. **4 estágios:** descoberta via snowball bibliométrico, filtro temático contra a [taxonomia de 10 categorias](dados.md), checagem de cobertura no data.rio, curadoria e replicação. Pipeline reproduzível ponta-a-ponta, 31 testes invariantes verdes em CI, DOI Zenodo. Sem claim de causalidade — só replicação literal de método publicado contra dado público.
+
+**Missão.** Traduzir academia gringa pra dado brasileiro. O lab é uma ponte entre o cânone metodológico publicado em inglês (Coleman, Chetty, Reardon, Pereira-IPEA) e a granularidade pública do Rio. Cada paper que entra no catálogo é testado contra a pergunta: *este método pode rodar em dado brasileiro de bairro?*
 
 **Páginas relacionadas:**
 
