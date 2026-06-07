@@ -58,8 +58,15 @@ def test_weighted_score_sums_shared_idf():
 
 
 def test_edu_signal_counts_domain_terms():
-    assert edu_signal("school teacher student achievement") >= 4
+    # Post-cleanup: "school" (sg), "student" (sg), "university", "academic",
+    # "college" foram removidos da EDU_KEYWORDS porque disparavam em
+    # affiliation noise ("London School of Economics", "University of Chicago
+    # Press") indexed em abstracts OpenAlex. Validamos só os tokens
+    # discriminativos que permaneceram.
+    assert edu_signal("schools teacher achievement enrollment") >= 4
     assert edu_signal("blood pressure cardiac arrest") == 0
+    # Affiliation noise não dispara mais (regression guard contra v0.14 fix):
+    assert edu_signal("London School of Economics University of Chicago Press") == 0
 
 
 def test_common_token_does_not_dominate():
