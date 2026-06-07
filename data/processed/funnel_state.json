@@ -1,6 +1,6 @@
 {
   "stage1_candidates": 2080,
-  "stage2_with_requirements": 556,
+  "stage2_with_requirements": 394,
   "stage4_catalog": 15,
   "replicated_total": 3,
   "status_breakdown": {
@@ -19,52 +19,52 @@
     {
       "id": "geometry-schools",
       "label": "Geometria de escolas",
-      "n_funnel": 218
+      "n_funnel": 155
     },
     {
       "id": "geometry-neighborhoods",
       "label": "Geometria de bairros / unidades espaciais",
-      "n_funnel": 32
+      "n_funnel": 19
     },
     {
       "id": "performance-aggregated",
       "label": "Desempenho educacional por unidade agregada",
-      "n_funnel": 391
+      "n_funnel": 291
     },
     {
       "id": "ses-aggregated",
       "label": "SES agregado por unidade (NSE, INSE, IDS)",
-      "n_funnel": 142
+      "n_funnel": 91
     },
     {
       "id": "spatial-partition",
       "label": "Partição / agrupamento espacial hierárquico",
-      "n_funnel": 20
+      "n_funnel": 10
     },
     {
       "id": "travel-network",
       "label": "Rede viária / tempos de viagem (isócronas)",
-      "n_funnel": 45
+      "n_funnel": 25
     },
     {
       "id": "enrollment-counts",
       "label": "Matrículas / oferta de escolas por unidade",
-      "n_funnel": 72
+      "n_funnel": 56
     },
     {
       "id": "microdata-student",
       "label": "Microdado individual de aluno",
-      "n_funnel": 263
+      "n_funnel": 196
     },
     {
       "id": "microdata-household",
       "label": "Microdado individual de domicílio",
-      "n_funnel": 111
+      "n_funnel": 80
     },
     {
       "id": "longitudinal-cohort",
       "label": "Painel longitudinal por coorte",
-      "n_funnel": 189
+      "n_funnel": 139
     }
   ],
   "type_top10": [

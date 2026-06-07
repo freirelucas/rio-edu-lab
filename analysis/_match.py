@@ -52,24 +52,29 @@ STOPWORDS = {
 # tangenciais (médicos, infra-de-rede) que descobrimos via co-citação mas
 # não são domínio do lab.
 EDU_KEYWORDS = frozenset({
-    # EN — core
-    "education", "educational", "school", "schools", "schooling",
-    "teacher", "teachers", "student", "students", "pupil", "pupils",
+    # EN — core (specific to education domain; not journal-metadata noise).
+    # Removed: academic, university, college, school (sg), students/student (sg),
+    # graduate, pupil(s), learning, primary, secondary — these fire on author
+    # affiliations ("London School of Economics", "University of Chicago Press")
+    # in any OpenAlex abstract preamble + on cross-domain papers (machine
+    # learning, primary care, secondary outcomes).
+    "education", "educational", "schools", "schooling",
+    "teacher", "teachers",
     # EN — outcomes
-    "achievement", "learning", "literacy", "numeracy", "proficiency",
-    "graduate", "graduation", "dropout", "enrollment",
-    # EN — levels
-    "kindergarten", "preschool", "primary", "secondary", "elementary",
-    "college", "university", "academic", "tertiary",
+    "achievement", "literacy", "numeracy", "proficiency",
+    "graduation", "dropout", "enrollment",
+    # EN — levels (specific)
+    "kindergarten", "preschool", "elementary", "tertiary",
     # EN — instruction
     "curriculum", "classroom", "instruction", "instructional",
     "pedagogy", "pedagogical", "vocational",
-    # PT (accent-stripped via tokenize)
+    # PT (accent-stripped via tokenize). Removed: superior (court/courts),
+    # aprendizado (machine learning translation).
     "educacao", "educacional", "escola", "escolas", "escolar",
     "aluno", "alunos", "professor", "professores", "ensino",
-    "aprendizado", "aprendizagem", "matricula", "matriculas",
+    "aprendizagem", "matricula", "matriculas",
     "alfabetizacao", "creche", "creches", "ideb", "saeb",
-    "fundamental", "medio", "superior",
+    "fundamental", "medio",
 })
 
 

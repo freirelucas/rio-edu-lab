@@ -345,23 +345,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 5.76
-  - category_id: travel-network
-    score: 4.93
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2124758339
@@ -5234,31 +5219,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: enrollment-counts
-    score: 19.5
-  - category_id: microdata-household
-    score: 10.77
-  - category_id: microdata-student
-    score: 9.35
-  coverage:
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1536573182
@@ -5697,29 +5659,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 14.9
-  - category_id: longitudinal-cohort
-    score: 6.14
-  - category_id: microdata-household
-    score: 5.55
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2165429918
@@ -16154,31 +16095,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 37.97
-  - category_id: performance-aggregated
-    score: 15.35
-  - category_id: geometry-neighborhoods
-    score: 6.46
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2073984231
@@ -17759,31 +17677,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 10.77
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2052139061
@@ -19515,29 +19410,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-neighborhoods
-    score: 7.55
-  - category_id: spatial-partition
-    score: 7.55
-  - category_id: geometry-schools
-    score: 5.25
-  coverage:
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
-  - category_id: spatial-partition
-    manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
-    manifest_title: Portal da Geografia Econômica Carioca
-    score: 7.9
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2024424774
@@ -23314,32 +23188,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 11.51
-  - category_id: enrollment-counts
-    score: 10.95
-  - category_id: longitudinal-cohort
-    score: 5.21
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3123059484
@@ -29308,30 +29158,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 20.45
-  - category_id: performance-aggregated
-    score: 11.43
-  - category_id: microdata-household
-    score: 5.55
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2009253510
@@ -30619,31 +30447,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1548380465
@@ -30782,30 +30587,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 10.65
-  - category_id: geometry-neighborhoods
-    score: 6.46
-  - category_id: ses-aggregated
-    score: 6.46
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2086399807
@@ -33844,29 +33627,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 16.59
-  - category_id: geometry-neighborhoods
-    score: 7.55
-  - category_id: spatial-partition
-    score: 7.55
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
-  - category_id: spatial-partition
-    manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
-    manifest_title: Portal da Geografia Econômica Carioca
-    score: 7.9
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2057988546
@@ -36554,24 +36316,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 6.21
-  - category_id: performance-aggregated
-    score: 5.76
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W107887801
@@ -38444,30 +38190,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 21.86
-  - category_id: performance-aggregated
-    score: 9.97
-  - category_id: microdata-student
-    score: 9.7
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3121178376
@@ -40339,16 +40063,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1900002979
@@ -46873,15 +46589,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-household
-    score: 10.77
-  coverage:
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2149472336
@@ -48877,32 +48586,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 11.19
-  - category_id: enrollment-counts
-    score: 10.95
-  - category_id: longitudinal-cohort
-    score: 6.56
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2048838151
@@ -49604,29 +49289,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 10.65
-  - category_id: microdata-household
-    score: 6.31
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1976452341
@@ -50034,31 +49698,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 10.77
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1987724300
@@ -50204,30 +49845,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 21.86
-  - category_id: ses-aggregated
-    score: 5.66
-  - category_id: travel-network
-    score: 4.93
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1518052575
@@ -51303,32 +50922,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 9.35
-  - category_id: enrollment-counts
-    score: 7.5
-  - category_id: performance-aggregated
-    score: 6.75
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W306662213
@@ -52701,30 +52296,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 17.55
-  - category_id: longitudinal-cohort
-    score: 5.38
-  - category_id: microdata-student
-    score: 4.15
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2069544743
@@ -54551,30 +54124,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 6.56
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1602566298
@@ -57753,30 +57304,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 10.84
-  - category_id: microdata-household
-    score: 6.5
-  - category_id: microdata-student
-    score: 5.46
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1979933087
@@ -58175,30 +57704,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 10.58
-  - category_id: longitudinal-cohort
-    score: 5.27
-  - category_id: microdata-household
-    score: 4.71
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2035121019
@@ -58785,30 +58292,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 9.96
-  - category_id: microdata-student
-    score: 5.54
-  - category_id: longitudinal-cohort
-    score: 5.38
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2116047968
@@ -59759,23 +59244,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  - category_id: microdata-household
-    score: 4.71
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1967993709
@@ -60212,30 +59682,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 11.35
-  - category_id: ses-aggregated
-    score: 6.92
-  - category_id: travel-network
-    score: 4.93
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W584368326
@@ -63859,30 +63307,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-household
-    score: 11.02
-  - category_id: ses-aggregated
-    score: 10.82
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1785441032
@@ -66443,30 +65869,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 11.04
-  - category_id: microdata-student
-    score: 9.7
-  - category_id: geometry-neighborhoods
-    score: 6.46
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2093077888
@@ -71405,31 +70809,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 21.86
-  - category_id: microdata-household
-    score: 11.11
-  - category_id: enrollment-counts
-    score: 10.95
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W153917074
@@ -73882,15 +73263,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 5.54
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1528352034
@@ -75716,22 +75090,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 22.66
-  - category_id: microdata-student
-    score: 6.07
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3123291542
@@ -77235,16 +76595,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1995053182
@@ -78843,15 +78195,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 5.21
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W570222986
@@ -80650,16 +79995,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2012931877
@@ -80801,22 +80138,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 9.35
-  - category_id: geometry-neighborhoods
-    score: 8.31
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1492445845
@@ -81090,16 +80413,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 11.89
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W171382399
@@ -81400,16 +80715,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2131148121
@@ -82988,29 +82295,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-household
-    score: 10.26
-  - category_id: longitudinal-cohort
-    score: 6.5
-  - category_id: microdata-student
-    score: 5.55
-  coverage:
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1978848619
@@ -84587,31 +83873,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1513502430
@@ -84882,30 +84145,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 16.23
-  - category_id: microdata-student
-    score: 5.46
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1594427269
@@ -86621,31 +85862,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: enrollment-counts
-    score: 8.19
-  - category_id: microdata-student
-    score: 5.55
-  - category_id: microdata-household
-    score: 5.55
-  coverage:
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2025341449
@@ -88147,30 +87365,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 27.95
-  - category_id: travel-network
-    score: 9.51
-  - category_id: geometry-neighborhoods
-    score: 6.46
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2035304341
@@ -89840,31 +89036,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 18.17
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1501303939
@@ -93097,30 +92270,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 10.77
-  - category_id: microdata-household
-    score: 4.71
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2009214474
@@ -93882,29 +93033,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: spatial-partition
-    score: 7.44
-  - category_id: microdata-student
-    score: 5.2
-  - category_id: microdata-household
-    score: 4.71
-  coverage:
-  - category_id: spatial-partition
-    manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
-    manifest_title: Portal da Geografia Econômica Carioca
-    score: 7.9
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1486258806
@@ -94497,22 +93627,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 5.21
-  - category_id: microdata-student
-    score: 4.15
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W104448228
@@ -95640,30 +94756,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 17.22
-  - category_id: longitudinal-cohort
-    score: 5.27
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2088820657
@@ -96714,31 +95808,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 10.8
-  - category_id: geometry-schools
-    score: 9.84
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2039033949
@@ -98105,30 +97176,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-neighborhoods
-    score: 12.86
-  - category_id: ses-aggregated
-    score: 11.04
-  - category_id: geometry-schools
-    score: 9.84
-  coverage:
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2133513458
@@ -98441,30 +97490,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 5.27
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2511270458
@@ -99026,23 +98053,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 5.58
-  - category_id: travel-network
-    score: 4.93
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2015046142
@@ -104128,30 +103140,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 23.09
-  - category_id: longitudinal-cohort
-    score: 16.59
-  - category_id: performance-aggregated
-    score: 10.05
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2050220272
@@ -105077,16 +104067,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1543495496
@@ -107104,30 +106086,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 49.47
-  - category_id: microdata-student
-    score: 5.46
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3121941670
@@ -107448,30 +106408,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 16.1
-  - category_id: microdata-student
-    score: 5.46
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3023268456
@@ -107590,30 +106528,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 9.96
-  - category_id: microdata-student
-    score: 9.7
-  - category_id: spatial-partition
-    score: 8.78
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: spatial-partition
-    manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
-    manifest_title: Portal da Geografia Econômica Carioca
-    score: 7.9
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2129486857
@@ -108279,16 +107195,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2031402358
@@ -112128,29 +111036,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 10.74
-  - category_id: microdata-household
-    score: 6.06
-  - category_id: travel-network
-    score: 4.93
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2036189587
@@ -116098,31 +114985,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2037818690
@@ -116842,22 +115706,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-household
-    score: 6.06
-  - category_id: longitudinal-cohort
-    score: 5.27
-  coverage:
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1964550926
@@ -121296,30 +120146,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 9.96
-  - category_id: geometry-schools
-    score: 9.84
-  - category_id: microdata-student
-    score: 5.54
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2235916792
@@ -121848,29 +120676,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 11.34
-  - category_id: microdata-student
-    score: 10.22
-  - category_id: travel-network
-    score: 4.93
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3121849096
@@ -124342,30 +123149,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 15.35
-  - category_id: microdata-student
-    score: 9.7
-  - category_id: spatial-partition
-    score: 8.78
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: spatial-partition
-    manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
-    manifest_title: Portal da Geografia Econômica Carioca
-    score: 7.9
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1587861000
@@ -124833,29 +123618,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 17.45
-  - category_id: microdata-student
-    score: 15.25
-  - category_id: microdata-household
-    score: 5.55
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2010986569
@@ -127430,31 +126194,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 24.38
-  - category_id: longitudinal-cohort
-    score: 11.94
-  - category_id: performance-aggregated
-    score: 9.96
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2101365736
@@ -128236,31 +126977,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1510681197
@@ -130651,31 +129369,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1965958424
@@ -131313,31 +130008,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 10.8
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2037693160
@@ -134631,16 +133303,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2047273630
@@ -136911,22 +135575,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 27.93
-  - category_id: microdata-student
-    score: 10.22
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2049518503
@@ -144480,30 +143130,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 10.64
-  - category_id: spatial-partition
-    score: 9.0
-  - category_id: microdata-student
-    score: 5.54
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: spatial-partition
-    manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
-    manifest_title: Portal da Geografia Econômica Carioca
-    score: 7.9
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1983521820
@@ -145142,30 +143770,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 5.54
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1978460748
@@ -146056,15 +144662,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: travel-network
-    score: 4.93
-  coverage:
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W560603686
@@ -148362,29 +146961,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 9.7
-  - category_id: microdata-household
-    score: 4.71
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2159499413
@@ -152412,31 +150990,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: enrollment-counts
-    score: 11.72
-  - category_id: longitudinal-cohort
-    score: 5.38
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2144328703
@@ -153001,31 +151556,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2011410928
@@ -156941,15 +155473,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 5.54
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1498453729
@@ -158120,29 +156645,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 11.94
-  - category_id: travel-network
-    score: 4.93
-  - category_id: microdata-household
-    score: 4.71
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2060864256
@@ -159305,16 +157809,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1590458649
@@ -160512,31 +159008,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2048424354
@@ -164379,24 +162852,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: enrollment-counts
-    score: 6.72
-  - category_id: longitudinal-cohort
-    score: 5.38
-  coverage:
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W4231759125
@@ -166020,30 +164477,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 16.59
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3124589752
@@ -166611,23 +165046,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  - category_id: microdata-household
-    score: 4.71
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1963580015
@@ -167060,23 +165480,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  - category_id: microdata-household
-    score: 4.71
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2166338594
@@ -167638,31 +166043,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 34.89
-  - category_id: microdata-student
-    score: 22.04
-  - category_id: ses-aggregated
-    score: 18.15
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1500692180
@@ -167767,23 +166149,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 5.54
-  - category_id: performance-aggregated
-    score: 5.38
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1526465164
@@ -168017,31 +166384,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 9.84
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W637422784
@@ -169684,29 +168028,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 10.22
-  - category_id: longitudinal-cohort
-    score: 6.07
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2073945667
@@ -170868,31 +169191,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2003898290
@@ -177401,30 +175701,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 17.27
-  - category_id: travel-network
-    score: 16.64
-  - category_id: geometry-neighborhoods
-    score: 13.59
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1974989573
@@ -180266,31 +178544,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 22.6
-  - category_id: ses-aggregated
-    score: 11.04
-  - category_id: geometry-neighborhoods
-    score: 6.46
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2082535150
@@ -185946,31 +184201,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 9.84
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1974242925
@@ -187237,30 +185469,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 10.22
-  - category_id: performance-aggregated
-    score: 6.18
-  - category_id: longitudinal-cohort
-    score: 6.07
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1756943006
@@ -187387,32 +185597,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: enrollment-counts
-    score: 11.31
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W360449672
@@ -188366,32 +186552,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: enrollment-counts
-    score: 11.31
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3121254141
@@ -189500,30 +187662,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 23.96
-  - category_id: longitudinal-cohort
-    score: 22.66
-  - category_id: performance-aggregated
-    score: 16.23
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1966797581
@@ -199264,30 +197404,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 29.43
-  - category_id: microdata-student
-    score: 17.89
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3024981975
@@ -200807,32 +198925,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 17.63
-  - category_id: longitudinal-cohort
-    score: 10.48
-  - category_id: enrollment-counts
-    score: 6.36
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W339719223
@@ -201955,15 +200049,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 5.54
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2043149952
@@ -202504,30 +200591,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 10.8
-  - category_id: geometry-schools
-    score: 9.84
-  - category_id: travel-network
-    score: 9.51
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3021796743
@@ -203095,31 +201160,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2059241490
@@ -203954,22 +201996,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 5.54
-  - category_id: microdata-household
-    score: 4.71
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1993857279
@@ -204500,30 +202528,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 22.98
-  - category_id: microdata-student
-    score: 19.69
-  - category_id: travel-network
-    score: 9.51
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1971432286
@@ -205679,30 +203685,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 9.84
-  - category_id: travel-network
-    score: 9.51
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W4249742696
@@ -209909,31 +207893,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 10.77
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: accept
   decision_reason: v0.11 — habitação × escola/segregação, eixo Reardon/VULN-EDU
 - openalex_id: https://openalex.org/W1900477342
@@ -212111,30 +210072,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 22.68
-  - category_id: microdata-student
-    score: 9.61
-  - category_id: spatial-partition
-    score: 7.44
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: spatial-partition
-    manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
-    manifest_title: Portal da Geografia Econômica Carioca
-    score: 7.9
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1558797628
@@ -212475,23 +210414,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 16.82
-  - category_id: longitudinal-cohort
-    score: 5.38
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1983160467
@@ -219197,29 +217121,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 6.14
-  - category_id: microdata-household
-    score: 4.71
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2053549074
@@ -219598,30 +217501,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 22.04
-  - category_id: performance-aggregated
-    score: 21.61
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1966535674
@@ -219757,32 +217638,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: enrollment-counts
-    score: 11.72
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3038445159
@@ -222777,30 +220634,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 9.84
-  - category_id: travel-network
-    score: 9.51
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1505496048
@@ -225093,30 +222928,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 29.65
-  - category_id: performance-aggregated
-    score: 9.96
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2329839885
@@ -225880,31 +223693,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W4229857060
@@ -228120,16 +225910,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 6.23
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1480355997
@@ -228266,22 +226048,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 11.77
-  - category_id: travel-network
-    score: 4.93
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1520023797
@@ -229118,30 +226886,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 17.59
-  - category_id: microdata-student
-    score: 10.22
-  - category_id: performance-aggregated
-    score: 5.38
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2011807542
@@ -233742,29 +231488,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-neighborhoods
-    score: 6.4
-  - category_id: microdata-household
-    score: 6.4
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1982930279
@@ -236530,23 +234255,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 5.54
-  - category_id: performance-aggregated
-    score: 5.38
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2113753279
@@ -237048,30 +234758,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 5.54
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2071374601
@@ -238818,31 +236506,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 6.92
-  - category_id: microdata-student
-    score: 5.54
-  - category_id: performance-aggregated
-    score: 5.38
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2094987661
@@ -239076,31 +236741,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 10.64
-  - category_id: ses-aggregated
-    score: 10.25
-  - category_id: geometry-schools
-    score: 9.84
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1585792772
@@ -239966,30 +237608,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 23.09
-  - category_id: performance-aggregated
-    score: 10.85
-  - category_id: travel-network
-    score: 4.93
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1979931681
@@ -241596,30 +239216,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: ses-aggregated
-    score: 19.02
-  - category_id: microdata-student
-    score: 10.75
-  - category_id: longitudinal-cohort
-    score: 6.56
-  coverage:
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1533452875
@@ -242578,15 +240176,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 4.15
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2065489451
@@ -242986,30 +240577,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 10.35
-  - category_id: travel-network
-    score: 9.51
-  - category_id: microdata-student
-    score: 5.93
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3125729266
@@ -246124,15 +243693,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 9.35
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2727807343
@@ -246230,22 +243792,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 15.77
-  - category_id: longitudinal-cohort
-    score: 6.07
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1583948967
@@ -246368,17 +243916,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: enrollment-counts
-    score: 6.72
-  coverage:
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2060700288
@@ -247841,31 +245380,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: longitudinal-cohort
-    score: 23.15
-  - category_id: enrollment-counts
-    score: 7.13
-  - category_id: travel-network
-    score: 4.93
-  coverage:
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1584801097
@@ -248287,30 +245803,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 11.57
-  - category_id: microdata-student
-    score: 6.07
-  - category_id: longitudinal-cohort
-    score: 6.07
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2061707934
@@ -249249,31 +246743,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1580084979
@@ -249443,16 +246914,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 5.38
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1997324650
@@ -252467,31 +249930,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 16.53
-  - category_id: ses-aggregated
-    score: 10.82
-  - category_id: microdata-student
-    score: 5.2
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3162995892
@@ -254168,32 +251608,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: enrollment-counts
-    score: 19.5
-  - category_id: ses-aggregated
-    score: 10.25
-  - category_id: spatial-partition
-    score: 7.44
-  coverage:
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: spatial-partition
-    manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
-    manifest_title: Portal da Geografia Econômica Carioca
-    score: 7.9
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2483525376
@@ -257576,29 +254992,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 10.09
-  - category_id: geometry-schools
-    score: 9.84
-  - category_id: spatial-partition
-    score: 7.44
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: spatial-partition
-    manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
-    manifest_title: Portal da Geografia Econômica Carioca
-    score: 7.9
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3584294
@@ -259119,30 +256514,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 24.67
-  - category_id: microdata-student
-    score: 5.93
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2045171009
@@ -259812,29 +257185,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-household
-    score: 6.06
-  - category_id: microdata-student
-    score: 5.54
-  - category_id: longitudinal-cohort
-    score: 5.27
-  coverage:
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W157865104
@@ -260210,30 +257562,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 41.57
-  - category_id: performance-aggregated
-    score: 10.05
-  - category_id: geometry-schools
-    score: 9.84
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3144474986
@@ -266386,30 +263716,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 9.96
-  - category_id: microdata-student
-    score: 5.54
-  - category_id: longitudinal-cohort
-    score: 5.38
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W4298875478
@@ -266916,31 +264224,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1524052015
@@ -269542,29 +266827,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 9.84
-  - category_id: microdata-student
-    score: 5.2
-  - category_id: microdata-household
-    score: 4.71
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2102395463
@@ -269987,29 +267251,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-neighborhoods
-    score: 19.99
-  - category_id: longitudinal-cohort
-    score: 15.96
-  - category_id: travel-network
-    score: 11.72
-  coverage:
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2127929790
@@ -270281,31 +267524,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2026651953
@@ -271070,31 +268290,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W563101879
@@ -271465,23 +268662,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 14.81
-  - category_id: performance-aggregated
-    score: 5.46
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1569206415
@@ -272047,22 +269229,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-household
-    score: 6.06
-  - category_id: longitudinal-cohort
-    score: 5.27
-  coverage:
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2003856706
@@ -273857,31 +271025,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 11.19
-  - category_id: ses-aggregated
-    score: 10.82
-  - category_id: microdata-household
-    score: 4.71
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1588579291
@@ -274016,31 +271161,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 10.84
-  - category_id: microdata-student
-    score: 10.66
-  - category_id: ses-aggregated
-    score: 7.9
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W176548709
@@ -275751,31 +272873,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3037841530
@@ -276564,31 +273663,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3122331101
@@ -277245,30 +274321,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 11.13
-  - category_id: performance-aggregated
-    score: 9.97
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2273732869
@@ -277862,29 +274916,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: geometry-neighborhoods
-    score: 6.4
-  - category_id: microdata-household
-    score: 6.4
-  - category_id: longitudinal-cohort
-    score: 5.21
-  coverage:
-  - category_id: geometry-neighborhoods
-    manifest_item_id: dc94b29fc3594a5bb4d297bee0c9a3f2
-    manifest_title: Limite de Bairros
-    score: 24.4
-    status: available
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1981634630
@@ -278633,29 +275666,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: travel-network
-    score: 9.51
-  - category_id: longitudinal-cohort
-    score: 6.5
-  - category_id: microdata-household
-    score: 4.71
-  coverage:
-  - category_id: travel-network
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2141395948
@@ -279321,31 +276333,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: enrollment-counts
-    score: 11.72
-  - category_id: longitudinal-cohort
-    score: 5.38
-  - category_id: geometry-schools
-    score: 4.59
-  coverage:
-  - category_id: enrollment-counts
-    manifest_item_id: d1e1192de4854ee4b53095a6f3274018
-    manifest_title: 'Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e
-      Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE)
-      e matrícula final, entre 1999-2012 '
-    score: 29.49
-    status: available
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1574094904
@@ -279551,29 +276540,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 12.14
-  - category_id: microdata-household
-    score: 7.99
-  - category_id: longitudinal-cohort
-    score: 5.27
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: microdata-household
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: longitudinal-cohort
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1995570508
@@ -280026,31 +276994,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 16.15
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3122207567
@@ -281436,16 +278381,8 @@ candidates:
   data_signal:
     score: 1
     hits: []
-  suggested_requirements:
-  - category_id: performance-aggregated
-    score: 6.18
-  coverage:
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2271231094
@@ -284548,23 +281485,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 17.89
-  - category_id: performance-aggregated
-    score: 5.46
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W1950932221
@@ -285207,31 +282129,8 @@ candidates:
   data_signal:
     score: 0
     hits: []
-  suggested_requirements:
-  - category_id: geometry-schools
-    score: 4.59
-  - category_id: performance-aggregated
-    score: 4.59
-  - category_id: ses-aggregated
-    score: 4.59
-  coverage:
-  - category_id: geometry-schools
-    manifest_item_id: 498e637753bd4e0da76e90103dd21eb7
-    manifest_title: Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde
-    score: 33.2
-    status: available
-  - category_id: performance-aggregated
-    manifest_item_id: 9fd1a8cc207a48c5bda7131e4e74b1ca
-    manifest_title: IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP),
-      Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023
-    score: 21.11
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W2561977707
@@ -286455,30 +283354,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: spatial-partition
-    score: 7.44
-  - category_id: ses-aggregated
-    score: 6.21
-  - category_id: microdata-student
-    score: 4.15
-  coverage:
-  - category_id: spatial-partition
-    manifest_item_id: e98e29d2a46a4264bb7e33b274e00873
-    manifest_title: Portal da Geografia Econômica Carioca
-    score: 7.9
-    status: available
-  - category_id: ses-aggregated
-    manifest_item_id: fa85ddc76a524380ad7fc60e3006ee97
-    manifest_title: Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões
-      Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010
-    score: 24.42
-    status: available
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3038414862
@@ -287068,15 +283945,8 @@ candidates:
   data_signal:
     score: 2
     hits: []
-  suggested_requirements:
-  - category_id: microdata-student
-    score: 5.54
-  coverage:
-  - category_id: microdata-student
-    manifest_item_id: null
-    manifest_title: (fora do data.rio — fonte externa)
-    score: 0.0
-    status: external
+  suggested_requirements: []
+  coverage: []
   decision: ''
   decision_reason: ''
 - openalex_id: https://openalex.org/W3015632451

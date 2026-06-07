@@ -1,6 +1,6 @@
 {
   "n_candidates_total": 2080,
-  "n_with_bow": 556,
+  "n_with_bow": 394,
   "n_with_llm": 0,
   "n_with_both": 0,
   "top1_agreement": {
