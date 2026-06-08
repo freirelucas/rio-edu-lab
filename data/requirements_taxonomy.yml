@@ -121,10 +121,16 @@ categories:
     # Granularidade varia (IDEB por bairro / RA / AP) → unit e spatial são listas.
     # O domain separa "desempenho educacional" de "desempenho" de transporte,
     # emprego, saúde etc. — confusores que dominam as aliases genéricas.
+    # v0.15: adicionados temporal_min/max + key_variables_needed pra match_detail
+    # estruturado (temporal_overlap + schema_match). IDEB modern começa 2007;
+    # pegamos 2010-2023 como "preferred span" pra papers contemporâneos.
     expects:
       domain: educacao-basica
       unit_of_observation: [bairro, ra]
       spatial_granularity: [bairro, ra, ap]
+      temporal_min_year: 2010
+      temporal_max_year: 2023
+      key_variables_needed: [ideb, ano, matricula, aprovacao]
     aliases:
       - "IDEB por bairro"
       - "desempenho por escola"

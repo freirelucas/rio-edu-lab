@@ -61,7 +61,12 @@
       "code_book": {
         "unit_of_observation": "bairro",
         "spatial_granularity": "bairro",
-        "key_variables": ["nome_bairro", "codbairro", "geometria_poligono"]
+        "key_variables": [
+          "nome_bairro",
+          "codbairro",
+          "geometria_poligono"
+        ],
+        "api_capability": "feature_service"
       },
       "title": "Limite de Bairros",
       "type": "Feature Service",
@@ -3799,7 +3804,19 @@
         "unit_of_observation": "bairro",
         "spatial_granularity": "bairro",
         "temporal_coverage": "2010 (Censo IBGE)",
-        "key_variables": ["ids", "area_planejamento", "regiao_administrativa", "bairro", "favela"]
+        "key_variables": [
+          "ids",
+          "area_planejamento",
+          "regiao_administrativa",
+          "bairro",
+          "favela"
+        ],
+        "temporal_coverage_parsed": {
+          "start_year": 2010,
+          "end_year": 2010,
+          "frequency": "pontual"
+        },
+        "api_capability": "static_file"
       },
       "title": "Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010",
       "type": "Microsoft Excel",
@@ -20627,7 +20644,18 @@
         "unit_of_observation": "escola",
         "spatial_granularity": "ponto",
         "temporal_coverage": "2014-2019 (camada locacional)",
-        "key_variables": ["nome_escola", "rede", "geometria_ponto", "area_estrategia_saude_familia"]
+        "key_variables": [
+          "nome_escola",
+          "rede",
+          "geometria_ponto",
+          "area_estrategia_saude_familia"
+        ],
+        "temporal_coverage_parsed": {
+          "start_year": 2014,
+          "end_year": 2019,
+          "frequency": "atualizado"
+        },
+        "api_capability": "feature_service"
       },
       "title": "Mapa Digital do Rio de Janeiro - Escolas Municipais e Estratégia da Saúde",
       "type": "Web Map",
@@ -21462,7 +21490,19 @@
         "unit_of_observation": "bairro",
         "spatial_granularity": "bairro",
         "temporal_coverage": "2007-2023 (bienal)",
-        "key_variables": ["ideb", "ano", "area_planejamento", "regiao_administrativa", "bairro"]
+        "key_variables": [
+          "ideb",
+          "ano",
+          "area_planejamento",
+          "regiao_administrativa",
+          "bairro"
+        ],
+        "temporal_coverage_parsed": {
+          "start_year": 2007,
+          "end_year": 2023,
+          "frequency": "bienal"
+        },
+        "api_capability": "static_file"
       },
       "title": "IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023",
       "type": "Microsoft Excel",
@@ -90158,7 +90198,18 @@
         "unit_of_observation": "aluno",
         "spatial_granularity": "cre",
         "temporal_coverage": "1999-2012",
-        "key_variables": ["matriculas", "turmas", "cre", "etapa_ensino"]
+        "key_variables": [
+          "matriculas",
+          "turmas",
+          "cre",
+          "etapa_ensino"
+        ],
+        "temporal_coverage_parsed": {
+          "start_year": 1999,
+          "end_year": 2012,
+          "frequency": "anual"
+        },
+        "api_capability": "static_file"
       },
       "title": "Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE) e matrícula final, entre 1999-2012 ",
       "type": "Microsoft Excel",

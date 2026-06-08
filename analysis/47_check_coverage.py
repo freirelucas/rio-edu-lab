@@ -43,6 +43,7 @@ from _match import (  # noqa: E402
     candidate_text,
     code_book_bonus,
     load_taxonomy,
+    match_detail,
     tokenize_bigrams,
     weighted_score,
 )
@@ -187,13 +188,18 @@ def main() -> int:
                 continue
             it = top["item"]
             score = top["score"]
-            coverage_rows.append({
+            row = {
                 "category_id": cid,
                 "manifest_item_id": it.get("id"),
                 "manifest_title": it.get("title", ""),
                 "score": round(score, 2),
                 "status": status_from_score(score, args.threshold, args.partial_threshold),
-            })
+            }
+            # v0.15: enriched match_detail (5 normalized sub-scores + composite).
+            # Paralelo ao status binário — humanos + ranking secundário leem aqui;
+            # o status continua dirigido pelo score IDF + code_book_bonus.
+            row["match_detail"] = match_detail(it, cat)
+            coverage_rows.append(row)
         c["coverage"] = coverage_rows
         n_processed += 1
 

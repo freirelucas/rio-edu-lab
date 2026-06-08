@@ -211,6 +211,178 @@ def code_book_bonus(item: dict, cat: dict) -> float:
     return bonus
 
 
+# --- Enriched match (v0.15) -----------------------------------------------
+# Sub-scores normalizados [0, 1] em 5 dimensões + composite ∈ [0, 10].
+# Composite weights documentados em MATCH_DETAIL_WEIGHTS; revisáveis quando
+# gold-set for labelado e P/R por dimensão for medível.
+#
+# Diferença vs code_book_bonus:
+#   - code_book_bonus retorna PONTOS (+6/+3/+2/-8) somados ao IDF (47:140);
+#     continua sendo o sinal primário de scoring/ranking.
+#   - match_detail retorna DICT de sub-scores normalizados pra inspeção humana
+#     + composite pra ranking secundário. Persistido em coverage.match_detail
+#     (paralelo ao status binário existente).
+MATCH_DETAIL_WEIGHTS = {
+    "domain": 2.0,
+    "granularity": 3.0,
+    "temporal": 2.0,
+    "schema": 2.0,
+    "api": 1.0,
+}
+
+
+_API_CAPABILITY_SCORE = {
+    "feature_service": 1.0,    # GeoJSON queryable, ideal pra reprodução
+    "static_file": 0.7,        # Excel/CSV download — funcional, mas snapshot
+    "document_link": 0.3,      # PDF/HTML externo — leitura humana, não ETL
+    "none": 0.0,
+}
+
+
+def _parse_year_range(s: str | None) -> tuple[int, int] | None:
+    """Extrai (start_year, end_year) de strings como '2007-2023 (bienal)',
+    '2010 (Censo IBGE)', '2014-2019'. Retorna None quando não acha pelo menos
+    um ano de 4 dígitos no range 1900-2099. Tolerante a ruído."""
+    if not s:
+        return None
+    years = re.findall(r"\b(19\d{2}|20\d{2})\b", str(s))
+    if not years:
+        return None
+    ys = [int(y) for y in years]
+    return (min(ys), max(ys))
+
+
+def temporal_overlap_score(cb: dict | None, exp: dict | None) -> float:
+    """Fração [0,1] do range temporal requerido pela categoria que o item cobre.
+
+    Item temporal vem de code_book.temporal_coverage_parsed.{start_year,end_year}
+    ou — fallback — parsed do code_book.temporal_coverage string. Cat declara
+    expects.temporal_min_year/temporal_max_year (preferred span; None = neutral).
+
+    Retorna 0.5 (neutral) quando qualquer lado falta dado temporal — não
+    penaliza items legacy sem o campo, mas premia os enriquecidos.
+    """
+    if not cb or not exp:
+        return 0.5
+    item_range = None
+    parsed = cb.get("temporal_coverage_parsed")
+    if isinstance(parsed, dict) and parsed.get("start_year") and parsed.get("end_year"):
+        item_range = (int(parsed["start_year"]), int(parsed["end_year"]))
+    else:
+        item_range = _parse_year_range(cb.get("temporal_coverage"))
+    cat_min = exp.get("temporal_min_year")
+    cat_max = exp.get("temporal_max_year")
+    if item_range is None or cat_min is None or cat_max is None:
+        return 0.5
+    needed = int(cat_max) - int(cat_min) + 1
+    if needed <= 0:
+        return 0.5
+    overlap_start = max(item_range[0], int(cat_min))
+    overlap_end = min(item_range[1], int(cat_max))
+    overlap = max(0, overlap_end - overlap_start + 1)
+    return min(1.0, overlap / needed)
+
+
+def api_capability_score(cb: dict | None) -> float:
+    """Score [0,1] derivado de code_book.api_capability. Cat-agnostic — premia
+    items fetchable (Feature Service > static file > document link > none).
+
+    Retorna 0.5 (neutral) quando item não declara api_capability — não penaliza
+    legacy, mas Feature Services validados ganham +1.0 quando preenchidos.
+    """
+    if not cb:
+        return 0.5
+    cap = cb.get("api_capability")
+    if cap is None:
+        return 0.5
+    return _API_CAPABILITY_SCORE.get(cap, 0.0)
+
+
+def schema_match_score(cb: dict | None, exp: dict | None) -> float:
+    """Precision-style score [0,1]: fração das variáveis que a categoria precisa
+    (`expects.key_variables_needed`) que o item efetivamente tem
+    (`code_book.key_variables`). Tokens case-insensitive + accent-stripped.
+
+    Retorna 0.5 (neutral) quando qualquer lado falta; 0 quando cat declara
+    necessidades mas item não bate nenhuma; 1 quando item cobre todas.
+    """
+    if not cb or not exp:
+        return 0.5
+    needed = exp.get("key_variables_needed")
+    have = cb.get("key_variables")
+    if not needed or not have:
+        return 0.5
+    needed_n = {strip_accents(str(v)).lower().strip() for v in needed}
+    have_n = {strip_accents(str(v)).lower().strip() for v in have}
+    if not needed_n:
+        return 0.5
+    return len(needed_n & have_n) / len(needed_n)
+
+
+def granularity_match_score(cb: dict | None, exp: dict | None) -> float:
+    """Score [0,1]: média de (unit_of_observation match, spatial_granularity match).
+    Cada sub-match é 0 ou 1. Neutral 0.5 se code_book/expects faltam ambos."""
+    if not cb or not exp:
+        return 0.5
+    u_match = float(_expect_match(exp.get("unit_of_observation"), cb.get("unit_of_observation")))
+    g_match = float(_expect_match(exp.get("spatial_granularity"), cb.get("spatial_granularity")))
+    return (u_match + g_match) / 2.0
+
+
+def domain_match_score(cb: dict | None, exp: dict | None) -> float:
+    """Score [0,1]: 1 se domain bate, 0 se conflita, 0.5 se qualquer lado falta.
+
+    Convergência negativa (item domain ≠ cat domain) vira 0 e não -1; o sinal
+    de penalização absoluta já vive em code_book_bonus → IDF (47:140). Aqui
+    é só sinal de leitura humana / ranking secundário.
+    """
+    if not cb or not exp:
+        return 0.5
+    exp_dom, cb_dom = exp.get("domain"), cb.get("domain")
+    if exp_dom is None or cb_dom is None:
+        return 0.5
+    return 1.0 if _expect_match(exp_dom, cb_dom) else 0.0
+
+
+def match_detail(item: dict, cat: dict) -> dict:
+    """Compute todas as 5 sub-dimensões normalizadas + composite.
+
+    Returns:
+        {
+          domain_match: float [0,1],
+          granularity_match: float [0,1],
+          temporal_match: float [0,1],
+          schema_match: float [0,1],
+          api_match: float [0,1],
+          composite: float [0, sum(weights)],  # ~10 com weights padrão
+        }
+
+    Composite = Σ sub_score × weight. Pesos em MATCH_DETAIL_WEIGHTS.
+    Quando code_book/expects estão vazios, sub-scores defaultam pra 0.5 (neutral)
+    pra não punir items legacy — pero a composite ainda discrimina items
+    enriquecidos no topo.
+    """
+    cb = item.get("code_book") or {}
+    exp = cat.get("expects") or {}
+    sub = {
+        "domain_match": round(domain_match_score(cb, exp), 3),
+        "granularity_match": round(granularity_match_score(cb, exp), 3),
+        "temporal_match": round(temporal_overlap_score(cb, exp), 3),
+        "schema_match": round(schema_match_score(cb, exp), 3),
+        "api_match": round(api_capability_score(cb), 3),
+    }
+    w = MATCH_DETAIL_WEIGHTS
+    composite = (
+        sub["domain_match"] * w["domain"]
+        + sub["granularity_match"] * w["granularity"]
+        + sub["temporal_match"] * w["temporal"]
+        + sub["schema_match"] * w["schema"]
+        + sub["api_match"] * w["api"]
+    )
+    sub["composite"] = round(composite, 3)
+    return sub
+
+
 def build_idf_index(
     cats: dict[str, dict],
     items: list[dict],
