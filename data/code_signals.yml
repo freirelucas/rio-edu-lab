@@ -1,0 +1,204 @@
+# code_signals.yml — Sprint v0.15 Stream 2 (alt) "in-session" GitHub search
+#
+# Per-candidate code_signal derivados de mcp__github__search_code (claude_session,
+# sem GITHUB_TOKEN). Querying schema: DOI literal entre aspas + filter por
+# extensão de código (.py/.R/.ipynb) pra eliminar bib-ref noise.
+#
+# Persistido aqui pra dois usos:
+#   1. Audit trail committed (vs. cache .gitignored): toda busca tem timestamp +
+#      _source pra reprodutibilidade
+#   2. Idempotent apply via analysis/45c_apply_code_signals.py → popula
+#      candidates[].code_signal no funnel YAML
+#
+# Pattern descoberto (top 16 fully-covered + 1 BR fully-covered, todos pré-2010):
+# **zero code hits por DOI literal**. Papers educacionais clássicos (Coleman 1966,
+# Oakes 1985, Bowles-Gintis 1976, Hanushek, Hoxby, Reardon-Owens 2014) não têm
+# replicações Python/R/Jupyter publicadas com referência ao DOI. Bib citations
+# em refs.bib são abundantes (~10-30 hits cada) mas filtramos com extension.
+#
+# Sinal real fica na busca por method-name (não por DOI) — documentado em
+# docs/dados.md "Comunidade no GitHub". Aqui só per-candidate.
+
+version: 1
+searched_at: "2026-06-08"
+description: >-
+  GitHub code search results per candidate (DOI literal + extension filter
+  pra .py/.R/.ipynb). Zero hits é finding honesto — papers educacionais
+  clássicos pré-2010 não têm replications públicas DOI-linkadas. Re-rodar
+  com --refresh quando novos candidates ricos entrarem.
+
+signals:
+
+  # === Top 15 fully-covered (US/intl, todos zero) ===
+
+  W2079872858:
+    doi: 10.1080/0020486680060504
+    paper: "EQUALITY OF EDUCATIONAL OPPORTUNITY (Coleman 1968)"
+    queries:
+      - {q: '"10.1080/0020486680060504" extension:py', total_hits: 0}
+      - {q: '"10.1080/0020486680060504" extension:R', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W2000548691:
+    doi: 10.2307/2070941
+    paper: "Keeping Track: How Schools Structure Inequality (Oakes 1985)"
+    queries:
+      - {q: '"10.2307/2070941" extension:py', total_hits: 0}
+      - {q: '"10.2307/2070941" extension:R', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W2155377858:
+    doi: 10.3102/00028312038003499
+    paper: "Teacher Turnover and Teacher Shortages (Ingersoll 2001)"
+    queries:
+      - {q: '"10.3102/00028312038003499" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W2074037558:
+    doi: 10.2307/145392
+    paper: "Schooling in Capitalist America (Bowles-Gintis 1976)"
+    queries:
+      - {q: '"10.2307/145392" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W2138737045:
+    doi: 10.3102/01623737026003237
+    paper: "How Large Are Teacher Effects? (Nye et al. 2004)"
+    queries:
+      - {q: '"10.3102/01623737026003237" extension:py', total_hits: 0}
+      - {q: '"10.3102/01623737026003237" extension:R', total_hits: 0}
+      - {q: '"10.3102/01623737026003237" extension:ipynb', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W2890691259:
+    doi: 10.3386/w3358
+    paper: "Does School Quality Matter? (NBER Card-Krueger 1990)"
+    queries:
+      - {q: '"10.3386/w3358" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W1973982964:
+    doi: 10.2307/j.ctvjz82r6
+    paper: "Catholic Schools and the Common Good (Bryk et al. 1993)"
+    queries:
+      - {q: '"10.2307/j.ctvjz82r6" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W599441115:
+    doi: 10.5860/choice.43-0465
+    paper: "Class and Schools (Rothstein 2004)"
+    queries:
+      - {q: '"10.5860/choice.43-0465" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W3121461851:
+    doi: 10.1257/000282802762024629
+    paper: "Vouchers for Private Schooling in Colombia (Angrist et al. 2002)"
+    queries:
+      - {q: '"10.1257/000282802762024629" extension:py', total_hits: 0}
+      - {q: '"10.1257/000282802762024629" extension:R', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W2045399310:
+    doi: 10.1093/wbro/10.2.227
+    paper: "Interpreting Recent Research on Schooling (Hanushek 1995)"
+    queries:
+      - {q: '"10.1093/wbro/10.2.227" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W611939667:
+    doi: 10.1093/acprof:oso/9780195168624.001.0001
+    paper: "Keepin' It Real (Carter 2005)"
+    queries:
+      - {q: '"10.1093/acprof:oso/9780195168624.001.0001" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W1969426771:
+    doi: 10.3102/01623737001001002
+    paper: "Meta-Analysis of Class Size (Glass-Smith 1979)"
+    queries:
+      - {q: '"10.3102/01623737001001002" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W2086394294:
+    doi: 10.3102/0002831209333184
+    paper: "Hispanic-White Achievement Gap (Reardon-Galindo 2009)"
+    queries:
+      - {q: '"10.3102/0002831209333184" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W1607450123:
+    doi: 10.2307/2066346
+    paper: "Schooling and Achievement (Sewell 1965)"
+    queries:
+      - {q: '"10.2307/2066346" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  W2052642125:
+    doi: 10.1086/298316
+    paper: "Nonequivalence of High School Equivalents (Cameron-Heckman 1993)"
+    queries:
+      - {q: '"10.1086/298316" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  # === BR paper fully-covered (zero, esperado dado padrão scielo) ===
+
+  W2157760097:
+    doi: 10.1590/s0101-73302007000300016
+    paper: "Eliminação adiada: o ocaso das classes populares (Patto 2007)"
+    queries:
+      - {q: '"10.1590/s0101-73302007000300016" extension:py', total_hits: 0}
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: "2026-06-08"
+    notes: |
+      Padrão scielo (10.1590/*): zero presença no GitHub indexado. Comunidade BR
+      educacional publica em texto, não em código DOI-linkado. Sinal de ecosystem
+      ativo aparece via method-name search (IDEB+bairro = 617 .py hits, SAEB+
+      microdados = 37 hits) — documentado em docs/dados.md.

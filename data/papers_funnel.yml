@@ -9305,6 +9305,18 @@ candidates:
       composite: 6.7
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.1080/0020486680060504
+    paper: EQUALITY OF EDUCATIONAL OPPORTUNITY (Coleman 1968)
+    queries:
+    - q: '"10.1080/0020486680060504" extension:py'
+      total_hits: 0
+    - q: '"10.1080/0020486680060504" extension:R'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W2040493112
   doi: 10.14452/mr-026-03-1974-07_1
   title: Labor and Monopoly Capital
@@ -16035,6 +16047,18 @@ candidates:
       composite: 6.7
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.2307/2070941
+    paper: 'Keeping Track: How Schools Structure Inequality (Oakes 1985)'
+    queries:
+    - q: '"10.2307/2070941" extension:py'
+      total_hits: 0
+    - q: '"10.2307/2070941" extension:R'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W1967609415
   doi: 10.1037/0033-2909.126.2.309
   title: 'The neighborhoods they live in: The effects of neighborhood residence on child and adolescent outcomes.'
@@ -18571,6 +18595,16 @@ candidates:
       composite: 8.0
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.3102/00028312038003499
+    paper: Teacher Turnover and Teacher Shortages (Ingersoll 2001)
+    queries:
+    - q: '"10.3102/00028312038003499" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W2074037558
   doi: 10.2307/145392
   title: 'Schooling in Capitalist America: Educational Reform and the Contradictions of Economic Life'
@@ -18742,6 +18776,16 @@ candidates:
       composite: 6.7
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.2307/145392
+    paper: Schooling in Capitalist America (Bowles-Gintis 1976)
+    queries:
+    - q: '"10.2307/145392" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W1991119101
   doi: 10.1016/c2013-0-10497-7
   title: Studies in Machiavellianism
@@ -38095,6 +38139,20 @@ candidates:
       composite: 8.0
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.3102/01623737026003237
+    paper: How Large Are Teacher Effects? (Nye et al. 2004)
+    queries:
+    - q: '"10.3102/01623737026003237" extension:py'
+      total_hits: 0
+    - q: '"10.3102/01623737026003237" extension:R'
+      total_hits: 0
+    - q: '"10.3102/01623737026003237" extension:ipynb'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W577552570
   doi: 10.1002/0471667196.ess7028.pub2
   title: Review of Economics and Statistics
@@ -44053,6 +44111,16 @@ candidates:
       composite: 5.0
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.3386/w3358
+    paper: Does School Quality Matter? (NBER Card-Krueger 1990)
+    queries:
+    - q: '"10.3386/w3358" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W1608267444
   doi: ''
   title: The Value of the Ability to Deal with Disequilibria
@@ -45859,6 +45927,16 @@ candidates:
       composite: 8.0
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.2307/j.ctvjz82r6
+    paper: Catholic Schools and the Common Good (Bryk et al. 1993)
+    queries:
+    - q: '"10.2307/j.ctvjz82r6" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W2085936836
   doi: 10.1126/science.7792602
   title: Aggressive Behavior and Altered Amounts of Brain Serotonin and Norepinephrine in Mice Lacking MAOA
@@ -76881,6 +76959,16 @@ candidates:
       composite: 8.0
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.5860/choice.43-0465
+    paper: Class and Schools (Rothstein 2004)
+    queries:
+    - q: '"10.5860/choice.43-0465" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W2164075909
   doi: 10.1257/app.1.3.111
   title: 'Early Childhood Intervention and Life-Cycle Skill Development: Evidence from Head Start'
@@ -77340,6 +77428,18 @@ candidates:
       composite: 6.7
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.1257/000282802762024629
+    paper: Vouchers for Private Schooling in Colombia (Angrist et al. 2002)
+    queries:
+    - q: '"10.1257/000282802762024629" extension:py'
+      total_hits: 0
+    - q: '"10.1257/000282802762024629" extension:R'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W2157635736
   doi: 10.1111/1468-0297.00578
   title: Unnatural Experiments? Estimating the Incidence of Endogenous Policies
@@ -82372,6 +82472,16 @@ candidates:
       composite: 8.0
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.1093/wbro/10.2.227
+    paper: Interpreting Recent Research on Schooling (Hanushek 1995)
+    queries:
+    - q: '"10.1093/wbro/10.2.227" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W1494593724
   doi: 10.1017/cbo9780511529320.009
   title: 'Transactional Regulation: The Developmental Ecology of Early Intervention'
@@ -85547,6 +85657,16 @@ candidates:
       composite: 6.7
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.1093/acprof:oso/9780195168624.001.0001
+    paper: Keepin' It Real (Carter 2005)
+    queries:
+    - q: '"10.1093/acprof:oso/9780195168624.001.0001" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W2065341861
   doi: 10.4324/9780203819395
   title: Women, Work and Family
@@ -93239,6 +93359,16 @@ candidates:
       composite: 8.7
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.3102/01623737001001002
+    paper: Meta-Analysis of Class Size (Glass-Smith 1979)
+    queries:
+    - q: '"10.3102/01623737001001002" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W2054588116
   doi: 10.2307/2232673
   title: A Decomposition Analysis of the Trend in UK Income Inequality
@@ -99017,6 +99147,16 @@ candidates:
       composite: 6.7
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.3102/0002831209333184
+    paper: Hispanic-White Achievement Gap (Reardon-Galindo 2009)
+    queries:
+    - q: '"10.3102/0002831209333184" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W2079000942
   doi: 10.2307/2093585
   title: 'Differentials in Marital Instability: 1970'
@@ -106676,6 +106816,16 @@ candidates:
       composite: 8.7
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.2307/2066346
+    paper: Schooling and Achievement (Sewell 1965)
+    queries:
+    - q: '"10.2307/2066346" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W2111067550
   doi: 10.1111/1468-0262.00294
   title: Inference on Regressions with Interval Data on a Regressor or Outcome
@@ -107012,6 +107162,16 @@ candidates:
       composite: 8.0
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.1086/298316
+    paper: Nonequivalence of High School Equivalents (Cameron-Heckman 1993)
+    queries:
+    - q: '"10.1086/298316" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
 - openalex_id: https://openalex.org/W1984131812
   doi: 10.2307/1910996
   title: 'The Returns to Schooling: A Selectivity Bias Approach with a Continuous Choice Variable'
@@ -209780,6 +209940,25 @@ candidates:
       composite: 6.7
   decision: ''
   decision_reason: ''
+  code_signal:
+    doi: 10.1590/s0101-73302007000300016
+    paper: 'Eliminação adiada: o ocaso das classes populares (Patto 2007)'
+    queries:
+    - q: '"10.1590/s0101-73302007000300016" extension:py'
+      total_hits: 0
+    n_code_hits: 0
+    top_repos: []
+    _source: claude_session
+    _classified_at: '2026-06-08'
+    notes: 'Padrão scielo (10.1590/*): zero presença no GitHub indexado. Comunidade BR
+
+      educacional publica em texto, não em código DOI-linkado. Sinal de ecosystem
+
+      ativo aparece via method-name search (IDEB+bairro = 617 .py hits, SAEB+
+
+      microdados = 37 hits) — documentado em docs/dados.md.
+
+      '
 - openalex_id: https://openalex.org/W1978191136
   doi: 10.2307/2938369
   title: Semiparametric Estimation of Monotone and Concave Utility Functions for Polychotomous Choice Models

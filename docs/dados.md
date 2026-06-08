@@ -104,3 +104,35 @@ Modo reverso ("item → papers candidatos") não existe ainda — seria feedback
 Quem precisa baixar dado direto: o portal é ArcGIS Hub padrão, sem documentação oficial do IPP. Os endpoints úteis estão validados em [API do data.rio (referência técnica)](data-rio-api.md).
 
 [API técnica →](data-rio-api.md){ .md-button } [Papers por item →](papers-by-data-rio.md){ .md-button } [Reproduzir pipeline →](reproduzir.md){ .md-button }
+
+## Comunidade no GitHub — quem mais usa esse dado
+
+Sondagem feita via `mcp__github__search_code` em v0.15 (Stream 2 alt). Padrão claro: **busca por DOI de paper retorna ~95% bib refs, ~0% código**. Mas **busca por method-name + linguagem** revela ecosystem ativo. Achados notáveis:
+
+### Engenharia de dados oficial (Prefeitura do Rio)
+
+- **[prefeitura-rio/pipelines](https://github.com/prefeitura-rio/pipelines)** — tubulação oficial da Prefeitura pra ingerir e processar dados.rio (Prefect + DBT + GCS). Contém `dump_datario_flow`, `get_datario_geodataframe`. **A camada de engenharia que está por trás do portal.**
+- **[prefeitura-rio/queries-datario](https://github.com/prefeitura-rio/queries-datario)** — DBT queries oficiais sobre o data lake; publica metadata de volta no data.rio via `metadata_to_data_rio.py`.
+- **[prefeitura-rio/pipelines_rj_cor](https://github.com/prefeitura-rio/pipelines_rj_cor)** — pipelines do Centro de Operações (COR).
+
+### Ecosystem BR de dados educacionais
+
+Sondagem `"SAEB" "microdados" extension:py` → **37 hits**, `"matricula" "INEP" language:Python` → **346 hits**, `"IDEB" "bairro" extension:py` → **617 hits**. Não são replications de papers — são análises/dashboards paralelos. Repos canônicos:
+
+- **[basedosdados/pipelines](https://github.com/basedosdados/pipelines)** — Base dos Dados (o projeto-referência de dados abertos BR). Pipeline `br_inep_saeb_aluno_microdados.py` baixa e processa microdados SAEB.
+- **[Mcp-Brasil/mcp-brasil](https://github.com/Mcp-Brasil/mcp-brasil)** — MCP server expondo INEP, censo escolar, ENEM, SAEB.
+- **[Ignorancia-Zero/curso-ciencia-dados](https://github.com/Ignorancia-Zero/curso-ciencia-dados)** — curso open-source de ciência de dados com aquisição INEP (`censo_matricula.py`).
+- **[tiago-b-freitas/edudb](https://github.com/tiago-b-freitas/edudb)** — biblioteca BR pra ETL de SAEB + INEP.
+- **[gap19/uff-ia-edu](https://github.com/gap19/uff-ia-edu)** — UFF, projeto IA + educação com loader SAEB → Parquet via DuckDB.
+- **[UFPB-Squad-Team/odin-api](https://github.com/UFPB-Squad-Team/odin-api)** + **[odin-etl](https://github.com/UFPB-Squad-Team/odin-etl)** — projeto acadêmico UFPB que computa `BairroEducacaoStats` mesclando IDEB + Censo. **Paralelo conceitual ao rio-edu-lab pra outras cidades.**
+
+### Métodos canônicos com implementação pública
+
+- **[r5py/r5py](https://github.com/r5py/r5py)** — Python wrapper de R5 (rotinas Conveyal). Stack pra Pereira-style accessibility. Pipelines downstream: `Urban-Analytics-Technology-Platform/demoland-engine`, `ITDP/pedestriansfirst`, `Davidavid45/transit-desert-pipeline-extended`.
+- **[cran/OasisR](https://github.com/cran/OasisR)** — pacote CRAN R implementando o índice de segregação ordinal de Reardon (`SegFunctions.R::ordinalseg`). Code-as-truth pra futuras replicações de Reardon-Owens.
+
+### Honest finding sobre paper-DOI search
+
+Sondagem de 16 DOIs (top 15 fully-covered + 1 BR fully-covered): **zero hits em Python/R/Jupyter** quando filtrado por extensão de código. Catálogo de 7 papers com DOI: idem. Papers educacionais clássicos pré-2010 (Coleman 1966, Oakes 1985, Hanushek, Hoxby, Reardon-Owens 2014, Patto 2007) não têm replications DOI-linkadas indexadas no GitHub público. A comunidade brasileira de educação publica em texto, não em código DOI-citado. Sinal vivo está em method-name + ecosystem (acima).
+
+Auditoria reproduzível: [`data/code_signals.yml`](https://github.com/freirelucas/rio-edu-lab/blob/main/data/code_signals.yml) (commitado, 16 queries + 0 hits documentadas).
