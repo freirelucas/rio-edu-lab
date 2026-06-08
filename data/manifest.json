@@ -2492,7 +2492,29 @@
         "Escolas",
         "Escolas Municipais"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "escola",
+        "spatial_granularity": "ponto",
+        "temporal_coverage_parsed": {
+          "start_year": null,
+          "end_year": 2023,
+          "frequency": "atualizado"
+        },
+        "api_capability": "feature_service",
+        "key_variables": [
+          "nome_escola",
+          "cre",
+          "rede",
+          "geometria_ponto",
+          "edi",
+          "creche"
+        ],
+        "confidence": 0.92,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "65f9c4de32ee4beca7f5dfeab4892020",
@@ -6410,7 +6432,26 @@
         "ATLAS ESCOLAR",
         "ATLAS"
       ],
-      "owner": "mandarinofc"
+      "owner": "mandarinofc",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "escola",
+        "spatial_granularity": "bairro",
+        "temporal_coverage_parsed": {
+          "start_year": 2018,
+          "end_year": 2018,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "escola",
+          "atlas",
+          "geografia_escolar"
+        ],
+        "confidence": 0.75,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "c24ea4f11e1a469fbec9a096d7831cee",
@@ -17173,7 +17214,26 @@
         "Educação",
         "CRE"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "cre",
+        "spatial_granularity": "cre",
+        "temporal_coverage_parsed": {
+          "start_year": null,
+          "end_year": null,
+          "frequency": "atualizado"
+        },
+        "api_capability": "feature_service",
+        "key_variables": [
+          "nome_cre",
+          "codigo_cre",
+          "geometria_poligono"
+        ],
+        "confidence": 0.9,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "17e387a9ea9c4771ae2dd7c4252c898c",
@@ -20194,7 +20254,26 @@
       "tags": [
         "Educação Básica"
       ],
-      "owner": "backup_ipp"
+      "owner": "backup_ipp",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "rp",
+        "spatial_granularity": "rp",
+        "temporal_coverage_parsed": {
+          "start_year": 2007,
+          "end_year": 2023,
+          "frequency": "bienal"
+        },
+        "api_capability": "feature_service",
+        "key_variables": [
+          "ideb",
+          "ano",
+          "rp"
+        ],
+        "confidence": 0.85,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "4a392af2eeb5421eaff9f0feab093da4",
@@ -21817,7 +21896,27 @@
         "Educação",
         "Educação básica"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "aluno",
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": 2010,
+          "end_year": 2022,
+          "frequency": "anual"
+        },
+        "api_capability": "static_file",
+        "key_variables": [
+          "alunos_por_turma",
+          "ensino_fundamental",
+          "ensino_medio",
+          "dependencia"
+        ],
+        "confidence": 0.78,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "373ade2143ef46acb5ca7c7c53e624e2",
@@ -29857,7 +29956,26 @@
       "tags": [
         "Educação"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "escola",
+        "spatial_granularity": "ponto",
+        "temporal_coverage_parsed": {
+          "start_year": null,
+          "end_year": null,
+          "frequency": "atualizado"
+        },
+        "api_capability": "feature_service",
+        "key_variables": [
+          "nome_escola",
+          "geometria_ponto",
+          "rede_publica"
+        ],
+        "confidence": 0.8,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "04444dcc8cbd49c082eb6b1620c0f602",
@@ -29965,7 +30083,26 @@
       "tags": [
         "Educação"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "escola",
+        "spatial_granularity": "ponto",
+        "temporal_coverage_parsed": {
+          "start_year": null,
+          "end_year": null,
+          "frequency": "atualizado"
+        },
+        "api_capability": "feature_service",
+        "key_variables": [
+          "nome_creche",
+          "endereco",
+          "geometria_ponto"
+        ],
+        "confidence": 0.85,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "09d537737fa94001a16c8f67e6560fdd",
@@ -68196,7 +68333,26 @@
       "tags": [
         "Educação"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "rp",
+        "spatial_granularity": "rp",
+        "temporal_coverage_parsed": {
+          "start_year": 2007,
+          "end_year": 2023,
+          "frequency": "bienal"
+        },
+        "api_capability": "feature_service",
+        "key_variables": [
+          "ideb",
+          "ano",
+          "rp"
+        ],
+        "confidence": 0.82,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "6f906997440d4b88938aef9a9b713896",
@@ -68402,7 +68558,26 @@
         "Educação",
         "Escolaridade da população"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "municipio",
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": 2013,
+          "end_year": 2013,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "frequencia_escolar",
+          "taxa_analfabetismo",
+          "atraso_escolar"
+        ],
+        "confidence": 0.65,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "a89362bd431b4ac0b9c3616eea08295e",
@@ -69560,7 +69735,22 @@
         "Educação",
         "Escolaridade da população"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": null,
+        "spatial_granularity": null,
+        "temporal_coverage_parsed": {
+          "start_year": 2002,
+          "end_year": 2002,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": null,
+        "confidence": 0.3,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "a57a2d923823491b82cbd44e9b3c6441",
@@ -69803,7 +69993,26 @@
         "Educação",
         "Educação básica"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "bairro",
+        "spatial_granularity": "bairro",
+        "temporal_coverage_parsed": {
+          "start_year": 2000,
+          "end_year": 2010,
+          "frequency": "pontual"
+        },
+        "api_capability": "static_file",
+        "key_variables": [
+          "taxa_analfabetismo",
+          "faixa_etaria",
+          "bairro"
+        ],
+        "confidence": 0.9,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "ecfa86b57fc74247857221a40a2dd76b",
@@ -69819,7 +70028,26 @@
         "Educação",
         "Educação básica"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "aluno",
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": 2000,
+          "end_year": 2010,
+          "frequency": "anual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "matricula",
+          "ensino_fundamental",
+          "rede_municipal"
+        ],
+        "confidence": 0.72,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "2550200112154da5b0766ff16ef7214d",
@@ -70044,7 +70272,27 @@
         "Educação",
         "Educação básica"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "aluno",
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": 2010,
+          "end_year": 2012,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "asq3",
+          "faixa_etaria",
+          "creche",
+          "avaliacao"
+        ],
+        "confidence": 0.72,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "0867b85ce5964ad38819127788591c13",
@@ -70718,7 +70966,25 @@
         "Educação",
         "Educação básica"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": null,
+        "spatial_granularity": null,
+        "temporal_coverage_parsed": {
+          "start_year": 2006,
+          "end_year": 2006,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "historia_educacao",
+          "manifesto_pioneiros"
+        ],
+        "confidence": 0.4,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "733b4aedffb548968c775fd753d2b8c3",
@@ -71734,7 +72000,27 @@
         "Educação",
         "Educação básica"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "escola",
+        "spatial_granularity": "ap",
+        "temporal_coverage_parsed": {
+          "start_year": 2010,
+          "end_year": 2023,
+          "frequency": "anual"
+        },
+        "api_capability": "static_file",
+        "key_variables": [
+          "numero_escolas",
+          "tipo_escola",
+          "ap",
+          "edi"
+        ],
+        "confidence": 0.85,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "4be4d4b03ce9412f90b1a5b321fca347",
@@ -72054,7 +72340,25 @@
         "Educação",
         "Educação básica"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "escola",
+        "spatial_granularity": null,
+        "temporal_coverage_parsed": {
+          "start_year": 2001,
+          "end_year": 2001,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "diretor_escola",
+          "gestao"
+        ],
+        "confidence": 0.5,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "141f7d6c66414d588b5d428ac5f61812",
@@ -75427,7 +75731,26 @@
       "tags": [
         "Educação"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": null,
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": 2001,
+          "end_year": 2001,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "violencia",
+          "paz",
+          "escola"
+        ],
+        "confidence": 0.45,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "e3f3b51a8c4e49b99e580cc3227ef805",
@@ -75899,7 +76222,26 @@
         "Educação",
         "Escolaridade da população"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "bairro",
+        "spatial_granularity": "bairro",
+        "temporal_coverage_parsed": {
+          "start_year": 1991,
+          "end_year": 2000,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "taxa_analfabetismo",
+          "ano",
+          "bairro"
+        ],
+        "confidence": 0.78,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "4d0be49a9e9347f885d8ed42fc154322",
@@ -76550,7 +76892,26 @@
       "tags": [
         "Educação"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "escola",
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": null,
+          "end_year": null,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "diretor",
+          "violencia",
+          "escola_municipal"
+        ],
+        "confidence": 0.55,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "eacd534830644097930a72c220a33daf",
@@ -76566,7 +76927,22 @@
         "Educação",
         "Escolaridade da população"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": null,
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": 2001,
+          "end_year": 2001,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": null,
+        "confidence": 0.4,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "013723f1d3e947afa6aba9c9e88a219e",
@@ -76613,7 +76989,26 @@
       "tags": [
         "Educação"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "aluno",
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": 2012,
+          "end_year": 2012,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "pense",
+          "saude_escolar",
+          "nono_ano"
+        ],
+        "confidence": 0.6,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "897465c500e240b8b0ed4855a40e209f",
@@ -76931,7 +77326,26 @@
         "Educação",
         "Escolaridade da população"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "social",
+        "unit_of_observation": "domicilio",
+        "spatial_granularity": "bairro",
+        "temporal_coverage_parsed": {
+          "start_year": null,
+          "end_year": null,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "escolaridade",
+          "chefe_domicilio",
+          "bairro"
+        ],
+        "confidence": 0.65,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "bf2ca35430024d9e80daa8e1d28cc443",
@@ -77544,7 +77958,24 @@
         "Educação",
         "Educação básica"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "aluno",
+        "spatial_granularity": null,
+        "temporal_coverage_parsed": {
+          "start_year": 1994,
+          "end_year": 2001,
+          "frequency": "anual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "educacao_infantil"
+        ],
+        "confidence": 0.65,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "3f25377d08bb461da3f89386fcc0f88d",
@@ -78981,7 +79412,25 @@
       "tags": [
         "Educação"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "professor",
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": null,
+          "end_year": null,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "professor",
+          "educador"
+        ],
+        "confidence": 0.55,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "a74a7664ae29402e8247a46c13904e48",
@@ -79137,7 +79586,26 @@
       "tags": [
         "Educação"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "escola",
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": 2012,
+          "end_year": 2012,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "pense",
+          "ambiente_escolar",
+          "nono_ano"
+        ],
+        "confidence": 0.65,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "6e1377005cc34422a1a335bf2db69930",
@@ -79447,7 +79915,25 @@
         "Educação",
         "Educação básica"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": null,
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": 2003,
+          "end_year": 2003,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "jovens",
+          "politica_publica"
+        ],
+        "confidence": 0.4,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "e76489b493c84778b1b5daa318b00900",
@@ -79735,7 +80221,22 @@
       "tags": [
         "Educação"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": null,
+        "spatial_granularity": null,
+        "temporal_coverage_parsed": {
+          "start_year": 2001,
+          "end_year": 2001,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": null,
+        "confidence": 0.3,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "51a59a06ae12474b9975a52c2fcd55e2",
@@ -82083,7 +82584,26 @@
       "tags": [
         "Educação"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "escola",
+        "spatial_granularity": null,
+        "temporal_coverage_parsed": {
+          "start_year": null,
+          "end_year": null,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "prevencao",
+          "escolas_municipais",
+          "dependencia_quimica"
+        ],
+        "confidence": 0.45,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "4e2240c11f9e4e1996a9b3000511de26",
@@ -106232,7 +106752,25 @@
         "Educação",
         "Educação básica"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": "aluno",
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": null,
+          "end_year": null,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "universalizacao",
+          "ensino_fundamental"
+        ],
+        "confidence": 0.55,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "1fe459d8120b48ebaac28065e9c74d36",
@@ -106385,7 +106923,26 @@
         "Educação",
         "Escolaridade da população"
       ],
-      "owner": "PrefeituraRio"
+      "owner": "PrefeituraRio",
+      "code_book": {
+        "domain": "educacao-basica",
+        "unit_of_observation": null,
+        "spatial_granularity": "municipio",
+        "temporal_coverage_parsed": {
+          "start_year": 1991,
+          "end_year": 2006,
+          "frequency": "pontual"
+        },
+        "api_capability": "document_link",
+        "key_variables": [
+          "censo",
+          "pnad",
+          "escolaridade"
+        ],
+        "confidence": 0.55,
+        "_source": "claude_session",
+        "_classified_at": "2026-06-08"
+      }
     },
     {
       "id": "249dfa51aed84bfcbe35005635be4026",

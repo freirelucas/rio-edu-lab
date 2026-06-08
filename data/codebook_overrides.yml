@@ -1,0 +1,387 @@
+# codebook_overrides.yml — Sprint v0.15 (alt) "in-session" backfill
+#
+# Cada entrada substitui/popula `item.code_book` em data/manifest.json via
+# analysis/49b_apply_codebook_overrides.py. Schema dos campos espelha o
+# EXTRACT_CODEBOOK_TOOL de analysis/49_codebook_backfill.py:90-126.
+#
+# _source distingue proveniência:
+#   - claude_session: classificado por Claude na sessão Claude Code (este
+#     batch, scope top-30 edu-tagged por numViews)
+#   - claude_api: futuro 49_codebook_backfill.py com ANTHROPIC_API_KEY
+#   - human: curado pelo Lucas
+#
+# Confidence é estimativa honesta. < 0.5 = "wild guess from sparse metadata";
+# a próxima rodada com API key pode `--refresh` esses.
+
+version: 1
+description: >-
+  Overrides de code_book aplicados ao manifest.json. Top-30 edu-tagged items
+  por numViews, classificados inline na sessão Claude Code v0.15.
+
+overrides:
+
+  # === Feature Services + Web Maps (api_capability=feature_service) ===
+
+  0a220ea7972449e39a28210dd317f636:
+    # Escolas Municipais — Camada SME, 114.236 views
+    domain: educacao-basica
+    unit_of_observation: escola
+    spatial_granularity: ponto
+    temporal_coverage_parsed: {start_year: null, end_year: 2023, frequency: atualizado}
+    api_capability: feature_service
+    key_variables: [nome_escola, cre, rede, geometria_ponto, edi, creche]
+    confidence: 0.92
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  8397b3b090794488995be72c05e3ec61:
+    # Mapa Digital de Educação — Web Mapping App (visualizador SME)
+    domain: educacao-basica
+    unit_of_observation: escola
+    spatial_granularity: ponto
+    temporal_coverage_parsed: {start_year: null, end_year: null, frequency: atualizado}
+    api_capability: feature_service
+    key_variables: [nome_escola, geometria_ponto, rede_publica]
+    confidence: 0.80
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  fbfcbfae92654e248bdf1452cf260626:
+    # Limites CRE — 11 CREs como polígonos
+    domain: educacao-basica
+    unit_of_observation: cre
+    spatial_granularity: cre
+    temporal_coverage_parsed: {start_year: null, end_year: null, frequency: atualizado}
+    api_capability: feature_service
+    key_variables: [nome_cre, codigo_cre, geometria_poligono]
+    confidence: 0.90
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  51d61bdff7a8439db0ca72250a06d743:
+    # IDEB-Índice de Desenvolvimento da Educação Básica (FS, URL com IDEB_RP)
+    domain: educacao-basica
+    unit_of_observation: rp
+    spatial_granularity: rp
+    temporal_coverage_parsed: {start_year: 2007, end_year: 2023, frequency: bienal}
+    api_capability: feature_service
+    key_variables: [ideb, ano, rp]
+    confidence: 0.82
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  84f1f565c6904d7eb3808a1e37caa28c:
+    # IDEB_RP_RIO — explícito sobre Regiões de Planejamento
+    domain: educacao-basica
+    unit_of_observation: rp
+    spatial_granularity: rp
+    temporal_coverage_parsed: {start_year: 2007, end_year: 2023, frequency: bienal}
+    api_capability: feature_service
+    key_variables: [ideb, ano, rp]
+    confidence: 0.85
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  1a351530af074c94984ae1a681fe1cdf:
+    # Creches Conveniadas — pontos com a Prefeitura
+    domain: educacao-basica
+    unit_of_observation: escola
+    spatial_granularity: ponto
+    temporal_coverage_parsed: {start_year: null, end_year: null, frequency: atualizado}
+    api_capability: feature_service
+    key_variables: [nome_creche, endereco, geometria_ponto]
+    confidence: 0.85
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  # === Static files (Excel) — granular por bairro/AP ===
+
+  fb6ece5b0fc14c18839e9f510fcae09b:
+    # Taxa de analfabetos por faixas etárias, por Bairros — Excel
+    domain: educacao-basica
+    unit_of_observation: bairro
+    spatial_granularity: bairro
+    temporal_coverage_parsed: {start_year: 2000, end_year: 2010, frequency: pontual}
+    api_capability: static_file
+    key_variables: [taxa_analfabetismo, faixa_etaria, bairro]
+    confidence: 0.90
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  49eb3240501f4b579fdd2bd3c9e948d3:
+    # Ensino Fundamental e Médio - Alunos por turma — Excel, snippet 2022
+    domain: educacao-basica
+    unit_of_observation: aluno
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: 2010, end_year: 2022, frequency: anual}
+    api_capability: static_file
+    key_variables: [alunos_por_turma, ensino_fundamental, ensino_medio, dependencia]
+    confidence: 0.78
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  ae64616d363e48c897818b640e2a22cd:
+    # Unidades escolares por AP — Excel
+    domain: educacao-basica
+    unit_of_observation: escola
+    spatial_granularity: ap
+    temporal_coverage_parsed: {start_year: 2010, end_year: 2023, frequency: anual}
+    api_capability: static_file
+    key_variables: [numero_escolas, tipo_escola, ap, edi]
+    confidence: 0.85
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  # === PDFs (document_link) — análises agregadas por município ===
+
+  e92c1cbcc33646859c8c24212a870029:
+    # Cadernos do Rio - Educação (2013)
+    domain: educacao-basica
+    unit_of_observation: municipio
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: 2013, end_year: 2013, frequency: pontual}
+    api_capability: document_link
+    key_variables: [frequencia_escolar, taxa_analfabetismo, atraso_escolar]
+    confidence: 0.65
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  6f78e3e6689649199daa14828ce02754:
+    # Rio Estudos 26 - cultura da paz e violência (2001) — edu tangential
+    domain: educacao-basica
+    unit_of_observation: null
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: 2001, end_year: 2001, frequency: pontual}
+    api_capability: document_link
+    key_variables: [violencia, paz, escola]
+    confidence: 0.45
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  0a79b57e35824eae8d9676867a997b42:
+    # Coleção Estudos Cariocas - Analfabetismo 1991/2000
+    domain: educacao-basica
+    unit_of_observation: bairro
+    spatial_granularity: bairro
+    temporal_coverage_parsed: {start_year: 1991, end_year: 2000, frequency: pontual}
+    api_capability: document_link
+    key_variables: [taxa_analfabetismo, ano, bairro]
+    confidence: 0.78
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  9862d443bd9e48cbab9b8d739e25b45c:
+    # NT 31 - Pesquisa Nacional Saúde Escolar (PeNSE 2012)
+    domain: educacao-basica
+    unit_of_observation: aluno
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: 2012, end_year: 2012, frequency: pontual}
+    api_capability: document_link
+    key_variables: [pense, saude_escolar, nono_ano]
+    confidence: 0.60
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  7f525f38c32542d3bcecb5a2c35deb94:
+    # NT 25 - Avaliação creches municipais (ASQ-3, 2010-201X)
+    domain: educacao-basica
+    unit_of_observation: aluno
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: 2010, end_year: 2012, frequency: pontual}
+    api_capability: document_link
+    key_variables: [asq3, faixa_etaria, creche, avaliacao]
+    confidence: 0.72
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  eacd534830644097930a72c220a33daf:
+    # Rio Estudos 3 - educação causas e efeitos (2001) — ensaio vago
+    domain: educacao-basica
+    unit_of_observation: null
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: 2001, end_year: 2001, frequency: pontual}
+    api_capability: document_link
+    key_variables: null
+    confidence: 0.40
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  7cc6fcf8d964460b8d3dfc6e711ce721:
+    # Rio Estudos 72 - sociedade educação Espanha (2002) — low Rio relevance
+    domain: educacao-basica
+    unit_of_observation: null
+    spatial_granularity: null
+    temporal_coverage_parsed: {start_year: 2002, end_year: 2002, frequency: pontual}
+    api_capability: document_link
+    key_variables: null
+    confidence: 0.30
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  3e60f3b9de6a4c38b5e813089b7adebf:
+    # Coleção Estudos Cariocas - Dirigentes escolas e violência
+    domain: educacao-basica
+    unit_of_observation: escola
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: null, end_year: null, frequency: pontual}
+    api_capability: document_link
+    key_variables: [diretor, violencia, escola_municipal]
+    confidence: 0.55
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  ecfa86b57fc74247857221a40a2dd76b:
+    # NT 12 - Evolução das matrículas rede municipal (até 2010)
+    domain: educacao-basica
+    unit_of_observation: aluno
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: 2000, end_year: 2010, frequency: anual}
+    api_capability: document_link
+    key_variables: [matricula, ensino_fundamental, rede_municipal]
+    confidence: 0.72
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  3f3655c357d84dc8bd9df60b09a97a66:
+    # Coleção Estudos Cariocas - Universalização do ensino
+    domain: educacao-basica
+    unit_of_observation: aluno
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: null, end_year: null, frequency: pontual}
+    api_capability: document_link
+    key_variables: [universalizacao, ensino_fundamental]
+    confidence: 0.55
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  3603b8924fa14868ac545eca7c73950d:
+    # Atlas Escolar (2018) — IPP cartográfico
+    domain: educacao-basica
+    unit_of_observation: escola
+    spatial_granularity: bairro
+    temporal_coverage_parsed: {start_year: 2018, end_year: 2018, frequency: pontual}
+    api_capability: document_link
+    key_variables: [escola, atlas, geografia_escolar]
+    confidence: 0.75
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  a0aa37fa8e6f43f59bd65c7834c650cc:
+    # Coleção Estudos Cariocas - Rio na virada século 1991-2006
+    domain: educacao-basica
+    unit_of_observation: null
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: 1991, end_year: 2006, frequency: pontual}
+    api_capability: document_link
+    key_variables: [censo, pnad, escolaridade]
+    confidence: 0.55
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  93722c0217db42969d7c6c53deaa3c92:
+    # Coleção Estudos Cariocas - Escolaridade dos chefes de domicílio
+    domain: social
+    unit_of_observation: domicilio
+    spatial_granularity: bairro
+    temporal_coverage_parsed: {start_year: null, end_year: null, frequency: pontual}
+    api_capability: document_link
+    key_variables: [escolaridade, chefe_domicilio, bairro]
+    confidence: 0.65
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  c648588ad2674507a41b2c802131a3c2:
+    # Rio Estudos 36 - Educação Infantil Brasil 1994-2001
+    domain: educacao-basica
+    unit_of_observation: aluno
+    spatial_granularity: null
+    temporal_coverage_parsed: {start_year: 1994, end_year: 2001, frequency: anual}
+    api_capability: document_link
+    key_variables: [educacao_infantil]
+    confidence: 0.65
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  1403069227b14a64a41d209cdaf81e29:
+    # Rio Estudos 20 - integração justiça polícia escola França (2001)
+    domain: educacao-basica
+    unit_of_observation: null
+    spatial_granularity: null
+    temporal_coverage_parsed: {start_year: 2001, end_year: 2001, frequency: pontual}
+    api_capability: document_link
+    key_variables: null
+    confidence: 0.30
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  30ce1f4ac9534ec8ba18c23d6d5057ce:
+    # Rio Estudos 227 - precursores educação nova (2006)
+    domain: educacao-basica
+    unit_of_observation: null
+    spatial_granularity: null
+    temporal_coverage_parsed: {start_year: 2006, end_year: 2006, frequency: pontual}
+    api_capability: document_link
+    key_variables: [historia_educacao, manifesto_pioneiros]
+    confidence: 0.40
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  1004354d02c44b818dc7c32ce3c2e4a5:
+    # Coleção Estudos Cariocas - Aos mestres com reconhecimento (educadores)
+    domain: educacao-basica
+    unit_of_observation: professor
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: null, end_year: null, frequency: pontual}
+    api_capability: document_link
+    key_variables: [professor, educador]
+    confidence: 0.55
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  6d001889b8c7435aa108a503f19110a8:
+    # NT 29 - PeNSE 2012 Ambiente Escolar
+    domain: educacao-basica
+    unit_of_observation: escola
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: 2012, end_year: 2012, frequency: pontual}
+    api_capability: document_link
+    key_variables: [pense, ambiente_escolar, nono_ano]
+    confidence: 0.65
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  1013ac66372a40de9d6bae43b66ff198:
+    # Rio Estudos 30 - papel do diretor (2001)
+    domain: educacao-basica
+    unit_of_observation: escola
+    spatial_granularity: null
+    temporal_coverage_parsed: {start_year: 2001, end_year: 2001, frequency: pontual}
+    api_capability: document_link
+    key_variables: [diretor_escola, gestao]
+    confidence: 0.50
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  76955c4b2cfc488d879238eac09c75a2:
+    # Rio Estudos 88 - município prioriza ações para jovens (2003)
+    domain: educacao-basica
+    unit_of_observation: null
+    spatial_granularity: municipio
+    temporal_coverage_parsed: {start_year: 2003, end_year: 2003, frequency: pontual}
+    api_capability: document_link
+    key_variables: [jovens, politica_publica]
+    confidence: 0.40
+    _source: claude_session
+    _classified_at: "2026-06-08"
+
+  620e401f3a4a4779b49d3439f263a2b5:
+    # Rio Estudos 172 - prevenção química nas escolas municipais
+    domain: educacao-basica
+    unit_of_observation: escola
+    spatial_granularity: null
+    temporal_coverage_parsed: {start_year: null, end_year: null, frequency: pontual}
+    api_capability: document_link
+    key_variables: [prevencao, escolas_municipais, dependencia_quimica]
+    confidence: 0.45
+    _source: claude_session
+    _classified_at: "2026-06-08"
