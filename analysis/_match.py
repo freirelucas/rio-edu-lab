@@ -78,6 +78,45 @@ EDU_KEYWORDS = frozenset({
 })
 
 
+# v0.15 — Expansão do funil pra public policy + economics.
+# Tokens canônicos de avaliação de política pública + identificação causal +
+# nomes de programas famosos. Combinados com EDU_KEYWORDS no gate do Stage 2
+# (46_extract_requirements.py) — paper passa se `edu_signal + policy_signal
+# >= --edu-min` (default 2).
+#
+# Filosofia: bigrams + termos discriminativos. Evita unigrams genéricos
+# ("policy", "evaluation" → matcheriam monetary policy / drug evaluation).
+# tokenize_bigrams produz "policy evaluation" como token único, então
+# bigrams aparecem aqui na forma "a b" (space-separated).
+POLICY_KEYWORDS = frozenset({
+    # EN — métodos canônicos (bigrams)
+    "policy evaluation", "program evaluation", "impact evaluation",
+    "causal effect", "treatment effect", "treatment effects",
+    "randomized controlled", "random assignment", "natural experiment",
+    "regression discontinuity", "instrumental variable", "instrumental variables",
+    "synthetic control", "propensity score", "score matching",
+    "intent treat",  # "intent-to-treat" tokeniza assim
+    "average treatment", "local average",  # ATE / LATE
+    # EN — tipos de programa
+    "cash transfer", "conditional cash", "transfer program",
+    "welfare reform", "minimum wage", "social program",
+    "public policy", "policy intervention",
+    # EN — programas famosos
+    "progresa", "oportunidades", "head start", "jpal",
+    # EN — métodos/conceitos discriminativos (unigrams cuidadosos)
+    "endogeneity", "exogenous", "endogenous", "heterogeneous treatment",
+    "compliers", "noncompliance",
+    # PT (accent-stripped)
+    "politica publica", "politicas publicas",
+    "avaliacao impacto", "avaliacao politica",
+    "transferencia renda", "bolsa familia",
+    "intervencao", "intervencoes",
+    "programa social", "programa publico",
+    "saude familia",  # PSF
+    "efeito causal", "efeito tratamento",
+})
+
+
 def strip_accents(s: str) -> str:
     nfkd = unicodedata.normalize("NFKD", s)
     return "".join(c for c in nfkd if not unicodedata.combining(c))
@@ -117,6 +156,31 @@ def edu_signal(text: str) -> int:
     """
     tokens = tokenize(text)
     return sum(1 for kw in EDU_KEYWORDS if kw in tokens)
+
+
+def policy_signal(text: str) -> int:
+    """Count of POLICY_KEYWORDS hits in text (tokenized + bigrams).
+
+    Counterpart to `edu_signal` para o escopo expandido (v0.15) que inclui
+    public policy evaluation + economics. Bigrams ("policy evaluation",
+    "treatment effect", etc.) precisam ser computados via tokenize_bigrams —
+    senão "policy" sozinho nunca match.
+
+    O Stage 2 (46_extract_requirements) usa `edu_signal + policy_signal >=
+    edu_min` (default 2) — paper passa se tiver sinal edu OU policy >= 2.
+    """
+    tokens = tokenize_bigrams(text)
+    return sum(1 for kw in POLICY_KEYWORDS if kw in tokens)
+
+
+def domain_signal(text: str) -> int:
+    """Combined edu + policy signal — primary Stage-2 gate (v0.15+).
+
+    Conveniência pra 46_extract_requirements: substitui o gate antigo
+    `edu_signal >= 2` por `domain_signal >= 2`, sem alocar 2 chamadas
+    redundantes a tokenize().
+    """
+    return edu_signal(text) + policy_signal(text)
 
 
 def category_text(cat: dict) -> str:

@@ -177,3 +177,52 @@ seeds:
   - openalex_id: W2101834443
     label: "hansen-1959 — How Accessibility Shapes Land Use"
     track: outsider
+
+  # ============================================================
+  # Public policy evaluation + econometrics canônicos (v0.15)
+  # Expansão do escopo: academia global, métodos causais, avaliação
+  # de programa público + economics. Anchors metodológicos puxam
+  # corpus de papers que aplicam esses métodos em qualquer domínio
+  # — o gate domain_signal (edu+policy) decide quem entra.
+  # track: mainstream → backward + forward.
+  # ============================================================
+
+  - openalex_id: W2150291618
+    label: "rosenbaum-rubin-1983 — The Central Role of the Propensity Score (Biometrika)"
+    track: mainstream
+
+  - openalex_id: W2104780889
+    label: "imbens-angrist-1994 — Identification and Estimation of LATE (Econometrica)"
+    track: mainstream
+
+  - openalex_id: W2138290169
+    label: "angrist-imbens-rubin-1996 — Causal Effects Using IV (JASA)"
+    track: mainstream
+
+  - openalex_id: W2066735350
+    label: "heckman-ichimura-todd-1997 — Matching As An Econometric Evaluation Estimator (RES)"
+    track: mainstream
+
+  - openalex_id: W3125057276
+    label: "abadie-diamond-hainmueller-2010 — Synthetic Control Methods (JASA)"
+    track: mainstream
+
+  - openalex_id: W2114346262
+    label: "card-1990 — The Impact of the Mariel Boatlift (ILR Review)"
+    track: mainstream
+
+  - openalex_id: W3123707900
+    label: "card-krueger-1994 — Minimum Wages and Employment (AER)"
+    track: mainstream
+
+  - openalex_id: W3122958054
+    label: "imbens-lemieux-2008 — Regression Discontinuity Designs: A Guide to Practice (JoE)"
+    track: mainstream
+
+  - openalex_id: W2084509705
+    label: "gertler-2004 — Do Conditional Cash Transfers Improve Child Health (PROGRESA)"
+    track: mainstream
+
+  - openalex_id: W2891536942
+    label: "banerjee-duflo-2007 — Remedying Education: Two RCT in India (QJE)"
+    track: mainstream

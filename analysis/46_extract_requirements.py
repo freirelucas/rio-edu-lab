@@ -43,7 +43,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _match import (  # noqa: E402
     build_idf_index,
     candidate_text,
-    edu_signal,
+    domain_signal,
     load_taxonomy,
     tokenize_bigrams,
     weighted_score,
@@ -84,7 +84,7 @@ def main() -> int:
     ap.add_argument("--min-score", type=float, default=DEFAULT_MIN_SCORE,
                     help=f"Minimum score to include (default {DEFAULT_MIN_SCORE})")
     ap.add_argument("--edu-min", type=int, default=DEFAULT_EDU_MIN,
-                    help=f"Minimum edu_signal hits for paper to be scored (default {DEFAULT_EDU_MIN})")
+                    help=f"Minimum domain_signal (edu+policy) hits for paper to be scored (default {DEFAULT_EDU_MIN})")
     ap.add_argument("--force", action="store_true",
                     help="Recompute suggestions even when already present")
     args = ap.parse_args()
@@ -118,7 +118,7 @@ def main() -> int:
         if c.get("suggested_requirements") and not args.force:
             n_skipped += 1
             continue
-        if edu_signal(candidate_text(c)) < args.edu_min:
+        if domain_signal(candidate_text(c)) < args.edu_min:
             c["suggested_requirements"] = []
             n_off_topic += 1
             continue
@@ -140,7 +140,7 @@ def main() -> int:
     print("\n=== summary ===")
     print(f"  scored: {n_scored}")
     print(f"  empty (passed edu-filter, no category above min-score): {n_empty}")
-    print(f"  off-topic (edu_signal < {args.edu_min}): {n_off_topic}")
+    print(f"  off-topic (domain_signal < {args.edu_min}): {n_off_topic}")
     print(f"  skipped (already had suggestions): {n_skipped}")
 
     if n_scored == 0 and n_empty == 0:

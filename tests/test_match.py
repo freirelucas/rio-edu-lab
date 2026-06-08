@@ -19,7 +19,9 @@ from _match import (  # noqa: E402
     build_idf_index,
     code_book_bonus,
     compute_idf,
+    domain_signal,
     edu_signal,
+    policy_signal,
     tokenize,
     tokenize_bigrams,
     weighted_score,
@@ -67,6 +69,46 @@ def test_edu_signal_counts_domain_terms():
     assert edu_signal("blood pressure cardiac arrest") == 0
     # Affiliation noise não dispara mais (regression guard contra v0.14 fix):
     assert edu_signal("London School of Economics University of Chicago Press") == 0
+
+
+def test_policy_signal_counts_method_bigrams():
+    """v0.15: policy_signal usa bigrams (tokenize_bigrams) pra evitar 'policy'
+    sozinho fire em monetary policy / drug policy. Bigrams discriminativos."""
+    # Bigrams canônicos
+    assert policy_signal("policy evaluation impact evaluation treatment effect") >= 3
+    assert policy_signal("regression discontinuity instrumental variable synthetic control") >= 3
+    # Programa famoso
+    assert policy_signal("PROGRESA cash transfer") >= 2  # progresa + cash transfer
+    # Sem hits genéricos
+    assert policy_signal("monetary policy effectiveness in 1980s") == 0  # "policy" sozinho não fire
+    assert policy_signal("biological treatment of cancer") == 0  # "treatment" sozinho não fire
+    # PT
+    assert policy_signal("politica publica avaliacao impacto bolsa familia") >= 3
+
+
+def test_policy_signal_zero_in_pure_medical():
+    """Regression guard: medical/biology papers não devem disparar policy."""
+    assert policy_signal("randomized clinical trial of drug efficacy") == 0
+    # Note: "randomized controlled" é o bigram alvo, não "randomized clinical"
+    assert policy_signal("treatment of pneumonia in elderly patients") == 0
+
+
+def test_domain_signal_is_sum():
+    """domain_signal = edu + policy. Conveniência pra o Stage 2 gate."""
+    text = "schools achievement program evaluation"
+    # schools (edu) + achievement (edu) + program evaluation (policy bigram)
+    assert domain_signal(text) == edu_signal(text) + policy_signal(text)
+    assert domain_signal(text) >= 3
+
+
+def test_domain_signal_rescues_pure_policy_paper():
+    """Paper de policy puro (sem edu tokens) ainda passa o gate
+    `domain_signal >= 2` quando tem ≥ 2 policy hits."""
+    # Sem edu tokens
+    txt = "regression discontinuity treatment effect causal effect"
+    assert edu_signal(txt) == 0  # zero edu
+    assert policy_signal(txt) >= 3  # 3+ policy bigrams
+    assert domain_signal(txt) >= 2  # gate passa
 
 
 def test_common_token_does_not_dominate():

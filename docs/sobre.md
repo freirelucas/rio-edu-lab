@@ -9,6 +9,8 @@ O **rio-edu-lab** é um pipeline aberto de replicação de papers acadêmicos so
 
 **Missão.** Traduzir academia gringa pra dado brasileiro. O lab é uma ponte entre o cânone metodológico publicado em inglês (Coleman, Chetty, Reardon, Pereira-IPEA) e a granularidade pública do Rio. Cada paper que entra no catálogo é testado contra a pergunta: *este método pode rodar em dado brasileiro de bairro?*
 
+**Escopo do funil (v0.15+).** Embora o catálogo curatorial seja Rio-edu-foco, o funil de descoberta foi **expandido pra absorver public policy evaluation + economics** em qualquer geografia. O gate `domain_signal = edu_signal + policy_signal` aceita papers de métodos canônicos (propensity score, IV, RD, DiD, synthetic control, RCT) e programas (PROGRESA, Bolsa Família, cash transfers) — mesmo que não mencionem "schools" diretamente. Resultado: foundational econometrics papers (Rosenbaum-Rubin 1983, Imbens-Angrist 1994, Abadie 2010) agora aparecem como candidatos cujo *método* pode ser aplicado a dados de educação do Rio.
+
 **Páginas relacionadas:**
 
 - [Histórico técnico](investigacao.md) — os 15 relatórios cronológicos de como o lab foi se construindo desde o inventário do data.rio.
