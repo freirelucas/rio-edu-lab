@@ -105,20 +105,24 @@ O `rio-edu-lab` não tem um front/back web literal:
 **Critérios de qualidade.**
 
 - **Auditabilidade por design:** relatórios 01→15; cada produto cita o paper-base e replica o método antes de estender ("paper-driven").
-- **Reprodutibilidade testável:** suíte verde (31 testes do lab + 20 do `acec`); bound bilateral em `share_within`; build estrito.
+- **Reprodutibilidade testável:** suíte verde (**358 testes do lab** + 20 do `acec`); bound bilateral em `share_within`; build estrito.
 - Proveniência/licenciamento creditados; DOI Zenodo preservado entre releases.
+- **Open Science stack (v0.16+):** AEA Data Editor README pattern, OSF Replication Recipe schema YAML, TOP Guidelines auto-scorecard, CITATION.cff, AGENTS.md cross-vendor.
+- **Resource bargain (v0.17+):** `MAX_TOKENS_PER_PAPER` + `MAX_LLM_BUDGET_USD` env vars enforçados em todos call sites LLM — sem custos surpresas.
 
 ## Portões transversais
 
-Valem para todo o pipeline e são aplicados no CI (`.github/workflows/{ci,pages}.yml`):
+Valem para todo o pipeline e são aplicados no CI (`.github/workflows/{ci,pages,algedonic-alert}.yml`):
 
 | Portão | O que garante |
 |---|---|
-| `pytest` (31 lab + 20 `acec`) | Invariantes do Theil (2 e 3 níveis), primitivas do matching IDF/code-book, e o achado `share_within` ∈ [55%, 75%] como *hard-fail* |
+| `pytest` (358 lab + 20 `acec`) | Invariantes do Theil (2 e 3 níveis), primitivas do matching IDF/code-book, match enriched (5 dimensões), TOP scorecard scorers, budget tracker enforcement, e o achado `share_within` ∈ [55%, 75%] como *hard-fail* |
 | `ruff` | Lint (hoje *warn-only*; a apertar) |
-| Validação de schema | Catálogo e funil (`31_build_paper_catalog.py [--validate-funnel]`) |
-| Drift checks | Páginas geradas == commitadas (papers, índice reverso, charts) |
+| Validação de schema | Catálogo + funil + manifest code_book (`31_build_paper_catalog.py [--validate-funnel]`) |
+| Drift checks | **13 drift checks**: papers mini-pages, papers-by-data-rio, funnel state + landing numbers, match-quality, LLM vs BoW, Theil bootstrap CI, TOP scorecard |
 | `mkdocs build --strict` | Sem link quebrado / arquivo não referenciado |
+| **Algedonic alert** (v0.17+) | GitHub Action abre issue auto com label `algedonic-alert + priority:critical` quando CI falha em main — canal vertical VSM de emergência |
+| **S3* auditor** (v0.17+) | `analysis/62_s3star_audit.py` esporádico: cold cache + sample random + schema + LLM vs BoW. Read-only. Não roda no CI rotineiro (é S3*, não S3) |
 | Deploy | Automático em push para `main` (idempotente) |
 
 ## Continue

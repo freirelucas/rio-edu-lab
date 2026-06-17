@@ -45,3 +45,6 @@ venv/
 # Snowball v2 cache + run state (efêmero; reproduzível via --refresh / --reset-visited)
 data/cache/
 data/snowball_visited.json
+data/processed/audit_*.md
+data/processed/audit_*.json
+
