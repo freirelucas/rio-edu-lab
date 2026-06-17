@@ -74,6 +74,7 @@ nav:
       - Reproduzir: reproduzir.md
       - Qualidade do pipeline: qualidade.md
       - Qualidade do match: match-quality.md
+      - TOP Guidelines scorecard: top-scorecard.md
       - LLM vs IDF: llm-vs-bow.md
 
 markdown_extensions:

@@ -7,7 +7,7 @@ v2 (eficiente + rico):
 - Retry exponencial em 429/500 (4 attempts: 2s, 4s, 8s, 16s)
 - `parse_work` persiste **12 fields ricos novos** (sem quebrar callers):
     concepts (structured), topics, primary_topic, keywords, institutions,
-    is_brazilian, related_works, best_oa_pdf_url, fwci, counts_by_year,
+    is_brazilian, related_works, referenced_works, best_oa_pdf_url, fwci, counts_by_year,
     is_retracted, mesh, sdg
 - `reconstruct_abstract` SEM truncation (era 500 chars → agora full)
 - `concepts_top3: str` preservado pra backward-compat (48_promote_funnel.py usa)
@@ -295,7 +295,12 @@ def parse_work(work: dict) -> dict:
         ],
         "institutions": institutions_summary(authorships),
         "is_brazilian": is_brazilian(authorships),
+        # v0.16 bug fix: separar related_works (similaridade do OpenAlex —
+        # papers RELACIONADOS por similarity model) de referenced_works
+        # (citações REAIS feitas pelo paper). Antes só capturávamos
+        # related_works, enviesando ranqueamento downstream.
         "related_works": work.get("related_works") or [],
+        "referenced_works": work.get("referenced_works") or [],
         "best_oa_pdf_url": best_oa_pdf_url(work),
         "fwci": work.get("fwci"),
         "counts_by_year": work.get("counts_by_year") or [],

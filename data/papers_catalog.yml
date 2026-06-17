@@ -33,6 +33,21 @@
 #   applied_finding_headline        (opcional, full/partial) resposta em 1 frase
 #   applied_finding_lede            (opcional, full/partial) 1-3 frases de contexto/números
 #
+# v0.16 — Open Science fields (AEA Data Editor + OSF Replication Recipe + TOP):
+#   data_availability_statement      (opcional, full/partial) DAS estruturado:
+#     summary: public | restricted | confidential
+#     sources: lista de fontes (name, url, access_date, license, sha256)
+#   controlled_randomness            (opcional) {seeds: [...]} pra runs stochastic
+#   runtime                          (opcional) string tipo "12min @ 4-core CPU"
+#   preregistration                  (opcional) {type, osf_url}
+#                                    type ∈ {retrospective_replication_recipe, prospective}
+#   provenance                       (opcional, full/partial) audit trail:
+#     paper_doi: DOI canônico
+#     data_manifest_hash: sha256 do manifest snapshot na data da replicação
+#     code_commit: hash do commit do código replicador
+#     replication_date: ISO date
+#     replicator: nome do humano que rodou
+#
 # Convenções de curadoria:
 #   - A v0.7 entrega o framework + 12 papers seed (3 já replicados + 5 alvo de
 #     novas replicações leves + 4 metodológicos). Os outros ~88 papers entram
@@ -95,6 +110,41 @@ papers:
       Acesso ponderado por IDEB: AP 3 com 113, AP 4 (Jacarepaguá/Barra) com 29.
       A Zona Sul tem escolas excelentes, mas espalhadas e poucas — por isso o
       acesso ponderado fica abaixo.
+    # v0.16 — Open Science fields
+    data_availability_statement:
+      summary: public
+      sources:
+        - name: "Escolas Municipais (Feature Service) — Mapa Digital data.rio"
+          url: "https://www.data.rio/datasets/498e637753bd4e0da76e90103dd21eb7"
+          access_date: "2024-09-15"
+          license: "Dados Abertos data.rio"
+        - name: "IDEB séries — data.rio"
+          url: "https://www.data.rio/datasets/9fd1a8cc207a48c5bda7131e4e74b1ca"
+          access_date: "2024-09-15"
+          license: "Dados Abertos data.rio"
+        - name: "Limite de Bairros — IPP"
+          url: "https://www.data.rio/datasets/dc94b29fc3594a5bb4d297bee0c9a3f2"
+          access_date: "2024-09-15"
+          license: "Dados Abertos data.rio"
+      restricted_or_external:
+        - name: "Rede viária / tempos de viagem (OSM + GTFS Rio)"
+          status: "not_yet_replicated"
+          notes: "v0.7 será replicação completa via r5py; v0.5 atual usa proxy haversine"
+    controlled_randomness:
+      seeds: []  # acessibilidade é determinística (sem componente stochastic)
+    runtime: "~5min @ 4-core CPU (1.593 hexes × 1.022 escolas)"
+    preregistration:
+      type: "retrospective_replication_recipe"
+      osf_url: null
+    provenance:
+      paper_doi: null  # IPEA TD pre-DOI (hdl.handle.net handle)
+      data_manifest_hash: "git:data/manifest.json@HEAD"
+      code_commit: "see git log analysis/26_hex_accessibility.py"
+      replication_date: "2024-09-15"
+      replicator: "Lucas Freire"
+      replication_caveats:
+        - "Versão atual usa haversine como proxy de tempo de viagem"
+        - "Versão futura (v0.7) trocará por OSM + GTFS via r5py"
 
   - id: reardon-2011-whither
     authors: [Reardon]
@@ -136,6 +186,35 @@ papers:
       bairros são resilientes (baixo SES, bom IDEB) e 17% sub-performam (bom
       SES, baixo IDEB) — quase metade desafia a leitura "Zona Sul = privilégio
       uniforme".
+    # v0.16 — Open Science fields
+    data_availability_statement:
+      summary: public
+      sources:
+        - name: "IDS (Índice de Desenvolvimento Social) Censo 2010 por bairro/RA — IPP"
+          url: "https://www.data.rio/datasets/fa85ddc76a524380ad7fc60e3006ee97"
+          access_date: "2024-10-20"
+          license: "Dados Abertos data.rio"
+        - name: "IDEB séries por bairro/RA — data.rio"
+          url: "https://www.data.rio/datasets/9fd1a8cc207a48c5bda7131e4e74b1ca"
+          access_date: "2024-10-20"
+          license: "Dados Abertos data.rio"
+      caveats:
+        - "Temporal mismatch: IDS 2010 vs IDEB 2023 (gap de 13 anos). Backfill com Censo 2022 pendente quando IPP publicar."
+    controlled_randomness:
+      seeds: []  # correlação Pearson + decomposição quadrantes determinísticos
+    runtime: "~1min @ single-core (160 bairros × 2 indicadores)"
+    preregistration:
+      type: "retrospective_replication_recipe"
+      osf_url: null
+    provenance:
+      paper_doi: null  # book chapter, DOI do livro existe mas paper standalone não
+      data_manifest_hash: "git:data/manifest.json@HEAD"
+      code_commit: "see git log analysis/29_vuln_edu.py"
+      replication_date: "2024-10-20"
+      replicator: "Lucas Freire"
+      replication_caveats:
+        - "Eixo BR é geografia (bairro), não raça (paper original)"
+        - "Microdado INEP nominal destravaria eixo raça/cor"
 
   - id: theil-1967-economics
     authors: [Theil]
@@ -175,6 +254,31 @@ papers:
       Administrativas, não entre. Robusto em 6 séries × 9 anos (5º/9º ano,
       ponderado por matrícula, Aprovação/SAEB/IDEB). Nenhuma série cruza
       a paridade 50%.
+    # v0.16 — Open Science fields (AEA + OSF + TOP)
+    data_availability_statement:
+      summary: public
+      sources:
+        - name: "IDEB séries iniciais e finais por bairro/RA/AP — Rio de Janeiro"
+          url: "https://www.data.rio/datasets/9fd1a8cc207a48c5bda7131e4e74b1ca"
+          access_date: "2024-11-01"
+          license: "Dados Abertos data.rio"
+          sha256: "snapshot-via-manifest.json"
+        - name: "Limite de Bairros — IPP"
+          url: "https://www.data.rio/datasets/dc94b29fc3594a5bb4d297bee0c9a3f2"
+          access_date: "2024-11-01"
+          license: "Dados Abertos data.rio"
+    controlled_randomness:
+      seeds: [42]  # Theil bootstrap usa seed=42+year (35_bootstrap_theil_ci.py)
+    runtime: "~2min @ 4-core CPU (full 9-year × 6-series decomposição + bootstrap)"
+    preregistration:
+      type: "retrospective_replication_recipe"
+      osf_url: null  # a registrar em v0.17
+    provenance:
+      paper_doi: null  # Theil 1967 é livro pre-DOI (WorldCat 489908)
+      data_manifest_hash: "git:data/manifest.json@HEAD"
+      code_commit: "see git log analysis/10_theil_ideb.py"
+      replication_date: "2024-11-01"
+      replicator: "Lucas Freire"
 
   # ============================================================
   # ALVO DE REPLICAÇÃO LEVE EM v0.7+

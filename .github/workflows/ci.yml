@@ -130,3 +130,16 @@ jobs:
             git --no-pager diff data/processed/theil_bootstrap_ci.csv
             exit 1
           fi
+
+      - name: Verify TOP scorecard in sync
+        # Re-runs 60_top_scorecard.py over papers_catalog.yml.
+        # Guarda contra drift se schema YAML estendido (DAS/provenance) mudar.
+        # Saída pura-determinística (sem cache, sem network).
+        run: |
+          python3 analysis/60_top_scorecard.py
+          if ! git diff --quiet docs/top-scorecard.md data/processed/top_scorecard.csv data/processed/top_scorecard.md data/processed/top_summary.json; then
+            echo "::error::TOP scorecard out of sync"
+            echo "::error::run: python3 analysis/60_top_scorecard.py && git add docs/top-scorecard.md data/processed/top_*"
+            git --no-pager diff docs/top-scorecard.md data/processed/top_scorecard.csv
+            exit 1
+          fi

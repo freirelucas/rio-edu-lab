@@ -40,8 +40,8 @@ keywords:
   - "paper catalog"
   - "OpenAlex"
   - "reproducible research"
-date-released: "2026-05-06"
-version: "0.7.0"
+date-released: "2026-06-17"
+version: "0.16.0"
 doi: "10.5281/zenodo.20060620"
 identifiers:
   - type: doi

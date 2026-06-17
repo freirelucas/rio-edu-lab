@@ -56,6 +56,7 @@ vocabularies:
     - transporte
     - assistencia-social
     - demografia
+    - social               # v0.15+ — escolaridade da população, chefes de domicílio (cross-edu/social)
   unit_of_observation:     # grão da linha (uma observação =)
     - escola
     - aluno
@@ -63,13 +64,16 @@ vocabularies:
     - professor
     - bairro
     - ra                   # Região Administrativa
+    - rp                   # v0.15+ — Região de Planejamento (entre RA e AP)
     - ap                   # Área de Planejamento
     - cre                  # Coordenadoria Regional de Educação
     - municipio
+    - domicilio            # v0.15+ — agregação por domicílio (chefes, escolaridade)
   spatial_granularity:     # resolução geográfica (ortogonal à unidade)
     - ponto
     - bairro
     - ra
+    - rp                   # v0.15+
     - ap
     - cre
     - municipio

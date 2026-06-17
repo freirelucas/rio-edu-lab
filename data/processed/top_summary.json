@@ -1,0 +1,21 @@
+{
+  "n_papers": 15,
+  "by_status": {
+    "full": 1,
+    "partial": 2,
+    "pending": 9,
+    "unfeasible": 3
+  },
+  "mean_total_score": 4.533333333333333,
+  "max_possible": 16,
+  "by_standard_mean": {
+    "S1": 1.07,
+    "S2": 1.2,
+    "S3": 0.4,
+    "S4": 0.2,
+    "S5": 1.0,
+    "S6": 0.2,
+    "S7": 0.2,
+    "S8": 0.27
+  }
+}
