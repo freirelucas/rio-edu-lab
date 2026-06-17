@@ -45,7 +45,8 @@ except ImportError:
     sys.exit(1)
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _anthropic import HAS_ANTHROPIC, extract_requirements  # noqa: E402
+from _anthropic import HAS_ANTHROPIC  # noqa: E402  (kept for backward-compat check)
+from _llm import extract_requirements, get_provider  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 FUNNEL_YML = ROOT / "data" / "papers_funnel.yml"

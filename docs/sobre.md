@@ -11,6 +11,14 @@ O **rio-edu-lab** é um pipeline aberto de replicação de papers acadêmicos so
 
 **Escopo do funil (v0.15+).** Embora o catálogo curatorial seja Rio-edu-foco, o funil de descoberta foi **expandido pra absorver public policy evaluation + economics** em qualquer geografia. O gate `domain_signal = edu_signal + policy_signal` aceita papers de métodos canônicos (propensity score, IV, RD, DiD, synthetic control, RCT) e programas (PROGRESA, Bolsa Família, cash transfers) — mesmo que não mencionem "schools" diretamente. Resultado: foundational econometrics papers (Rosenbaum-Rubin 1983, Imbens-Angrist 1994, Abadie 2010) agora aparecem como candidatos cujo *método* pode ser aplicado a dados de educação do Rio.
 
+**LLM provider — preparado pra migração (Path D).** O v3 LLM extraction usa hoje Claude Haiku 4.5 via `_anthropic.py` (~$0.001/paper). Em paralelo, o lab tem `analysis/_rio.py` — adapter dormente pro [Rio-3.5-Open-397B](https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B) (MoE 397B/~17B active, PT-BR nativo, MIT, feito pelo mesmo time do data.rio). Dispatcher em `analysis/_llm.py` escolhe via `LLM_PROVIDER` env var (default anthropic). Quando o modelo Rio tiver HF Inference Endpoint público (19 requests pending), basta:
+
+```bash
+LLM_PROVIDER=rio RIO_API_BASE=https://<endpoint>/v1 python3 analysis/55_llm_extract_requirements.py
+```
+
+Ollama local também suportado out-of-the-box (`RIO_API_BASE=http://localhost:11434/v1`). Razão estratégica: soberania de modelo, PT-BR fluente, alinhamento total com a Prefeitura do Rio que também mantém data.rio e [`prefeitura-rio/pipelines`](https://github.com/prefeitura-rio/pipelines).
+
 **Páginas relacionadas:**
 
 - [Histórico técnico](investigacao.md) — os 15 relatórios cronológicos de como o lab foi se construindo desde o inventário do data.rio.
