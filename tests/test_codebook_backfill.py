@@ -289,3 +289,75 @@ def test_edu_tags_includes_canonical_strings():
     assert "Educação" in cb.EDU_TAGS
     assert "Educação Básica" in cb.EDU_TAGS
     assert "Escolaridade da população" in cb.EDU_TAGS
+
+
+# ─── v0.17 resource bargain integration ───────────────────────────────────
+
+
+def test_extract_codebook_respects_budget_cap(monkeypatch):
+    """49 chama Anthropic SDK direto, mas plumbed pra check budget pre-call.
+    MAX_TOKENS_PER_PAPER=10 deve disparar LLMBudgetExceeded."""
+    cb = _import_49()
+    # Force budget cap super-baixo
+    monkeypatch.setenv("MAX_TOKENS_PER_PAPER", "10")
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "fake-key")
+    monkeypatch.setattr(cb, "HAS_ANTHROPIC", True)
+
+    # Reset budget pra estado limpo
+    from _llm import LLMBudgetExceeded, get_budget_tracker
+    get_budget_tracker().reset()
+
+    item = {"id": "x", "title": "Y" * 200, "type": "Excel", "snippet": "long snippet" * 30}
+    try:
+        cb.extract_codebook(item)
+        raise AssertionError("should have raised LLMBudgetExceeded")
+    except LLMBudgetExceeded as e:
+        assert "MAX_TOKENS_PER_PAPER" in str(e)
+
+
+def test_extract_codebook_records_cost_on_success(monkeypatch):
+    """Após chamada bem-sucedida, cumulative cost cresce."""
+    cb = _import_49()
+    monkeypatch.setattr(cb, "HAS_ANTHROPIC", True)
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "fake-key")
+    monkeypatch.delenv("MAX_TOKENS_PER_PAPER", raising=False)
+    monkeypatch.delenv("MAX_LLM_BUDGET_USD", raising=False)
+
+    from _llm import get_budget_tracker
+    get_budget_tracker().reset()
+    initial_cost = get_budget_tracker().cumulative_cost_usd
+    initial_calls = get_budget_tracker().n_calls
+
+    # Mock Anthropic response
+    mock_block = MagicMock()
+    mock_block.type = "tool_use"
+    mock_block.name = "extract_data_item_codebook"
+    mock_block.input = {
+        "domain": "educacao-basica", "unit_of_observation": "escola",
+        "spatial_granularity": "ponto", "temporal_coverage_parsed": None,
+        "api_capability": "static_file", "key_variables": ["ideb"],
+        "confidence": 0.8,
+    }
+    mock_usage = MagicMock()
+    mock_usage.input_tokens = 100_000
+    mock_usage.output_tokens = 10_000
+    mock_response = MagicMock()
+    mock_response.content = [mock_block]
+    mock_response.model = "claude-haiku-4-5"
+    mock_response.usage = mock_usage
+
+    mock_client = MagicMock()
+    mock_client.with_options.return_value.messages.create.return_value = mock_response
+    mock_anthropic = MagicMock()
+    mock_anthropic.Anthropic.return_value = mock_client
+    mock_anthropic.AuthenticationError = type("AE", (Exception,), {})
+    monkeypatch.setattr(cb, "anthropic", mock_anthropic)
+
+    item = {"id": "x", "title": "Y", "type": "Excel"}
+    result = cb.extract_codebook(item, verbose=False)
+    assert result is not None
+
+    # Custo registrado: 100K × $1/M + 10K × $5/M = $0.10 + $0.05 = $0.15
+    assert get_budget_tracker().n_calls == initial_calls + 1
+    expected_cost = 100_000 * 1.0e-6 + 10_000 * 5.0e-6
+    assert abs(get_budget_tracker().cumulative_cost_usd - (initial_cost + expected_cost)) < 1e-9

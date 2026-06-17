@@ -217,6 +217,17 @@ def extract_codebook(
     if not api_key:
         raise RuntimeError("ANTHROPIC_API_KEY env var required")
 
+    # v0.17 resource bargain (VSM S3) — check MAX_TOKENS_PER_PAPER + MAX_LLM_BUDGET_USD
+    # antes da call. Raise LLMBudgetExceeded se cap excedido.
+    try:
+        from _llm import get_budget_tracker  # local import — avoid cycle
+    except ImportError:
+        get_budget_tracker = None
+    if get_budget_tracker is not None:
+        # Estimar tokens via heurística 4 chars/tok + 800 system overhead
+        est_input = (len(user_msg or "")) // 4 + 800
+        get_budget_tracker().check_pre_call(est_input)
+
     client = anthropic.Anthropic(api_key=api_key)
     try:
         response = client.with_options(max_retries=max_retries).messages.create(
@@ -237,6 +248,17 @@ def extract_codebook(
         if verbose:
             print(f"  [llm-warn] {type(e).__name__}: {e}", file=sys.stderr)
         return None
+
+    # v0.17 — record cost post-call (sem surpresas em batch grande)
+    if get_budget_tracker is not None:
+        usage = response.usage
+        get_budget_tracker().record_post_call(
+            {
+                "input_tokens": usage.input_tokens,
+                "output_tokens": usage.output_tokens,
+            },
+            "anthropic",
+        )
 
     for block in response.content:
         if block.type == "tool_use" and block.name == "extract_data_item_codebook":
@@ -322,7 +344,21 @@ def main() -> int:
         if rank <= 10 or rank % 10 == 0:
             print(f"  [{rank:>3}/{len(targets)}] calling LLM — {title}")
 
-        result = extract_codebook(it)
+        # v0.17 — captura LLMBudgetExceeded (resource bargain)
+        try:
+            result = extract_codebook(it)
+        except Exception as e:  # noqa: BLE001
+            if type(e).__name__ == "LLMBudgetExceeded":
+                print(f"\n[BUDGET] {e}", file=sys.stderr)
+                print(f"[BUDGET] paramos em {rank-1}/{len(targets)} pra evitar surpresa", file=sys.stderr)
+                try:
+                    from _llm import get_budget_tracker
+                    print(f"[BUDGET] cumulative cost USD: {get_budget_tracker().cumulative_cost_usd:.4f}", file=sys.stderr)
+                except ImportError:
+                    pass
+                break  # save manifest progress + relata
+            raise
+
         if result is None:
             n_errors += 1
             print(f"  [{rank:>3}/{len(targets)}] ERROR — {title}", file=sys.stderr)

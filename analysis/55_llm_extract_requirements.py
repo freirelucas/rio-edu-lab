@@ -46,7 +46,7 @@ except ImportError:
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _anthropic import HAS_ANTHROPIC  # noqa: E402  (kept for backward-compat check)
-from _llm import extract_requirements, get_provider  # noqa: E402
+from _llm import extract_requirements  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 FUNNEL_YML = ROOT / "data" / "papers_funnel.yml"
@@ -175,17 +175,31 @@ def main() -> int:
     total_usage = {"input_tokens": 0, "output_tokens": 0,
                    "cache_read_input_tokens": 0, "cache_creation_input_tokens": 0}
 
+    # v0.17 — budget tracker pra cost summary final + early-abort em cap
+    try:
+        from _llm import LLMBudgetExceeded, get_budget_tracker
+        budget = get_budget_tracker()
+    except ImportError:
+        budget = None
+        LLMBudgetExceeded = Exception  # noqa: N806
+
     for i, c in enumerate(eligible, 1):
         oid_short = (c.get("openalex_id") or "?").split("/")[-1][:12]
         title_short = (c.get("title") or "?")[:60].replace("\n", " ")
         print(f"\n[{i}/{len(eligible)}] {oid_short} — {title_short}", file=sys.stderr)
 
-        result = extract_requirements(
-            title=c.get("title", ""),
-            abstract=c.get("abstract", ""),
-            model=args.model or "claude-haiku-4-5",
-            verbose=True,
-        )
+        try:
+            result = extract_requirements(
+                title=c.get("title", ""),
+                abstract=c.get("abstract", ""),
+                model=args.model or "claude-haiku-4-5",
+                verbose=True,
+            )
+        except LLMBudgetExceeded as e:
+            print(f"\n[BUDGET] {e}", file=sys.stderr)
+            print(f"[BUDGET] paramos em {i-1}/{len(eligible)} pra evitar surpresa", file=sys.stderr)
+            print(f"[BUDGET] cumulative cost USD: {budget.cumulative_cost_usd:.4f}", file=sys.stderr)
+            break  # save progress + relata abaixo
 
         if result is None:
             n_failed += 1
