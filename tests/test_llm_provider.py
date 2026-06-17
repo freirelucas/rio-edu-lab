@@ -142,3 +142,126 @@ def test_dispatch_handles_none_response(monkeypatch):
     with patch("_anthropic.extract_requirements", return_value=None):
         result = llm.extract_requirements("X", "Y")
     assert result is None
+
+
+# ─── Resource bargain (VSM S3 — MAX_TOKENS_PER_PAPER + MAX_LLM_BUDGET_USD) ─
+
+
+def test_budget_tracker_pricing_constants():
+    llm = _import_llm()
+    assert llm.ANTHROPIC_PRICING["input_per_1m"] == 1.0
+    assert llm.ANTHROPIC_PRICING["output_per_1m"] == 5.0
+    assert llm.RIO_PRICING["input_per_1m"] == 0.0
+
+
+def test_budget_tracker_singleton():
+    llm = _import_llm()
+    b1 = llm.get_budget_tracker()
+    b2 = llm.get_budget_tracker()
+    assert b1 is b2
+
+
+def test_budget_no_cap_by_default(monkeypatch):
+    llm = _import_llm()
+    monkeypatch.delenv("MAX_TOKENS_PER_PAPER", raising=False)
+    monkeypatch.delenv("MAX_LLM_BUDGET_USD", raising=False)
+    b = llm.get_budget_tracker()
+    assert b.max_tokens_per_paper is None
+    assert b.max_budget_usd is None
+    # check_pre_call não levanta sem caps
+    b.check_pre_call(estimated_input_tokens=1_000_000)
+
+
+def test_budget_max_tokens_enforced(monkeypatch):
+    llm = _import_llm()
+    monkeypatch.setenv("MAX_TOKENS_PER_PAPER", "1000")
+    b = llm.get_budget_tracker()
+    try:
+        b.check_pre_call(estimated_input_tokens=2000)
+        raise AssertionError("should have raised")
+    except llm.LLMBudgetExceeded as e:
+        assert "MAX_TOKENS_PER_PAPER" in str(e)
+
+
+def test_budget_max_tokens_zero_means_unlimited(monkeypatch):
+    """0 ou strings inválidas → unlimited (default behavior)."""
+    llm = _import_llm()
+    monkeypatch.setenv("MAX_TOKENS_PER_PAPER", "0")
+    b = llm.get_budget_tracker()
+    assert b.max_tokens_per_paper is None
+
+
+def test_budget_record_anthropic_cost(monkeypatch):
+    llm = _import_llm()
+    b = llm.get_budget_tracker()
+    b.reset()
+    # 1M input + 1M output do Haiku 4.5 = $1 + $5 = $6
+    cost = b.record_post_call({"input_tokens": 1_000_000, "output_tokens": 1_000_000}, "anthropic")
+    assert cost == 6.0
+    assert b.cumulative_cost_usd == 6.0
+    assert b.n_calls == 1
+
+
+def test_budget_record_rio_zero_cost(monkeypatch):
+    llm = _import_llm()
+    b = llm.get_budget_tracker()
+    b.reset()
+    cost = b.record_post_call({"input_tokens": 1_000_000, "output_tokens": 1_000_000}, "rio")
+    assert cost == 0.0
+    assert b.cumulative_cost_usd == 0.0
+
+
+def test_budget_cumulative_cost_caps(monkeypatch):
+    llm = _import_llm()
+    monkeypatch.setenv("MAX_LLM_BUDGET_USD", "0.10")
+    b = llm.get_budget_tracker()
+    b.reset()
+    # Push cost past cap
+    b.record_post_call({"input_tokens": 100_000, "output_tokens": 0}, "anthropic")  # $0.10
+    # Próximo check_pre_call deve falhar
+    try:
+        b.check_pre_call(estimated_input_tokens=100)
+        raise AssertionError("should have raised")
+    except llm.LLMBudgetExceeded as e:
+        assert "MAX_LLM_BUDGET_USD" in str(e)
+
+
+def test_budget_reset():
+    llm = _import_llm()
+    b = llm.get_budget_tracker()
+    b.record_post_call({"input_tokens": 100_000, "output_tokens": 0}, "anthropic")
+    assert b.cumulative_cost_usd > 0
+    b.reset()
+    assert b.cumulative_cost_usd == 0.0
+    assert b.n_calls == 0
+
+
+def test_dispatch_integrates_cost_tracking_for_anthropic(monkeypatch):
+    """Dispatcher record_post_call após Anthropic; injeta _cost_usd no result."""
+    llm = _import_llm()
+    monkeypatch.delenv("LLM_PROVIDER", raising=False)
+    monkeypatch.delenv("MAX_TOKENS_PER_PAPER", raising=False)
+    monkeypatch.delenv("MAX_LLM_BUDGET_USD", raising=False)
+    llm.get_budget_tracker().reset()
+    with patch("_anthropic.extract_requirements") as mock_ant:
+        mock_ant.return_value = {
+            "datasets": [],
+            "_usage": {"input_tokens": 1_000_000, "output_tokens": 200_000},
+        }
+        result = llm.extract_requirements("X", "Y")
+    assert "_cost_usd" in result
+    # 1M × $1 + 200K × $5 = $1.00 + $1.00 = $2.00
+    assert result["_cost_usd"] == 2.0
+    assert llm.get_budget_tracker().n_calls == 1
+
+
+def test_dispatch_skips_budget_in_dry_run(monkeypatch):
+    """dry_run não toca budget (zero custo real)."""
+    llm = _import_llm()
+    monkeypatch.delenv("LLM_PROVIDER", raising=False)
+    llm.get_budget_tracker().reset()
+    with patch("_anthropic.extract_requirements") as mock_ant:
+        mock_ant.return_value = {"_dry_run": True, "_provider": "anthropic"}
+        result = llm.extract_requirements("X", "Y", dry_run=True)
+    assert "_cost_usd" not in result
+    assert llm.get_budget_tracker().n_calls == 0
