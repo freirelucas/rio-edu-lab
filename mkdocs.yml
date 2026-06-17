@@ -69,6 +69,7 @@ nav:
       - Papers por item do data.rio: papers-by-data-rio.md
   - Sobre:
       - Visão geral: sobre.md
+      - Arquitetura (VSM + roadmap v0.16): arquitetura.md
       - Histórico técnico: investigacao.md
       - Reproduzir: reproduzir.md
       - Qualidade do pipeline: qualidade.md
