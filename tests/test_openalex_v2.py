@@ -172,6 +172,7 @@ def test_parse_work_persists_v2_fields():
         "topics": [{"id": "T1", "display_name": "X", "score": 0.9}],
         "primary_topic": {"id": "T1", "display_name": "X", "score": 0.9},
         "keywords": [{"display_name": "kw1"}],
+        "type": "article",
         "related_works": ["W456", "W789"],
         "referenced_works": ["W111", "W222", "W333"],
         "best_oa_location": {"pdf_url": "http://example.com/pdf"},
@@ -196,6 +197,8 @@ def test_parse_work_persists_v2_fields():
     # v0.16 bug fix: referenced_works (citações reais) é separado de
     # related_works (similaridade). Ambos persistidos.
     assert r["referenced_works"] == ["W111", "W222", "W333"]
+    # v0.17 — top-level type pra filtrar refs por dataset/software
+    assert r["type"] == "article"  # default tipo em fixture
     assert r["best_oa_pdf_url"] == "http://example.com/pdf"
     assert r["fwci"] == 2.5
     assert r["counts_by_year"][0]["year"] == 2020

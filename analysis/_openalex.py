@@ -295,6 +295,11 @@ def parse_work(work: dict) -> dict:
         ],
         "institutions": institutions_summary(authorships),
         "is_brazilian": is_brazilian(authorships),
+        # v0.17 — top-level OpenAlex type (article|dataset|book-chapter|paratext|dissertation|...).
+        # Útil pra filtrar `referenced_works` por tipo: papers que CITAM um
+        # work tipo `dataset` provavelmente o usam como input — paper↔dataset
+        # linkage declarativo. Recomendação dos 5 agentes (v0.16 audit).
+        "type": work.get("type"),
         # v0.16 bug fix: separar related_works (similaridade do OpenAlex —
         # papers RELACIONADOS por similarity model) de referenced_works
         # (citações REAIS feitas pelo paper). Antes só capturávamos
