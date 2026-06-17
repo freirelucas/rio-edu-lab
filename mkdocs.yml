@@ -75,6 +75,10 @@ nav:
       - Qualidade do pipeline: qualidade.md
       - Qualidade do match: match-quality.md
       - TOP Guidelines scorecard: top-scorecard.md
+      - Provenance trail (audit chains):
+          - Theil 1967: provenance/theil-1967-economics.md
+          - Pereira 2019 IPEA: provenance/pereira-2019-ipea.md
+          - Reardon 2011 Whither: provenance/reardon-2011-whither.md
       - LLM vs IDF: llm-vs-bow.md
 
 markdown_extensions:

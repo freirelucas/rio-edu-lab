@@ -1,0 +1,23 @@
+[
+  {
+    "paper_id": "pereira-2019-ipea",
+    "audit_chain_complete": false,
+    "n_data_sources": 3,
+    "n_scripts": 3,
+    "n_processed_outputs": 0
+  },
+  {
+    "paper_id": "reardon-2011-whither",
+    "audit_chain_complete": true,
+    "n_data_sources": 2,
+    "n_scripts": 3,
+    "n_processed_outputs": 1
+  },
+  {
+    "paper_id": "theil-1967-economics",
+    "audit_chain_complete": true,
+    "n_data_sources": 2,
+    "n_scripts": 4,
+    "n_processed_outputs": 3
+  }
+]

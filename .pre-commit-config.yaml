@@ -1,0 +1,56 @@
+# Pre-commit hooks — rio-edu-lab
+#
+# Stack mínimo focado em (a) privacy/security (chat trails podem vazar
+# API keys/paths absolutos quando comitados — gitleaks captura), (b)
+# lint Python (ruff já no CI, aqui adianta pra dev-loop).
+#
+# Setup:
+#   pip install pre-commit
+#   pre-commit install
+#
+# Manual run:
+#   pre-commit run --all-files
+#
+# CI roda gitleaks + ruff também — defense-in-depth.
+
+repos:
+  # ─── Security: gitleaks (rotated 2024+) ──────────────────────────────────
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.21.0
+    hooks:
+      - id: gitleaks
+        # Sem args extra — usa default ruleset, que detecta:
+        # - API keys (Anthropic, OpenAI, GitHub, AWS, GCP, etc.)
+        # - Generic high-entropy strings em assignments
+        # - Private keys (RSA, SSH, PGP)
+
+  # ─── Trufflehog: cobertura complementar de secret rotation ──────────────
+  # NOTA: trufflehog pode ter falsos positivos em test fixtures (sk-fake, etc.)
+  # Configurar baseline se preciso: trufflehog filesystem . --no-update
+  # Por enquanto comentado — gitleaks é suficiente pra v0.17.
+  # - repo: https://github.com/trufflesecurity/trufflehog
+  #   rev: v3.84.0
+  #   hooks:
+  #     - id: trufflehog
+  #       args: ['--no-update', 'filesystem', '.']
+
+  # ─── Lint: ruff (já no CI, mas adianta no dev-loop) ─────────────────────
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.0
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+        # ruff-format substitui black; consistente com CI config
+
+  # ─── Privacy: redact absolute paths em chat trails antes de commit ──────
+  # Custom hook local — detecta /home/<user>/ ou /Users/<user>/ em audit/
+  # arquivos antes de virar PR/issue.
+  - repo: local
+    hooks:
+      - id: check-audit-paths
+        name: Redact absolute paths in audit trails
+        entry: bash -c 'if [ -d audit/ ] && grep -rE "(/home/[^/]+/|/Users/[^/]+/)" audit/ 2>/dev/null; then echo "ERROR: absolute path em audit/ — rode 61_session_to_issue.py via SessionEnd hook pra redatar"; exit 1; fi'
+        language: system
+        pass_filenames: false
+        # Só roda se audit/ existe; SessionEnd hook usuário-side aplica redação

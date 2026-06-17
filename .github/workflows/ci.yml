@@ -9,13 +9,30 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      # v0.17 — matrix 3.10/3.11/3.12 valida backward-compat claim em docs.
+      # Antes "Python 3.10+" alegado, só 3.12 testado. Agora honesto.
+      # fail-fast=false: se 3.10 quebrar, ainda valida 3.11/3.12 — relata
+      # qual versão regrediu.
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: ${{ matrix.python-version }}
           cache: pip
+
+      - name: Gitleaks secret scan
+        # v0.17 — defense-in-depth: pre-commit hook redata local; gitleaks
+        # no CI captura tudo que escapou. Roda em 1 versão (3.12) só pra não
+        # multiplicar tempo de scan × N python versions.
+        if: matrix.python-version == '3.12'
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dev + lab + acec deps
         # The Theil tests are pure stdlib + pytest; the data-sanity tests
@@ -141,5 +158,19 @@ jobs:
             echo "::error::TOP scorecard out of sync"
             echo "::error::run: python3 analysis/60_top_scorecard.py && git add docs/top-scorecard.md data/processed/top_*"
             git --no-pager diff docs/top-scorecard.md data/processed/top_scorecard.csv
+            exit 1
+          fi
+
+      - name: Verify provenance trail in sync
+        # v0.17.e — Re-runs 63_provenance_trail.py pros 3 papers replicados.
+        # Inclui hashes SHA256 de arquivos committed + git commit refs.
+        # Drift = artefato de replicação mudou sem regenerar provenance (sinal
+        # de que a auditabilidade um-clique quebrou).
+        run: |
+          python3 analysis/63_provenance_trail.py
+          if ! git diff --quiet docs/provenance/ data/processed/provenance_summary.json; then
+            echo "::error::provenance trail out of sync"
+            echo "::error::run: python3 analysis/63_provenance_trail.py && git add docs/provenance/ data/processed/provenance_summary.json"
+            git --no-pager diff docs/provenance/
             exit 1
           fi
