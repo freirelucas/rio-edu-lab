@@ -4,6 +4,7 @@
 [![ci](https://github.com/freirelucas/rio-edu-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/freirelucas/rio-edu-lab/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20060620.svg)](https://doi.org/10.5281/zenodo.20060620)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/freirelucas/rio-edu-lab/main)
 **Laboratório de replicação de papers em educação aplicados ao Rio.** Catálogo aberto de papers seminais (foco em educação) cruzado com o [Grupo Educação do data.rio](https://www.data.rio/search?groupIds=91117c15dceb41eaa08df881fa9f9310). Cada entrada do catálogo mapeia requisitos de dados → itens disponíveis → status de replicação no lab + insight para gestores quando replicado.
 
 **Achado-central que originou o lab**: na decomposição Theil-T do IDEB por bairro, **66% da desigualdade está dentro das RAs** (não entre). Coropléticos por RA mascaram a maior parte da variância. Robusto em 6 séries (anos iniciais/finais, ponderação por matrícula, Aprovação/SAEB/IDEB).

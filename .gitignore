@@ -1,6 +1,15 @@
 # MkDocs build output
 site/
 
+# Chat audit trail saídas (v0.16 — 61_session_to_issue.py). Local-only por
+# default; commit explícito se quiser publicar uma sessão como issue manual.
+audit/
+
+# Claude Code settings real (não exemplo). settings.example.json fica commitado
+# como template; settings.json real fica fora porque pode ter env vars locais.
+.claude/settings.json
+.claude/settings.local.json
+
 # Raw downloaded binaries (reproducible via analysis/03_download_excels.py / 07_download_pdfs.py)
 data/raw/excel/*.xlsx
 data/raw/excel/*.xls

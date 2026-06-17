@@ -1,0 +1,118 @@
+name: algedonic-alert
+
+# VSM canal algedônico — bypass de emergência (Stafford Beer, *Heart of
+# Enterprise* 1979). Quando uma invariante crítica do lab quebra silenciosamente
+# (teste que ancora um achado central, ou drift check que prova consistência
+# pipeline), abre issue automaticamente — bypassa S2 (coordination routine) e
+# vai direto pra S5 (policy/identity).
+#
+# Triggers: workflow_run no CI principal — se ele falhar em main, este
+# workflow processa logs + abre issue. Workflow secundário pra não acoplar.
+
+on:
+  workflow_run:
+    workflows: ["ci"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: "Manual alert reason"
+        required: true
+
+permissions:
+  contents: read
+  issues: write
+  actions: read
+
+jobs:
+  fire-alert:
+    # Só rodar se CI falhou (não bloquear quando CI verde)
+    if: github.event.workflow_run.conclusion == 'failure' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Determine alert payload
+        id: payload
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "kind=manual" >> $GITHUB_OUTPUT
+            echo "title=[ALGEDONIC] Manual alert: ${{ inputs.reason }}" >> $GITHUB_OUTPUT
+            echo "body=Manual trigger by ${{ github.actor }}" >> $GITHUB_OUTPUT
+          else
+            echo "kind=ci-failure" >> $GITHUB_OUTPUT
+            echo "title=[ALGEDONIC] CI failed in main — invariant or drift broken" >> $GITHUB_OUTPUT
+            echo "body=CI workflow '${{ github.event.workflow_run.name }}' failed on commit ${{ github.event.workflow_run.head_sha }}." >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check if open algedonic issue already exists
+        id: dedup
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'algedonic-alert',
+              per_page: 5,
+            });
+            const recent = issues.data.find(i => {
+              const ageH = (Date.now() - new Date(i.created_at).getTime()) / 3600000;
+              return ageH < 6;  // dedup 6h window
+            });
+            if (recent) {
+              core.setOutput('existing', recent.number);
+            }
+
+      - name: Open algedonic issue
+        if: steps.dedup.outputs.existing == ''
+        uses: actions/github-script@v7
+        env:
+          TITLE: ${{ steps.payload.outputs.title }}
+          BODY: ${{ steps.payload.outputs.body }}
+          KIND: ${{ steps.payload.outputs.kind }}
+        with:
+          script: |
+            const body = `# Algedonic Alert (VSM emergency bypass)
+
+            **Kind**: ${process.env.KIND}
+
+            ${process.env.BODY}
+
+            ## Por que este alerta existe
+
+            Este issue foi criado automaticamente pelo **canal algedônico** do
+            VSM aplicado ao rio-edu-lab (\`docs/arquitetura.md\`). Ele bypassa
+            o canal S2 (coordination routine) — invariante crítica quebrou
+            silenciosamente, ou drift check provou que pipeline divergiu.
+
+            ## Investigação requerida
+
+            1. Cheque o CI run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}
+            2. Identifique qual gate falhou (\`pytest\`, \`mkdocs --strict\`, drift check, schema validation)
+            3. Skill recomendada: \`vsm-s3-allocator\` pra rodar todos os gates localmente
+            4. Se invariante de replicação quebrou (Theil, bootstrap CI, Moran), **escalar pra S5** (constituição) — achado central pode estar comprometido
+
+            ## Dedup
+
+            Issues algedônicas com label \`algedonic-alert\` abertas nas últimas 6h são puladas. Esta é nova.
+
+            ---
+
+            *Auto-gerado por \`.github/workflows/algedonic-alert.yml\`. Feche este issue quando a invariante voltar a passar.*`;
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: process.env.TITLE,
+              body: body,
+              labels: ['algedonic-alert', 'priority:critical'],
+            });
+            console.log('Algedonic issue opened');
+
+      - name: Skip — recent algedonic issue already open
+        if: steps.dedup.outputs.existing != ''
+        run: |
+          echo "::notice::Recent algedonic issue #${{ steps.dedup.outputs.existing }} already open. Skipping."
