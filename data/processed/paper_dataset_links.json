@@ -1,0 +1,42 @@
+[
+  {
+    "openalex_id": "W2155377858",
+    "title": "Teacher Turnover and Teacher Shortages: An Organizational Analysis",
+    "citations": 2933,
+    "year": 2001,
+    "is_brazilian": false,
+    "doi": "10.3102/00028312038003499",
+    "n_dataset_refs": 2,
+    "dataset_refs": [
+      {
+        "openalex_id": "https://openalex.org/W36606708",
+        "doi": "https://doi.org/10.1037/e384452004-001",
+        "title": "Teacher Turnover, Teacher Shortages, and the Organization of Schools",
+        "type": "dataset"
+      },
+      {
+        "openalex_id": "https://openalex.org/W1981192254",
+        "doi": null,
+        "title": "Projections of education statistics to 2006 /",
+        "type": "dataset"
+      }
+    ]
+  },
+  {
+    "openalex_id": "W36606708",
+    "title": "Teacher Turnover, Teacher Shortages, and the Organization of Schools",
+    "citations": 408,
+    "year": 2001,
+    "is_brazilian": false,
+    "doi": "10.1037/e384452004-001",
+    "n_dataset_refs": 1,
+    "dataset_refs": [
+      {
+        "openalex_id": "https://openalex.org/W1981192254",
+        "doi": null,
+        "title": "Projections of education statistics to 2006 /",
+        "type": "dataset"
+      }
+    ]
+  }
+]

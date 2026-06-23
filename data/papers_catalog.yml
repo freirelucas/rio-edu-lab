@@ -625,3 +625,111 @@ papers:
         status: available
     replication_status: pending
     policy_insight: null
+
+  # ============================================================
+  # v0.18 — Promovidos do funil (top fully-covered)
+  # 3 papers do priority_pool selecionados como próximos candidatos
+  # a replicação leve. Coleman 1968 + Oakes 1985 + Nye-Hedges 2004
+  # cobrem edu canônico (composição × estrutura × efeito-professor).
+  # ============================================================
+
+  - id: coleman-1968-equality
+    authors: [Coleman]
+    year: 1968
+    title: "EQUALITY OF EDUCATIONAL OPPORTUNITY"
+    venue: "Integrated Education"
+    doi_or_url: "10.1080/0020486680060504"
+    openalex_id: "https://openalex.org/W2079872858"
+    citations_openalex: 5336
+    abstract: >
+      Versão jornal-de-acesso do paper-base do Coleman Report (1966) —
+      ressalta que recursos escolares explicam pouca variância de desempenho
+      comparado a contexto familiar e composição de pares. Foundational
+      pra qualquer análise within-vs-between school no Rio.
+    area: ["desigualdade educacional", "efeito-escola", "Coleman Report"]
+    method: ["decomposição de variância", "composição × contexto"]
+    brazil_specific: false
+    data_requirements:
+      - "desempenho por escola"
+      - "composição SES por bairro"
+      - "geometria de escolas"
+    data_rio_coverage:
+      - requirement: "desempenho por escola"
+        item_id: "9fd1a8cc207a48c5bda7131e4e74b1ca"
+        status: available
+      - requirement: "composição SES por bairro"
+        item_id: "fa85ddc76a524380ad7fc60e3006ee97"
+        status: available
+      - requirement: "geometria de escolas"
+        item_id: "498e637753bd4e0da76e90103dd21eb7"
+        status: available
+    replication_status: pending
+    policy_insight: null
+
+  - id: oakes-1985-keeping-track
+    authors: [Oakes]
+    year: 1985
+    title: "Keeping Track: How Schools Structure Inequality"
+    venue: "Yale University Press"
+    doi_or_url: "10.2307/2070941"
+    openalex_id: "https://openalex.org/W2000548691"
+    citations_openalex: 3475
+    abstract: >
+      Documenta como tracking/streaming escolar (alocação de alunos por
+      perceived ability) amplifica desigualdade ao distribuir recursos +
+      qualidade-de-professores de forma sistemática contra estudantes
+      desfavorecidos. Replicável no Rio: comparar perfil SES x desempenho
+      ao longo de séries fundamentais.
+    area: ["desigualdade educacional", "tracking", "estrutura escolar"]
+    method: ["análise longitudinal", "comparação SES-perfis"]
+    brazil_specific: false
+    data_requirements:
+      - "IDEB por bairro"
+      - "composição SES por bairro"
+      - "matrículas por escola"
+    data_rio_coverage:
+      - requirement: "IDEB por bairro"
+        item_id: "9fd1a8cc207a48c5bda7131e4e74b1ca"
+        status: available
+      - requirement: "composição SES por bairro"
+        item_id: "fa85ddc76a524380ad7fc60e3006ee97"
+        status: available
+      - requirement: "matrículas por escola"
+        item_id: "d1e1192de4854ee4b53095a6f3274018"
+        status: available
+    replication_status: pending
+    policy_insight: null
+
+  - id: nye-2004-teacher-effects
+    authors: [Nye, Hedges, Konstantopoulos]
+    year: 2004
+    title: "How Large Are Teacher Effects?"
+    venue: "Educational Evaluation and Policy Analysis"
+    doi_or_url: "10.3102/01623737026003237"
+    openalex_id: "https://openalex.org/W2138737045"
+    citations_openalex: 1478
+    abstract: >
+      Estima magnitude do efeito-professor sobre achievement gain a partir
+      do experimento Tennessee STAR (random assignment). Achado: variância
+      entre professores é grande — escolas "iguais" produzem outcomes
+      diferentes. Pra Rio: ranquear escolas por value-added quando microdado
+      INEP nominal estiver disponível.
+    area: ["efeito-professor", "value-added", "qualidade escolar"]
+    method: ["random effects model", "value-added", "STAR experiment"]
+    brazil_specific: false
+    data_requirements:
+      - "desempenho por escola"
+      - "matrículas por escola"
+      - "geometria de escolas"
+    data_rio_coverage:
+      - requirement: "desempenho por escola"
+        item_id: "9fd1a8cc207a48c5bda7131e4e74b1ca"
+        status: available
+      - requirement: "matrículas por escola"
+        item_id: "d1e1192de4854ee4b53095a6f3274018"
+        status: available
+      - requirement: "geometria de escolas"
+        item_id: "498e637753bd4e0da76e90103dd21eb7"
+        status: available
+    replication_status: pending
+    policy_insight: null

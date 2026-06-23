@@ -40,6 +40,16 @@
         "paper_id": "schwartz-2011-housing",
         "requirement": "geometria de escolas",
         "status": "available"
+      },
+      {
+        "paper_id": "coleman-1968-equality",
+        "requirement": "geometria de escolas",
+        "status": "available"
+      },
+      {
+        "paper_id": "nye-2004-teacher-effects",
+        "requirement": "geometria de escolas",
+        "status": "available"
       }
     ]
   },
@@ -61,6 +71,28 @@
       {
         "paper_id": "schwartz-2011-housing",
         "requirement": "IDEB por bairro",
+        "status": "available"
+      }
+    ]
+  },
+  "9fd1a8cc207a48c5bda7131e4e74b1ca": {
+    "item_id": "9fd1a8cc207a48c5bda7131e4e74b1ca",
+    "item_title": "IDEB das séries iniciais e finais segundo as Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro em 2007/2009/2011/2013/2015/2017/2019/2021/2023",
+    "item_type": "Microsoft Excel",
+    "papers": [
+      {
+        "paper_id": "coleman-1968-equality",
+        "requirement": "desempenho por escola",
+        "status": "available"
+      },
+      {
+        "paper_id": "oakes-1985-keeping-track",
+        "requirement": "IDEB por bairro",
+        "status": "available"
+      },
+      {
+        "paper_id": "nye-2004-teacher-effects",
+        "requirement": "desempenho por escola",
         "status": "available"
       }
     ]
@@ -87,6 +119,23 @@
       }
     ]
   },
+  "d1e1192de4854ee4b53095a6f3274018": {
+    "item_id": "d1e1192de4854ee4b53095a6f3274018",
+    "item_title": "Educação Infantil (pré-escola), Ensino Fundamental, Educação Especial, Programa de Educação Jovens e Adultos (PEJ): turmas e alunos matriculados na rede pública municipal, segundo Coordenação Regional de Educação (CRE) e matrícula final, entre 1999-2012 ",
+    "item_type": "Microsoft Excel",
+    "papers": [
+      {
+        "paper_id": "oakes-1985-keeping-track",
+        "requirement": "matrículas por escola",
+        "status": "available"
+      },
+      {
+        "paper_id": "nye-2004-teacher-effects",
+        "requirement": "matrículas por escola",
+        "status": "available"
+      }
+    ]
+  },
   "fa85ddc76a524380ad7fc60e3006ee97": {
     "item_id": "fa85ddc76a524380ad7fc60e3006ee97",
     "item_title": "Índice de Desenvolvimento Social (IDS) por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA), Bairros e Favelas do Município do Rio de Janeiro - 2010",
@@ -105,6 +154,16 @@
       {
         "paper_id": "schwartz-2011-housing",
         "requirement": "INSE por escola",
+        "status": "available"
+      },
+      {
+        "paper_id": "coleman-1968-equality",
+        "requirement": "composição SES por bairro",
+        "status": "available"
+      },
+      {
+        "paper_id": "oakes-1985-keeping-track",
+        "requirement": "composição SES por bairro",
         "status": "available"
       }
     ]

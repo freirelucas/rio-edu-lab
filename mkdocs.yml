@@ -60,6 +60,7 @@ nav:
       - Visão geral: achados.md
       - HEX-EDU (Theil + Pereira): produtos/hex_edu.md
       - VULN-EDU (Reardon): produtos/vuln_edu.md
+      - Paper↔Dataset (DOI declarado): produtos/paper_dataset_links.md
       - Bairros prioritários: bairros-prioritarios.md
       - Mapa interativo: mapa.md
   - Papers: papers/index.md

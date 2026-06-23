@@ -49,9 +49,34 @@ except ImportError:
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "analysis"))
-from _openalex import fetch_works_batch  # noqa: E402
+from _openalex import _cache_get, fetch_works_batch  # noqa: E402
 
 FUNNEL_YML = ROOT / "data" / "papers_funnel.yml"
+
+
+def backfill_referenced_works(candidates: list[dict]) -> int:
+    """v0.18 — pra candidates capturados antes do bug fix v0.16, `referenced_works`
+    está vazio mas o cache OpenAlex tem o JSON raw. Lê do cache + popula inline.
+
+    Returns número de candidates atualizados (não persiste — caller decide write).
+    """
+    n_updated = 0
+    for c in candidates:
+        if c.get("referenced_works"):
+            continue
+        oid = (c.get("openalex_id") or "").split("/")[-1]
+        if not oid or not oid.startswith("W"):
+            continue
+        cached = _cache_get("work", oid)
+        if cached is None:
+            continue
+        # _cache_get retorna o output de parse_work (que JÁ tem referenced_works
+        # após bug fix v0.16) OU o raw OpenAlex JSON dependendo de quando foi cached
+        refs = cached.get("referenced_works")
+        if refs:
+            c["referenced_works"] = refs
+            n_updated += 1
+    return n_updated
 
 # Tipos OpenAlex que sinalizam "dataset/software" — uso declarativo pra
 # paper↔dataset link. `dataset` é canônico; software é gap conhecido (OpenAlex
@@ -129,6 +154,12 @@ def main() -> int:
     doc = yaml.safe_load(args.funnel.read_text(encoding="utf-8")) or {}
     candidates = doc.get("candidates") or []
     print(f"loaded {len(candidates)} candidates", file=sys.stderr)
+
+    # v0.18 — backfill referenced_works do cache local (candidates pre-v0.16
+    # não capturaram esse campo; o cache OpenAlex já tem).
+    n_backfilled = backfill_referenced_works(candidates)
+    if n_backfilled:
+        print(f"  backfilled referenced_works em {n_backfilled} candidates (do cache)", file=sys.stderr)
 
     pool = priority_pool(candidates)
     print(f"priority pool: {len(pool)} candidates com referenced_works", file=sys.stderr)

@@ -174,3 +174,17 @@ jobs:
             git --no-pager diff docs/provenance/
             exit 1
           fi
+
+      - name: Verify paper_dataset_links in sync
+        # v0.18 — Re-runs 64_render_paper_dataset_links.py sobre o funnel.
+        # Sinal declarativo paper↔dataset (OpenAlex referenced_works[type=dataset]).
+        # Drift = funnel mudou (snowball novo ou 45d_dataset_refs) sem regenerar
+        # a tabela renderizada no hotsite.
+        run: |
+          python3 analysis/64_render_paper_dataset_links.py
+          if ! git diff --quiet docs/produtos/paper_dataset_links.md data/processed/paper_dataset_links.json; then
+            echo "::error::paper_dataset_links out of sync"
+            echo "::error::run: python3 analysis/64_render_paper_dataset_links.py && git add docs/produtos/paper_dataset_links.md data/processed/paper_dataset_links.json"
+            git --no-pager diff docs/produtos/paper_dataset_links.md
+            exit 1
+          fi

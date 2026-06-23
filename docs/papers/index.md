@@ -5,14 +5,14 @@ description: "12 papers acadêmicos sobre educação. Organizados por tema. Cada
 
 # Papers
 
-**15 papers acadêmicos sobre educação.** Organizados por tema. Cada um cruzado contra os **9.855 itens do data.rio**. Status de replicação + cobertura de dados + achado quando aplicável.
+**18 papers acadêmicos sobre educação.** Organizados por tema. Cada um cruzado contra os **9.855 itens do data.rio**. Status de replicação + cobertura de dados + achado quando aplicável.
 
 O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois do snowball bibliométrico, filtro temático e checagem de cobertura. [Ver o funil completo →](../index.md#como-o-funil-funciona)
 
 <div class="big-num-grid">
-  <div class="big-num"><span class="num">15</span><span class="label">papers no catálogo</span></div>
+  <div class="big-num"><span class="num">18</span><span class="label">papers no catálogo</span></div>
   <div class="big-num"><span class="num">3</span><span class="label">replicados (full + partial)</span></div>
-  <div class="big-num"><span class="num">9</span><span class="label">prontos pra replicar</span></div>
+  <div class="big-num"><span class="num">12</span><span class="label">prontos pra replicar</span></div>
   <div class="big-num"><span class="num">3</span><span class="label">faltam dados externos</span></div>
 </div>
 
@@ -94,9 +94,17 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
 </a>
 </div>
 
-## Sociologia & efeito-escola (1)
+## Sociologia & efeito-escola (2)
 
 <div class="paper-grid">
+<a class="paper-card status-pending" href="coleman-1968-equality/">
+  <span class="drop-cap" aria-hidden="true">C</span>
+  <h4>Coleman (1968)</h4>
+  <p class="meta">desigualdade educacional</p>
+  <p class="insight">Versão jornal-de-acesso do paper-base do Coleman Report (1966) — ressalta que recursos escolares explicam pouca variância de desempenho c…</p>
+  <span class="cta">Próxima leitura →</span>
+</a>
+
 <a class="paper-card status-pending" href="coleman-1982-high/">
   <span class="drop-cap" aria-hidden="true">C</span>
   <h4>Coleman et al. (1982)</h4>
@@ -151,6 +159,26 @@ O catálogo é o **estágio 4 do funil**: o que sobreviveu à curadoria depois d
   <p class="meta">3.013 citações · economia da educação</p>
   <p class="insight">Modela a formação de habilidades cognitivas e não-cognitivas ao longo do ciclo de vida com complementaridade dinâmica entre estágios. Sus…</p>
   <span class="cta">Sem cobertura →</span>
+</a>
+</div>
+
+## Outros (2)
+
+<div class="paper-grid">
+<a class="paper-card status-pending" href="oakes-1985-keeping-track/">
+  <span class="drop-cap" aria-hidden="true">O</span>
+  <h4>Oakes (1985)</h4>
+  <p class="meta">desigualdade educacional</p>
+  <p class="insight">Documenta como tracking/streaming escolar (alocação de alunos por perceived ability) amplifica desigualdade ao distribuir recursos + qual…</p>
+  <span class="cta">Próxima leitura →</span>
+</a>
+
+<a class="paper-card status-pending" href="nye-2004-teacher-effects/">
+  <span class="drop-cap" aria-hidden="true">N</span>
+  <h4>Nye et al. (2004)</h4>
+  <p class="meta">efeito-professor</p>
+  <p class="insight">Estima magnitude do efeito-professor sobre achievement gain a partir do experimento Tennessee STAR (random assignment). Achado: variância…</p>
+  <span class="cta">Próxima leitura →</span>
 </a>
 </div>
 

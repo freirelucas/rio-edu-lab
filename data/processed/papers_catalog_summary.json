@@ -1,38 +1,38 @@
 {
-  "n_papers": 15,
+  "n_papers": 18,
   "by_replication_status": {
     "partial": 2,
     "full": 1,
-    "pending": 9,
+    "pending": 12,
     "unfeasible": 3
   },
   "by_brazil_specific": {
     "brazil": 3,
-    "global": 12
+    "global": 15
   },
   "by_area_top": {
     "economia da educação": 5,
     "desigualdade": 4,
+    "efeito-escola": 4,
     "equidade": 4,
     "sociologia educacional": 3,
-    "efeito-escola": 3,
     "política educacional": 3,
     "equidade espacial": 2,
     "tendências longitudinais": 2,
     "avaliação": 2,
     "segregação escolar": 2,
+    "desigualdade educacional": 2,
     "acessibilidade": 1,
     "geografia urbana": 1,
     "SES e desempenho": 1,
-    "teoria da informação": 1,
-    "função-produção": 1
+    "teoria da informação": 1
   },
   "coverage_status_counts": {
-    "available": 25,
+    "available": 34,
     "external": 9,
     "partial": 2
   },
-  "papers_with_full_coverage": 8,
+  "papers_with_full_coverage": 11,
   "papers_with_zero_coverage": 3,
   "openalex_snapshot_present": true,
   "openalex_n_with_citations": 15,
@@ -40,14 +40,14 @@
     "loaded": true,
     "n_categories": 10,
     "n_aliases": 35,
-    "requirements_total": 36,
-    "requirements_mapped": 36,
+    "requirements_total": 45,
+    "requirements_mapped": 45,
     "requirements_unmapped": 0,
     "by_category_top": {
-      "performance-aggregated": 12,
-      "ses-aggregated": 7,
-      "geometry-schools": 4,
-      "enrollment-counts": 4,
+      "performance-aggregated": 15,
+      "ses-aggregated": 9,
+      "geometry-schools": 6,
+      "enrollment-counts": 6,
       "microdata-student": 3,
       "spatial-partition": 2,
       "travel-network": 1,
