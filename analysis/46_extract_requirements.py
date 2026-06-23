@@ -85,9 +85,20 @@ def main() -> int:
                     help=f"Minimum score to include (default {DEFAULT_MIN_SCORE})")
     ap.add_argument("--edu-min", type=int, default=DEFAULT_EDU_MIN,
                     help=f"Minimum domain_signal (edu+policy) hits for paper to be scored (default {DEFAULT_EDU_MIN})")
+    ap.add_argument("--greedy", action="store_true",
+                    help="v0.19 — capturar greedy: relax domain_signal threshold para 1 "
+                         "(default 2). Coleta mais candidates edu-adjacente; o inbox + "
+                         "comunidade filtram depois via curatoria. Use quando ser exaustivo "
+                         "importa mais que precisão por-candidate.")
     ap.add_argument("--force", action="store_true",
                     help="Recompute suggestions even when already present")
     args = ap.parse_args()
+
+    # v0.19 — greedy mode overrides edu_min pra 1 (mais permissivo)
+    if args.greedy:
+        args.edu_min = 1
+        print("[greedy] domain_signal threshold reduzido pra 1 — capturando mais candidates",
+              file=sys.stderr)
 
     if not FUNNEL_YML.exists():
         print(f"missing {FUNNEL_YML.relative_to(ROOT)} — run 45 first", file=sys.stderr)
