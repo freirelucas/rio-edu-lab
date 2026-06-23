@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussão / dúvida geral
+    url: https://github.com/freirelucas/rio-edu-lab/discussions
+    about: Pra perguntas conceituais, contexto histórico, ou simplesmente conversar sobre traduzir academia pra dados BR. Issues são pra trabalho acionável.
+  - name: 📖 Documentação completa
+    url: https://freirelucas.github.io/rio-edu-lab/
+    about: Site oficial — arquitetura VSM, qualidade, papers, achados.
+  - name: 🧠 Arquitetura (VSM)
+    url: https://freirelucas.github.io/rio-edu-lab/arquitetura/
+    about: Como o lab está organizado (Stafford Beer Viable System Model). Ler antes de propor mudança estrutural.

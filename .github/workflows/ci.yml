@@ -188,3 +188,17 @@ jobs:
             git --no-pager diff docs/produtos/paper_dataset_links.md
             exit 1
           fi
+
+      - name: Verify curatorial inbox in sync
+        # v0.19 — Re-runs 65_curatorial_inbox.py sobre o funnel + catalog.
+        # Mecanismo público de crítica: queue priorizada pra próximas
+        # replicações. Drift = funnel/catalog mudou mas inbox não foi
+        # regenerado.
+        run: |
+          python3 analysis/65_curatorial_inbox.py
+          if ! git diff --quiet docs/inbox.md data/processed/curatorial_inbox.json; then
+            echo "::error::curatorial inbox out of sync"
+            echo "::error::run: python3 analysis/65_curatorial_inbox.py && git add docs/inbox.md data/processed/curatorial_inbox.json"
+            git --no-pager diff docs/inbox.md
+            exit 1
+          fi
