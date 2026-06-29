@@ -1,0 +1,95 @@
+name: s4-scout
+
+# Corporação cibernética — órgão S4 (Intelligence). Varredura do ambiente
+# externo + interno: gaps de categoria, saturação de seeds, saúde do inbox,
+# progresso dataset_refs, status Rio-3.5. DETERMINÍSTICO (zero LLM, zero custo).
+# SUGGEST-ONLY: abre issue com achados pra curador triar. Nunca push/merge.
+#
+# Ver docs/corporacao.md §6 + .claude/skills/vsm-s4-scout.md
+
+on:
+  schedule:
+    # Dia 1 de cada mês, 07:13 UTC (off-minute).
+    - cron: "13 7 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  scout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install minimal deps
+        run: pip install pyyaml
+
+      - name: Run S4 scout (determinístico, sem LLM)
+        id: scout
+        run: |
+          python3 analysis/66_scout.py --check-rio-endpoint 2>scout_stderr.txt || true
+          cat scout_stderr.txt
+          SCOUT_MD=$(ls -t data/processed/scout_*.md 2>/dev/null | head -1)
+          echo "scout_md=$SCOUT_MD" >> "$GITHUB_OUTPUT"
+
+      - name: Open scout report issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const mdFile = '${{ steps.scout.outputs.scout_md }}';
+            let report = '(scout report não gerado)';
+            try {
+              report = fs.readFileSync(mdFile, 'utf8').slice(0, 6000);
+            } catch (e) {}
+            const today = new Date().toISOString().slice(0, 10);
+            const body = `${report}
+
+            ---
+
+            ## O que fazer com isto
+
+            Este é o relatório mensal do órgão **S4 Scout** da corporação cibernética
+            (varredura do ambiente). Suggest-only — nenhuma ação foi tomada.
+
+            **Triagem sugerida:**
+            - Categorias sub-representadas → considere [sugerir paper/source](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new?template=sugerir-source.md) que ancore o tema
+            - Seeds saturados → eleve o cap ou priorize qualidade
+            - Inbox com candidates → comunidade pode [reivindicar replicação](https://github.com/${context.repo.owner}/${context.repo.repo}/issues/new?template=replication-claim.md)
+            - Rio-3.5 endpoint vivo → cheque se saiu do pending pra ativar Path D
+
+            *Auto-gerado por \`.github/workflows/s4-scout.yml\`. Feche após triar.*`;
+
+            // Dedup: 1 scout issue aberta por vez (mensal)
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 's4-scout',
+              per_page: 5,
+            });
+            if (issues.data.length > 0) {
+              // Atualiza a existente com comment em vez de duplicar
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issues.data[0].number,
+                body: `### Scout update ${today}\n\n${report.slice(0, 3000)}`,
+              });
+              console.log('Comentou scout existente #' + issues.data[0].number);
+              return;
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[S4] Scout mensal — ${today}`,
+              body: body,
+              labels: ['s4-scout', 'discovery-source'],
+            });

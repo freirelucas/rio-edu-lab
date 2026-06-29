@@ -48,3 +48,7 @@ data/snowball_visited.json
 data/processed/audit_*.md
 data/processed/audit_*.json
 
+
+# S4 scout outputs (datados, efêmeros — workflow regenera)
+data/processed/scout_*.md
+data/processed/scout_*.json
