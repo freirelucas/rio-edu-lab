@@ -1,0 +1,126 @@
+name: s3star-audit
+
+# Corporação cibernética — órgão S3* (Audit). Auditoria esporádica
+# read-only do pipeline (Stafford Beer VSM). Roda mensal + on-demand.
+# SUGGEST-ONLY: nunca faz push, nunca merge, nunca gasta LLM. Só roda o
+# auditor determinístico e abre issue se o verdict for RED.
+#
+# Ver docs/corporacao.md §6 (MVP) + .claude/skills/vsm-s3star-auditor.md
+
+on:
+  schedule:
+    # Dia 3 de cada mês, 06:07 UTC (off-minute pra não colidir com a frota).
+    - cron: "7 6 3 * *"
+  workflow_dispatch:
+    inputs:
+      sample:
+        description: "Quantos candidates amostrar"
+        required: false
+        default: "20"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install deps
+        run: |
+          pip install -r requirements-dev.txt
+          pip install -r requirements.txt
+          pip install -e reference/acec-hub
+
+      - name: Run S3* audit (read-only)
+        id: audit
+        run: |
+          SAMPLE="${{ github.event.inputs.sample || '20' }}"
+          python3 analysis/62_s3star_audit.py --sample "$SAMPLE" || true
+          # Captura o verdict do JSON gerado
+          AUDIT_FILE=$(ls -t data/processed/audit_*.json 2>/dev/null | head -1)
+          if [ -z "$AUDIT_FILE" ]; then
+            echo "verdict=UNKNOWN" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "audit_file=$AUDIT_FILE" >> "$GITHUB_OUTPUT"
+          # Determina verdict (bootstrap drift OR schema fail = RED)
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, glob, os
+          f = sorted(glob.glob("data/processed/audit_*.json"))[-1]
+          s = json.load(open(f))
+          verdict = "GREEN"
+          if s.get("bootstrap_theil", {}).get("status") == "drift":
+              verdict = "RED"
+          if s.get("schema", {}).get("status") == "fail":
+              verdict = "RED"
+          lvb = s.get("llm_vs_bow", {})
+          if lvb.get("status") == "computed" and (lvb.get("top1_agreement") or 1) < 0.7:
+              if verdict == "GREEN":
+                  verdict = "YELLOW"
+          print(f"verdict={verdict}")
+          PY
+
+      - name: Open issue if RED
+        if: steps.audit.outputs.verdict == 'RED'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const auditFile = '${{ steps.audit.outputs.audit_file }}';
+            let summary = '(audit JSON não encontrado)';
+            try {
+              summary = '```json\n' + fs.readFileSync(auditFile, 'utf8').slice(0, 4000) + '\n```';
+            } catch (e) {}
+            const body = `# S3* Audit — verdict RED 🔴
+
+            O órgão S3* (Audit) da corporação cibernética detectou **drift ou falha de schema** numa auditoria esporádica read-only.
+
+            ## O que significa
+
+            Um invariante crítico mudou silenciosamente — bootstrap Theil não-determinístico (bug em \`acec.stats.theil_decompose\`?) ou schema YAML violado. Os drift checks de rotina (S2) podem não ter pego porque S3* roda cold-cache + sample aleatório.
+
+            ## Investigação
+
+            1. Rode localmente: \`python3 analysis/62_s3star_audit.py\`
+            2. Veja qual fase falhou (bootstrap / schema / LLM-vs-BoW)
+            3. Skill recomendada: \`vsm-s3star-auditor\` (procedure completo)
+            4. Se invariante de replicação quebrou → escalar pra S5 (achado central pode estar comprometido)
+
+            ## Audit summary
+
+            ${summary}
+
+            ---
+            *Auto-gerado por \`.github/workflows/s3star-audit.yml\`. Suggest-only — nenhuma ação foi tomada. Feche quando resolvido.*`;
+
+            // Dedup: skip se já há issue s3star-audit aberta < 35 dias
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 's3star-audit',
+              per_page: 5,
+            });
+            if (issues.data.length > 0) {
+              console.log('Issue s3star-audit já aberta. Skip.');
+              return;
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '[S3*] Audit verdict RED — drift ou schema fail detectado',
+              body: body,
+              labels: ['s3star-audit', 'priority:critical'],
+            });
+
+      - name: Report verdict
+        run: |
+          echo "::notice::S3* audit verdict: ${{ steps.audit.outputs.verdict }}"

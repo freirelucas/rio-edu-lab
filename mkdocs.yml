@@ -71,6 +71,7 @@ nav:
   - Sobre:
       - Visão geral: sobre.md
       - Arquitetura (VSM + roadmap v0.16): arquitetura.md
+      - 🏢 Corporação cibernética: corporacao.md
       - Contribuir: contribuir.md
       - 📋 Inbox curatorial: inbox.md
       - Histórico técnico: investigacao.md
