@@ -114,7 +114,43 @@ A corporação executa o backlog (§6 task list) nas camadas certas:
 
 Resultado: você atua como **CEO/curador**, não como operário. A corporação carrega o peso mecânico da escala; você decide direção e aprova saída.
 
-## 9. Riscos residuais (honestos)
+## 9. 🔌 Ativação — guia passo a passo (custo confirmado: $0)
+
+Pesquisa (jun/2026) confirmou: **repo público → GitHub Actions ilimitado e grátis**. A corporação roda a custo zero. O único gasto possível (Claude autônomo em CI) é opt-in *e* pode ser **$0 via assinatura** (não a API paga).
+
+### Passo 1 — Secrets (Settings → Secrets and variables → Actions)
+
+| Secret | Ativa | Sensível? | Necessário? |
+|---|---|---|---|
+| `OPENALEX_EMAIL` = `lucasfreire@gmail.com` | `snowball.yml` weekly (descoberta) | não (polite-pool ID) | pra ligar discovery |
+| `CLAUDE_CODE_OAUTH_TOKEN` | Claude autônomo em CI (triagem/auto-fix) | **sim** | opcional |
+| `RIO_API_BASE` / `RIO_API_KEY` | Path D (LLM soberano) | sim | quando endpoint existir |
+
+Os órgãos determinísticos (`s3star-audit`, `s4-scout`, `keepalive`) **já funcionam sem secret nenhum**.
+
+### Passo 2 — Claude em CI sem custo por token (opcional)
+
+A `anthropics/claude-code-action@v1` aceita **`claude_code_oauth_token`** gerado da sua assinatura Claude Pro/Max (`claude setup-token` local). Isso roda Claude autônomo em CI **usando sua assinatura, não a API paga** — dentro dos limites dela. Alternativa: `ANTHROPIC_API_KEY` (paga por token) com cap via `claude_args: "--max-turns 5 --model claude-sonnet-4-6"`.
+
+### Passo 3 — Labels (Settings → Labels)
+
+Os workflows usam: `s3star-audit`, `s4-scout`, `algedonic-alert`, `priority:critical`, `discovery-source`, `paper-suggestion`, `replication-claim`. Crie-os pra os órgãos poderem etiquetar issues.
+
+### Passo 4 — Keepalive (já resolvido no código)
+
+⚠️ Pegadinha que a pesquisa achou: **crons auto-desativam após 60 dias sem commit** em repo público (tag/release não conta). O `.github/workflows/keepalive.yml` faz heartbeat a cada 20 dias com `[skip ci]` — resolve automaticamente. É a única exceção ao "corporação só abre PR" (mecânico, não-curatorial, precisa ser autônomo).
+
+### Passo 5 — Nível de autonomia (você decide)
+
+Default seguro: **N1 suggest-only** (corporação abre issues/PRs, você mergeia). Suba pra N2 (auto-merge mecânico) quando confiar nos drift checks. Ver §5.
+
+### O que NÃO precisa
+
+- **Login/auth separado** — a [Sala de Operação](sala.md) é pública (transparência ativa); o *controle* já é autenticado pelo GitHub (merge/dispatch/disable pedem sua identidade). "Security through obscurity" sobre dados públicos não protege nada.
+- **Hosting pago** — GitHub Pages (site) + badges live = $0.
+- **Branch protection** é recomendado (gate S5 formal) mas não bloqueia a corporação.
+
+## 10. Riscos residuais (honestos)
 
 - **GitHub Actions cron drift** — crons do GH não são pontuais (podem atrasar minutos). Aceitável pra trabalho não-realtime.
 - **Claude-em-CI custo** — invocar Claude via `claude-code-action` em cada issue gasta. Mitigar: só em issues com label específica + budget cap.

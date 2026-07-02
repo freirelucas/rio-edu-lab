@@ -189,6 +189,19 @@ jobs:
             exit 1
           fi
 
+      - name: Verify sala de operação in sync
+        # v0.21 — Re-runs 67_render_sala.py (Sala de Operação pública).
+        # Estado vivo da corporação lido dos JSONs committados. Drift =
+        # estado mudou mas a sala não foi regenerada.
+        run: |
+          python3 analysis/67_render_sala.py
+          if ! git diff --quiet docs/sala.md; then
+            echo "::error::sala de operação out of sync"
+            echo "::error::run: python3 analysis/67_render_sala.py && git add docs/sala.md"
+            git --no-pager diff docs/sala.md
+            exit 1
+          fi
+
       - name: Verify curatorial inbox in sync
         # v0.19 — Re-runs 65_curatorial_inbox.py sobre o funnel + catalog.
         # Mecanismo público de crítica: queue priorizada pra próximas

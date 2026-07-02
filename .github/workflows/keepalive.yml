@@ -1,0 +1,47 @@
+name: keepalive
+
+# Corporação cibernética — mecanismo de sobrevivência (não é órgão VSM).
+#
+# PROBLEMA (pesquisa 2026): em repo PÚBLICO, workflows agendados (cron)
+# auto-desativam após 60 dias SEM COMMIT. Só commit novo reseta o relógio —
+# tag/release NÃO conta. Se o lab idle 2 meses, s3star-audit + s4-scout +
+# snowball morrem silenciosamente.
+#
+# SOLUÇÃO: heartbeat a cada 20 dias (bem < 60). Faz um commit mínimo com
+# [skip ci] pra não gastar CI. É a ÚNICA exceção ao princípio "corporação
+# só abre PR" — keepalive é mecânico, não-curatorial, e precisa ser autônomo
+# (exigir merge humano a cada 20 dias derrotaria o propósito).
+#
+# Permissions escopadas ao mínimo: contents:write só.
+
+on:
+  schedule:
+    # A cada 20 dias aprox: dia 7 e 27 de cada mês, 04:19 UTC (off-minute).
+    - cron: "19 4 7,27 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Reset 60-day cron clock via heartbeat commit
+        run: |
+          git config user.email "noreply@anthropic.com"
+          git config user.name "Claude (keepalive)"
+          STAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          mkdir -p .github
+          echo "$STAMP" > .github/last_heartbeat
+          git add .github/last_heartbeat
+          # [skip ci] evita rodar a suite inteira num commit trivial
+          if git diff --cached --quiet; then
+            echo "no change (heartbeat idempotente hoje)"
+          else
+            git commit -m "chore(keepalive): heartbeat $STAMP [skip ci]"
+            git push
+            echo "::notice::Keepalive heartbeat pushed — cron clock reset."
+          fi
