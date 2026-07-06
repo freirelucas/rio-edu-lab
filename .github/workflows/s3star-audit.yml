@@ -22,9 +22,20 @@ permissions:
   contents: read
   issues: write
 
+# Não empilha runs: um novo cancela o anterior em andamento.
+concurrency:
+  group: s3star-audit
+  cancel-in-progress: true
+
 jobs:
   audit:
+    # 🔒 KILL SWITCH: o cron só dispara se a variável de repo CORP_ACTIVE == 'true'
+    # (Settings → Secrets and variables → Actions → Variables). Desligado por
+    # padrão — a corporação NÃO roda sozinha até você virar a chave. Dispatch
+    # manual sempre permitido pra teste.
+    if: ${{ vars.CORP_ACTIVE == 'true' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 

@@ -23,9 +23,17 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: keepalive
+  cancel-in-progress: true
+
 jobs:
   heartbeat:
+    # 🔒 KILL SWITCH — só faz heartbeat com vars.CORP_ACTIVE == 'true'. Se a
+    # corporação está desligada, não precisa manter os crons vivos. Ver s3star-audit.yml.
+    if: ${{ vars.CORP_ACTIVE == 'true' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
 

@@ -118,6 +118,23 @@ Resultado: você atua como **CEO/curador**, não como operário. A corporação 
 
 Pesquisa (jun/2026) confirmou: **repo público → GitHub Actions ilimitado e grátis**. A corporação roda a custo zero. O único gasto possível (Claude autônomo em CI) é opt-in *e* pode ser **$0 via assinatura** (não a API paga).
 
+### Passo 0 — A chave-mestra `CORP_ACTIVE` (a corporação nasce DESLIGADA)
+
+Os órgãos autônomos (`s3star-audit`, `s4-scout`, `keepalive`, `snowball`) **não rodam sozinhos até você ligar**. Cada um checa uma variável de repo:
+
+```
+Settings → Secrets and variables → Actions → Variables → New repository variable
+  Name:  CORP_ACTIVE
+  Value: true
+```
+
+- **Sem essa variável (default)**: crons **não disparam**. A corporação fica montada mas inerte. Merge do código não liga nada.
+- **`CORP_ACTIVE = true`**: crons passam a rodar no schedule.
+- **`CORP_ACTIVE = false`** (ou apagar): **big red button** — para tudo instantaneamente no próximo tick.
+- **Dispatch manual** (`Run workflow`) sempre funciona, independente da chave — pra você testar um órgão sob demanda.
+
+Isso responde direto ao medo de "rodar em loop consumindo recursos": **nada autônomo acontece sem essa chave**, e ela desliga tudo de uma vez.
+
 ### Passo 1 — Secrets (Settings → Secrets and variables → Actions)
 
 | Secret | Ativa | Sensível? | Necessário? |
@@ -143,6 +160,21 @@ Os workflows usam: `s3star-audit`, `s4-scout`, `algedonic-alert`, `priority:crit
 ### Passo 5 — Nível de autonomia (você decide)
 
 Default seguro: **N1 suggest-only** (corporação abre issues/PRs, você mergeia). Suba pra N2 (auto-merge mecânico) quando confiar nos drift checks. Ver §5.
+
+### 🛡️ Garantias anti-runaway (por que não vai loopar nem torrar recurso)
+
+Auditoria do grafo de disparos (jun/2026) — a corporação é **estruturalmente incapaz de loopar**:
+
+1. **Nenhum órgão se auto-dispara.** Grafo de triggers é acíclico: crons disparam por relógio, não por output de outro órgão. `algedonic-alert` dispara em CI-falha, mas abrir issue não dispara CI → sem ciclo.
+2. **Zero auto-merge.** Tudo espera merge humano (N1). PR aberto não vira código sozinho.
+3. **Zero LLM nos órgãos atuais.** `s3star-audit`, `s4-scout`, `keepalive`, `snowball` são Python puro determinístico. Nenhuma chamada paga. (Claude-em-CI é opt-in futuro, capado por `--max-turns` + OAuth de assinatura.)
+4. **Kill switch `CORP_ACTIVE`** — off por padrão; um toggle para tudo.
+5. **`concurrency: cancel-in-progress`** em cada órgão — um run novo cancela o anterior, nunca empilha.
+6. **`timeout-minutes`** em cada job (5–60 min) — nada roda pra sempre. GitHub também mata em 6h.
+7. **`keepalive` usa `[skip ci]`** — o heartbeat não dispara a suíte inteira.
+8. **Repo público = Actions grátis ilimitado** — mesmo no pior caso, custo monetário = $0.
+
+Pior cenário realista: um órgão roda até o timeout uma vez e para. Sem cascata, sem gasto.
 
 ### O que NÃO precisa
 

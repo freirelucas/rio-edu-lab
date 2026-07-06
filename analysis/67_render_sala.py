@@ -129,7 +129,9 @@ def render() -> str:
         badge = f"[![status]({GH_ACTIONS}/{wf}/badge.svg)]({GH_ACTIONS}/{wf})"
         L.append(f"| `{wf}` | {vsm} | {desc} | {cad} | {badge} |")
     L.append("")
-    L.append("💤 = dormente (espera secret do curador). Ver [ativação](corporacao.md).")
+    L.append("💤 = dormente (espera secret). 🔒 Os órgãos autônomos (audit, scout, keepalive, snowball) "
+             "só disparam com a chave-mestra `CORP_ACTIVE=true` — **desligados por padrão**. "
+             "Ver [ativação + garantias anti-loop](corporacao.md).")
     L.append("")
 
     # ── Fila curatorial ───────────────────────────────────────────────────

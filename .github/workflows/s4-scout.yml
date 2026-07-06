@@ -17,9 +17,16 @@ permissions:
   contents: read
   issues: write
 
+concurrency:
+  group: s4-scout
+  cancel-in-progress: true
+
 jobs:
   scout:
+    # 🔒 KILL SWITCH — cron só dispara com vars.CORP_ACTIVE == 'true'. Ver s3star-audit.yml.
+    if: ${{ vars.CORP_ACTIVE == 'true' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 

@@ -38,7 +38,7 @@ Status **ao vivo** (badges nativos do GitHub Actions — sempre atuais):
 | `s4-scout.yml` | S4 | Inteligência — gaps + oportunidades externas | mensal | [![status](https://github.com/freirelucas/rio-edu-lab/actions/workflows/s4-scout.yml/badge.svg)](https://github.com/freirelucas/rio-edu-lab/actions/workflows/s4-scout.yml) |
 | `snowball.yml` | S1.a | Descoberta — snowball multi-fonte | semanal 💤 | [![status](https://github.com/freirelucas/rio-edu-lab/actions/workflows/snowball.yml/badge.svg)](https://github.com/freirelucas/rio-edu-lab/actions/workflows/snowball.yml) |
 
-💤 = dormente (espera secret do curador). Ver [ativação](corporacao.md).
+💤 = dormente (espera secret). 🔒 Os órgãos autônomos (audit, scout, keepalive, snowball) só disparam com a chave-mestra `CORP_ACTIVE=true` — **desligados por padrão**. Ver [ativação + garantias anti-loop](corporacao.md).
 
 ## 📋 Fila curatorial (inbox)
 
