@@ -32,6 +32,9 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _safe_md import sanitize_cell  # noqa: E402  — sanitiza títulos não-confiáveis
+
 ROOT = Path(__file__).resolve().parent.parent
 PROCESSED = ROOT / "data" / "processed"
 OUT_MD = ROOT / "docs" / "sala.md"
@@ -148,7 +151,7 @@ def render() -> str:
         br = "🇧🇷" if r.get("is_brazilian") else ""
         cit = f"{r.get('citations', 0):,}"
         score = r.get("priority_score", "—")
-        title = (r.get("title") or "")[:55]
+        title = sanitize_cell(r.get("title"), max_len=55)
         L.append(f"| {i} | {br} | {cit} | {score} | {title} |")
     L.append("")
     if n_inbox > 10:

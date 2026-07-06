@@ -13,8 +13,8 @@ Resultado do `analysis/45d_dataset_refs.py` (v0.17.f). Pra cada candidate do fun
 
 | BR? | n_refs | citações | Year | Paper | Dataset DOIs |
 |---|---:|---:|---|---|---|
-|   | 2 | 2933 | 2001 | Teacher Turnover and Teacher Shortages: An Organizational An | [Teacher Turnover, Teacher Shortages, and](https://doi.org/https://doi.org/10.1037/e384452004-001)<br>Projections of education statistics to 2 |
-|   | 1 | 408 | 2001 | Teacher Turnover, Teacher Shortages, and the Organization of | Projections of education statistics to 2 |
+|   | 2 | 2933 | 2001 | Teacher Turnover and Teacher Shortages: An Organizational An… | [Teacher Turnover, Teacher Shortages, and…](https://doi.org/https://doi.org/10.1037/e384452004-001)<br>Projections of education statistics to 2… |
+|   | 1 | 408 | 2001 | Teacher Turnover, Teacher Shortages, and the Organization of… | Projections of education statistics to 2… |
 
 ## Como funciona
 

@@ -46,16 +46,16 @@ Status **ao vivo** (badges nativos do GitHub Actions — sempre atuais):
 
 | # | 🇧🇷 | Cit | Score | Paper |
 |--:|:--:|--:|--:|---|
-| 1 |  | 2,933 | 28.6 | Teacher Turnover and Teacher Shortages: An Organization |
-| 2 |  | 408 | 24.32 | Teacher Turnover, Teacher Shortages, and the Organizati |
-| 3 |  | 30,835 | 24.13 | The central role of the propensity score in observation |
-| 4 |  | 17,030 | 23.75 | Convergent and discriminant validation by the multitrai |
+| 1 |  | 2,933 | 28.6 | Teacher Turnover and Teacher Shortages: An Organization… |
+| 2 |  | 408 | 24.32 | Teacher Turnover, Teacher Shortages, and the Organizati… |
+| 3 |  | 30,835 | 24.13 | The central role of the propensity score in observation… |
+| 4 |  | 17,030 | 23.75 | Convergent and discriminant validation by the multitrai… |
 | 5 |  | 8,268 | 23.28 | The New Meaning of Educational Change |
-| 6 |  | 4,502 | 22.88 | The Economic Costs of Conflict: A Case Study of the Bas |
+| 6 |  | 4,502 | 22.88 | The Economic Costs of Conflict: A Case Study of the Bas… |
 | 7 |  | 4,382 | 22.86 | Teachers, Schools, and Academic Achievement |
-| 8 | 🇧🇷 | 200 | 22.85 | Três gerações de avaliação da educação básica no Brasil |
-| 9 |  | 4,092 | 22.82 | Identification and Estimation of Local Average Treatmen |
-| 10 |  | 4,053 | 22.81 | The Bell Curve: Intelligence and Class Structure in Ame |
+| 8 | 🇧🇷 | 200 | 22.85 | Três gerações de avaliação da educação básica no Brasil… |
+| 9 |  | 4,092 | 22.82 | Identification and Estimation of Local Average Treatmen… |
+| 10 |  | 4,053 | 22.81 | The Bell Curve: Intelligence and Class Structure in Ame… |
 
 _(top 10 de 50 — fila completa em [inbox](inbox.md))_
 

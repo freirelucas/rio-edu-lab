@@ -28,6 +28,9 @@ except ImportError:
     print("PyYAML required: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _safe_md import sanitize_cell  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 FUNNEL_YML = ROOT / "data" / "papers_funnel.yml"
 CATALOG_YML = ROOT / "data" / "papers_catalog.yml"
@@ -163,7 +166,7 @@ def render_markdown(rows: list[dict], n_total_funnel: int, n_catalog: int) -> st
     lines.append("|--:|--:|:-:|--:|--:|--:|--:|---|:--:|")
     for i, r in enumerate(rows, 1):
         br = "🇧🇷" if r["is_brazilian"] else " "
-        title = r["title"][:60]
+        title = sanitize_cell(r["title"], max_len=60)
         year = r["year"] or "?"
         cit = r["citations"]
         comp = r["max_composite"]

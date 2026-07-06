@@ -25,6 +25,9 @@ except ImportError:
     print("PyYAML required: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _safe_md import sanitize_cell  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 FUNNEL_YML = ROOT / "data" / "papers_funnel.yml"
 OUT_MD = ROOT / "docs" / "produtos" / "paper_dataset_links.md"
@@ -90,14 +93,14 @@ def render_markdown(rows: list[dict], n_total_funnel: int) -> str:
     lines.append("|---|---:|---:|---|---|---|")
     for r in rows[:50]:  # cap visual em 50
         br = "🇧🇷" if r["is_brazilian"] else " "
-        title = r["title"][:60]
+        title = sanitize_cell(r["title"], max_len=60)
         year = r["year"] or "?"
         cit = r["citations"]
         n = r["n_dataset_refs"]
         # Render top-3 dataset titles
         ds_titles = []
         for d in r["dataset_refs"][:3]:
-            t = (d.get("title") or "?")[:40]
+            t = sanitize_cell(d.get("title") or "?", max_len=40)
             doi = d.get("doi")
             if doi:
                 ds_titles.append(f"[{t}](https://doi.org/{doi})")
