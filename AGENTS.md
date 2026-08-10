@@ -130,6 +130,12 @@ Repos peer que valem linkar (mais em `docs/dados.md`):
 - **[r5py/r5py](https://github.com/r5py/r5py)** — stack Pereira accessibility
 - **[cran/OasisR](https://github.com/cran/OasisR)** — Reardon ordinal segregation R package
 
+Peer de **agentic tooling / agent-harness** (estudo em [`docs/aprende-com-affaan.md`](docs/aprende-com-affaan.md)):
+
+- **[affaan-m/ECC](https://github.com/affaan-m/ECC)** — agent harness OS pro Claude Code (rules/skills/agents/hooks/instincts)
+- **[affaan-m/agentshield](https://github.com/affaan-m/agentshield)** — static analyzer de config de agente (secrets/perms/hooks/MCP) → A1 do scout
+- **[affaan-m/claude-swarm](https://github.com/affaan-m/claude-swarm)** — orquestração multi-agente (grafo de deps + file locking + budget)
+
 ## Contato
 
 - Author: Lucas Freire (`@freirelucas` no GitHub) — `lucasfreire@gmail.com`
